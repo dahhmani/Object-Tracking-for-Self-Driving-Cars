@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classpump_1_1_var_node" kind="class" language="Python" prot="public">
+    <compoundname>pump::VarNode</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpump_1_1_var_node_1aa2b634e2443646c3754f2d193efa4dc7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.VarNode::identifier</definition>
+        <argsstring></argsstring>
+        <name>identifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="397" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpump_1_1_var_node_1ad6bef6a8577b994fbe9ccddf3c82d2fc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.VarNode::atomic_code</definition>
+        <argsstring></argsstring>
+        <name>atomic_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="398" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpump_1_1_var_node_1adf79bf21b1db5367792a4ac91f94a756" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pump.VarNode.__init__</definition>
+        <argsstring>(self, identifier=None, atomic_code=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>identifier</type>
+          <defname>identifier</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>atomic_code</type>
+          <defname>atomic_code</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="396" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="396" bodyend="400"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/scripts/pump.py" line="395" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="395" bodyend="401"/>
+    <listofallmembers>
+      <member refid="classpump_1_1_var_node_1adf79bf21b1db5367792a4ac91f94a756" prot="public" virt="non-virtual"><scope>pump::VarNode</scope><name>__init__</name></member>
+      <member refid="classpump_1_1_var_node_1ad6bef6a8577b994fbe9ccddf3c82d2fc" prot="public" virt="non-virtual"><scope>pump::VarNode</scope><name>atomic_code</name></member>
+      <member refid="classpump_1_1_var_node_1aa2b634e2443646c3754f2d193efa4dc7" prot="public" virt="non-virtual"><scope>pump::VarNode</scope><name>identifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

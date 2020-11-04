@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::DivisibleByImpl</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl_1a9110419e34b81fd67f07810366a1f0bc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::gmock_matchers_test::DivisibleByImpl::divider_</definition>
+        <argsstring></argsstring>
+        <name>divider_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3987" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3987" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl_1aab5d8d383a8cbf112fe087c4f0f3f699" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::DivisibleByImpl::DivisibleByImpl</definition>
+        <argsstring>(int a_divider)</argsstring>
+        <name>DivisibleByImpl</name>
+        <param>
+          <type>int</type>
+          <declname>a_divider</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3965" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3965" bodyend="3965"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl_1a2621df4b34315b327e20b6f4d901417d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::gmock_matchers_test::DivisibleByImpl::MatchAndExplain</definition>
+        <argsstring>(const T &amp;n, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3969" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3969" bodyend="3973"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl_1aabd14d5f96ef6851141d9ed9fbee3f86" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_matchers_test::DivisibleByImpl::DescribeTo</definition>
+        <argsstring>(ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3975" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3975" bodyend="3977"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl_1a9c061ef411c126c604d4c33d92911d50" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_matchers_test::DivisibleByImpl::DescribeNegationTo</definition>
+        <argsstring>(ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <param>
+          <type>ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3979" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3979" bodyend="3981"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl_1a86c8787ab835bc84a9ad7e3931d644cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_matchers_test::DivisibleByImpl::set_divider</definition>
+        <argsstring>(int a_divider)</argsstring>
+        <name>set_divider</name>
+        <param>
+          <type>int</type>
+          <declname>a_divider</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3983" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3983" bodyend="3983"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl_1afaf102bc25623966dd11805b62e42321" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_matchers_test::DivisibleByImpl::divider</definition>
+        <argsstring>() const</argsstring>
+        <name>divider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3984" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3984" bodyend="3984"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3963" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3963" bodyend="3988"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl_1a9c061ef411c126c604d4c33d92911d50" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::DivisibleByImpl</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl_1aabd14d5f96ef6851141d9ed9fbee3f86" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::DivisibleByImpl</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl_1afaf102bc25623966dd11805b62e42321" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::DivisibleByImpl</scope><name>divider</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl_1a9110419e34b81fd67f07810366a1f0bc" prot="private" virt="non-virtual"><scope>testing::gmock_matchers_test::DivisibleByImpl</scope><name>divider_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl_1aab5d8d383a8cbf112fe087c4f0f3f699" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::DivisibleByImpl</scope><name>DivisibleByImpl</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl_1a2621df4b34315b327e20b6f4d901417d" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::DivisibleByImpl</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl_1a86c8787ab835bc84a9ad7e3931d644cc" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::DivisibleByImpl</scope><name>set_divider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

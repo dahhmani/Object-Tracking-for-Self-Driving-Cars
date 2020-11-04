@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_implicitly_convertible" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::ImplicitlyConvertible</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename From</type>
+      </param>
+      <param>
+        <type>typename <ref refid="classtesting_1_1internal_1_1_to" kindref="compound">To</ref></type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_implicitly_convertible_1aea51cecabca681fb75659e224771b7b7" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool testing::internal::ImplicitlyConvertible&lt; From, To &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>=
+      sizeof(Helper(ImplicitlyConvertible::MakeFrom())) == 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="891" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="891" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_implicitly_convertible_1adb692b091aebd0cde316c8c2c0ab661f" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtesting_1_1internal_1_1_add_reference" kindref="compound">AddReference</ref>&lt; From &gt;::type</type>
+        <definition>static AddReference&lt;From&gt;::type testing::internal::ImplicitlyConvertible&lt; From, To &gt;::MakeFrom</definition>
+        <argsstring>()</argsstring>
+        <name>MakeFrom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="863" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_implicitly_convertible_1a20029a4415e5f9ae152b8fce8b124980" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>static char testing::internal::ImplicitlyConvertible&lt; From, To &gt;::Helper</definition>
+        <argsstring>(To)</argsstring>
+        <name>Helper</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_to" kindref="compound">To</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="875" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_implicitly_convertible_1aba219f30a4cbba407d8141ce53fbfeb7" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char(&amp;</type>
+        <definition>static char(&amp; testing::internal::ImplicitlyConvertible&lt; From, To &gt;::Helper</definition>
+        <argsstring>(...))[2]</argsstring>
+        <name>Helper</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="876" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="855" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="855" bodyend="895"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_implicitly_convertible_1a20029a4415e5f9ae152b8fce8b124980" prot="private" virt="non-virtual"><scope>testing::internal::ImplicitlyConvertible</scope><name>Helper</name></member>
+      <member refid="classtesting_1_1internal_1_1_implicitly_convertible_1aba219f30a4cbba407d8141ce53fbfeb7" prot="private" virt="non-virtual"><scope>testing::internal::ImplicitlyConvertible</scope><name>Helper</name></member>
+      <member refid="classtesting_1_1internal_1_1_implicitly_convertible_1adb692b091aebd0cde316c8c2c0ab661f" prot="private" virt="non-virtual"><scope>testing::internal::ImplicitlyConvertible</scope><name>MakeFrom</name></member>
+      <member refid="classtesting_1_1internal_1_1_implicitly_convertible_1aea51cecabca681fb75659e224771b7b7" prot="public" virt="non-virtual"><scope>testing::internal::ImplicitlyConvertible</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

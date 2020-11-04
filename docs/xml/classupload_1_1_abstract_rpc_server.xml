@@ -1,0 +1,661 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classupload_1_1_abstract_rpc_server" kind="class" language="Python" prot="public">
+    <compoundname>upload::AbstractRpcServer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+    <derivedcompoundref refid="classupload_1_1_http_rpc_server" prot="public" virt="non-virtual">upload.HttpRpcServer</derivedcompoundref>
+    <derivedcompoundref refid="classupload_1_1_http_rpc_server" prot="public" virt="non-virtual">upload.HttpRpcServer</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classupload_1_1_abstract_rpc_server_1ab7188d827e2faddcf970f524f5856192" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.AbstractRpcServer::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="142" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classupload_1_1_abstract_rpc_server_1a783a4a7e4ffb776a57a3f267300a213b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.AbstractRpcServer::host_override</definition>
+        <argsstring></argsstring>
+        <name>host_override</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="143" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classupload_1_1_abstract_rpc_server_1aee0090a3bcf07b913a7dd596a5dabb8f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.AbstractRpcServer::auth_function</definition>
+        <argsstring></argsstring>
+        <name>auth_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="144" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classupload_1_1_abstract_rpc_server_1a692955750c802e461c6336d3000cd365" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.AbstractRpcServer::authenticated</definition>
+        <argsstring></argsstring>
+        <name>authenticated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="145" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classupload_1_1_abstract_rpc_server_1adbbf0109afc13d58d7815fa143cb779f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.AbstractRpcServer::extra_headers</definition>
+        <argsstring></argsstring>
+        <name>extra_headers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="146" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classupload_1_1_abstract_rpc_server_1affe342205c4647d41b127f5a5634858b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.AbstractRpcServer::save_cookies</definition>
+        <argsstring></argsstring>
+        <name>save_cookies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="147" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classupload_1_1_abstract_rpc_server_1aa931446476e0e86f3ade7fef0a0aea5a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.AbstractRpcServer::opener</definition>
+        <argsstring></argsstring>
+        <name>opener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="148" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classupload_1_1_abstract_rpc_server_1a3f6bc1bd16b52bd5a5c33a1fedeef2d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.AbstractRpcServer.__init__</definition>
+        <argsstring>(self, host, auth_function, host_override=None, extra_headers={}, save_cookies=False)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>auth_function</type>
+          <defname>auth_function</defname>
+        </param>
+        <param>
+          <type>host_override</type>
+          <defname>host_override</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>extra_headers</type>
+          <defname>extra_headers</defname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>save_cookies</type>
+          <defname>save_cookies</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Creates a new HttpRpcServer.
+
+Args:
+  host: The host to send requests to.
+  auth_function: A function that takes no arguments and returns an
+(email, password) tuple when called. Will be called if authentication
+is required.
+  host_override: The host header to send to the server (defaults to host).
+  extra_headers: A dict of extra headers to append to every request.
+  save_cookies: If True, save the authentication cookies to local disk.
+If False, use an in-memory cookiejar instead.  Subclasses must
+implement this functionality.  Defaults to False.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="127" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="128" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_abstract_rpc_server_1ac1b913f8bd00da4741c47ab49ea94cb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.AbstractRpcServer.Send</definition>
+        <argsstring>(self, request_path, payload=None, content_type=&quot;application/octet-stream&quot;, timeout=None, kwargs)</argsstring>
+        <name>Send</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>request_path</type>
+          <defname>request_path</defname>
+        </param>
+        <param>
+          <type>payload</type>
+          <defname>payload</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>content_type</type>
+          <defname>content_type</defname>
+          <defval>&quot;application/octet-stream&quot;</defval>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Sends an RPC and returns the response.
+
+Args:
+  request_path: The path to send the request to, eg /api/appversion/create.
+  payload: The body of the request, or None to send an empty request.
+  content_type: The Content-Type header to use.
+  timeout: timeout in seconds; default None i.e. no timeout.
+(Note: for large requests on OS X, the timeout doesn&apos;t work right.)
+  kwargs: Any keyword arguments are converted into query string parameters.
+
+Returns:
+  The response body, as a string.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="291" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="294" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_abstract_rpc_server_1a3f6bc1bd16b52bd5a5c33a1fedeef2d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.AbstractRpcServer.__init__</definition>
+        <argsstring>(self, host, auth_function, host_override=None, extra_headers={}, save_cookies=False)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>auth_function</type>
+          <defname>auth_function</defname>
+        </param>
+        <param>
+          <type>host_override</type>
+          <defname>host_override</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>extra_headers</type>
+          <defname>extra_headers</defname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>save_cookies</type>
+          <defname>save_cookies</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Creates a new HttpRpcServer.
+
+Args:
+  host: The host to send requests to.
+  auth_function: A function that takes no arguments and returns an
+(email, password) tuple when called. Will be called if authentication
+is required.
+  host_override: The host header to send to the server (defaults to host).
+  extra_headers: A dict of extra headers to append to every request.
+  save_cookies: If True, save the authentication cookies to local disk.
+If False, use an in-memory cookiejar instead.  Subclasses must
+implement this functionality.  Defaults to False.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="127" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="128" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_abstract_rpc_server_1ac1b913f8bd00da4741c47ab49ea94cb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.AbstractRpcServer.Send</definition>
+        <argsstring>(self, request_path, payload=None, content_type=&quot;application/octet-stream&quot;, timeout=None, kwargs)</argsstring>
+        <name>Send</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>request_path</type>
+          <defname>request_path</defname>
+        </param>
+        <param>
+          <type>payload</type>
+          <defname>payload</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>content_type</type>
+          <defname>content_type</defname>
+          <defval>&quot;application/octet-stream&quot;</defval>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Sends an RPC and returns the response.
+
+Args:
+  request_path: The path to send the request to, eg /api/appversion/create.
+  payload: The body of the request, or None to send an empty request.
+  content_type: The Content-Type header to use.
+  timeout: timeout in seconds; default None i.e. no timeout.
+(Note: for large requests on OS X, the timeout doesn&apos;t work right.)
+  kwargs: Any keyword arguments are converted into query string parameters.
+
+Returns:
+  The response body, as a string.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="291" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="294" bodyend="334"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classupload_1_1_abstract_rpc_server_1a388a9974eab1157ba4785e2ab2c33be9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.AbstractRpcServer._GetOpener</definition>
+        <argsstring>(self)</argsstring>
+        <name>_GetOpener</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns an OpenerDirector for making HTTP requests.
+
+Returns:
+  A urllib2.OpenerDirector object.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="154" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="154" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_abstract_rpc_server_1a1553c79619eec0770932cd4fa325243c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.AbstractRpcServer._CreateRequest</definition>
+        <argsstring>(self, url, data=None)</argsstring>
+        <name>_CreateRequest</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>url</type>
+          <defname>url</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Creates a new urllib request.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="162" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="162" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_abstract_rpc_server_1a5a801cc3fdbb8222fa58d41e098f70a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.AbstractRpcServer._GetAuthToken</definition>
+        <argsstring>(self, email, password)</argsstring>
+        <name>_GetAuthToken</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>email</type>
+          <defname>email</defname>
+        </param>
+        <param>
+          <type>password</type>
+          <defname>password</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Uses ClientLogin to authenticate the user, returning an auth token.
+
+Args:
+  email:    The user&apos;s email address
+  password: The user&apos;s password
+
+Raises:
+  ClientLoginError: If there was an error authenticating with ClientLogin.
+  HTTPError: If there was some other form of HTTP error.
+
+Returns:
+  The authentication token returned by ClientLogin.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="172" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="172" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_abstract_rpc_server_1a45ba7a36fd840608f532694be6b6a9ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.AbstractRpcServer._GetAuthCookie</definition>
+        <argsstring>(self, auth_token)</argsstring>
+        <name>_GetAuthCookie</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>auth_token</type>
+          <defname>auth_token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Fetches authentication cookies for an authentication token.
+
+Args:
+  auth_token: The authentication token returned by ClientLogin.
+
+Raises:
+  HTTPError: If there was an error fetching the authentication cookies.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="215" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="215" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_abstract_rpc_server_1a8517a9d90ee2478752a53302f01d868d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.AbstractRpcServer._Authenticate</definition>
+        <argsstring>(self)</argsstring>
+        <name>_Authenticate</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Authenticates the user.
+
+The authentication process works as follows:
+ 1) We get a username and password from the user
+ 2) We use ClientLogin to obtain an AUTH token for the user
+(see http://code.google.com/apis/accounts/AuthForInstalledApps.html).
+ 3) We pass the auth token to /_ah/login on the server to obtain an
+authentication cookie. If login was successful, it tries to redirect
+us to the URL we provided.
+
+If we attempt to access the upload API without first obtaining an
+authentication cookie, it returns a 401 response and directs us to
+authenticate ourselves with ClientLogin.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="239" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="239" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_abstract_rpc_server_1a388a9974eab1157ba4785e2ab2c33be9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.AbstractRpcServer._GetOpener</definition>
+        <argsstring>(self)</argsstring>
+        <name>_GetOpener</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns an OpenerDirector for making HTTP requests.
+
+Returns:
+  A urllib2.OpenerDirector object.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="154" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="154" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_abstract_rpc_server_1a1553c79619eec0770932cd4fa325243c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.AbstractRpcServer._CreateRequest</definition>
+        <argsstring>(self, url, data=None)</argsstring>
+        <name>_CreateRequest</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>url</type>
+          <defname>url</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Creates a new urllib request.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="162" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="162" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_abstract_rpc_server_1a5a801cc3fdbb8222fa58d41e098f70a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.AbstractRpcServer._GetAuthToken</definition>
+        <argsstring>(self, email, password)</argsstring>
+        <name>_GetAuthToken</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>email</type>
+          <defname>email</defname>
+        </param>
+        <param>
+          <type>password</type>
+          <defname>password</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Uses ClientLogin to authenticate the user, returning an auth token.
+
+Args:
+  email:    The user&apos;s email address
+  password: The user&apos;s password
+
+Raises:
+  ClientLoginError: If there was an error authenticating with ClientLogin.
+  HTTPError: If there was some other form of HTTP error.
+
+Returns:
+  The authentication token returned by ClientLogin.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="172" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="172" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_abstract_rpc_server_1a45ba7a36fd840608f532694be6b6a9ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.AbstractRpcServer._GetAuthCookie</definition>
+        <argsstring>(self, auth_token)</argsstring>
+        <name>_GetAuthCookie</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>auth_token</type>
+          <defname>auth_token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Fetches authentication cookies for an authentication token.
+
+Args:
+  auth_token: The authentication token returned by ClientLogin.
+
+Raises:
+  HTTPError: If there was an error fetching the authentication cookies.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="215" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="215" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_abstract_rpc_server_1a8517a9d90ee2478752a53302f01d868d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.AbstractRpcServer._Authenticate</definition>
+        <argsstring>(self)</argsstring>
+        <name>_Authenticate</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Authenticates the user.
+
+The authentication process works as follows:
+ 1) We get a username and password from the user
+ 2) We use ClientLogin to obtain an AUTH token for the user
+(see http://code.google.com/apis/accounts/AuthForInstalledApps.html).
+ 3) We pass the auth token to /_ah/login on the server to obtain an
+authentication cookie. If login was successful, it tries to redirect
+us to the URL we provided.
+
+If we attempt to access the upload API without first obtaining an
+authentication cookie, it returns a 401 response and directs us to
+authenticate ourselves with ClientLogin.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="239" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="239" bodyend="290"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Provides a common interface for a simple RPC server.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="30">
+        <label>upload.AbstractRpcServer</label>
+        <link refid="classupload_1_1_abstract_rpc_server"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>object</label>
+      </node>
+      <node id="32">
+        <label>upload.HttpRpcServer</label>
+        <link refid="classupload_1_1_http_rpc_server"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="33">
+        <label>upload.AbstractRpcServer</label>
+        <link refid="classupload_1_1_abstract_rpc_server"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/upload.py" line="124" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="124" bodyend="335"/>
+    <listofallmembers>
+      <member refid="classupload_1_1_abstract_rpc_server_1a3f6bc1bd16b52bd5a5c33a1fedeef2d0" prot="public" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>__init__</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1a3f6bc1bd16b52bd5a5c33a1fedeef2d0" prot="public" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>__init__</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1a8517a9d90ee2478752a53302f01d868d" prot="private" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>_Authenticate</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1a8517a9d90ee2478752a53302f01d868d" prot="private" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>_Authenticate</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1a1553c79619eec0770932cd4fa325243c" prot="private" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>_CreateRequest</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1a1553c79619eec0770932cd4fa325243c" prot="private" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>_CreateRequest</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1a45ba7a36fd840608f532694be6b6a9ae" prot="private" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>_GetAuthCookie</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1a45ba7a36fd840608f532694be6b6a9ae" prot="private" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>_GetAuthCookie</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1a5a801cc3fdbb8222fa58d41e098f70a7" prot="private" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>_GetAuthToken</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1a5a801cc3fdbb8222fa58d41e098f70a7" prot="private" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>_GetAuthToken</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1a388a9974eab1157ba4785e2ab2c33be9" prot="private" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>_GetOpener</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1a388a9974eab1157ba4785e2ab2c33be9" prot="private" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>_GetOpener</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1aee0090a3bcf07b913a7dd596a5dabb8f" prot="public" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>auth_function</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1a692955750c802e461c6336d3000cd365" prot="public" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>authenticated</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1adbbf0109afc13d58d7815fa143cb779f" prot="public" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>extra_headers</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1ab7188d827e2faddcf970f524f5856192" prot="public" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>host</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1a783a4a7e4ffb776a57a3f267300a213b" prot="public" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>host_override</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1aa931446476e0e86f3ade7fef0a0aea5a" prot="public" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>opener</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1affe342205c4647d41b127f5a5634858b" prot="public" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>save_cookies</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1ac1b913f8bd00da4741c47ab49ea94cb5" prot="public" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>Send</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1ac1b913f8bd00da4741c47ab49ea94cb5" prot="public" virt="non-virtual"><scope>upload::AbstractRpcServer</scope><name>Send</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

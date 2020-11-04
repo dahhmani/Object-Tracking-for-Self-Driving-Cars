@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_google_test_failure_reporter" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::GoogleTestFailureReporter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">FailureReporterInterface</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_google_test_failure_reporter_1a9b2f81e6c5b6e9f618fd75cc3e27e94c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::GoogleTestFailureReporter::ReportFailure</definition>
+        <argsstring>(FailureType type, const char *file, int line, const string &amp;message)</argsstring>
+        <name>ReportFailure</name>
+        <param>
+          <type>FailureType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/src/gmock-internal-utils.cc" line="78" column="1" bodyfile="vendor/googletest/googlemock/src/gmock-internal-utils.cc" bodystart="78" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="976">
+        <label>FailureReporterInterface</label>
+      </node>
+      <node id="975">
+        <label>testing::internal::GoogleTestFailureReporter</label>
+        <link refid="classtesting_1_1internal_1_1_google_test_failure_reporter"/>
+        <childnode refid="976" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="978">
+        <label>FailureReporterInterface</label>
+      </node>
+      <node id="977">
+        <label>testing::internal::GoogleTestFailureReporter</label>
+        <link refid="classtesting_1_1internal_1_1_google_test_failure_reporter"/>
+        <childnode refid="978" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/src/gmock-internal-utils.cc" line="76" column="1" bodyfile="vendor/googletest/googlemock/src/gmock-internal-utils.cc" bodystart="76" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_google_test_failure_reporter_1a9b2f81e6c5b6e9f618fd75cc3e27e94c" prot="public" virt="virtual"><scope>testing::internal::GoogleTestFailureReporter</scope><name>ReportFailure</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

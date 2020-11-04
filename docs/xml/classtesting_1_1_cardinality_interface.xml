@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_cardinality_interface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>testing::CardinalityInterface</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_cardinality_interface_1a8d9f9fcf50e5517a7c28a97c1d0737d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual testing::CardinalityInterface::~CardinalityInterface</definition>
+        <argsstring>()</argsstring>
+        <name>~CardinalityInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-cardinalities.h" line="61" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-cardinalities.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_cardinality_interface_1a1aff90c45ff45658fee99d15fd0a6f89" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int testing::CardinalityInterface::ConservativeLowerBound</definition>
+        <argsstring>() const</argsstring>
+        <name>ConservativeLowerBound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-cardinalities.h" line="65" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-cardinalities.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_cardinality_interface_1ac741b28605377d603623dddf4b1c8d33" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int testing::CardinalityInterface::ConservativeUpperBound</definition>
+        <argsstring>() const</argsstring>
+        <name>ConservativeUpperBound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-cardinalities.h" line="66" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-cardinalities.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_cardinality_interface_1af89684f4ea6d9de331abf7958754d8f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool testing::CardinalityInterface::IsSatisfiedByCallCount</definition>
+        <argsstring>(int call_count) const =0</argsstring>
+        <name>IsSatisfiedByCallCount</name>
+        <param>
+          <type>int</type>
+          <declname>call_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-cardinalities.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_cardinality_interface_1a42508cff9627de2e6f9c1ec33a7d8bf2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool testing::CardinalityInterface::IsSaturatedByCallCount</definition>
+        <argsstring>(int call_count) const =0</argsstring>
+        <name>IsSaturatedByCallCount</name>
+        <param>
+          <type>int</type>
+          <declname>call_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-cardinalities.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_cardinality_interface_1a8a93e3bbf24d14fe21186802ecef0929" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void testing::CardinalityInterface::DescribeTo</definition>
+        <argsstring>(::std::ostream *os) const =0</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-cardinalities.h" line="75" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-cardinalities.h" line="59" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-cardinalities.h" bodystart="59" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_cardinality_interface_1a1aff90c45ff45658fee99d15fd0a6f89" prot="public" virt="virtual"><scope>testing::CardinalityInterface</scope><name>ConservativeLowerBound</name></member>
+      <member refid="classtesting_1_1_cardinality_interface_1ac741b28605377d603623dddf4b1c8d33" prot="public" virt="virtual"><scope>testing::CardinalityInterface</scope><name>ConservativeUpperBound</name></member>
+      <member refid="classtesting_1_1_cardinality_interface_1a8a93e3bbf24d14fe21186802ecef0929" prot="public" virt="pure-virtual"><scope>testing::CardinalityInterface</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1_cardinality_interface_1af89684f4ea6d9de331abf7958754d8f1" prot="public" virt="pure-virtual"><scope>testing::CardinalityInterface</scope><name>IsSatisfiedByCallCount</name></member>
+      <member refid="classtesting_1_1_cardinality_interface_1a42508cff9627de2e6f9c1ec33a7d8bf2" prot="public" virt="pure-virtual"><scope>testing::CardinalityInterface</scope><name>IsSaturatedByCallCount</name></member>
+      <member refid="classtesting_1_1_cardinality_interface_1a8d9f9fcf50e5517a7c28a97c1d0737d8" prot="public" virt="virtual"><scope>testing::CardinalityInterface</scope><name>~CardinalityInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_int_value" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::IntValue</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1gmock__matchers__test_1_1_int_value_1a1adaa220476c0f29549b36606df3155f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::gmock_matchers_test::IntValue::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="545" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="545" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_int_value_1a2a294fcf7ad9f4d9888c4e6194fcd848" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::IntValue::IntValue</definition>
+        <argsstring>(int a_value)</argsstring>
+        <name>IntValue</name>
+        <param>
+          <type>int</type>
+          <declname>a_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="541" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="541" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_int_value_1a6da000ea8ff787591e07ffaa3c1027d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_matchers_test::IntValue::value</definition>
+        <argsstring>() const</argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="543" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="543" bodyend="543"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="537" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="537" bodyend="546"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_int_value_1a2a294fcf7ad9f4d9888c4e6194fcd848" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::IntValue</scope><name>IntValue</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_int_value_1a6da000ea8ff787591e07ffaa3c1027d4" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::IntValue</scope><name>value</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_int_value_1a1adaa220476c0f29549b36606df3155f" prot="private" virt="non-virtual"><scope>testing::gmock_matchers_test::IntValue</scope><name>value_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

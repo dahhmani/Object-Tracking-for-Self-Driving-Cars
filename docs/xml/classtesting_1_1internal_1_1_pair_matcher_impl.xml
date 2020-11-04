@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_pair_matcher_impl" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::PairMatcherImpl</compoundname>
+    <basecompoundref refid="classtesting_1_1_matcher_interface" prot="public" virt="non-virtual">testing::MatcherInterface&lt; PairType &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename PairType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_pair_matcher_impl_1a9de66d76f0ebb0f107a9c18903b03176" prot="public" static="no">
+        <type>RawPairType::first_type</type>
+        <definition>typedef RawPairType::first_type testing::internal::PairMatcherImpl&lt; PairType &gt;::FirstType</definition>
+        <argsstring></argsstring>
+        <name>FirstType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3004" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3004" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_pair_matcher_impl_1ad63c9ff4f1aff81562efca293ff5aca9" prot="public" static="no">
+        <type>RawPairType::second_type</type>
+        <definition>typedef RawPairType::second_type testing::internal::PairMatcherImpl&lt; PairType &gt;::SecondType</definition>
+        <argsstring></argsstring>
+        <name>SecondType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3005" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3005" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_pair_matcher_impl_1a70e5a952ffd16886f5f1bacc718561f8" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; const FirstType &amp; &gt;</type>
+        <definition>const Matcher&lt;const FirstType&amp;&gt; testing::internal::PairMatcherImpl&lt; PairType &gt;::first_matcher_</definition>
+        <argsstring></argsstring>
+        <name>first_matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3079" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3079" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_pair_matcher_impl_1a2341ad72afa02dcadb98c531cada3576" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; const SecondType &amp; &gt;</type>
+        <definition>const Matcher&lt;const SecondType&amp;&gt; testing::internal::PairMatcherImpl&lt; PairType &gt;::second_matcher_</definition>
+        <argsstring></argsstring>
+        <name>second_matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3080" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3080" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pair_matcher_impl_1aa035224a7b73b2af1d1d27226a479241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef testing::internal::PairMatcherImpl&lt; PairType &gt;::GTEST_REMOVE_REFERENCE_AND_CONST_</definition>
+        <argsstring>(PairType) RawPairType</argsstring>
+        <name>GTEST_REMOVE_REFERENCE_AND_CONST_</name>
+        <param>
+          <type>PairType</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3003" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pair_matcher_impl_1ae2615e785df46255c8695a5972ca510a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename FirstMatcher</type>
+          </param>
+          <param>
+            <type>typename SecondMatcher</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::internal::PairMatcherImpl&lt; PairType &gt;::PairMatcherImpl</definition>
+        <argsstring>(FirstMatcher first_matcher, SecondMatcher second_matcher)</argsstring>
+        <name>PairMatcherImpl</name>
+        <param>
+          <type>FirstMatcher</type>
+          <declname>first_matcher</declname>
+        </param>
+        <param>
+          <type>SecondMatcher</type>
+          <declname>second_matcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3008" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3008" bodyend="3013"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pair_matcher_impl_1ad4b5139aa8a3cdcc178c9d81b98d95f0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::PairMatcherImpl&lt; PairType &gt;::DescribeTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <reimplements refid="classtesting_1_1_matcher_describer_interface_1ad9f861588bd969b6e3e717f13bb94e7b">DescribeTo</reimplements>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3016" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3016" bodyend="3021"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pair_matcher_impl_1a41ef8b1ae031cf342a380e2f2fb2a526" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::PairMatcherImpl&lt; PairType &gt;::DescribeNegationTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <reimplements refid="classtesting_1_1_matcher_describer_interface_1a2071afbc47097c4d1c0064275af34db0">DescribeNegationTo</reimplements>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3024" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3024" bodyend="3029"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pair_matcher_impl_1a1bba47f97cbf50a1f6331d3f7bfd47a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool testing::internal::PairMatcherImpl&lt; PairType &gt;::MatchAndExplain</definition>
+        <argsstring>(PairType a_pair, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplain</name>
+        <reimplements refid="classtesting_1_1_matcher_interface_1a296b43607cd99d60365f0e6a762777cf">MatchAndExplain</reimplements>
+        <param>
+          <type>PairType</type>
+          <declname>a_pair</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3033" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3033" bodyend="3058"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pair_matcher_impl_1ae73fee9c00b8be4b596ad13b8b6eaa09" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::PairMatcherImpl&lt; PairType &gt;::ExplainSuccess</definition>
+        <argsstring>(const internal::string &amp;first_explanation, const internal::string &amp;second_explanation, MatchResultListener *listener) const</argsstring>
+        <name>ExplainSuccess</name>
+        <param>
+          <type>const internal::string &amp;</type>
+          <declname>first_explanation</declname>
+        </param>
+        <param>
+          <type>const internal::string &amp;</type>
+          <declname>second_explanation</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3061" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3061" bodyend="3077"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pair_matcher_impl_1a4c662796fe757a60292da3177cf3152a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::PairMatcherImpl&lt; PairType &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(PairMatcherImpl)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_pair_matcher_impl" kindref="compound">PairMatcherImpl</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3082" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1705">
+        <label>testing::internal::PairMatcherImpl&lt; PairType &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_pair_matcher_impl"/>
+        <childnode refid="1706" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1707">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="1706">
+        <label>testing::MatcherInterface&lt; PairType &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="1707" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1708">
+        <label>testing::internal::PairMatcherImpl&lt; PairType &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_pair_matcher_impl"/>
+        <childnode refid="1709" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1710">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="1709">
+        <label>testing::MatcherInterface&lt; PairType &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="1710" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3001" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3001" bodyend="3083"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_pair_matcher_impl_1a41ef8b1ae031cf342a380e2f2fb2a526" prot="public" virt="virtual"><scope>testing::internal::PairMatcherImpl</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_matcher_impl_1ad4b5139aa8a3cdcc178c9d81b98d95f0" prot="public" virt="virtual"><scope>testing::internal::PairMatcherImpl</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_matcher_impl_1ae73fee9c00b8be4b596ad13b8b6eaa09" prot="private" virt="non-virtual"><scope>testing::internal::PairMatcherImpl</scope><name>ExplainSuccess</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_matcher_impl_1a70e5a952ffd16886f5f1bacc718561f8" prot="private" virt="non-virtual"><scope>testing::internal::PairMatcherImpl</scope><name>first_matcher_</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_matcher_impl_1a9de66d76f0ebb0f107a9c18903b03176" prot="public" virt="non-virtual"><scope>testing::internal::PairMatcherImpl</scope><name>FirstType</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_matcher_impl_1a4c662796fe757a60292da3177cf3152a" prot="private" virt="non-virtual"><scope>testing::internal::PairMatcherImpl</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_matcher_impl_1aa035224a7b73b2af1d1d27226a479241" prot="public" virt="non-virtual"><scope>testing::internal::PairMatcherImpl</scope><name>GTEST_REMOVE_REFERENCE_AND_CONST_</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_matcher_impl_1a1bba47f97cbf50a1f6331d3f7bfd47a1" prot="public" virt="virtual"><scope>testing::internal::PairMatcherImpl</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_matcher_impl_1ae2615e785df46255c8695a5972ca510a" prot="public" virt="non-virtual"><scope>testing::internal::PairMatcherImpl</scope><name>PairMatcherImpl</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_matcher_impl_1a2341ad72afa02dcadb98c531cada3576" prot="private" virt="non-virtual"><scope>testing::internal::PairMatcherImpl</scope><name>second_matcher_</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_matcher_impl_1ad63c9ff4f1aff81562efca293ff5aca9" prot="public" virt="non-virtual"><scope>testing::internal::PairMatcherImpl</scope><name>SecondType</name></member>
+      <member refid="classtesting_1_1_matcher_describer_interface_1ae2236a56ad2cc35cad10efc1208854f4" prot="public" virt="virtual"><scope>testing::internal::PairMatcherImpl</scope><name>~MatcherDescriberInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

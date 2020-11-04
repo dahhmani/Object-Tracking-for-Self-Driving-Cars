@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_default_value_1_1_fixed_value_producer" kind="class" language="C++" prot="private">
+    <compoundname>testing::DefaultValue::FixedValueProducer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">testing::DefaultValue&lt; T &gt;::ValueProducer</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1_default_value_1_1_fixed_value_producer_1a54b7bf74121bd34319ebbe80e1aaa190" prot="private" static="no" mutable="no">
+        <type>const T</type>
+        <definition>const T testing::DefaultValue&lt; T &gt;::FixedValueProducer::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="254" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_default_value_1_1_fixed_value_producer_1a694f403694251385d385587b61a4ac95" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::DefaultValue&lt; T &gt;::FixedValueProducer::FixedValueProducer</definition>
+        <argsstring>(T value)</argsstring>
+        <name>FixedValueProducer</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="250" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="250" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_default_value_1_1_fixed_value_producer_1ad7f695192e9dbc5f54cdb405655e7125" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>T</type>
+        <definition>virtual T testing::DefaultValue&lt; T &gt;::FixedValueProducer::Produce</definition>
+        <argsstring>()</argsstring>
+        <name>Produce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="251" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="251" bodyend="251"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1_default_value_1_1_fixed_value_producer_1aeadb3fbaf90b8a20612b124a39809e30" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::DefaultValue&lt; T &gt;::FixedValueProducer::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(FixedValueProducer)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type>FixedValueProducer</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="255" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="574">
+        <label>testing::DefaultValue&lt; T &gt;::FixedValueProducer</label>
+        <childnode refid="575" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="575">
+        <label>testing::DefaultValue&lt; T &gt;::ValueProducer</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="576">
+        <label>testing::DefaultValue&lt; T &gt;::FixedValueProducer</label>
+        <childnode refid="577" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="577">
+        <label>testing::DefaultValue&lt; T &gt;::ValueProducer</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="248" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="248" bodyend="256"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_default_value_1_1_fixed_value_producer_1a694f403694251385d385587b61a4ac95" prot="public" virt="non-virtual"><scope>testing::DefaultValue::FixedValueProducer</scope><name>FixedValueProducer</name></member>
+      <member refid="classtesting_1_1_default_value_1_1_fixed_value_producer_1aeadb3fbaf90b8a20612b124a39809e30" prot="private" virt="non-virtual"><scope>testing::DefaultValue::FixedValueProducer</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1_default_value_1_1_fixed_value_producer_1ad7f695192e9dbc5f54cdb405655e7125" prot="public" virt="virtual"><scope>testing::DefaultValue::FixedValueProducer</scope><name>Produce</name></member>
+      <member refid="classtesting_1_1_default_value_1_1_fixed_value_producer_1a54b7bf74121bd34319ebbe80e1aaa190" prot="private" virt="non-virtual"><scope>testing::DefaultValue::FixedValueProducer</scope><name>value_</name></member>
+      <member refid="classtesting_1_1_default_value_1_1_value_producer_1aa78c53c5676f4df0efc5c319f8715963" prot="public" virt="virtual"><scope>testing::DefaultValue::FixedValueProducer</scope><name>~ValueProducer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

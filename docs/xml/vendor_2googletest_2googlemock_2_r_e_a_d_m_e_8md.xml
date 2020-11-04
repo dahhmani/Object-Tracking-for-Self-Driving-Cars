@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="vendor_2googletest_2googlemock_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##<sp/>Google<sp/>Mock<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>Google<sp/>C++<sp/>mocking<sp/>framework.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Overview<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google&apos;s<sp/>framework<sp/>for<sp/>writing<sp/>and<sp/>using<sp/>C++<sp/>mock<sp/>classes.</highlight></codeline>
+<codeline><highlight class="normal">It<sp/>can<sp/>help<sp/>you<sp/>derive<sp/>better<sp/>designs<sp/>of<sp/>your<sp/>system<sp/>and<sp/>write<sp/>better<sp/>tests.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">It<sp/>is<sp/>inspired<sp/>by:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[jMock](http://www.jmock.org/),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[EasyMock](http://www.easymock.org/),<sp/>and</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[Hamcrest](http://code.google.com/p/hamcrest/),</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">and<sp/>designed<sp/>with<sp/>C++&apos;s<sp/>specifics<sp/>in<sp/>mind.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>mock:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>lets<sp/>you<sp/>create<sp/>mock<sp/>classes<sp/>trivially<sp/>using<sp/>simple<sp/>macros.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>supports<sp/>a<sp/>rich<sp/>set<sp/>of<sp/>matchers<sp/>and<sp/>actions.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>handles<sp/>unordered,<sp/>partially<sp/>ordered,<sp/>or<sp/>completely<sp/>ordered<sp/>expectations.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>is<sp/>extensible<sp/>by<sp/>users.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>hope<sp/>you<sp/>find<sp/>it<sp/>useful!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Features<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Provides<sp/>a<sp/>declarative<sp/>syntax<sp/>for<sp/>defining<sp/>mocks.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Can<sp/>easily<sp/>define<sp/>partial<sp/>(hybrid)<sp/>mocks,<sp/>which<sp/>are<sp/>a<sp/>cross<sp/>of<sp/>real</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>and<sp/>mock<sp/>objects.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Handles<sp/>functions<sp/>of<sp/>arbitrary<sp/>types<sp/>and<sp/>overloaded<sp/>functions.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Comes<sp/>with<sp/>a<sp/>rich<sp/>set<sp/>of<sp/>matchers<sp/>for<sp/>validating<sp/>function<sp/>arguments.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Uses<sp/>an<sp/>intuitive<sp/>syntax<sp/>for<sp/>controlling<sp/>the<sp/>behavior<sp/>of<sp/>a<sp/>mock.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Does<sp/>automatic<sp/>verification<sp/>of<sp/>expectations<sp/>(no<sp/>record-and-replay<sp/>needed).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Allows<sp/>arbitrary<sp/>(partial)<sp/>ordering<sp/>constraints<sp/>on</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>function<sp/>calls<sp/>to<sp/>be<sp/>expressed,.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Lets<sp/>a<sp/>user<sp/>extend<sp/>it<sp/>by<sp/>defining<sp/>new<sp/>matchers<sp/>and<sp/>actions.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Does<sp/>not<sp/>use<sp/>exceptions.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Is<sp/>easy<sp/>to<sp/>learn<sp/>and<sp/>use.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Please<sp/>see<sp/>the<sp/>project<sp/>page<sp/>above<sp/>for<sp/>more<sp/>information<sp/>as<sp/>well<sp/>as<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">mailing<sp/>list<sp/>for<sp/>questions,<sp/>discussions,<sp/>and<sp/>development.<sp/><sp/>There<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">also<sp/>an<sp/>IRC<sp/>channel<sp/>on<sp/>OFTC<sp/>(irc.oftc.net)<sp/>#gtest<sp/>available.<sp/><sp/>Please</highlight></codeline>
+<codeline><highlight class="normal">join<sp/>us!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Please<sp/>note<sp/>that<sp/>code<sp/>under<sp/>[scripts/generator](scripts/generator/)<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>[cppclean](http://code.google.com/p/cppclean/)<sp/>and<sp/>released<sp/>under</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>Apache<sp/>License,<sp/>which<sp/>is<sp/>different<sp/>from<sp/>Google<sp/>Mock&apos;s<sp/>license.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Getting<sp/>Started<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>are<sp/>new<sp/>to<sp/>the<sp/>project,<sp/>we<sp/>suggest<sp/>that<sp/>you<sp/>read<sp/>the<sp/>user</highlight></codeline>
+<codeline><highlight class="normal">documentation<sp/>in<sp/>the<sp/>following<sp/>order:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Learn<sp/>the<sp/>[basics](../googletest/docs/Primer.md)<sp/>of</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Google<sp/>Test,<sp/>if<sp/>you<sp/>choose<sp/>to<sp/>use<sp/>Google<sp/>Mock<sp/>with<sp/>it<sp/>(recommended).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Read<sp/>[Google<sp/>Mock<sp/>for<sp/>Dummies](docs/ForDummies.md).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Read<sp/>the<sp/>instructions<sp/>below<sp/>on<sp/>how<sp/>to<sp/>build<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>also<sp/>watch<sp/>Zhanyong&apos;s<sp/>[talk](http://www.youtube.com/watch?v=sYpCyLI47rM)<sp/>on<sp/>Google<sp/>Mock&apos;s<sp/>usage<sp/>and<sp/>implementation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Once<sp/>you<sp/>understand<sp/>the<sp/>basics,<sp/>check<sp/>out<sp/>the<sp/>rest<sp/>of<sp/>the<sp/>docs:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[CheatSheet](docs/CheatSheet.md)<sp/>-<sp/>all<sp/>the<sp/>commonly<sp/>used<sp/>stuff</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>at<sp/>a<sp/>glance.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[CookBook](docs/CookBook.md)<sp/>-<sp/>recipes<sp/>for<sp/>getting<sp/>things<sp/>done,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>including<sp/>advanced<sp/>techniques.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>need<sp/>help,<sp/>please<sp/>check<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">[KnownIssues](docs/KnownIssues.md)<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">[FrequentlyAskedQuestions](docs/FrequentlyAskedQuestions.md)<sp/>before</highlight></codeline>
+<codeline><highlight class="normal">posting<sp/>a<sp/>question<sp/>on<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">[discussion<sp/>group](http://groups.google.com/group/googlemock).</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Using<sp/>Google<sp/>Mock<sp/>Without<sp/>Google<sp/>Test<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Mock<sp/>is<sp/>not<sp/>a<sp/>testing<sp/>framework<sp/>itself.<sp/><sp/>Instead,<sp/>it<sp/>needs<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">testing<sp/>framework<sp/>for<sp/>writing<sp/>tests.<sp/><sp/>Google<sp/>Mock<sp/>works<sp/>seamlessly</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>[Google<sp/>Test](http://code.google.com/p/googletest/),<sp/>but</highlight></codeline>
+<codeline><highlight class="normal">you<sp/>can<sp/>also<sp/>use<sp/>it<sp/>with<sp/>[any<sp/>C++<sp/>testing<sp/>framework](googlemock/ForDummies.md#Using_Google_Mock_with_Any_Testing_Framework).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Requirements<sp/>for<sp/>End<sp/>Users<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Mock<sp/>is<sp/>implemented<sp/>on<sp/>top<sp/>of<sp/>[Google<sp/>Test](</highlight></codeline>
+<codeline><highlight class="normal">http://github.com/google/googletest/),<sp/>and<sp/>depends<sp/>on<sp/>it.</highlight></codeline>
+<codeline><highlight class="normal">You<sp/>must<sp/>use<sp/>the<sp/>bundled<sp/>version<sp/>of<sp/>Google<sp/>Test<sp/>when<sp/>using<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>also<sp/>easily<sp/>configure<sp/>Google<sp/>Mock<sp/>to<sp/>work<sp/>with<sp/>another<sp/>testing</highlight></codeline>
+<codeline><highlight class="normal">framework,<sp/>although<sp/>it<sp/>will<sp/>still<sp/>need<sp/>Google<sp/>Test.<sp/><sp/>Please<sp/>read</highlight></codeline>
+<codeline><highlight class="normal">[&quot;Using_Google_Mock_with_Any_Testing_Framework&quot;](</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>docs/ForDummies.md#Using_Google_Mock_with_Any_Testing_Framework)</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>instructions.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Mock<sp/>depends<sp/>on<sp/>advanced<sp/>C++<sp/>features<sp/>and<sp/>thus<sp/>requires<sp/>a<sp/>more</highlight></codeline>
+<codeline><highlight class="normal">modern<sp/>compiler.<sp/>The<sp/>following<sp/>are<sp/>needed<sp/>to<sp/>use<sp/>Google<sp/>Mock:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Linux<sp/>Requirements<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>GNU-compatible<sp/>Make<sp/>or<sp/>&quot;gmake&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>POSIX-standard<sp/>shell</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>POSIX(-2)<sp/>Regular<sp/>Expressions<sp/>(regex.h)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>C++98-standard-compliant<sp/>compiler<sp/>(e.g.<sp/>GCC<sp/>3.4<sp/>or<sp/>newer)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Windows<sp/>Requirements<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Microsoft<sp/>Visual<sp/>C++<sp/>8.0<sp/>SP1<sp/>or<sp/>newer</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Mac<sp/>OS<sp/>X<sp/>Requirements<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Mac<sp/>OS<sp/>X<sp/>10.4<sp/>Tiger<sp/>or<sp/>newer</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Developer<sp/>Tools<sp/>Installed</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Requirements<sp/>for<sp/>Contributors<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>welcome<sp/>patches.<sp/>If<sp/>you<sp/>plan<sp/>to<sp/>contribute<sp/>a<sp/>patch,<sp/>you<sp/>need<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">build<sp/>Google<sp/>Mock<sp/>and<sp/>its<sp/>tests,<sp/>which<sp/>has<sp/>further<sp/>requirements:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Automake<sp/>version<sp/>1.9<sp/>or<sp/>newer</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Autoconf<sp/>version<sp/>2.59<sp/>or<sp/>newer</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Libtool<sp/>/<sp/>Libtoolize</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Python<sp/>version<sp/>2.3<sp/>or<sp/>newer<sp/>(for<sp/>running<sp/>some<sp/>of<sp/>the<sp/>tests<sp/>and</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>re-generating<sp/>certain<sp/>source<sp/>files<sp/>from<sp/>templates)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Building<sp/>Google<sp/>Mock<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Preparing<sp/>to<sp/>Build<sp/>(Unix<sp/>only)<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>are<sp/>using<sp/>a<sp/>Unix<sp/>system<sp/>and<sp/>plan<sp/>to<sp/>use<sp/>the<sp/>GNU<sp/>Autotools<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">system<sp/>to<sp/>build<sp/>Google<sp/>Mock<sp/>(described<sp/>below),<sp/>you&apos;ll<sp/>need<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">configure<sp/>it<sp/>now.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>prepare<sp/>the<sp/>Autotools<sp/>build<sp/>system:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cd<sp/>googlemock</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>autoreconf<sp/>-fvi</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>build<sp/>Google<sp/>Mock<sp/>and<sp/>your<sp/>tests<sp/>that<sp/>use<sp/>it,<sp/>you<sp/>need<sp/>to<sp/>tell<sp/>your</highlight></codeline>
+<codeline><highlight class="normal">build<sp/>system<sp/>where<sp/>to<sp/>find<sp/>its<sp/>headers<sp/>and<sp/>source<sp/>files.<sp/><sp/>The<sp/>exact</highlight></codeline>
+<codeline><highlight class="normal">way<sp/>to<sp/>do<sp/>it<sp/>depends<sp/>on<sp/>which<sp/>build<sp/>system<sp/>you<sp/>use,<sp/>and<sp/>is<sp/>usually</highlight></codeline>
+<codeline><highlight class="normal">straightforward.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>section<sp/>shows<sp/>how<sp/>you<sp/>can<sp/>integrate<sp/>Google<sp/>Mock<sp/>into<sp/>your</highlight></codeline>
+<codeline><highlight class="normal">existing<sp/>build<sp/>system.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Suppose<sp/>you<sp/>put<sp/>Google<sp/>Mock<sp/>in<sp/>directory<sp/>`${GMOCK_DIR}`<sp/>and<sp/>Google<sp/>Test</highlight></codeline>
+<codeline><highlight class="normal">in<sp/>`${GTEST_DIR}`<sp/>(the<sp/>latter<sp/>is<sp/>`${GMOCK_DIR}/gtest`<sp/>by<sp/>default).<sp/><sp/>To</highlight></codeline>
+<codeline><highlight class="normal">build<sp/>Google<sp/>Mock,<sp/>create<sp/>a<sp/>library<sp/>build<sp/>target<sp/>(or<sp/>a<sp/>project<sp/>as</highlight></codeline>
+<codeline><highlight class="normal">called<sp/>by<sp/>Visual<sp/>Studio<sp/>and<sp/>Xcode)<sp/>to<sp/>compile</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>${GTEST_DIR}/src/gtest-all.cc<sp/>and<sp/>${GMOCK_DIR}/src/gmock-all.cc</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">with</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>${GTEST_DIR}/include<sp/>and<sp/>${GMOCK_DIR}/include</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">in<sp/>the<sp/>system<sp/>header<sp/>search<sp/>path,<sp/>and</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>${GTEST_DIR}<sp/>and<sp/>${GMOCK_DIR}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">in<sp/>the<sp/>normal<sp/>header<sp/>search<sp/>path.<sp/><sp/>Assuming<sp/>a<sp/>Linux-like<sp/>system<sp/>and<sp/>gcc,</highlight></codeline>
+<codeline><highlight class="normal">something<sp/>like<sp/>the<sp/>following<sp/>will<sp/>do:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g++<sp/>-isystem<sp/>${GTEST_DIR}/include<sp/>-I${GTEST_DIR}<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-isystem<sp/>${GMOCK_DIR}/include<sp/>-I${GMOCK_DIR}<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-pthread<sp/>-c<sp/>${GTEST_DIR}/src/gtest-all.cc</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g++<sp/>-isystem<sp/>${GTEST_DIR}/include<sp/>-I${GTEST_DIR}<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-isystem<sp/>${GMOCK_DIR}/include<sp/>-I${GMOCK_DIR}<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-pthread<sp/>-c<sp/>${GMOCK_DIR}/src/gmock-all.cc</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ar<sp/>-rv<sp/>libgmock.a<sp/>gtest-all.o<sp/>gmock-all.o</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">(We<sp/>need<sp/>-pthread<sp/>as<sp/>Google<sp/>Test<sp/>and<sp/>Google<sp/>Mock<sp/>use<sp/>threads.)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Next,<sp/>you<sp/>should<sp/>compile<sp/>your<sp/>test<sp/>source<sp/>file<sp/>with</highlight></codeline>
+<codeline><highlight class="normal">${GTEST\_DIR}/include<sp/>and<sp/>${GMOCK\_DIR}/include<sp/>in<sp/>the<sp/>header<sp/>search</highlight></codeline>
+<codeline><highlight class="normal">path,<sp/>and<sp/>link<sp/>it<sp/>with<sp/>gmock<sp/>and<sp/>any<sp/>other<sp/>necessary<sp/>libraries:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g++<sp/>-isystem<sp/>${GTEST_DIR}/include<sp/>-isystem<sp/>${GMOCK_DIR}/include<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-pthread<sp/>path/to/your_test.cc<sp/>libgmock.a<sp/>-o<sp/>your_test</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>an<sp/>example,<sp/>the<sp/>make/<sp/>directory<sp/>contains<sp/>a<sp/>Makefile<sp/>that<sp/>you<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">use<sp/>to<sp/>build<sp/>Google<sp/>Mock<sp/>on<sp/>systems<sp/>where<sp/>GNU<sp/>make<sp/>is<sp/>available</highlight></codeline>
+<codeline><highlight class="normal">(e.g.<sp/>Linux,<sp/>Mac<sp/>OS<sp/>X,<sp/>and<sp/>Cygwin).<sp/><sp/>It<sp/>doesn&apos;t<sp/>try<sp/>to<sp/>build<sp/>Google</highlight></codeline>
+<codeline><highlight class="normal">Mock&apos;s<sp/>own<sp/>tests.<sp/><sp/>Instead,<sp/>it<sp/>just<sp/>builds<sp/>the<sp/>Google<sp/>Mock<sp/>library<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">a<sp/>sample<sp/>test.<sp/><sp/>You<sp/>can<sp/>use<sp/>it<sp/>as<sp/>a<sp/>starting<sp/>point<sp/>for<sp/>your<sp/>own<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">script.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>the<sp/>default<sp/>settings<sp/>are<sp/>correct<sp/>for<sp/>your<sp/>environment,<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">following<sp/>commands<sp/>should<sp/>succeed:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cd<sp/>${GMOCK_DIR}/make</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>make</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>./gmock_test</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>see<sp/>errors,<sp/>try<sp/>to<sp/>tweak<sp/>the<sp/>contents<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">[make/Makefile](make/Makefile)<sp/>to<sp/>make<sp/>them<sp/>go<sp/>away.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Windows<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>msvc/2005<sp/>directory<sp/>contains<sp/>VC++<sp/>2005<sp/>projects<sp/>and<sp/>the<sp/>msvc/2010</highlight></codeline>
+<codeline><highlight class="normal">directory<sp/>contains<sp/>VC++<sp/>2010<sp/>projects<sp/>for<sp/>building<sp/>Google<sp/>Mock<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">selected<sp/>tests.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Change<sp/>to<sp/>the<sp/>appropriate<sp/>directory<sp/>and<sp/>run<sp/>&quot;msbuild<sp/>gmock.sln&quot;<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">build<sp/>the<sp/>library<sp/>and<sp/>tests<sp/>(or<sp/>open<sp/>the<sp/>gmock.sln<sp/>in<sp/>the<sp/>MSVC<sp/>IDE).</highlight></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>want<sp/>to<sp/>create<sp/>your<sp/>own<sp/>project<sp/>to<sp/>use<sp/>with<sp/>Google<sp/>Mock,<sp/>you&apos;ll</highlight></codeline>
+<codeline><highlight class="normal">have<sp/>to<sp/>configure<sp/>it<sp/>to<sp/>use<sp/>the<sp/>`gmock_config`<sp/>propety<sp/>sheet.<sp/><sp/>For<sp/>that:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Open<sp/>the<sp/>Property<sp/>Manager<sp/>window<sp/>(View<sp/>|<sp/>Other<sp/>Windows<sp/>|<sp/>Property<sp/>Manager)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Right-click<sp/>on<sp/>your<sp/>project<sp/>and<sp/>select<sp/>&quot;Add<sp/>Existing<sp/>Property<sp/>Sheet...&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Navigate<sp/>to<sp/>`gmock_config.vsprops`<sp/>or<sp/>`gmock_config.props`<sp/>and<sp/>select<sp/>it.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>In<sp/>Project<sp/>Properties<sp/>|<sp/>Configuration<sp/>Properties<sp/>|<sp/>General<sp/>|<sp/>Additional</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Include<sp/>Directories,<sp/>type<sp/>&lt;path<sp/>to<sp/>Google<sp/>Mock&gt;/include.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Tweaking<sp/>Google<sp/>Mock<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Mock<sp/>can<sp/>be<sp/>used<sp/>in<sp/>diverse<sp/>environments.<sp/><sp/>The<sp/>default</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>may<sp/>not<sp/>work<sp/>(or<sp/>may<sp/>not<sp/>work<sp/>well)<sp/>out<sp/>of<sp/>the<sp/>box<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">some<sp/>environments.<sp/><sp/>However,<sp/>you<sp/>can<sp/>easily<sp/>tweak<sp/>Google<sp/>Mock<sp/>by</highlight></codeline>
+<codeline><highlight class="normal">defining<sp/>control<sp/>macros<sp/>on<sp/>the<sp/>compiler<sp/>command<sp/>line.<sp/><sp/>Generally,</highlight></codeline>
+<codeline><highlight class="normal">these<sp/>macros<sp/>are<sp/>named<sp/>like<sp/>`GTEST_XYZ`<sp/>and<sp/>you<sp/>define<sp/>them<sp/>to<sp/>either<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">or<sp/>0<sp/>to<sp/>enable<sp/>or<sp/>disable<sp/>a<sp/>certain<sp/>feature.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>list<sp/>the<sp/>most<sp/>frequently<sp/>used<sp/>macros<sp/>below.<sp/><sp/>For<sp/>a<sp/>complete<sp/>list,</highlight></codeline>
+<codeline><highlight class="normal">see<sp/>file<sp/>[${GTEST\_DIR}/include/gtest/internal/gtest-port.h](</highlight></codeline>
+<codeline><highlight class="normal">../googletest/include/gtest/internal/gtest-port.h).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Choosing<sp/>a<sp/>TR1<sp/>Tuple<sp/>Library<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Mock<sp/>uses<sp/>the<sp/>C++<sp/>Technical<sp/>Report<sp/>1<sp/>(TR1)<sp/>tuple<sp/>library</highlight></codeline>
+<codeline><highlight class="normal">heavily.<sp/><sp/>Unfortunately<sp/>TR1<sp/>tuple<sp/>is<sp/>not<sp/>yet<sp/>widely<sp/>available<sp/>with<sp/>all</highlight></codeline>
+<codeline><highlight class="normal">compilers.<sp/><sp/>The<sp/>good<sp/>news<sp/>is<sp/>that<sp/>Google<sp/>Test<sp/>1.4.0+<sp/>implements<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">subset<sp/>of<sp/>TR1<sp/>tuple<sp/>that&apos;s<sp/>enough<sp/>for<sp/>Google<sp/>Mock&apos;s<sp/>need.<sp/><sp/>Google<sp/>Mock</highlight></codeline>
+<codeline><highlight class="normal">will<sp/>automatically<sp/>use<sp/>that<sp/>implementation<sp/>when<sp/>the<sp/>compiler<sp/>doesn&apos;t</highlight></codeline>
+<codeline><highlight class="normal">provide<sp/>TR1<sp/>tuple.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Usually<sp/>you<sp/>don&apos;t<sp/>need<sp/>to<sp/>care<sp/>about<sp/>which<sp/>tuple<sp/>library<sp/>Google<sp/>Test</highlight></codeline>
+<codeline><highlight class="normal">and<sp/>Google<sp/>Mock<sp/>use.<sp/><sp/>However,<sp/>if<sp/>your<sp/>project<sp/>already<sp/>uses<sp/>TR1<sp/>tuple,</highlight></codeline>
+<codeline><highlight class="normal">you<sp/>need<sp/>to<sp/>tell<sp/>Google<sp/>Test<sp/>and<sp/>Google<sp/>Mock<sp/>to<sp/>use<sp/>the<sp/>same<sp/>TR1<sp/>tuple</highlight></codeline>
+<codeline><highlight class="normal">library<sp/>the<sp/>rest<sp/>of<sp/>your<sp/>project<sp/>uses,<sp/>or<sp/>the<sp/>two<sp/>tuple</highlight></codeline>
+<codeline><highlight class="normal">implementations<sp/>will<sp/>clash.<sp/><sp/>To<sp/>do<sp/>that,<sp/>add</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-DGTEST_USE_OWN_TR1_TUPLE=0</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">to<sp/>the<sp/>compiler<sp/>flags<sp/>while<sp/>compiling<sp/>Google<sp/>Test,<sp/>Google<sp/>Mock,<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">your<sp/>tests.<sp/><sp/>If<sp/>you<sp/>want<sp/>to<sp/>force<sp/>Google<sp/>Test<sp/>and<sp/>Google<sp/>Mock<sp/>to<sp/>use</highlight></codeline>
+<codeline><highlight class="normal">their<sp/>own<sp/>tuple<sp/>library,<sp/>just<sp/>add</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-DGTEST_USE_OWN_TR1_TUPLE=1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">to<sp/>the<sp/>compiler<sp/>flags<sp/>instead.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>want<sp/>to<sp/>use<sp/>Boost&apos;s<sp/>TR1<sp/>tuple<sp/>library<sp/>with<sp/>Google<sp/>Mock,<sp/>please</highlight></codeline>
+<codeline><highlight class="normal">refer<sp/>to<sp/>the<sp/>Boost<sp/>website<sp/>(http://www.boost.org/)<sp/>for<sp/>how<sp/>to<sp/>obtain</highlight></codeline>
+<codeline><highlight class="normal">it<sp/>and<sp/>set<sp/>it<sp/>up.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>As<sp/>a<sp/>Shared<sp/>Library<sp/>(DLL)<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Mock<sp/>is<sp/>compact,<sp/>so<sp/>most<sp/>users<sp/>can<sp/>build<sp/>and<sp/>link<sp/>it<sp/>as<sp/>a<sp/>static</highlight></codeline>
+<codeline><highlight class="normal">library<sp/>for<sp/>the<sp/>simplicity.<sp/><sp/>Google<sp/>Mock<sp/>can<sp/>be<sp/>used<sp/>as<sp/>a<sp/>DLL,<sp/>but<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">same<sp/>DLL<sp/>must<sp/>contain<sp/>Google<sp/>Test<sp/>as<sp/>well.<sp/><sp/>See</highlight></codeline>
+<codeline><highlight class="normal">[Google<sp/>Test&apos;s<sp/>README][gtest_readme]</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>instructions<sp/>on<sp/>how<sp/>to<sp/>set<sp/>up<sp/>necessary<sp/>compiler<sp/>settings.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Tweaking<sp/>Google<sp/>Mock<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Most<sp/>of<sp/>Google<sp/>Test&apos;s<sp/>control<sp/>macros<sp/>apply<sp/>to<sp/>Google<sp/>Mock<sp/>as<sp/>well.</highlight></codeline>
+<codeline><highlight class="normal">Please<sp/>see<sp/>[Google<sp/>Test&apos;s<sp/>README][gtest_readme]<sp/>for<sp/>how<sp/>to<sp/>tweak<sp/>them.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Upgrading<sp/>from<sp/>an<sp/>Earlier<sp/>Version<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>strive<sp/>to<sp/>keep<sp/>Google<sp/>Mock<sp/>releases<sp/>backward<sp/>compatible.</highlight></codeline>
+<codeline><highlight class="normal">Sometimes,<sp/>though,<sp/>we<sp/>have<sp/>to<sp/>make<sp/>some<sp/>breaking<sp/>changes<sp/>for<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">users&apos;<sp/>long-term<sp/>benefits.<sp/><sp/>This<sp/>section<sp/>describes<sp/>what<sp/>you&apos;ll<sp/>need<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">do<sp/>if<sp/>you<sp/>are<sp/>upgrading<sp/>from<sp/>an<sp/>earlier<sp/>version<sp/>of<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Upgrading<sp/>from<sp/>1.1.0<sp/>or<sp/>Earlier<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>may<sp/>need<sp/>to<sp/>explicitly<sp/>enable<sp/>or<sp/>disable<sp/>Google<sp/>Test&apos;s<sp/>own<sp/>TR1</highlight></codeline>
+<codeline><highlight class="normal">tuple<sp/>library.<sp/><sp/>See<sp/>the<sp/>instructions<sp/>in<sp/>section<sp/>&quot;[Choosing<sp/>a<sp/>TR1<sp/>Tuple</highlight></codeline>
+<codeline><highlight class="normal">Library](../googletest/#choosing-a-tr1-tuple-library)&quot;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Upgrading<sp/>from<sp/>1.4.0<sp/>or<sp/>Earlier<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">On<sp/>platforms<sp/>where<sp/>the<sp/>pthread<sp/>library<sp/>is<sp/>available,<sp/>Google<sp/>Test<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">Google<sp/>Mock<sp/>use<sp/>it<sp/>in<sp/>order<sp/>to<sp/>be<sp/>thread-safe.<sp/><sp/>For<sp/>this<sp/>to<sp/>work,<sp/>you</highlight></codeline>
+<codeline><highlight class="normal">may<sp/>need<sp/>to<sp/>tweak<sp/>your<sp/>compiler<sp/>and/or<sp/>linker<sp/>flags.<sp/><sp/>Please<sp/>see<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">&quot;[Multi-threaded<sp/>Tests](../googletest#multi-threaded-tests</highlight></codeline>
+<codeline><highlight class="normal">)&quot;<sp/>section<sp/>in<sp/>file<sp/>Google<sp/>Test&apos;s<sp/>README<sp/>for<sp/>what<sp/>you<sp/>may<sp/>need<sp/>to<sp/>do.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>have<sp/>custom<sp/>matchers<sp/>defined<sp/>using<sp/>`MatcherInterface`<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">`MakePolymorphicMatcher()`,<sp/>you&apos;ll<sp/>need<sp/>to<sp/>update<sp/>their<sp/>definitions<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">use<sp/>the<sp/>new<sp/>matcher<sp/>API<sp/>(</highlight></codeline>
+<codeline><highlight class="normal">[monomorphic](http://code.google.com/p/googlemock/wiki/CookBook#Writing_New_Monomorphic_Matchers),</highlight></codeline>
+<codeline><highlight class="normal">[polymorphic](http://code.google.com/p/googlemock/wiki/CookBook#Writing_New_Polymorphic_Matchers)).</highlight></codeline>
+<codeline><highlight class="normal">Matchers<sp/>defined<sp/>using<sp/>`MATCHER()`<sp/>or<sp/>`MATCHER_P*()`<sp/>aren&apos;t<sp/>affected.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Developing<sp/>Google<sp/>Mock<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>section<sp/>discusses<sp/>how<sp/>to<sp/>make<sp/>your<sp/>own<sp/>changes<sp/>to<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Testing<sp/>Google<sp/>Mock<sp/>Itself<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>make<sp/>sure<sp/>your<sp/>changes<sp/>work<sp/>as<sp/>intended<sp/>and<sp/>don&apos;t<sp/>break<sp/>existing</highlight></codeline>
+<codeline><highlight class="normal">functionality,<sp/>you&apos;ll<sp/>want<sp/>to<sp/>compile<sp/>and<sp/>run<sp/>Google<sp/>Test&apos;s<sp/>own<sp/>tests.</highlight></codeline>
+<codeline><highlight class="normal">For<sp/>that<sp/>you&apos;ll<sp/>need<sp/>Autotools.<sp/><sp/>First,<sp/>make<sp/>sure<sp/>you<sp/>have<sp/>followed</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>instructions<sp/>above<sp/>to<sp/>configure<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline><highlight class="normal">Then,<sp/>create<sp/>a<sp/>build<sp/>output<sp/>directory<sp/>and<sp/>enter<sp/>it.<sp/><sp/>Next,</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>${GMOCK_DIR}/configure<sp/><sp/>#<sp/>try<sp/>--help<sp/>for<sp/>more<sp/>info</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Once<sp/>you<sp/>have<sp/>successfully<sp/>configured<sp/>Google<sp/>Mock,<sp/>the<sp/>build<sp/>steps<sp/>are</highlight></codeline>
+<codeline><highlight class="normal">standard<sp/>for<sp/>GNU-style<sp/>OSS<sp/>packages.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>make<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Standard<sp/>makefile<sp/>following<sp/>GNU<sp/>conventions</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>make<sp/>check<sp/><sp/>#<sp/>Builds<sp/>and<sp/>runs<sp/>all<sp/>tests<sp/>-<sp/>all<sp/>should<sp/>pass.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Note<sp/>that<sp/>when<sp/>building<sp/>your<sp/>project<sp/>against<sp/>Google<sp/>Mock,<sp/>you<sp/>are<sp/>building</highlight></codeline>
+<codeline><highlight class="normal">against<sp/>Google<sp/>Test<sp/>as<sp/>well.<sp/><sp/>There<sp/>is<sp/>no<sp/>need<sp/>to<sp/>configure<sp/>Google<sp/>Test</highlight></codeline>
+<codeline><highlight class="normal">separately.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Contributing<sp/>a<sp/>Patch<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>welcome<sp/>patches.</highlight></codeline>
+<codeline><highlight class="normal">Please<sp/>read<sp/>the<sp/>[Developer&apos;s<sp/>Guide](docs/DevGuide.md)</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>how<sp/>you<sp/>can<sp/>contribute.<sp/>In<sp/>particular,<sp/>make<sp/>sure<sp/>you<sp/>have<sp/>signed</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>Contributor<sp/>License<sp/>Agreement,<sp/>or<sp/>we<sp/>won&apos;t<sp/>be<sp/>able<sp/>to<sp/>accept<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">patch.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Happy<sp/>testing!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[gtest_readme]:<sp/>../googletest/README.md<sp/>&quot;googletest&quot;</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googlemock/README.md"/>
+  </compounddef>
+</doxygen>

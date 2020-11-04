@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sequence_testing_listener" kind="class" language="C++" prot="public">
+    <compoundname>SequenceTestingListener</compoundname>
+    <basecompoundref refid="classtesting_1_1_empty_test_event_listener" prot="public" virt="non-virtual">testing::EmptyTestEventListener</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sequence_testing_listener_1a93b46c1c1e2eccdc09fda4fe96fa5998" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt; *</type>
+        <definition>std::vector&lt;std::string&gt;* SequenceTestingListener::vector_</definition>
+        <argsstring></argsstring>
+        <name>vector_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="7091" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="7091" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sequence_testing_listener_1af5abf1f122fac090d4bdf9de0735da96" prot="private" static="no" mutable="no">
+        <type>const char *const</type>
+        <definition>const char* const SequenceTestingListener::id_</definition>
+        <argsstring></argsstring>
+        <name>id_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="7092" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="7092" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sequence_testing_listener_1ac0fcb350d20876f8273621ad4c79ba7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SequenceTestingListener::SequenceTestingListener</definition>
+        <argsstring>(std::vector&lt; std::string &gt; *vector, const char *id)</argsstring>
+        <name>SequenceTestingListener</name>
+        <param>
+          <type>std::vector&lt; std::string &gt; *</type>
+          <declname>vector</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="7062" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="7062" bodyend="7063"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_sequence_testing_listener_1a25b96acdbaa6f582e583e6b56bd39b42" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SequenceTestingListener::OnTestProgramStart</definition>
+        <argsstring>(const UnitTest &amp;)</argsstring>
+        <name>OnTestProgramStart</name>
+        <reimplements refid="classtesting_1_1_empty_test_event_listener_1aa3847c8a3c22d8d69a6006dfdd6589fc">OnTestProgramStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="7066" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="7066" bodyend="7068"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sequence_testing_listener_1aacac5e15bac089460841ff63a5c31f57" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SequenceTestingListener::OnTestProgramEnd</definition>
+        <argsstring>(const UnitTest &amp;)</argsstring>
+        <name>OnTestProgramEnd</name>
+        <reimplements refid="classtesting_1_1_empty_test_event_listener_1a0abcc02bd2331a2e29ad6f4d9daf2a32">OnTestProgramEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="7070" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="7070" bodyend="7072"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sequence_testing_listener_1a345641262fa10cc4b251ac54116db74b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SequenceTestingListener::OnTestIterationStart</definition>
+        <argsstring>(const UnitTest &amp;, int)</argsstring>
+        <name>OnTestIterationStart</name>
+        <reimplements refid="classtesting_1_1_empty_test_event_listener_1a836f05829855dc60d13ba99ad712c0dd">OnTestIterationStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="7074" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="7074" bodyend="7077"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sequence_testing_listener_1a783bc01e2a95f5bf73bbde4d96832e0f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SequenceTestingListener::OnTestIterationEnd</definition>
+        <argsstring>(const UnitTest &amp;, int)</argsstring>
+        <name>OnTestIterationEnd</name>
+        <reimplements refid="classtesting_1_1_empty_test_event_listener_1a2253e5a18b3cf7bccd349567a252209d">OnTestIterationEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="7079" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="7079" bodyend="7082"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sequence_testing_listener_1adc3ddea0d1af961470237ed96433e945" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SequenceTestingListener::GetEventDescription</definition>
+        <argsstring>(const char *method)</argsstring>
+        <name>GetEventDescription</name>
+        <param>
+          <type>const char *</type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="7085" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="7085" bodyend="7089"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sequence_testing_listener_1a56de089e40314ad71db2ec3a56a87699" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SequenceTestingListener::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(SequenceTestingListener)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="class_sequence_testing_listener" kindref="compound">SequenceTestingListener</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="7094" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1956">
+        <label>testing::EmptyTestEventListener</label>
+        <link refid="classtesting_1_1_empty_test_event_listener"/>
+        <childnode refid="1957" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1955">
+        <label>SequenceTestingListener</label>
+        <link refid="class_sequence_testing_listener"/>
+        <childnode refid="1956" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1957">
+        <label>testing::TestEventListener</label>
+        <link refid="classtesting_1_1_test_event_listener"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1959">
+        <label>testing::EmptyTestEventListener</label>
+        <link refid="classtesting_1_1_empty_test_event_listener"/>
+        <childnode refid="1960" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1958">
+        <label>SequenceTestingListener</label>
+        <link refid="class_sequence_testing_listener"/>
+        <childnode refid="1959" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1960">
+        <label>testing::TestEventListener</label>
+        <link refid="classtesting_1_1_test_event_listener"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="7060" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="7060" bodyend="7095"/>
+    <listofallmembers>
+      <member refid="class_sequence_testing_listener_1adc3ddea0d1af961470237ed96433e945" prot="private" virt="non-virtual"><scope>SequenceTestingListener</scope><name>GetEventDescription</name></member>
+      <member refid="class_sequence_testing_listener_1a56de089e40314ad71db2ec3a56a87699" prot="private" virt="non-virtual"><scope>SequenceTestingListener</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="class_sequence_testing_listener_1af5abf1f122fac090d4bdf9de0735da96" prot="private" virt="non-virtual"><scope>SequenceTestingListener</scope><name>id_</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1abc481c6648d15d4242245195a06f5aa0" prot="public" virt="virtual"><scope>SequenceTestingListener</scope><name>OnEnvironmentsSetUpEnd</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1a156d1965248fbdced6aabacadfa2d63f" prot="public" virt="virtual"><scope>SequenceTestingListener</scope><name>OnEnvironmentsSetUpStart</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1aea64c83c415b33a4c0b0239bafd1438d" prot="public" virt="virtual"><scope>SequenceTestingListener</scope><name>OnEnvironmentsTearDownEnd</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1a00fa1a4ea5831e20746188414268e7c6" prot="public" virt="virtual"><scope>SequenceTestingListener</scope><name>OnEnvironmentsTearDownStart</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1a6bec703158283104c4298f7d8a528515" prot="public" virt="virtual"><scope>SequenceTestingListener</scope><name>OnTestCaseEnd</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1ae4707ed9cc7ace5241bc8ccc4051209b" prot="public" virt="virtual"><scope>SequenceTestingListener</scope><name>OnTestCaseStart</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1afd58d21005f0d0d0399fb114627545d3" prot="public" virt="virtual"><scope>SequenceTestingListener</scope><name>OnTestEnd</name></member>
+      <member refid="class_sequence_testing_listener_1a783bc01e2a95f5bf73bbde4d96832e0f" prot="protected" virt="virtual"><scope>SequenceTestingListener</scope><name>OnTestIterationEnd</name></member>
+      <member refid="class_sequence_testing_listener_1a345641262fa10cc4b251ac54116db74b" prot="protected" virt="virtual"><scope>SequenceTestingListener</scope><name>OnTestIterationStart</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1a59e7f7d9f2e2d089a6e8c1e2577f4718" prot="public" virt="virtual"><scope>SequenceTestingListener</scope><name>OnTestPartResult</name></member>
+      <member refid="class_sequence_testing_listener_1aacac5e15bac089460841ff63a5c31f57" prot="protected" virt="virtual"><scope>SequenceTestingListener</scope><name>OnTestProgramEnd</name></member>
+      <member refid="class_sequence_testing_listener_1a25b96acdbaa6f582e583e6b56bd39b42" prot="protected" virt="virtual"><scope>SequenceTestingListener</scope><name>OnTestProgramStart</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1a84fa74cc9ba742f9f847ea405ca84e5e" prot="public" virt="virtual"><scope>SequenceTestingListener</scope><name>OnTestStart</name></member>
+      <member refid="class_sequence_testing_listener_1ac0fcb350d20876f8273621ad4c79ba7a" prot="public" virt="non-virtual"><scope>SequenceTestingListener</scope><name>SequenceTestingListener</name></member>
+      <member refid="class_sequence_testing_listener_1a93b46c1c1e2eccdc09fda4fe96fa5998" prot="private" virt="non-virtual"><scope>SequenceTestingListener</scope><name>vector_</name></member>
+      <member refid="classtesting_1_1_test_event_listener_1a4512d19e7a108ec4926239ec1ea85d63" prot="public" virt="virtual"><scope>SequenceTestingListener</scope><name>~TestEventListener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

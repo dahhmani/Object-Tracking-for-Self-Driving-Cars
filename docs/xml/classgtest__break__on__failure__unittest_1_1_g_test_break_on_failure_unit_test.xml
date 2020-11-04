@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test" kind="class" language="Python" prot="public">
+    <compoundname>gtest_break_on_failure_unittest::GTestBreakOnFailureUnitTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test_1a0a66475873f545d88655b8bb14368f2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_break_on_failure_unittest.GTestBreakOnFailureUnitTest.RunAndVerify</definition>
+        <argsstring>(self, env_var_value, flag_value, expect_seg_fault)</argsstring>
+        <name>RunAndVerify</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>env_var_value</type>
+          <defname>env_var_value</defname>
+        </param>
+        <param>
+          <type>flag_value</type>
+          <defname>flag_value</defname>
+        </param>
+        <param>
+          <type>expect_seg_fault</type>
+          <defname>expect_seg_fault</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Runs gtest_break_on_failure_unittest_ and verifies that it does
+(or does not) have a seg-fault.
+
+Args:
+  env_var_value:    value of the GTEST_BREAK_ON_FAILURE environment
+                variable; None if the variable should be unset.
+  flag_value:       value of the --gtest_break_on_failure flag;
+                None if the flag should not be present.
+  expect_seg_fault: 1 if the program is expected to generate a seg-fault;
+                0 otherwise.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" line="99" column="1" bodyfile="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" bodystart="99" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test_1a8c21b7ecccc27268cb6c3d30b933b812" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_break_on_failure_unittest.GTestBreakOnFailureUnitTest.testDefaultBehavior</definition>
+        <argsstring>(self)</argsstring>
+        <name>testDefaultBehavior</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests the behavior of the default mode.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" line="144" column="1" bodyfile="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" bodystart="144" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test_1a2beae948940a4fd898c8183c3bb221da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_break_on_failure_unittest.GTestBreakOnFailureUnitTest.testEnvVar</definition>
+        <argsstring>(self)</argsstring>
+        <name>testEnvVar</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests using the GTEST_BREAK_ON_FAILURE environment variable.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" line="151" column="1" bodyfile="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" bodystart="151" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test_1af6018e5253c1107c5afaba3e2cb573fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_break_on_failure_unittest.GTestBreakOnFailureUnitTest.testFlag</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFlag</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests using the --gtest_break_on_failure flag.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" line="161" column="1" bodyfile="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" bodystart="161" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test_1a15836ddb27e51e9aaf2f8aad84f5cef7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_break_on_failure_unittest.GTestBreakOnFailureUnitTest.testFlagOverridesEnvVar</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFlagOverridesEnvVar</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that the flag overrides the environment variable.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" line="171" column="1" bodyfile="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" bodystart="171" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test_1a3c5855e045236a309a5bff73ee6b503e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_break_on_failure_unittest.GTestBreakOnFailureUnitTest.testBreakOnFailureOverridesThrowOnFailure</definition>
+        <argsstring>(self)</argsstring>
+        <name>testBreakOnFailureOverridesThrowOnFailure</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that gtest_break_on_failure overrides gtest_throw_on_failure.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" line="187" column="1" bodyfile="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" bodystart="187" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test_1a70cc7732ac68ffe587657a3a5309aa4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_break_on_failure_unittest.GTestBreakOnFailureUnitTest.testCatchExceptionsDoesNotInterfere</definition>
+        <argsstring>(self)</argsstring>
+        <name>testCatchExceptionsDoesNotInterfere</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that gtest_catch_exceptions doesn&apos;t interfere.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" line="199" column="1" bodyfile="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" bodystart="199" bodyend="210"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Tests using the GTEST_BREAK_ON_FAILURE environment variable or
+the --gtest_break_on_failure flag to turn assertion failures into
+segmentation faults.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="995">
+        <label>gtest_break_on_failure_unittest.GTestBreakOnFailureUnitTest</label>
+        <link refid="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test"/>
+        <childnode refid="996" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="996">
+        <label>TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="997">
+        <label>gtest_break_on_failure_unittest.GTestBreakOnFailureUnitTest</label>
+        <link refid="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test"/>
+        <childnode refid="998" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="998">
+        <label>TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" line="93" column="1" bodyfile="vendor/googletest/googletest/test/gtest_break_on_failure_unittest.py" bodystart="93" bodyend="211"/>
+    <listofallmembers>
+      <member refid="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test_1a0a66475873f545d88655b8bb14368f2e" prot="public" virt="non-virtual"><scope>gtest_break_on_failure_unittest::GTestBreakOnFailureUnitTest</scope><name>RunAndVerify</name></member>
+      <member refid="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test_1a3c5855e045236a309a5bff73ee6b503e" prot="public" virt="non-virtual"><scope>gtest_break_on_failure_unittest::GTestBreakOnFailureUnitTest</scope><name>testBreakOnFailureOverridesThrowOnFailure</name></member>
+      <member refid="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test_1a70cc7732ac68ffe587657a3a5309aa4a" prot="public" virt="non-virtual"><scope>gtest_break_on_failure_unittest::GTestBreakOnFailureUnitTest</scope><name>testCatchExceptionsDoesNotInterfere</name></member>
+      <member refid="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test_1a8c21b7ecccc27268cb6c3d30b933b812" prot="public" virt="non-virtual"><scope>gtest_break_on_failure_unittest::GTestBreakOnFailureUnitTest</scope><name>testDefaultBehavior</name></member>
+      <member refid="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test_1a2beae948940a4fd898c8183c3bb221da" prot="public" virt="non-virtual"><scope>gtest_break_on_failure_unittest::GTestBreakOnFailureUnitTest</scope><name>testEnvVar</name></member>
+      <member refid="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test_1af6018e5253c1107c5afaba3e2cb573fe" prot="public" virt="non-virtual"><scope>gtest_break_on_failure_unittest::GTestBreakOnFailureUnitTest</scope><name>testFlag</name></member>
+      <member refid="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test_1a15836ddb27e51e9aaf2f8aad84f5cef7" prot="public" virt="non-virtual"><scope>gtest_break_on_failure_unittest::GTestBreakOnFailureUnitTest</scope><name>testFlagOverridesEnvVar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

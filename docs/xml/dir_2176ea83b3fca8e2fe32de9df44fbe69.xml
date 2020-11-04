@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_2176ea83b3fca8e2fe32de9df44fbe69" kind="dir">
+    <compoundname>vendor/googletest/googlemock/scripts</compoundname>
+    <innerdir refid="dir_ff56c879479d209db298cdf115043de8">vendor/googletest/googlemock/scripts/generator</innerdir>
+    <innerfile refid="fuse__gmock__files_8py">fuse_gmock_files.py</innerfile>
+    <innerfile refid="gmock__doctor_8py">gmock_doctor.py</innerfile>
+    <innerfile refid="googlemock_2scripts_2upload_8py">upload.py</innerfile>
+    <innerfile refid="upload__gmock_8py">upload_gmock.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/scripts/"/>
+  </compounddef>
+</doxygen>

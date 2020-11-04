@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structstd_1_1tr1_1_1gtest__internal_1_1_tuple_element_3_01true_00_017_00_01_g_t_e_s_t__10___t_u_p_l_e___07_t_08_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>std::tr1::gtest_internal::TupleElement&lt; true, 7, GTEST_10_TUPLE_(T) &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>GTEST_10_TYPENAMES_(T)</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structstd_1_1tr1_1_1gtest__internal_1_1_tuple_element_3_01true_00_017_00_01_g_t_e_s_t__10___t_u_p_l_e___07_t_08_01_4_1afc625b9bf1ae4c5c51a968134dc9b30a" prot="public" static="no">
+        <type>T7</type>
+        <definition>typedef T7 std::tr1::gtest_internal::TupleElement&lt; true, 7, GTEST_10_TUPLE_(T) &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" line="189" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" line="188" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" bodystart="188" bodyend="190"/>
+    <listofallmembers>
+      <member refid="structstd_1_1tr1_1_1gtest__internal_1_1_tuple_element_3_01true_00_017_00_01_g_t_e_s_t__10___t_u_p_l_e___07_t_08_01_4_1afc625b9bf1ae4c5c51a968134dc9b30a" prot="public" virt="non-virtual"><scope>std::tr1::gtest_internal::TupleElement&lt; true, 7, GTEST_10_TUPLE_(T) &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

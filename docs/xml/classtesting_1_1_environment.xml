@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_environment" kind="class" language="C++" prot="public">
+    <compoundname>testing::Environment</compoundname>
+    <derivedcompoundref refid="class_bar_environment" prot="public" virt="non-virtual">BarEnvironment</derivedcompoundref>
+    <derivedcompoundref refid="class_foo_environment" prot="public" virt="non-virtual">FooEnvironment</derivedcompoundref>
+    <derivedcompoundref refid="classtesting_1_1internal_1_1_environment_invocation_catcher" prot="public" virt="non-virtual">testing::internal::EnvironmentInvocationCatcher</derivedcompoundref>
+    <derivedcompoundref refid="classtesting_1_1internal_1_1_final_success_checker" prot="public" virt="non-virtual">testing::internal::FinalSuccessChecker</derivedcompoundref>
+    <innerclass refid="structtesting_1_1_environment_1_1_setup__should__be__spelled___set_up" prot="private">testing::Environment::Setup_should_be_spelled_SetUp</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_environment_1a0e41c320362576d752cd1f44cabd57d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual testing::Environment::~Environment</definition>
+        <argsstring>()</argsstring>
+        <name>~Environment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="975" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="975" bodyend="975"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_environment_1a1bf8cafaa9d4eba9feb98655ee434eb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::Environment::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplementedby refid="classtesting_1_1internal_1_1_environment_invocation_catcher_1a325365b0ecfa71a4a767d7a1817c9663">SetUp</reimplementedby>
+        <reimplementedby refid="class_foo_environment_1a7db8d8b312805aff437ae8534132a56d">SetUp</reimplementedby>
+        <reimplementedby refid="class_bar_environment_1a88e17c5dd1dcea7a4538f2f3c6bf7bdd">SetUp</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="978" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="978" bodyend="978"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_environment_1a039bdaa705c46b9b88234cf4d3bb6254" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::Environment::TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <reimplementedby refid="classtesting_1_1internal_1_1_environment_invocation_catcher_1afc89ee0a8e32e6746a89fcc1682f62e9">TearDown</reimplementedby>
+        <reimplementedby refid="classtesting_1_1internal_1_1_final_success_checker_1a8f39d12a1f2bfe8c6c04b5c6749382c9">TearDown</reimplementedby>
+        <reimplementedby refid="class_foo_environment_1a99a2c9df52106cce9e7a4bdda53df802">TearDown</reimplementedby>
+        <reimplementedby refid="class_bar_environment_1a384f951da72a2a18bb0c2b3506376b09">TearDown</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="981" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="981" bodyend="981"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1_environment_1a6096a69b03f6eb727a69a39f854cc87b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>Setup_should_be_spelled_SetUp *</type>
+        <definition>virtual Setup_should_be_spelled_SetUp* testing::Environment::Setup</definition>
+        <argsstring>()</argsstring>
+        <name>Setup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="986" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="986" bodyend="986"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="487">
+        <label>testing::internal::FinalSuccessChecker</label>
+        <link refid="classtesting_1_1internal_1_1_final_success_checker"/>
+        <childnode refid="483" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="483">
+        <label>testing::Environment</label>
+        <link refid="classtesting_1_1_environment"/>
+      </node>
+      <node id="484">
+        <label>BarEnvironment</label>
+        <link refid="class_bar_environment"/>
+        <childnode refid="483" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="486">
+        <label>testing::internal::EnvironmentInvocationCatcher</label>
+        <link refid="classtesting_1_1internal_1_1_environment_invocation_catcher"/>
+        <childnode refid="483" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="485">
+        <label>FooEnvironment</label>
+        <link refid="class_foo_environment"/>
+        <childnode refid="483" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="972" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="972" bodyend="987"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_environment_1a1bf8cafaa9d4eba9feb98655ee434eb3" prot="public" virt="virtual"><scope>testing::Environment</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1_environment_1a6096a69b03f6eb727a69a39f854cc87b" prot="private" virt="virtual"><scope>testing::Environment</scope><name>Setup</name></member>
+      <member refid="classtesting_1_1_environment_1a039bdaa705c46b9b88234cf4d3bb6254" prot="public" virt="virtual"><scope>testing::Environment</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_environment_1a0e41c320362576d752cd1f44cabd57d4" prot="public" virt="virtual"><scope>testing::Environment</scope><name>~Environment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

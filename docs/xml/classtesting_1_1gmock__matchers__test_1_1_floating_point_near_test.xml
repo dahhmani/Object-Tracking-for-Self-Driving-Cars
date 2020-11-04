@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_floating_point_near_test" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::FloatingPointNearTest</compoundname>
+    <basecompoundref refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test" prot="public" virt="non-virtual">testing::gmock_matchers_test::FloatingPointTest&lt; RawType &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename RawType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classtesting_1_1gmock__matchers__test_1_1_floating_point_near_test_1ac767d2bf3e518d1e7cf9dfafc76cc53a" prot="protected" static="no">
+        <type><ref refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test" kindref="compound">FloatingPointTest</ref>&lt; RawType &gt;</type>
+        <definition>typedef FloatingPointTest&lt;RawType&gt; testing::gmock_matchers_test::FloatingPointNearTest&lt; RawType &gt;::ParentType</definition>
+        <argsstring></argsstring>
+        <name>ParentType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="2819" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="2819" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_floating_point_near_test_1a712b564197ab76f58d345c5e3e73955d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_matchers_test::FloatingPointNearTest&lt; RawType &gt;::TestNearMatches</definition>
+        <argsstring>(testing::internal::FloatingEqMatcher&lt; RawType &gt;(*matcher_maker)(RawType, RawType))</argsstring>
+        <name>TestNearMatches</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_floating_eq_matcher" kindref="compound">testing::internal::FloatingEqMatcher</ref>&lt; RawType &gt;(*)(RawType, RawType)</type>
+          <declname>matcher_maker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="2823" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="2823" bodyend="2896"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="587">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="586">
+        <label>testing::gmock_matchers_test::FloatingPointTest&lt; RawType &gt;</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test"/>
+        <childnode refid="587" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="585">
+        <label>testing::gmock_matchers_test::FloatingPointNearTest&lt; RawType &gt;</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_near_test"/>
+        <childnode refid="586" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="590">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="589">
+        <label>testing::gmock_matchers_test::FloatingPointTest&lt; RawType &gt;</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test"/>
+        <childnode refid="590" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="588">
+        <label>testing::gmock_matchers_test::FloatingPointNearTest&lt; RawType &gt;</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_near_test"/>
+        <childnode refid="589" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="2817" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="2817" bodyend="2897"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1addf899bd832ae51103198d201d2f2ea2" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>Bits</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1a6fc8ac2030f4883e1c84da3a21bbb7c3" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>close_to_infinity_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1a641f5e223c25b6d6fb108b322acaa39d" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>close_to_negative_zero_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1a34c97dc5dc07ea62764de87fdd8b7764" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>close_to_one_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1a750555206ab9d5959d6dc84f8a760c57" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>close_to_positive_zero_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1ae1459f93e1b18426625daf4fa98e80c6" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>Floating</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1af2fb52db3abf63903d78541c4c3a17d3" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>FloatingPointTest</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1a603ab51280ecb1c4147c2660a7a90728" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>further_from_infinity_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1acc020c4d830d9e9d910b92bb466d540f" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>further_from_negative_zero_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1a049ba2d5d371e8aea6ada1ab5312b1bb" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>further_from_one_</name></member>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>HasNonfatalFailure</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1a21d8a019a6365ddff80e301a6163f43f" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>infinity_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1a3c25f403d51e6c8ed3fe7856cab1330b" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>infinity_bits_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1a17b9dd56136b64fa7210bfe024d88c30" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>max_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1a253abb77b6555a98a100c253224bb860" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>max_ulps_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1a0d2544956414eac21d4519fe600e4603" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>nan1_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1a4af3b3e53a06d271479ff30f5d5ee155" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>nan2_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1ae26de8492d307d2b4c30f6b952d9a412" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>one_bits_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_near_test_1ac767d2bf3e518d1e7cf9dfafc76cc53a" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>ParentType</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a190315150c303ddf801313fd1a777733" prot="protected" virt="virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1_test_1a5ccbac42fee8c5b00b0bfe89b6c49d79" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a5f0ab439802cbe0ef7552f1a9f791923" prot="protected" virt="virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_test_1af374706cbaf0ffc460f4fd04e7c150f1" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>Test</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1a69d14d66bbd82f6b8bbe985046b59538" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>TestMatches</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_near_test_1a712b564197ab76f58d345c5e3e73955d" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>TestNearMatches</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1ad6f8f0f5c939b7447a5717620b728018" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>TestSize</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_floating_point_test_1afb9b6beb1f152693155cf7db4e1fc4d2" prot="protected" virt="non-virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>zero_bits_</name></member>
+      <member refid="classtesting_1_1_test_1a2b0a62f1e667bbe8d8cb18d785bfa991" prot="public" virt="virtual"><scope>testing::gmock_matchers_test::FloatingPointNearTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

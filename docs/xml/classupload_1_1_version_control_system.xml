@@ -1,0 +1,513 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classupload_1_1_version_control_system" kind="class" language="Python" prot="public">
+    <compoundname>upload::VersionControlSystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+    <derivedcompoundref refid="classupload_1_1_git_v_c_s" prot="public" virt="non-virtual">upload.GitVCS</derivedcompoundref>
+    <derivedcompoundref refid="classupload_1_1_git_v_c_s" prot="public" virt="non-virtual">upload.GitVCS</derivedcompoundref>
+    <derivedcompoundref refid="classupload_1_1_mercurial_v_c_s" prot="public" virt="non-virtual">upload.MercurialVCS</derivedcompoundref>
+    <derivedcompoundref refid="classupload_1_1_mercurial_v_c_s" prot="public" virt="non-virtual">upload.MercurialVCS</derivedcompoundref>
+    <derivedcompoundref refid="classupload_1_1_subversion_v_c_s" prot="public" virt="non-virtual">upload.SubversionVCS</derivedcompoundref>
+    <derivedcompoundref refid="classupload_1_1_subversion_v_c_s" prot="public" virt="non-virtual">upload.SubversionVCS</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classupload_1_1_version_control_system_1a4d57d043bc408887b94269fe4cea9556" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.VersionControlSystem::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="597" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="597" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1ace97e5785a2b40011404ae6fbb956ecf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.__init__</definition>
+        <argsstring>(self, options)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>options</type>
+          <defname>options</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Constructor.
+
+Args:
+  options: Command line options.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="591" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="591" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1aa5eb260c96e7016dab36b5fc136c9f49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.GenerateDiff</definition>
+        <argsstring>(self, args)</argsstring>
+        <name>GenerateDiff</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the current diff as a string.
+
+Args:
+  args: Extra arguments to pass to the diff command.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="599" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="599" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1a56a60e56aa9aff3df4001d2f84cab884" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.GetUnknownFiles</definition>
+        <argsstring>(self)</argsstring>
+        <name>GetUnknownFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a list of files unknown to the VCS.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="608" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="608" bodyend="612"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1ad2923d691a1b1047e9359c5b7c1c103f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.CheckForUnknownFiles</definition>
+        <argsstring>(self)</argsstring>
+        <name>CheckForUnknownFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Show an &quot;are you sure?&quot; prompt if there are unknown files.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="613" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="613" bodyend="624"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1adfd9d4ecba422102233a2ba13e5bfaf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.GetBaseFile</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>GetBaseFile</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the content of the upstream version of a file.
+
+Returns:
+  A tuple (base_content, new_content, is_binary, status)
+base_content: The contents of the base file.
+new_content: For text files, this is empty.  For binary files, this is
+  the contents of the new file, since the diff output won&apos;t contain
+  information to reconstruct the current file.
+is_binary: True iff the file is binary.
+status: The status of the file.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="625" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="625" bodyend="641"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1a812c3b3daf90c88b015fa4b26252e291" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.GetBaseFiles</definition>
+        <argsstring>(self, diff)</argsstring>
+        <name>GetBaseFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>diff</type>
+          <defname>diff</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Helper that calls GetBase file for each file in the patch.
+
+Returns:
+  A dictionary that maps from filename to GetBaseFile&apos;s tuple.  Filenames
+  are retrieved based on lines that start with &quot;Index:&quot; or
+  &quot;Property changes on:&quot;.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="642" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="642" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1a7e334f967301b9e85e5a9c39f5036823" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.UploadBaseFiles</definition>
+        <argsstring>(self, issue, rpc_server, patch_list, patchset, options, files)</argsstring>
+        <name>UploadBaseFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>issue</type>
+          <defname>issue</defname>
+        </param>
+        <param>
+          <type>rpc_server</type>
+          <defname>rpc_server</defname>
+        </param>
+        <param>
+          <type>patch_list</type>
+          <defname>patch_list</defname>
+        </param>
+        <param>
+          <type>patchset</type>
+          <defname>patchset</defname>
+        </param>
+        <param>
+          <type>options</type>
+          <defname>options</defname>
+        </param>
+        <param>
+          <type>files</type>
+          <defname>files</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Uploads the base files (and if necessary, the current ones as well).</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="661" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="662" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1a846889ecd2ef40870b456ddb5b349e02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.IsImage</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>IsImage</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns true if the filename has an image extension.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="713" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="713" bodyend="720"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1ace97e5785a2b40011404ae6fbb956ecf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.__init__</definition>
+        <argsstring>(self, options)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>options</type>
+          <defname>options</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Constructor.
+
+Args:
+  options: Command line options.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="591" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="591" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1aa5eb260c96e7016dab36b5fc136c9f49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.GenerateDiff</definition>
+        <argsstring>(self, args)</argsstring>
+        <name>GenerateDiff</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the current diff as a string.
+
+Args:
+  args: Extra arguments to pass to the diff command.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="599" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="599" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1a56a60e56aa9aff3df4001d2f84cab884" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.GetUnknownFiles</definition>
+        <argsstring>(self)</argsstring>
+        <name>GetUnknownFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a list of files unknown to the VCS.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="608" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="608" bodyend="612"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1ad2923d691a1b1047e9359c5b7c1c103f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.CheckForUnknownFiles</definition>
+        <argsstring>(self)</argsstring>
+        <name>CheckForUnknownFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Show an &quot;are you sure?&quot; prompt if there are unknown files.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="613" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="613" bodyend="624"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1adfd9d4ecba422102233a2ba13e5bfaf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.GetBaseFile</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>GetBaseFile</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the content of the upstream version of a file.
+
+Returns:
+  A tuple (base_content, new_content, is_binary, status)
+base_content: The contents of the base file.
+new_content: For text files, this is empty.  For binary files, this is
+  the contents of the new file, since the diff output won&apos;t contain
+  information to reconstruct the current file.
+is_binary: True iff the file is binary.
+status: The status of the file.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="625" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="625" bodyend="641"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1a812c3b3daf90c88b015fa4b26252e291" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.GetBaseFiles</definition>
+        <argsstring>(self, diff)</argsstring>
+        <name>GetBaseFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>diff</type>
+          <defname>diff</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Helper that calls GetBase file for each file in the patch.
+
+Returns:
+  A dictionary that maps from filename to GetBaseFile&apos;s tuple.  Filenames
+  are retrieved based on lines that start with &quot;Index:&quot; or
+  &quot;Property changes on:&quot;.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="642" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="642" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1a7e334f967301b9e85e5a9c39f5036823" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.UploadBaseFiles</definition>
+        <argsstring>(self, issue, rpc_server, patch_list, patchset, options, files)</argsstring>
+        <name>UploadBaseFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>issue</type>
+          <defname>issue</defname>
+        </param>
+        <param>
+          <type>rpc_server</type>
+          <defname>rpc_server</defname>
+        </param>
+        <param>
+          <type>patch_list</type>
+          <defname>patch_list</defname>
+        </param>
+        <param>
+          <type>patchset</type>
+          <defname>patchset</defname>
+        </param>
+        <param>
+          <type>options</type>
+          <defname>options</defname>
+        </param>
+        <param>
+          <type>files</type>
+          <defname>files</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Uploads the base files (and if necessary, the current ones as well).</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="661" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="662" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_version_control_system_1a846889ecd2ef40870b456ddb5b349e02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.VersionControlSystem.IsImage</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>IsImage</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns true if the filename has an image extension.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="713" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="713" bodyend="720"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Abstract base class providing an interface to the VCS.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2484">
+        <label>upload.SubversionVCS</label>
+        <link refid="classupload_1_1_subversion_v_c_s"/>
+        <childnode refid="2480" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2480" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2482">
+        <label>upload.GitVCS</label>
+        <link refid="classupload_1_1_git_v_c_s"/>
+        <childnode refid="2480" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2480" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2483">
+        <label>upload.MercurialVCS</label>
+        <link refid="classupload_1_1_mercurial_v_c_s"/>
+        <childnode refid="2480" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2480" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2481">
+        <label>object</label>
+      </node>
+      <node id="2480">
+        <label>upload.VersionControlSystem</label>
+        <link refid="classupload_1_1_version_control_system"/>
+        <childnode refid="2481" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2481" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2486">
+        <label>object</label>
+      </node>
+      <node id="2485">
+        <label>upload.VersionControlSystem</label>
+        <link refid="classupload_1_1_version_control_system"/>
+        <childnode refid="2486" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2486" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/upload.py" line="588" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="588" bodyend="721"/>
+    <listofallmembers>
+      <member refid="classupload_1_1_version_control_system_1ace97e5785a2b40011404ae6fbb956ecf" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>__init__</name></member>
+      <member refid="classupload_1_1_version_control_system_1ace97e5785a2b40011404ae6fbb956ecf" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>__init__</name></member>
+      <member refid="classupload_1_1_version_control_system_1ad2923d691a1b1047e9359c5b7c1c103f" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>CheckForUnknownFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1ad2923d691a1b1047e9359c5b7c1c103f" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>CheckForUnknownFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1aa5eb260c96e7016dab36b5fc136c9f49" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>GenerateDiff</name></member>
+      <member refid="classupload_1_1_version_control_system_1aa5eb260c96e7016dab36b5fc136c9f49" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>GenerateDiff</name></member>
+      <member refid="classupload_1_1_version_control_system_1adfd9d4ecba422102233a2ba13e5bfaf5" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>GetBaseFile</name></member>
+      <member refid="classupload_1_1_version_control_system_1adfd9d4ecba422102233a2ba13e5bfaf5" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>GetBaseFile</name></member>
+      <member refid="classupload_1_1_version_control_system_1a812c3b3daf90c88b015fa4b26252e291" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>GetBaseFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1a812c3b3daf90c88b015fa4b26252e291" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>GetBaseFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1a56a60e56aa9aff3df4001d2f84cab884" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>GetUnknownFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1a56a60e56aa9aff3df4001d2f84cab884" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>GetUnknownFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1a846889ecd2ef40870b456ddb5b349e02" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>IsImage</name></member>
+      <member refid="classupload_1_1_version_control_system_1a846889ecd2ef40870b456ddb5b349e02" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>IsImage</name></member>
+      <member refid="classupload_1_1_version_control_system_1a4d57d043bc408887b94269fe4cea9556" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>options</name></member>
+      <member refid="classupload_1_1_version_control_system_1a7e334f967301b9e85e5a9c39f5036823" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>UploadBaseFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1a7e334f967301b9e85e5a9c39f5036823" prot="public" virt="non-virtual"><scope>upload::VersionControlSystem</scope><name>UploadBaseFiles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

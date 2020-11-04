@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1internal_1_1is__reference_3_01_t_01_6_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::is_reference&lt; T &amp; &gt;</compoundname>
+    <basecompoundref refid="structtesting_1_1internal_1_1bool__constant" prot="public" virt="non-virtual">testing::internal::bool_constant&lt; true &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1251">
+        <label>true_type</label>
+        <link refid="structtesting_1_1internal_1_1bool__constant"/>
+      </node>
+      <node id="1250">
+        <label>testing::internal::is_reference&lt; T &amp; &gt;</label>
+        <link refid="structtesting_1_1internal_1_1is__reference_3_01_t_01_6_01_4"/>
+        <childnode refid="1251" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1253">
+        <label>true_type</label>
+        <link refid="structtesting_1_1internal_1_1bool__constant"/>
+      </node>
+      <node id="1252">
+        <label>testing::internal::is_reference&lt; T &amp; &gt;</label>
+        <link refid="structtesting_1_1internal_1_1is__reference_3_01_t_01_6_01_4"/>
+        <childnode refid="1253" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h" line="341" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h" bodystart="341" bodyend="341"/>
+    <listofallmembers>
+      <member refid="structtesting_1_1internal_1_1bool__constant_1aba6d09ecf7eecea6c93480f0d627a167" prot="public" virt="non-virtual"><scope>testing::internal::is_reference&lt; T &amp; &gt;</scope><name>type</name></member>
+      <member refid="structtesting_1_1internal_1_1bool__constant_1a499fba6576296b04d99690a486424b32" prot="public" virt="non-virtual"><scope>testing::internal::is_reference&lt; T &amp; &gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

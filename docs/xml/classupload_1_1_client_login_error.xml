@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classupload_1_1_client_login_error" kind="class" language="Python" prot="public">
+    <compoundname>upload::ClientLoginError</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">HTTPError</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">HTTPError</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classupload_1_1_client_login_error_1ac300a0b034b2bc64cedc51e09fb6d663" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.ClientLoginError::args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="120" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classupload_1_1_client_login_error_1ae0555feb182d89d1e4d7944afbfe14e5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.ClientLoginError::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="121" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classupload_1_1_client_login_error_1a1e590616c2976d881e155958cedbbe47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.ClientLoginError.__init__</definition>
+        <argsstring>(self, url, code, msg, headers, args)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>url</type>
+          <defname>url</defname>
+        </param>
+        <param>
+          <type>code</type>
+          <defname>code</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <param>
+          <type>headers</type>
+          <defname>headers</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="118" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="118" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_client_login_error_1a1e590616c2976d881e155958cedbbe47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.ClientLoginError.__init__</definition>
+        <argsstring>(self, url, code, msg, headers, args)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>url</type>
+          <defname>url</defname>
+        </param>
+        <param>
+          <type>code</type>
+          <defname>code</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <param>
+          <type>headers</type>
+          <defname>headers</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="118" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="118" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Raised to indicate there was an error authenticating with ClientLogin.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="272">
+        <label>upload.ClientLoginError</label>
+        <link refid="classupload_1_1_client_login_error"/>
+        <childnode refid="273" relation="public-inheritance">
+        </childnode>
+        <childnode refid="274" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>urllib2::HTTPError</label>
+      </node>
+      <node id="274">
+        <label>HTTPError</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="275">
+        <label>upload.ClientLoginError</label>
+        <link refid="classupload_1_1_client_login_error"/>
+        <childnode refid="276" relation="public-inheritance">
+        </childnode>
+        <childnode refid="277" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>urllib2::HTTPError</label>
+      </node>
+      <node id="277">
+        <label>HTTPError</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/upload.py" line="115" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="115" bodyend="124"/>
+    <listofallmembers>
+      <member refid="classupload_1_1_client_login_error_1a1e590616c2976d881e155958cedbbe47" prot="public" virt="non-virtual"><scope>upload::ClientLoginError</scope><name>__init__</name></member>
+      <member refid="classupload_1_1_client_login_error_1a1e590616c2976d881e155958cedbbe47" prot="public" virt="non-virtual"><scope>upload::ClientLoginError</scope><name>__init__</name></member>
+      <member refid="classupload_1_1_client_login_error_1ac300a0b034b2bc64cedc51e09fb6d663" prot="public" virt="non-virtual"><scope>upload::ClientLoginError</scope><name>args</name></member>
+      <member refid="classupload_1_1_client_login_error_1ae0555feb182d89d1e4d7944afbfe14e5" prot="public" virt="non-virtual"><scope>upload::ClientLoginError</scope><name>reason</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

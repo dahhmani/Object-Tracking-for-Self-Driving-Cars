@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_const_castable" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::ConstCastable</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_const_castable_1afd56f08fe3748a6223b62bceb585ab6a" prot="private" static="no" mutable="no">
+        <type>bool *</type>
+        <definition>bool* testing::internal::ConstCastable::converted_</definition>
+        <argsstring></argsstring>
+        <name>converted_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-port_test.cc" line="158" column="1" bodyfile="vendor/googletest/googletest/test/gtest-port_test.cc" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_const_castable_1a78eba470cc71528237a33a10a92fba7e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ConstCastable::ConstCastable</definition>
+        <argsstring>(bool *converted)</argsstring>
+        <name>ConstCastable</name>
+        <param>
+          <type>bool *</type>
+          <declname>converted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-port_test.cc" line="151" column="1" bodyfile="vendor/googletest/googletest/test/gtest-port_test.cc" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_const_castable_1af084893d6786010022297b1e88f4743b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ConstCastable::operator Base</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-port_test.cc" line="152" column="1" bodyfile="vendor/googletest/googletest/test/gtest-port_test.cc" bodystart="152" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest-port_test.cc" line="149" column="1" bodyfile="vendor/googletest/googletest/test/gtest-port_test.cc" bodystart="149" bodyend="159"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_const_castable_1a78eba470cc71528237a33a10a92fba7e" prot="public" virt="non-virtual"><scope>testing::internal::ConstCastable</scope><name>ConstCastable</name></member>
+      <member refid="classtesting_1_1internal_1_1_const_castable_1afd56f08fe3748a6223b62bceb585ab6a" prot="private" virt="non-virtual"><scope>testing::internal::ConstCastable</scope><name>converted_</name></member>
+      <member refid="classtesting_1_1internal_1_1_const_castable_1af084893d6786010022297b1e88f4743b" prot="public" virt="non-virtual"><scope>testing::internal::ConstCastable</scope><name>operator Base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

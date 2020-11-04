@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacefoo" kind="namespace" language="C++">
+    <compoundname>foo</compoundname>
+    <innerclass refid="classfoo_1_1_mixed_up_test_case_test" prot="public">foo::MixedUpTestCaseTest</innerclass>
+    <innerclass refid="classfoo_1_1_mixed_up_test_case_with_same_test_name_test" prot="public">foo::MixedUpTestCaseWithSameTestNameTest</innerclass>
+    <innerclass refid="structfoo_1_1_pointer_printable" prot="public">foo::PointerPrintable</innerclass>
+    <innerclass refid="structfoo_1_1_printable_via_print_to" prot="public">foo::PrintableViaPrintTo</innerclass>
+    <innerclass refid="classfoo_1_1_printable_via_print_to_template" prot="public">foo::PrintableViaPrintToTemplate</innerclass>
+    <innerclass refid="classfoo_1_1_streamable_template_in_foo" prot="public">foo::StreamableTemplateInFoo</innerclass>
+    <innerclass refid="classfoo_1_1_unprintable_in_foo" prot="public">foo::UnprintableInFoo</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gtest-printers__test_8cc_1ac435de653934c97045bbdba8c8afbe3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void foo::PrintTo</definition>
+        <argsstring>(const PrintableViaPrintTo &amp;x, ::std::ostream *os)</argsstring>
+        <name>PrintTo</name>
+        <param>
+          <type>const <ref refid="structfoo_1_1_printable_via_print_to" kindref="compound">PrintableViaPrintTo</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-printers_test.cc" line="144" column="1" bodyfile="vendor/googletest/googletest/test/gtest-printers_test.cc" bodystart="144" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-printers__test_8cc_1a65f8809f6af7f69f5cc842493caf4491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>::std::ostream &amp;</type>
+        <definition>::std::ostream&amp; foo::operator&lt;&lt;</definition>
+        <argsstring>(::std::ostream &amp;os, const PointerPrintable *)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>::std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfoo_1_1_pointer_printable" kindref="compound">PointerPrintable</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-printers_test.cc" line="150" column="1" bodyfile="vendor/googletest/googletest/test/gtest-printers_test.cc" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-printers__test_8cc_1a7b78eba501ea7ff1226a8cb40b6e3d92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void foo::PrintTo</definition>
+        <argsstring>(const PrintableViaPrintToTemplate&lt; T &gt; &amp;x, ::std::ostream *os)</argsstring>
+        <name>PrintTo</name>
+        <param>
+          <type>const <ref refid="classfoo_1_1_printable_via_print_to_template" kindref="compound">PrintableViaPrintToTemplate</ref>&lt; T &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-printers_test.cc" line="169" column="1" bodyfile="vendor/googletest/googletest/test/gtest-printers_test.cc" bodystart="169" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-printers__test_8cc_1abe04f604d114085b0b9af25600ef00da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>inline ::std::ostream &amp;</type>
+        <definition>inline ::std::ostream&amp; foo::operator&lt;&lt;</definition>
+        <argsstring>(::std::ostream &amp;os, const StreamableTemplateInFoo&lt; T &gt; &amp;x)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>::std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classfoo_1_1_streamable_template_in_foo" kindref="compound">StreamableTemplateInFoo</ref>&lt; T &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-printers_test.cc" line="185" column="1" bodyfile="vendor/googletest/googletest/test/gtest-printers_test.cc" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__output__test___8cc_1a0d50eecc97df56ae625078848ba9c98a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>foo::TEST_F</definition>
+        <argsstring>(MixedUpTestCaseTest, FirstTestFromNamespaceFoo)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classfoo_1_1_mixed_up_test_case_test" kindref="compound">MixedUpTestCaseTest</ref></type>
+        </param>
+        <param>
+          <type>FirstTestFromNamespaceFoo</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="538" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="538" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__output__test___8cc_1a7911fd62b6ae405016caed779b2f95dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>foo::TEST_F</definition>
+        <argsstring>(MixedUpTestCaseTest, SecondTestFromNamespaceFoo)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classfoo_1_1_mixed_up_test_case_test" kindref="compound">MixedUpTestCaseTest</ref></type>
+        </param>
+        <param>
+          <type>SecondTestFromNamespaceFoo</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="539" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="539" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__output__test___8cc_1a2bc2a2547ff38da0ecf68676e75583cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>foo::TEST_F</definition>
+        <argsstring>(MixedUpTestCaseWithSameTestNameTest, TheSecondTestWithThisNameShouldFail)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classfoo_1_1_mixed_up_test_case_with_same_test_name_test" kindref="compound">MixedUpTestCaseWithSameTestNameTest</ref></type>
+        </param>
+        <param>
+          <type>TheSecondTestWithThisNameShouldFail</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="544" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="544" bodyend="545"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest-printers_test.cc" line="126" column="1"/>
+  </compounddef>
+</doxygen>

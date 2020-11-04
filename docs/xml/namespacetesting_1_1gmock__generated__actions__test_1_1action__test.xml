@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacetesting_1_1gmock__generated__actions__test_1_1action__test" kind="namespace" language="C++">
+    <compoundname>testing::gmock_generated_actions_test::action_test</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gmock-generated-actions__test_8cc_1a78d00ea4fff98d5cd3f73f8f03800bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_actions_test::action_test::ACTION</definition>
+        <argsstring>(Sum)</argsstring>
+        <name>ACTION</name>
+        <param>
+          <type>Sum</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" line="710" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" bodystart="710" bodyend="710"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" line="709" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_pred_format_functor2" kind="struct" language="C++" prot="public">
+    <compoundname>PredFormatFunctor2</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_pred_format_functor2_1a0169e0105e15d5c63bece2a20646b22b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1_assertion_result" kindref="compound">testing::AssertionResult</ref></type>
+        <definition>testing::AssertionResult PredFormatFunctor2::operator()</definition>
+        <argsstring>(const char *e1, const char *e2, const T1 &amp;v1, const T2 &amp;v2) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const char *</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e2</declname>
+        </param>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const T2 &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" line="505" column="1" bodyfile="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" bodystart="505" bodyend="510"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" line="503" column="1" bodyfile="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" bodystart="503" bodyend="511"/>
+    <listofallmembers>
+      <member refid="struct_pred_format_functor2_1a0169e0105e15d5c63bece2a20646b22b" prot="public" virt="non-virtual"><scope>PredFormatFunctor2</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

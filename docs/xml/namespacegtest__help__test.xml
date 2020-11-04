@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegtest__help__test" kind="namespace" language="Python">
+    <compoundname>gtest_help_test</compoundname>
+    <innerclass refid="classgtest__help__test_1_1_g_test_help_test" prot="public">gtest_help_test::GTestHelpTest</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gtest__help__test_8py_1aaad2d635f301ee74567f210b26c828b1" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_help_test.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;wan@google.com (Zhanyong Wan)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="40" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__help__test_8py_1ae61a149d50be253176a139fbe6712582" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_help_test.IS_LINUX</definition>
+        <argsstring></argsstring>
+        <name>IS_LINUX</name>
+        <initializer>=  &apos;Linux&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="47" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__help__test_8py_1a0f8d4b00fc83b1e72bbb5eca5f3bc4d7" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_help_test.IS_WINDOWS</definition>
+        <argsstring></argsstring>
+        <name>IS_WINDOWS</name>
+        <initializer>=  &apos;nt&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="48" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__help__test_8py_1a52878eacdd3a1534fa4743e7d134066c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gtest_help_test.PROGRAM_PATH</definition>
+        <argsstring></argsstring>
+        <name>PROGRAM_PATH</name>
+        <initializer>=  gtest_test_utils.GetTestExecutablePath(&apos;gtest_help_test_&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="50" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__help__test_8py_1a9e357a76dd993057c826ec411c9a4b3c" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_help_test.FLAG_PREFIX</definition>
+        <argsstring></argsstring>
+        <name>FLAG_PREFIX</name>
+        <initializer>=  &apos;--gtest_&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="51" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__help__test_8py_1a322bbb8bf27d7701c76fb5704a1fda1f" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_help_test.DEATH_TEST_STYLE_FLAG</definition>
+        <argsstring></argsstring>
+        <name>DEATH_TEST_STYLE_FLAG</name>
+        <initializer>=  FLAG_PREFIX + &apos;death_test_style&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="52" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__help__test_8py_1a06d67cce3cb57c484c169d1dbe4afd6c" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_help_test.STREAM_RESULT_TO_FLAG</definition>
+        <argsstring></argsstring>
+        <name>STREAM_RESULT_TO_FLAG</name>
+        <initializer>=  FLAG_PREFIX + &apos;stream_result_to&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="53" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__help__test_8py_1a400934cf13530098af31e2a65f1a8d84" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_help_test.UNKNOWN_FLAG</definition>
+        <argsstring></argsstring>
+        <name>UNKNOWN_FLAG</name>
+        <initializer>=  FLAG_PREFIX + &apos;unknown_flag_for_testing&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="54" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__help__test_8py_1a558dea5edfd6fdb48112401b257f5aea" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_help_test.LIST_TESTS_FLAG</definition>
+        <argsstring></argsstring>
+        <name>LIST_TESTS_FLAG</name>
+        <initializer>=  FLAG_PREFIX + &apos;list_tests&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="55" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__help__test_8py_1a6f677b9f975f09db7604a5ee9c4821a3" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list gtest_help_test.INCORRECT_FLAG_VARIANTS</definition>
+        <argsstring></argsstring>
+        <name>INCORRECT_FLAG_VARIANTS</name>
+        <initializer>=  [re.sub(&apos;^--&apos;, &apos;-&apos;, LIST_TESTS_FLAG),
+                           re.sub(&apos;^--&apos;, &apos;/&apos;, LIST_TESTS_FLAG),
+                           re.sub(&apos;_&apos;, &apos;-&apos;, LIST_TESTS_FLAG)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="56" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__help__test_8py_1aa7f487cde98f691eecc5f1f5e67c0a69" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_help_test.INTERNAL_FLAG_FOR_TESTING</definition>
+        <argsstring></argsstring>
+        <name>INTERNAL_FLAG_FOR_TESTING</name>
+        <initializer>=  FLAG_PREFIX + &apos;internal_flag_for_testing&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="59" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__help__test_8py_1a70c7e8b24ce75dfa26ff540b861cdc54" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_help_test.SUPPORTS_DEATH_TESTS</definition>
+        <argsstring></argsstring>
+        <name>SUPPORTS_DEATH_TESTS</name>
+        <initializer>=  &quot;DeathTest&quot; in <ref refid="classgtest__test__utils_1_1_subprocess" kindref="compound">gtest_test_utils.Subprocess</ref>(
+    [PROGRAM_PATH, LIST_TESTS_FLAG]).output</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="61" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__help__test_8py_1acaee97106f5b6ad6de66778688d4b906" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gtest_help_test.HELP_REGEX</definition>
+        <argsstring></argsstring>
+        <name>HELP_REGEX</name>
+        <initializer>=  re.compile(
+    FLAG_PREFIX + r&apos;list_tests.*&apos; +
+    FLAG_PREFIX + r&apos;filter=.*&apos; +
+    FLAG_PREFIX + r&apos;also_run_disabled_tests.*&apos; +
+    FLAG_PREFIX + r&apos;repeat=.*&apos; +
+    FLAG_PREFIX + r&apos;shuffle.*&apos; +
+    FLAG_PREFIX + r&apos;random_seed=.*&apos; +
+    FLAG_PREFIX + r&apos;color=.*&apos; +
+    FLAG_PREFIX + r&apos;print_time.*&apos; +
+    FLAG_PREFIX + r&apos;output=.*&apos; +
+    FLAG_PREFIX + r&apos;break_on_failure.*&apos; +
+    FLAG_PREFIX + r&apos;throw_on_failure.*&apos; +
+    FLAG_PREFIX + r&apos;catch_exceptions=0.*&apos;,
+    re.DOTALL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="65" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gtest__help__test_8py_1a3d369750dac11a6dca523139fe1e6c86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_help_test.RunWithFlag</definition>
+        <argsstring>(flag)</argsstring>
+        <name>RunWithFlag</name>
+        <param>
+          <type>flag</type>
+          <defname>flag</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Runs gtest_help_test_ with the given flag.
+
+Returns:
+  the exit code and the text output as a tuple.
+Args:
+  flag: the command-line flag to pass to gtest_help_test_, or None.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="81" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="81" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test" kind="class" language="Python" prot="public">
+    <compoundname>gtest_xml_output_unittest::GTestXMLOutputUnitTest</compoundname>
+    <basecompoundref refid="classgtest__xml__test__utils_1_1_g_test_x_m_l_test_case" prot="public" virt="non-virtual">gtest_xml_test_utils.GTestXMLTestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1a310c136c1eb2b421f57651a7d358b17a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_xml_output_unittest.GTestXMLOutputUnitTest.testNonEmptyXmlOutput</definition>
+        <argsstring>(self)</argsstring>
+        <name>testNonEmptyXmlOutput</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Runs a test program that generates a non-empty XML output, and
+tests that the XML output is expected.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" line="160" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" bodystart="160" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1a9602f91fe2e9d1e09171a032e94a5619" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_xml_output_unittest.GTestXMLOutputUnitTest.testEmptyXmlOutput</definition>
+        <argsstring>(self)</argsstring>
+        <name>testEmptyXmlOutput</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Verifies XML output for a Google Test binary without actual tests.
+
+Runs a test program that generates an empty XML output, and
+tests that the XML output is expected.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" line="167" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" bodystart="167" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1a828521a7ae57f650e1e9ca4beb34336a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_xml_output_unittest.GTestXMLOutputUnitTest.testTimestampValue</definition>
+        <argsstring>(self)</argsstring>
+        <name>testTimestampValue</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Checks whether the timestamp attribute in the XML output is valid.
+
+Runs a test program that generates an empty XML output, and checks if
+the timestamp attribute in the testsuites tag is valid.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" line="176" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" bodystart="176" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1a01ca66e14468028e5c4eb809987113cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_xml_output_unittest.GTestXMLOutputUnitTest.testDefaultOutputFile</definition>
+        <argsstring>(self)</argsstring>
+        <name>testDefaultOutputFile</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Confirms that Google Test produces an XML output file with the expected
+default name if no name is explicitly specified.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" line="201" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" bodystart="201" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1ac6df46d6831892e4c14dbdfae0049618" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_xml_output_unittest.GTestXMLOutputUnitTest.testSuppressedXmlOutput</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSuppressedXmlOutput</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that no XML file is generated if the default XML listener is
+shut down before RUN_ALL_TESTS is invoked.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" line="224" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" bodystart="224" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1a572b6d49e8f4d646ebdadcced3d260ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_xml_output_unittest.GTestXMLOutputUnitTest.testFilteredTestXmlOutput</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFilteredTestXmlOutput</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Verifies XML output when a filter is applied.
+
+Runs a test program that executes only some tests and verifies that
+non-selected tests do not show up in the XML output.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" line="253" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" bodystart="253" bodyend="262"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1a7fecfa249f4175f14457eb34034b7c3b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_xml_output_unittest.GTestXMLOutputUnitTest._GetXmlOutput</definition>
+        <argsstring>(self, gtest_prog_name, extra_args, expected_exit_code)</argsstring>
+        <name>_GetXmlOutput</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>gtest_prog_name</type>
+          <defname>gtest_prog_name</defname>
+        </param>
+        <param>
+          <type>extra_args</type>
+          <defname>extra_args</defname>
+        </param>
+        <param>
+          <type>expected_exit_code</type>
+          <defname>expected_exit_code</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the xml output generated by running the program gtest_prog_name.
+Furthermore, the program&apos;s exit code must be expected_exit_code.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" line="263" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" bodystart="263" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1aaba02141e77c7469f301b7e73789747f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_xml_output_unittest.GTestXMLOutputUnitTest._TestXmlOutput</definition>
+        <argsstring>(self, gtest_prog_name, expected_xml, expected_exit_code, extra_args=None)</argsstring>
+        <name>_TestXmlOutput</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>gtest_prog_name</type>
+          <defname>gtest_prog_name</defname>
+        </param>
+        <param>
+          <type>expected_xml</type>
+          <defname>expected_xml</defname>
+        </param>
+        <param>
+          <type>expected_exit_code</type>
+          <defname>expected_exit_code</defname>
+        </param>
+        <param>
+          <type>extra_args</type>
+          <defname>extra_args</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Asserts that the XML document generated by running the program
+gtest_prog_name matches expected_xml, a string containing another
+XML document.  Furthermore, the program&apos;s exit code must be
+expected_exit_code.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" line="287" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" bodystart="288" bodyend="305"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Unit test for Google Test&apos;s XML output functionality.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1044">
+        <label>gtest_xml_test_utils.GTestXMLTestCase</label>
+        <link refid="classgtest__xml__test__utils_1_1_g_test_x_m_l_test_case"/>
+        <childnode refid="1045" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1043">
+        <label>gtest_xml_output_unittest.GTestXMLOutputUnitTest</label>
+        <link refid="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test"/>
+        <childnode refid="1044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1045">
+        <label>gtest_test_utils::TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1047">
+        <label>gtest_xml_test_utils.GTestXMLTestCase</label>
+        <link refid="classgtest__xml__test__utils_1_1_g_test_x_m_l_test_case"/>
+        <childnode refid="1048" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1046">
+        <label>gtest_xml_output_unittest.GTestXMLOutputUnitTest</label>
+        <link refid="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test"/>
+        <childnode refid="1047" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1048">
+        <label>gtest_test_utils::TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" line="152" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_output_unittest.py" bodystart="152" bodyend="306"/>
+    <listofallmembers>
+      <member refid="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1a7fecfa249f4175f14457eb34034b7c3b" prot="private" virt="non-virtual"><scope>gtest_xml_output_unittest::GTestXMLOutputUnitTest</scope><name>_GetXmlOutput</name></member>
+      <member refid="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1aaba02141e77c7469f301b7e73789747f" prot="private" virt="non-virtual"><scope>gtest_xml_output_unittest::GTestXMLOutputUnitTest</scope><name>_TestXmlOutput</name></member>
+      <member refid="classgtest__xml__test__utils_1_1_g_test_x_m_l_test_case_1a977273e8863f4f41d121bb5a64b08d32" prot="public" virt="non-virtual"><scope>gtest_xml_output_unittest::GTestXMLOutputUnitTest</scope><name>AssertEquivalentNodes</name></member>
+      <member refid="classgtest__xml__test__utils_1_1_g_test_x_m_l_test_case_1a0e3a4e84e18f29d2248dcd670a0a6ae6" prot="public" virt="non-virtual"><scope>gtest_xml_output_unittest::GTestXMLOutputUnitTest</scope><name>identifying_attribute</name></member>
+      <member refid="classgtest__xml__test__utils_1_1_g_test_x_m_l_test_case_1ac4823e96c3b5327b25a340a3605447d9" prot="public" virt="non-virtual"><scope>gtest_xml_output_unittest::GTestXMLOutputUnitTest</scope><name>NormalizeXml</name></member>
+      <member refid="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1a01ca66e14468028e5c4eb809987113cf" prot="public" virt="non-virtual"><scope>gtest_xml_output_unittest::GTestXMLOutputUnitTest</scope><name>testDefaultOutputFile</name></member>
+      <member refid="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1a9602f91fe2e9d1e09171a032e94a5619" prot="public" virt="non-virtual"><scope>gtest_xml_output_unittest::GTestXMLOutputUnitTest</scope><name>testEmptyXmlOutput</name></member>
+      <member refid="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1a572b6d49e8f4d646ebdadcced3d260ef" prot="public" virt="non-virtual"><scope>gtest_xml_output_unittest::GTestXMLOutputUnitTest</scope><name>testFilteredTestXmlOutput</name></member>
+      <member refid="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1a310c136c1eb2b421f57651a7d358b17a" prot="public" virt="non-virtual"><scope>gtest_xml_output_unittest::GTestXMLOutputUnitTest</scope><name>testNonEmptyXmlOutput</name></member>
+      <member refid="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1ac6df46d6831892e4c14dbdfae0049618" prot="public" virt="non-virtual"><scope>gtest_xml_output_unittest::GTestXMLOutputUnitTest</scope><name>testSuppressedXmlOutput</name></member>
+      <member refid="classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test_1a828521a7ae57f650e1e9ca4beb34336a" prot="public" virt="non-virtual"><scope>gtest_xml_output_unittest::GTestXMLOutputUnitTest</scope><name>testTimestampValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

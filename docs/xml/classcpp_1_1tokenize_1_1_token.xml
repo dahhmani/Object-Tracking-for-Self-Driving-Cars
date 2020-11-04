@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classcpp_1_1tokenize_1_1_token" kind="class" language="Python" prot="public">
+    <compoundname>cpp::tokenize::Token</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcpp_1_1tokenize_1_1_token_1a7bde2890a76f4108d61d10e4de68d715" prot="private" static="yes" mutable="no">
+        <type>def</type>
+        <definition>def cpp.tokenize.Token::__repr__</definition>
+        <argsstring></argsstring>
+        <name>__repr__</name>
+        <initializer>=  __str__</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="86" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcpp_1_1tokenize_1_1_token_1a60c6e5120f3947885f10788ceb69a660" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.tokenize.Token::token_type</definition>
+        <argsstring></argsstring>
+        <name>token_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="75" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1tokenize_1_1_token_1a90859dd16bde71bc38f717f5119e63b9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.tokenize.Token::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="76" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1tokenize_1_1_token_1a8ec48e348ff29901857cb21553da464b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.tokenize.Token::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="77" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1tokenize_1_1_token_1a9935738c382352eca19834c2533715db" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.tokenize.Token::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="78" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1tokenize_1_1_token_1a9d3a8011707ede6be85987d74f88848d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.tokenize.Token::whence</definition>
+        <argsstring></argsstring>
+        <name>whence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="79" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcpp_1_1tokenize_1_1_token_1a7da7659a5a6c61d0f4b8590cf96e19fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.tokenize.Token.__init__</definition>
+        <argsstring>(self, token_type, name, start, end)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>token_type</type>
+          <defname>token_type</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>start</type>
+          <defname>start</defname>
+        </param>
+        <param>
+          <type>end</type>
+          <defname>end</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="74" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="74" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1tokenize_1_1_token_1a98e024051039637a18601fcbb0232cc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.tokenize.Token.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="81" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="81" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Data container to represent a C++ token.
+
+Tokens can be identifiers, syntax char(s), constants, or
+pre-processor directives.
+
+start contains the index of the first char of the token in the source
+end contains the index of the last char of the token in the source
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2190">
+        <label>cpp.tokenize.Token</label>
+        <link refid="classcpp_1_1tokenize_1_1_token"/>
+        <childnode refid="2191" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2191">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2192">
+        <label>cpp.tokenize.Token</label>
+        <link refid="classcpp_1_1tokenize_1_1_token"/>
+        <childnode refid="2193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2193">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="64" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="64" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classcpp_1_1tokenize_1_1_token_1a7da7659a5a6c61d0f4b8590cf96e19fd" prot="public" virt="non-virtual"><scope>cpp::tokenize::Token</scope><name>__init__</name></member>
+      <member refid="classcpp_1_1tokenize_1_1_token_1a7bde2890a76f4108d61d10e4de68d715" prot="private" virt="non-virtual"><scope>cpp::tokenize::Token</scope><name>__repr__</name></member>
+      <member refid="classcpp_1_1tokenize_1_1_token_1a98e024051039637a18601fcbb0232cc2" prot="public" virt="non-virtual"><scope>cpp::tokenize::Token</scope><name>__str__</name></member>
+      <member refid="classcpp_1_1tokenize_1_1_token_1a9935738c382352eca19834c2533715db" prot="public" virt="non-virtual"><scope>cpp::tokenize::Token</scope><name>end</name></member>
+      <member refid="classcpp_1_1tokenize_1_1_token_1a90859dd16bde71bc38f717f5119e63b9" prot="public" virt="non-virtual"><scope>cpp::tokenize::Token</scope><name>name</name></member>
+      <member refid="classcpp_1_1tokenize_1_1_token_1a8ec48e348ff29901857cb21553da464b" prot="public" virt="non-virtual"><scope>cpp::tokenize::Token</scope><name>start</name></member>
+      <member refid="classcpp_1_1tokenize_1_1_token_1a60c6e5120f3947885f10788ceb69a660" prot="public" virt="non-virtual"><scope>cpp::tokenize::Token</scope><name>token_type</name></member>
+      <member refid="classcpp_1_1tokenize_1_1_token_1a9d3a8011707ede6be85987d74f88848d" prot="public" virt="non-virtual"><scope>cpp::tokenize::Token</scope><name>whence</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1gmock__matchers__test_1_1_a_struct" kind="struct" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::AStruct</compoundname>
+    <derivedcompoundref refid="structtesting_1_1gmock__matchers__test_1_1_derived_struct" prot="public" virt="non-virtual">testing::gmock_matchers_test::DerivedStruct</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtesting_1_1gmock__matchers__test_1_1_a_struct_1a539eea02599ad34ff2bf90cc2c1adf26" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::gmock_matchers_test::AStruct::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3383" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtesting_1_1gmock__matchers__test_1_1_a_struct_1a08b8592764aa4775c3d5a3542470f8bb" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double testing::gmock_matchers_test::AStruct::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3384" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtesting_1_1gmock__matchers__test_1_1_a_struct_1a45b1006e4a7b21037610a385dcae6d8c" prot="public" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1gmock__matchers__test_1_1_uncopyable" kindref="compound">Uncopyable</ref></type>
+        <definition>Uncopyable testing::gmock_matchers_test::AStruct::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3385" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtesting_1_1gmock__matchers__test_1_1_a_struct_1a65755db7d763d53c13483bb520f1efcd" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* testing::gmock_matchers_test::AStruct::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3386" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3386" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtesting_1_1gmock__matchers__test_1_1_a_struct_1a6774561607c8ca64809e9ebde4b62b0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::AStruct::AStruct</definition>
+        <argsstring>()</argsstring>
+        <name>AStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3379" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3379" bodyend="3379"/>
+      </memberdef>
+      <memberdef kind="function" id="structtesting_1_1gmock__matchers__test_1_1_a_struct_1ac5b9c0054e929e8883e13123aef50ff3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::AStruct::AStruct</definition>
+        <argsstring>(const AStruct &amp;rhs)</argsstring>
+        <name>AStruct</name>
+        <param>
+          <type>const <ref refid="structtesting_1_1gmock__matchers__test_1_1_a_struct" kindref="compound">AStruct</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3380" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3380" bodyend="3381"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structtesting_1_1gmock__matchers__test_1_1_a_struct_1adae118a4bef01eaa9cc2cf00cb80eddc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::AStruct::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(AStruct)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="structtesting_1_1gmock__matchers__test_1_1_a_struct" kindref="compound">AStruct</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3389" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="158">
+        <label>testing::gmock_matchers_test::DerivedStruct</label>
+        <link refid="structtesting_1_1gmock__matchers__test_1_1_derived_struct"/>
+        <childnode refid="157" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>testing::gmock_matchers_test::AStruct</label>
+        <link refid="structtesting_1_1gmock__matchers__test_1_1_a_struct"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="159">
+        <label>testing::gmock_matchers_test::AStruct</label>
+        <link refid="structtesting_1_1gmock__matchers__test_1_1_a_struct"/>
+        <childnode refid="160" relation="usage">
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+      <node id="160">
+        <label>testing::gmock_matchers_test::Uncopyable</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_uncopyable"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3378" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3378" bodyend="3390"/>
+    <listofallmembers>
+      <member refid="structtesting_1_1gmock__matchers__test_1_1_a_struct_1a6774561607c8ca64809e9ebde4b62b0e" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::AStruct</scope><name>AStruct</name></member>
+      <member refid="structtesting_1_1gmock__matchers__test_1_1_a_struct_1ac5b9c0054e929e8883e13123aef50ff3" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::AStruct</scope><name>AStruct</name></member>
+      <member refid="structtesting_1_1gmock__matchers__test_1_1_a_struct_1adae118a4bef01eaa9cc2cf00cb80eddc" prot="private" virt="non-virtual"><scope>testing::gmock_matchers_test::AStruct</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="structtesting_1_1gmock__matchers__test_1_1_a_struct_1a65755db7d763d53c13483bb520f1efcd" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::AStruct</scope><name>p</name></member>
+      <member refid="structtesting_1_1gmock__matchers__test_1_1_a_struct_1a539eea02599ad34ff2bf90cc2c1adf26" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::AStruct</scope><name>x</name></member>
+      <member refid="structtesting_1_1gmock__matchers__test_1_1_a_struct_1a08b8592764aa4775c3d5a3542470f8bb" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::AStruct</scope><name>y</name></member>
+      <member refid="structtesting_1_1gmock__matchers__test_1_1_a_struct_1a45b1006e4a7b21037610a385dcae6d8c" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::AStruct</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

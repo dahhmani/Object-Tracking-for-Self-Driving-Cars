@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal2_1_1_type_without_formatter" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal2::TypeWithoutFormatter</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>TypeKind</type>
+        <declname>kTypeKind</declname>
+        <defname>kTypeKind</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal2_1_1_type_without_formatter_1a6651f6f7be2c0f899729eeb6038f76d3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::internal2::TypeWithoutFormatter&lt; T, kTypeKind &gt;::PrintValue</definition>
+        <argsstring>(const T &amp;value, ::std::ostream *os)</argsstring>
+        <name>PrintValue</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-printers.h" line="139" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-printers.h" bodystart="139" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/gtest-printers.h" line="136" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-printers.h" bodystart="136" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal2_1_1_type_without_formatter_1a6651f6f7be2c0f899729eeb6038f76d3" prot="public" virt="non-virtual"><scope>testing::internal2::TypeWithoutFormatter</scope><name>PrintValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

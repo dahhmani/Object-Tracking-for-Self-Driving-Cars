@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_polymorphic_action_1_1_monomorphic_impl" kind="class" language="C++" prot="private">
+    <compoundname>testing::PolymorphicAction::MonomorphicImpl</compoundname>
+    <basecompoundref refid="classtesting_1_1_action_interface" prot="public" virt="non-virtual">testing::ActionInterface&lt; F &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename F</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1_polymorphic_action_1_1_monomorphic_impl_1a7989da669c4c7a2da978ed78743815cb" prot="public" static="no">
+        <type><ref refid="structtesting_1_1internal_1_1_function" kindref="compound">internal::Function</ref>&lt; F &gt;::Result</type>
+        <definition>typedef internal::Function&lt;F&gt;::Result testing::PolymorphicAction&lt; Impl &gt;::MonomorphicImpl&lt; F &gt;::Result</definition>
+        <argsstring></argsstring>
+        <name>Result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="440" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1_polymorphic_action_1_1_monomorphic_impl_1a2d6ef64336f1d5cdac893fb040048c8c" prot="public" static="no">
+        <type><ref refid="structtesting_1_1internal_1_1_function" kindref="compound">internal::Function</ref>&lt; F &gt;::ArgumentTuple</type>
+        <definition>typedef internal::Function&lt;F&gt;::ArgumentTuple testing::PolymorphicAction&lt; Impl &gt;::MonomorphicImpl&lt; F &gt;::ArgumentTuple</definition>
+        <argsstring></argsstring>
+        <name>ArgumentTuple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="441" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1_polymorphic_action_1_1_monomorphic_impl_1a77375e13255f50b45498e0d9c2395d72" prot="private" static="no" mutable="no">
+        <type>Impl</type>
+        <definition>Impl testing::PolymorphicAction&lt; Impl &gt;::MonomorphicImpl&lt; F &gt;::impl_</definition>
+        <argsstring></argsstring>
+        <name>impl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="450" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_polymorphic_action_1_1_monomorphic_impl_1a0f87e4646298d9fd8e7eda04a09fc6d0" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::PolymorphicAction&lt; Impl &gt;::MonomorphicImpl&lt; F &gt;::MonomorphicImpl</definition>
+        <argsstring>(const Impl &amp;impl)</argsstring>
+        <name>MonomorphicImpl</name>
+        <param>
+          <type>const Impl &amp;</type>
+          <declname>impl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="443" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="443" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_polymorphic_action_1_1_monomorphic_impl_1af657293ae1ac638802c0fd2486ee5f5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>Result</type>
+        <definition>virtual Result testing::PolymorphicAction&lt; Impl &gt;::MonomorphicImpl&lt; F &gt;::Perform</definition>
+        <argsstring>(const ArgumentTuple &amp;args)</argsstring>
+        <name>Perform</name>
+        <param>
+          <type>const ArgumentTuple &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="445" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="445" bodyend="447"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1_polymorphic_action_1_1_monomorphic_impl_1af7b6ce4640aac3dcf7126c4b1e86f277" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::PolymorphicAction&lt; Impl &gt;::MonomorphicImpl&lt; F &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(MonomorphicImpl)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type>MonomorphicImpl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="452" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1575">
+        <label>testing::PolymorphicAction&lt; Impl &gt;::MonomorphicImpl&lt; F &gt;</label>
+        <childnode refid="1576" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1576">
+        <label>testing::ActionInterface&lt; F &gt;</label>
+        <link refid="classtesting_1_1_action_interface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1577">
+        <label>testing::PolymorphicAction&lt; Impl &gt;::MonomorphicImpl&lt; F &gt;</label>
+        <childnode refid="1578" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1578">
+        <label>testing::ActionInterface&lt; F &gt;</label>
+        <link refid="classtesting_1_1_action_interface"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="438" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="438" bodyend="453"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_action_interface_1a0f1d44e4c669a9cae5ee5b28419a6f52" prot="public" virt="non-virtual"><scope>testing::PolymorphicAction::MonomorphicImpl</scope><name>ActionInterface</name></member>
+      <member refid="classtesting_1_1_polymorphic_action_1_1_monomorphic_impl_1a2d6ef64336f1d5cdac893fb040048c8c" prot="public" virt="non-virtual"><scope>testing::PolymorphicAction::MonomorphicImpl</scope><name>ArgumentTuple</name></member>
+      <member refid="classtesting_1_1_polymorphic_action_1_1_monomorphic_impl_1af7b6ce4640aac3dcf7126c4b1e86f277" prot="private" virt="non-virtual"><scope>testing::PolymorphicAction::MonomorphicImpl</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1_polymorphic_action_1_1_monomorphic_impl_1a77375e13255f50b45498e0d9c2395d72" prot="private" virt="non-virtual"><scope>testing::PolymorphicAction::MonomorphicImpl</scope><name>impl_</name></member>
+      <member refid="classtesting_1_1_polymorphic_action_1_1_monomorphic_impl_1a0f87e4646298d9fd8e7eda04a09fc6d0" prot="public" virt="non-virtual"><scope>testing::PolymorphicAction::MonomorphicImpl</scope><name>MonomorphicImpl</name></member>
+      <member refid="classtesting_1_1_polymorphic_action_1_1_monomorphic_impl_1af657293ae1ac638802c0fd2486ee5f5b" prot="public" virt="virtual"><scope>testing::PolymorphicAction::MonomorphicImpl</scope><name>Perform</name></member>
+      <member refid="classtesting_1_1_polymorphic_action_1_1_monomorphic_impl_1a7989da669c4c7a2da978ed78743815cb" prot="public" virt="non-virtual"><scope>testing::PolymorphicAction::MonomorphicImpl</scope><name>Result</name></member>
+      <member refid="classtesting_1_1_action_interface_1a7dd0a5fc93d86ae3c9d04963b9f3a93f" prot="public" virt="virtual"><scope>testing::PolymorphicAction::MonomorphicImpl</scope><name>~ActionInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

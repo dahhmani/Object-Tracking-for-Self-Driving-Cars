@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1internal_1_1_pointee_of" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::PointeeOf</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Pointer</declname>
+        <defname>Pointer</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structtesting_1_1internal_1_1_pointee_of_1aca4d92c8f978e47a8695e82cffc11837" prot="public" static="no">
+        <type>Pointer::element_type</type>
+        <definition>typedef Pointer::element_type testing::internal::PointeeOf&lt; Pointer &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h" line="66" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h" line="63" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h" bodystart="63" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structtesting_1_1internal_1_1_pointee_of_1aca4d92c8f978e47a8695e82cffc11837" prot="public" virt="non-virtual"><scope>testing::internal::PointeeOf</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

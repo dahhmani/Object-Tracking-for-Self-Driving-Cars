@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_stream_match_result_listener" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::StreamMatchResultListener</compoundname>
+    <basecompoundref refid="classtesting_1_1_match_result_listener" prot="public" virt="non-virtual">testing::MatchResultListener</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_stream_match_result_listener_1a81985760741d818745237df002d65d04" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::StreamMatchResultListener::StreamMatchResultListener</definition>
+        <argsstring>(::std::ostream *os)</argsstring>
+        <name>StreamMatchResultListener</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="241" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="241" bodyend="242"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_stream_match_result_listener_1ad24adbcd6528e6d84f4f955500de58a9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::StreamMatchResultListener::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(StreamMatchResultListener)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_stream_match_result_listener" kindref="compound">StreamMatchResultListener</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="245" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2002">
+        <label>testing::internal::StreamMatchResultListener</label>
+        <link refid="classtesting_1_1internal_1_1_stream_match_result_listener"/>
+        <childnode refid="2003" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2003">
+        <label>testing::MatchResultListener</label>
+        <link refid="classtesting_1_1_match_result_listener"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2004">
+        <label>testing::internal::StreamMatchResultListener</label>
+        <link refid="classtesting_1_1internal_1_1_stream_match_result_listener"/>
+        <childnode refid="2005" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2005">
+        <label>testing::MatchResultListener</label>
+        <link refid="classtesting_1_1_match_result_listener"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="239" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="239" bodyend="246"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_stream_match_result_listener_1ad24adbcd6528e6d84f4f955500de58a9" prot="private" virt="non-virtual"><scope>testing::internal::StreamMatchResultListener</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1ac34f9771f2ba6128cd6a1348b3aebda3" prot="public" virt="non-virtual"><scope>testing::internal::StreamMatchResultListener</scope><name>IsInterested</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1a245c360286cd0496d22a4d2fde80eb0b" prot="public" virt="non-virtual"><scope>testing::internal::StreamMatchResultListener</scope><name>MatchResultListener</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1a89f628a452635d1502a9062d9c864ebd" prot="public" virt="non-virtual"><scope>testing::internal::StreamMatchResultListener</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1a5abecb247e005f7f50a94898e3f44ee3" prot="public" virt="non-virtual"><scope>testing::internal::StreamMatchResultListener</scope><name>stream</name></member>
+      <member refid="classtesting_1_1internal_1_1_stream_match_result_listener_1a81985760741d818745237df002d65d04" prot="public" virt="non-virtual"><scope>testing::internal::StreamMatchResultListener</scope><name>StreamMatchResultListener</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1aa29f43f7b2ffd850c721a8a33ccbba92" prot="public" virt="pure-virtual"><scope>testing::internal::StreamMatchResultListener</scope><name>~MatchResultListener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

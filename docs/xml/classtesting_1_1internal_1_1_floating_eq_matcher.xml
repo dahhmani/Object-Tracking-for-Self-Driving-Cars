@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_floating_eq_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::FloatingEqMatcher</compoundname>
+    <innerclass refid="classtesting_1_1internal_1_1_floating_eq_matcher_1_1_impl" prot="public">testing::internal::FloatingEqMatcher::Impl</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>FloatType</declname>
+        <defname>FloatType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_floating_eq_matcher_1a01d4d3ee6344cd3d88c53dd6e730b9df" prot="private" static="no" mutable="no">
+        <type>const FloatType</type>
+        <definition>const FloatType testing::internal::FloatingEqMatcher&lt; FloatType &gt;::expected_</definition>
+        <argsstring></argsstring>
+        <name>expected_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2032" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2032" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_floating_eq_matcher_1a782b06cb55b4989c3c67facf910265bf" prot="private" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool testing::internal::FloatingEqMatcher&lt; FloatType &gt;::nan_eq_nan_</definition>
+        <argsstring></argsstring>
+        <name>nan_eq_nan_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2033" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2033" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_floating_eq_matcher_1a06b3fd6f9ee60bc694a12ccaeba2924a" prot="private" static="no" mutable="no">
+        <type>const FloatType</type>
+        <definition>const FloatType testing::internal::FloatingEqMatcher&lt; FloatType &gt;::max_abs_error_</definition>
+        <argsstring></argsstring>
+        <name>max_abs_error_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2035" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2035" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_floating_eq_matcher_1a92b08d1635c900fa8571ff4eff30b4bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::FloatingEqMatcher&lt; FloatType &gt;::FloatingEqMatcher</definition>
+        <argsstring>(FloatType expected, bool nan_eq_nan)</argsstring>
+        <name>FloatingEqMatcher</name>
+        <param>
+          <type>FloatType</type>
+          <declname>expected</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>nan_eq_nan</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1896" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1896" bodyend="1898"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_floating_eq_matcher_1a07674c4b017965493a3c20a218f9a74f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::FloatingEqMatcher&lt; FloatType &gt;::FloatingEqMatcher</definition>
+        <argsstring>(FloatType expected, bool nan_eq_nan, FloatType max_abs_error)</argsstring>
+        <name>FloatingEqMatcher</name>
+        <param>
+          <type>FloatType</type>
+          <declname>expected</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>nan_eq_nan</declname>
+        </param>
+        <param>
+          <type>FloatType</type>
+          <declname>max_abs_error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1903" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1903" bodyend="1910"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_floating_eq_matcher_1abd377dfafd89bdb7effdd80989aeee80" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::FloatingEqMatcher&lt; FloatType &gt;::operator Matcher&lt; FloatType &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Matcher&lt; FloatType &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2016" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2016" bodyend="2019"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_floating_eq_matcher_1a5419859a104ad44ce6c35732efebc694" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::FloatingEqMatcher&lt; FloatType &gt;::operator Matcher&lt; const FloatType &amp;&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Matcher&lt; const FloatType &amp; &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2021" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2021" bodyend="2024"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_floating_eq_matcher_1ae75e5b64f04010c5580312562fcf98e5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::FloatingEqMatcher&lt; FloatType &gt;::operator Matcher&lt; FloatType &amp;&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Matcher&lt; FloatType &amp; &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2026" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2026" bodyend="2029"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_floating_eq_matcher_1af002f051e277179e50194d85b96ad043" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::FloatingEqMatcher&lt; FloatType &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(FloatingEqMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_floating_eq_matcher" kindref="compound">FloatingEqMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2037" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1888" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1888" bodyend="2038"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_floating_eq_matcher_1a01d4d3ee6344cd3d88c53dd6e730b9df" prot="private" virt="non-virtual"><scope>testing::internal::FloatingEqMatcher</scope><name>expected_</name></member>
+      <member refid="classtesting_1_1internal_1_1_floating_eq_matcher_1a92b08d1635c900fa8571ff4eff30b4bb" prot="public" virt="non-virtual"><scope>testing::internal::FloatingEqMatcher</scope><name>FloatingEqMatcher</name></member>
+      <member refid="classtesting_1_1internal_1_1_floating_eq_matcher_1a07674c4b017965493a3c20a218f9a74f" prot="public" virt="non-virtual"><scope>testing::internal::FloatingEqMatcher</scope><name>FloatingEqMatcher</name></member>
+      <member refid="classtesting_1_1internal_1_1_floating_eq_matcher_1af002f051e277179e50194d85b96ad043" prot="private" virt="non-virtual"><scope>testing::internal::FloatingEqMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_floating_eq_matcher_1a06b3fd6f9ee60bc694a12ccaeba2924a" prot="private" virt="non-virtual"><scope>testing::internal::FloatingEqMatcher</scope><name>max_abs_error_</name></member>
+      <member refid="classtesting_1_1internal_1_1_floating_eq_matcher_1a782b06cb55b4989c3c67facf910265bf" prot="private" virt="non-virtual"><scope>testing::internal::FloatingEqMatcher</scope><name>nan_eq_nan_</name></member>
+      <member refid="classtesting_1_1internal_1_1_floating_eq_matcher_1a5419859a104ad44ce6c35732efebc694" prot="public" virt="non-virtual"><scope>testing::internal::FloatingEqMatcher</scope><name>operator Matcher&lt; const FloatType &amp; &gt;</name></member>
+      <member refid="classtesting_1_1internal_1_1_floating_eq_matcher_1ae75e5b64f04010c5580312562fcf98e5" prot="public" virt="non-virtual"><scope>testing::internal::FloatingEqMatcher</scope><name>operator Matcher&lt; FloatType &amp; &gt;</name></member>
+      <member refid="classtesting_1_1internal_1_1_floating_eq_matcher_1abd377dfafd89bdb7effdd80989aeee80" prot="public" virt="non-virtual"><scope>testing::internal::FloatingEqMatcher</scope><name>operator Matcher&lt; FloatType &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classcpp_1_1ast_1_1___nested_type" kind="class" language="Python" prot="public">
+    <compoundname>cpp::ast::_NestedType</compoundname>
+    <basecompoundref refid="classcpp_1_1ast_1_1___generic_declaration" prot="public" virt="non-virtual">cpp.ast._GenericDeclaration</basecompoundref>
+    <derivedcompoundref refid="classcpp_1_1ast_1_1_enum" prot="public" virt="non-virtual">cpp.ast.Enum</derivedcompoundref>
+    <derivedcompoundref refid="classcpp_1_1ast_1_1_union" prot="public" virt="non-virtual">cpp.ast.Union</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1___nested_type_1aed69c37a409b4d26e6cfde2de3185d86" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast._NestedType::fields</definition>
+        <argsstring></argsstring>
+        <name>fields</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="300" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcpp_1_1ast_1_1___nested_type_1a63acff60f38885be6cc11231fffc3f4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast._NestedType.__init__</definition>
+        <argsstring>(self, start, end, name, fields, namespace)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>start</type>
+          <defname>start</defname>
+        </param>
+        <param>
+          <type>end</type>
+          <defname>end</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>fields</type>
+          <defname>fields</defname>
+        </param>
+        <param>
+          <type>namespace</type>
+          <defname>namespace</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="298" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="298" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1___nested_type_1a9f160999863f39c9032f60b014e213d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast._NestedType.IsDefinition</definition>
+        <argsstring>(self)</argsstring>
+        <name>IsDefinition</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="302" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="302" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1___nested_type_1a689f8b0dc20e6070938825eee483dd2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast._NestedType.IsExportable</definition>
+        <argsstring>(self)</argsstring>
+        <name>IsExportable</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="305" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="305" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1___nested_type_1a18901ec6acba88c526d703444bf4d52c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast._NestedType.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="308" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="308" bodyend="312"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="21">
+        <label>cpp.ast.Union</label>
+        <link refid="classcpp_1_1ast_1_1_union"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>cpp.ast.Node</label>
+        <link refid="classcpp_1_1ast_1_1_node"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>cpp.ast.Enum</label>
+        <link refid="classcpp_1_1ast_1_1_enum"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>cpp.ast._NestedType</label>
+        <link refid="classcpp_1_1ast_1_1___nested_type"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>cpp.ast._GenericDeclaration</label>
+        <link refid="classcpp_1_1ast_1_1___generic_declaration"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="24">
+        <label>cpp.ast.Node</label>
+        <link refid="classcpp_1_1ast_1_1_node"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>cpp.ast._NestedType</label>
+        <link refid="classcpp_1_1ast_1_1___nested_type"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>cpp.ast._GenericDeclaration</label>
+        <link refid="classcpp_1_1ast_1_1___generic_declaration"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="297" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="297" bodyend="313"/>
+    <listofallmembers>
+      <member refid="classcpp_1_1ast_1_1___nested_type_1a63acff60f38885be6cc11231fffc3f4e" prot="public" virt="non-virtual"><scope>cpp::ast::_NestedType</scope><name>__init__</name></member>
+      <member refid="classcpp_1_1ast_1_1___generic_declaration_1afde72751e20708a7802eb7707d23bc3c" prot="public" virt="non-virtual" ambiguityscope="cpp::ast::_GenericDeclaration."><scope>cpp::ast::_NestedType</scope><name>__init__</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a2cbd6969346645259afc3be51faae904" prot="public" virt="non-virtual" ambiguityscope="cpp::ast::Node."><scope>cpp::ast::_NestedType</scope><name>__init__</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1ab89915656a60c7b7c752e5baa607c532" prot="public" virt="non-virtual"><scope>cpp::ast::_NestedType</scope><name>__repr__</name></member>
+      <member refid="classcpp_1_1ast_1_1___nested_type_1a18901ec6acba88c526d703444bf4d52c" prot="public" virt="non-virtual"><scope>cpp::ast::_NestedType</scope><name>__str__</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a3c5e5246ccf619df28eca02e29d69647" prot="public" virt="non-virtual"><scope>cpp::ast::_NestedType</scope><name>end</name></member>
+      <member refid="classcpp_1_1ast_1_1___nested_type_1aed69c37a409b4d26e6cfde2de3185d86" prot="public" virt="non-virtual"><scope>cpp::ast::_NestedType</scope><name>fields</name></member>
+      <member refid="classcpp_1_1ast_1_1___generic_declaration_1a1437d31271ea8cda62da22e2ce427a85" prot="public" virt="non-virtual"><scope>cpp::ast::_NestedType</scope><name>FullName</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1ab3eca703a79fb65bc25dfbcb7547c79e" prot="public" virt="non-virtual"><scope>cpp::ast::_NestedType</scope><name>IsDeclaration</name></member>
+      <member refid="classcpp_1_1ast_1_1___nested_type_1a9f160999863f39c9032f60b014e213d5" prot="public" virt="non-virtual"><scope>cpp::ast::_NestedType</scope><name>IsDefinition</name></member>
+      <member refid="classcpp_1_1ast_1_1___nested_type_1a689f8b0dc20e6070938825eee483dd2f" prot="public" virt="non-virtual"><scope>cpp::ast::_NestedType</scope><name>IsExportable</name></member>
+      <member refid="classcpp_1_1ast_1_1___generic_declaration_1af774f4729dfd78d0538a6782fe8514c1" prot="public" virt="non-virtual"><scope>cpp::ast::_NestedType</scope><name>name</name></member>
+      <member refid="classcpp_1_1ast_1_1___generic_declaration_1a8aee3f11b37449d54b42a78e0a689f46" prot="public" virt="non-virtual"><scope>cpp::ast::_NestedType</scope><name>namespace</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a31ae211f954a8c578ef16226df5ac8c8" prot="public" virt="non-virtual"><scope>cpp::ast::_NestedType</scope><name>Requires</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a7b2aa97e6a049bb1a93aea48c48f1f44" prot="public" virt="non-virtual"><scope>cpp::ast::_NestedType</scope><name>start</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1ab5dfeabcbcd7c1f5feb8522edffb8b4a" prot="public" virt="non-virtual"><scope>cpp::ast::_NestedType</scope><name>XXX__str__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

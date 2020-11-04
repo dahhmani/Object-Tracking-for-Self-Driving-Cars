@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classcpp_1_1ast_1_1___null_dict" kind="class" language="Python" prot="public">
+    <compoundname>cpp::ast::_NullDict</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1___null_dict_1a75119a0b9fd6366573f41d7e9eddec80" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool cpp.ast._NullDict::__contains__</definition>
+        <argsstring></argsstring>
+        <name>__contains__</name>
+        <initializer>=  lambda self: False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="104" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1___null_dict_1abb0b7884aa59bede0a8503dffcd1733f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>cpp.ast._NullDict::keys</definition>
+        <argsstring></argsstring>
+        <name>keys</name>
+        <initializer>=  lambda self: ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="105" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="27">
+        <label>object</label>
+      </node>
+      <node id="26">
+        <label>cpp.ast._NullDict</label>
+        <link refid="classcpp_1_1ast_1_1___null_dict"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="29">
+        <label>object</label>
+      </node>
+      <node id="28">
+        <label>cpp.ast._NullDict</label>
+        <link refid="classcpp_1_1ast_1_1___null_dict"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="103" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="103" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classcpp_1_1ast_1_1___null_dict_1a75119a0b9fd6366573f41d7e9eddec80" prot="private" virt="non-virtual"><scope>cpp::ast::_NullDict</scope><name>__contains__</name></member>
+      <member refid="classcpp_1_1ast_1_1___null_dict_1abb0b7884aa59bede0a8503dffcd1733f" prot="public" virt="non-virtual"><scope>cpp::ast::_NullDict</scope><name>keys</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

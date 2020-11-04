@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classpump_1_1_literal_dollar_node" kind="class" language="Python" prot="public">
+    <compoundname>pump::LiteralDollarNode</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpump_1_1_literal_dollar_node_1ab4c6e209635b8868bcdf0fe8053431c6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.LiteralDollarNode::token</definition>
+        <argsstring></argsstring>
+        <name>token</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="434" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpump_1_1_literal_dollar_node_1a181cccad8a48f7dfdd0716e427897e0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pump.LiteralDollarNode.__init__</definition>
+        <argsstring>(self, token)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>token</type>
+          <defname>token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="433" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="433" bodyend="436"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/scripts/pump.py" line="432" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="432" bodyend="437"/>
+    <listofallmembers>
+      <member refid="classpump_1_1_literal_dollar_node_1a181cccad8a48f7dfdd0716e427897e0b" prot="public" virt="non-virtual"><scope>pump::LiteralDollarNode</scope><name>__init__</name></member>
+      <member refid="classpump_1_1_literal_dollar_node_1ab4c6e209635b8868bcdf0fe8053431c6" prot="public" virt="non-virtual"><scope>pump::LiteralDollarNode</scope><name>token</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

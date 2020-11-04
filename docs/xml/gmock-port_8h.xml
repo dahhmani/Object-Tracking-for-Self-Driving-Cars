@@ -1,0 +1,491 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="gmock-port_8h" kind="file" language="C++">
+    <compoundname>gmock-port.h</compoundname>
+    <includes local="no">assert.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">iostream</includes>
+    <includes refid="gtest-linked__ptr_8h" local="yes">gtest/internal/gtest-linked_ptr.h</includes>
+    <includes refid="gtest-port_8h" local="yes">gtest/internal/gtest-port.h</includes>
+    <includes refid="custom_2gmock-port_8h" local="yes">gmock/internal/custom/gmock-port.h</includes>
+    <includedby refid="gmock-actions_8h" local="yes">vendor/googletest/googlemock/include/gmock/gmock-actions.h</includedby>
+    <includedby refid="gmock-cardinalities_8h" local="yes">vendor/googletest/googlemock/include/gmock/gmock-cardinalities.h</includedby>
+    <includedby refid="gmock-generated-actions_8h" local="yes">vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h</includedby>
+    <includedby refid="gmock-generated-nice-strict_8h" local="yes">vendor/googletest/googlemock/include/gmock/gmock-generated-nice-strict.h</includedby>
+    <includedby refid="gmock-matchers_8h" local="yes">vendor/googletest/googlemock/include/gmock/gmock-matchers.h</includedby>
+    <includedby refid="gmock-spec-builders_8h" local="yes">vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h</includedby>
+    <includedby refid="gmock-generated-internal-utils_8h" local="yes">vendor/googletest/googlemock/include/gmock/internal/gmock-generated-internal-utils.h</includedby>
+    <includedby refid="gmock-internal-utils_8h" local="yes">vendor/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h</includedby>
+    <includedby refid="gmock-internal-utils_8cc" local="yes">vendor/googletest/googlemock/src/gmock-internal-utils.cc</includedby>
+    <includedby refid="gmock_8cc" local="yes">vendor/googletest/googlemock/src/gmock.cc</includedby>
+    <includedby refid="gmock-actions__test_8cc" local="yes">vendor/googletest/googlemock/test/gmock-actions_test.cc</includedby>
+    <includedby refid="gmock-internal-utils__test_8cc" local="yes">vendor/googletest/googlemock/test/gmock-internal-utils_test.cc</includedby>
+    <includedby refid="gmock-port__test_8cc" local="yes">vendor/googletest/googlemock/test/gmock-port_test.cc</includedby>
+    <includedby refid="gmock-spec-builders__test_8cc" local="yes">vendor/googletest/googlemock/test/gmock-spec-builders_test.cc</includedby>
+    <includedby refid="gmock__link__test_8h" local="yes">vendor/googletest/googlemock/test/gmock_link_test.h</includedby>
+    <incdepgraph>
+      <node id="961">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="967">
+        <label>gtest/internal/gtest-port-arch.h</label>
+        <link refid="gtest-port-arch_8h_source"/>
+      </node>
+      <node id="951">
+        <label>assert.h</label>
+      </node>
+      <node id="952">
+        <label>stdlib.h</label>
+      </node>
+      <node id="964">
+        <label>string</label>
+      </node>
+      <node id="974">
+        <label>gmock/internal/custom/gmock-port.h</label>
+        <link refid="custom_2gmock-port_8h_source"/>
+      </node>
+      <node id="957">
+        <label>stddef.h</label>
+      </node>
+      <node id="968">
+        <label>gtest/internal/custom/gtest-port.h</label>
+        <link refid="custom_2gtest-port_8h_source"/>
+      </node>
+      <node id="960">
+        <label>sys/types.h</label>
+      </node>
+      <node id="959">
+        <label>string.h</label>
+      </node>
+      <node id="972">
+        <label>typeinfo</label>
+      </node>
+      <node id="950">
+        <label>vendor/googletest/googlemock/include/gmock/internal/gmock-port.h</label>
+        <link refid="gmock-port_8h"/>
+        <childnode refid="951" relation="include">
+        </childnode>
+        <childnode refid="952" relation="include">
+        </childnode>
+        <childnode refid="953" relation="include">
+        </childnode>
+        <childnode refid="954" relation="include">
+        </childnode>
+        <childnode refid="955" relation="include">
+        </childnode>
+        <childnode refid="974" relation="include">
+        </childnode>
+      </node>
+      <node id="969">
+        <label>unistd.h</label>
+      </node>
+      <node id="966">
+        <label>vector</label>
+      </node>
+      <node id="965">
+        <label>utility</label>
+      </node>
+      <node id="963">
+        <label>sstream</label>
+      </node>
+      <node id="954">
+        <label>gtest/internal/gtest-linked_ptr.h</label>
+        <link refid="gtest-linked__ptr_8h_source"/>
+        <childnode refid="952" relation="include">
+        </childnode>
+        <childnode refid="951" relation="include">
+        </childnode>
+        <childnode refid="955" relation="include">
+        </childnode>
+      </node>
+      <node id="953">
+        <label>iostream</label>
+      </node>
+      <node id="973">
+        <label>gtest/internal/gtest-tuple.h</label>
+        <link refid="gtest-tuple_8h_source"/>
+        <childnode refid="965" relation="include">
+        </childnode>
+      </node>
+      <node id="970">
+        <label>strings.h</label>
+      </node>
+      <node id="956">
+        <label>ctype.h</label>
+      </node>
+      <node id="955">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="gtest-port_8h_source"/>
+        <childnode refid="956" relation="include">
+        </childnode>
+        <childnode refid="957" relation="include">
+        </childnode>
+        <childnode refid="952" relation="include">
+        </childnode>
+        <childnode refid="958" relation="include">
+        </childnode>
+        <childnode refid="959" relation="include">
+        </childnode>
+        <childnode refid="960" relation="include">
+        </childnode>
+        <childnode refid="961" relation="include">
+        </childnode>
+        <childnode refid="962" relation="include">
+        </childnode>
+        <childnode refid="953" relation="include">
+        </childnode>
+        <childnode refid="963" relation="include">
+        </childnode>
+        <childnode refid="964" relation="include">
+        </childnode>
+        <childnode refid="965" relation="include">
+        </childnode>
+        <childnode refid="966" relation="include">
+        </childnode>
+        <childnode refid="967" relation="include">
+        </childnode>
+        <childnode refid="968" relation="include">
+        </childnode>
+        <childnode refid="969" relation="include">
+        </childnode>
+        <childnode refid="970" relation="include">
+        </childnode>
+        <childnode refid="971" relation="include">
+        </childnode>
+        <childnode refid="972" relation="include">
+        </childnode>
+        <childnode refid="973" relation="include">
+        </childnode>
+      </node>
+      <node id="962">
+        <label>algorithm</label>
+      </node>
+      <node id="971">
+        <label>regex.h</label>
+      </node>
+      <node id="958">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="989">
+        <label>vendor/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h</label>
+        <link refid="gmock-internal-utils_8h_source"/>
+        <childnode refid="976" relation="include">
+        </childnode>
+        <childnode refid="982" relation="include">
+        </childnode>
+        <childnode refid="985" relation="include">
+        </childnode>
+        <childnode refid="981" relation="include">
+        </childnode>
+        <childnode refid="979" relation="include">
+        </childnode>
+      </node>
+      <node id="978">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-more-actions.h</label>
+        <link refid="gmock-more-actions_8h_source"/>
+        <childnode refid="979" relation="include">
+        </childnode>
+      </node>
+      <node id="986">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h</label>
+        <link refid="gmock-generated-matchers_8h_source"/>
+        <childnode refid="987" relation="include">
+        </childnode>
+        <childnode refid="979" relation="include">
+        </childnode>
+      </node>
+      <node id="982">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-generated-function-mockers.h</label>
+        <link refid="gmock-generated-function-mockers_8h_source"/>
+        <childnode refid="979" relation="include">
+        </childnode>
+      </node>
+      <node id="979">
+        <label>vendor/googletest/googlemock/include/gmock/gmock.h</label>
+        <link refid="gmock_8h_source"/>
+        <childnode refid="980" relation="include">
+        </childnode>
+      </node>
+      <node id="977">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h</label>
+        <link refid="gmock-generated-actions_8h_source"/>
+        <childnode refid="978" relation="include">
+        </childnode>
+        <childnode refid="979" relation="include">
+        </childnode>
+      </node>
+      <node id="976">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-actions.h</label>
+        <link refid="gmock-actions_8h_source"/>
+        <childnode refid="977" relation="include">
+        </childnode>
+        <childnode refid="981" relation="include">
+        </childnode>
+        <childnode refid="979" relation="include">
+        </childnode>
+      </node>
+      <node id="975">
+        <label>vendor/googletest/googlemock/include/gmock/internal/gmock-port.h</label>
+        <link refid="gmock-port_8h"/>
+        <childnode refid="976" relation="include">
+        </childnode>
+        <childnode refid="984" relation="include">
+        </childnode>
+        <childnode refid="977" relation="include">
+        </childnode>
+        <childnode refid="983" relation="include">
+        </childnode>
+        <childnode refid="985" relation="include">
+        </childnode>
+        <childnode refid="981" relation="include">
+        </childnode>
+        <childnode refid="988" relation="include">
+        </childnode>
+        <childnode refid="989" relation="include">
+        </childnode>
+        <childnode refid="980" relation="include">
+        </childnode>
+      </node>
+      <node id="981">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h</label>
+        <link refid="gmock-spec-builders_8h_source"/>
+        <childnode refid="982" relation="include">
+        </childnode>
+        <childnode refid="983" relation="include">
+        </childnode>
+      </node>
+      <node id="985">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-matchers.h</label>
+        <link refid="gmock-matchers_8h_source"/>
+        <childnode refid="986" relation="include">
+        </childnode>
+        <childnode refid="981" relation="include">
+        </childnode>
+        <childnode refid="979" relation="include">
+        </childnode>
+      </node>
+      <node id="983">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-generated-nice-strict.h</label>
+        <link refid="gmock-generated-nice-strict_8h_source"/>
+        <childnode refid="979" relation="include">
+        </childnode>
+      </node>
+      <node id="984">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-cardinalities.h</label>
+        <link refid="gmock-cardinalities_8h_source"/>
+        <childnode refid="981" relation="include">
+        </childnode>
+        <childnode refid="979" relation="include">
+        </childnode>
+      </node>
+      <node id="987">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-more-matchers.h</label>
+        <link refid="gmock-more-matchers_8h_source"/>
+        <childnode refid="979" relation="include">
+        </childnode>
+      </node>
+      <node id="988">
+        <label>vendor/googletest/googlemock/include/gmock/internal/gmock-generated-internal-utils.h</label>
+        <link refid="gmock-generated-internal-utils_8h_source"/>
+        <childnode refid="989" relation="include">
+        </childnode>
+      </node>
+      <node id="980">
+        <label>vendor/googletest/googlemock/test/gmock_link_test.h</label>
+        <link refid="gmock__link__test_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="gmock-port_8h_1ad7119adfef06be5e7b1551633f5a1436" prot="public" static="no">
+        <name>GMOCK_FLAG</name>
+        <param><defname>name</defname></param>
+        <initializer>FLAGS_gmock_##name</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-port.h" line="70" column="9" bodyfile="vendor/googletest/googlemock/include/gmock/internal/gmock-port.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gmock-port_8h_1a7a0a953221ea8ef5aaa6c644a48af599" prot="public" static="no">
+        <name>GMOCK_DECLARE_bool_</name>
+        <param><defname>name</defname></param>
+        <initializer>extern GTEST_API_ bool GMOCK_FLAG(name)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-port.h" line="75" column="9" bodyfile="vendor/googletest/googlemock/include/gmock/internal/gmock-port.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gmock-port_8h_1adeb7f0a8d842d1d541615763835af3f9" prot="public" static="no">
+        <name>GMOCK_DECLARE_int32_</name>
+        <param><defname>name</defname></param>
+        <initializer>extern GTEST_API_ ::testing::internal::Int32 GMOCK_FLAG(name)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-port.h" line="76" column="9" bodyfile="vendor/googletest/googlemock/include/gmock/internal/gmock-port.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gmock-port_8h_1a35af08c45131cf68d78446cb8cfe40fe" prot="public" static="no">
+        <name>GMOCK_DECLARE_string_</name>
+        <param><defname>name</defname></param>
+        <initializer>extern GTEST_API_ ::std::string GMOCK_FLAG(name)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-port.h" line="78" column="9" bodyfile="vendor/googletest/googlemock/include/gmock/internal/gmock-port.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gmock-port_8h_1a470be328fabbeef3987127adc18a1433" prot="public" static="no">
+        <name>GMOCK_DEFINE_bool_</name>
+        <param><defname>name</defname></param>
+        <param><defname>default_val</defname></param>
+        <param><defname>doc</defname></param>
+        <initializer>GTEST_API_ bool GMOCK_FLAG(name) = (default_val)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-port.h" line="82" column="9" bodyfile="vendor/googletest/googlemock/include/gmock/internal/gmock-port.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gmock-port_8h_1a19d91081ff0aaab2f60ef1dc2d6e6b34" prot="public" static="no">
+        <name>GMOCK_DEFINE_int32_</name>
+        <param><defname>name</defname></param>
+        <param><defname>default_val</defname></param>
+        <param><defname>doc</defname></param>
+        <initializer>GTEST_API_ ::testing::internal::Int32 GMOCK_FLAG(name) = (default_val)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-port.h" line="84" column="9" bodyfile="vendor/googletest/googlemock/include/gmock/internal/gmock-port.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gmock-port_8h_1ad6badbf90e5a813e2bd5668fc6b6a8f7" prot="public" static="no">
+        <name>GMOCK_DEFINE_string_</name>
+        <param><defname>name</defname></param>
+        <param><defname>default_val</defname></param>
+        <param><defname>doc</defname></param>
+        <initializer>GTEST_API_ ::std::string GMOCK_FLAG(name) = (default_val)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-port.h" line="86" column="9" bodyfile="vendor/googletest/googlemock/include/gmock/internal/gmock-port.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2008,<sp/>Google<sp/>Inc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>met:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Google<sp/>Inc.<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author:<sp/>vadimb@google.com<sp/>(Vadim<sp/>Berman)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Low-level<sp/>types<sp/>and<sp/>utilities<sp/>for<sp/>porting<sp/>Google<sp/>Mock<sp/>to<sp/>various</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>platforms.<sp/><sp/>All<sp/>macros<sp/>ending<sp/>with<sp/>_<sp/>and<sp/>symbols<sp/>defined<sp/>in<sp/>an</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>internal<sp/>namespace<sp/>are<sp/>subject<sp/>to<sp/>change<sp/>without<sp/>notice.<sp/><sp/>Code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>outside<sp/>Google<sp/>Mock<sp/>MUST<sp/>NOT<sp/>USE<sp/>THEM<sp/>DIRECTLY.<sp/><sp/>Macros<sp/>that<sp/>don&apos;t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>end<sp/>with<sp/>_<sp/>are<sp/>part<sp/>of<sp/>Google<sp/>Mock&apos;s<sp/>public<sp/>API<sp/>and<sp/>can<sp/>be<sp/>used<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>code<sp/>outside<sp/>Google<sp/>Mock.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_PORT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_PORT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Most<sp/>of<sp/>the<sp/>utilities<sp/>needed<sp/>for<sp/>porting<sp/>Google<sp/>Mock<sp/>are<sp/>also</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>required<sp/>for<sp/>Google<sp/>Test<sp/>and<sp/>are<sp/>defined<sp/>in<sp/>gtest-port.h.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Note<sp/>to<sp/>maintainers:<sp/>to<sp/>reduce<sp/>code<sp/>duplication,<sp/>prefer<sp/>adding</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>portability<sp/>utilities<sp/>to<sp/>Google<sp/>Test&apos;s<sp/>gtest-port.h<sp/>instead<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>here,<sp/>as<sp/>Google<sp/>Mock<sp/>depends<sp/>on<sp/>Google<sp/>Test.<sp/><sp/>Only<sp/>add<sp/>a<sp/>utility</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/>here<sp/>if<sp/>it&apos;s<sp/>truly<sp/>specific<sp/>to<sp/>Google<sp/>Mock.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gtest/internal/gtest-linked_ptr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gtest/internal/gtest-port.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gmock/internal/custom/gmock-port.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/>To<sp/>avoid<sp/>conditional<sp/>compilation<sp/>everywhere,<sp/>we<sp/>make<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>gmock-port.h&apos;s<sp/>responsibility<sp/>to<sp/>#include<sp/>the<sp/>header<sp/>implementing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>tr1/tuple.<sp/><sp/>gmock-port.h<sp/>does<sp/>this<sp/>via<sp/>gtest-port.h,<sp/>which<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/>guaranteed<sp/>to<sp/>pull<sp/>in<sp/>the<sp/>tuple<sp/>header.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>MS<sp/>Visual<sp/>C++,<sp/>check<sp/>the<sp/>compiler<sp/>version.<sp/>At<sp/>least<sp/>VS<sp/>2003<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/>required<sp/>to<sp/>compile<sp/>Google<sp/>Mock.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)<sp/>&amp;&amp;<sp/>_MSC_VER<sp/>&lt;<sp/>1310</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>error<sp/>&quot;At<sp/>least<sp/>Visual<sp/>C++<sp/>2003<sp/>(7.1)<sp/>is<sp/>required<sp/>to<sp/>compile<sp/>Google<sp/>Mock.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Macro<sp/>for<sp/>referencing<sp/>flags.<sp/><sp/>This<sp/>is<sp/>public<sp/>as<sp/>we<sp/>want<sp/>the<sp/>user<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>use<sp/>this<sp/>syntax<sp/>to<sp/>reference<sp/>Google<sp/>Mock<sp/>flags.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GMOCK_FLAG(name)<sp/>FLAGS_gmock_##name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(GMOCK_DECLARE_bool_)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Macros<sp/>for<sp/>declaring<sp/>flags.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GMOCK_DECLARE_bool_(name)<sp/>extern<sp/>GTEST_API_<sp/>bool<sp/>GMOCK_FLAG(name)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GMOCK_DECLARE_int32_(name)<sp/>\</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>extern<sp/>GTEST_API_<sp/>::testing::internal::Int32<sp/>GMOCK_FLAG(name)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GMOCK_DECLARE_string_(name)<sp/>\</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>extern<sp/>GTEST_API_<sp/>::std::string<sp/>GMOCK_FLAG(name)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Macros<sp/>for<sp/>defining<sp/>flags.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GMOCK_DEFINE_bool_(name,<sp/>default_val,<sp/>doc)<sp/>\</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>GTEST_API_<sp/>bool<sp/>GMOCK_FLAG(name)<sp/>=<sp/>(default_val)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GMOCK_DEFINE_int32_(name,<sp/>default_val,<sp/>doc)<sp/>\</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>GTEST_API_<sp/>::testing::internal::Int32<sp/>GMOCK_FLAG(name)<sp/>=<sp/>(default_val)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GMOCK_DEFINE_string_(name,<sp/>default_val,<sp/>doc)<sp/>\</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>GTEST_API_<sp/>::std::string<sp/>GMOCK_FLAG(name)<sp/>=<sp/>(default_val)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>!defined(GMOCK_DECLARE_bool_)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_PORT_H_</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-port.h"/>
+  </compounddef>
+</doxygen>

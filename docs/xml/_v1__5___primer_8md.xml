@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_v1__5___primer_8md" kind="file" language="Markdown">
+    <compoundname>V1_5_Primer.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Introduction:<sp/>Why<sp/>Google<sp/>C++<sp/>Testing<sp/>Framework?<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_Google<sp/>C++<sp/>Testing<sp/>Framework_<sp/>helps<sp/>you<sp/>write<sp/>better<sp/>C++<sp/>tests.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>matter<sp/>whether<sp/>you<sp/>work<sp/>on<sp/>Linux,<sp/>Windows,<sp/>or<sp/>a<sp/>Mac,<sp/>if<sp/>you<sp/>write<sp/>C++<sp/>code,</highlight></codeline>
+<codeline><highlight class="normal">Google<sp/>Test<sp/>can<sp/>help<sp/>you.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">So<sp/>what<sp/>makes<sp/>a<sp/>good<sp/>test,<sp/>and<sp/>how<sp/>does<sp/>Google<sp/>C++<sp/>Testing<sp/>Framework<sp/>fit<sp/>in?<sp/>We<sp/>believe:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Tests<sp/>should<sp/>be<sp/>_independent_<sp/>and<sp/>_repeatable_.<sp/>It&apos;s<sp/>a<sp/>pain<sp/>to<sp/>debug<sp/>a<sp/>test<sp/>that<sp/>succeeds<sp/>or<sp/>fails<sp/>as<sp/>a<sp/>result<sp/>of<sp/>other<sp/>tests.<sp/><sp/>Google<sp/>C++<sp/>Testing<sp/>Framework<sp/>isolates<sp/>the<sp/>tests<sp/>by<sp/>running<sp/>each<sp/>of<sp/>them<sp/>on<sp/>a<sp/>different<sp/>object.<sp/>When<sp/>a<sp/>test<sp/>fails,<sp/>Google<sp/>C++<sp/>Testing<sp/>Framework<sp/>allows<sp/>you<sp/>to<sp/>run<sp/>it<sp/>in<sp/>isolation<sp/>for<sp/>quick<sp/>debugging.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Tests<sp/>should<sp/>be<sp/>well<sp/>_organized_<sp/>and<sp/>reflect<sp/>the<sp/>structure<sp/>of<sp/>the<sp/>tested<sp/>code.<sp/><sp/>Google<sp/>C++<sp/>Testing<sp/>Framework<sp/>groups<sp/>related<sp/>tests<sp/>into<sp/>test<sp/>cases<sp/>that<sp/>can<sp/>share<sp/>data<sp/>and<sp/>subroutines.<sp/>This<sp/>common<sp/>pattern<sp/>is<sp/>easy<sp/>to<sp/>recognize<sp/>and<sp/>makes<sp/>tests<sp/>easy<sp/>to<sp/>maintain.<sp/>Such<sp/>consistency<sp/>is<sp/>especially<sp/>helpful<sp/>when<sp/>people<sp/>switch<sp/>projects<sp/>and<sp/>start<sp/>to<sp/>work<sp/>on<sp/>a<sp/>new<sp/>code<sp/>base.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Tests<sp/>should<sp/>be<sp/>_portable_<sp/>and<sp/>_reusable_.<sp/>The<sp/>open-source<sp/>community<sp/>has<sp/>a<sp/>lot<sp/>of<sp/>code<sp/>that<sp/>is<sp/>platform-neutral,<sp/>its<sp/>tests<sp/>should<sp/>also<sp/>be<sp/>platform-neutral.<sp/><sp/>Google<sp/>C++<sp/>Testing<sp/>Framework<sp/>works<sp/>on<sp/>different<sp/>OSes,<sp/>with<sp/>different<sp/>compilers<sp/>(gcc,<sp/>MSVC,<sp/>and<sp/>others),<sp/>with<sp/>or<sp/>without<sp/>exceptions,<sp/>so<sp/>Google<sp/>C++<sp/>Testing<sp/>Framework<sp/>tests<sp/>can<sp/>easily<sp/>work<sp/>with<sp/>a<sp/>variety<sp/>of<sp/>configurations.<sp/><sp/>(Note<sp/>that<sp/>the<sp/>current<sp/>release<sp/>only<sp/>contains<sp/>build<sp/>scripts<sp/>for<sp/>Linux<sp/>-<sp/>we<sp/>are<sp/>actively<sp/>working<sp/>on<sp/>scripts<sp/>for<sp/>other<sp/>platforms.)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>When<sp/>tests<sp/>fail,<sp/>they<sp/>should<sp/>provide<sp/>as<sp/>much<sp/>_information_<sp/>about<sp/>the<sp/>problem<sp/>as<sp/>possible.<sp/>Google<sp/>C++<sp/>Testing<sp/>Framework<sp/>doesn&apos;t<sp/>stop<sp/>at<sp/>the<sp/>first<sp/>test<sp/>failure.<sp/>Instead,<sp/>it<sp/>only<sp/>stops<sp/>the<sp/>current<sp/>test<sp/>and<sp/>continues<sp/>with<sp/>the<sp/>next.<sp/>You<sp/>can<sp/>also<sp/>set<sp/>up<sp/>tests<sp/>that<sp/>report<sp/>non-fatal<sp/>failures<sp/>after<sp/>which<sp/>the<sp/>current<sp/>test<sp/>continues.<sp/>Thus,<sp/>you<sp/>can<sp/>detect<sp/>and<sp/>fix<sp/>multiple<sp/>bugs<sp/>in<sp/>a<sp/>single<sp/>run-edit-compile<sp/>cycle.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>The<sp/>testing<sp/>framework<sp/>should<sp/>liberate<sp/>test<sp/>writers<sp/>from<sp/>housekeeping<sp/>chores<sp/>and<sp/>let<sp/>them<sp/>focus<sp/>on<sp/>the<sp/>test<sp/>_content_.<sp/><sp/>Google<sp/>C++<sp/>Testing<sp/>Framework<sp/>automatically<sp/>keeps<sp/>track<sp/>of<sp/>all<sp/>tests<sp/>defined,<sp/>and<sp/>doesn&apos;t<sp/>require<sp/>the<sp/>user<sp/>to<sp/>enumerate<sp/>them<sp/>in<sp/>order<sp/>to<sp/>run<sp/>them.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Tests<sp/>should<sp/>be<sp/>_fast_.<sp/>With<sp/>Google<sp/>C++<sp/>Testing<sp/>Framework,<sp/>you<sp/>can<sp/>reuse<sp/>shared<sp/>resources<sp/>across<sp/>tests<sp/>and<sp/>pay<sp/>for<sp/>the<sp/>set-up/tear-down<sp/>only<sp/>once,<sp/>without<sp/>making<sp/>tests<sp/>depend<sp/>on<sp/>each<sp/>other.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Since<sp/>Google<sp/>C++<sp/>Testing<sp/>Framework<sp/>is<sp/>based<sp/>on<sp/>the<sp/>popular<sp/>xUnit</highlight></codeline>
+<codeline><highlight class="normal">architecture,<sp/>you&apos;ll<sp/>feel<sp/>right<sp/>at<sp/>home<sp/>if<sp/>you&apos;ve<sp/>used<sp/>JUnit<sp/>or<sp/>PyUnit<sp/>before.</highlight></codeline>
+<codeline><highlight class="normal">If<sp/>not,<sp/>it<sp/>will<sp/>take<sp/>you<sp/>about<sp/>10<sp/>minutes<sp/>to<sp/>learn<sp/>the<sp/>basics<sp/>and<sp/>get<sp/>started.</highlight></codeline>
+<codeline><highlight class="normal">So<sp/>let&apos;s<sp/>go!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_Note:_<sp/>We<sp/>sometimes<sp/>refer<sp/>to<sp/>Google<sp/>C++<sp/>Testing<sp/>Framework<sp/>informally</highlight></codeline>
+<codeline><highlight class="normal">as<sp/>_Google<sp/>Test_.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Setting<sp/>up<sp/>a<sp/>New<sp/>Test<sp/>Project<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>write<sp/>a<sp/>test<sp/>program<sp/>using<sp/>Google<sp/>Test,<sp/>you<sp/>need<sp/>to<sp/>compile<sp/>Google</highlight></codeline>
+<codeline><highlight class="normal">Test<sp/>into<sp/>a<sp/>library<sp/>and<sp/>link<sp/>your<sp/>test<sp/>with<sp/>it.<sp/><sp/>We<sp/>provide<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">files<sp/>for<sp/>some<sp/>popular<sp/>build<sp/>systems<sp/>(`msvc/`<sp/>for<sp/>Visual<sp/>Studio,</highlight></codeline>
+<codeline><highlight class="normal">`xcode/`<sp/>for<sp/>Mac<sp/>Xcode,<sp/>`make/`<sp/>for<sp/>GNU<sp/>make,<sp/>`codegear/`<sp/>for<sp/>Borland</highlight></codeline>
+<codeline><highlight class="normal">C++<sp/>Builder,<sp/>and<sp/>the<sp/>autotools<sp/>script<sp/>in<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">Google<sp/>Test<sp/>root<sp/>directory).<sp/><sp/>If<sp/>your<sp/>build<sp/>system<sp/>is<sp/>not<sp/>on<sp/>this</highlight></codeline>
+<codeline><highlight class="normal">list,<sp/>you<sp/>can<sp/>take<sp/>a<sp/>look<sp/>at<sp/>`make/Makefile`<sp/>to<sp/>learn<sp/>how<sp/>Google<sp/>Test</highlight></codeline>
+<codeline><highlight class="normal">should<sp/>be<sp/>compiled<sp/>(basically<sp/>you<sp/>want<sp/>to<sp/>compile<sp/>`src/gtest-all.cc`</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>`GTEST_ROOT`<sp/>and<sp/>`GTEST_ROOT/include`<sp/>in<sp/>the<sp/>header<sp/>search<sp/>path,</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>`GTEST_ROOT`<sp/>is<sp/>the<sp/>Google<sp/>Test<sp/>root<sp/>directory).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Once<sp/>you<sp/>are<sp/>able<sp/>to<sp/>compile<sp/>the<sp/>Google<sp/>Test<sp/>library,<sp/>you<sp/>should</highlight></codeline>
+<codeline><highlight class="normal">create<sp/>a<sp/>project<sp/>or<sp/>build<sp/>target<sp/>for<sp/>your<sp/>test<sp/>program.<sp/><sp/>Make<sp/>sure<sp/>you</highlight></codeline>
+<codeline><highlight class="normal">have<sp/>`GTEST_ROOT/include`<sp/>in<sp/>the<sp/>header<sp/>search<sp/>path<sp/>so<sp/>that<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">compiler<sp/>can<sp/>find<sp/>`&lt;gtest/gtest.h&gt;`<sp/>when<sp/>compiling<sp/>your<sp/>test.<sp/><sp/>Set<sp/>up</highlight></codeline>
+<codeline><highlight class="normal">your<sp/>test<sp/>project<sp/>to<sp/>link<sp/>with<sp/>the<sp/>Google<sp/>Test<sp/>library<sp/>(for<sp/>example,</highlight></codeline>
+<codeline><highlight class="normal">in<sp/>Visual<sp/>Studio,<sp/>this<sp/>is<sp/>done<sp/>by<sp/>adding<sp/>a<sp/>dependency<sp/>on</highlight></codeline>
+<codeline><highlight class="normal">`gtest.vcproj`).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>still<sp/>have<sp/>questions,<sp/>take<sp/>a<sp/>look<sp/>at<sp/>how<sp/>Google<sp/>Test&apos;s<sp/>own</highlight></codeline>
+<codeline><highlight class="normal">tests<sp/>are<sp/>built<sp/>and<sp/>use<sp/>them<sp/>as<sp/>examples.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Basic<sp/>Concepts<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">When<sp/>using<sp/>Google<sp/>Test,<sp/>you<sp/>start<sp/>by<sp/>writing<sp/>_assertions_,<sp/>which<sp/>are<sp/>statements</highlight></codeline>
+<codeline><highlight class="normal">that<sp/>check<sp/>whether<sp/>a<sp/>condition<sp/>is<sp/>true.<sp/>An<sp/>assertion&apos;s<sp/>result<sp/>can<sp/>be<sp/>_success_,</highlight></codeline>
+<codeline><highlight class="normal">_nonfatal<sp/>failure_,<sp/>or<sp/>_fatal<sp/>failure_.<sp/>If<sp/>a<sp/>fatal<sp/>failure<sp/>occurs,<sp/>it<sp/>aborts</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>current<sp/>function;<sp/>otherwise<sp/>the<sp/>program<sp/>continues<sp/>normally.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_Tests_<sp/>use<sp/>assertions<sp/>to<sp/>verify<sp/>the<sp/>tested<sp/>code&apos;s<sp/>behavior.<sp/>If<sp/>a<sp/>test<sp/>crashes</highlight></codeline>
+<codeline><highlight class="normal">or<sp/>has<sp/>a<sp/>failed<sp/>assertion,<sp/>then<sp/>it<sp/>_fails_;<sp/>otherwise<sp/>it<sp/>_succeeds_.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>_test<sp/>case_<sp/>contains<sp/>one<sp/>or<sp/>many<sp/>tests.<sp/>You<sp/>should<sp/>group<sp/>your<sp/>tests<sp/>into<sp/>test</highlight></codeline>
+<codeline><highlight class="normal">cases<sp/>that<sp/>reflect<sp/>the<sp/>structure<sp/>of<sp/>the<sp/>tested<sp/>code.<sp/>When<sp/>multiple<sp/>tests<sp/>in<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">test<sp/>case<sp/>need<sp/>to<sp/>share<sp/>common<sp/>objects<sp/>and<sp/>subroutines,<sp/>you<sp/>can<sp/>put<sp/>them<sp/>into<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">_test<sp/>fixture_<sp/>class.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>_test<sp/>program_<sp/>can<sp/>contain<sp/>multiple<sp/>test<sp/>cases.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We&apos;ll<sp/>now<sp/>explain<sp/>how<sp/>to<sp/>write<sp/>a<sp/>test<sp/>program,<sp/>starting<sp/>at<sp/>the<sp/>individual</highlight></codeline>
+<codeline><highlight class="normal">assertion<sp/>level<sp/>and<sp/>building<sp/>up<sp/>to<sp/>tests<sp/>and<sp/>test<sp/>cases.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Assertions<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Test<sp/>assertions<sp/>are<sp/>macros<sp/>that<sp/>resemble<sp/>function<sp/>calls.<sp/>You<sp/>test<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>or<sp/>function<sp/>by<sp/>making<sp/>assertions<sp/>about<sp/>its<sp/>behavior.<sp/>When<sp/>an<sp/>assertion</highlight></codeline>
+<codeline><highlight class="normal">fails,<sp/>Google<sp/>Test<sp/>prints<sp/>the<sp/>assertion&apos;s<sp/>source<sp/>file<sp/>and<sp/>line<sp/>number<sp/>location,</highlight></codeline>
+<codeline><highlight class="normal">along<sp/>with<sp/>a<sp/>failure<sp/>message.<sp/>You<sp/>may<sp/>also<sp/>supply<sp/>a<sp/>custom<sp/>failure<sp/>message</highlight></codeline>
+<codeline><highlight class="normal">which<sp/>will<sp/>be<sp/>appended<sp/>to<sp/>Google<sp/>Test&apos;s<sp/>message.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>assertions<sp/>come<sp/>in<sp/>pairs<sp/>that<sp/>test<sp/>the<sp/>same<sp/>thing<sp/>but<sp/>have<sp/>different</highlight></codeline>
+<codeline><highlight class="normal">effects<sp/>on<sp/>the<sp/>current<sp/>function.<sp/>`ASSERT_*`<sp/>versions<sp/>generate<sp/>fatal<sp/>failures</highlight></codeline>
+<codeline><highlight class="normal">when<sp/>they<sp/>fail,<sp/>and<sp/>**abort<sp/>the<sp/>current<sp/>function**.<sp/>`EXPECT_*`<sp/>versions<sp/>generate</highlight></codeline>
+<codeline><highlight class="normal">nonfatal<sp/>failures,<sp/>which<sp/>don&apos;t<sp/>abort<sp/>the<sp/>current<sp/>function.<sp/>Usually<sp/>`EXPECT_*`</highlight></codeline>
+<codeline><highlight class="normal">are<sp/>preferred,<sp/>as<sp/>they<sp/>allow<sp/>more<sp/>than<sp/>one<sp/>failures<sp/>to<sp/>be<sp/>reported<sp/>in<sp/>a<sp/>test.</highlight></codeline>
+<codeline><highlight class="normal">However,<sp/>you<sp/>should<sp/>use<sp/>`ASSERT_*`<sp/>if<sp/>it<sp/>doesn&apos;t<sp/>make<sp/>sense<sp/>to<sp/>continue<sp/>when</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>assertion<sp/>in<sp/>question<sp/>fails.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Since<sp/>a<sp/>failed<sp/>`ASSERT_*`<sp/>returns<sp/>from<sp/>the<sp/>current<sp/>function<sp/>immediately,</highlight></codeline>
+<codeline><highlight class="normal">possibly<sp/>skipping<sp/>clean-up<sp/>code<sp/>that<sp/>comes<sp/>after<sp/>it,<sp/>it<sp/>may<sp/>cause<sp/>a<sp/>space<sp/>leak.</highlight></codeline>
+<codeline><highlight class="normal">Depending<sp/>on<sp/>the<sp/>nature<sp/>of<sp/>the<sp/>leak,<sp/>it<sp/>may<sp/>or<sp/>may<sp/>not<sp/>be<sp/>worth<sp/>fixing<sp/>-<sp/>so</highlight></codeline>
+<codeline><highlight class="normal">keep<sp/>this<sp/>in<sp/>mind<sp/>if<sp/>you<sp/>get<sp/>a<sp/>heap<sp/>checker<sp/>error<sp/>in<sp/>addition<sp/>to<sp/>assertion</highlight></codeline>
+<codeline><highlight class="normal">errors.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>provide<sp/>a<sp/>custom<sp/>failure<sp/>message,<sp/>simply<sp/>stream<sp/>it<sp/>into<sp/>the<sp/>macro<sp/>using<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">`&lt;&lt;`<sp/>operator,<sp/>or<sp/>a<sp/>sequence<sp/>of<sp/>such<sp/>operators.<sp/>An<sp/>example:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">ASSERT_EQ(x.size(),<sp/>y.size())<sp/>&lt;&lt;<sp/>&quot;Vectors<sp/>x<sp/>and<sp/>y<sp/>are<sp/>of<sp/>unequal<sp/>length&quot;;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">for<sp/>(int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>x.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_EQ(x[i],<sp/>y[i])<sp/>&lt;&lt;<sp/>&quot;Vectors<sp/>x<sp/>and<sp/>y<sp/>differ<sp/>at<sp/>index<sp/>&quot;<sp/>&lt;&lt;<sp/>i;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Anything<sp/>that<sp/>can<sp/>be<sp/>streamed<sp/>to<sp/>an<sp/>`ostream`<sp/>can<sp/>be<sp/>streamed<sp/>to<sp/>an<sp/>assertion</highlight></codeline>
+<codeline><highlight class="normal">macro--in<sp/>particular,<sp/>C<sp/>strings<sp/>and<sp/>`string`<sp/>objects.<sp/>If<sp/>a<sp/>wide<sp/>string</highlight></codeline>
+<codeline><highlight class="normal">(`wchar_t*`,<sp/>`TCHAR*`<sp/>in<sp/>`UNICODE`<sp/>mode<sp/>on<sp/>Windows,<sp/>or<sp/>`std::wstring`)<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">streamed<sp/>to<sp/>an<sp/>assertion,<sp/>it<sp/>will<sp/>be<sp/>translated<sp/>to<sp/>UTF-8<sp/>when<sp/>printed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Basic<sp/>Assertions<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">These<sp/>assertions<sp/>do<sp/>basic<sp/>true/false<sp/>condition<sp/>testing.</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>**Fatal<sp/>assertion**<sp/>|<sp/>**Nonfatal<sp/>assertion**<sp/>|<sp/>**Verifies**<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|:--------------------|:-----------------------|:-------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`ASSERT_TRUE(`_condition_`)`;<sp/><sp/>|<sp/>`EXPECT_TRUE(`_condition_`)`;<sp/><sp/><sp/>|<sp/>_condition_<sp/>is<sp/>true<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`ASSERT_FALSE(`_condition_`)`;<sp/>|<sp/>`EXPECT_FALSE(`_condition_`)`;<sp/><sp/>|<sp/>_condition_<sp/>is<sp/>false<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Remember,<sp/>when<sp/>they<sp/>fail,<sp/>`ASSERT_*`<sp/>yields<sp/>a<sp/>fatal<sp/>failure<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">returns<sp/>from<sp/>the<sp/>current<sp/>function,<sp/>while<sp/>`EXPECT_*`<sp/>yields<sp/>a<sp/>nonfatal</highlight></codeline>
+<codeline><highlight class="normal">failure,<sp/>allowing<sp/>the<sp/>function<sp/>to<sp/>continue<sp/>running.<sp/>In<sp/>either<sp/>case,<sp/>an</highlight></codeline>
+<codeline><highlight class="normal">assertion<sp/>failure<sp/>means<sp/>its<sp/>containing<sp/>test<sp/>fails.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_Availability_:<sp/>Linux,<sp/>Windows,<sp/>Mac.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Binary<sp/>Comparison<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>section<sp/>describes<sp/>assertions<sp/>that<sp/>compare<sp/>two<sp/>values.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>**Fatal<sp/>assertion**<sp/>|<sp/>**Nonfatal<sp/>assertion**<sp/>|<sp/>**Verifies**<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|:--------------------|:-----------------------|:-------------|</highlight></codeline>
+<codeline><highlight class="normal">|`ASSERT_EQ(`_expected_`,<sp/>`_actual_`);`|`EXPECT_EQ(`_expected_`,<sp/>`_actual_`);`|<sp/>_expected_<sp/>`==`<sp/>_actual_<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`ASSERT_NE(`_val1_`,<sp/>`_val2_`);`<sp/><sp/><sp/><sp/><sp/><sp/>|`EXPECT_NE(`_val1_`,<sp/>`_val2_`);`<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>_val1_<sp/>`!=`<sp/>_val2_<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`ASSERT_LT(`_val1_`,<sp/>`_val2_`);`<sp/><sp/><sp/><sp/><sp/><sp/>|`EXPECT_LT(`_val1_`,<sp/>`_val2_`);`<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>_val1_<sp/>`&lt;`<sp/>_val2_<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`ASSERT_LE(`_val1_`,<sp/>`_val2_`);`<sp/><sp/><sp/><sp/><sp/><sp/>|`EXPECT_LE(`_val1_`,<sp/>`_val2_`);`<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>_val1_<sp/>`&lt;=`<sp/>_val2_<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`ASSERT_GT(`_val1_`,<sp/>`_val2_`);`<sp/><sp/><sp/><sp/><sp/><sp/>|`EXPECT_GT(`_val1_`,<sp/>`_val2_`);`<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>_val1_<sp/>`&gt;`<sp/>_val2_<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`ASSERT_GE(`_val1_`,<sp/>`_val2_`);`<sp/><sp/><sp/><sp/><sp/><sp/>|`EXPECT_GE(`_val1_`,<sp/>`_val2_`);`<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>_val1_<sp/>`&gt;=`<sp/>_val2_<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>the<sp/>event<sp/>of<sp/>a<sp/>failure,<sp/>Google<sp/>Test<sp/>prints<sp/>both<sp/>_val1_<sp/>and<sp/>_val2_</highlight></codeline>
+<codeline><highlight class="normal">.<sp/>In<sp/>`ASSERT_EQ*`<sp/>and<sp/>`EXPECT_EQ*`<sp/>(and<sp/>all<sp/>other<sp/>equality<sp/>assertions</highlight></codeline>
+<codeline><highlight class="normal">we&apos;ll<sp/>introduce<sp/>later),<sp/>you<sp/>should<sp/>put<sp/>the<sp/>expression<sp/>you<sp/>want<sp/>to<sp/>test</highlight></codeline>
+<codeline><highlight class="normal">in<sp/>the<sp/>position<sp/>of<sp/>_actual_,<sp/>and<sp/>put<sp/>its<sp/>expected<sp/>value<sp/>in<sp/>_expected_,</highlight></codeline>
+<codeline><highlight class="normal">as<sp/>Google<sp/>Test&apos;s<sp/>failure<sp/>messages<sp/>are<sp/>optimized<sp/>for<sp/>this<sp/>convention.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Value<sp/>arguments<sp/>must<sp/>be<sp/>comparable<sp/>by<sp/>the<sp/>assertion&apos;s<sp/>comparison<sp/>operator<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">you&apos;ll<sp/>get<sp/>a<sp/>compiler<sp/>error.<sp/>Values<sp/>must<sp/>also<sp/>support<sp/>the<sp/>`&lt;&lt;`<sp/>operator<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">streaming<sp/>to<sp/>an<sp/>`ostream`.<sp/>All<sp/>built-in<sp/>types<sp/>support<sp/>this.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">These<sp/>assertions<sp/>can<sp/>work<sp/>with<sp/>a<sp/>user-defined<sp/>type,<sp/>but<sp/>only<sp/>if<sp/>you<sp/>define<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">corresponding<sp/>comparison<sp/>operator<sp/>(e.g.<sp/>`==`,<sp/>`&lt;`,<sp/>etc).<sp/><sp/>If<sp/>the<sp/>corresponding</highlight></codeline>
+<codeline><highlight class="normal">operator<sp/>is<sp/>defined,<sp/>prefer<sp/>using<sp/>the<sp/>`ASSERT_*()`<sp/>macros<sp/>because<sp/>they<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">print<sp/>out<sp/>not<sp/>only<sp/>the<sp/>result<sp/>of<sp/>the<sp/>comparison,<sp/>but<sp/>the<sp/>two<sp/>operands<sp/>as<sp/>well.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Arguments<sp/>are<sp/>always<sp/>evaluated<sp/>exactly<sp/>once.<sp/>Therefore,<sp/>it&apos;s<sp/>OK<sp/>for<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">arguments<sp/>to<sp/>have<sp/>side<sp/>effects.<sp/>However,<sp/>as<sp/>with<sp/>any<sp/>ordinary<sp/>C/C++<sp/>function,</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>arguments&apos;<sp/>evaluation<sp/>order<sp/>is<sp/>undefined<sp/>(i.e.<sp/>the<sp/>compiler<sp/>is<sp/>free<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">choose<sp/>any<sp/>order)<sp/>and<sp/>your<sp/>code<sp/>should<sp/>not<sp/>depend<sp/>on<sp/>any<sp/>particular<sp/>argument</highlight></codeline>
+<codeline><highlight class="normal">evaluation<sp/>order.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`ASSERT_EQ()`<sp/>does<sp/>pointer<sp/>equality<sp/>on<sp/>pointers.<sp/>If<sp/>used<sp/>on<sp/>two<sp/>C<sp/>strings,<sp/>it</highlight></codeline>
+<codeline><highlight class="normal">tests<sp/>if<sp/>they<sp/>are<sp/>in<sp/>the<sp/>same<sp/>memory<sp/>location,<sp/>not<sp/>if<sp/>they<sp/>have<sp/>the<sp/>same<sp/>value.</highlight></codeline>
+<codeline><highlight class="normal">Therefore,<sp/>if<sp/>you<sp/>want<sp/>to<sp/>compare<sp/>C<sp/>strings<sp/>(e.g.<sp/>`const<sp/>char*`)<sp/>by<sp/>value,<sp/>use</highlight></codeline>
+<codeline><highlight class="normal">`ASSERT_STREQ()`<sp/>,<sp/>which<sp/>will<sp/>be<sp/>described<sp/>later<sp/>on.<sp/>In<sp/>particular,<sp/>to<sp/>assert</highlight></codeline>
+<codeline><highlight class="normal">that<sp/>a<sp/>C<sp/>string<sp/>is<sp/>`NULL`,<sp/>use<sp/>`ASSERT_STREQ(NULL,<sp/>c_string)`<sp/>.<sp/>However,<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">compare<sp/>two<sp/>`string`<sp/>objects,<sp/>you<sp/>should<sp/>use<sp/>`ASSERT_EQ`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Macros<sp/>in<sp/>this<sp/>section<sp/>work<sp/>with<sp/>both<sp/>narrow<sp/>and<sp/>wide<sp/>string<sp/>objects<sp/>(`string`</highlight></codeline>
+<codeline><highlight class="normal">and<sp/>`wstring`).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_Availability_:<sp/>Linux,<sp/>Windows,<sp/>Mac.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>String<sp/>Comparison<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>assertions<sp/>in<sp/>this<sp/>group<sp/>compare<sp/>two<sp/>**C<sp/>strings**.<sp/>If<sp/>you<sp/>want<sp/>to<sp/>compare</highlight></codeline>
+<codeline><highlight class="normal">two<sp/>`string`<sp/>objects,<sp/>use<sp/>`EXPECT_EQ`,<sp/>`EXPECT_NE`,<sp/>and<sp/>etc<sp/>instead.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>**Fatal<sp/>assertion**<sp/>|<sp/>**Nonfatal<sp/>assertion**<sp/>|<sp/>**Verifies**<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|:--------------------|:-----------------------|:-------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`ASSERT_STREQ(`_expected\_str_`,<sp/>`_actual\_str_`);`<sp/><sp/><sp/><sp/>|<sp/>`EXPECT_STREQ(`_expected\_str_`,<sp/>`_actual\_str_`);`<sp/><sp/><sp/><sp/><sp/>|<sp/>the<sp/>two<sp/>C<sp/>strings<sp/>have<sp/>the<sp/>same<sp/>content<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`ASSERT_STRNE(`_str1_`,<sp/>`_str2_`);`<sp/><sp/><sp/><sp/>|<sp/>`EXPECT_STRNE(`_str1_`,<sp/>`_str2_`);`<sp/><sp/><sp/><sp/><sp/>|<sp/>the<sp/>two<sp/>C<sp/>strings<sp/>have<sp/>different<sp/>content<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`ASSERT_STRCASEEQ(`_expected\_str_`,<sp/>`_actual\_str_`);`|<sp/>`EXPECT_STRCASEEQ(`_expected\_str_`,<sp/>`_actual\_str_`);`<sp/>|<sp/>the<sp/>two<sp/>C<sp/>strings<sp/>have<sp/>the<sp/>same<sp/>content,<sp/>ignoring<sp/>case<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`ASSERT_STRCASENE(`_str1_`,<sp/>`_str2_`);`|<sp/>`EXPECT_STRCASENE(`_str1_`,<sp/>`_str2_`);`<sp/>|<sp/>the<sp/>two<sp/>C<sp/>strings<sp/>have<sp/>different<sp/>content,<sp/>ignoring<sp/>case<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Note<sp/>that<sp/>&quot;CASE&quot;<sp/>in<sp/>an<sp/>assertion<sp/>name<sp/>means<sp/>that<sp/>case<sp/>is<sp/>ignored.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`*STREQ*`<sp/>and<sp/>`*STRNE*`<sp/>also<sp/>accept<sp/>wide<sp/>C<sp/>strings<sp/>(`wchar_t*`).<sp/>If<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">comparison<sp/>of<sp/>two<sp/>wide<sp/>strings<sp/>fails,<sp/>their<sp/>values<sp/>will<sp/>be<sp/>printed<sp/>as<sp/>UTF-8</highlight></codeline>
+<codeline><highlight class="normal">narrow<sp/>strings.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>`NULL`<sp/>pointer<sp/>and<sp/>an<sp/>empty<sp/>string<sp/>are<sp/>considered<sp/>_different_.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_Availability_:<sp/>Linux,<sp/>Windows,<sp/>Mac.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">See<sp/>also:<sp/>For<sp/>more<sp/>string<sp/>comparison<sp/>tricks<sp/>(substring,<sp/>prefix,<sp/>suffix,<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">regular<sp/>expression<sp/>matching,<sp/>for<sp/>example),<sp/>see<sp/>the<sp/>[AdvancedGuide<sp/>Advanced</highlight></codeline>
+<codeline><highlight class="normal">Google<sp/>Test<sp/>Guide].</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Simple<sp/>Tests<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>create<sp/>a<sp/>test:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Use<sp/>the<sp/>`TEST()`<sp/>macro<sp/>to<sp/>define<sp/>and<sp/>name<sp/>a<sp/>test<sp/>function,<sp/>These<sp/>are<sp/>ordinary<sp/>C++<sp/>functions<sp/>that<sp/>don&apos;t<sp/>return<sp/>a<sp/>value.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>In<sp/>this<sp/>function,<sp/>along<sp/>with<sp/>any<sp/>valid<sp/>C++<sp/>statements<sp/>you<sp/>want<sp/>to<sp/>include,<sp/>use<sp/>the<sp/>various<sp/>Google<sp/>Test<sp/>assertions<sp/>to<sp/>check<sp/>values.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>The<sp/>test&apos;s<sp/>result<sp/>is<sp/>determined<sp/>by<sp/>the<sp/>assertions;<sp/>if<sp/>any<sp/>assertion<sp/>in<sp/>the<sp/>test<sp/>fails<sp/>(either<sp/>fatally<sp/>or<sp/>non-fatally),<sp/>or<sp/>if<sp/>the<sp/>test<sp/>crashes,<sp/>the<sp/>entire<sp/>test<sp/>fails.<sp/>Otherwise,<sp/>it<sp/>succeeds.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">TEST(test_case_name,<sp/>test_name)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>...<sp/>test<sp/>body<sp/>...</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`TEST()`<sp/>arguments<sp/>go<sp/>from<sp/>general<sp/>to<sp/>specific.<sp/>The<sp/>_first_<sp/>argument<sp/>is<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">name<sp/>of<sp/>the<sp/>test<sp/>case,<sp/>and<sp/>the<sp/>_second_<sp/>argument<sp/>is<sp/>the<sp/>test&apos;s<sp/>name<sp/>within<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">test<sp/>case.<sp/>Remember<sp/>that<sp/>a<sp/>test<sp/>case<sp/>can<sp/>contain<sp/>any<sp/>number<sp/>of<sp/>individual</highlight></codeline>
+<codeline><highlight class="normal">tests.<sp/>A<sp/>test&apos;s<sp/>_full<sp/>name_<sp/>consists<sp/>of<sp/>its<sp/>containing<sp/>test<sp/>case<sp/>and<sp/>its</highlight></codeline>
+<codeline><highlight class="normal">individual<sp/>name.<sp/>Tests<sp/>from<sp/>different<sp/>test<sp/>cases<sp/>can<sp/>have<sp/>the<sp/>same<sp/>individual</highlight></codeline>
+<codeline><highlight class="normal">name.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>example,<sp/>let&apos;s<sp/>take<sp/>a<sp/>simple<sp/>integer<sp/>function:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>Factorial(int<sp/>n);<sp/>//<sp/>Returns<sp/>the<sp/>factorial<sp/>of<sp/>n</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>test<sp/>case<sp/>for<sp/>this<sp/>function<sp/>might<sp/>look<sp/>like:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Tests<sp/>factorial<sp/>of<sp/>0.</highlight></codeline>
+<codeline><highlight class="normal">TEST(FactorialTest,<sp/>HandlesZeroInput)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_EQ(1,<sp/>Factorial(0));</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Tests<sp/>factorial<sp/>of<sp/>positive<sp/>numbers.</highlight></codeline>
+<codeline><highlight class="normal">TEST(FactorialTest,<sp/>HandlesPositiveInput)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_EQ(1,<sp/>Factorial(1));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_EQ(2,<sp/>Factorial(2));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_EQ(6,<sp/>Factorial(3));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_EQ(40320,<sp/>Factorial(8));</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Test<sp/>groups<sp/>the<sp/>test<sp/>results<sp/>by<sp/>test<sp/>cases,<sp/>so<sp/>logically-related<sp/>tests</highlight></codeline>
+<codeline><highlight class="normal">should<sp/>be<sp/>in<sp/>the<sp/>same<sp/>test<sp/>case;<sp/>in<sp/>other<sp/>words,<sp/>the<sp/>first<sp/>argument<sp/>to<sp/>their</highlight></codeline>
+<codeline><highlight class="normal">`TEST()`<sp/>should<sp/>be<sp/>the<sp/>same.<sp/>In<sp/>the<sp/>above<sp/>example,<sp/>we<sp/>have<sp/>two<sp/>tests,</highlight></codeline>
+<codeline><highlight class="normal">`HandlesZeroInput`<sp/>and<sp/>`HandlesPositiveInput`,<sp/>that<sp/>belong<sp/>to<sp/>the<sp/>same<sp/>test</highlight></codeline>
+<codeline><highlight class="normal">case<sp/>`FactorialTest`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_Availability_:<sp/>Linux,<sp/>Windows,<sp/>Mac.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Test<sp/>Fixtures:<sp/>Using<sp/>the<sp/>Same<sp/>Data<sp/>Configuration<sp/>for<sp/>Multiple<sp/>Tests<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>find<sp/>yourself<sp/>writing<sp/>two<sp/>or<sp/>more<sp/>tests<sp/>that<sp/>operate<sp/>on<sp/>similar<sp/>data,</highlight></codeline>
+<codeline><highlight class="normal">you<sp/>can<sp/>use<sp/>a<sp/>_test<sp/>fixture_.<sp/>It<sp/>allows<sp/>you<sp/>to<sp/>reuse<sp/>the<sp/>same<sp/>configuration<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">objects<sp/>for<sp/>several<sp/>different<sp/>tests.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>create<sp/>a<sp/>fixture,<sp/>just:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Derive<sp/>a<sp/>class<sp/>from<sp/>`::testing::Test`<sp/>.<sp/>Start<sp/>its<sp/>body<sp/>with<sp/>`protected:`<sp/>or<sp/>`public:`<sp/>as<sp/>we&apos;ll<sp/>want<sp/>to<sp/>access<sp/>fixture<sp/>members<sp/>from<sp/>sub-classes.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Inside<sp/>the<sp/>class,<sp/>declare<sp/>any<sp/>objects<sp/>you<sp/>plan<sp/>to<sp/>use.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>If<sp/>necessary,<sp/>write<sp/>a<sp/>default<sp/>constructor<sp/>or<sp/>`SetUp()`<sp/>function<sp/>to<sp/>prepare<sp/>the<sp/>objects<sp/>for<sp/>each<sp/>test.<sp/>A<sp/>common<sp/>mistake<sp/>is<sp/>to<sp/>spell<sp/>`SetUp()`<sp/>as<sp/>`Setup()`<sp/>with<sp/>a<sp/>small<sp/>`u`<sp/>-<sp/>don&apos;t<sp/>let<sp/>that<sp/>happen<sp/>to<sp/>you.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>If<sp/>necessary,<sp/>write<sp/>a<sp/>destructor<sp/>or<sp/>`TearDown()`<sp/>function<sp/>to<sp/>release<sp/>any<sp/>resources<sp/>you<sp/>allocated<sp/>in<sp/>`SetUp()`<sp/>.<sp/>To<sp/>learn<sp/>when<sp/>you<sp/>should<sp/>use<sp/>the<sp/>constructor/destructor<sp/>and<sp/>when<sp/>you<sp/>should<sp/>use<sp/>`SetUp()/TearDown()`,<sp/>read<sp/>this<sp/>[FAQ<sp/>entry](V1_5_FAQ.md#should-i-use-the-constructordestructor-of-the-test-fixture-or-the-set-uptear-down-function).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>If<sp/>needed,<sp/>define<sp/>subroutines<sp/>for<sp/>your<sp/>tests<sp/>to<sp/>share.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">When<sp/>using<sp/>a<sp/>fixture,<sp/>use<sp/>`TEST_F()`<sp/>instead<sp/>of<sp/>`TEST()`<sp/>as<sp/>it<sp/>allows<sp/>you<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">access<sp/>objects<sp/>and<sp/>subroutines<sp/>in<sp/>the<sp/>test<sp/>fixture:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">TEST_F(test_case_name,<sp/>test_name)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>...<sp/>test<sp/>body<sp/>...</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Like<sp/>`TEST()`,<sp/>the<sp/>first<sp/>argument<sp/>is<sp/>the<sp/>test<sp/>case<sp/>name,<sp/>but<sp/>for<sp/>`TEST_F()`</highlight></codeline>
+<codeline><highlight class="normal">this<sp/>must<sp/>be<sp/>the<sp/>name<sp/>of<sp/>the<sp/>test<sp/>fixture<sp/>class.<sp/>You&apos;ve<sp/>probably<sp/>guessed:<sp/>`_F`</highlight></codeline>
+<codeline><highlight class="normal">is<sp/>for<sp/>fixture.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Unfortunately,<sp/>the<sp/>C++<sp/>macro<sp/>system<sp/>does<sp/>not<sp/>allow<sp/>us<sp/>to<sp/>create<sp/>a<sp/>single<sp/>macro</highlight></codeline>
+<codeline><highlight class="normal">that<sp/>can<sp/>handle<sp/>both<sp/>types<sp/>of<sp/>tests.<sp/>Using<sp/>the<sp/>wrong<sp/>macro<sp/>causes<sp/>a<sp/>compiler</highlight></codeline>
+<codeline><highlight class="normal">error.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Also,<sp/>you<sp/>must<sp/>first<sp/>define<sp/>a<sp/>test<sp/>fixture<sp/>class<sp/>before<sp/>using<sp/>it<sp/>in<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">`TEST_F()`,<sp/>or<sp/>you&apos;ll<sp/>get<sp/>the<sp/>compiler<sp/>error<sp/>&quot;`virtual<sp/>outside<sp/>class</highlight></codeline>
+<codeline><highlight class="normal">declaration`&quot;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>each<sp/>test<sp/>defined<sp/>with<sp/>`TEST_F()`,<sp/>Google<sp/>Test<sp/>will:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Create<sp/>a<sp/>_fresh_<sp/>test<sp/>fixture<sp/>at<sp/>runtime</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Immediately<sp/>initialize<sp/>it<sp/>via<sp/>`SetUp()`<sp/>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Run<sp/>the<sp/>test</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Clean<sp/>up<sp/>by<sp/>calling<sp/>`TearDown()`</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Delete<sp/>the<sp/>test<sp/>fixture.<sp/><sp/>Note<sp/>that<sp/>different<sp/>tests<sp/>in<sp/>the<sp/>same<sp/>test<sp/>case<sp/>have<sp/>different<sp/>test<sp/>fixture<sp/>objects,<sp/>and<sp/>Google<sp/>Test<sp/>always<sp/>deletes<sp/>a<sp/>test<sp/>fixture<sp/>before<sp/>it<sp/>creates<sp/>the<sp/>next<sp/>one.<sp/>Google<sp/>Test<sp/>does<sp/>not<sp/>reuse<sp/>the<sp/>same<sp/>test<sp/>fixture<sp/>for<sp/>multiple<sp/>tests.<sp/>Any<sp/>changes<sp/>one<sp/>test<sp/>makes<sp/>to<sp/>the<sp/>fixture<sp/>do<sp/>not<sp/>affect<sp/>other<sp/>tests.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>an<sp/>example,<sp/>let&apos;s<sp/>write<sp/>tests<sp/>for<sp/>a<sp/>FIFO<sp/>queue<sp/>class<sp/>named<sp/>`Queue`,<sp/>which</highlight></codeline>
+<codeline><highlight class="normal">has<sp/>the<sp/>following<sp/>interface:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">template<sp/>&lt;typename<sp/>E&gt;<sp/>//<sp/>E<sp/>is<sp/>the<sp/>element<sp/>type.</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>Queue<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Queue();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>void<sp/>Enqueue(const<sp/>E&amp;<sp/>element);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>E*<sp/>Dequeue();<sp/>//<sp/>Returns<sp/>NULL<sp/>if<sp/>the<sp/>queue<sp/>is<sp/>empty.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>size_t<sp/>size()<sp/>const;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">First,<sp/>define<sp/>a<sp/>fixture<sp/>class.<sp/>By<sp/>convention,<sp/>you<sp/>should<sp/>give<sp/>it<sp/>the<sp/>name</highlight></codeline>
+<codeline><highlight class="normal">`FooTest`<sp/>where<sp/>`Foo`<sp/>is<sp/>the<sp/>class<sp/>being<sp/>tested.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>QueueTest<sp/>:<sp/>public<sp/>::testing::Test<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>protected:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>void<sp/>SetUp()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>q1_.Enqueue(1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>q2_.Enqueue(2);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>q2_.Enqueue(3);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>virtual<sp/>void<sp/>TearDown()<sp/>{}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Queue&lt;int&gt;<sp/>q0_;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Queue&lt;int&gt;<sp/>q1_;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Queue&lt;int&gt;<sp/>q2_;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>this<sp/>case,<sp/>`TearDown()`<sp/>is<sp/>not<sp/>needed<sp/>since<sp/>we<sp/>don&apos;t<sp/>have<sp/>to<sp/>clean<sp/>up<sp/>after</highlight></codeline>
+<codeline><highlight class="normal">each<sp/>test,<sp/>other<sp/>than<sp/>what&apos;s<sp/>already<sp/>done<sp/>by<sp/>the<sp/>destructor.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Now<sp/>we&apos;ll<sp/>write<sp/>tests<sp/>using<sp/>`TEST_F()`<sp/>and<sp/>this<sp/>fixture.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">TEST_F(QueueTest,<sp/>IsEmptyInitially)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_EQ(0,<sp/>q0_.size());</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">TEST_F(QueueTest,<sp/>DequeueWorks)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>int*<sp/>n<sp/>=<sp/>q0_.Dequeue();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_EQ(NULL,<sp/>n);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>n<sp/>=<sp/>q1_.Dequeue();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ASSERT_TRUE(n<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_EQ(1,<sp/>*n);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_EQ(0,<sp/>q1_.size());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>delete<sp/>n;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>n<sp/>=<sp/>q2_.Dequeue();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ASSERT_TRUE(n<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_EQ(2,<sp/>*n);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_EQ(1,<sp/>q2_.size());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>delete<sp/>n;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>above<sp/>uses<sp/>both<sp/>`ASSERT_*`<sp/>and<sp/>`EXPECT_*`<sp/>assertions.<sp/>The<sp/>rule<sp/>of<sp/>thumb<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">to<sp/>use<sp/>`EXPECT_*`<sp/>when<sp/>you<sp/>want<sp/>the<sp/>test<sp/>to<sp/>continue<sp/>to<sp/>reveal<sp/>more<sp/>errors</highlight></codeline>
+<codeline><highlight class="normal">after<sp/>the<sp/>assertion<sp/>failure,<sp/>and<sp/>use<sp/>`ASSERT_*`<sp/>when<sp/>continuing<sp/>after<sp/>failure</highlight></codeline>
+<codeline><highlight class="normal">doesn&apos;t<sp/>make<sp/>sense.<sp/>For<sp/>example,<sp/>the<sp/>second<sp/>assertion<sp/>in<sp/>the<sp/>`Dequeue`<sp/>test<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">`ASSERT_TRUE(n<sp/>!=<sp/>NULL)`,<sp/>as<sp/>we<sp/>need<sp/>to<sp/>dereference<sp/>the<sp/>pointer<sp/>`n`<sp/>later,</highlight></codeline>
+<codeline><highlight class="normal">which<sp/>would<sp/>lead<sp/>to<sp/>a<sp/>segfault<sp/>when<sp/>`n`<sp/>is<sp/>`NULL`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">When<sp/>these<sp/>tests<sp/>run,<sp/>the<sp/>following<sp/>happens:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Google<sp/>Test<sp/>constructs<sp/>a<sp/>`QueueTest`<sp/>object<sp/>(let&apos;s<sp/>call<sp/>it<sp/>`t1`<sp/>).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>`t1.SetUp()`<sp/>initializes<sp/>`t1`<sp/>.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>The<sp/>first<sp/>test<sp/>(<sp/>`IsEmptyInitially`<sp/>)<sp/>runs<sp/>on<sp/>`t1`<sp/>.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>`t1.TearDown()`<sp/>cleans<sp/>up<sp/>after<sp/>the<sp/>test<sp/>finishes.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>`t1`<sp/>is<sp/>destructed.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>The<sp/>above<sp/>steps<sp/>are<sp/>repeated<sp/>on<sp/>another<sp/>`QueueTest`<sp/>object,<sp/>this<sp/>time<sp/>running<sp/>the<sp/>`DequeueWorks`<sp/>test.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_Availability_:<sp/>Linux,<sp/>Windows,<sp/>Mac.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_Note_:<sp/>Google<sp/>Test<sp/>automatically<sp/>saves<sp/>all<sp/>_Google<sp/>Test_<sp/>flags<sp/>when<sp/>a<sp/>test</highlight></codeline>
+<codeline><highlight class="normal">object<sp/>is<sp/>constructed,<sp/>and<sp/>restores<sp/>them<sp/>when<sp/>it<sp/>is<sp/>destructed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Invoking<sp/>the<sp/>Tests<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`TEST()`<sp/>and<sp/>`TEST_F()`<sp/>implicitly<sp/>register<sp/>their<sp/>tests<sp/>with<sp/>Google<sp/>Test.<sp/>So,<sp/>unlike<sp/>with<sp/>many<sp/>other<sp/>C++<sp/>testing<sp/>frameworks,<sp/>you<sp/>don&apos;t<sp/>have<sp/>to<sp/>re-list<sp/>all<sp/>your<sp/>defined<sp/>tests<sp/>in<sp/>order<sp/>to<sp/>run<sp/>them.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">After<sp/>defining<sp/>your<sp/>tests,<sp/>you<sp/>can<sp/>run<sp/>them<sp/>with<sp/>`RUN_ALL_TESTS()`<sp/>,<sp/>which<sp/>returns<sp/>`0`<sp/>if<sp/>all<sp/>the<sp/>tests<sp/>are<sp/>successful,<sp/>or<sp/>`1`<sp/>otherwise.<sp/>Note<sp/>that<sp/>`RUN_ALL_TESTS()`<sp/>runs<sp/>_all<sp/>tests_<sp/>in<sp/>your<sp/>link<sp/>unit<sp/>--<sp/>they<sp/>can<sp/>be<sp/>from<sp/>different<sp/>test<sp/>cases,<sp/>or<sp/>even<sp/>different<sp/>source<sp/>files.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">When<sp/>invoked,<sp/>the<sp/>`RUN_ALL_TESTS()`<sp/>macro:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Saves<sp/>the<sp/>state<sp/>of<sp/>all<sp/><sp/>Google<sp/>Test<sp/>flags.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Creates<sp/>a<sp/>test<sp/>fixture<sp/>object<sp/>for<sp/>the<sp/>first<sp/>test.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Initializes<sp/>it<sp/>via<sp/>`SetUp()`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Runs<sp/>the<sp/>test<sp/>on<sp/>the<sp/>fixture<sp/>object.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Cleans<sp/>up<sp/>the<sp/>fixture<sp/>via<sp/>`TearDown()`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Deletes<sp/>the<sp/>fixture.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Restores<sp/>the<sp/>state<sp/>of<sp/>all<sp/>Google<sp/>Test<sp/>flags.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Repeats<sp/>the<sp/>above<sp/>steps<sp/>for<sp/>the<sp/>next<sp/>test,<sp/>until<sp/>all<sp/>tests<sp/>have<sp/>run.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>addition,<sp/>if<sp/>the<sp/>text<sp/>fixture&apos;s<sp/>constructor<sp/>generates<sp/>a<sp/>fatal<sp/>failure<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">step<sp/>2,<sp/>there<sp/>is<sp/>no<sp/>point<sp/>for<sp/>step<sp/>3<sp/>-<sp/>5<sp/>and<sp/>they<sp/>are<sp/>thus<sp/>skipped.<sp/>Similarly,</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>step<sp/>3<sp/>generates<sp/>a<sp/>fatal<sp/>failure,<sp/>step<sp/>4<sp/>will<sp/>be<sp/>skipped.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_Important_:<sp/>You<sp/>must<sp/>not<sp/>ignore<sp/>the<sp/>return<sp/>value<sp/>of<sp/>`RUN_ALL_TESTS()`,<sp/>or<sp/>`gcc`</highlight></codeline>
+<codeline><highlight class="normal">will<sp/>give<sp/>you<sp/>a<sp/>compiler<sp/>error.<sp/>The<sp/>rationale<sp/>for<sp/>this<sp/>design<sp/>is<sp/>that<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">automated<sp/>testing<sp/>service<sp/>determines<sp/>whether<sp/>a<sp/>test<sp/>has<sp/>passed<sp/>based<sp/>on<sp/>its</highlight></codeline>
+<codeline><highlight class="normal">exit<sp/>code,<sp/>not<sp/>on<sp/>its<sp/>stdout/stderr<sp/>output;<sp/>thus<sp/>your<sp/>`main()`<sp/>function<sp/>must</highlight></codeline>
+<codeline><highlight class="normal">return<sp/>the<sp/>value<sp/>of<sp/>`RUN_ALL_TESTS()`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Also,<sp/>you<sp/>should<sp/>call<sp/>`RUN_ALL_TESTS()`<sp/>only<sp/>**once**.<sp/>Calling<sp/>it<sp/>more<sp/>than<sp/>once</highlight></codeline>
+<codeline><highlight class="normal">conflicts<sp/>with<sp/>some<sp/>advanced<sp/>Google<sp/>Test<sp/>features<sp/>(e.g.<sp/>thread-safe<sp/>death</highlight></codeline>
+<codeline><highlight class="normal">tests)<sp/>and<sp/>thus<sp/>is<sp/>not<sp/>supported.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_Availability_:<sp/>Linux,<sp/>Windows,<sp/>Mac.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Writing<sp/>the<sp/>main()<sp/>Function<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>start<sp/>from<sp/>this<sp/>boilerplate:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;this/package/foo.h&quot;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;gtest/gtest.h&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">namespace<sp/>{</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>The<sp/>fixture<sp/>for<sp/>testing<sp/>class<sp/>Foo.</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>FooTest<sp/>:<sp/>public<sp/>::testing::Test<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>protected:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>You<sp/>can<sp/>remove<sp/>any<sp/>or<sp/>all<sp/>of<sp/>the<sp/>following<sp/>functions<sp/>if<sp/>its<sp/>body</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>is<sp/>empty.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>FooTest()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>You<sp/>can<sp/>do<sp/>set-up<sp/>work<sp/>for<sp/>each<sp/>test<sp/>here.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>~FooTest()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>You<sp/>can<sp/>do<sp/>clean-up<sp/>work<sp/>that<sp/>doesn&apos;t<sp/>throw<sp/>exceptions<sp/>here.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>If<sp/>the<sp/>constructor<sp/>and<sp/>destructor<sp/>are<sp/>not<sp/>enough<sp/>for<sp/>setting<sp/>up</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>and<sp/>cleaning<sp/>up<sp/>each<sp/>test,<sp/>you<sp/>can<sp/>define<sp/>the<sp/>following<sp/>methods:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>void<sp/>SetUp()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Code<sp/>here<sp/>will<sp/>be<sp/>called<sp/>immediately<sp/>after<sp/>the<sp/>constructor<sp/>(right</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>before<sp/>each<sp/>test).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>void<sp/>TearDown()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Code<sp/>here<sp/>will<sp/>be<sp/>called<sp/>immediately<sp/>after<sp/>each<sp/>test<sp/>(right</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>before<sp/>the<sp/>destructor).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>Objects<sp/>declared<sp/>here<sp/>can<sp/>be<sp/>used<sp/>by<sp/>all<sp/>tests<sp/>in<sp/>the<sp/>test<sp/>case<sp/>for<sp/>Foo.</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Tests<sp/>that<sp/>the<sp/>Foo::Bar()<sp/>method<sp/>does<sp/>Abc.</highlight></codeline>
+<codeline><highlight class="normal">TEST_F(FooTest,<sp/>MethodBarDoesAbc)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>const<sp/>string<sp/>input_filepath<sp/>=<sp/>&quot;this/package/testdata/myinputfile.dat&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>const<sp/>string<sp/>output_filepath<sp/>=<sp/>&quot;this/package/testdata/myoutputfile.dat&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Foo<sp/>f;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_EQ(0,<sp/>f.Bar(input_filepath,<sp/>output_filepath));</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Tests<sp/>that<sp/>Foo<sp/>does<sp/>Xyz.</highlight></codeline>
+<codeline><highlight class="normal">TEST_F(FooTest,<sp/>DoesXyz)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>Exercises<sp/>the<sp/>Xyz<sp/>feature<sp/>of<sp/>Foo.</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">}<sp/><sp/>//<sp/>namespace</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>main(int<sp/>argc,<sp/>char<sp/>**argv)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>::testing::InitGoogleTest(&amp;argc,<sp/>argv);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>RUN_ALL_TESTS();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>`::testing::InitGoogleTest()`<sp/>function<sp/>parses<sp/>the<sp/>command<sp/>line<sp/>for<sp/>Google</highlight></codeline>
+<codeline><highlight class="normal">Test<sp/>flags,<sp/>and<sp/>removes<sp/>all<sp/>recognized<sp/>flags.<sp/>This<sp/>allows<sp/>the<sp/>user<sp/>to<sp/>control<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">test<sp/>program&apos;s<sp/>behavior<sp/>via<sp/>various<sp/>flags,<sp/>which<sp/>we&apos;ll<sp/>cover<sp/>in<sp/>[AdvancedGuide](V1_5_AdvancedGuide.md).</highlight></codeline>
+<codeline><highlight class="normal">You<sp/>must<sp/>call<sp/>this<sp/>function<sp/>before<sp/>calling<sp/>`RUN_ALL_TESTS()`,<sp/>or<sp/>the<sp/>flags</highlight></codeline>
+<codeline><highlight class="normal">won&apos;t<sp/>be<sp/>properly<sp/>initialized.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">On<sp/>Windows,<sp/>`InitGoogleTest()`<sp/>also<sp/>works<sp/>with<sp/>wide<sp/>strings,<sp/>so<sp/>it<sp/>can<sp/>be<sp/>used</highlight></codeline>
+<codeline><highlight class="normal">in<sp/>programs<sp/>compiled<sp/>in<sp/>`UNICODE`<sp/>mode<sp/>as<sp/>well.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">But<sp/>maybe<sp/>you<sp/>think<sp/>that<sp/>writing<sp/>all<sp/>those<sp/>main()<sp/>functions<sp/>is<sp/>too<sp/>much<sp/>work?<sp/>We<sp/>agree<sp/>with<sp/>you<sp/>completely<sp/>and<sp/>that&apos;s<sp/>why<sp/>Google<sp/>Test<sp/>provides<sp/>a<sp/>basic<sp/>implementation<sp/>of<sp/>main().<sp/>If<sp/>it<sp/>fits<sp/>your<sp/>needs,<sp/>then<sp/>just<sp/>link<sp/>your<sp/>test<sp/>with<sp/>gtest\_main<sp/>library<sp/>and<sp/>you<sp/>are<sp/>good<sp/>to<sp/>go.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Important<sp/>note<sp/>for<sp/>Visual<sp/>C++<sp/>users<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>put<sp/>your<sp/>tests<sp/>into<sp/>a<sp/>library<sp/>and<sp/>your<sp/>`main()`<sp/>function<sp/>is<sp/>in<sp/>a<sp/>different<sp/>library<sp/>or<sp/>in<sp/>your<sp/>.exe<sp/>file,<sp/>those<sp/>tests<sp/>will<sp/>not<sp/>run.<sp/>The<sp/>reason<sp/>is<sp/>a<sp/>[bug](https://connect.microsoft.com/feedback/viewfeedback.aspx?FeedbackID=244410&amp;siteid=210)<sp/>in<sp/>Visual<sp/>C++.<sp/>When<sp/>you<sp/>define<sp/>your<sp/>tests,<sp/>Google<sp/>Test<sp/>creates<sp/>certain<sp/>static<sp/>objects<sp/>to<sp/>register<sp/>them.<sp/>These<sp/>objects<sp/>are<sp/>not<sp/>referenced<sp/>from<sp/>elsewhere<sp/>but<sp/>their<sp/>constructors<sp/>are<sp/>still<sp/>supposed<sp/>to<sp/>run.<sp/>When<sp/>Visual<sp/>C++<sp/>linker<sp/>sees<sp/>that<sp/>nothing<sp/>in<sp/>the<sp/>library<sp/>is<sp/>referenced<sp/>from<sp/>other<sp/>places<sp/>it<sp/>throws<sp/>the<sp/>library<sp/>out.<sp/>You<sp/>have<sp/>to<sp/>reference<sp/>your<sp/>library<sp/>with<sp/>tests<sp/>from<sp/>your<sp/>main<sp/>program<sp/>to<sp/>keep<sp/>the<sp/>linker<sp/>from<sp/>discarding<sp/>it.<sp/>Here<sp/>is<sp/>how<sp/>to<sp/>do<sp/>it.<sp/>Somewhere<sp/>in<sp/>your<sp/>library<sp/>code<sp/>declare<sp/>a<sp/>function:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">__declspec(dllexport)<sp/>int<sp/>PullInMyLibrary()<sp/>{<sp/>return<sp/>0;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>put<sp/>your<sp/>tests<sp/>in<sp/>a<sp/>static<sp/>library<sp/>(not<sp/>DLL)<sp/>then<sp/>`__declspec(dllexport)`<sp/>is<sp/>not<sp/>required.<sp/>Now,<sp/>in<sp/>your<sp/>main<sp/>program,<sp/>write<sp/>a<sp/>code<sp/>that<sp/>invokes<sp/>that<sp/>function:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>PullInMyLibrary();</highlight></codeline>
+<codeline><highlight class="normal">static<sp/>int<sp/>dummy<sp/>=<sp/>PullInMyLibrary();</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>will<sp/>keep<sp/>your<sp/>tests<sp/>referenced<sp/>and<sp/>will<sp/>make<sp/>them<sp/>register<sp/>themselves<sp/>at<sp/>startup.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>addition,<sp/>if<sp/>you<sp/>define<sp/>your<sp/>tests<sp/>in<sp/>a<sp/>static<sp/>library,<sp/>add<sp/>`/OPT:NOREF`<sp/>to<sp/>your<sp/>main<sp/>program<sp/>linker<sp/>options.<sp/>If<sp/>you<sp/>use<sp/>MSVC++<sp/>IDE,<sp/>go<sp/>to<sp/>your<sp/>.exe<sp/>project<sp/>properties/Configuration<sp/>Properties/Linker/Optimization<sp/>and<sp/>set<sp/>References<sp/>setting<sp/>to<sp/>`Keep<sp/>Unreferenced<sp/>Data<sp/>(/OPT:NOREF)`.<sp/>This<sp/>will<sp/>keep<sp/>Visual<sp/>C++<sp/>linker<sp/>from<sp/>discarding<sp/>individual<sp/>symbols<sp/>generated<sp/>by<sp/>your<sp/>tests<sp/>from<sp/>the<sp/>final<sp/>executable.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">There<sp/>is<sp/>one<sp/>more<sp/>pitfall,<sp/>though.<sp/>If<sp/>you<sp/>use<sp/>Google<sp/>Test<sp/>as<sp/>a<sp/>static<sp/>library<sp/>(that&apos;s<sp/>how<sp/>it<sp/>is<sp/>defined<sp/>in<sp/>gtest.vcproj)<sp/>your<sp/>tests<sp/>must<sp/>also<sp/>reside<sp/>in<sp/>a<sp/>static<sp/>library.<sp/>If<sp/>you<sp/>have<sp/>to<sp/>have<sp/>them<sp/>in<sp/>a<sp/>DLL,<sp/>you<sp/>_must_<sp/>change<sp/>Google<sp/>Test<sp/>to<sp/>build<sp/>into<sp/>a<sp/>DLL<sp/>as<sp/>well.<sp/>Otherwise<sp/>your<sp/>tests<sp/>will<sp/>not<sp/>run<sp/>correctly<sp/>or<sp/>will<sp/>not<sp/>run<sp/>at<sp/>all.<sp/>The<sp/>general<sp/>conclusion<sp/>here<sp/>is:<sp/>make<sp/>your<sp/>life<sp/>easier<sp/>-<sp/>do<sp/>not<sp/>write<sp/>your<sp/>tests<sp/>in<sp/>libraries!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Where<sp/>to<sp/>Go<sp/>from<sp/>Here<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Congratulations!<sp/>You&apos;ve<sp/>learned<sp/>the<sp/>Google<sp/>Test<sp/>basics.<sp/>You<sp/>can<sp/>start<sp/>writing</highlight></codeline>
+<codeline><highlight class="normal">and<sp/>running<sp/>Google<sp/>Test<sp/>tests,<sp/>read<sp/>some<sp/>[samples](Samples.md),<sp/>or<sp/>continue<sp/>with</highlight></codeline>
+<codeline><highlight class="normal">[AdvancedGuide](V1_5_AdvancedGuide.md),<sp/>which<sp/>describes<sp/>many<sp/>more<sp/>useful<sp/>Google<sp/>Test<sp/>features.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Known<sp/>Limitations<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Test<sp/>is<sp/>designed<sp/>to<sp/>be<sp/>thread-safe.<sp/><sp/>The<sp/>implementation<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">thread-safe<sp/>on<sp/>systems<sp/>where<sp/>the<sp/>`pthreads`<sp/>library<sp/>is<sp/>available.<sp/><sp/>It</highlight></codeline>
+<codeline><highlight class="normal">is<sp/>currently<sp/>_unsafe_<sp/>to<sp/>use<sp/>Google<sp/>Test<sp/>assertions<sp/>from<sp/>two<sp/>threads</highlight></codeline>
+<codeline><highlight class="normal">concurrently<sp/>on<sp/>other<sp/>systems<sp/>(e.g.<sp/>Windows).<sp/><sp/>In<sp/>most<sp/>tests<sp/>this<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">not<sp/>an<sp/>issue<sp/>as<sp/>usually<sp/>the<sp/>assertions<sp/>are<sp/>done<sp/>in<sp/>the<sp/>main<sp/>thread.<sp/>If</highlight></codeline>
+<codeline><highlight class="normal">you<sp/>want<sp/>to<sp/>help,<sp/>you<sp/>can<sp/>volunteer<sp/>to<sp/>implement<sp/>the<sp/>necessary</highlight></codeline>
+<codeline><highlight class="normal">synchronization<sp/>primitives<sp/>in<sp/>`gtest-port.h`<sp/>for<sp/>your<sp/>platform.</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googletest/docs/V1_5_Primer.md"/>
+  </compounddef>
+</doxygen>

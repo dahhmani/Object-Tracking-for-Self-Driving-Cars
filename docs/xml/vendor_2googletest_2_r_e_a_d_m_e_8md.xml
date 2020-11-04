@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="vendor_2googletest_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Google<sp/>Test<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[![Build<sp/>Status](https://travis-ci.org/google/googletest.svg?branch=master)](https://travis-ci.org/google/googletest)</highlight></codeline>
+<codeline><highlight class="normal">[![Build<sp/>status](https://ci.appveyor.com/api/projects/status/4o38plt0xbo1ubc8/branch/master?svg=true)](https://ci.appveyor.com/project/BillyDonahue/googletest/branch/master)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Welcome<sp/>to<sp/>**Google<sp/>Test**,<sp/>Google&apos;s<sp/>C++<sp/>test<sp/>framework!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>repository<sp/>is<sp/>a<sp/>merger<sp/>of<sp/>the<sp/>formerly<sp/>separate<sp/>GoogleTest<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">GoogleMock<sp/>projects.<sp/>These<sp/>were<sp/>so<sp/>closely<sp/>related<sp/>that<sp/>it<sp/>makes<sp/>sense<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">maintain<sp/>and<sp/>release<sp/>them<sp/>together.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Please<sp/>see<sp/>the<sp/>project<sp/>page<sp/>above<sp/>for<sp/>more<sp/>information<sp/>as<sp/>well<sp/>as<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">mailing<sp/>list<sp/>for<sp/>questions,<sp/>discussions,<sp/>and<sp/>development.<sp/><sp/>There<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">also<sp/>an<sp/>IRC<sp/>channel<sp/>on<sp/>OFTC<sp/>(irc.oftc.net)<sp/>#gtest<sp/>available.<sp/><sp/>Please</highlight></codeline>
+<codeline><highlight class="normal">join<sp/>us!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Getting<sp/>started<sp/>information<sp/>for<sp/>**Google<sp/>Test**<sp/>is<sp/>available<sp/>in<sp/>the<sp/></highlight></codeline>
+<codeline><highlight class="normal">[Google<sp/>Test<sp/>Primer](googletest/docs/Primer.md)<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Google<sp/>Mock**<sp/>is<sp/>an<sp/>extension<sp/>to<sp/>Google<sp/>Test<sp/>for<sp/>writing<sp/>and<sp/>using<sp/>C++<sp/>mock</highlight></codeline>
+<codeline><highlight class="normal">classes.<sp/><sp/>See<sp/>the<sp/>separate<sp/>[Google<sp/>Mock<sp/>documentation](googlemock/README.md).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">More<sp/>detailed<sp/>documentation<sp/>for<sp/>googletest<sp/>(including<sp/>build<sp/>instructions)<sp/>are</highlight></codeline>
+<codeline><highlight class="normal">in<sp/>its<sp/>interior<sp/>[googletest/README.md](googletest/README.md)<sp/>file.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Features<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>An<sp/>[XUnit](https://en.wikipedia.org/wiki/XUnit)<sp/>test<sp/>framework.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Test<sp/>discovery.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>A<sp/>rich<sp/>set<sp/>of<sp/>assertions.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>User-defined<sp/>assertions.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Death<sp/>tests.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Fatal<sp/>and<sp/>non-fatal<sp/>failures.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Value-parameterized<sp/>tests.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Type-parameterized<sp/>tests.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Various<sp/>options<sp/>for<sp/>running<sp/>the<sp/>tests.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>XML<sp/>test<sp/>report<sp/>generation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Platforms<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>test<sp/>has<sp/>been<sp/>used<sp/>on<sp/>a<sp/>variety<sp/>of<sp/>platforms:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Linux</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Mac<sp/>OS<sp/>X</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Windows</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Cygwin</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>MinGW</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Windows<sp/>Mobile</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Symbian</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Who<sp/>Is<sp/>Using<sp/>Google<sp/>Test?<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>addition<sp/>to<sp/>many<sp/>internal<sp/>projects<sp/>at<sp/>Google,<sp/>Google<sp/>Test<sp/>is<sp/>also<sp/>used<sp/>by</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>following<sp/>notable<sp/>projects:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>The<sp/>[Chromium<sp/>projects](http://www.chromium.org/)<sp/>(behind<sp/>the<sp/>Chrome</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>browser<sp/>and<sp/>Chrome<sp/>OS).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>The<sp/>[LLVM](http://llvm.org/)<sp/>compiler.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[Protocol<sp/>Buffers](https://github.com/google/protobuf),<sp/>Google&apos;s<sp/>data</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>interchange<sp/>format.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>The<sp/>[OpenCV](http://opencv.org/)<sp/>computer<sp/>vision<sp/>library.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Related<sp/>Open<sp/>Source<sp/>Projects<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[Google<sp/>Test<sp/>UI](https://github.com/ospector/gtest-gbar)<sp/>is<sp/>test<sp/>runner<sp/>that<sp/>runs</highlight></codeline>
+<codeline><highlight class="normal">your<sp/>test<sp/>binary,<sp/>allows<sp/>you<sp/>to<sp/>track<sp/>its<sp/>progress<sp/>via<sp/>a<sp/>progress<sp/>bar,<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">displays<sp/>a<sp/>list<sp/>of<sp/>test<sp/>failures.<sp/>Clicking<sp/>on<sp/>one<sp/>shows<sp/>failure<sp/>text.<sp/>Google</highlight></codeline>
+<codeline><highlight class="normal">Test<sp/>UI<sp/>is<sp/>written<sp/>in<sp/>C#.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[GTest<sp/>TAP<sp/>Listener](https://github.com/kinow/gtest-tap-listener)<sp/>is<sp/>an<sp/>event</highlight></codeline>
+<codeline><highlight class="normal">listener<sp/>for<sp/>Google<sp/>Test<sp/>that<sp/>implements<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">[TAP<sp/>protocol](https://en.wikipedia.org/wiki/Test_Anything_Protocol)<sp/>for<sp/>test</highlight></codeline>
+<codeline><highlight class="normal">result<sp/>output.<sp/>If<sp/>your<sp/>test<sp/>runner<sp/>understands<sp/>TAP,<sp/>you<sp/>may<sp/>find<sp/>it<sp/>useful.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Requirements<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Test<sp/>is<sp/>designed<sp/>to<sp/>have<sp/>fairly<sp/>minimal<sp/>requirements<sp/>to<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">and<sp/>use<sp/>with<sp/>your<sp/>projects,<sp/>but<sp/>there<sp/>are<sp/>some.<sp/><sp/>Currently,<sp/>we<sp/>support</highlight></codeline>
+<codeline><highlight class="normal">Linux,<sp/>Windows,<sp/>Mac<sp/>OS<sp/>X,<sp/>and<sp/>Cygwin.<sp/><sp/>We<sp/>will<sp/>also<sp/>make<sp/>our<sp/>best</highlight></codeline>
+<codeline><highlight class="normal">effort<sp/>to<sp/>support<sp/>other<sp/>platforms<sp/>(e.g.<sp/>Solaris,<sp/>AIX,<sp/>and<sp/>z/OS).</highlight></codeline>
+<codeline><highlight class="normal">However,<sp/>since<sp/>core<sp/>members<sp/>of<sp/>the<sp/>Google<sp/>Test<sp/>project<sp/>have<sp/>no<sp/>access</highlight></codeline>
+<codeline><highlight class="normal">to<sp/>these<sp/>platforms,<sp/>Google<sp/>Test<sp/>may<sp/>have<sp/>outstanding<sp/>issues<sp/>there.<sp/><sp/>If</highlight></codeline>
+<codeline><highlight class="normal">you<sp/>notice<sp/>any<sp/>problems<sp/>on<sp/>your<sp/>platform,<sp/>please<sp/>notify</highlight></codeline>
+<codeline><highlight class="normal">&lt;googletestframework@googlegroups.com&gt;.<sp/>Patches<sp/>for<sp/>fixing<sp/>them<sp/>are</highlight></codeline>
+<codeline><highlight class="normal">even<sp/>more<sp/>welcome!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Linux<sp/>Requirements<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">These<sp/>are<sp/>the<sp/>base<sp/>requirements<sp/>to<sp/>build<sp/>and<sp/>use<sp/>Google<sp/>Test<sp/>from<sp/>a<sp/>source</highlight></codeline>
+<codeline><highlight class="normal">package<sp/>(as<sp/>described<sp/>below):</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>GNU-compatible<sp/>Make<sp/>or<sp/>gmake</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>POSIX-standard<sp/>shell</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>POSIX(-2)<sp/>Regular<sp/>Expressions<sp/>(regex.h)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>A<sp/>C++98-standard-compliant<sp/>compiler</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Windows<sp/>Requirements<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Microsoft<sp/>Visual<sp/>C++<sp/>v7.1<sp/>or<sp/>newer</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Cygwin<sp/>Requirements<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Cygwin<sp/>v1.5.25-14<sp/>or<sp/>newer</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Mac<sp/>OS<sp/>X<sp/>Requirements<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Mac<sp/>OS<sp/>X<sp/>v10.4<sp/>Tiger<sp/>or<sp/>newer</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Xcode<sp/>Developer<sp/>Tools</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Requirements<sp/>for<sp/>Contributors<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>welcome<sp/>patches.<sp/><sp/>If<sp/>you<sp/>plan<sp/>to<sp/>contribute<sp/>a<sp/>patch,<sp/>you<sp/>need<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">build<sp/>Google<sp/>Test<sp/>and<sp/>its<sp/>own<sp/>tests<sp/>from<sp/>a<sp/>git<sp/>checkout<sp/>(described</highlight></codeline>
+<codeline><highlight class="normal">below),<sp/>which<sp/>has<sp/>further<sp/>requirements:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[Python](https://www.python.org/)<sp/>v2.3<sp/>or<sp/>newer<sp/>(for<sp/>running<sp/>some<sp/>of</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>the<sp/>tests<sp/>and<sp/>re-generating<sp/>certain<sp/>source<sp/>files<sp/>from<sp/>templates)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[CMake](https://cmake.org/)<sp/>v2.6.4<sp/>or<sp/>newer</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Regenerating<sp/>Source<sp/>Files<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Some<sp/>of<sp/>Google<sp/>Test&apos;s<sp/>source<sp/>files<sp/>are<sp/>generated<sp/>from<sp/>templates<sp/>(not</highlight></codeline>
+<codeline><highlight class="normal">in<sp/>the<sp/>C++<sp/>sense)<sp/>using<sp/>a<sp/>script.</highlight></codeline>
+<codeline><highlight class="normal">For<sp/>example,<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">file<sp/>include/gtest/internal/gtest-type-util.h.pump<sp/>is<sp/>used<sp/>to<sp/>generate</highlight></codeline>
+<codeline><highlight class="normal">gtest-type-util.h<sp/>in<sp/>the<sp/>same<sp/>directory.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>don&apos;t<sp/>need<sp/>to<sp/>worry<sp/>about<sp/>regenerating<sp/>the<sp/>source<sp/>files</highlight></codeline>
+<codeline><highlight class="normal">unless<sp/>you<sp/>need<sp/>to<sp/>modify<sp/>them.<sp/><sp/>You<sp/>would<sp/>then<sp/>modify<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">corresponding<sp/>`.pump`<sp/>files<sp/>and<sp/>run<sp/>the<sp/>&apos;[pump.py](googletest/scripts/pump.py)&apos;</highlight></codeline>
+<codeline><highlight class="normal">generator<sp/>script.<sp/><sp/>See<sp/>the<sp/>[Pump<sp/>Manual](googletest/docs/PumpManual.md).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Contributing<sp/>Code<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>welcome<sp/>patches.<sp/><sp/>Please<sp/>read<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">[Developer&apos;s<sp/>Guide](googletest/docs/DevGuide.md)</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>how<sp/>you<sp/>can<sp/>contribute.<sp/>In<sp/>particular,<sp/>make<sp/>sure<sp/>you<sp/>have<sp/>signed</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>Contributor<sp/>License<sp/>Agreement,<sp/>or<sp/>we<sp/>won&apos;t<sp/>be<sp/>able<sp/>to<sp/>accept<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">patch.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Happy<sp/>testing!</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/README.md"/>
+  </compounddef>
+</doxygen>

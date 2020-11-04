@@ -1,0 +1,1886 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classcpp_1_1ast_1_1_ast_builder" kind="class" language="Python" prot="public">
+    <compoundname>cpp::ast::AstBuilder</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_ast_builder_1a1b21f8bef712e91862ccb6b1147cab0d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.AstBuilder::tokens</definition>
+        <argsstring></argsstring>
+        <name>tokens</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="679" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_ast_builder_1ad8b8f5788de55d6c7151e82af8b21115" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.AstBuilder::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="680" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="680" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_ast_builder_1ae167f12797e7c02c1b60c11c83cdb22f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.AstBuilder::token_queue</definition>
+        <argsstring></argsstring>
+        <name>token_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="684" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_ast_builder_1ab183aa48e4b6e116379f95eb3d11039c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.AstBuilder::namespace_stack</definition>
+        <argsstring></argsstring>
+        <name>namespace_stack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="685" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_ast_builder_1a9edc1e10a3f005b463fd9316d83dd15d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.AstBuilder::in_class</definition>
+        <argsstring></argsstring>
+        <name>in_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="686" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_ast_builder_1a376583354ab9afa308b7f34105bf3f4a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.AstBuilder::in_class_name_only</definition>
+        <argsstring></argsstring>
+        <name>in_class_name_only</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="688" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="688" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_ast_builder_1a2f16b19846c405101235432d2666b614" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.AstBuilder::visibility</definition>
+        <argsstring></argsstring>
+        <name>visibility</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="691" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_ast_builder_1ad5ac0612dfff44241033864832dbdfe3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.AstBuilder::in_function</definition>
+        <argsstring></argsstring>
+        <name>in_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="692" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="692" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_ast_builder_1a38579523ccc1ae9d202ac722baea45fc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.AstBuilder::current_token</definition>
+        <argsstring></argsstring>
+        <name>current_token</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="693" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_ast_builder_1ae8551cf0405bc6e367636b1f3b37d083" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.AstBuilder::converter</definition>
+        <argsstring></argsstring>
+        <name>converter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="697" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="697" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_ast_builder_1ac9daa2aa10bc58b5919d20203ff3b813" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.AstBuilder::_handling_typedef</definition>
+        <argsstring></argsstring>
+        <name>_handling_typedef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="695" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1aaf35e2f9d395c99a38e6bb6f9b5dd047" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.__init__</definition>
+        <argsstring>(self, token_stream, filename, in_class=&apos;&apos;, visibility=None, namespace_stack=[])</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>token_stream</type>
+          <defname>token_stream</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <param>
+          <type>in_class</type>
+          <defname>in_class</defname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <param>
+          <type>visibility</type>
+          <defname>visibility</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>namespace_stack</type>
+          <defname>namespace_stack</defname>
+          <defval>[]</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="677" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="678" bodyend="698"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a3e610662018d674f6c57ef19254cc470" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.HandleError</definition>
+        <argsstring>(self, msg, token)</argsstring>
+        <name>HandleError</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <param>
+          <type>token</type>
+          <defname>token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="699" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="699" bodyend="703"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1aebd0392eee56def849468af5b93b720a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.Generate</definition>
+        <argsstring>(self)</argsstring>
+        <name>Generate</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="704" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="704" bodyend="726"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1add6826421ce64546a7dbb9b2e699a4d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.GetScope</definition>
+        <argsstring>(self)</argsstring>
+        <name>GetScope</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="902" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="902" bodyend="904"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a327957c4228325fc5f64821b047bdc6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.GetName</definition>
+        <argsstring>(self, seq=None)</argsstring>
+        <name>GetName</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>seq</type>
+          <defname>seq</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns ([tokens], next_token_info).</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="928" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="928" bodyend="952"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1af22fb880867876144d20818391ad267a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.GetMethod</definition>
+        <argsstring>(self, modifiers, templated_types)</argsstring>
+        <name>GetMethod</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>modifiers</type>
+          <defname>modifiers</defname>
+        </param>
+        <param>
+          <type>templated_types</type>
+          <defname>templated_types</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="953" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="953" bodyend="958"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1ac5a5e19e5be6501d351891cc0ead5f53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_bool</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_bool</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1160" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1160" bodyend="1162"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1adfbb93646d0d32b39a19f3c70cc031f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_char</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_char</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1163" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1163" bodyend="1165"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a6f824335dd53e12a76d6f91ab69c627c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_int</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_int</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1166" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1166" bodyend="1168"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a08f56b25e6bed18aa955f8cad462d2f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_long</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_long</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1169" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1169" bodyend="1171"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1adf11f377386bdb44fe1094ff8adf9142" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_short</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_short</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1172" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1172" bodyend="1174"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1ad1bd68af800dafcafdfa56e474f9d642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_double</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_double</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1175" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1175" bodyend="1177"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1aabe3f6d67124181a8cd2665a4562d4f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_float</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_float</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1178" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1178" bodyend="1180"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a7a8f94909d4080bad2bc5dabd934057b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_void</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_void</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1181" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1181" bodyend="1183"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a4ec65909aea14f45709733d631aed57b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_wchar_t</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_wchar_t</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1184" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1184" bodyend="1186"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a793123ea878db159de1662c10bdae897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_unsigned</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_unsigned</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1187" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1187" bodyend="1189"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a61c1e82b2b4fdc337cf360e485851390" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_signed</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_signed</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1190" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1190" bodyend="1192"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1aadfad5b8d50962c04504e806dc0f5b6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_struct</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_struct</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1227" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1227" bodyend="1262"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a9b3fbfb21c6e23f04fd596d590f93eee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_union</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_union</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1263" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1263" bodyend="1265"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a341a6ffabadd444a345c8c98a611774c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_enum</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_enum</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1266" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1266" bodyend="1268"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a0cb490894f17a6c34fbe6bb8f7a2e626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_auto</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_auto</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1269" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1269" bodyend="1273"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a890e7764fc5fd8ad2da3a62e436278a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_register</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_register</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1274" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1274" bodyend="1276"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a9d24135000a6fb4a3daabb5ab8883648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_const</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_const</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1277" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1277" bodyend="1279"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1ab2eb0c18c07584ef246a46865a17ec40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_inline</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_inline</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1280" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1280" bodyend="1282"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a49039750d971240a270606f0608c1ff0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_extern</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_extern</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1283" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1283" bodyend="1285"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1ad98bc262537d2882adc2017023cef6aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_static</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_static</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1286" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1286" bodyend="1288"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a44710dc0b8e5bdbecaa56f7c4b59c046" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_virtual</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_virtual</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1289" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1289" bodyend="1304"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a2dfb23ddeb05e1017b3d1ce85a40cacb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_volatile</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_volatile</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1305" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1305" bodyend="1307"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a6a642353cfe2cddd1a60cbb1011df787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_mutable</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_mutable</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1308" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1308" bodyend="1310"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a1e69925578e0ee0a2b7aeb219eda449b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_public</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_public</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1311" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1311" bodyend="1314"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1aa4ff62142927f8f245a2030b444676ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_protected</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_protected</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1315" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1315" bodyend="1318"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a8bc5f9563f5ead3abba5a71187162867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_private</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_private</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1319" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1319" bodyend="1322"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1ab9f7d81019317c6ccfd492bd2c0c9579" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_friend</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_friend</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1323" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1323" bodyend="1328"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1ab7577b3a2bd22c1bccb656493de379f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_static_cast</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_static_cast</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1329" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1329" bodyend="1331"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a4dae74f1d036f63fc1080962ab0208fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_const_cast</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_const_cast</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1332" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1332" bodyend="1334"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a659b5ad02ffebe26c1496a319128fbd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_dynamic_cast</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_dynamic_cast</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1335" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1335" bodyend="1337"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a06d75904ba7487c7966d073aaa3d74e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_reinterpret_cast</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_reinterpret_cast</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1338" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1338" bodyend="1340"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a86f5769e0460524691ae0d135d30f101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_new</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_new</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1341" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1341" bodyend="1343"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1aa5b7a781afe524bebdf42bdeb4766507" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_delete</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_delete</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1344" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1344" bodyend="1348"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a808eb3d955ca2e3a957abb35dc577c66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_typedef</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_typedef</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1349" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1349" bodyend="1388"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1ac30cfc1a3a455310a9ccac885d2d0d7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_typeid</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_typeid</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1389" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1389" bodyend="1391"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a4b7b3bb4f47f67052b04e5da173d1c6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_typename</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_typename</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1392" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1392" bodyend="1394"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a0f4d74520697ec05eb6b549daada5a5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_template</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_template</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1422" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1422" bodyend="1444"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1ad480255644817388b81b05acc4aa9c9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_true</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_true</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1445" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1445" bodyend="1447"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1afe125e384026baf74b55593b254fc10c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_false</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_false</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1448" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1448" bodyend="1450"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1acf6ec42d567cd85a9bad77772c381a4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_asm</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_asm</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1451" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1451" bodyend="1453"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a93bd39632593bec36972355b7e1893e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_class</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_class</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1454" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1454" bodyend="1456"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1ae6dde01c5f9ac7ba3b14dff01cac66e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_namespace</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_namespace</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1561" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1561" bodyend="1587"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a785563f31bc3ed9559d9ce2854a83f1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_using</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_using</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1588" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1588" bodyend="1592"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a568860050542b53d3df9cf479f2a5e1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_explicit</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_explicit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1593" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1593" bodyend="1599"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1ad96a39776b5439fa9a5c2989f8da20cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_this</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_this</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1600" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1600" bodyend="1602"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a7ca1318675b9eff41cb4a838d63eb6e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_operator</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_operator</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1603" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1603" bodyend="1606"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1acfd733ff9115e3292bea10e160bb6184" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_sizeof</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_sizeof</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1607" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1607" bodyend="1609"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1ac4f02e1ba7df670086e4c9dabdb21458" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_case</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_case</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1610" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1610" bodyend="1612"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a1dffcdf7154158461a652c5b885bfa19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_switch</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_switch</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1613" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1613" bodyend="1615"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a6bf895d948d231ffcd058df7af05d0be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_default</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_default</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1616" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1616" bodyend="1620"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a39f2561dfcf36485b2050dff258ece2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_if</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_if</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1621" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1621" bodyend="1623"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1aeb676b03467a93454be018ac243f89a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_else</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_else</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1624" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1624" bodyend="1626"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a8330d1f34d40b0e82495ec794575289d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_return</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_return</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1627" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1627" bodyend="1632"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a8504d788bb1541ee581918d52d1f4132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_goto</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_goto</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1633" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1633" bodyend="1637"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a6c7998f3fdcd046718ff809dbe257645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_try</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_try</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1638" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1638" bodyend="1640"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1aa38687383d0f54d26416054cf2141837" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_catch</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_catch</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1641" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1641" bodyend="1643"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1ad4a308ded4a1f87e686b9e11fec31be9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_throw</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_throw</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1644" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1644" bodyend="1646"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1aac812e812ba2e5fbd80dde93be01a414" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_while</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_while</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1647" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1647" bodyend="1649"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a540226b483513b423d4ec2c4f10b18f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_do</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_do</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1650" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1650" bodyend="1652"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a0025c4d8ca779d69552e0947665eb1c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_for</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_for</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1653" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1653" bodyend="1655"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a2b663a3e15e70b9d85bf17afb2bcf07a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_break</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_break</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1656" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1656" bodyend="1658"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a511eb003ed301a713a687e5293584077" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder.handle_continue</definition>
+        <argsstring>(self)</argsstring>
+        <name>handle_continue</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1659" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1659" bodyend="1662"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1aed483f6f87068092d41c7b612553b330" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._CreateVariable</definition>
+        <argsstring>(self, pos_token, name, type_name, type_modifiers, ref_pointer_name_seq, templated_types, value=None)</argsstring>
+        <name>_CreateVariable</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pos_token</type>
+          <defname>pos_token</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>type_name</type>
+          <defname>type_name</defname>
+        </param>
+        <param>
+          <type>type_modifiers</type>
+          <defname>type_modifiers</defname>
+        </param>
+        <param>
+          <type>ref_pointer_name_seq</type>
+          <defname>ref_pointer_name_seq</defname>
+        </param>
+        <param>
+          <type>templated_types</type>
+          <defname>templated_types</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="727" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="728" bodyend="737"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1ae3a006851c8f8a4b5929e5e8bcbd4618" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._GenerateOne</definition>
+        <argsstring>(self, token)</argsstring>
+        <name>_GenerateOne</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>token</type>
+          <defname>token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="738" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="738" bodyend="848"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a93e70a799351e5c40f07efb218889b31" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._GetTokensUpTo</definition>
+        <argsstring>(self, expected_token_type, expected_token)</argsstring>
+        <name>_GetTokensUpTo</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>expected_token_type</type>
+          <defname>expected_token_type</defname>
+        </param>
+        <param>
+          <type>expected_token</type>
+          <defname>expected_token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="849" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="849" bodyend="851"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a0b5b10f2608ba3e8851fbd65d51b1f22" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._GetVarTokensUpTo</definition>
+        <argsstring>(self, expected_token_type, expected_tokens)</argsstring>
+        <name>_GetVarTokensUpTo</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>expected_token_type</type>
+          <defname>expected_token_type</defname>
+        </param>
+        <param>
+          <type>expected_tokens</type>
+          <defname>expected_tokens</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="852" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="852" bodyend="860"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1affc78a722f3038f6384147512fa8ef89" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._IgnoreUpTo</definition>
+        <argsstring>(self, token_type, token)</argsstring>
+        <name>_IgnoreUpTo</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>token_type</type>
+          <defname>token_type</defname>
+        </param>
+        <param>
+          <type>token</type>
+          <defname>token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="862" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="862" bodyend="864"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a2e872094ebb16513f608e1be21c41dd0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._SkipIf0Blocks</definition>
+        <argsstring>(self)</argsstring>
+        <name>_SkipIf0Blocks</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="865" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="865" bodyend="879"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a30936331903fe395451f8ed8ea2c26ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._GetMatchingChar</definition>
+        <argsstring>(self, open_paren, close_paren, GetNextToken=None)</argsstring>
+        <name>_GetMatchingChar</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>open_paren</type>
+          <defname>open_paren</defname>
+        </param>
+        <param>
+          <type>close_paren</type>
+          <defname>close_paren</defname>
+        </param>
+        <param>
+          <type>GetNextToken</type>
+          <defname>GetNextToken</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="880" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="880" bodyend="898"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a89bbfbdcc6d029629f304aa9b643faf3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._GetParameters</definition>
+        <argsstring>(self)</argsstring>
+        <name>_GetParameters</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="899" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="899" bodyend="901"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1ac22b5683a8f1a86a49751d6d0bcd4b84" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._GetNextToken</definition>
+        <argsstring>(self)</argsstring>
+        <name>_GetNextToken</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="905" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="905" bodyend="909"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a264b4e18c07863c4dae117fe623a0fb2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._AddBackToken</definition>
+        <argsstring>(self, token)</argsstring>
+        <name>_AddBackToken</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>token</type>
+          <defname>token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="910" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="910" bodyend="917"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1aa148966c6578f4560a4164db33df0fcf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._AddBackTokens</definition>
+        <argsstring>(self, tokens)</argsstring>
+        <name>_AddBackTokens</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tokens</type>
+          <defname>tokens</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="918" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="918" bodyend="927"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1ad1d43eb0d4bdc6be1a9d7ff86c54bd66" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._GetMethod</definition>
+        <argsstring>(self, return_type_and_name, modifiers, templated_types, get_paren)</argsstring>
+        <name>_GetMethod</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>return_type_and_name</type>
+          <defname>return_type_and_name</defname>
+        </param>
+        <param>
+          <type>modifiers</type>
+          <defname>modifiers</defname>
+        </param>
+        <param>
+          <type>templated_types</type>
+          <defname>templated_types</defname>
+        </param>
+        <param>
+          <type>get_paren</type>
+          <defname>get_paren</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="959" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="960" bodyend="1115"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1abef1c7f48a562a67507bd7ed6f822710" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._GetReturnTypeAndClassName</definition>
+        <argsstring>(self, token_seq)</argsstring>
+        <name>_GetReturnTypeAndClassName</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>token_seq</type>
+          <defname>token_seq</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1116" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1116" bodyend="1159"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a5d691eeae461945d88601fc2f2dce3cb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._GetNestedType</definition>
+        <argsstring>(self, ctor)</argsstring>
+        <name>_GetNestedType</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ctor</type>
+          <defname>ctor</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1193" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1193" bodyend="1226"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a07d463f974a3a33de2840fc6965906c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._GetTemplatedTypes</definition>
+        <argsstring>(self)</argsstring>
+        <name>_GetTemplatedTypes</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1395" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1395" bodyend="1421"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1a5682851612e95587469f0c6d29d87e01" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._GetBases</definition>
+        <argsstring>(self)</argsstring>
+        <name>_GetBases</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1457" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1457" bodyend="1488"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_ast_builder_1af5670e1181b5af00bce0acc0dd9d0da7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.AstBuilder._GetClass</definition>
+        <argsstring>(self, class_type, visibility, templated_types)</argsstring>
+        <name>_GetClass</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>class_type</type>
+          <defname>class_type</defname>
+        </param>
+        <param>
+          <type>visibility</type>
+          <defname>visibility</defname>
+        </param>
+        <param>
+          <type>templated_types</type>
+          <defname>templated_types</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1489" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1489" bodyend="1560"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="153">
+        <label>cpp.ast.AstBuilder</label>
+        <link refid="classcpp_1_1ast_1_1_ast_builder"/>
+        <childnode refid="154" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="155">
+        <label>cpp.ast.AstBuilder</label>
+        <link refid="classcpp_1_1ast_1_1_ast_builder"/>
+        <childnode refid="156" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="676" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="676" bodyend="1663"/>
+    <listofallmembers>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1aaf35e2f9d395c99a38e6bb6f9b5dd047" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>__init__</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a264b4e18c07863c4dae117fe623a0fb2" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_AddBackToken</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1aa148966c6578f4560a4164db33df0fcf" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_AddBackTokens</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1aed483f6f87068092d41c7b612553b330" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_CreateVariable</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ae3a006851c8f8a4b5929e5e8bcbd4618" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_GenerateOne</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a5682851612e95587469f0c6d29d87e01" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_GetBases</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1af5670e1181b5af00bce0acc0dd9d0da7" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_GetClass</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a30936331903fe395451f8ed8ea2c26ba" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_GetMatchingChar</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ad1d43eb0d4bdc6be1a9d7ff86c54bd66" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_GetMethod</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a5d691eeae461945d88601fc2f2dce3cb" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_GetNestedType</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ac22b5683a8f1a86a49751d6d0bcd4b84" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_GetNextToken</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a89bbfbdcc6d029629f304aa9b643faf3" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_GetParameters</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1abef1c7f48a562a67507bd7ed6f822710" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_GetReturnTypeAndClassName</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a07d463f974a3a33de2840fc6965906c3" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_GetTemplatedTypes</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a93e70a799351e5c40f07efb218889b31" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_GetTokensUpTo</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a0b5b10f2608ba3e8851fbd65d51b1f22" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_GetVarTokensUpTo</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ac9daa2aa10bc58b5919d20203ff3b813" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_handling_typedef</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1affc78a722f3038f6384147512fa8ef89" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_IgnoreUpTo</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a2e872094ebb16513f608e1be21c41dd0" prot="private" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>_SkipIf0Blocks</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ae8551cf0405bc6e367636b1f3b37d083" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>converter</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a38579523ccc1ae9d202ac722baea45fc" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>current_token</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ad8b8f5788de55d6c7151e82af8b21115" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>filename</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1aebd0392eee56def849468af5b93b720a" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>Generate</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1af22fb880867876144d20818391ad267a" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>GetMethod</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a327957c4228325fc5f64821b047bdc6f" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>GetName</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1add6826421ce64546a7dbb9b2e699a4d4" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>GetScope</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1acf6ec42d567cd85a9bad77772c381a4e" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_asm</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a0cb490894f17a6c34fbe6bb8f7a2e626" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_auto</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ac5a5e19e5be6501d351891cc0ead5f53" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_bool</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a2b663a3e15e70b9d85bf17afb2bcf07a" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_break</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ac4f02e1ba7df670086e4c9dabdb21458" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_case</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1aa38687383d0f54d26416054cf2141837" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_catch</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1adfbb93646d0d32b39a19f3c70cc031f8" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_char</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a93bd39632593bec36972355b7e1893e0" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_class</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a9d24135000a6fb4a3daabb5ab8883648" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_const</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a4dae74f1d036f63fc1080962ab0208fc" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_const_cast</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a511eb003ed301a713a687e5293584077" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_continue</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a6bf895d948d231ffcd058df7af05d0be" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_default</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1aa5b7a781afe524bebdf42bdeb4766507" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_delete</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a540226b483513b423d4ec2c4f10b18f5" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_do</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ad1bd68af800dafcafdfa56e474f9d642" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_double</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a659b5ad02ffebe26c1496a319128fbd1" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_dynamic_cast</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1aeb676b03467a93454be018ac243f89a2" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_else</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a341a6ffabadd444a345c8c98a611774c" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_enum</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a568860050542b53d3df9cf479f2a5e1c" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_explicit</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a49039750d971240a270606f0608c1ff0" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_extern</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1afe125e384026baf74b55593b254fc10c" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_false</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1aabe3f6d67124181a8cd2665a4562d4f6" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_float</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a0025c4d8ca779d69552e0947665eb1c4" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_for</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ab9f7d81019317c6ccfd492bd2c0c9579" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_friend</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a8504d788bb1541ee581918d52d1f4132" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_goto</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a39f2561dfcf36485b2050dff258ece2b" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_if</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ab2eb0c18c07584ef246a46865a17ec40" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_inline</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a6f824335dd53e12a76d6f91ab69c627c" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_int</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a08f56b25e6bed18aa955f8cad462d2f9" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_long</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a6a642353cfe2cddd1a60cbb1011df787" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_mutable</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ae6dde01c5f9ac7ba3b14dff01cac66e4" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_namespace</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a86f5769e0460524691ae0d135d30f101" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_new</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a7ca1318675b9eff41cb4a838d63eb6e6" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_operator</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a8bc5f9563f5ead3abba5a71187162867" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_private</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1aa4ff62142927f8f245a2030b444676ee" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_protected</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a1e69925578e0ee0a2b7aeb219eda449b" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_public</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a890e7764fc5fd8ad2da3a62e436278a0" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_register</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a06d75904ba7487c7966d073aaa3d74e9" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_reinterpret_cast</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a8330d1f34d40b0e82495ec794575289d" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_return</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1adf11f377386bdb44fe1094ff8adf9142" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_short</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a61c1e82b2b4fdc337cf360e485851390" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_signed</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1acfd733ff9115e3292bea10e160bb6184" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_sizeof</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ad98bc262537d2882adc2017023cef6aa" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_static</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ab7577b3a2bd22c1bccb656493de379f3" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_static_cast</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1aadfad5b8d50962c04504e806dc0f5b6c" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_struct</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a1dffcdf7154158461a652c5b885bfa19" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_switch</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a0f4d74520697ec05eb6b549daada5a5d" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_template</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ad96a39776b5439fa9a5c2989f8da20cd" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_this</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ad4a308ded4a1f87e686b9e11fec31be9" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_throw</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ad480255644817388b81b05acc4aa9c9a" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_true</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a6c7998f3fdcd046718ff809dbe257645" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_try</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a808eb3d955ca2e3a957abb35dc577c66" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_typedef</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ac30cfc1a3a455310a9ccac885d2d0d7c" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_typeid</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a4b7b3bb4f47f67052b04e5da173d1c6b" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_typename</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a9b3fbfb21c6e23f04fd596d590f93eee" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_union</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a793123ea878db159de1662c10bdae897" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_unsigned</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a785563f31bc3ed9559d9ce2854a83f1b" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_using</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a44710dc0b8e5bdbecaa56f7c4b59c046" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_virtual</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a7a8f94909d4080bad2bc5dabd934057b" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_void</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a2dfb23ddeb05e1017b3d1ce85a40cacb" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_volatile</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a4ec65909aea14f45709733d631aed57b" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_wchar_t</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1aac812e812ba2e5fbd80dde93be01a414" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>handle_while</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a3e610662018d674f6c57ef19254cc470" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>HandleError</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a9edc1e10a3f005b463fd9316d83dd15d" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>in_class</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a376583354ab9afa308b7f34105bf3f4a" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>in_class_name_only</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ad5ac0612dfff44241033864832dbdfe3" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>in_function</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ab183aa48e4b6e116379f95eb3d11039c" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>namespace_stack</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1ae167f12797e7c02c1b60c11c83cdb22f" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>token_queue</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a1b21f8bef712e91862ccb6b1147cab0d" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>tokens</name></member>
+      <member refid="classcpp_1_1ast_1_1_ast_builder_1a2f16b19846c405101235432d2666b614" prot="public" virt="non-virtual"><scope>cpp::ast::AstBuilder</scope><name>visibility</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

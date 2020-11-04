@@ -1,0 +1,591 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="test__tracker_8cpp" kind="file" language="C++">
+    <compoundname>test_tracker.cpp</compoundname>
+    <includes refid="gtest_8h" local="no">gtest/gtest.h</includes>
+    <includes refid="tracker_8h" local="yes">tracker.h</includes>
+    <includes refid="config_8h" local="yes">config.h</includes>
+    <includes refid="profiler_8h" local="yes">profiler.h</includes>
+    <incdepgraph>
+      <node id="136">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="156">
+        <label>gtest/internal/gtest-type-util.h</label>
+        <link refid="gtest-type-util_8h_source"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>iomanip</label>
+      </node>
+      <node id="125">
+        <label>limits</label>
+      </node>
+      <node id="163">
+        <label>assert.h</label>
+      </node>
+      <node id="142">
+        <label>gtest/internal/gtest-port-arch.h</label>
+        <link refid="gtest-port-arch_8h_source"/>
+      </node>
+      <node id="161">
+        <label>iterator</label>
+      </node>
+      <node id="149">
+        <label>float.h</label>
+      </node>
+      <node id="167">
+        <label>gtest/gtest_prod.h</label>
+        <link refid="gtest__prod_8h_source"/>
+      </node>
+      <node id="132">
+        <label>stdlib.h</label>
+      </node>
+      <node id="154">
+        <label>gtest/internal/gtest-string.h</label>
+        <link refid="gtest-string_8h_source"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>gtest/gtest-test-part.h</label>
+        <link refid="gtest-test-part_8h_source"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>string</label>
+      </node>
+      <node id="172">
+        <label>tracker.h</label>
+        <link refid="tracker_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>map</label>
+      </node>
+      <node id="173">
+        <label>unordered_set</label>
+      </node>
+      <node id="166">
+        <label>gtest/internal/gtest-param-util-generated.h</label>
+        <link refid="gtest-param-util-generated_8h_source"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+      </node>
+      <node id="175">
+        <label>opencv2/dnn.hpp</label>
+      </node>
+      <node id="131">
+        <label>stddef.h</label>
+      </node>
+      <node id="171">
+        <label>gtest/gtest_pred_impl.h</label>
+        <link refid="gtest__pred__impl_8h_source"/>
+      </node>
+      <node id="126">
+        <label>ostream</label>
+      </node>
+      <node id="143">
+        <label>gtest/internal/custom/gtest-port.h</label>
+        <link refid="custom_2gtest-port_8h_source"/>
+      </node>
+      <node id="157">
+        <label>gtest/gtest-death-test.h</label>
+        <link refid="gtest-death-test_8h_source"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>sys/types.h</label>
+      </node>
+      <node id="134">
+        <label>string.h</label>
+      </node>
+      <node id="147">
+        <label>typeinfo</label>
+      </node>
+      <node id="174">
+        <label>tuple</label>
+      </node>
+      <node id="144">
+        <label>unistd.h</label>
+      </node>
+      <node id="178">
+        <label>profiler.h</label>
+        <link refid="profiler_8h"/>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>vector</label>
+      </node>
+      <node id="165">
+        <label>gtest/internal/custom/gtest-printers.h</label>
+        <link refid="internal_2custom_2gtest-printers_8h_source"/>
+      </node>
+      <node id="153">
+        <label>gtest/gtest-message.h</label>
+        <link refid="gtest-message_8h_source"/>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>utility</label>
+      </node>
+      <node id="139">
+        <label>sstream</label>
+      </node>
+      <node id="162">
+        <label>gtest/internal/gtest-linked_ptr.h</label>
+        <link refid="gtest-linked__ptr_8h_source"/>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>opencv2/highgui.hpp</label>
+      </node>
+      <node id="169">
+        <label>iosfwd</label>
+      </node>
+      <node id="155">
+        <label>gtest/internal/gtest-filepath.h</label>
+        <link refid="gtest-filepath_8h_source"/>
+        <childnode refid="154" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>iostream</label>
+      </node>
+      <node id="148">
+        <label>gtest/internal/gtest-tuple.h</label>
+        <link refid="gtest-tuple_8h_source"/>
+        <childnode refid="141" relation="include">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>gtest/gtest.h</label>
+        <link refid="gtest_8h_source"/>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>strings.h</label>
+      </node>
+      <node id="123">
+        <label>test/test_tracker.cpp</label>
+        <link refid="test__tracker_8cpp"/>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>ctype.h</label>
+      </node>
+      <node id="170">
+        <label>gtest/gtest-typed-test.h</label>
+        <link refid="gtest-typed-test_8h_source"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="gtest-port_8h_source"/>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>chrono</label>
+      </node>
+      <node id="128">
+        <label>gtest/internal/gtest-internal.h</label>
+        <link refid="gtest-internal_8h_source"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+      <node id="176">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>gtest/internal/gtest-param-util.h</label>
+        <link refid="gtest-param-util_8h_source"/>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>set</label>
+      </node>
+      <node id="159">
+        <label>gtest/gtest-param-test.h</label>
+        <link refid="gtest-param-test_8h_source"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>algorithm</label>
+      </node>
+      <node id="146">
+        <label>regex.h</label>
+      </node>
+      <node id="133">
+        <label>stdio.h</label>
+      </node>
+      <node id="158">
+        <label>gtest/internal/gtest-death-test-internal.h</label>
+        <link refid="gtest-death-test-internal_8h_source"/>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="164">
+        <label>gtest/gtest-printers.h</label>
+        <link refid="gtest-printers_8h_source"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_object_tracker_test" prot="public">ObjectTrackerTest</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test__tracker_8cpp_1a567724948cdce4788a1e8c8baf6b6cfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_F</definition>
+        <argsstring>(ObjectTrackerTest, LocalizationWorks)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="class_object_tracker_test" kindref="compound">ObjectTrackerTest</ref></type>
+        </param>
+        <param>
+          <type>LocalizationWorks</type>
+        </param>
+        <briefdescription>
+<para>Test Case for the localization function of ObjectTracker class Checks if the localiztion method &quot;F&quot; implements the inverse mapping of the camera projection operator &quot;F-1&quot;. In mathematical terms, the following condition [F-1(F(pixel_given) == pixel_reconstructed] is evaluated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/test_tracker.cpp" line="61" column="1" bodyfile="test/test_tracker.cpp" bodystart="61" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="test__tracker_8cpp_1af71cdd56a3b5416424ab911c1798c3a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_F</definition>
+        <argsstring>(ObjectTrackerTest, MultipleHumanDetectionWorks)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="class_object_tracker_test" kindref="compound">ObjectTrackerTest</ref></type>
+        </param>
+        <param>
+          <type>MultipleHumanDetectionWorks</type>
+        </param>
+        <briefdescription>
+<para>Test Case for the multiple object detection function of ObjectTracker Checks if the number of detections matches the number objects in the test image. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/test_tracker.cpp" line="77" column="1" bodyfile="test/test_tracker.cpp" bodystart="77" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="test__tracker_8cpp_1ab4dde97030dd8e7e999d81c011739a20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_F</definition>
+        <argsstring>(ObjectTrackerTest, CocoLabelsAreRead)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="class_object_tracker_test" kindref="compound">ObjectTrackerTest</ref></type>
+        </param>
+        <param>
+          <type>CocoLabelsAreRead</type>
+        </param>
+        <briefdescription>
+<para>Test Case for the file parsing function of ObjectTracker class Checks if all the labels in the COCO dataset (which contains 80 classes) are correctly loaded. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/test_tracker.cpp" line="88" column="1" bodyfile="test/test_tracker.cpp" bodystart="88" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="test__tracker_8cpp_1aaf8d696981e7cd18eef3fd237de86808" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_F</definition>
+        <argsstring>(ObjectTrackerTest, RealtimePerformanceIsAchieved)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="class_object_tracker_test" kindref="compound">ObjectTrackerTest</ref></type>
+        </param>
+        <param>
+          <type>RealtimePerformanceIsAchieved</type>
+        </param>
+        <briefdescription>
+<para>Test Case for benchmarking the speed of the tracker Checks if the achieved frame rate fulfills the real-time requirement. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/test_tracker.cpp" line="99" column="1" bodyfile="test/test_tracker.cpp" bodystart="99" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Test Suite for ObjectTracker class methods. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Mahmoud Dahmani (Driver) </para></simplesect>
+<simplesect kind="author"><para>Aditya Khopkar (Navigator) </para></simplesect>
+<simplesect kind="copyright"><para>MIT License </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>Copyright<sp/>(c)<sp/>2020<sp/>Mahmoud<sp/>Dahmani,<sp/>Aditya<sp/>Khopkar</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in<sp/>all</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tracker_8h" kindref="compound">tracker.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="profiler_8h" kindref="compound">profiler.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="class_object_tracker_test" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_object_tracker_test" kindref="compound">ObjectTrackerTest</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1_test" kindref="compound">::testing::Test</ref><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetUp()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>tracker<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_e_n_p_m808_x_1_1_object_tracker" kindref="compound">ENPM808X::ObjectTracker</ref>(objectClasses,<sp/>extP,<sp/>intP);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>P<sp/>=<sp/>intP<sp/>*<sp/>extP;<sp/><sp/></highlight><highlight class="comment">//<sp/>camera<sp/>calibration<sp/>matrix</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>TearDown()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>tracker;<sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="class_e_n_p_m808_x_1_1_object_tracker" kindref="compound">ENPM808X::ObjectTracker</ref>*<sp/>tracker;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>cv::Matx34f<sp/>P;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><ref refid="test__tracker_8cpp_1a567724948cdce4788a1e8c8baf6b6cfe" kindref="member">TEST_F</ref>(<ref refid="class_object_tracker_test" kindref="compound">ObjectTrackerTest</ref>,<sp/>LocalizationWorks)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>cv::Point2i<sp/>pixel_true{140,<sp/>120},<sp/>pixel_reconstructed;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>cv::Point3f<sp/>worldPoint{tracker-&gt;<ref refid="class_e_n_p_m808_x_1_1_object_tracker_1a488d16d7015a48a0fbdd0cf4b766bb54" kindref="member">localize</ref>(pixel_true)};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>cv::Matx41f<sp/>X{worldPoint.x,<sp/>worldPoint.y,<sp/>worldPoint.z,<sp/>1};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>cv::Matx31f<sp/>homogeneousPixel{P<sp/>*<sp/>X};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>homogeneousPixel<sp/>/=<sp/>homogeneousPixel(2);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>pixel_reconstructed<sp/>=<sp/>{</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(homogeneousPixel(0)),</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static_cast&lt;int&gt;(homogeneousPixel(1))};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>EXPECT_EQ(pixel_reconstructed,<sp/>pixel_true);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><ref refid="test__tracker_8cpp_1a567724948cdce4788a1e8c8baf6b6cfe" kindref="member">TEST_F</ref>(<ref refid="class_object_tracker_test" kindref="compound">ObjectTrackerTest</ref>,<sp/>MultipleHumanDetectionWorks)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>cv::Mat<sp/>frame{cv::imread(</highlight><highlight class="stringliteral">&quot;../data/testImage.png&quot;</highlight><highlight class="normal">)};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>[classIds,<sp/>confidences,<sp/>boxes]<sp/>=<sp/>tracker-&gt;<ref refid="class_e_n_p_m808_x_1_1_object_tracker_1a109217a8fae2ca7ec36eb8e437e82b45" kindref="member">detectObjects</ref>(frame);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>EXPECT_EQ(boxes.size(),<sp/>2);<sp/><sp/></highlight><highlight class="comment">//<sp/>there<sp/>are<sp/>2<sp/>humans<sp/>in<sp/>this<sp/>test<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><ref refid="test__tracker_8cpp_1a567724948cdce4788a1e8c8baf6b6cfe" kindref="member">TEST_F</ref>(<ref refid="class_object_tracker_test" kindref="compound">ObjectTrackerTest</ref>,<sp/>CocoLabelsAreRead)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>labels{tracker-&gt;<ref refid="class_e_n_p_m808_x_1_1_object_tracker_1abec22b27cb028cf5911b4198970f3c57" kindref="member">datasetLabels</ref>()};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>ASSERT_EQ(labels.size(),<sp/>80);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>label<sp/>:<sp/>labels)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_FALSE(label.empty());</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><ref refid="test__tracker_8cpp_1a567724948cdce4788a1e8c8baf6b6cfe" kindref="member">TEST_F</ref>(<ref refid="class_object_tracker_test" kindref="compound">ObjectTrackerTest</ref>,<sp/>RealtimePerformanceIsAchieved)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FPS_desired{1},<sp/>FPS_actual,<sp/>num_iterations{10};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>cv::Mat<sp/>frame;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>ENPM808X::PROFILE_SCOPE(</highlight><highlight class="stringliteral">&quot;unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>num_iterations;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>stream.read(frame);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tracker-&gt;<ref refid="class_e_n_p_m808_x_1_1_object_tracker_1aaabe274d63cce01922a9c1a834a52039" kindref="member">localizeObjects</ref>(frame);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>FPS_actual<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(num_iterations<sp/>*<sp/>1000.0f<sp/>/</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ENPM808X::Timer::profileResult.elapsedTime);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>EXPECT_GE(FPS_actual,<sp/>FPS_desired);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="test/test_tracker.cpp"/>
+  </compounddef>
+</doxygen>

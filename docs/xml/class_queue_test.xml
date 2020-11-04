@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_queue_test" kind="class" language="C++" prot="public">
+    <compoundname>QueueTest</compoundname>
+    <basecompoundref refid="class_quick_test" prot="public" virt="non-virtual">QuickTest</basecompoundref>
+    <basecompoundref refid="classtesting_1_1_test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_queue_test_1a0eba1fe2b31d75abd2df688ca5245e22" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_queue" kindref="compound">Queue</ref>&lt; int &gt;</type>
+        <definition>Queue&lt; int &gt; QueueTest::q0_</definition>
+        <argsstring></argsstring>
+        <name>q0_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample3_unittest.cc" line="114" column="1" bodyfile="vendor/googletest/googletest/samples/sample3_unittest.cc" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_queue_test_1a1e55594e71820ba0f1b09591fb328c30" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_queue" kindref="compound">Queue</ref>&lt; int &gt;</type>
+        <definition>Queue&lt; int &gt; QueueTest::q1_</definition>
+        <argsstring></argsstring>
+        <name>q1_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample3_unittest.cc" line="115" column="1" bodyfile="vendor/googletest/googletest/samples/sample3_unittest.cc" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_queue_test_1aeb7a2e3f6ce2d97d84eb1e01468adc2f" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_queue" kindref="compound">Queue</ref>&lt; int &gt;</type>
+        <definition>Queue&lt; int &gt; QueueTest::q2_</definition>
+        <argsstring></argsstring>
+        <name>q2_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample3_unittest.cc" line="116" column="1" bodyfile="vendor/googletest/googletest/samples/sample3_unittest.cc" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_queue_test_1a91e69958f086239a523864d6b94ab174" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QueueTest::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplements refid="classtesting_1_1_test_1a190315150c303ddf801313fd1a777733">SetUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample3_unittest.cc" line="77" column="1" bodyfile="vendor/googletest/googletest/samples/sample3_unittest.cc" bodystart="77" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_queue_test_1a7f1661cd16c428a130d6ac1e4246eaab" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void QueueTest::MapTester</definition>
+        <argsstring>(const Queue&lt; int &gt; *q)</argsstring>
+        <name>MapTester</name>
+        <param>
+          <type>const <ref refid="class_queue" kindref="compound">Queue</ref>&lt; int &gt; *</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample3_unittest.cc" line="96" column="1" bodyfile="vendor/googletest/googletest/samples/sample3_unittest.cc" bodystart="96" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_queue_test_1a91e69958f086239a523864d6b94ab174" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QueueTest::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplements refid="classtesting_1_1_test_1a190315150c303ddf801313fd1a777733">SetUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample5_unittest.cc" line="146" column="1" bodyfile="vendor/googletest/googletest/samples/sample5_unittest.cc" bodystart="146" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="class_queue_test_1a2c7e0d1edb558dbbc4c085316d3d1ee6" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int QueueTest::Double</definition>
+        <argsstring>(int n)</argsstring>
+        <name>Double</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample3_unittest.cc" line="91" column="1" bodyfile="vendor/googletest/googletest/samples/sample3_unittest.cc" bodystart="91" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1838">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1837">
+        <label>QuickTest</label>
+        <link refid="class_quick_test"/>
+        <childnode refid="1838" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1836">
+        <label>QueueTest</label>
+        <link refid="class_queue_test"/>
+        <childnode refid="1837" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1838" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1842">
+        <label>Queue&lt; int &gt;</label>
+        <link refid="class_queue"/>
+      </node>
+      <node id="1841">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1840">
+        <label>QuickTest</label>
+        <link refid="class_quick_test"/>
+        <childnode refid="1841" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1839">
+        <label>QueueTest</label>
+        <link refid="class_queue_test"/>
+        <childnode refid="1840" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1841" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1842" relation="usage">
+          <edgelabel>q2_</edgelabel>
+          <edgelabel>q1_</edgelabel>
+          <edgelabel>q0_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/samples/sample3_unittest.cc" line="70" column="1" bodyfile="vendor/googletest/googletest/samples/sample3_unittest.cc" bodystart="70" bodyend="117"/>
+    <listofallmembers>
+      <member refid="class_queue_test_1a2c7e0d1edb558dbbc4c085316d3d1ee6" prot="protected" virt="non-virtual"><scope>QueueTest</scope><name>Double</name></member>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual" ambiguityscope="QuickTest::"><scope>QueueTest</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual" ambiguityscope="testing::Test::"><scope>QueueTest</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual" ambiguityscope="QuickTest::"><scope>QueueTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual" ambiguityscope="testing::Test::"><scope>QueueTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual" ambiguityscope="QuickTest::"><scope>QueueTest</scope><name>HasNonfatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual" ambiguityscope="testing::Test::"><scope>QueueTest</scope><name>HasNonfatalFailure</name></member>
+      <member refid="class_queue_test_1a7f1661cd16c428a130d6ac1e4246eaab" prot="protected" virt="non-virtual"><scope>QueueTest</scope><name>MapTester</name></member>
+      <member refid="class_queue_test_1a0eba1fe2b31d75abd2df688ca5245e22" prot="protected" virt="non-virtual"><scope>QueueTest</scope><name>q0_</name></member>
+      <member refid="class_queue_test_1a1e55594e71820ba0f1b09591fb328c30" prot="protected" virt="non-virtual"><scope>QueueTest</scope><name>q1_</name></member>
+      <member refid="class_queue_test_1aeb7a2e3f6ce2d97d84eb1e01468adc2f" prot="protected" virt="non-virtual"><scope>QueueTest</scope><name>q2_</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual" ambiguityscope="QuickTest::"><scope>QueueTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual" ambiguityscope="QuickTest::"><scope>QueueTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual" ambiguityscope="testing::Test::"><scope>QueueTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual" ambiguityscope="testing::Test::"><scope>QueueTest</scope><name>RecordProperty</name></member>
+      <member refid="class_queue_test_1a91e69958f086239a523864d6b94ab174" prot="protected" virt="virtual"><scope>QueueTest</scope><name>SetUp</name></member>
+      <member refid="class_queue_test_1a91e69958f086239a523864d6b94ab174" prot="protected" virt="virtual"><scope>QueueTest</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1_test_1a5ccbac42fee8c5b00b0bfe89b6c49d79" prot="public" virt="non-virtual" ambiguityscope="QuickTest::"><scope>QueueTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5ccbac42fee8c5b00b0bfe89b6c49d79" prot="public" virt="non-virtual" ambiguityscope="testing::Test::"><scope>QueueTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual" ambiguityscope="QuickTest::"><scope>QueueTest</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual" ambiguityscope="testing::Test::"><scope>QueueTest</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="class_quick_test_1aba6a28bbd733e72e3b088a0b66386809" prot="protected" virt="non-virtual"><scope>QueueTest</scope><name>start_time_</name></member>
+      <member refid="class_quick_test_1a6b2d16cc0c69d30a16fe612db5abfc39" prot="protected" virt="virtual"><scope>QueueTest</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_test_1af374706cbaf0ffc460f4fd04e7c150f1" prot="public" virt="non-virtual" ambiguityscope="QuickTest::"><scope>QueueTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1af374706cbaf0ffc460f4fd04e7c150f1" prot="public" virt="non-virtual" ambiguityscope="testing::Test::"><scope>QueueTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual" ambiguityscope="QuickTest::"><scope>QueueTest</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual" ambiguityscope="testing::Test::"><scope>QueueTest</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual" ambiguityscope="QuickTest::"><scope>QueueTest</scope><name>Test</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual" ambiguityscope="testing::Test::"><scope>QueueTest</scope><name>Test</name></member>
+      <member refid="classtesting_1_1_test_1a2b0a62f1e667bbe8d8cb18d785bfa991" prot="public" virt="virtual"><scope>QueueTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_mock_spec" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::MockSpec</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>F</declname>
+        <defname>F</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_mock_spec_1a7d520daca5d4d937578b4c7e8f0cf43e" prot="public" static="no">
+        <type><ref refid="structtesting_1_1internal_1_1_function" kindref="compound">internal::Function</ref>&lt; F &gt;::ArgumentTuple</type>
+        <definition>typedef internal::Function&lt;F&gt;::ArgumentTuple testing::internal::MockSpec&lt; F &gt;::ArgumentTuple</definition>
+        <argsstring></argsstring>
+        <name>ArgumentTuple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1248" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_mock_spec_1a35dc5836483cb8c6882c365c447b26cd" prot="public" static="no">
+        <type><ref refid="structtesting_1_1internal_1_1_function" kindref="compound">internal::Function</ref>&lt; F &gt;::ArgumentMatcherTuple</type>
+        <definition>typedef internal::Function&lt;F&gt;::ArgumentMatcherTuple testing::internal::MockSpec&lt; F &gt;::ArgumentMatcherTuple</definition>
+        <argsstring></argsstring>
+        <name>ArgumentMatcherTuple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1250" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1250" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtesting_1_1internal_1_1_mock_spec_1a6980863fff8693124aff79c507f87d45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="structtesting_1_1internal_1_1_function" kindref="compound">Function</ref></type>
+          </param>
+        </templateparamlist>
+        <type>friend class</type>
+        <definition>friend class internal::FunctionMocker</definition>
+        <argsstring></argsstring>
+        <name>internal::FunctionMocker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1278" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1278" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_mock_spec_1a9dafaf30cc5ecfe824d1b92949e2054a" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1internal_1_1_function_mocker_base" kindref="compound">internal::FunctionMockerBase</ref>&lt; F &gt; *const</type>
+        <definition>internal::FunctionMockerBase&lt;F&gt;* const testing::internal::MockSpec&lt; F &gt;::function_mocker_</definition>
+        <argsstring></argsstring>
+        <name>function_mocker_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1285" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_mock_spec_1acb32a52e9244cfc33601de0fcc96aa2f" prot="private" static="no" mutable="no">
+        <type>ArgumentMatcherTuple</type>
+        <definition>ArgumentMatcherTuple testing::internal::MockSpec&lt; F &gt;::matchers_</definition>
+        <argsstring></argsstring>
+        <name>matchers_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1287" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1287" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_mock_spec_1a067fe3d12433cec0aa63f396f4f55fa9" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::MockSpec&lt; F &gt;::MockSpec</definition>
+        <argsstring>(internal::FunctionMockerBase&lt; F &gt; *function_mocker)</argsstring>
+        <name>MockSpec</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_function_mocker_base" kindref="compound">internal::FunctionMockerBase</ref>&lt; F &gt; *</type>
+          <declname>function_mocker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1254" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1254" bodyend="1255"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_mock_spec_1a875c99443da1265604d87429693457f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_on_call_spec" kindref="compound">internal::OnCallSpec</ref>&lt; F &gt; &amp;</type>
+        <definition>internal::OnCallSpec&lt;F&gt;&amp; testing::internal::MockSpec&lt; F &gt;::InternalDefaultActionSetAt</definition>
+        <argsstring>(const char *file, int line, const char *obj, const char *call)</argsstring>
+        <name>InternalDefaultActionSetAt</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1259" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1259" bodyend="1264"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_mock_spec_1a503a434637634014b9bb6c5d68fd336c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">internal::TypedExpectation</ref>&lt; F &gt; &amp;</type>
+        <definition>internal::TypedExpectation&lt;F&gt;&amp; testing::internal::MockSpec&lt; F &gt;::InternalExpectedAt</definition>
+        <argsstring>(const char *file, int line, const char *obj, const char *call)</argsstring>
+        <name>InternalExpectedAt</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1268" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1268" bodyend="1274"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_mock_spec_1a6b4fd303136c6282b19ddb16100f02a2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::MockSpec&lt; F &gt;::SetMatchers</definition>
+        <argsstring>(const ArgumentMatcherTuple &amp;matchers)</argsstring>
+        <name>SetMatchers</name>
+        <param>
+          <type>const ArgumentMatcherTuple &amp;</type>
+          <declname>matchers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1280" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1280" bodyend="1282"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_mock_spec_1acab7269f80d53da2aef9d94c5febe6c5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::MockSpec&lt; F &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(MockSpec)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_mock_spec" kindref="compound">MockSpec</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1289" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1246" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1246" bodyend="1290"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_mock_spec_1a35dc5836483cb8c6882c365c447b26cd" prot="public" virt="non-virtual"><scope>testing::internal::MockSpec</scope><name>ArgumentMatcherTuple</name></member>
+      <member refid="classtesting_1_1internal_1_1_mock_spec_1a7d520daca5d4d937578b4c7e8f0cf43e" prot="public" virt="non-virtual"><scope>testing::internal::MockSpec</scope><name>ArgumentTuple</name></member>
+      <member refid="classtesting_1_1internal_1_1_mock_spec_1a9dafaf30cc5ecfe824d1b92949e2054a" prot="private" virt="non-virtual"><scope>testing::internal::MockSpec</scope><name>function_mocker_</name></member>
+      <member refid="classtesting_1_1internal_1_1_mock_spec_1acab7269f80d53da2aef9d94c5febe6c5" prot="private" virt="non-virtual"><scope>testing::internal::MockSpec</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_mock_spec_1a6980863fff8693124aff79c507f87d45" prot="public" virt="non-virtual"><scope>testing::internal::MockSpec</scope><name>internal::FunctionMocker</name></member>
+      <member refid="classtesting_1_1internal_1_1_mock_spec_1a875c99443da1265604d87429693457f4" prot="public" virt="non-virtual"><scope>testing::internal::MockSpec</scope><name>InternalDefaultActionSetAt</name></member>
+      <member refid="classtesting_1_1internal_1_1_mock_spec_1a503a434637634014b9bb6c5d68fd336c" prot="public" virt="non-virtual"><scope>testing::internal::MockSpec</scope><name>InternalExpectedAt</name></member>
+      <member refid="classtesting_1_1internal_1_1_mock_spec_1acb32a52e9244cfc33601de0fcc96aa2f" prot="private" virt="non-virtual"><scope>testing::internal::MockSpec</scope><name>matchers_</name></member>
+      <member refid="classtesting_1_1internal_1_1_mock_spec_1a067fe3d12433cec0aa63f396f4f55fa9" prot="public" virt="non-virtual"><scope>testing::internal::MockSpec</scope><name>MockSpec</name></member>
+      <member refid="classtesting_1_1internal_1_1_mock_spec_1a6b4fd303136c6282b19ddb16100f02a2" prot="private" virt="non-virtual"><scope>testing::internal::MockSpec</scope><name>SetMatchers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

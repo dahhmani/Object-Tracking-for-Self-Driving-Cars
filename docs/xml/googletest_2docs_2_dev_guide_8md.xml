@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="googletest_2docs_2_dev_guide_8md" kind="file" language="Markdown">
+    <compoundname>DevGuide.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>are<sp/>interested<sp/>in<sp/>understanding<sp/>the<sp/>internals<sp/>of<sp/>Google<sp/>Test,</highlight></codeline>
+<codeline><highlight class="normal">building<sp/>from<sp/>source,<sp/>or<sp/>contributing<sp/>ideas<sp/>or<sp/>modifications<sp/>to<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">project,<sp/>then<sp/>this<sp/>document<sp/>is<sp/>for<sp/>you.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Introduction<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">First,<sp/>let&apos;s<sp/>give<sp/>you<sp/>some<sp/>background<sp/>of<sp/>the<sp/>project.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Licensing<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">All<sp/>Google<sp/>Test<sp/>source<sp/>and<sp/>pre-built<sp/>packages<sp/>are<sp/>provided<sp/>under<sp/>the<sp/>[New<sp/>BSD<sp/>License](http://www.opensource.org/licenses/bsd-license.php).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>The<sp/>Google<sp/>Test<sp/>Community<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>Google<sp/>Test<sp/>community<sp/>exists<sp/>primarily<sp/>through<sp/>the<sp/>[discussion<sp/>group](http://groups.google.com/group/googletestframework)<sp/>and<sp/>the<sp/>GitHub<sp/>repository.</highlight></codeline>
+<codeline><highlight class="normal">You<sp/>are<sp/>definitely<sp/>encouraged<sp/>to<sp/>contribute<sp/>to<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">discussion<sp/>and<sp/>you<sp/>can<sp/>also<sp/>help<sp/>us<sp/>to<sp/>keep<sp/>the<sp/>effectiveness<sp/>of<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">group<sp/>high<sp/>by<sp/>following<sp/>and<sp/>promoting<sp/>the<sp/>guidelines<sp/>listed<sp/>here.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Please<sp/>Be<sp/>Friendly<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Showing<sp/>courtesy<sp/>and<sp/>respect<sp/>to<sp/>others<sp/>is<sp/>a<sp/>vital<sp/>part<sp/>of<sp/>the<sp/>Google</highlight></codeline>
+<codeline><highlight class="normal">culture,<sp/>and<sp/>we<sp/>strongly<sp/>encourage<sp/>everyone<sp/>participating<sp/>in<sp/>Google</highlight></codeline>
+<codeline><highlight class="normal">Test<sp/>development<sp/>to<sp/>join<sp/>us<sp/>in<sp/>accepting<sp/>nothing<sp/>less.<sp/>Of<sp/>course,</highlight></codeline>
+<codeline><highlight class="normal">being<sp/>courteous<sp/>is<sp/>not<sp/>the<sp/>same<sp/>as<sp/>failing<sp/>to<sp/>constructively<sp/>disagree</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>each<sp/>other,<sp/>but<sp/>it<sp/>does<sp/>mean<sp/>that<sp/>we<sp/>should<sp/>be<sp/>respectful<sp/>of<sp/>each</highlight></codeline>
+<codeline><highlight class="normal">other<sp/>when<sp/>enumerating<sp/>the<sp/>42<sp/>technical<sp/>reasons<sp/>that<sp/>a<sp/>particular</highlight></codeline>
+<codeline><highlight class="normal">proposal<sp/>may<sp/>not<sp/>be<sp/>the<sp/>best<sp/>choice.<sp/>There&apos;s<sp/>never<sp/>a<sp/>reason<sp/>to<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">antagonistic<sp/>or<sp/>dismissive<sp/>toward<sp/>anyone<sp/>who<sp/>is<sp/>sincerely<sp/>trying<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">contribute<sp/>to<sp/>a<sp/>discussion.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Sure,<sp/>C++<sp/>testing<sp/>is<sp/>serious<sp/>business<sp/>and<sp/>all<sp/>that,<sp/>but<sp/>it&apos;s<sp/>also</highlight></codeline>
+<codeline><highlight class="normal">a<sp/>lot<sp/>of<sp/>fun.<sp/>Let&apos;s<sp/>keep<sp/>it<sp/>that<sp/>way.<sp/>Let&apos;s<sp/>strive<sp/>to<sp/>be<sp/>one<sp/>of<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">friendliest<sp/>communities<sp/>in<sp/>all<sp/>of<sp/>open<sp/>source.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>always,<sp/>discuss<sp/>Google<sp/>Test<sp/>in<sp/>the<sp/>official<sp/>GoogleTest<sp/>discussion<sp/>group.</highlight></codeline>
+<codeline><highlight class="normal">You<sp/>don&apos;t<sp/>have<sp/>to<sp/>actually<sp/>submit<sp/>code<sp/>in<sp/>order<sp/>to<sp/>sign<sp/>up.<sp/>Your<sp/>participation</highlight></codeline>
+<codeline><highlight class="normal">itself<sp/>is<sp/>a<sp/>valuable<sp/>contribution.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Working<sp/>with<sp/>the<sp/>Code<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>want<sp/>to<sp/>get<sp/>your<sp/>hands<sp/>dirty<sp/>with<sp/>the<sp/>code<sp/>inside<sp/>Google<sp/>Test,</highlight></codeline>
+<codeline><highlight class="normal">this<sp/>is<sp/>the<sp/>section<sp/>for<sp/>you.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Compiling<sp/>from<sp/>Source<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Once<sp/>you<sp/>check<sp/>out<sp/>the<sp/>code,<sp/>you<sp/>can<sp/>find<sp/>instructions<sp/>on<sp/>how<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">compile<sp/>it<sp/>in<sp/>the<sp/>[README](../README.md)<sp/>file.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Testing<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>testing<sp/>framework<sp/>is<sp/>of<sp/>no<sp/>good<sp/>if<sp/>itself<sp/>is<sp/>not<sp/>thoroughly<sp/>tested.</highlight></codeline>
+<codeline><highlight class="normal">Tests<sp/>should<sp/>be<sp/>written<sp/>for<sp/>any<sp/>new<sp/>code,<sp/>and<sp/>changes<sp/>should<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">verified<sp/>to<sp/>not<sp/>break<sp/>existing<sp/>tests<sp/>before<sp/>they<sp/>are<sp/>submitted<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">review.<sp/>To<sp/>perform<sp/>the<sp/>tests,<sp/>follow<sp/>the<sp/>instructions<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">[README](../README.md)<sp/>and<sp/>verify<sp/>that<sp/>there<sp/>are<sp/>no<sp/>failures.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Contributing<sp/>Code<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>are<sp/>excited<sp/>that<sp/>Google<sp/>Test<sp/>is<sp/>now<sp/>open<sp/>source,<sp/>and<sp/>hope<sp/>to<sp/>get</highlight></codeline>
+<codeline><highlight class="normal">great<sp/>patches<sp/>from<sp/>the<sp/>community.<sp/>Before<sp/>you<sp/>fire<sp/>up<sp/>your<sp/>favorite<sp/>IDE</highlight></codeline>
+<codeline><highlight class="normal">and<sp/>begin<sp/>hammering<sp/>away<sp/>at<sp/>that<sp/>new<sp/>feature,<sp/>though,<sp/>please<sp/>take<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">time<sp/>to<sp/>read<sp/>this<sp/>section<sp/>and<sp/>understand<sp/>the<sp/>process.<sp/>While<sp/>it<sp/>seems</highlight></codeline>
+<codeline><highlight class="normal">rigorous,<sp/>we<sp/>want<sp/>to<sp/>keep<sp/>a<sp/>high<sp/>standard<sp/>of<sp/>quality<sp/>in<sp/>the<sp/>code</highlight></codeline>
+<codeline><highlight class="normal">base.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Contributor<sp/>License<sp/>Agreements<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>must<sp/>sign<sp/>a<sp/>Contributor<sp/>License<sp/>Agreement<sp/>(CLA)<sp/>before<sp/>we<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">accept<sp/>any<sp/>code.<sp/><sp/>The<sp/>CLA<sp/>protects<sp/>you<sp/>and<sp/>us.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>If<sp/>you<sp/>are<sp/>an<sp/>individual<sp/>writing<sp/>original<sp/>source<sp/>code<sp/>and<sp/>you&apos;re<sp/>sure<sp/>you<sp/>own<sp/>the<sp/>intellectual<sp/>property,<sp/>then<sp/>you&apos;ll<sp/>need<sp/>to<sp/>sign<sp/>an<sp/>[individual<sp/>CLA](http://code.google.com/legal/individual-cla-v1.0.html).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>If<sp/>you<sp/>work<sp/>for<sp/>a<sp/>company<sp/>that<sp/>wants<sp/>to<sp/>allow<sp/>you<sp/>to<sp/>contribute<sp/>your<sp/>work<sp/>to<sp/>Google<sp/>Test,<sp/>then<sp/>you&apos;ll<sp/>need<sp/>to<sp/>sign<sp/>a<sp/>[corporate<sp/>CLA](http://code.google.com/legal/corporate-cla-v1.0.html).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Follow<sp/>either<sp/>of<sp/>the<sp/>two<sp/>links<sp/>above<sp/>to<sp/>access<sp/>the<sp/>appropriate<sp/>CLA<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">instructions<sp/>for<sp/>how<sp/>to<sp/>sign<sp/>and<sp/>return<sp/>it.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Coding<sp/>Style<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>keep<sp/>the<sp/>source<sp/>consistent,<sp/>readable,<sp/>diffable<sp/>and<sp/>easy<sp/>to<sp/>merge,</highlight></codeline>
+<codeline><highlight class="normal">we<sp/>use<sp/>a<sp/>fairly<sp/>rigid<sp/>coding<sp/>style,<sp/>as<sp/>defined<sp/>by<sp/>the<sp/>[google-styleguide](http://code.google.com/p/google-styleguide/)<sp/>project.<sp/><sp/>All<sp/>patches<sp/>will<sp/>be<sp/>expected</highlight></codeline>
+<codeline><highlight class="normal">to<sp/>conform<sp/>to<sp/>the<sp/>style<sp/>outlined<sp/>[here](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Updating<sp/>Generated<sp/>Code<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Some<sp/>of<sp/>Google<sp/>Test&apos;s<sp/>source<sp/>files<sp/>are<sp/>generated<sp/>by<sp/>the<sp/>Pump<sp/>tool<sp/>(a</highlight></codeline>
+<codeline><highlight class="normal">Python<sp/>script).<sp/><sp/>If<sp/>you<sp/>need<sp/>to<sp/>update<sp/>such<sp/>files,<sp/>please<sp/>modify<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">source<sp/>(`foo.h.pump`)<sp/>and<sp/>re-generate<sp/>the<sp/>C++<sp/>file<sp/>using<sp/>Pump.<sp/><sp/>You</highlight></codeline>
+<codeline><highlight class="normal">can<sp/>read<sp/>the<sp/>PumpManual<sp/>for<sp/>details.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Submitting<sp/>Patches<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Please<sp/>do<sp/>submit<sp/>code.<sp/>Here&apos;s<sp/>what<sp/>you<sp/>need<sp/>to<sp/>do:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>A<sp/>submission<sp/>should<sp/>be<sp/>a<sp/>set<sp/>of<sp/>changes<sp/>that<sp/>addresses<sp/>one<sp/>issue<sp/>in<sp/>the<sp/>[issue<sp/>tracker](https://github.com/google/googletest/issues).<sp/>Please<sp/>don&apos;t<sp/>mix<sp/>more<sp/>than<sp/>one<sp/>logical<sp/>change<sp/>per<sp/>submittal,<sp/>because<sp/>it<sp/>makes<sp/>the<sp/>history<sp/>hard<sp/>to<sp/>follow.<sp/>If<sp/>you<sp/>want<sp/>to<sp/>make<sp/>a<sp/>change<sp/>that<sp/>doesn&apos;t<sp/>have<sp/>a<sp/>corresponding<sp/>issue<sp/>in<sp/>the<sp/>issue<sp/>tracker,<sp/>please<sp/>create<sp/>one.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Also,<sp/>coordinate<sp/>with<sp/>team<sp/>members<sp/>that<sp/>are<sp/>listed<sp/>on<sp/>the<sp/>issue<sp/>in<sp/>question.<sp/>This<sp/>ensures<sp/>that<sp/>work<sp/>isn&apos;t<sp/>being<sp/>duplicated<sp/>and<sp/>communicating<sp/>your<sp/>plan<sp/>early<sp/>also<sp/>generally<sp/>leads<sp/>to<sp/>better<sp/>patches.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Ensure<sp/>that<sp/>your<sp/>code<sp/>adheres<sp/>to<sp/>the<sp/>[Google<sp/>Test<sp/>source<sp/>code<sp/>style](#Coding_Style.md).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Ensure<sp/>that<sp/>there<sp/>are<sp/>unit<sp/>tests<sp/>for<sp/>your<sp/>code.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Sign<sp/>a<sp/>Contributor<sp/>License<sp/>Agreement.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Create<sp/>a<sp/>Pull<sp/>Request<sp/>in<sp/>the<sp/>usual<sp/>way.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Google<sp/>Test<sp/>Committers<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>current<sp/>members<sp/>of<sp/>the<sp/>Google<sp/>Test<sp/>engineering<sp/>team<sp/>are<sp/>the<sp/>only</highlight></codeline>
+<codeline><highlight class="normal">committers<sp/>at<sp/>present.<sp/>In<sp/>the<sp/>great<sp/>tradition<sp/>of<sp/>eating<sp/>one&apos;s<sp/>own</highlight></codeline>
+<codeline><highlight class="normal">dogfood,<sp/>we<sp/>will<sp/>be<sp/>requiring<sp/>each<sp/>new<sp/>Google<sp/>Test<sp/>engineering<sp/>team</highlight></codeline>
+<codeline><highlight class="normal">member<sp/>to<sp/>earn<sp/>the<sp/>right<sp/>to<sp/>become<sp/>a<sp/>committer<sp/>by<sp/>following<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">procedures<sp/>in<sp/>this<sp/>document,<sp/>writing<sp/>consistently<sp/>great<sp/>code,<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">demonstrating<sp/>repeatedly<sp/>that<sp/>he<sp/>or<sp/>she<sp/>truly<sp/>gets<sp/>the<sp/>zen<sp/>of<sp/>Google</highlight></codeline>
+<codeline><highlight class="normal">Test.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Release<sp/>Process<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>follow<sp/>a<sp/>typical<sp/>release<sp/>process:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>A<sp/>release<sp/>branch<sp/>named<sp/>`release-X.Y`<sp/>is<sp/>created.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Bugs<sp/>are<sp/>fixed<sp/>and<sp/>features<sp/>are<sp/>added<sp/>in<sp/>trunk;<sp/>those<sp/>individual<sp/>patches<sp/>are<sp/>merged<sp/>into<sp/>the<sp/>release<sp/>branch<sp/>until<sp/>it&apos;s<sp/>stable.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>An<sp/>individual<sp/>point<sp/>release<sp/>(the<sp/>`Z`<sp/>in<sp/>`X.Y.Z`)<sp/>is<sp/>made<sp/>by<sp/>creating<sp/>a<sp/>tag<sp/>from<sp/>the<sp/>branch.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Repeat<sp/>steps<sp/>2<sp/>and<sp/>3<sp/>throughout<sp/>one<sp/>release<sp/>cycle<sp/>(as<sp/>determined<sp/>by<sp/>features<sp/>or<sp/>time).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Go<sp/>back<sp/>to<sp/>step<sp/>1<sp/>to<sp/>create<sp/>another<sp/>release<sp/>branch<sp/>and<sp/>so<sp/>on.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>page<sp/>is<sp/>based<sp/>on<sp/>the<sp/>[Making<sp/>GWT<sp/>Better](http://code.google.com/webtoolkit/makinggwtbetter.html)<sp/>guide<sp/>from<sp/>the<sp/>[Google<sp/>Web<sp/>Toolkit](http://code.google.com/webtoolkit/)<sp/>project.<sp/><sp/>Except<sp/>as<sp/>otherwise<sp/>[noted](http://code.google.com/policies.html#restrictions),<sp/>the<sp/>content<sp/>of<sp/>this<sp/>page<sp/>is<sp/>licensed<sp/>under<sp/>the<sp/>[Creative<sp/>Commons<sp/>Attribution<sp/>2.5<sp/>License](http://creativecommons.org/licenses/by/2.5/).</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googletest/docs/DevGuide.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_e_n_p_m808_x_1_1_timer" kind="class" language="C++" prot="public">
+    <compoundname>ENPM808X::Timer</compoundname>
+    <includes refid="profiler_8h" local="no">profiler.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_e_n_p_m808_x_1_1_timer_1a70ffc132dae5dc5e2eb83542be8f2970" prot="public" static="yes" mutable="no">
+        <type><ref refid="struct_e_n_p_m808_x_1_1_profile_result" kindref="compound">ProfileResult</ref></type>
+        <definition>ENPM808X::ProfileResult ENPM808X::Timer::profileResult</definition>
+        <argsstring></argsstring>
+        <name>profileResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/profiler.h" line="56" column="1" bodyfile="include/profiler.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_e_n_p_m808_x_1_1_timer_1ad3a2630d980560972b1140784838f459" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ENPM808X::Timer::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/profiler.h" line="59" column="1" bodyfile="include/profiler.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_n_p_m808_x_1_1_timer_1a632c0d9d32d0c8b36897b5410773d8e1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ENPM808X::Timer::stopped_</definition>
+        <argsstring></argsstring>
+        <name>stopped_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/profiler.h" line="60" column="1" bodyfile="include/profiler.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_n_p_m808_x_1_1_timer_1a98d60ac1f46a2e4735e0d757e1526c02" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; std::chrono::steady_clock &gt;</type>
+        <definition>std::chrono::time_point&lt;std::chrono::steady_clock&gt; ENPM808X::Timer::startTimepoint_</definition>
+        <argsstring></argsstring>
+        <name>startTimepoint_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/profiler.h" line="61" column="1" bodyfile="include/profiler.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_e_n_p_m808_x_1_1_timer_1a15c3a571ee66f6e63bfbd29bebe79051" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ENPM808X::Timer::Timer</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>Timer</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/profiler.h" line="52" column="1" bodyfile="app/profiler.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_n_p_m808_x_1_1_timer_1a1c9db92154efd95fbce0a04eaba25d21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ENPM808X::Timer::Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/profiler.h" line="53" column="1" bodyfile="app/profiler.cpp" bodystart="43" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_n_p_m808_x_1_1_timer_1aec25fd698c7eacf114b45a5878e7c7ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ENPM808X::Timer::~Timer</definition>
+        <argsstring>()</argsstring>
+        <name>~Timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/profiler.h" line="54" column="1" bodyfile="app/profiler.cpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for timing a scope (Stopwatch) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2185">
+        <label>ENPM808X::ProfileResult</label>
+        <link refid="struct_e_n_p_m808_x_1_1_profile_result"/>
+      </node>
+      <node id="2184">
+        <label>ENPM808X::Timer</label>
+        <link refid="class_e_n_p_m808_x_1_1_timer"/>
+        <childnode refid="2185" relation="usage">
+          <edgelabel>profileResult</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/profiler.h" line="50" column="1" bodyfile="include/profiler.h" bodystart="50" bodyend="62"/>
+    <listofallmembers>
+      <member refid="class_e_n_p_m808_x_1_1_timer_1ad3a2630d980560972b1140784838f459" prot="private" virt="non-virtual"><scope>ENPM808X::Timer</scope><name>name_</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_timer_1a70ffc132dae5dc5e2eb83542be8f2970" prot="public" virt="non-virtual"><scope>ENPM808X::Timer</scope><name>profileResult</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_timer_1a98d60ac1f46a2e4735e0d757e1526c02" prot="private" virt="non-virtual"><scope>ENPM808X::Timer</scope><name>startTimepoint_</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_timer_1a1c9db92154efd95fbce0a04eaba25d21" prot="public" virt="non-virtual"><scope>ENPM808X::Timer</scope><name>Stop</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_timer_1a632c0d9d32d0c8b36897b5410773d8e1" prot="private" virt="non-virtual"><scope>ENPM808X::Timer</scope><name>stopped_</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_timer_1a15c3a571ee66f6e63bfbd29bebe79051" prot="public" virt="non-virtual"><scope>ENPM808X::Timer</scope><name>Timer</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_timer_1aec25fd698c7eacf114b45a5878e7c7ab" prot="public" virt="non-virtual"><scope>ENPM808X::Timer</scope><name>~Timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_conversion_helper_base" kind="class" language="C++" prot="public">
+    <compoundname>ConversionHelperBase</compoundname>
+    <derivedcompoundref refid="class_conversion_helper_derived" prot="public" virt="non-virtual">ConversionHelperDerived</derivedcompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="339">
+        <label>ConversionHelperDerived</label>
+        <link refid="class_conversion_helper_derived"/>
+        <childnode refid="338" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="338">
+        <label>ConversionHelperBase</label>
+        <link refid="class_conversion_helper_base"/>
+      </node>
+    </inheritancegraph>
+    <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="7352" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="7352" bodyend="7352"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_expect_failure_test" kind="class" language="C++" prot="public">
+    <compoundname>ExpectFailureTest</compoundname>
+    <basecompoundref refid="classtesting_1_1_test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_expect_failure_test_1aad05da10bb15d21a434eba3b37011406" prot="public" static="no">
+        <name>FailureMode</name>
+        <enumvalue id="class_expect_failure_test_1aad05da10bb15d21a434eba3b37011406a3d618496b7e2a2c256e02186bddee4ec" prot="public">
+          <name>FATAL_FAILURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_expect_failure_test_1aad05da10bb15d21a434eba3b37011406aeabdbecc0c4550d4f46cd44ac62fb92b" prot="public">
+          <name>NONFATAL_FAILURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="879" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="879" bodyend="882"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_expect_failure_test_1ab9aeb7820ff7953fc2975ecc5abd046b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ExpectFailureTest::AddFailure</definition>
+        <argsstring>(FailureMode failure)</argsstring>
+        <name>AddFailure</name>
+        <param>
+          <type>FailureMode</type>
+          <declname>failure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="883" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="883" bodyend="889"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="530">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="529">
+        <label>ExpectFailureTest</label>
+        <link refid="class_expect_failure_test"/>
+        <childnode refid="530" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="532">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="531">
+        <label>ExpectFailureTest</label>
+        <link refid="class_expect_failure_test"/>
+        <childnode refid="532" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="877" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="877" bodyend="890"/>
+    <listofallmembers>
+      <member refid="class_expect_failure_test_1ab9aeb7820ff7953fc2975ecc5abd046b" prot="public" virt="non-virtual"><scope>ExpectFailureTest</scope><name>AddFailure</name></member>
+      <member refid="class_expect_failure_test_1aad05da10bb15d21a434eba3b37011406" prot="public" virt="non-virtual"><scope>ExpectFailureTest</scope><name>FailureMode</name></member>
+      <member refid="class_expect_failure_test_1aad05da10bb15d21a434eba3b37011406a3d618496b7e2a2c256e02186bddee4ec" prot="public" virt="non-virtual"><scope>ExpectFailureTest</scope><name>FATAL_FAILURE</name></member>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual"><scope>ExpectFailureTest</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual"><scope>ExpectFailureTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual"><scope>ExpectFailureTest</scope><name>HasNonfatalFailure</name></member>
+      <member refid="class_expect_failure_test_1aad05da10bb15d21a434eba3b37011406aeabdbecc0c4550d4f46cd44ac62fb92b" prot="public" virt="non-virtual"><scope>ExpectFailureTest</scope><name>NONFATAL_FAILURE</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual"><scope>ExpectFailureTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual"><scope>ExpectFailureTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a190315150c303ddf801313fd1a777733" prot="protected" virt="virtual"><scope>ExpectFailureTest</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1_test_1a5ccbac42fee8c5b00b0bfe89b6c49d79" prot="public" virt="non-virtual"><scope>ExpectFailureTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual"><scope>ExpectFailureTest</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a5f0ab439802cbe0ef7552f1a9f791923" prot="protected" virt="virtual"><scope>ExpectFailureTest</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_test_1af374706cbaf0ffc460f4fd04e7c150f1" prot="public" virt="non-virtual"><scope>ExpectFailureTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual"><scope>ExpectFailureTest</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual"><scope>ExpectFailureTest</scope><name>Test</name></member>
+      <member refid="classtesting_1_1_test_1a2b0a62f1e667bbe8d8cb18d785bfa991" prot="public" virt="virtual"><scope>ExpectFailureTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

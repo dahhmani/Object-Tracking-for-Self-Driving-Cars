@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegtest__xml__outfiles__test" kind="namespace" language="Python">
+    <compoundname>gtest_xml_outfiles_test</compoundname>
+    <innerclass refid="classgtest__xml__outfiles__test_1_1_g_test_x_m_l_out_files_test" prot="public">gtest_xml_outfiles_test::GTestXMLOutFilesTest</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gtest__xml__outfiles__test_8py_1afbbd173129c3129e94bf58faebc4d525" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_xml_outfiles_test.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &quot;keith.ray@gmail.com (Keith Ray)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_outfiles_test.py" line="34" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_outfiles_test.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__xml__outfiles__test_8py_1a6b3b62791305e64ec137b33bd9351b1a" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_xml_outfiles_test.GTEST_OUTPUT_SUBDIR</definition>
+        <argsstring></argsstring>
+        <name>GTEST_OUTPUT_SUBDIR</name>
+        <initializer>=  &quot;xml_outfiles&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_outfiles_test.py" line="43" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_outfiles_test.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__xml__outfiles__test_8py_1a92ab09e944d010f8abfaa3ca453fa68c" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_xml_outfiles_test.GTEST_OUTPUT_1_TEST</definition>
+        <argsstring></argsstring>
+        <name>GTEST_OUTPUT_1_TEST</name>
+        <initializer>=  &quot;gtest_xml_outfile1_test_&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_outfiles_test.py" line="44" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_outfiles_test.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__xml__outfiles__test_8py_1acf82219e56619aab5c114b6f0a7c3a5e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_xml_outfiles_test.GTEST_OUTPUT_2_TEST</definition>
+        <argsstring></argsstring>
+        <name>GTEST_OUTPUT_2_TEST</name>
+        <initializer>=  &quot;gtest_xml_outfile2_test_&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_outfiles_test.py" line="45" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_outfiles_test.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__xml__outfiles__test_8py_1a9d7b71e2d97dc7705cbe6e4882824c14" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_xml_outfiles_test.EXPECTED_XML_1</definition>
+        <argsstring></argsstring>
+        <name>EXPECTED_XML_1</name>
+        <initializer>=  &quot;&quot;&quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;testsuites tests=&quot;1&quot; failures=&quot;0&quot; disabled=&quot;0&quot; errors=&quot;0&quot; time=&quot;*&quot; timestamp=&quot;*&quot; name=&quot;AllTests&quot;&gt;
+  &lt;testsuite name=&quot;PropertyOne&quot; tests=&quot;1&quot; failures=&quot;0&quot; disabled=&quot;0&quot; errors=&quot;0&quot; time=&quot;*&quot;&gt;
+    &lt;testcase name=&quot;TestSomeProperties&quot; status=&quot;run&quot; time=&quot;*&quot; classname=&quot;PropertyOne&quot; SetUpProp=&quot;1&quot; TestSomeProperty=&quot;1&quot; TearDownProp=&quot;1&quot; /&gt;
+  &lt;/testsuite&gt;
+&lt;/testsuites&gt;
+&quot;&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_outfiles_test.py" line="47" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_outfiles_test.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__xml__outfiles__test_8py_1a765455244a8cd7b3f32a51f0cda4157e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_xml_outfiles_test.EXPECTED_XML_2</definition>
+        <argsstring></argsstring>
+        <name>EXPECTED_XML_2</name>
+        <initializer>=  &quot;&quot;&quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;testsuites tests=&quot;1&quot; failures=&quot;0&quot; disabled=&quot;0&quot; errors=&quot;0&quot; time=&quot;*&quot; timestamp=&quot;*&quot; name=&quot;AllTests&quot;&gt;
+  &lt;testsuite name=&quot;PropertyTwo&quot; tests=&quot;1&quot; failures=&quot;0&quot; disabled=&quot;0&quot; errors=&quot;0&quot; time=&quot;*&quot;&gt;
+    &lt;testcase name=&quot;TestSomeProperties&quot; status=&quot;run&quot; time=&quot;*&quot; classname=&quot;PropertyTwo&quot; SetUpProp=&quot;2&quot; TestSomeProperty=&quot;2&quot; TearDownProp=&quot;2&quot; /&gt;
+  &lt;/testsuite&gt;
+&lt;/testsuites&gt;
+&quot;&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_outfiles_test.py" line="55" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_outfiles_test.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest_xml_outfiles_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

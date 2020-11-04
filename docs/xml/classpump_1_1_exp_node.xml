@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classpump_1_1_exp_node" kind="class" language="Python" prot="public">
+    <compoundname>pump::ExpNode</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpump_1_1_exp_node_1ade05a5a32535d717dc5c194569aaf356" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.ExpNode::token</definition>
+        <argsstring></argsstring>
+        <name>token</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="439" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpump_1_1_exp_node_1adccfe4778c2e34f6b2c88118c0f1587f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.ExpNode::python_exp</definition>
+        <argsstring></argsstring>
+        <name>python_exp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="440" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpump_1_1_exp_node_1a0808c394c4d3c8ac875005caa1b3e1b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pump.ExpNode.__init__</definition>
+        <argsstring>(self, token, python_exp)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>token</type>
+          <defname>token</defname>
+        </param>
+        <param>
+          <type>python_exp</type>
+          <defname>python_exp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="438" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="438" bodyend="442"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/scripts/pump.py" line="437" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="437" bodyend="443"/>
+    <listofallmembers>
+      <member refid="classpump_1_1_exp_node_1a0808c394c4d3c8ac875005caa1b3e1b3" prot="public" virt="non-virtual"><scope>pump::ExpNode</scope><name>__init__</name></member>
+      <member refid="classpump_1_1_exp_node_1adccfe4778c2e34f6b2c88118c0f1587f" prot="public" virt="non-virtual"><scope>pump::ExpNode</scope><name>python_exp</name></member>
+      <member refid="classpump_1_1_exp_node_1ade05a5a32535d717dc5c194569aaf356" prot="public" virt="non-virtual"><scope>pump::ExpNode</scope><name>token</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

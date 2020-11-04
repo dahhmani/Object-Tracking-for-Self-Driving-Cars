@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_constness" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_generated_function_mockers_test::MockOverloadedOnConstness</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_constness_1a3447041442c4ca64d597186e894b307d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::MockOverloadedOnConstness::MY_MOCK_METHODS2_</definition>
+        <argsstring></argsstring>
+        <name>MY_MOCK_METHODS2_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="539" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="539" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_constness_1a83e2840ed88fe4a01a878c3bb529d793" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::MockOverloadedOnConstness::MockOverloadedOnConstness</definition>
+        <argsstring>()</argsstring>
+        <name>MockOverloadedOnConstness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="537" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="537" bodyend="537"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_constness_1a9e7d163e79c3878b1205c09cf73582fc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::MockOverloadedOnConstness::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(MockOverloadedOnConstness)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_constness" kindref="compound">MockOverloadedOnConstness</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="542" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="535" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="535" bodyend="543"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_constness_1a9e7d163e79c3878b1205c09cf73582fc" prot="private" virt="non-virtual"><scope>testing::gmock_generated_function_mockers_test::MockOverloadedOnConstness</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_constness_1a83e2840ed88fe4a01a878c3bb529d793" prot="public" virt="non-virtual"><scope>testing::gmock_generated_function_mockers_test::MockOverloadedOnConstness</scope><name>MockOverloadedOnConstness</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_constness_1a3447041442c4ca64d597186e894b307d" prot="public" virt="non-virtual"><scope>testing::gmock_generated_function_mockers_test::MockOverloadedOnConstness</scope><name>MY_MOCK_METHODS2_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_arg_number" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_generated_function_mockers_test::MockOverloadedOnArgNumber</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_arg_number_1a5076ebd17fb1cc93952b4a80fe6de894" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::MockOverloadedOnArgNumber::MY_MOCK_METHODS1_</definition>
+        <argsstring></argsstring>
+        <name>MY_MOCK_METHODS1_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="514" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_arg_number_1ad5b40981c39bc0bec3b63632cf827153" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::MockOverloadedOnArgNumber::MockOverloadedOnArgNumber</definition>
+        <argsstring>()</argsstring>
+        <name>MockOverloadedOnArgNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="512" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="512" bodyend="512"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_arg_number_1aeebad650a232bf9b290647b75975cae5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::MockOverloadedOnArgNumber::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(MockOverloadedOnArgNumber)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_arg_number" kindref="compound">MockOverloadedOnArgNumber</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="517" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="510" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="510" bodyend="518"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_arg_number_1aeebad650a232bf9b290647b75975cae5" prot="private" virt="non-virtual"><scope>testing::gmock_generated_function_mockers_test::MockOverloadedOnArgNumber</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_arg_number_1ad5b40981c39bc0bec3b63632cf827153" prot="public" virt="non-virtual"><scope>testing::gmock_generated_function_mockers_test::MockOverloadedOnArgNumber</scope><name>MockOverloadedOnArgNumber</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_arg_number_1a5076ebd17fb1cc93952b4a80fe6de894" prot="public" virt="non-virtual"><scope>testing::gmock_generated_function_mockers_test::MockOverloadedOnArgNumber</scope><name>MY_MOCK_METHODS1_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

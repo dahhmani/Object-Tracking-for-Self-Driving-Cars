@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_property_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::PropertyMatcher</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Class</type>
+      </param>
+      <param>
+        <type>typename PropertyType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_property_matcher_1a3c7a303b73d6130ba775932a7c26b92d" prot="private" static="no" mutable="no">
+        <type>PropertyType(Class::*</type>
+        <definition>PropertyType(Class::* testing::internal::PropertyMatcher&lt; Class, PropertyType &gt;::property_) () const</definition>
+        <argsstring>)() const</argsstring>
+        <name>property_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2298" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_property_matcher_1af7733557fde1558190ab9c63d23f1305" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; RefToConstProperty &gt;</type>
+        <definition>const Matcher&lt;RefToConstProperty&gt; testing::internal::PropertyMatcher&lt; Class, PropertyType &gt;::matcher_</definition>
+        <argsstring></argsstring>
+        <name>matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2299" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2299" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_property_matcher_1aa2a26b33473de3ca6953cae490e373ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef testing::internal::PropertyMatcher&lt; Class, PropertyType &gt;::GTEST_REFERENCE_TO_CONST_</definition>
+        <argsstring>(PropertyType) RefToConstProperty</argsstring>
+        <name>GTEST_REFERENCE_TO_CONST_</name>
+        <param>
+          <type>PropertyType</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_property_matcher_1a9b658d58f5c58d02949bb81f7e6b46ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::PropertyMatcher&lt; Class, PropertyType &gt;::PropertyMatcher</definition>
+        <argsstring>(PropertyType(Class::*property)() const, const Matcher&lt; RefToConstProperty &gt; &amp;matcher)</argsstring>
+        <name>PropertyMatcher</name>
+        <param>
+          <type>PropertyType(Class::*)() const</type>
+          <declname>property</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; RefToConstProperty &gt; &amp;</type>
+          <declname>matcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2244" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2244" bodyend="2246"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_property_matcher_1a075fb69f9bac8024983ab07648b8e671" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::PropertyMatcher&lt; Class, PropertyType &gt;::DescribeTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2248" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2248" bodyend="2251"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_property_matcher_1a2e1bc9f89f253eaa609722f39f8e6239" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::PropertyMatcher&lt; Class, PropertyType &gt;::DescribeNegationTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2253" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2253" bodyend="2256"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_property_matcher_1afb672c72a70b06792027f7128dd8a1e6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::internal::PropertyMatcher&lt; Class, PropertyType &gt;::MatchAndExplain</definition>
+        <argsstring>(const T &amp;value, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2259" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2259" bodyend="2264"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_property_matcher_1aee28dd64a2896159661a4f3ad3329ffd" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::PropertyMatcher&lt; Class, PropertyType &gt;::MatchAndExplainImpl</definition>
+        <argsstring>(false_type, const Class &amp;obj, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplainImpl</name>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1bool__constant" kindref="compound">false_type</ref></type>
+        </param>
+        <param>
+          <type>const Class &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2270" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2270" bodyend="2284"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_property_matcher_1a6c8caccbd97d5083c322fc0d8579c2d3" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::PropertyMatcher&lt; Class, PropertyType &gt;::MatchAndExplainImpl</definition>
+        <argsstring>(true_type, const Class *p, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplainImpl</name>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1bool__constant" kindref="compound">true_type</ref></type>
+        </param>
+        <param>
+          <type>const Class *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2286" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2286" bodyend="2296"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_property_matcher_1a23435ada665926210b4f28641579d20d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::PropertyMatcher&lt; Class, PropertyType &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(PropertyMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_property_matcher" kindref="compound">PropertyMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2301" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2236" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2236" bodyend="2302"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_property_matcher_1a2e1bc9f89f253eaa609722f39f8e6239" prot="public" virt="non-virtual"><scope>testing::internal::PropertyMatcher</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_property_matcher_1a075fb69f9bac8024983ab07648b8e671" prot="public" virt="non-virtual"><scope>testing::internal::PropertyMatcher</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_property_matcher_1a23435ada665926210b4f28641579d20d" prot="private" virt="non-virtual"><scope>testing::internal::PropertyMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_property_matcher_1aa2a26b33473de3ca6953cae490e373ec" prot="public" virt="non-virtual"><scope>testing::internal::PropertyMatcher</scope><name>GTEST_REFERENCE_TO_CONST_</name></member>
+      <member refid="classtesting_1_1internal_1_1_property_matcher_1afb672c72a70b06792027f7128dd8a1e6" prot="public" virt="non-virtual"><scope>testing::internal::PropertyMatcher</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1internal_1_1_property_matcher_1aee28dd64a2896159661a4f3ad3329ffd" prot="private" virt="non-virtual"><scope>testing::internal::PropertyMatcher</scope><name>MatchAndExplainImpl</name></member>
+      <member refid="classtesting_1_1internal_1_1_property_matcher_1a6c8caccbd97d5083c322fc0d8579c2d3" prot="private" virt="non-virtual"><scope>testing::internal::PropertyMatcher</scope><name>MatchAndExplainImpl</name></member>
+      <member refid="classtesting_1_1internal_1_1_property_matcher_1af7733557fde1558190ab9c63d23f1305" prot="private" virt="non-virtual"><scope>testing::internal::PropertyMatcher</scope><name>matcher_</name></member>
+      <member refid="classtesting_1_1internal_1_1_property_matcher_1a3c7a303b73d6130ba775932a7c26b92d" prot="private" virt="non-virtual"><scope>testing::internal::PropertyMatcher</scope><name>property_</name></member>
+      <member refid="classtesting_1_1internal_1_1_property_matcher_1a9b658d58f5c58d02949bb81f7e6b46ce" prot="public" virt="non-virtual"><scope>testing::internal::PropertyMatcher</scope><name>PropertyMatcher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

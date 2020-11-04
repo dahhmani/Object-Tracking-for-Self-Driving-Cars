@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_streamlike" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::Streamlike</compoundname>
+    <innerclass refid="classtesting_1_1gmock__matchers__test_1_1_streamlike_1_1_const_iter" prot="private">testing::gmock_matchers_test::Streamlike::ConstIter</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1gmock__matchers__test_1_1_streamlike_1a2eeb61dca56f70d0266f5f8ae91d2c7b" prot="public" static="no">
+        <type>ConstIter</type>
+        <definition>typedef ConstIter testing::gmock_matchers_test::Streamlike&lt; T &gt;::const_iterator</definition>
+        <argsstring></argsstring>
+        <name>const_iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4499" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1gmock__matchers__test_1_1_streamlike_1a7e2c2e021676c1ed5dea63cdd019661c" prot="public" static="no">
+        <type>T</type>
+        <definition>typedef T testing::gmock_matchers_test::Streamlike&lt; T &gt;::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4500" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4500" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1gmock__matchers__test_1_1_streamlike_1a246c4e544fe6441ed7f4480370ddd97a" prot="private" static="no" mutable="yes">
+        <type>std::list&lt; value_type &gt;</type>
+        <definition>std::list&lt;value_type&gt; testing::gmock_matchers_test::Streamlike&lt; T &gt;::remainder_</definition>
+        <argsstring></argsstring>
+        <name>remainder_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4569" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4569" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_streamlike_1abf5560c86ad5d9563cb8f477f06046fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InIter</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::gmock_matchers_test::Streamlike&lt; T &gt;::Streamlike</definition>
+        <argsstring>(InIter first, InIter last)</argsstring>
+        <name>Streamlike</name>
+        <param>
+          <type>InIter</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>InIter</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4503" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4503" bodyend="4503"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_streamlike_1a1ac125e14fd2358cdb727e0044ef7f01" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>const_iterator testing::gmock_matchers_test::Streamlike&lt; T &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4505" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4505" bodyend="4507"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_streamlike_1a3e3aa6924974abcf7855dab1094bd860" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>const_iterator testing::gmock_matchers_test::Streamlike&lt; T &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4508" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4508" bodyend="4510"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtesting_1_1gmock__matchers__test_1_1_streamlike_1a4b45ba8c2a5ee61697003f02568df91f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Streamlike &amp;s)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1gmock__matchers__test_1_1_streamlike" kindref="compound">Streamlike</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4557" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4557" bodyend="4567"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4495" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4495" bodyend="4570"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_streamlike_1a1ac125e14fd2358cdb727e0044ef7f01" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::Streamlike</scope><name>begin</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_streamlike_1a2eeb61dca56f70d0266f5f8ae91d2c7b" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::Streamlike</scope><name>const_iterator</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_streamlike_1a3e3aa6924974abcf7855dab1094bd860" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::Streamlike</scope><name>end</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_streamlike_1a4b45ba8c2a5ee61697003f02568df91f" prot="private" virt="non-virtual"><scope>testing::gmock_matchers_test::Streamlike</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_streamlike_1a246c4e544fe6441ed7f4480370ddd97a" prot="private" virt="non-virtual"><scope>testing::gmock_matchers_test::Streamlike</scope><name>remainder_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_streamlike_1abf5560c86ad5d9563cb8f477f06046fe" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::Streamlike</scope><name>Streamlike</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_streamlike_1a7e2c2e021676c1ed5dea63cdd019661c" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::Streamlike</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

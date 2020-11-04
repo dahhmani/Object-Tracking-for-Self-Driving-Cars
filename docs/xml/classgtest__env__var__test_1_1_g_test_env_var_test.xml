@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgtest__env__var__test_1_1_g_test_env_var_test" kind="class" language="Python" prot="public">
+    <compoundname>gtest_env_var_test::GTestEnvVarTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgtest__env__var__test_1_1_g_test_env_var_test_1ad169061caa22a6cd510535d6da94b97e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_env_var_test.GTestEnvVarTest.testEnvVarAffectsFlag</definition>
+        <argsstring>(self)</argsstring>
+        <name>testEnvVarAffectsFlag</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that environment variable should affect the corresponding flag.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_env_var_test.py" line="84" column="1" bodyfile="vendor/googletest/googletest/test/gtest_env_var_test.py" bodystart="84" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__env__var__test_1_1_g_test_env_var_test_1ae2f623209c115e094965e606cd34eec4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_env_var_test.GTestEnvVarTest.testXmlOutputFile</definition>
+        <argsstring>(self)</argsstring>
+        <name>testXmlOutputFile</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that $XML_OUTPUT_FILE affects the output flag.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_env_var_test.py" line="102" column="1" bodyfile="vendor/googletest/googletest/test/gtest_env_var_test.py" bodystart="102" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__env__var__test_1_1_g_test_env_var_test_1ae41b9b9569eb327d5886cb811c2995a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_env_var_test.GTestEnvVarTest.testXmlOutputFileOverride</definition>
+        <argsstring>(self)</argsstring>
+        <name>testXmlOutputFileOverride</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that $XML_OUTPUT_FILE is overridden by $GTEST_OUTPUT</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_env_var_test.py" line="109" column="1" bodyfile="vendor/googletest/googletest/test/gtest_env_var_test.py" bodystart="109" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1004">
+        <label>TestCase</label>
+      </node>
+      <node id="1003">
+        <label>gtest_env_var_test.GTestEnvVarTest</label>
+        <link refid="classgtest__env__var__test_1_1_g_test_env_var_test"/>
+        <childnode refid="1004" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1006">
+        <label>TestCase</label>
+      </node>
+      <node id="1005">
+        <label>gtest_env_var_test.GTestEnvVarTest</label>
+        <link refid="classgtest__env__var__test_1_1_g_test_env_var_test"/>
+        <childnode refid="1006" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_env_var_test.py" line="83" column="1" bodyfile="vendor/googletest/googletest/test/gtest_env_var_test.py" bodystart="83" bodyend="116"/>
+    <listofallmembers>
+      <member refid="classgtest__env__var__test_1_1_g_test_env_var_test_1ad169061caa22a6cd510535d6da94b97e" prot="public" virt="non-virtual"><scope>gtest_env_var_test::GTestEnvVarTest</scope><name>testEnvVarAffectsFlag</name></member>
+      <member refid="classgtest__env__var__test_1_1_g_test_env_var_test_1ae2f623209c115e094965e606cd34eec4" prot="public" virt="non-virtual"><scope>gtest_env_var_test::GTestEnvVarTest</scope><name>testXmlOutputFile</name></member>
+      <member refid="classgtest__env__var__test_1_1_g_test_env_var_test_1ae41b9b9569eb327d5886cb811c2995a7" prot="public" virt="non-virtual"><scope>gtest_env_var_test::GTestEnvVarTest</scope><name>testXmlOutputFileOverride</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

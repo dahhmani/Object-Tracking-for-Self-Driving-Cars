@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classupload_1_1_mercurial_v_c_s" kind="class" language="Python" prot="public">
+    <compoundname>upload::MercurialVCS</compoundname>
+    <basecompoundref refid="classupload_1_1_version_control_system" prot="public" virt="non-virtual">upload.VersionControlSystem</basecompoundref>
+    <basecompoundref refid="classupload_1_1_version_control_system" prot="public" virt="non-virtual">upload.VersionControlSystem</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classupload_1_1_mercurial_v_c_s_1a219c1e0ab9ce864e3231913762ea489b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.MercurialVCS::repo_dir</definition>
+        <argsstring></argsstring>
+        <name>repo_dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="1048" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="1048" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classupload_1_1_mercurial_v_c_s_1a0dad32e621f5523e3430d867184f0b42" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.MercurialVCS::subdir</definition>
+        <argsstring></argsstring>
+        <name>subdir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="1052" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="1052" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classupload_1_1_mercurial_v_c_s_1a41faae7820d5a015f4a42476e5e4ab8c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.MercurialVCS::base_rev</definition>
+        <argsstring></argsstring>
+        <name>base_rev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="1054" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="1054" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classupload_1_1_mercurial_v_c_s_1a33890f442dedbb7d9fd45c08b5baed56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.MercurialVCS.__init__</definition>
+        <argsstring>(self, options, repo_dir)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>options</type>
+          <defname>options</defname>
+        </param>
+        <param>
+          <type>repo_dir</type>
+          <defname>repo_dir</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="1045" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="1045" bodyend="1057"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_mercurial_v_c_s_1a6c05746012d8cd435c94ace1465671ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.MercurialVCS.GenerateDiff</definition>
+        <argsstring>(self, extra_args)</argsstring>
+        <name>GenerateDiff</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>extra_args</type>
+          <defname>extra_args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="1064" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="1064" bodyend="1089"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_mercurial_v_c_s_1a6190899fb86cd09ad84cc5d4b0ebd2f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.MercurialVCS.GetUnknownFiles</definition>
+        <argsstring>(self)</argsstring>
+        <name>GetUnknownFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a list of files unknown to the VCS.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="1090" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="1090" bodyend="1101"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_mercurial_v_c_s_1a0cdc0cbe6ac4daab82f5f01e6ae2e670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.MercurialVCS.GetBaseFile</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>GetBaseFile</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="1102" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="1102" bodyend="1140"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_mercurial_v_c_s_1a33890f442dedbb7d9fd45c08b5baed56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.MercurialVCS.__init__</definition>
+        <argsstring>(self, options, repo_dir)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>options</type>
+          <defname>options</defname>
+        </param>
+        <param>
+          <type>repo_dir</type>
+          <defname>repo_dir</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="1045" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="1045" bodyend="1057"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_mercurial_v_c_s_1a6c05746012d8cd435c94ace1465671ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.MercurialVCS.GenerateDiff</definition>
+        <argsstring>(self, extra_args)</argsstring>
+        <name>GenerateDiff</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>extra_args</type>
+          <defname>extra_args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="1064" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="1064" bodyend="1089"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_mercurial_v_c_s_1a6190899fb86cd09ad84cc5d4b0ebd2f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.MercurialVCS.GetUnknownFiles</definition>
+        <argsstring>(self)</argsstring>
+        <name>GetUnknownFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a list of files unknown to the VCS.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="1090" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="1090" bodyend="1101"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_mercurial_v_c_s_1a0cdc0cbe6ac4daab82f5f01e6ae2e670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.MercurialVCS.GetBaseFile</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>GetBaseFile</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="1102" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="1102" bodyend="1140"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classupload_1_1_mercurial_v_c_s_1a140da653b63106c4fa825f3ef5bf7701" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.MercurialVCS._GetRelPath</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>_GetRelPath</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get relative path of a file according to the current directory,
+given its logical path in the repo.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="1058" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="1058" bodyend="1063"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_mercurial_v_c_s_1a140da653b63106c4fa825f3ef5bf7701" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.MercurialVCS._GetRelPath</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>_GetRelPath</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get relative path of a file according to the current directory,
+given its logical path in the repo.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="1058" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="1058" bodyend="1063"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Implementation of the VersionControlSystem interface for Mercurial.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1477">
+        <label>upload.MercurialVCS</label>
+        <link refid="classupload_1_1_mercurial_v_c_s"/>
+        <childnode refid="1478" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1478" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1479">
+        <label>object</label>
+      </node>
+      <node id="1478">
+        <label>upload.VersionControlSystem</label>
+        <link refid="classupload_1_1_version_control_system"/>
+        <childnode refid="1479" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1479" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1480">
+        <label>upload.MercurialVCS</label>
+        <link refid="classupload_1_1_mercurial_v_c_s"/>
+        <childnode refid="1481" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1481" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1482">
+        <label>object</label>
+      </node>
+      <node id="1481">
+        <label>upload.VersionControlSystem</label>
+        <link refid="classupload_1_1_version_control_system"/>
+        <childnode refid="1482" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1482" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/upload.py" line="1042" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="1042" bodyend="1141"/>
+    <listofallmembers>
+      <member refid="classupload_1_1_mercurial_v_c_s_1a33890f442dedbb7d9fd45c08b5baed56" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>__init__</name></member>
+      <member refid="classupload_1_1_mercurial_v_c_s_1a33890f442dedbb7d9fd45c08b5baed56" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>__init__</name></member>
+      <member refid="classupload_1_1_version_control_system_1ace97e5785a2b40011404ae6fbb956ecf" prot="public" virt="non-virtual" ambiguityscope="upload::VersionControlSystem."><scope>upload::MercurialVCS</scope><name>__init__</name></member>
+      <member refid="classupload_1_1_mercurial_v_c_s_1a140da653b63106c4fa825f3ef5bf7701" prot="private" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>_GetRelPath</name></member>
+      <member refid="classupload_1_1_mercurial_v_c_s_1a140da653b63106c4fa825f3ef5bf7701" prot="private" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>_GetRelPath</name></member>
+      <member refid="classupload_1_1_mercurial_v_c_s_1a41faae7820d5a015f4a42476e5e4ab8c" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>base_rev</name></member>
+      <member refid="classupload_1_1_version_control_system_1ad2923d691a1b1047e9359c5b7c1c103f" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>CheckForUnknownFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1ad2923d691a1b1047e9359c5b7c1c103f" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>CheckForUnknownFiles</name></member>
+      <member refid="classupload_1_1_mercurial_v_c_s_1a6c05746012d8cd435c94ace1465671ef" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>GenerateDiff</name></member>
+      <member refid="classupload_1_1_mercurial_v_c_s_1a6c05746012d8cd435c94ace1465671ef" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>GenerateDiff</name></member>
+      <member refid="classupload_1_1_mercurial_v_c_s_1a0cdc0cbe6ac4daab82f5f01e6ae2e670" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>GetBaseFile</name></member>
+      <member refid="classupload_1_1_mercurial_v_c_s_1a0cdc0cbe6ac4daab82f5f01e6ae2e670" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>GetBaseFile</name></member>
+      <member refid="classupload_1_1_version_control_system_1a812c3b3daf90c88b015fa4b26252e291" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>GetBaseFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1a812c3b3daf90c88b015fa4b26252e291" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>GetBaseFiles</name></member>
+      <member refid="classupload_1_1_mercurial_v_c_s_1a6190899fb86cd09ad84cc5d4b0ebd2f3" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>GetUnknownFiles</name></member>
+      <member refid="classupload_1_1_mercurial_v_c_s_1a6190899fb86cd09ad84cc5d4b0ebd2f3" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>GetUnknownFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1a846889ecd2ef40870b456ddb5b349e02" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>IsImage</name></member>
+      <member refid="classupload_1_1_version_control_system_1a846889ecd2ef40870b456ddb5b349e02" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>IsImage</name></member>
+      <member refid="classupload_1_1_version_control_system_1a4d57d043bc408887b94269fe4cea9556" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>options</name></member>
+      <member refid="classupload_1_1_mercurial_v_c_s_1a219c1e0ab9ce864e3231913762ea489b" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>repo_dir</name></member>
+      <member refid="classupload_1_1_mercurial_v_c_s_1a0dad32e621f5523e3430d867184f0b42" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>subdir</name></member>
+      <member refid="classupload_1_1_version_control_system_1a7e334f967301b9e85e5a9c39f5036823" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>UploadBaseFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1a7e334f967301b9e85e5a9c39f5036823" prot="public" virt="non-virtual"><scope>upload::MercurialVCS</scope><name>UploadBaseFiles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

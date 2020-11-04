@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_my_type" kind="class" language="C++" prot="public">
+    <compoundname>MyType</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_my_type_1ae294bc35031fef7015a1b135deeedd22" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MyType::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest_.cc" line="86" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest_.cc" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_my_type_1a74d6f29a06e298321a6e5f0b91b020e7" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyType::MyType</definition>
+        <argsstring>(const std::string &amp;a_value)</argsstring>
+        <name>MyType</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>a_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest_.cc" line="81" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest_.cc" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_type_1a04eaace57f0ecd8ee8898defbdee31b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; MyType::value</definition>
+        <argsstring>() const</argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest_.cc" line="83" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest_.cc" bodystart="83" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest_.cc" line="79" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest_.cc" bodystart="79" bodyend="87"/>
+    <listofallmembers>
+      <member refid="class_my_type_1a74d6f29a06e298321a6e5f0b91b020e7" prot="public" virt="non-virtual"><scope>MyType</scope><name>MyType</name></member>
+      <member refid="class_my_type_1a04eaace57f0ecd8ee8898defbdee31b4" prot="public" virt="non-virtual"><scope>MyType</scope><name>value</name></member>
+      <member refid="class_my_type_1ae294bc35031fef7015a1b135deeedd22" prot="private" virt="non-virtual"><scope>MyType</scope><name>value_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_args_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::ArgsMatcher</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>InnerMatcher</declname>
+        <defname>InnerMatcher</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k0</declname>
+        <defname>k0</defname>
+        <defval>-1</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k1</declname>
+        <defname>k1</defname>
+        <defval>-1</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k2</declname>
+        <defname>k2</defname>
+        <defval>-1</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k3</declname>
+        <defname>k3</defname>
+        <defval>-1</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k4</declname>
+        <defname>k4</defname>
+        <defval>-1</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k5</declname>
+        <defname>k5</defname>
+        <defval>-1</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k6</declname>
+        <defname>k6</defname>
+        <defval>-1</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k7</declname>
+        <defname>k7</defname>
+        <defval>-1</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k8</declname>
+        <defname>k8</defname>
+        <defval>-1</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k9</declname>
+        <defname>k9</defname>
+        <defval>-1</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_args_matcher_1ac76e55e4b52e18fa0c57aad4814a8a70" prot="private" static="no" mutable="no">
+        <type>const InnerMatcher</type>
+        <definition>const InnerMatcher testing::internal::ArgsMatcher&lt; InnerMatcher, k0, k1, k2, k3, k4, k5, k6, k7, k8, k9 &gt;::inner_matcher_</definition>
+        <argsstring></argsstring>
+        <name>inner_matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" line="293" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_args_matcher_1a2879d7455f2da2a5a2f2b6759dbc0561" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ArgsMatcher&lt; InnerMatcher, k0, k1, k2, k3, k4, k5, k6, k7, k8, k9 &gt;::ArgsMatcher</definition>
+        <argsstring>(const InnerMatcher &amp;inner_matcher)</argsstring>
+        <name>ArgsMatcher</name>
+        <param>
+          <type>const InnerMatcher &amp;</type>
+          <declname>inner_matcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" line="283" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" bodystart="283" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_args_matcher_1ad55698b0de384a9d8875cef5b172cb4a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ArgsTuple</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::internal::ArgsMatcher&lt; InnerMatcher, k0, k1, k2, k3, k4, k5, k6, k7, k8, k9 &gt;::operator Matcher&lt; ArgsTuple &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Matcher&lt; ArgsTuple &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" line="287" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" bodystart="287" bodyend="290"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_args_matcher_1aa928e2846eafb7ddcda795d7c3dd526c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ArgsMatcher&lt; InnerMatcher, k0, k1, k2, k3, k4, k5, k6, k7, k8, k9 &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(ArgsMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_args_matcher" kindref="compound">ArgsMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" line="295" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" line="281" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" bodystart="281" bodyend="296"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_args_matcher_1a2879d7455f2da2a5a2f2b6759dbc0561" prot="public" virt="non-virtual"><scope>testing::internal::ArgsMatcher</scope><name>ArgsMatcher</name></member>
+      <member refid="classtesting_1_1internal_1_1_args_matcher_1aa928e2846eafb7ddcda795d7c3dd526c" prot="private" virt="non-virtual"><scope>testing::internal::ArgsMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_args_matcher_1ac76e55e4b52e18fa0c57aad4814a8a70" prot="private" virt="non-virtual"><scope>testing::internal::ArgsMatcher</scope><name>inner_matcher_</name></member>
+      <member refid="classtesting_1_1internal_1_1_args_matcher_1ad55698b0de384a9d8875cef5b172cb4a" prot="public" virt="non-virtual"><scope>testing::internal::ArgsMatcher</scope><name>operator Matcher&lt; ArgsTuple &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_test_factory_impl" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::TestFactoryImpl</compoundname>
+    <basecompoundref refid="classtesting_1_1internal_1_1_test_factory_base" prot="public" virt="non-virtual">testing::internal::TestFactoryBase</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>class TestClass</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_factory_impl_1a8860c89bdb06450a5d5e8137ebd9d775" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classtesting_1_1_test" kindref="compound">Test</ref> *</type>
+        <definition>virtual Test* testing::internal::TestFactoryImpl&lt; TestClass &gt;::CreateTest</definition>
+        <argsstring>()</argsstring>
+        <name>CreateTest</name>
+        <reimplements refid="classtesting_1_1internal_1_1_test_factory_base_1a07ac3ca0b196cdb092da0bb186b7c030">CreateTest</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="484" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="484" bodyend="484"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2140">
+        <label>testing::internal::TestFactoryBase</label>
+        <link refid="classtesting_1_1internal_1_1_test_factory_base"/>
+      </node>
+      <node id="2139">
+        <label>testing::internal::TestFactoryImpl&lt; TestClass &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_test_factory_impl"/>
+        <childnode refid="2140" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2142">
+        <label>testing::internal::TestFactoryBase</label>
+        <link refid="classtesting_1_1internal_1_1_test_factory_base"/>
+      </node>
+      <node id="2141">
+        <label>testing::internal::TestFactoryImpl&lt; TestClass &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_test_factory_impl"/>
+        <childnode refid="2142" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="482" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="482" bodyend="485"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_test_factory_impl_1a8860c89bdb06450a5d5e8137ebd9d775" prot="public" virt="virtual"><scope>testing::internal::TestFactoryImpl</scope><name>CreateTest</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_factory_base_1afedbf147b2a213517b315880d8c81427" prot="protected" virt="non-virtual"><scope>testing::internal::TestFactoryImpl</scope><name>TestFactoryBase</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_factory_base_1a18f22a7594336a36642289c1decddc9e" prot="public" virt="virtual"><scope>testing::internal::TestFactoryImpl</scope><name>~TestFactoryBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

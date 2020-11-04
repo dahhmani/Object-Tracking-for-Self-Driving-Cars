@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classcpp_1_1ast_1_1_type_converter" kind="class" language="Python" prot="public">
+    <compoundname>cpp::ast::TypeConverter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_type_converter_1abb739f15c6cd0800e07c086c2b30833e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.TypeConverter::namespace_stack</definition>
+        <argsstring></argsstring>
+        <name>namespace_stack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="461" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_type_converter_1ae6e75773d6722cdbb96d510a49cb633a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.TypeConverter.__init__</definition>
+        <argsstring>(self, namespace_stack)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>namespace_stack</type>
+          <defname>namespace_stack</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="460" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="460" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_type_converter_1aa6ea82e40cd30e5dfcd471ff144a19cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.TypeConverter.ToType</definition>
+        <argsstring>(self, tokens)</argsstring>
+        <name>ToType</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tokens</type>
+          <defname>tokens</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Convert [Token,...] to [Class(...), ] useful for base classes.
+For example, code like class Foo : public Bar&lt;x, y&gt; { ... };
+the &quot;Bar&lt;x, y&gt;&quot; portion gets converted to an AST.
+
+Returns:
+  [Class(...), ...]
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="477" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="477" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_type_converter_1a7c9d20d107c2bc0eb80afdf04957825f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.TypeConverter.DeclarationToParts</definition>
+        <argsstring>(self, parts, needs_name_removed)</argsstring>
+        <name>DeclarationToParts</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <param>
+          <type>needs_name_removed</type>
+          <defname>needs_name_removed</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="536" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="536" bodyend="590"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_type_converter_1aeaf27fb1890f65d7216703df610b46d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.TypeConverter.ToParameters</definition>
+        <argsstring>(self, tokens)</argsstring>
+        <name>ToParameters</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tokens</type>
+          <defname>tokens</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="591" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="591" bodyend="651"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_type_converter_1a7e4d429131d9d5742ec44c78b61beb87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.TypeConverter.CreateReturnType</definition>
+        <argsstring>(self, return_type_seq)</argsstring>
+        <name>CreateReturnType</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>return_type_seq</type>
+          <defname>return_type_seq</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="652" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="652" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_type_converter_1a7b5244be5a0caedd769ae866f8a182aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.TypeConverter.GetTemplateIndices</definition>
+        <argsstring>(self, names)</argsstring>
+        <name>GetTemplateIndices</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>names</type>
+          <defname>names</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="666" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="666" bodyend="675"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_type_converter_1adcf38788abb48f32f4a63eb091b3d53a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.TypeConverter._GetTemplateEnd</definition>
+        <argsstring>(self, tokens, start)</argsstring>
+        <name>_GetTemplateEnd</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tokens</type>
+          <defname>tokens</defname>
+        </param>
+        <param>
+          <type>start</type>
+          <defname>start</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="463" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="463" bodyend="476"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2298">
+        <label>cpp.ast.TypeConverter</label>
+        <link refid="classcpp_1_1ast_1_1_type_converter"/>
+        <childnode refid="2299" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2299">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2300">
+        <label>cpp.ast.TypeConverter</label>
+        <link refid="classcpp_1_1ast_1_1_type_converter"/>
+        <childnode refid="2301" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2301">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="458" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="458" bodyend="676"/>
+    <listofallmembers>
+      <member refid="classcpp_1_1ast_1_1_type_converter_1ae6e75773d6722cdbb96d510a49cb633a" prot="public" virt="non-virtual"><scope>cpp::ast::TypeConverter</scope><name>__init__</name></member>
+      <member refid="classcpp_1_1ast_1_1_type_converter_1adcf38788abb48f32f4a63eb091b3d53a" prot="private" virt="non-virtual"><scope>cpp::ast::TypeConverter</scope><name>_GetTemplateEnd</name></member>
+      <member refid="classcpp_1_1ast_1_1_type_converter_1a7e4d429131d9d5742ec44c78b61beb87" prot="public" virt="non-virtual"><scope>cpp::ast::TypeConverter</scope><name>CreateReturnType</name></member>
+      <member refid="classcpp_1_1ast_1_1_type_converter_1a7c9d20d107c2bc0eb80afdf04957825f" prot="public" virt="non-virtual"><scope>cpp::ast::TypeConverter</scope><name>DeclarationToParts</name></member>
+      <member refid="classcpp_1_1ast_1_1_type_converter_1a7b5244be5a0caedd769ae866f8a182aa" prot="public" virt="non-virtual"><scope>cpp::ast::TypeConverter</scope><name>GetTemplateIndices</name></member>
+      <member refid="classcpp_1_1ast_1_1_type_converter_1abb739f15c6cd0800e07c086c2b30833e" prot="public" virt="non-virtual"><scope>cpp::ast::TypeConverter</scope><name>namespace_stack</name></member>
+      <member refid="classcpp_1_1ast_1_1_type_converter_1aeaf27fb1890f65d7216703df610b46d5" prot="public" virt="non-virtual"><scope>cpp::ast::TypeConverter</scope><name>ToParameters</name></member>
+      <member refid="classcpp_1_1ast_1_1_type_converter_1aa6ea82e40cd30e5dfcd471ff144a19cf" prot="public" virt="non-virtual"><scope>cpp::ast::TypeConverter</scope><name>ToType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_eq_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::EqMatcher</compoundname>
+    <basecompoundref refid="classtesting_1_1internal_1_1_comparison_base" prot="public" virt="non-virtual">testing::internal::ComparisonBase&lt; EqMatcher&lt; Rhs &gt;, Rhs, AnyEq &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename Rhs</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_eq_matcher_1a9051e33bc31f413a3c958d04cc090b46" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::EqMatcher&lt; Rhs &gt;::EqMatcher</definition>
+        <argsstring>(const Rhs &amp;rhs)</argsstring>
+        <name>EqMatcher</name>
+        <param>
+          <type>const Rhs &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="929" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="929" bodyend="930"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_eq_matcher_1a3ddc72ceade061ad56debfa0a4dc2749" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* testing::internal::EqMatcher&lt; Rhs &gt;::Desc</definition>
+        <argsstring>()</argsstring>
+        <name>Desc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="931" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="931" bodyend="931"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_eq_matcher_1ae99a542c124694d5b91793a2df9202dc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* testing::internal::EqMatcher&lt; Rhs &gt;::NegatedDesc</definition>
+        <argsstring>()</argsstring>
+        <name>NegatedDesc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="932" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="932" bodyend="932"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="501">
+        <label>testing::internal::EqMatcher&lt; Rhs &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_eq_matcher"/>
+        <childnode refid="502" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="502">
+        <label>testing::internal::ComparisonBase&lt; EqMatcher&lt; Rhs &gt;, Rhs, AnyEq &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_comparison_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="503">
+        <label>testing::internal::EqMatcher&lt; Rhs &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_eq_matcher"/>
+        <childnode refid="504" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="504">
+        <label>testing::internal::ComparisonBase&lt; EqMatcher&lt; Rhs &gt;, Rhs, AnyEq &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_comparison_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="927" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="927" bodyend="933"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_comparison_base_1a365f20e35a604195c869ec0c0bc4c3a3" prot="public" virt="non-virtual"><scope>testing::internal::EqMatcher</scope><name>ComparisonBase</name></member>
+      <member refid="classtesting_1_1internal_1_1_eq_matcher_1a3ddc72ceade061ad56debfa0a4dc2749" prot="public" virt="non-virtual"><scope>testing::internal::EqMatcher</scope><name>Desc</name></member>
+      <member refid="classtesting_1_1internal_1_1_eq_matcher_1a9051e33bc31f413a3c958d04cc090b46" prot="public" virt="non-virtual"><scope>testing::internal::EqMatcher</scope><name>EqMatcher</name></member>
+      <member refid="classtesting_1_1internal_1_1_eq_matcher_1ae99a542c124694d5b91793a2df9202dc" prot="public" virt="non-virtual"><scope>testing::internal::EqMatcher</scope><name>NegatedDesc</name></member>
+      <member refid="classtesting_1_1internal_1_1_comparison_base_1a071cdd47406c2e8df9c89bb99302eab9" prot="public" virt="non-virtual"><scope>testing::internal::EqMatcher</scope><name>operator Matcher&lt; Lhs &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

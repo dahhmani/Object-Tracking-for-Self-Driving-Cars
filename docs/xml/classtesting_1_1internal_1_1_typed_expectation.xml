@@ -1,0 +1,859 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_typed_expectation" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::TypedExpectation</compoundname>
+    <basecompoundref refid="classtesting_1_1internal_1_1_expectation_base" prot="public" virt="non-virtual">testing::internal::ExpectationBase</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>F</declname>
+        <defname>F</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_typed_expectation_1a9a91379262d101f435809ba4556d14fa" prot="public" static="no">
+        <type><ref refid="structtesting_1_1internal_1_1_function" kindref="compound">Function</ref>&lt; F &gt;::ArgumentTuple</type>
+        <definition>typedef Function&lt;F&gt;::ArgumentTuple testing::internal::TypedExpectation&lt; F &gt;::ArgumentTuple</definition>
+        <argsstring></argsstring>
+        <name>ArgumentTuple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="879" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="879" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_typed_expectation_1a8f10e3906761cc5c10fa3561c6e8938e" prot="public" static="no">
+        <type><ref refid="structtesting_1_1internal_1_1_function" kindref="compound">Function</ref>&lt; F &gt;::ArgumentMatcherTuple</type>
+        <definition>typedef Function&lt;F&gt;::ArgumentMatcherTuple testing::internal::TypedExpectation&lt; F &gt;::ArgumentMatcherTuple</definition>
+        <argsstring></argsstring>
+        <name>ArgumentMatcherTuple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="880" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="880" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_typed_expectation_1a6503597ee9d5ec940bfe8e51832b2422" prot="public" static="no">
+        <type><ref refid="structtesting_1_1internal_1_1_function" kindref="compound">Function</ref>&lt; F &gt;::Result</type>
+        <definition>typedef Function&lt;F&gt;::Result testing::internal::TypedExpectation&lt; F &gt;::Result</definition>
+        <argsstring></argsstring>
+        <name>Result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="881" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="881" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtesting_1_1internal_1_1_typed_expectation_1a1771ea4a3d92d8b2ff0f0aa6fc40ff55" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="structtesting_1_1internal_1_1_function" kindref="compound">Function</ref></type>
+          </param>
+        </templateparamlist>
+        <type>friend class</type>
+        <definition>friend class FunctionMockerBase</definition>
+        <argsstring></argsstring>
+        <name>FunctionMockerBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1072" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1072" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_typed_expectation_1ab31ce65e492f93cb7c8cd676eb64d5fa" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1internal_1_1_function_mocker_base" kindref="compound">FunctionMockerBase</ref>&lt; F &gt; *const</type>
+        <definition>FunctionMockerBase&lt;F&gt;* const testing::internal::TypedExpectation&lt; F &gt;::owner_</definition>
+        <argsstring></argsstring>
+        <name>owner_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1222" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_typed_expectation_1a40c442a0e8fffc8bf94611a8130998bf" prot="private" static="no" mutable="no">
+        <type>ArgumentMatcherTuple</type>
+        <definition>ArgumentMatcherTuple testing::internal::TypedExpectation&lt; F &gt;::matchers_</definition>
+        <argsstring></argsstring>
+        <name>matchers_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1223" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_typed_expectation_1a7d2fef3d4429a3a350282e6030a45ba4" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; const ArgumentTuple &amp; &gt;</type>
+        <definition>Matcher&lt;const ArgumentTuple&amp;&gt; testing::internal::TypedExpectation&lt; F &gt;::extra_matcher_</definition>
+        <argsstring></argsstring>
+        <name>extra_matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1224" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_typed_expectation_1ac0ec406bd08a2260ede55650b3e16a62" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1_action" kindref="compound">Action</ref>&lt; F &gt;</type>
+        <definition>Action&lt;F&gt; testing::internal::TypedExpectation&lt; F &gt;::repeated_action_</definition>
+        <argsstring></argsstring>
+        <name>repeated_action_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1225" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a10bd0a8fa0db37215be42e1c61ccbc28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::TypedExpectation&lt; F &gt;::TypedExpectation</definition>
+        <argsstring>(FunctionMockerBase&lt; F &gt; *owner, const char *a_file, int a_line, const string &amp;a_source_text, const ArgumentMatcherTuple &amp;m)</argsstring>
+        <name>TypedExpectation</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_function_mocker_base" kindref="compound">FunctionMockerBase</ref>&lt; F &gt; *</type>
+          <declname>owner</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>a_file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a_line</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>a_source_text</declname>
+        </param>
+        <param>
+          <type>const ArgumentMatcherTuple &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="883" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="883" bodyend="894"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a4d73d7edd81f1b1418a33931fe728158" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual testing::internal::TypedExpectation&lt; F &gt;::~TypedExpectation</definition>
+        <argsstring>()</argsstring>
+        <name>~TypedExpectation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="896" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="896" bodyend="904"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1aa69c4f9b1f2cce49609023d7e5f65297" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::With</definition>
+        <argsstring>(const Matcher&lt; const ArgumentTuple &amp;&gt; &amp;m)</argsstring>
+        <name>With</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; const ArgumentTuple &amp;&gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="907" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="907" bodyend="922"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a9a4c34ee5c6e6adc880a22f61f33da57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::Times</definition>
+        <argsstring>(const Cardinality &amp;a_cardinality)</argsstring>
+        <name>Times</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_cardinality" kindref="compound">Cardinality</ref> &amp;</type>
+          <declname>a_cardinality</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="925" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="925" bodyend="928"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a92d56ee785d38ec8193aed2a0fcbccf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::Times</definition>
+        <argsstring>(int n)</argsstring>
+        <name>Times</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="931" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="931" bodyend="933"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1ada9e9081a98435991310ac60483d1230" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::InSequence</definition>
+        <argsstring>(const Sequence &amp;s)</argsstring>
+        <name>InSequence</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="936" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="936" bodyend="945"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1ac0f45c73e3f816796f6c5dea2dc70131" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::InSequence</definition>
+        <argsstring>(const Sequence &amp;s1, const Sequence &amp;s2)</argsstring>
+        <name>InSequence</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="946" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="946" bodyend="948"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a17cfbb9db111e0ded254759664e78d73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::InSequence</definition>
+        <argsstring>(const Sequence &amp;s1, const Sequence &amp;s2, const Sequence &amp;s3)</argsstring>
+        <name>InSequence</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>s3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="949" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="949" bodyend="952"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1aa60bae1cf536651dc5efcd8110bea4fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::InSequence</definition>
+        <argsstring>(const Sequence &amp;s1, const Sequence &amp;s2, const Sequence &amp;s3, const Sequence &amp;s4)</argsstring>
+        <name>InSequence</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>s3</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>s4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="953" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="953" bodyend="956"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1ad8775f8ba9965d1836f6e4c09baf1c3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::InSequence</definition>
+        <argsstring>(const Sequence &amp;s1, const Sequence &amp;s2, const Sequence &amp;s3, const Sequence &amp;s4, const Sequence &amp;s5)</argsstring>
+        <name>InSequence</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>s3</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>s4</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>s5</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="957" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="957" bodyend="961"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a30f320d18ebf1a40e94883d7a56c6c8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::After</definition>
+        <argsstring>(const ExpectationSet &amp;s)</argsstring>
+        <name>After</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation_set" kindref="compound">ExpectationSet</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="964" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="964" bodyend="975"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a8e272fc396e508a2e63b13be30f81f15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::After</definition>
+        <argsstring>(const ExpectationSet &amp;s1, const ExpectationSet &amp;s2)</argsstring>
+        <name>After</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation_set" kindref="compound">ExpectationSet</ref> &amp;</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation_set" kindref="compound">ExpectationSet</ref> &amp;</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="976" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="976" bodyend="978"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a95a341dd221901b5e51dd7cfdbdb3570" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::After</definition>
+        <argsstring>(const ExpectationSet &amp;s1, const ExpectationSet &amp;s2, const ExpectationSet &amp;s3)</argsstring>
+        <name>After</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation_set" kindref="compound">ExpectationSet</ref> &amp;</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation_set" kindref="compound">ExpectationSet</ref> &amp;</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation_set" kindref="compound">ExpectationSet</ref> &amp;</type>
+          <declname>s3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="979" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="979" bodyend="982"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a1749e368f659352ed8375512acafc178" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::After</definition>
+        <argsstring>(const ExpectationSet &amp;s1, const ExpectationSet &amp;s2, const ExpectationSet &amp;s3, const ExpectationSet &amp;s4)</argsstring>
+        <name>After</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation_set" kindref="compound">ExpectationSet</ref> &amp;</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation_set" kindref="compound">ExpectationSet</ref> &amp;</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation_set" kindref="compound">ExpectationSet</ref> &amp;</type>
+          <declname>s3</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation_set" kindref="compound">ExpectationSet</ref> &amp;</type>
+          <declname>s4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="983" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="983" bodyend="986"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a72c0105b147ee2995d183c8e4109f6ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::After</definition>
+        <argsstring>(const ExpectationSet &amp;s1, const ExpectationSet &amp;s2, const ExpectationSet &amp;s3, const ExpectationSet &amp;s4, const ExpectationSet &amp;s5)</argsstring>
+        <name>After</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation_set" kindref="compound">ExpectationSet</ref> &amp;</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation_set" kindref="compound">ExpectationSet</ref> &amp;</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation_set" kindref="compound">ExpectationSet</ref> &amp;</type>
+          <declname>s3</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation_set" kindref="compound">ExpectationSet</ref> &amp;</type>
+          <declname>s4</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation_set" kindref="compound">ExpectationSet</ref> &amp;</type>
+          <declname>s5</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="987" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="987" bodyend="991"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a41b0d15e44e95d52f4d5c310fb9e9683" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::WillOnce</definition>
+        <argsstring>(const Action&lt; F &gt; &amp;action)</argsstring>
+        <name>WillOnce</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_action" kindref="compound">Action</ref>&lt; F &gt; &amp;</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="994" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="994" bodyend="1005"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a73586c1adb458c5c431df9679e46f5f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::WillRepeatedly</definition>
+        <argsstring>(const Action&lt; F &gt; &amp;action)</argsstring>
+        <name>WillRepeatedly</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_action" kindref="compound">Action</ref>&lt; F &gt; &amp;</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1008" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1008" bodyend="1030"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1ae7c42958a5d2c336ba7a42a871bf7709" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref> &amp;</type>
+        <definition>TypedExpectation&amp; testing::internal::TypedExpectation&lt; F &gt;::RetiresOnSaturation</definition>
+        <argsstring>()</argsstring>
+        <name>RetiresOnSaturation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1033" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1033" bodyend="1044"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1ad1a18c39511a2f6fda425881cddcc31a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const ArgumentMatcherTuple &amp;</type>
+        <definition>const ArgumentMatcherTuple&amp; testing::internal::TypedExpectation&lt; F &gt;::matchers</definition>
+        <argsstring>() const</argsstring>
+        <name>matchers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1048" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1048" bodyend="1050"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a0ee00342b872ae257cae31bc86b9a34b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; const ArgumentTuple &amp; &gt; &amp;</type>
+        <definition>const Matcher&lt;const ArgumentTuple&amp;&gt;&amp; testing::internal::TypedExpectation&lt; F &gt;::extra_matcher</definition>
+        <argsstring>() const</argsstring>
+        <name>extra_matcher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1053" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1053" bodyend="1055"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a2b32621ac4d71c1a71893eb0499f723d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtesting_1_1_action" kindref="compound">Action</ref>&lt; F &gt; &amp;</type>
+        <definition>const Action&lt;F&gt;&amp; testing::internal::TypedExpectation&lt; F &gt;::repeated_action</definition>
+        <argsstring>() const</argsstring>
+        <name>repeated_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1058" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1058" bodyend="1058"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1ab019251041a408dc5a5d8ae216be53f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::TypedExpectation&lt; F &gt;::MaybeDescribeExtraMatcherTo</definition>
+        <argsstring>(::std::ostream *os)</argsstring>
+        <name>MaybeDescribeExtraMatcherTo</name>
+        <reimplements refid="classtesting_1_1internal_1_1_expectation_base_1a5ce4f648c7b112d27b798711d1e3ff5b">MaybeDescribeExtraMatcherTo</reimplements>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1062" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1062" bodyend="1068"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1adc2859080623243a3886a80ab62911da" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classtesting_1_1_expectation" kindref="compound">Expectation</ref></type>
+        <definition>virtual Expectation testing::internal::TypedExpectation&lt; F &gt;::GetHandle</definition>
+        <argsstring>()</argsstring>
+        <name>GetHandle</name>
+        <reimplements refid="classtesting_1_1internal_1_1_expectation_base_1a678f6fc24742ab0236ebc9a8128e7bfe">GetHandle</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1076" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1076" bodyend="1078"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a010336f587859d990b718cd74f13e617" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::TypedExpectation&lt; F &gt;::Matches</definition>
+        <argsstring>(const ArgumentTuple &amp;args) const GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex)</argsstring>
+        <name>Matches</name>
+        <param>
+          <type>const ArgumentTuple &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1085" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1085" bodyend="1089"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a833f473cc3563f566fbfe143682bd05a" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::TypedExpectation&lt; F &gt;::ShouldHandleArguments</definition>
+        <argsstring>(const ArgumentTuple &amp;args) const GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex)</argsstring>
+        <name>ShouldHandleArguments</name>
+        <param>
+          <type>const ArgumentTuple &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1092" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1092" bodyend="1102"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1ad72e021fb66b7a91613e84644c6eb78b" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::TypedExpectation&lt; F &gt;::ExplainMatchResultTo</definition>
+        <argsstring>(const ArgumentTuple &amp;args, ::std::ostream *os) const GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex)</argsstring>
+        <name>ExplainMatchResultTo</name>
+        <param>
+          <type>const ArgumentTuple &amp;</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1106" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1106" bodyend="1148"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a5053b8335ca295b34cd6a68f8d462602" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtesting_1_1_action" kindref="compound">Action</ref>&lt; F &gt; &amp;</type>
+        <definition>const Action&lt;F&gt;&amp; testing::internal::TypedExpectation&lt; F &gt;::GetCurrentAction</definition>
+        <argsstring>(const FunctionMockerBase&lt; F &gt; *mocker, const ArgumentTuple &amp;args) const GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex)</argsstring>
+        <name>GetCurrentAction</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1_function_mocker_base" kindref="compound">FunctionMockerBase</ref>&lt; F &gt; *</type>
+          <declname>mocker</declname>
+        </param>
+        <param>
+          <type>const ArgumentTuple &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1151" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1151" bodyend="1179"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a2e6b527b4de669f66af63be395f0985d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtesting_1_1_action" kindref="compound">Action</ref>&lt; F &gt; *</type>
+        <definition>const Action&lt;F&gt;* testing::internal::TypedExpectation&lt; F &gt;::GetActionForArguments</definition>
+        <argsstring>(const FunctionMockerBase&lt; F &gt; *mocker, const ArgumentTuple &amp;args, ::std::ostream *what, ::std::ostream *why) GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex)</argsstring>
+        <name>GetActionForArguments</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1_function_mocker_base" kindref="compound">FunctionMockerBase</ref>&lt; F &gt; *</type>
+          <declname>mocker</declname>
+        </param>
+        <param>
+          <type>const ArgumentTuple &amp;</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>what</declname>
+        </param>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>why</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1188" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1188" bodyend="1218"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_typed_expectation_1a1792ee9330d91ee4da36c3f0cb18b88d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::TypedExpectation&lt; F &gt;::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(TypedExpectation)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_typed_expectation" kindref="compound">TypedExpectation</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1227" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2311">
+        <label>testing::internal::ExpectationBase</label>
+        <link refid="classtesting_1_1internal_1_1_expectation_base"/>
+      </node>
+      <node id="2310">
+        <label>testing::internal::TypedExpectation&lt; F &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_typed_expectation"/>
+        <childnode refid="2311" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2313">
+        <label>testing::internal::ExpectationBase</label>
+        <link refid="classtesting_1_1internal_1_1_expectation_base"/>
+        <childnode refid="2314" relation="usage">
+          <edgelabel>mutex_</edgelabel>
+        </childnode>
+        <childnode refid="2315" relation="usage">
+          <edgelabel>immediate_prerequisites_</edgelabel>
+        </childnode>
+        <childnode refid="2316" relation="usage">
+          <edgelabel>cardinality_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2314">
+        <label>testing::internal::Mutex</label>
+        <link refid="classtesting_1_1internal_1_1_mutex"/>
+      </node>
+      <node id="2312">
+        <label>testing::internal::TypedExpectation&lt; F &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_typed_expectation"/>
+        <childnode refid="2313" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2316">
+        <label>testing::Cardinality</label>
+        <link refid="classtesting_1_1_cardinality"/>
+      </node>
+      <node id="2315">
+        <label>testing::ExpectationSet</label>
+        <link refid="classtesting_1_1_expectation_set"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="99" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="99" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a19933e346f6493005437bdd6812c7a29" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>action_count_checked_</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a30f320d18ebf1a40e94883d7a56c6c8c" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>After</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a8e272fc396e508a2e63b13be30f81f15" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>After</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a95a341dd221901b5e51dd7cfdbdb3570" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>After</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a1749e368f659352ed8375512acafc178" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>After</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a72c0105b147ee2995d183c8e4109f6ca" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>After</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a82ba68cdd71a8b5aff5a5be24c23a637" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>AllPrerequisitesAreSatisfied</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a8f10e3906761cc5c10fa3561c6e8938e" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>ArgumentMatcherTuple</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a9a91379262d101f435809ba4556d14fa" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>ArgumentTuple</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a2644117ae8b59bd19aa526549a11d84e" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>AssertSpecProperty</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1aacc0399271907194ac1627439f65047a" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>call_count</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1aea95d46f7583566e3f7a081b0668ad4c" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>call_count_</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a1399efffbc8675510a15c6ba1f18184b" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>cardinality</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1ad0aedcc01c0c9a998952a2b2f486595c" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>cardinality_</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a8c3715b0c44d29eb53148036d9366940" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>cardinality_specified</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1ad2ca7220ed1a395bd850ff06c500a402" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>cardinality_specified_</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1aaeb143b6f8676e9a6fb9b17678344f03" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>CheckActionCountIfNotDone</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a450f34b979ec5814c91d4eab6b78cfc2" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>Clause</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a2beebed3ade29077bcf294b449bb8b9d" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>DescribeCallCountTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a666e7f8fb2412e78f090244e6bfd4493" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>DescribeLocationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a8c82a7ecad5831a3ce5ce8cc56ae172d" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>ExpectationBase</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a652adbe3fcca2950175e3859d59af268" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>ExpectSpecProperty</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1ad72e021fb66b7a91613e84644c6eb78b" prot="private" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>ExplainMatchResultTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a0ee00342b872ae257cae31bc86b9a34b" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>extra_matcher</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a7d2fef3d4429a3a350282e6030a45ba4" prot="private" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>extra_matcher_</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a34f599ac7ae4f1fb7567e0d4c9fadcba" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>extra_matcher_specified_</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1ad8aae77623dbddd5d2099ea6499eda53" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>file</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1afabf690537298bbb84e9b443f62d7e97" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>file_</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a9eb518c079f950a59c67e8012d3371c0" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>FindUnsatisfiedPrerequisites</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a1771ea4a3d92d8b2ff0f0aa6fc40ff55" prot="private" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>FunctionMockerBase</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a2e6b527b4de669f66af63be395f0985d" prot="private" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>GetActionForArguments</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a5053b8335ca295b34cd6a68f8d462602" prot="private" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>GetCurrentAction</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1adc2859080623243a3886a80ab62911da" prot="private" virt="virtual"><scope>testing::internal::TypedExpectation</scope><name>GetHandle</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a9a28e2f508571a0d68d9f964f3634022" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a1792ee9330d91ee4da36c3f0cb18b88d" prot="private" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a186eff0fdcacc8c1e1a2becdec11d3cd" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>immediate_prerequisites_</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1aef1766c39ad6478f9041e0f5c5000532" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>IncrementCallCount</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1ada9e9081a98435991310ac60483d1230" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>InSequence</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1ac0f45c73e3f816796f6c5dea2dc70131" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>InSequence</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a17cfbb9db111e0ded254759664e78d73" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>InSequence</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1aa60bae1cf536651dc5efcd8110bea4fd" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>InSequence</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1ad8775f8ba9965d1836f6e4c09baf1c3e" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>InSequence</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1afe539dbc5b29d9635403767a4708c476" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>is_retired</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a080dab35ecc6c57096f50758a0e8123d" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>IsOverSaturated</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1ae629adc2dd9aee0ac62e50314f1a6449" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>IsSatisfied</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1ad3e4340cedefdc24fce1478a8d6cab93" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>IsSaturated</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a450f34b979ec5814c91d4eab6b78cfc2a7988a8564321947266de0e74148ae4ec" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>kAfter</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a450f34b979ec5814c91d4eab6b78cfc2ac9e8abdc7de4697d2174c560e7a0a595" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>kInSequence</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a450f34b979ec5814c91d4eab6b78cfc2ae25b940c0878d057628e3509830d84e9" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>kNone</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a450f34b979ec5814c91d4eab6b78cfc2a816336e701d7be1ca9e07998d41ba5af" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>kRetiresOnSaturation</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a450f34b979ec5814c91d4eab6b78cfc2a8080d1291dd355e3ad9478f8c8b79689" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>kTimes</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a450f34b979ec5814c91d4eab6b78cfc2a571cc6a896cd99aa3532f6ab51a51b7a" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>kWillOnce</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a450f34b979ec5814c91d4eab6b78cfc2a4b568d2f88f5141c4c61bc53757791d1" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>kWillRepeatedly</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a450f34b979ec5814c91d4eab6b78cfc2a2a83fca10989c55ad16aafd2851ca139" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>kWith</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a584f296e53b4cc002ddf5e65e44d72d9" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>last_clause_</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a6a44d831449d31e0e46d0070625b452c" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>line</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1ab8143119e4b686ff1bb6c985924da57a" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>line_</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1ad1a18c39511a2f6fda425881cddcc31a" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>matchers</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a40c442a0e8fffc8bf94611a8130998bf" prot="private" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>matchers_</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a010336f587859d990b718cd74f13e617" prot="private" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>Matches</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1ab019251041a408dc5a5d8ae216be53f4" prot="public" virt="virtual"><scope>testing::internal::TypedExpectation</scope><name>MaybeDescribeExtraMatcherTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a364f5473591d08d0ac03595c9050c13e" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>mutex_</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1ab31ce65e492f93cb7c8cd676eb64d5fa" prot="private" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>owner_</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a2b32621ac4d71c1a71893eb0499f723d" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>repeated_action</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1ac0ec406bd08a2260ede55650b3e16a62" prot="private" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>repeated_action_</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1abecd382b79252ffc0779d51e058b681c" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>repeated_action_specified_</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a6503597ee9d5ec940bfe8e51832b2422" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>Result</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a0aeeb4c1e66c2f2aa0853c267ad3e781" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>Retire</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1afb623801e8de31fcd7b352e200649f7d" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>RetireAllPreRequisites</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a0afd852f5d7863effc3d304dac6a44cf" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>retired_</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a74802f3bedf4ab023b30ee6bb275a4d8" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>retires_on_saturation_</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1ae7c42958a5d2c336ba7a42a871bf7709" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>RetiresOnSaturation</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a6d416ffd4546ae84de79afb67ad05ada" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>set_cardinality</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a833f473cc3563f566fbfe143682bd05a" prot="private" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>ShouldHandleArguments</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a77efdf254df61cfc4f28c91b0e6f62aa" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>source_text</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a8803b5fa8354205a6b57e21a704acbef" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>source_text_</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a3d1d08542b32239d9b5738e3e32e2217" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>SpecifyCardinality</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a9a4c34ee5c6e6adc880a22f61f33da57" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>Times</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a92d56ee785d38ec8193aed2a0fcbccf0" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>Times</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a10bd0a8fa0db37215be42e1c61ccbc28" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>TypedExpectation</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a9558ff6b8b1b7e3a99fac1f93d1826da" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>untyped_actions_</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a9b21e82059961b9f1198d3f5d518254f" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>UntypedActions</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1a05bbd7fea6ea3c740ea095ea7462bc07" prot="protected" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>UntypedTimes</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a41b0d15e44e95d52f4d5c310fb9e9683" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>WillOnce</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a73586c1adb458c5c431df9679e46f5f1" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>WillRepeatedly</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1aa69c4f9b1f2cce49609023d7e5f65297" prot="public" virt="non-virtual"><scope>testing::internal::TypedExpectation</scope><name>With</name></member>
+      <member refid="classtesting_1_1internal_1_1_expectation_base_1aff36dabbd1bd194d93a3b2d3c9d3ebbf" prot="public" virt="virtual"><scope>testing::internal::TypedExpectation</scope><name>~ExpectationBase</name></member>
+      <member refid="classtesting_1_1internal_1_1_typed_expectation_1a4d73d7edd81f1b1418a33931fe728158" prot="public" virt="virtual"><scope>testing::internal::TypedExpectation</scope><name>~TypedExpectation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

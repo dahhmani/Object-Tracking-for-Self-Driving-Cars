@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_xcode_guide_8md" kind="file" language="Markdown">
+    <compoundname>XcodeGuide.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>guide<sp/>will<sp/>explain<sp/>how<sp/>to<sp/>use<sp/>the<sp/>Google<sp/>Testing<sp/>Framework<sp/>in<sp/>your<sp/>Xcode<sp/>projects<sp/>on<sp/>Mac<sp/>OS<sp/>X.<sp/>This<sp/>tutorial<sp/>begins<sp/>by<sp/>quickly<sp/>explaining<sp/>what<sp/>to<sp/>do<sp/>for<sp/>experienced<sp/>users.<sp/>After<sp/>the<sp/>quick<sp/>start,<sp/>the<sp/>guide<sp/>goes<sp/>provides<sp/>additional<sp/>explanation<sp/>about<sp/>each<sp/>step.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Quick<sp/>Start<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Here<sp/>is<sp/>the<sp/>quick<sp/>guide<sp/>for<sp/>using<sp/>Google<sp/>Test<sp/>in<sp/>your<sp/>Xcode<sp/>project.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Download<sp/>the<sp/>source<sp/>from<sp/>the<sp/>[website](http://code.google.com/p/googletest)<sp/>using<sp/>this<sp/>command:<sp/>`svn<sp/>checkout<sp/>http://googletest.googlecode.com/svn/trunk/<sp/>googletest-read-only`</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Open<sp/>up<sp/>the<sp/>`gtest.xcodeproj`<sp/>in<sp/>the<sp/>`googletest-read-only/xcode/`<sp/>directory<sp/>and<sp/>build<sp/>the<sp/>gtest.framework.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Create<sp/>a<sp/>new<sp/>&quot;Shell<sp/>Tool&quot;<sp/>target<sp/>in<sp/>your<sp/>Xcode<sp/>project<sp/>called<sp/>something<sp/>like<sp/>&quot;UnitTests&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Add<sp/>the<sp/>gtest.framework<sp/>to<sp/>your<sp/>project<sp/>and<sp/>add<sp/>it<sp/>to<sp/>the<sp/>&quot;Link<sp/>Binary<sp/>with<sp/>Libraries&quot;<sp/>build<sp/>phase<sp/>of<sp/>&quot;UnitTests&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Add<sp/>your<sp/>unit<sp/>test<sp/>source<sp/>code<sp/>to<sp/>the<sp/>&quot;Compile<sp/>Sources&quot;<sp/>build<sp/>phase<sp/>of<sp/>&quot;UnitTests&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Edit<sp/>the<sp/>&quot;UnitTests&quot;<sp/>executable<sp/>and<sp/>add<sp/>an<sp/>environment<sp/>variable<sp/>named<sp/>&quot;DYLD\_FRAMEWORK\_PATH&quot;<sp/>with<sp/>a<sp/>value<sp/>equal<sp/>to<sp/>the<sp/>path<sp/>to<sp/>the<sp/>framework<sp/>containing<sp/>the<sp/>gtest.framework<sp/>relative<sp/>to<sp/>the<sp/>compiled<sp/>executable.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Build<sp/>and<sp/>Go</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>following<sp/>sections<sp/>further<sp/>explain<sp/>each<sp/>of<sp/>the<sp/>steps<sp/>listed<sp/>above<sp/>in<sp/>depth,<sp/>describing<sp/>in<sp/>more<sp/>detail<sp/>how<sp/>to<sp/>complete<sp/>it<sp/>including<sp/>some<sp/>variations.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Get<sp/>the<sp/>Source<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Currently,<sp/>the<sp/>gtest.framework<sp/>discussed<sp/>here<sp/>isn&apos;t<sp/>available<sp/>in<sp/>a<sp/>tagged<sp/>release<sp/>of<sp/>Google<sp/>Test,<sp/>it<sp/>is<sp/>only<sp/>available<sp/>in<sp/>the<sp/>trunk.<sp/>As<sp/>explained<sp/>at<sp/>the<sp/>Google<sp/>Test<sp/>[site](http://code.google.com/p/googletest/source/checkout&quot;&gt;svn),<sp/>you<sp/>can<sp/>get<sp/>the<sp/>code<sp/>from<sp/>anonymous<sp/>SVN<sp/>with<sp/>this<sp/>command:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">svn<sp/>checkout<sp/>http://googletest.googlecode.com/svn/trunk/<sp/>googletest-read-only</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Alternatively,<sp/>if<sp/>you<sp/>are<sp/>working<sp/>with<sp/>Subversion<sp/>in<sp/>your<sp/>own<sp/>code<sp/>base,<sp/>you<sp/>can<sp/>add<sp/>Google<sp/>Test<sp/>as<sp/>an<sp/>external<sp/>dependency<sp/>to<sp/>your<sp/>own<sp/>Subversion<sp/>repository.<sp/>By<sp/>following<sp/>this<sp/>approach,<sp/>everyone<sp/>that<sp/>checks<sp/>out<sp/>your<sp/>svn<sp/>repository<sp/>will<sp/>also<sp/>receive<sp/>a<sp/>copy<sp/>of<sp/>Google<sp/>Test<sp/>(a<sp/>specific<sp/>version,<sp/>if<sp/>you<sp/>wish)<sp/>without<sp/>having<sp/>to<sp/>check<sp/>it<sp/>out<sp/>explicitly.<sp/>This<sp/>makes<sp/>the<sp/>set<sp/>up<sp/>of<sp/>your<sp/>project<sp/>simpler<sp/>and<sp/>reduces<sp/>the<sp/>copied<sp/>code<sp/>in<sp/>the<sp/>repository.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>use<sp/>`svn:externals`,<sp/>decide<sp/>where<sp/>you<sp/>would<sp/>like<sp/>to<sp/>have<sp/>the<sp/>external<sp/>source<sp/>reside.<sp/>You<sp/>might<sp/>choose<sp/>to<sp/>put<sp/>the<sp/>external<sp/>source<sp/>inside<sp/>the<sp/>trunk,<sp/>because<sp/>you<sp/>want<sp/>it<sp/>to<sp/>be<sp/>part<sp/>of<sp/>the<sp/>branch<sp/>when<sp/>you<sp/>make<sp/>a<sp/>release.<sp/>However,<sp/>keeping<sp/>it<sp/>outside<sp/>the<sp/>trunk<sp/>in<sp/>a<sp/>version-tagged<sp/>directory<sp/>called<sp/>something<sp/>like<sp/>`third-party/googletest/1.0.1`,<sp/>is<sp/>another<sp/>option.<sp/>Once<sp/>the<sp/>location<sp/>is<sp/>established,<sp/>use<sp/>`svn<sp/>propedit<sp/>svn:externals<sp/>_directory_`<sp/>to<sp/>set<sp/>the<sp/>svn:externals<sp/>property<sp/>on<sp/>a<sp/>directory<sp/>in<sp/>your<sp/>repository.<sp/>This<sp/>directory<sp/>won&apos;t<sp/>contain<sp/>the<sp/>code,<sp/>but<sp/>be<sp/>its<sp/>versioned<sp/>parent<sp/>directory.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>command<sp/>`svn<sp/>propedit`<sp/>will<sp/>bring<sp/>up<sp/>your<sp/>Subversion<sp/>editor,<sp/>making<sp/>editing<sp/>the<sp/>long,<sp/>(potentially<sp/>multi-line)<sp/>property<sp/>simpler.<sp/>This<sp/>same<sp/>method<sp/>can<sp/>be<sp/>used<sp/>to<sp/>check<sp/>out<sp/>a<sp/>tagged<sp/>branch,<sp/>by<sp/>using<sp/>the<sp/>appropriate<sp/>URL<sp/>(e.g.<sp/>`http://googletest.googlecode.com/svn/tags/release-1.0.1`).<sp/>Additionally,<sp/>the<sp/>svn:externals<sp/>property<sp/>allows<sp/>the<sp/>specification<sp/>of<sp/>a<sp/>particular<sp/>revision<sp/>of<sp/>the<sp/>trunk<sp/>with<sp/>the<sp/>`-r_##_`<sp/>option<sp/>(e.g.<sp/>`externals/src/googletest<sp/>-r60<sp/>http://googletest.googlecode.com/svn/trunk`).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Here<sp/>is<sp/>an<sp/>example<sp/>of<sp/>using<sp/>the<sp/>svn:externals<sp/>properties<sp/>on<sp/>a<sp/>trunk<sp/>(read<sp/>via<sp/>`svn<sp/>propget`)<sp/>of<sp/>a<sp/>project.<sp/>This<sp/>value<sp/>checks<sp/>out<sp/>a<sp/>copy<sp/>of<sp/>Google<sp/>Test<sp/>into<sp/>the<sp/>`trunk/externals/src/googletest/`<sp/>directory.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">[Computer:svn]<sp/>user$<sp/>svn<sp/>propget<sp/>svn:externals<sp/>trunk</highlight></codeline>
+<codeline><highlight class="normal">externals/src/googletest<sp/>http://googletest.googlecode.com/svn/trunk</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Add<sp/>the<sp/>Framework<sp/>to<sp/>Your<sp/>Project<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>next<sp/>step<sp/>is<sp/>to<sp/>build<sp/>and<sp/>add<sp/>the<sp/>gtest.framework<sp/>to<sp/>your<sp/>own<sp/>project.<sp/>This<sp/>guide<sp/>describes<sp/>two<sp/>common<sp/>ways<sp/>below.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Option<sp/>1**<sp/>---<sp/>The<sp/>simplest<sp/>way<sp/>to<sp/>add<sp/>Google<sp/>Test<sp/>to<sp/>your<sp/>own<sp/>project,<sp/>is<sp/>to<sp/>open<sp/>gtest.xcodeproj<sp/>(found<sp/>in<sp/>the<sp/>xcode/<sp/>directory<sp/>of<sp/>the<sp/>Google<sp/>Test<sp/>trunk)<sp/>and<sp/>build<sp/>the<sp/>framework<sp/>manually.<sp/>Then,<sp/>add<sp/>the<sp/>built<sp/>framework<sp/>into<sp/>your<sp/>project<sp/>using<sp/>the<sp/>&quot;Add-&gt;Existing<sp/>Framework...&quot;<sp/>from<sp/>the<sp/>context<sp/>menu<sp/>or<sp/>&quot;Project-&gt;Add...&quot;<sp/>from<sp/>the<sp/>main<sp/>menu.<sp/>The<sp/>gtest.framework<sp/>is<sp/>relocatable<sp/>and<sp/>contains<sp/>the<sp/>headers<sp/>and<sp/>object<sp/>code<sp/>that<sp/>you&apos;ll<sp/>need<sp/>to<sp/>make<sp/>tests.<sp/>This<sp/>method<sp/>requires<sp/>rebuilding<sp/>every<sp/>time<sp/>you<sp/>upgrade<sp/>Google<sp/>Test<sp/>in<sp/>your<sp/>project.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Option<sp/>2**<sp/>---<sp/>If<sp/>you<sp/>are<sp/>going<sp/>to<sp/>be<sp/>living<sp/>off<sp/>the<sp/>trunk<sp/>of<sp/>Google<sp/>Test,<sp/>incorporating<sp/>its<sp/>latest<sp/>features<sp/>into<sp/>your<sp/>unit<sp/>tests<sp/>(or<sp/>are<sp/>a<sp/>Google<sp/>Test<sp/>developer<sp/>yourself).<sp/>You&apos;ll<sp/>want<sp/>to<sp/>rebuild<sp/>the<sp/>framework<sp/>every<sp/>time<sp/>the<sp/>source<sp/>updates.<sp/>to<sp/>do<sp/>this,<sp/>you&apos;ll<sp/>need<sp/>to<sp/>add<sp/>the<sp/>gtest.xcodeproj<sp/>file,<sp/>not<sp/>the<sp/>framework<sp/>itself,<sp/>to<sp/>your<sp/>own<sp/>Xcode<sp/>project.<sp/>Then,<sp/>from<sp/>the<sp/>build<sp/>products<sp/>that<sp/>are<sp/>revealed<sp/>by<sp/>the<sp/>project&apos;s<sp/>disclosure<sp/>triangle,<sp/>you<sp/>can<sp/>find<sp/>the<sp/>gtest.framework,<sp/>which<sp/>can<sp/>be<sp/>added<sp/>to<sp/>your<sp/>targets<sp/>(discussed<sp/>below).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Make<sp/>a<sp/>Test<sp/>Target<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>start<sp/>writing<sp/>tests,<sp/>make<sp/>a<sp/>new<sp/>&quot;Shell<sp/>Tool&quot;<sp/>target.<sp/>This<sp/>target<sp/>template<sp/>is<sp/>available<sp/>under<sp/>BSD,<sp/>Cocoa,<sp/>or<sp/>Carbon.<sp/>Add<sp/>your<sp/>unit<sp/>test<sp/>source<sp/>code<sp/>to<sp/>the<sp/>&quot;Compile<sp/>Sources&quot;<sp/>build<sp/>phase<sp/>of<sp/>the<sp/>target.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Next,<sp/>you&apos;ll<sp/>want<sp/>to<sp/>add<sp/>gtest.framework<sp/>in<sp/>two<sp/>different<sp/>ways,<sp/>depending<sp/>upon<sp/>which<sp/>option<sp/>you<sp/>chose<sp/>above.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Option<sp/>1**<sp/>---<sp/>During<sp/>compilation,<sp/>Xcode<sp/>will<sp/>need<sp/>to<sp/>know<sp/>that<sp/>you<sp/>are<sp/>linking<sp/>against<sp/>the<sp/>gtest.framework.<sp/>Add<sp/>the<sp/>gtest.framework<sp/>to<sp/>the<sp/>&quot;Link<sp/>Binary<sp/>with<sp/>Libraries&quot;<sp/>build<sp/>phase<sp/>of<sp/>your<sp/>test<sp/>target.<sp/>This<sp/>will<sp/>include<sp/>the<sp/>Google<sp/>Test<sp/>headers<sp/>in<sp/>your<sp/>header<sp/>search<sp/>path,<sp/>and<sp/>will<sp/>tell<sp/>the<sp/>linker<sp/>where<sp/>to<sp/>find<sp/>the<sp/>library.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Option<sp/>2**<sp/>---<sp/>If<sp/>your<sp/>working<sp/>out<sp/>of<sp/>the<sp/>trunk,<sp/>you&apos;ll<sp/>also<sp/>want<sp/>to<sp/>add<sp/>gtest.framework<sp/>to<sp/>your<sp/>&quot;Link<sp/>Binary<sp/>with<sp/>Libraries&quot;<sp/>build<sp/>phase<sp/>of<sp/>your<sp/>test<sp/>target.<sp/>In<sp/>addition,<sp/>you&apos;ll<sp/><sp/>want<sp/>to<sp/>add<sp/>the<sp/>gtest.framework<sp/>as<sp/>a<sp/>dependency<sp/>to<sp/>your<sp/>unit<sp/>test<sp/>target.<sp/>This<sp/>way,<sp/>Xcode<sp/>will<sp/>make<sp/>sure<sp/>that<sp/>gtest.framework<sp/>is<sp/>up<sp/>to<sp/>date,<sp/>every<sp/>time<sp/>your<sp/>build<sp/>your<sp/>target.<sp/>Finally,<sp/>if<sp/>you<sp/>don&apos;t<sp/>share<sp/>build<sp/>directories<sp/>with<sp/>Google<sp/>Test,<sp/>you&apos;ll<sp/>have<sp/>to<sp/>copy<sp/>the<sp/>gtest.framework<sp/>into<sp/>your<sp/>own<sp/>build<sp/>products<sp/>directory<sp/>using<sp/>a<sp/>&quot;Run<sp/>Script&quot;<sp/>build<sp/>phase.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>Up<sp/>the<sp/>Executable<sp/>Run<sp/>Environment<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Since<sp/>the<sp/>unit<sp/>test<sp/>executable<sp/>is<sp/>a<sp/>shell<sp/>tool,<sp/>it<sp/>doesn&apos;t<sp/>have<sp/>a<sp/>bundle<sp/>with<sp/>a<sp/>`Contents/Frameworks`<sp/>directory,<sp/>in<sp/>which<sp/>to<sp/>place<sp/>gtest.framework.<sp/>Instead,<sp/>the<sp/>dynamic<sp/>linker<sp/>must<sp/>be<sp/>told<sp/>at<sp/>runtime<sp/>to<sp/>search<sp/>for<sp/>the<sp/>framework<sp/>in<sp/>another<sp/>location.<sp/>This<sp/>can<sp/>be<sp/>accomplished<sp/>by<sp/>setting<sp/>the<sp/>&quot;DYLD\_FRAMEWORK\_PATH&quot;<sp/>environment<sp/>variable<sp/>in<sp/>the<sp/>&quot;Edit<sp/>Active<sp/>Executable<sp/>...&quot;<sp/>Arguments<sp/>tab,<sp/>under<sp/>&quot;Variables<sp/>to<sp/>be<sp/>set<sp/>in<sp/>the<sp/>environment:&quot;.<sp/>The<sp/>path<sp/>for<sp/>this<sp/>value<sp/>is<sp/>the<sp/>path<sp/>(relative<sp/>or<sp/>absolute)<sp/>of<sp/>the<sp/>directory<sp/>containing<sp/>the<sp/>gtest.framework.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>haven&apos;t<sp/>set<sp/>up<sp/>the<sp/>DYLD\_FRAMEWORK\_PATH,<sp/>correctly,<sp/>you<sp/>might<sp/>get<sp/>a<sp/>message<sp/>like<sp/>this:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">[Session<sp/>started<sp/>at<sp/>2008-08-15<sp/>06:23:57<sp/>-0600.]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>dyld:<sp/>Library<sp/>not<sp/>loaded:<sp/>@loader_path/../Frameworks/gtest.framework/Versions/A/gtest</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Referenced<sp/>from:<sp/>/Users/username/Documents/Sandbox/gtestSample/build/Debug/WidgetFrameworkTest</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Reason:<sp/>image<sp/>not<sp/>found</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>correct<sp/>this<sp/>problem,<sp/>got<sp/>to<sp/>the<sp/>directory<sp/>containing<sp/>the<sp/>executable<sp/>named<sp/>in<sp/>&quot;Referenced<sp/>from:&quot;<sp/>value<sp/>in<sp/>the<sp/>error<sp/>message<sp/>above.<sp/>Then,<sp/>with<sp/>the<sp/>terminal<sp/>in<sp/>this<sp/>location,<sp/>find<sp/>the<sp/>relative<sp/>path<sp/>to<sp/>the<sp/>directory<sp/>containing<sp/>the<sp/>gtest.framework.<sp/>That<sp/>is<sp/>the<sp/>value<sp/>you&apos;ll<sp/>need<sp/>to<sp/>set<sp/>as<sp/>the<sp/>DYLD\_FRAMEWORK\_PATH.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Build<sp/>and<sp/>Go<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Now,<sp/>when<sp/>you<sp/>click<sp/>&quot;Build<sp/>and<sp/>Go&quot;,<sp/>the<sp/>test<sp/>will<sp/>be<sp/>executed.<sp/>Dumping<sp/>out<sp/>something<sp/>like<sp/>this:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">[Session<sp/>started<sp/>at<sp/>2008-08-06<sp/>06:36:13<sp/>-0600.]</highlight></codeline>
+<codeline><highlight class="normal">[==========]<sp/>Running<sp/>2<sp/>tests<sp/>from<sp/>1<sp/>test<sp/>case.</highlight></codeline>
+<codeline><highlight class="normal">[----------]<sp/>Global<sp/>test<sp/>environment<sp/>set-up.</highlight></codeline>
+<codeline><highlight class="normal">[----------]<sp/>2<sp/>tests<sp/>from<sp/>WidgetInitializerTest</highlight></codeline>
+<codeline><highlight class="normal">[<sp/>RUN<sp/><sp/><sp/><sp/><sp/><sp/>]<sp/>WidgetInitializerTest.TestConstructor</highlight></codeline>
+<codeline><highlight class="normal">[<sp/><sp/><sp/><sp/><sp/><sp/><sp/>OK<sp/>]<sp/>WidgetInitializerTest.TestConstructor</highlight></codeline>
+<codeline><highlight class="normal">[<sp/>RUN<sp/><sp/><sp/><sp/><sp/><sp/>]<sp/>WidgetInitializerTest.TestConversion</highlight></codeline>
+<codeline><highlight class="normal">[<sp/><sp/><sp/><sp/><sp/><sp/><sp/>OK<sp/>]<sp/>WidgetInitializerTest.TestConversion</highlight></codeline>
+<codeline><highlight class="normal">[----------]<sp/>Global<sp/>test<sp/>environment<sp/>tear-down</highlight></codeline>
+<codeline><highlight class="normal">[==========]<sp/>2<sp/>tests<sp/>from<sp/>1<sp/>test<sp/>case<sp/>ran.</highlight></codeline>
+<codeline><highlight class="normal">[<sp/><sp/>PASSED<sp/><sp/>]<sp/>2<sp/>tests.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>Debugger<sp/>has<sp/>exited<sp/>with<sp/>status<sp/>0.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Summary<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Unit<sp/>testing<sp/>is<sp/>a<sp/>valuable<sp/>way<sp/>to<sp/>ensure<sp/>your<sp/>data<sp/>model<sp/>stays<sp/>valid<sp/>even<sp/>during<sp/>rapid<sp/>development<sp/>or<sp/>refactoring.<sp/>The<sp/>Google<sp/>Testing<sp/>Framework<sp/>is<sp/>a<sp/>great<sp/>unit<sp/>testing<sp/>framework<sp/>for<sp/>C<sp/>and<sp/>C++<sp/>which<sp/>integrates<sp/>well<sp/>with<sp/>an<sp/>Xcode<sp/>development<sp/>environment.</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googletest/docs/XcodeGuide.md"/>
+  </compounddef>
+</doxygen>

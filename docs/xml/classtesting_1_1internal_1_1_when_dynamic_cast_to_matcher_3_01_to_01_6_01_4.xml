@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_3_01_to_01_6_01_4" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::WhenDynamicCastToMatcher&lt; To &amp; &gt;</compoundname>
+    <basecompoundref refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base" prot="public" virt="non-virtual">testing::internal::WhenDynamicCastToMatcherBase&lt; To &amp;&gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename <ref refid="classtesting_1_1internal_1_1_to" kindref="compound">To</ref></type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_3_01_to_01_6_01_4_1a1ba7bc63566075d2afe18905e5c7ad76" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::WhenDynamicCastToMatcher&lt; To &amp; &gt;::WhenDynamicCastToMatcher</definition>
+        <argsstring>(const Matcher&lt; To &amp;&gt; &amp;matcher)</argsstring>
+        <name>WhenDynamicCastToMatcher</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; <ref refid="classtesting_1_1internal_1_1_to" kindref="compound">To</ref> &amp;&gt; &amp;</type>
+          <declname>matcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2163" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2163" bodyend="2164"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_3_01_to_01_6_01_4_1a1eb76a60d0943519623f438b29f70a5f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename From</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::internal::WhenDynamicCastToMatcher&lt; To &amp; &gt;::MatchAndExplain</definition>
+        <argsstring>(From &amp;from, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>From &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2167" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2167" bodyend="2175"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2497">
+        <label>testing::internal::WhenDynamicCastToMatcher&lt; To &amp; &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_3_01_to_01_6_01_4"/>
+        <childnode refid="2498" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2498">
+        <label>testing::internal::WhenDynamicCastToMatcherBase&lt; To &amp;&gt;</label>
+        <link refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2501">
+        <label>testing::Matcher&lt; testing::internal::To &amp;&gt;</label>
+        <link refid="classtesting_1_1_matcher"/>
+        <childnode refid="2502" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2499">
+        <label>testing::internal::WhenDynamicCastToMatcher&lt; To &amp; &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_3_01_to_01_6_01_4"/>
+        <childnode refid="2500" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2500">
+        <label>testing::internal::WhenDynamicCastToMatcherBase&lt; To &amp;&gt;</label>
+        <link refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base"/>
+        <childnode refid="2501" relation="usage">
+          <edgelabel>matcher_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2502">
+        <label>testing::internal::MatcherBase&lt; testing::internal::To &amp; &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_matcher_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2161" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2161" bodyend="2176"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a0221de18d3b1945f8bc27fb349116564" prot="public" virt="non-virtual"><scope>testing::internal::WhenDynamicCastToMatcher&lt; To &amp; &gt;</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a6541f9bbcdc21e41521654c603cd2626" prot="public" virt="non-virtual"><scope>testing::internal::WhenDynamicCastToMatcher&lt; To &amp; &gt;</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a5950142a073ce7a1931848a958c88962" prot="protected" virt="non-virtual"><scope>testing::internal::WhenDynamicCastToMatcher&lt; To &amp; &gt;</scope><name>GetToName</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_3_01_to_01_6_01_4_1a1eb76a60d0943519623f438b29f70a5f" prot="public" virt="non-virtual"><scope>testing::internal::WhenDynamicCastToMatcher&lt; To &amp; &gt;</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a40d697407c960bee8fe3b125f5ac8730" prot="protected" virt="non-virtual"><scope>testing::internal::WhenDynamicCastToMatcher&lt; To &amp; &gt;</scope><name>matcher_</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_3_01_to_01_6_01_4_1a1ba7bc63566075d2afe18905e5c7ad76" prot="public" virt="non-virtual"><scope>testing::internal::WhenDynamicCastToMatcher&lt; To &amp; &gt;</scope><name>WhenDynamicCastToMatcher</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a7da2a4c7c43d5e18db0a3233a601c8ab" prot="public" virt="non-virtual"><scope>testing::internal::WhenDynamicCastToMatcher&lt; To &amp; &gt;</scope><name>WhenDynamicCastToMatcherBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegmock__doctor" kind="namespace" language="Python">
+    <compoundname>gmock_doctor</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gmock__doctor_8py_1a5834be312e84670506af7df4a7b6bf51" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gmock_doctor.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;wan@google.com (Zhanyong Wan)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="34" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__doctor_8py_1a8f29d54c7339c9ac86409b5e78f63887" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gmock_doctor._VERSION</definition>
+        <argsstring></argsstring>
+        <name>_VERSION</name>
+        <initializer>=  &apos;1.0.3&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="39" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__doctor_8py_1af8532f014caa9251e48f07e08d92f855" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gmock_doctor._EMAIL</definition>
+        <argsstring></argsstring>
+        <name>_EMAIL</name>
+        <initializer>=  &apos;googlemock@googlegroups.com&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="41" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__doctor_8py_1ac704a49399e603fba5104e490f17fce3" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list gmock_doctor._COMMON_GMOCK_SYMBOLS</definition>
+        <argsstring></argsstring>
+        <name>_COMMON_GMOCK_SYMBOLS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="43" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__doctor_8py_1abfa92b554c13bc7b3f37bd53a52288b4" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gmock_doctor._GCC_FILE_LINE_RE</definition>
+        <argsstring></argsstring>
+        <name>_GCC_FILE_LINE_RE</name>
+        <initializer>=  r&apos;(?P&lt;file&gt;.*):(?P&lt;line&gt;\d+):(\d+:)?\s+&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="131" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__doctor_8py_1a068279bf4a0afdf3f2106351892a8c42" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gmock_doctor._CLANG_FILE_LINE_RE</definition>
+        <argsstring></argsstring>
+        <name>_CLANG_FILE_LINE_RE</name>
+        <initializer>=  r&apos;(?P&lt;file&gt;.*):(?P&lt;line&gt;\d+):(?P&lt;column&gt;\d+):\s+&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="132" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__doctor_8py_1a54b24983d4a31b34337e0ef6fdf4fe91" prot="private" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple gmock_doctor._CLANG_NON_GMOCK_FILE_LINE_RE</definition>
+        <argsstring></argsstring>
+        <name>_CLANG_NON_GMOCK_FILE_LINE_RE</name>
+        <initializer>=  (
+    r&apos;(?P&lt;file&gt;.*[/\\^](?!gmock-)[^/\\]+):(?P&lt;line&gt;\d+):(?P&lt;column&gt;\d+):\s+&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="133" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__doctor_8py_1ad8d4f979dbf1b3c8edb226d124571b4e" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list gmock_doctor._DIAGNOSERS</definition>
+        <argsstring></argsstring>
+        <name>_DIAGNOSERS</name>
+        <initializer>=  [
+    _IncompleteByReferenceArgumentDiagnoser,
+    _MockObjectPointerDiagnoser,
+    _NeedToReturnNothingDiagnoser,
+    _NeedToReturnReferenceDiagnoser,
+    _NeedToReturnSomethingDiagnoser,
+    _NeedToUseReturnNullDiagnoser,
+    _NeedToUseSymbolDiagnoser,
+    _OverloadedFunctionActionDiagnoser,
+    _OverloadedFunctionMatcherDiagnoser,
+    _OverloadedMethodActionDiagnoser,
+    _TypeInTemplatedBaseDiagnoser,
+    _WrongMockMethodMacroDiagnoser,
+    _WrongParenPositionDiagnoser,
+    ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="560" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="560" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gmock__doctor_8py_1af9f6b7d876afcfe52864f2b928f5e6ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor._FindAllMatches</definition>
+        <argsstring>(regex, s)</argsstring>
+        <name>_FindAllMatches</name>
+        <param>
+          <type>regex</type>
+          <defname>regex</defname>
+        </param>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generates all matches of regex in string s.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="137" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="137" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1af5023d3e12d1f4a7171c6b035783de84" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor._GenericDiagnoser</definition>
+        <argsstring>(short_name, long_name, diagnoses, msg)</argsstring>
+        <name>_GenericDiagnoser</name>
+        <param>
+          <type>short_name</type>
+          <defname>short_name</defname>
+        </param>
+        <param>
+          <type>long_name</type>
+          <defname>long_name</defname>
+        </param>
+        <param>
+          <type>diagnoses</type>
+          <defname>diagnoses</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Diagnoses the given disease by pattern matching.
+
+Can provide different diagnoses for different patterns.
+
+Args:
+  short_name: Short name of the disease.
+  long_name:  Long name of the disease.
+  diagnoses:  A list of pairs (regex, pattern for formatting the diagnosis
+              for matching regex).
+  msg:        Compiler&apos;s error messages.
+Yields:
+  Tuples of the form
+    (short name of disease, long name of disease, diagnosis).
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="144" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="144" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1aa922367471c9e517f839f98e0e3b0a1c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor._NeedToReturnReferenceDiagnoser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>_NeedToReturnReferenceDiagnoser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Diagnoses the NRR disease, given the error messages by the compiler.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="166" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="166" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1a1dc705b817ae15dbf51ebce10e47ed3f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor._NeedToReturnSomethingDiagnoser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>_NeedToReturnSomethingDiagnoser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Diagnoses the NRS disease, given the error messages by the compiler.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="191" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="191" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1a1d30848b5afc8437c05c03f9d4878a0d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor._NeedToReturnNothingDiagnoser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>_NeedToReturnNothingDiagnoser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Diagnoses the NRN disease, given the error messages by the compiler.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="218" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="218" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1a57b4c1486c344bd12e4138c588029c19" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor._IncompleteByReferenceArgumentDiagnoser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>_IncompleteByReferenceArgumentDiagnoser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Diagnoses the IBRA disease, given the error messages by the compiler.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="255" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="255" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1a82934d9b43f75ab1112a9436c1a31068" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor._OverloadedFunctionMatcherDiagnoser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>_OverloadedFunctionMatcherDiagnoser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Diagnoses the OFM disease, given the error messages by the compiler.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="282" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="282" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1a385cf8cf2ca6731bf66d721e2dbf89d1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor._OverloadedFunctionActionDiagnoser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>_OverloadedFunctionActionDiagnoser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Diagnoses the OFA disease, given the error messages by the compiler.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="303" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="303" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1a830bf3bac2d58666d82a75dfa0865c42" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor._OverloadedMethodActionDiagnoser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>_OverloadedMethodActionDiagnoser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Diagnoses the OMA disease, given the error messages by the compiler.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="328" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="328" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1a91e21533e0bc183c40f5a9873158a94b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor._MockObjectPointerDiagnoser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>_MockObjectPointerDiagnoser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Diagnoses the MOP disease, given the error messages by the compiler.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="357" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="357" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1a9ee9925aa81453f121d44e0ad8f1bbaf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor._NeedToUseSymbolDiagnoser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>_NeedToUseSymbolDiagnoser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Diagnoses the NUS disease, given the error messages by the compiler.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="396" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="396" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1af4268f4fc3c0e612231b6a5d53e9e578" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor._NeedToUseReturnNullDiagnoser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>_NeedToUseReturnNullDiagnoser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Diagnoses the NRNULL disease, given the error messages by the compiler.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="416" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="416" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1ac4e4908d4e43ef87f522365e99ec36c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor._TypeInTemplatedBaseDiagnoser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>_TypeInTemplatedBaseDiagnoser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Diagnoses the TTB disease, given the error messages by the compiler.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="442" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="442" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1a430611c0e038abaa33ae320b7118779b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor._WrongMockMethodMacroDiagnoser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>_WrongMockMethodMacroDiagnoser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Diagnoses the WMM disease, given the error messages by the compiler.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="511" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="511" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1a89b0bfee48942a164f7a4e1e923f3a48" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor._WrongParenPositionDiagnoser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>_WrongParenPositionDiagnoser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Diagnoses the WPP disease, given the error messages by the compiler.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="539" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="539" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1a8b791ed6679a0135862ebb3e8c27b2b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor.Diagnose</definition>
+        <argsstring>(msg)</argsstring>
+        <name>Diagnose</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generates all possible diagnoses given the compiler error message.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="577" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="577" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__doctor_8py_1a6eb6c47cf5a3a7c4266f473c0af6b82f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_doctor.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="594" column="1" bodyfile="vendor/googletest/googlemock/scripts/gmock_doctor.py" bodystart="594" bodyend="638"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/scripts/gmock_doctor.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

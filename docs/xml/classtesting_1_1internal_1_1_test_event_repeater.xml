@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_test_event_repeater" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::TestEventRepeater</compoundname>
+    <basecompoundref refid="classtesting_1_1_test_event_listener" prot="public" virt="non-virtual">testing::TestEventListener</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_test_event_repeater_1a1f7e494642d653eaad800504510d18a3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool testing::internal::TestEventRepeater::forwarding_enabled_</definition>
+        <argsstring></argsstring>
+        <name>forwarding_enabled_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3265" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_test_event_repeater_1a1c08e9302639108588d764b671c54825" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classtesting_1_1_test_event_listener" kindref="compound">TestEventListener</ref> * &gt;</type>
+        <definition>std::vector&lt;TestEventListener*&gt; testing::internal::TestEventRepeater::listeners_</definition>
+        <argsstring></argsstring>
+        <name>listeners_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3267" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3267" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1a97dc3b08bd62c615f16e4c73ed0b3894" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::TestEventRepeater::TestEventRepeater</definition>
+        <argsstring>()</argsstring>
+        <name>TestEventRepeater</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3238" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3238" bodyend="3238"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1a0f7129002fc4a33e29ce76a3b6df8d1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>testing::internal::TestEventRepeater::~TestEventRepeater</definition>
+        <argsstring>()</argsstring>
+        <name>~TestEventRepeater</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3239" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3272" bodyend="3274"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1ad154ce021881721a5c46994316b14cb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::TestEventRepeater::Append</definition>
+        <argsstring>(TestEventListener *listener)</argsstring>
+        <name>Append</name>
+        <param>
+          <type><ref refid="classtesting_1_1_test_event_listener" kindref="compound">TestEventListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3240" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3276" bodyend="3278"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1ac77a3d127e4726e11694e4ee9cf3b793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1_test_event_listener" kindref="compound">TestEventListener</ref> *</type>
+        <definition>TestEventListener * testing::internal::TestEventRepeater::Release</definition>
+        <argsstring>(TestEventListener *listener)</argsstring>
+        <name>Release</name>
+        <param>
+          <type><ref refid="classtesting_1_1_test_event_listener" kindref="compound">TestEventListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3241" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3281" bodyend="3290"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1abaf2bfc453fc0e1005fcfb0f95deac4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::TestEventRepeater::forwarding_enabled</definition>
+        <argsstring>() const</argsstring>
+        <name>forwarding_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3245" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3245" bodyend="3245"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1a86c52e311b70598a385a0589277e92e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::TestEventRepeater::set_forwarding_enabled</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>set_forwarding_enabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3246" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3246" bodyend="3246"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1a15ee2ff051063088d3a89a266d5ffcc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::TestEventRepeater::OnTestProgramStart</definition>
+        <argsstring>(const UnitTest &amp;unit_test)</argsstring>
+        <name>OnTestProgramStart</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1a5f6c84f39851e8a603a2d2e10063816b">OnTestProgramStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3248" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1a4062b3f070bb6531ab8494c13d3635d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void testing::internal::TestEventRepeater::OnTestIterationStart</definition>
+        <argsstring>(const UnitTest &amp;unit_test, int iteration)</argsstring>
+        <name>OnTestIterationStart</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1a60cc09b7907cb329d152eb5e7133bdeb">OnTestIterationStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iteration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3249" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3328" bodyend="3335"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1ae71819925adec0471fa7abc5072b8244" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::TestEventRepeater::OnEnvironmentsSetUpStart</definition>
+        <argsstring>(const UnitTest &amp;unit_test)</argsstring>
+        <name>OnEnvironmentsSetUpStart</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1aa6502e534919605be45f26a6daf9a40c">OnEnvironmentsSetUpStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3250" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1a3a92696df942dc92f985e52fddd6d303" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::TestEventRepeater::OnEnvironmentsSetUpEnd</definition>
+        <argsstring>(const UnitTest &amp;unit_test)</argsstring>
+        <name>OnEnvironmentsSetUpEnd</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1aaa1021d75f5dbf3f05c829c1cc520341">OnEnvironmentsSetUpEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3251" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1a70124c738caa338bcd723eb2a51c8b3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::TestEventRepeater::OnTestCaseStart</definition>
+        <argsstring>(const TestCase &amp;test_case)</argsstring>
+        <name>OnTestCaseStart</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1ab4ed885d63f5bbff8076c1329b3dfe36">OnTestCaseStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_case" kindref="compound">TestCase</ref> &amp;</type>
+          <declname>test_case</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1a70d694ca5010cc86cd458f7f529e6fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::TestEventRepeater::OnTestStart</definition>
+        <argsstring>(const TestInfo &amp;test_info)</argsstring>
+        <name>OnTestStart</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1ab4f6a0ca16ae75daf385b3b5914e1048">OnTestStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_info" kindref="compound">TestInfo</ref> &amp;</type>
+          <declname>test_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3253" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1ac8fb21da6802b1ebab9cad3eee9150eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::TestEventRepeater::OnTestPartResult</definition>
+        <argsstring>(const TestPartResult &amp;result)</argsstring>
+        <name>OnTestPartResult</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1a054f8705c883fa120b91473aff38f2ee">OnTestPartResult</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3254" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1aa0f13bded9369aae1c78583d7276f8b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::TestEventRepeater::OnTestEnd</definition>
+        <argsstring>(const TestInfo &amp;test_info)</argsstring>
+        <name>OnTestEnd</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1abb1c44525ef038500608b5dc2f17099b">OnTestEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_info" kindref="compound">TestInfo</ref> &amp;</type>
+          <declname>test_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1a0a335e1c3957a8c699ed56e37ea7b978" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::TestEventRepeater::OnTestCaseEnd</definition>
+        <argsstring>(const TestCase &amp;test_case)</argsstring>
+        <name>OnTestCaseEnd</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1ae61985e2ef76ac78379b077be57a9c36">OnTestCaseEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_case" kindref="compound">TestCase</ref> &amp;</type>
+          <declname>test_case</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3256" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1a30db75df2d9a65d787f31e16004613c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::TestEventRepeater::OnEnvironmentsTearDownStart</definition>
+        <argsstring>(const UnitTest &amp;unit_test)</argsstring>
+        <name>OnEnvironmentsTearDownStart</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1a468b5e6701bcb86cb2c956caadbba5e4">OnEnvironmentsTearDownStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3257" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1a8428220c4cf9f0cea2dfd9a70f07ab7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::TestEventRepeater::OnEnvironmentsTearDownEnd</definition>
+        <argsstring>(const UnitTest &amp;unit_test)</argsstring>
+        <name>OnEnvironmentsTearDownEnd</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1a9ea04fa7f447865ba76df35e12ba2092">OnEnvironmentsTearDownEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3258" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1a94253e3c11753328e8a031f39352708f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void testing::internal::TestEventRepeater::OnTestIterationEnd</definition>
+        <argsstring>(const UnitTest &amp;unit_test, int iteration)</argsstring>
+        <name>OnTestIterationEnd</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1a550fdb3e55726e4cefa09f5697941425">OnTestIterationEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iteration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3259" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3337" bodyend="3344"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1a4622616259747dbcc23f5ee39ef99ec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::TestEventRepeater::OnTestProgramEnd</definition>
+        <argsstring>(const UnitTest &amp;unit_test)</argsstring>
+        <name>OnTestProgramEnd</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1ad15b6246d94c268e233487a86463ef3d">OnTestProgramEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3260" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_event_repeater_1a882648737e85eff0986ff66b794e310a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::TestEventRepeater::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(TestEventRepeater)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_test_event_repeater" kindref="compound">TestEventRepeater</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest.cc" line="3269" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2132">
+        <label>testing::internal::TestEventRepeater</label>
+        <link refid="classtesting_1_1internal_1_1_test_event_repeater"/>
+        <childnode refid="2133" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2133">
+        <label>testing::TestEventListener</label>
+        <link refid="classtesting_1_1_test_event_listener"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2134">
+        <label>testing::internal::TestEventRepeater</label>
+        <link refid="classtesting_1_1internal_1_1_test_event_repeater"/>
+        <childnode refid="2135" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2135">
+        <label>testing::TestEventListener</label>
+        <link refid="classtesting_1_1_test_event_listener"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/src/gtest.cc" line="3236" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3236" bodyend="3270"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1ad154ce021881721a5c46994316b14cb1" prot="public" virt="non-virtual"><scope>testing::internal::TestEventRepeater</scope><name>Append</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1abaf2bfc453fc0e1005fcfb0f95deac4c" prot="public" virt="non-virtual"><scope>testing::internal::TestEventRepeater</scope><name>forwarding_enabled</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a1f7e494642d653eaad800504510d18a3" prot="private" virt="non-virtual"><scope>testing::internal::TestEventRepeater</scope><name>forwarding_enabled_</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a882648737e85eff0986ff66b794e310a" prot="private" virt="non-virtual"><scope>testing::internal::TestEventRepeater</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a1c08e9302639108588d764b671c54825" prot="private" virt="non-virtual"><scope>testing::internal::TestEventRepeater</scope><name>listeners_</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a3a92696df942dc92f985e52fddd6d303" prot="public" virt="virtual"><scope>testing::internal::TestEventRepeater</scope><name>OnEnvironmentsSetUpEnd</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1ae71819925adec0471fa7abc5072b8244" prot="public" virt="virtual"><scope>testing::internal::TestEventRepeater</scope><name>OnEnvironmentsSetUpStart</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a8428220c4cf9f0cea2dfd9a70f07ab7f" prot="public" virt="virtual"><scope>testing::internal::TestEventRepeater</scope><name>OnEnvironmentsTearDownEnd</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a30db75df2d9a65d787f31e16004613c2" prot="public" virt="virtual"><scope>testing::internal::TestEventRepeater</scope><name>OnEnvironmentsTearDownStart</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a0a335e1c3957a8c699ed56e37ea7b978" prot="public" virt="virtual"><scope>testing::internal::TestEventRepeater</scope><name>OnTestCaseEnd</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a70124c738caa338bcd723eb2a51c8b3e" prot="public" virt="virtual"><scope>testing::internal::TestEventRepeater</scope><name>OnTestCaseStart</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1aa0f13bded9369aae1c78583d7276f8b1" prot="public" virt="virtual"><scope>testing::internal::TestEventRepeater</scope><name>OnTestEnd</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a94253e3c11753328e8a031f39352708f" prot="public" virt="virtual"><scope>testing::internal::TestEventRepeater</scope><name>OnTestIterationEnd</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a4062b3f070bb6531ab8494c13d3635d3" prot="public" virt="virtual"><scope>testing::internal::TestEventRepeater</scope><name>OnTestIterationStart</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1ac8fb21da6802b1ebab9cad3eee9150eb" prot="public" virt="virtual"><scope>testing::internal::TestEventRepeater</scope><name>OnTestPartResult</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a4622616259747dbcc23f5ee39ef99ec0" prot="public" virt="virtual"><scope>testing::internal::TestEventRepeater</scope><name>OnTestProgramEnd</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a15ee2ff051063088d3a89a266d5ffcc4" prot="public" virt="virtual"><scope>testing::internal::TestEventRepeater</scope><name>OnTestProgramStart</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a70d694ca5010cc86cd458f7f529e6fbe" prot="public" virt="virtual"><scope>testing::internal::TestEventRepeater</scope><name>OnTestStart</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1ac77a3d127e4726e11694e4ee9cf3b793" prot="public" virt="non-virtual"><scope>testing::internal::TestEventRepeater</scope><name>Release</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a86c52e311b70598a385a0589277e92e0" prot="public" virt="non-virtual"><scope>testing::internal::TestEventRepeater</scope><name>set_forwarding_enabled</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a97dc3b08bd62c615f16e4c73ed0b3894" prot="public" virt="non-virtual"><scope>testing::internal::TestEventRepeater</scope><name>TestEventRepeater</name></member>
+      <member refid="classtesting_1_1_test_event_listener_1a4512d19e7a108ec4926239ec1ea85d63" prot="public" virt="virtual"><scope>testing::internal::TestEventRepeater</scope><name>~TestEventListener</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_event_repeater_1a0f7129002fc4a33e29ce76a3b6df8d1b" prot="public" virt="virtual"><scope>testing::internal::TestEventRepeater</scope><name>~TestEventRepeater</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_fatal_failure_in_fixture_constructor_test" kind="class" language="C++" prot="public">
+    <compoundname>FatalFailureInFixtureConstructorTest</compoundname>
+    <basecompoundref refid="classtesting_1_1_test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_fatal_failure_in_fixture_constructor_test_1a1dc9a5fcf0e1f22d614990a0fe2cb504" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FatalFailureInFixtureConstructorTest::FatalFailureInFixtureConstructorTest</definition>
+        <argsstring>()</argsstring>
+        <name>FatalFailureInFixtureConstructorTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="377" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="377" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fatal_failure_in_fixture_constructor_test_1a514709af7159172a12193a7508683c46" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FatalFailureInFixtureConstructorTest::~FatalFailureInFixtureConstructorTest</definition>
+        <argsstring>()</argsstring>
+        <name>~FatalFailureInFixtureConstructorTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="382" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="382" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fatal_failure_in_fixture_constructor_test_1a006d3ac0e7a4ad3c469c3b41dc7c42c3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void FatalFailureInFixtureConstructorTest::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplements refid="classtesting_1_1_test_1a190315150c303ddf801313fd1a777733">SetUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="386" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="386" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fatal_failure_in_fixture_constructor_test_1a2763026a557e1fce4e59bd16c4eced57" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void FatalFailureInFixtureConstructorTest::TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <reimplements refid="classtesting_1_1_test_1a5f0ab439802cbe0ef7552f1a9f791923">TearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="392" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="392" bodyend="396"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_fatal_failure_in_fixture_constructor_test_1a964f36872650e663673ec0ff67e43acf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FatalFailureInFixtureConstructorTest::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="399" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="399" bodyend="401"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="557">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="556">
+        <label>FatalFailureInFixtureConstructorTest</label>
+        <link refid="class_fatal_failure_in_fixture_constructor_test"/>
+        <childnode refid="557" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="559">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="558">
+        <label>FatalFailureInFixtureConstructorTest</label>
+        <link refid="class_fatal_failure_in_fixture_constructor_test"/>
+        <childnode refid="559" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="375" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="375" bodyend="402"/>
+    <listofallmembers>
+      <member refid="class_fatal_failure_in_fixture_constructor_test_1a1dc9a5fcf0e1f22d614990a0fe2cb504" prot="protected" virt="non-virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>FatalFailureInFixtureConstructorTest</name></member>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>HasNonfatalFailure</name></member>
+      <member refid="class_fatal_failure_in_fixture_constructor_test_1a964f36872650e663673ec0ff67e43acf" prot="private" virt="non-virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>Init</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>RecordProperty</name></member>
+      <member refid="class_fatal_failure_in_fixture_constructor_test_1a006d3ac0e7a4ad3c469c3b41dc7c42c3" prot="protected" virt="virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1_test_1a5ccbac42fee8c5b00b0bfe89b6c49d79" prot="public" virt="non-virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="class_fatal_failure_in_fixture_constructor_test_1a2763026a557e1fce4e59bd16c4eced57" prot="protected" virt="virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_test_1af374706cbaf0ffc460f4fd04e7c150f1" prot="public" virt="non-virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>Test</name></member>
+      <member refid="class_fatal_failure_in_fixture_constructor_test_1a514709af7159172a12193a7508683c46" prot="protected" virt="non-virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>~FatalFailureInFixtureConstructorTest</name></member>
+      <member refid="classtesting_1_1_test_1a2b0a62f1e667bbe8d8cb18d785bfa991" prot="public" virt="virtual"><scope>FatalFailureInFixtureConstructorTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

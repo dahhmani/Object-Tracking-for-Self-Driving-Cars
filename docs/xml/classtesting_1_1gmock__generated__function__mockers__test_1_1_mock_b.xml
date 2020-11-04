@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_b" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_generated_function_mockers_test::MockB</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_b_1a74072ea75eb47e4e91e40151396014a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::MockB::MockB</definition>
+        <argsstring>()</argsstring>
+        <name>MockB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="355" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="355" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_b_1af0a5dcd462fc478e5e7a1ef503aafb05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::MockB::MOCK_METHOD0</definition>
+        <argsstring>(DoB, void())</argsstring>
+        <name>MOCK_METHOD0</name>
+        <param>
+          <type>DoB</type>
+        </param>
+        <param>
+          <type>void()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="357" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_b_1ac4962d81dca6390be86f8de44cecff06" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::MockB::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(MockB)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_b" kindref="compound">MockB</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="360" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="353" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="353" bodyend="361"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_b_1ac4962d81dca6390be86f8de44cecff06" prot="private" virt="non-virtual"><scope>testing::gmock_generated_function_mockers_test::MockB</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_b_1af0a5dcd462fc478e5e7a1ef503aafb05" prot="public" virt="non-virtual"><scope>testing::gmock_generated_function_mockers_test::MockB</scope><name>MOCK_METHOD0</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_b_1a74072ea75eb47e4e91e40151396014a1" prot="public" virt="non-virtual"><scope>testing::gmock_generated_function_mockers_test::MockB</scope><name>MockB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

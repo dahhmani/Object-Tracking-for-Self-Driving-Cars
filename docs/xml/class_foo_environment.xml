@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_foo_environment" kind="class" language="C++" prot="public">
+    <compoundname>FooEnvironment</compoundname>
+    <basecompoundref refid="classtesting_1_1_environment" prot="public" virt="non-virtual">testing::Environment</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_foo_environment_1a7db8d8b312805aff437ae8534132a56d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void FooEnvironment::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplements refid="classtesting_1_1_environment_1a1bf8cafaa9d4eba9feb98655ee434eb3">SetUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="997" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="997" bodyend="999"/>
+      </memberdef>
+      <memberdef kind="function" id="class_foo_environment_1a99a2c9df52106cce9e7a4bdda53df802" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void FooEnvironment::TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <reimplements refid="classtesting_1_1_environment_1a039bdaa705c46b9b88234cf4d3bb6254">TearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="1001" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="1001" bodyend="1004"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="607">
+        <label>testing::Environment</label>
+        <link refid="classtesting_1_1_environment"/>
+      </node>
+      <node id="606">
+        <label>FooEnvironment</label>
+        <link refid="class_foo_environment"/>
+        <childnode refid="607" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="609">
+        <label>testing::Environment</label>
+        <link refid="classtesting_1_1_environment"/>
+      </node>
+      <node id="608">
+        <label>FooEnvironment</label>
+        <link refid="class_foo_environment"/>
+        <childnode refid="609" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="995" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="995" bodyend="1005"/>
+    <listofallmembers>
+      <member refid="class_foo_environment_1a7db8d8b312805aff437ae8534132a56d" prot="public" virt="virtual"><scope>FooEnvironment</scope><name>SetUp</name></member>
+      <member refid="class_foo_environment_1a99a2c9df52106cce9e7a4bdda53df802" prot="public" virt="virtual"><scope>FooEnvironment</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_environment_1a0e41c320362576d752cd1f44cabd57d4" prot="public" virt="virtual"><scope>FooEnvironment</scope><name>~Environment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

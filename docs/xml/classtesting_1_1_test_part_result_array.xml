@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_test_part_result_array" kind="class" language="C++" prot="public">
+    <compoundname>testing::TestPartResultArray</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1_test_part_result_array_1a288da4fd16773d079722d6824a63060f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref> &gt;</type>
+        <definition>std::vector&lt;TestPartResult&gt; testing::TestPartResultArray::array_</definition>
+        <argsstring></argsstring>
+        <name>array_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="140" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_array_1ac9bfc830989c5328d7ff2ba8fa3c072b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::TestPartResultArray::TestPartResultArray</definition>
+        <argsstring>()</argsstring>
+        <name>TestPartResultArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="128" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="128" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_array_1a01844bd505b18a666324617a1b459558" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::TestPartResultArray::Append</definition>
+        <argsstring>(const TestPartResult &amp;result)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="131" column="1" bodyfile="vendor/googletest/googletest/src/gtest-test-part.cc" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_array_1aa44d02a01c87f47393b07951bab6e025" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref> &amp;</type>
+        <definition>const TestPartResult &amp; testing::TestPartResultArray::GetTestPartResult</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>GetTestPartResult</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="134" column="1" bodyfile="vendor/googletest/googletest/src/gtest-test-part.cc" bodystart="73" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_array_1a31555f11ba42b81ddad0a26a87710d0a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::TestPartResultArray::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="137" column="1" bodyfile="vendor/googletest/googletest/src/gtest-test-part.cc" bodystart="83" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_array_1a2f4ea91cd0d12104d9a476a0f0c5b7fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::TestPartResultArray::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(TestPartResultArray)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1_test_part_result_array" kindref="compound">TestPartResultArray</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="142" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="126" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="126" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_test_part_result_array_1a01844bd505b18a666324617a1b459558" prot="public" virt="non-virtual"><scope>testing::TestPartResultArray</scope><name>Append</name></member>
+      <member refid="classtesting_1_1_test_part_result_array_1a288da4fd16773d079722d6824a63060f" prot="private" virt="non-virtual"><scope>testing::TestPartResultArray</scope><name>array_</name></member>
+      <member refid="classtesting_1_1_test_part_result_array_1aa44d02a01c87f47393b07951bab6e025" prot="public" virt="non-virtual"><scope>testing::TestPartResultArray</scope><name>GetTestPartResult</name></member>
+      <member refid="classtesting_1_1_test_part_result_array_1a2f4ea91cd0d12104d9a476a0f0c5b7fe" prot="private" virt="non-virtual"><scope>testing::TestPartResultArray</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1_test_part_result_array_1a31555f11ba42b81ddad0a26a87710d0a" prot="public" virt="non-virtual"><scope>testing::TestPartResultArray</scope><name>size</name></member>
+      <member refid="classtesting_1_1_test_part_result_array_1ac9bfc830989c5328d7ff2ba8fa3c072b" prot="public" virt="non-virtual"><scope>testing::TestPartResultArray</scope><name>TestPartResultArray</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

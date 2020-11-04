@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>testing::gmock_generated_function_mockers_test::FooInterface</compoundname>
+    <derivedcompoundref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_foo" prot="public" virt="non-virtual">testing::gmock_generated_function_mockers_test::MockFoo</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1ad4eb4709c9ae9b1cdaded8d05567cdbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual testing::gmock_generated_function_mockers_test::FooInterface::~FooInterface</definition>
+        <argsstring>()</argsstring>
+        <name>~FooInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="77" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1adf968115cf1260004d8abe372dc71c85" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void testing::gmock_generated_function_mockers_test::FooInterface::VoidReturning</definition>
+        <argsstring>(int x)=0</argsstring>
+        <name>VoidReturning</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a633e753eafa7f82dde22ecf9492f341c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int testing::gmock_generated_function_mockers_test::FooInterface::Nullary</definition>
+        <argsstring>()=0</argsstring>
+        <name>Nullary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1ae0885ac29bc4a3f180f6573d8b1a341e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool testing::gmock_generated_function_mockers_test::FooInterface::Unary</definition>
+        <argsstring>(int x)=0</argsstring>
+        <name>Unary</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a59ea28b711ece054ce9d57c2dc574ba0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>long</type>
+        <definition>virtual long testing::gmock_generated_function_mockers_test::FooInterface::Binary</definition>
+        <argsstring>(short x, int y)=0</argsstring>
+        <name>Binary</name>
+        <param>
+          <type>short</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a5c5886880581d8dd420c9a187ff884b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int testing::gmock_generated_function_mockers_test::FooInterface::Decimal</definition>
+        <argsstring>(bool b, char c, short d, int e, long f, float g, double h, unsigned i, char *j, const string &amp;k)=0</argsstring>
+        <name>Decimal</name>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a694354adfffcee58093298bc12182ff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool testing::gmock_generated_function_mockers_test::FooInterface::TakesNonConstReference</definition>
+        <argsstring>(int &amp;n)=0</argsstring>
+        <name>TakesNonConstReference</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a3db03c9698ecddfc62f2a1ed2f3c32c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string testing::gmock_generated_function_mockers_test::FooInterface::TakesConstReference</definition>
+        <argsstring>(const int &amp;n)=0</argsstring>
+        <name>TakesConstReference</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a8c53e87edf0b9da878e5259f02b7f5dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool testing::gmock_generated_function_mockers_test::FooInterface::TakesConst</definition>
+        <argsstring>(const int x)=0</argsstring>
+        <name>TakesConst</name>
+        <param>
+          <type>const int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1ae9e86ac64fa9acedfb1fa747174c7f43" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int testing::gmock_generated_function_mockers_test::FooInterface::OverloadedOnArgumentNumber</definition>
+        <argsstring>()=0</argsstring>
+        <name>OverloadedOnArgumentNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a1b5ff8cc745af475e0abba5d2858e1c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int testing::gmock_generated_function_mockers_test::FooInterface::OverloadedOnArgumentNumber</definition>
+        <argsstring>(int n)=0</argsstring>
+        <name>OverloadedOnArgumentNumber</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1ad9cc9a11570403fb8378ed6620892ec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int testing::gmock_generated_function_mockers_test::FooInterface::OverloadedOnArgumentType</definition>
+        <argsstring>(int n)=0</argsstring>
+        <name>OverloadedOnArgumentType</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a8cb6caa44216ba29fc228b016523abe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>char</type>
+        <definition>virtual char testing::gmock_generated_function_mockers_test::FooInterface::OverloadedOnArgumentType</definition>
+        <argsstring>(char c)=0</argsstring>
+        <name>OverloadedOnArgumentType</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1afbbe6ec72ae237de05e109dea5b03f4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int testing::gmock_generated_function_mockers_test::FooInterface::OverloadedOnConstness</definition>
+        <argsstring>()=0</argsstring>
+        <name>OverloadedOnConstness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1ab40007385078cdb675616a21ef254df4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>char</type>
+        <definition>virtual char testing::gmock_generated_function_mockers_test::FooInterface::OverloadedOnConstness</definition>
+        <argsstring>() const =0</argsstring>
+        <name>OverloadedOnConstness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a9e92ef227dc68806f85ebff9c8a6102a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int testing::gmock_generated_function_mockers_test::FooInterface::TypeWithHole</definition>
+        <argsstring>(int(*func)())=0</argsstring>
+        <name>TypeWithHole</name>
+        <param>
+          <type>int(*)()</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a654ade1e68b5adb922149898bfe4ccda" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int testing::gmock_generated_function_mockers_test::FooInterface::TypeWithComma</definition>
+        <argsstring>(const std::map&lt; int, string &gt; &amp;a_map)=0</argsstring>
+        <name>TypeWithComma</name>
+        <param>
+          <type>const std::map&lt; int, string &gt; &amp;</type>
+          <declname>a_map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="104" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="610">
+        <label>testing::gmock_generated_function_mockers_test::FooInterface</label>
+        <link refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface"/>
+      </node>
+      <node id="611">
+        <label>testing::gmock_generated_function_mockers_test::MockFoo</label>
+        <link refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_foo"/>
+        <childnode refid="610" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="75" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="75" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a59ea28b711ece054ce9d57c2dc574ba0" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>Binary</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a5c5886880581d8dd420c9a187ff884b2" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>Decimal</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a633e753eafa7f82dde22ecf9492f341c" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>Nullary</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1ae9e86ac64fa9acedfb1fa747174c7f43" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>OverloadedOnArgumentNumber</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a1b5ff8cc745af475e0abba5d2858e1c9" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>OverloadedOnArgumentNumber</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1ad9cc9a11570403fb8378ed6620892ec6" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>OverloadedOnArgumentType</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a8cb6caa44216ba29fc228b016523abe9" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>OverloadedOnArgumentType</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1afbbe6ec72ae237de05e109dea5b03f4f" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>OverloadedOnConstness</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1ab40007385078cdb675616a21ef254df4" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>OverloadedOnConstness</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a8c53e87edf0b9da878e5259f02b7f5dc" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>TakesConst</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a3db03c9698ecddfc62f2a1ed2f3c32c2" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>TakesConstReference</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a694354adfffcee58093298bc12182ff5" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>TakesNonConstReference</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a654ade1e68b5adb922149898bfe4ccda" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>TypeWithComma</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1a9e92ef227dc68806f85ebff9c8a6102a" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>TypeWithHole</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1ae0885ac29bc4a3f180f6573d8b1a341e" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>Unary</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1adf968115cf1260004d8abe372dc71c85" prot="public" virt="pure-virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>VoidReturning</name></member>
+      <member refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface_1ad4eb4709c9ae9b1cdaded8d05567cdbb" prot="public" virt="virtual"><scope>testing::gmock_generated_function_mockers_test::FooInterface</scope><name>~FooInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

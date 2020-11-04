@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegtest__throw__on__failure__test" kind="namespace" language="Python">
+    <compoundname>gtest_throw_on_failure_test</compoundname>
+    <innerclass refid="classgtest__throw__on__failure__test_1_1_throw_on_failure_test" prot="public">gtest_throw_on_failure_test::ThrowOnFailureTest</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gtest__throw__on__failure__test_8py_1afd3c4d4809a79f0b4de8b2372cba5bb8" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_throw_on_failure_test.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;wan@google.com (Zhanyong Wan)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" line="38" column="1" bodyfile="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__throw__on__failure__test_8py_1af837d05b7ed8498aed8202c1d83d1e7a" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_throw_on_failure_test.THROW_ON_FAILURE</definition>
+        <argsstring></argsstring>
+        <name>THROW_ON_FAILURE</name>
+        <initializer>=  &apos;gtest_throw_on_failure&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" line="47" column="1" bodyfile="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__throw__on__failure__test_8py_1ac38dda23e362ecc76943073d173294f1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gtest_throw_on_failure_test.EXE_PATH</definition>
+        <argsstring></argsstring>
+        <name>EXE_PATH</name>
+        <initializer>=  gtest_test_utils.GetTestExecutablePath(
+    &apos;gtest_throw_on_failure_test_&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" line="51" column="1" bodyfile="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gtest__throw__on__failure__test_8py_1a79d85cfffbf8e8381ba32483ddc305c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_throw_on_failure_test.SetEnvVar</definition>
+        <argsstring>(env_var, value)</argsstring>
+        <name>SetEnvVar</name>
+        <param>
+          <type>env_var</type>
+          <defname>env_var</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Sets an environment variable to a given value; unsets it when the
+given value is None.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" line="58" column="1" bodyfile="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" bodystart="58" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__throw__on__failure__test_8py_1a8ffdd989cd023f53d37f4f7993c017fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_throw_on_failure_test.Run</definition>
+        <argsstring>(command)</argsstring>
+        <name>Run</name>
+        <param>
+          <type>command</type>
+          <defname>command</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Runs a command; returns True/False if its exit code is/isn&apos;t 0.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" line="70" column="1" bodyfile="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" bodystart="70" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

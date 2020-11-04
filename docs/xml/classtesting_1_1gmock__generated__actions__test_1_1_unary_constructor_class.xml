@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__generated__actions__test_1_1_unary_constructor_class" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_generated_actions_test::UnaryConstructorClass</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtesting_1_1gmock__generated__actions__test_1_1_unary_constructor_class_1a5e96ce337c5eb7016eba2ea66ae46851" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::gmock_generated_actions_test::UnaryConstructorClass::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" line="1024" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" bodystart="1024" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__actions__test_1_1_unary_constructor_class_1a35b2c0aab3928c1d558c11b6652a7262" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_actions_test::UnaryConstructorClass::UnaryConstructorClass</definition>
+        <argsstring>(int value)</argsstring>
+        <name>UnaryConstructorClass</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" line="1023" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" bodystart="1023" bodyend="1023"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" line="1021" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" bodystart="1021" bodyend="1025"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__generated__actions__test_1_1_unary_constructor_class_1a35b2c0aab3928c1d558c11b6652a7262" prot="public" virt="non-virtual"><scope>testing::gmock_generated_actions_test::UnaryConstructorClass</scope><name>UnaryConstructorClass</name></member>
+      <member refid="classtesting_1_1gmock__generated__actions__test_1_1_unary_constructor_class_1a5e96ce337c5eb7016eba2ea66ae46851" prot="public" virt="non-virtual"><scope>testing::gmock_generated_actions_test::UnaryConstructorClass</scope><name>value_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,575 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_cheat_sheet_8md" kind="file" language="Markdown">
+    <compoundname>CheatSheet.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>a<sp/>Mock<sp/>Class<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Mocking<sp/>a<sp/>Normal<sp/>Class<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Given</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>Foo<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>~Foo();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>int<sp/>GetSize()<sp/>const<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>string<sp/>Describe(const<sp/>char*<sp/>name)<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>string<sp/>Describe(int<sp/>type)<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>bool<sp/>Process(Bar<sp/>elem,<sp/>int<sp/>count)<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">(note<sp/>that<sp/>`~Foo()`<sp/>**must**<sp/>be<sp/>virtual)<sp/>we<sp/>can<sp/>define<sp/>its<sp/>mock<sp/>as</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;gmock/gmock.h&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">class<sp/>MockFoo<sp/>:<sp/>public<sp/>Foo<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_CONST_METHOD0(GetSize,<sp/>int());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_METHOD1(Describe,<sp/>string(const<sp/>char*<sp/>name));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_METHOD1(Describe,<sp/>string(int<sp/>type));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_METHOD2(Process,<sp/>bool(Bar<sp/>elem,<sp/>int<sp/>count));</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>create<sp/>a<sp/>&quot;nice&quot;<sp/>mock<sp/>object<sp/>which<sp/>ignores<sp/>all<sp/>uninteresting<sp/>calls,</highlight></codeline>
+<codeline><highlight class="normal">or<sp/>a<sp/>&quot;strict&quot;<sp/>mock<sp/>object,<sp/>which<sp/>treats<sp/>them<sp/>as<sp/>failures:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">NiceMock&lt;MockFoo&gt;<sp/>nice_foo;<sp/><sp/><sp/><sp/><sp/>//<sp/>The<sp/>type<sp/>is<sp/>a<sp/>subclass<sp/>of<sp/>MockFoo.</highlight></codeline>
+<codeline><highlight class="normal">StrictMock&lt;MockFoo&gt;<sp/>strict_foo;<sp/>//<sp/>The<sp/>type<sp/>is<sp/>a<sp/>subclass<sp/>of<sp/>MockFoo.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Mocking<sp/>a<sp/>Class<sp/>Template<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>mock</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">template<sp/>&lt;typename<sp/>Elem&gt;</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>StackInterface<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>~StackInterface();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>int<sp/>GetSize()<sp/>const<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>void<sp/>Push(const<sp/>Elem&amp;<sp/>x)<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">(note<sp/>that<sp/>`~StackInterface()`<sp/>**must**<sp/>be<sp/>virtual)<sp/>just<sp/>append<sp/>`_T`<sp/>to<sp/>the<sp/>`MOCK_*`<sp/>macros:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">template<sp/>&lt;typename<sp/>Elem&gt;</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>MockStack<sp/>:<sp/>public<sp/>StackInterface&lt;Elem&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_CONST_METHOD0_T(GetSize,<sp/>int());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_METHOD1_T(Push,<sp/>void(const<sp/>Elem&amp;<sp/>x));</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Specifying<sp/>Calling<sp/>Conventions<sp/>for<sp/>Mock<sp/>Functions<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>your<sp/>mock<sp/>function<sp/>doesn&apos;t<sp/>use<sp/>the<sp/>default<sp/>calling<sp/>convention,<sp/>you</highlight></codeline>
+<codeline><highlight class="normal">can<sp/>specify<sp/>it<sp/>by<sp/>appending<sp/>`_WITH_CALLTYPE`<sp/>to<sp/>any<sp/>of<sp/>the<sp/>macros</highlight></codeline>
+<codeline><highlight class="normal">described<sp/>in<sp/>the<sp/>previous<sp/>two<sp/>sections<sp/>and<sp/>supplying<sp/>the<sp/>calling</highlight></codeline>
+<codeline><highlight class="normal">convention<sp/>as<sp/>the<sp/>first<sp/>argument<sp/>to<sp/>the<sp/>macro.<sp/>For<sp/>example,</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_METHOD_1_WITH_CALLTYPE(STDMETHODCALLTYPE,<sp/>Foo,<sp/>bool(int<sp/>n));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_CONST_METHOD2_WITH_CALLTYPE(STDMETHODCALLTYPE,<sp/>Bar,<sp/>int(double<sp/>x,<sp/>double<sp/>y));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>`STDMETHODCALLTYPE`<sp/>is<sp/>defined<sp/>by<sp/>`&lt;objbase.h&gt;`<sp/>on<sp/>Windows.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Using<sp/>Mocks<sp/>in<sp/>Tests<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>typical<sp/>flow<sp/>is:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Import<sp/>the<sp/>Google<sp/>Mock<sp/>names<sp/>you<sp/>need<sp/>to<sp/>use.<sp/>All<sp/>Google<sp/>Mock<sp/>names<sp/>are<sp/>in<sp/>the<sp/>`testing`<sp/>namespace<sp/>unless<sp/>they<sp/>are<sp/>macros<sp/>or<sp/>otherwise<sp/>noted.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Create<sp/>the<sp/>mock<sp/>objects.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Optionally,<sp/>set<sp/>the<sp/>default<sp/>actions<sp/>of<sp/>the<sp/>mock<sp/>objects.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Set<sp/>your<sp/>expectations<sp/>on<sp/>the<sp/>mock<sp/>objects<sp/>(How<sp/>will<sp/>they<sp/>be<sp/>called?<sp/>What<sp/>wil<sp/>they<sp/>do?).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Exercise<sp/>code<sp/>that<sp/>uses<sp/>the<sp/>mock<sp/>objects;<sp/>if<sp/>necessary,<sp/>check<sp/>the<sp/>result<sp/>using<sp/>[Google<sp/>Test](../../googletest/)<sp/>assertions.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>When<sp/>a<sp/>mock<sp/>objects<sp/>is<sp/>destructed,<sp/>Google<sp/>Mock<sp/>automatically<sp/>verifies<sp/>that<sp/>all<sp/>expectations<sp/>on<sp/>it<sp/>have<sp/>been<sp/>satisfied.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Here<sp/>is<sp/>an<sp/>example:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::Return;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>#1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">TEST(BarTest,<sp/>DoesThis)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MockFoo<sp/>foo;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>#2</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ON_CALL(foo,<sp/>GetSize())<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>#3</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.WillByDefault(Return(1));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>...<sp/>other<sp/>default<sp/>actions<sp/>...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_CALL(foo,<sp/>Describe(5))<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>#4</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.Times(3)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.WillRepeatedly(Return(&quot;Category<sp/>5&quot;));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>...<sp/>other<sp/>expectations<sp/>...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_EQ(&quot;good&quot;,<sp/>MyProductionFunction(&amp;foo));<sp/><sp/>//<sp/>#5</highlight></codeline>
+<codeline><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>#6</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Setting<sp/>Default<sp/>Actions<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Mock<sp/>has<sp/>a<sp/>**built-in<sp/>default<sp/>action**<sp/>for<sp/>any<sp/>function<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">returns<sp/>`void`,<sp/>`bool`,<sp/>a<sp/>numeric<sp/>value,<sp/>or<sp/>a<sp/>pointer.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>customize<sp/>the<sp/>default<sp/>action<sp/>for<sp/>functions<sp/>with<sp/>return<sp/>type<sp/>`T`<sp/>globally:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::DefaultValue;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Sets<sp/>the<sp/>default<sp/>value<sp/>to<sp/>be<sp/>returned.<sp/>T<sp/>must<sp/>be<sp/>CopyConstructible.</highlight></codeline>
+<codeline><highlight class="normal">DefaultValue&lt;T&gt;::Set(value);</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Sets<sp/>a<sp/>factory.<sp/>Will<sp/>be<sp/>invoked<sp/>on<sp/>demand.<sp/>T<sp/>must<sp/>be<sp/>MoveConstructible.</highlight></codeline>
+<codeline><highlight class="normal">//<sp/><sp/><sp/>T<sp/>MakeT();</highlight></codeline>
+<codeline><highlight class="normal">DefaultValue&lt;T&gt;::SetFactory(&amp;MakeT);</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>...<sp/>use<sp/>the<sp/>mocks<sp/>...</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Resets<sp/>the<sp/>default<sp/>value.</highlight></codeline>
+<codeline><highlight class="normal">DefaultValue&lt;T&gt;::Clear();</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>customize<sp/>the<sp/>default<sp/>action<sp/>for<sp/>a<sp/>particular<sp/>method,<sp/>use<sp/>`ON_CALL()`:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">ON_CALL(mock_object,<sp/>method(matchers))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.With(multi_argument_matcher)<sp/><sp/>?</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillByDefault(action);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Setting<sp/>Expectations<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`EXPECT_CALL()`<sp/>sets<sp/>**expectations**<sp/>on<sp/>a<sp/>mock<sp/>method<sp/>(How<sp/>will<sp/>it<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">called?<sp/>What<sp/>will<sp/>it<sp/>do?):</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(mock_object,<sp/>method(matchers))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.With(multi_argument_matcher)<sp/><sp/>?</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.Times(cardinality)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.InSequence(sequences)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.After(expectations)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(action)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillRepeatedly(action)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.RetiresOnSaturation();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>`Times()`<sp/>is<sp/>omitted,<sp/>the<sp/>cardinality<sp/>is<sp/>assumed<sp/>to<sp/>be:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>`Times(1)`<sp/>when<sp/>there<sp/>is<sp/>neither<sp/>`WillOnce()`<sp/>nor<sp/>`WillRepeatedly()`;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>`Times(n)`<sp/>when<sp/>there<sp/>are<sp/>`n<sp/>WillOnce()`s<sp/>but<sp/>no<sp/>`WillRepeatedly()`,<sp/>where<sp/>`n`<sp/>&gt;=<sp/>1;<sp/>or</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>`Times(AtLeast(n))`<sp/>when<sp/>there<sp/>are<sp/>`n<sp/>WillOnce()`s<sp/>and<sp/>a<sp/>`WillRepeatedly()`,<sp/>where<sp/>`n`<sp/>&gt;=<sp/>0.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>method<sp/>with<sp/>no<sp/>`EXPECT_CALL()`<sp/>is<sp/>free<sp/>to<sp/>be<sp/>invoked<sp/>_any<sp/>number<sp/>of<sp/>times_,<sp/>and<sp/>the<sp/>default<sp/>action<sp/>will<sp/>be<sp/>taken<sp/>each<sp/>time.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Matchers<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>**matcher**<sp/>matches<sp/>a<sp/>_single_<sp/>argument.<sp/><sp/>You<sp/>can<sp/>use<sp/>it<sp/>inside</highlight></codeline>
+<codeline><highlight class="normal">`ON_CALL()`<sp/>or<sp/>`EXPECT_CALL()`,<sp/>or<sp/>use<sp/>it<sp/>to<sp/>validate<sp/>a<sp/>value</highlight></codeline>
+<codeline><highlight class="normal">directly:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>`EXPECT_THAT(value,<sp/>matcher)`<sp/>|<sp/>Asserts<sp/>that<sp/>`value`<sp/>matches<sp/>`matcher`.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|:------------------------------|:----------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`ASSERT_THAT(value,<sp/>matcher)`<sp/>|<sp/>The<sp/>same<sp/>as<sp/>`EXPECT_THAT(value,<sp/>matcher)`,<sp/>except<sp/>that<sp/>it<sp/>generates<sp/>a<sp/>**fatal**<sp/>failure.<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Built-in<sp/>matchers<sp/>(where<sp/>`argument`<sp/>is<sp/>the<sp/>function<sp/>argument)<sp/>are</highlight></codeline>
+<codeline><highlight class="normal">divided<sp/>into<sp/>several<sp/>categories:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Wildcard<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">|`_`|`argument`<sp/>can<sp/>be<sp/>any<sp/>value<sp/>of<sp/>the<sp/>correct<sp/>type.|</highlight></codeline>
+<codeline><highlight class="normal">|:--|:-----------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`A&lt;type&gt;()`<sp/>or<sp/>`An&lt;type&gt;()`|`argument`<sp/>can<sp/>be<sp/>any<sp/>value<sp/>of<sp/>type<sp/>`type`.<sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Generic<sp/>Comparison<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`Eq(value)`<sp/>or<sp/>`value`|`argument<sp/>==<sp/>value`|</highlight></codeline>
+<codeline><highlight class="normal">|:---------------------|:------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`Ge(value)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|`argument<sp/>&gt;=<sp/>value`|</highlight></codeline>
+<codeline><highlight class="normal">|`Gt(value)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|`argument<sp/>&gt;<sp/>value`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`Le(value)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|`argument<sp/>&lt;=<sp/>value`|</highlight></codeline>
+<codeline><highlight class="normal">|`Lt(value)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|`argument<sp/>&lt;<sp/>value`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`Ne(value)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|`argument<sp/>!=<sp/>value`|</highlight></codeline>
+<codeline><highlight class="normal">|`IsNull()`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|`argument`<sp/>is<sp/>a<sp/>`NULL`<sp/>pointer<sp/>(raw<sp/>or<sp/>smart).|</highlight></codeline>
+<codeline><highlight class="normal">|`NotNull()`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|`argument`<sp/>is<sp/>a<sp/>non-null<sp/>pointer<sp/>(raw<sp/>or<sp/>smart).|</highlight></codeline>
+<codeline><highlight class="normal">|`Ref(variable)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|`argument`<sp/>is<sp/>a<sp/>reference<sp/>to<sp/>`variable`.|</highlight></codeline>
+<codeline><highlight class="normal">|`TypedEq&lt;type&gt;(value)`|`argument`<sp/>has<sp/>type<sp/>`type`<sp/>and<sp/>is<sp/>equal<sp/>to<sp/>`value`.<sp/>You<sp/>may<sp/>need<sp/>to<sp/>use<sp/>this<sp/>instead<sp/>of<sp/>`Eq(value)`<sp/>when<sp/>the<sp/>mock<sp/>function<sp/>is<sp/>overloaded.|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Except<sp/>`Ref()`,<sp/>these<sp/>matchers<sp/>make<sp/>a<sp/>_copy_<sp/>of<sp/>`value`<sp/>in<sp/>case<sp/>it&apos;s</highlight></codeline>
+<codeline><highlight class="normal">modified<sp/>or<sp/>destructed<sp/>later.<sp/>If<sp/>the<sp/>compiler<sp/>complains<sp/>that<sp/>`value`</highlight></codeline>
+<codeline><highlight class="normal">doesn&apos;t<sp/>have<sp/>a<sp/>public<sp/>copy<sp/>constructor,<sp/>try<sp/>wrap<sp/>it<sp/>in<sp/>`ByRef()`,</highlight></codeline>
+<codeline><highlight class="normal">e.g.<sp/>`Eq(ByRef(non_copyable_value))`.<sp/>If<sp/>you<sp/>do<sp/>that,<sp/>make<sp/>sure</highlight></codeline>
+<codeline><highlight class="normal">`non_copyable_value`<sp/>is<sp/>not<sp/>changed<sp/>afterwards,<sp/>or<sp/>the<sp/>meaning<sp/>of<sp/>your</highlight></codeline>
+<codeline><highlight class="normal">matcher<sp/>will<sp/>be<sp/>changed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Floating-Point<sp/>Matchers<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`DoubleEq(a_double)`|`argument`<sp/>is<sp/>a<sp/>`double`<sp/>value<sp/>approximately<sp/>equal<sp/>to<sp/>`a_double`,<sp/>treating<sp/>two<sp/>NaNs<sp/>as<sp/>unequal.|</highlight></codeline>
+<codeline><highlight class="normal">|:-------------------|:----------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`FloatEq(a_float)`<sp/><sp/>|`argument`<sp/>is<sp/>a<sp/>`float`<sp/>value<sp/>approximately<sp/>equal<sp/>to<sp/>`a_float`,<sp/>treating<sp/>two<sp/>NaNs<sp/>as<sp/>unequal.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`NanSensitiveDoubleEq(a_double)`|`argument`<sp/>is<sp/>a<sp/>`double`<sp/>value<sp/>approximately<sp/>equal<sp/>to<sp/>`a_double`,<sp/>treating<sp/>two<sp/>NaNs<sp/>as<sp/>equal.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`NanSensitiveFloatEq(a_float)`|`argument`<sp/>is<sp/>a<sp/>`float`<sp/>value<sp/>approximately<sp/>equal<sp/>to<sp/>`a_float`,<sp/>treating<sp/>two<sp/>NaNs<sp/>as<sp/>equal.<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>above<sp/>matchers<sp/>use<sp/>ULP-based<sp/>comparison<sp/>(the<sp/>same<sp/>as<sp/>used<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">[Google<sp/>Test](../../googletest/)).<sp/>They</highlight></codeline>
+<codeline><highlight class="normal">automatically<sp/>pick<sp/>a<sp/>reasonable<sp/>error<sp/>bound<sp/>based<sp/>on<sp/>the<sp/>absolute</highlight></codeline>
+<codeline><highlight class="normal">value<sp/>of<sp/>the<sp/>expected<sp/>value.<sp/><sp/>`DoubleEq()`<sp/>and<sp/>`FloatEq()`<sp/>conform<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>IEEE<sp/>standard,<sp/>which<sp/>requires<sp/>comparing<sp/>two<sp/>NaNs<sp/>for<sp/>equality<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">return<sp/>false.<sp/>The<sp/>`NanSensitive*`<sp/>version<sp/>instead<sp/>treats<sp/>two<sp/>NaNs<sp/>as</highlight></codeline>
+<codeline><highlight class="normal">equal,<sp/>which<sp/>is<sp/>often<sp/>what<sp/>a<sp/>user<sp/>wants.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`DoubleNear(a_double,<sp/>max_abs_error)`|`argument`<sp/>is<sp/>a<sp/>`double`<sp/>value<sp/>close<sp/>to<sp/>`a_double`<sp/>(absolute<sp/>error<sp/>&lt;=<sp/>`max_abs_error`),<sp/>treating<sp/>two<sp/>NaNs<sp/>as<sp/>unequal.|</highlight></codeline>
+<codeline><highlight class="normal">|:------------------------------------|:--------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`FloatNear(a_float,<sp/>max_abs_error)`<sp/><sp/>|`argument`<sp/>is<sp/>a<sp/>`float`<sp/>value<sp/>close<sp/>to<sp/>`a_float`<sp/>(absolute<sp/>error<sp/>&lt;=<sp/>`max_abs_error`),<sp/>treating<sp/>two<sp/>NaNs<sp/>as<sp/>unequal.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`NanSensitiveDoubleNear(a_double,<sp/>max_abs_error)`|`argument`<sp/>is<sp/>a<sp/>`double`<sp/>value<sp/>close<sp/>to<sp/>`a_double`<sp/>(absolute<sp/>error<sp/>&lt;=<sp/>`max_abs_error`),<sp/>treating<sp/>two<sp/>NaNs<sp/>as<sp/>equal.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`NanSensitiveFloatNear(a_float,<sp/>max_abs_error)`|`argument`<sp/>is<sp/>a<sp/>`float`<sp/>value<sp/>close<sp/>to<sp/>`a_float`<sp/>(absolute<sp/>error<sp/>&lt;=<sp/>`max_abs_error`),<sp/>treating<sp/>two<sp/>NaNs<sp/>as<sp/>equal.<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>String<sp/>Matchers<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>`argument`<sp/>can<sp/>be<sp/>either<sp/>a<sp/>C<sp/>string<sp/>or<sp/>a<sp/>C++<sp/>string<sp/>object:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`ContainsRegex(string)`|`argument`<sp/>matches<sp/>the<sp/>given<sp/>regular<sp/>expression.|</highlight></codeline>
+<codeline><highlight class="normal">|:----------------------|:-----------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`EndsWith(suffix)`<sp/><sp/><sp/><sp/><sp/>|`argument`<sp/>ends<sp/>with<sp/>string<sp/>`suffix`.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`HasSubstr(string)`<sp/><sp/><sp/><sp/>|`argument`<sp/>contains<sp/>`string`<sp/>as<sp/>a<sp/>sub-string.<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`MatchesRegex(string)`<sp/>|`argument`<sp/>matches<sp/>the<sp/>given<sp/>regular<sp/>expression<sp/>with<sp/>the<sp/>match<sp/>starting<sp/>at<sp/>the<sp/>first<sp/>character<sp/>and<sp/>ending<sp/>at<sp/>the<sp/>last<sp/>character.|</highlight></codeline>
+<codeline><highlight class="normal">|`StartsWith(prefix)`<sp/><sp/><sp/>|`argument`<sp/>starts<sp/>with<sp/>string<sp/>`prefix`.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`StrCaseEq(string)`<sp/><sp/><sp/><sp/>|`argument`<sp/>is<sp/>equal<sp/>to<sp/>`string`,<sp/>ignoring<sp/>case.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`StrCaseNe(string)`<sp/><sp/><sp/><sp/>|`argument`<sp/>is<sp/>not<sp/>equal<sp/>to<sp/>`string`,<sp/>ignoring<sp/>case.|</highlight></codeline>
+<codeline><highlight class="normal">|`StrEq(string)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|`argument`<sp/>is<sp/>equal<sp/>to<sp/>`string`.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`StrNe(string)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|`argument`<sp/>is<sp/>not<sp/>equal<sp/>to<sp/>`string`.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`ContainsRegex()`<sp/>and<sp/>`MatchesRegex()`<sp/>use<sp/>the<sp/>regular<sp/>expression</highlight></codeline>
+<codeline><highlight class="normal">syntax<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal">[here](../../googletest/docs/AdvancedGuide.md#regular-expression-syntax).</highlight></codeline>
+<codeline><highlight class="normal">`StrCaseEq()`,<sp/>`StrCaseNe()`,<sp/>`StrEq()`,<sp/>and<sp/>`StrNe()`<sp/>work<sp/>for<sp/>wide</highlight></codeline>
+<codeline><highlight class="normal">strings<sp/>as<sp/>well.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Container<sp/>Matchers<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Most<sp/>STL-style<sp/>containers<sp/>support<sp/>`==`,<sp/>so<sp/>you<sp/>can<sp/>use</highlight></codeline>
+<codeline><highlight class="normal">`Eq(expected_container)`<sp/>or<sp/>simply<sp/>`expected_container`<sp/>to<sp/>match<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">container<sp/>exactly.<sp/><sp/><sp/>If<sp/>you<sp/>want<sp/>to<sp/>write<sp/>the<sp/>elements<sp/>in-line,</highlight></codeline>
+<codeline><highlight class="normal">match<sp/>them<sp/>more<sp/>flexibly,<sp/>or<sp/>get<sp/>more<sp/>informative<sp/>messages,<sp/>you<sp/>can<sp/>use:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>`ContainerEq(container)`<sp/>|<sp/>The<sp/>same<sp/>as<sp/>`Eq(container)`<sp/>except<sp/>that<sp/>the<sp/>failure<sp/>message<sp/>also<sp/>includes<sp/>which<sp/>elements<sp/>are<sp/>in<sp/>one<sp/>container<sp/>but<sp/>not<sp/>the<sp/>other.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|:-------------------------|:---------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`Contains(e)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>`argument`<sp/>contains<sp/>an<sp/>element<sp/>that<sp/>matches<sp/>`e`,<sp/>which<sp/>can<sp/>be<sp/>either<sp/>a<sp/>value<sp/>or<sp/>a<sp/>matcher.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`Each(e)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>`argument`<sp/>is<sp/>a<sp/>container<sp/>where<sp/>_every_<sp/>element<sp/>matches<sp/>`e`,<sp/>which<sp/>can<sp/>be<sp/>either<sp/>a<sp/>value<sp/>or<sp/>a<sp/>matcher.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`ElementsAre(e0,<sp/>e1,<sp/>...,<sp/>en)`<sp/>|<sp/>`argument`<sp/>has<sp/>`n<sp/>+<sp/>1`<sp/>elements,<sp/>where<sp/>the<sp/>i-th<sp/>element<sp/>matches<sp/>`ei`,<sp/>which<sp/>can<sp/>be<sp/>a<sp/>value<sp/>or<sp/>a<sp/>matcher.<sp/>0<sp/>to<sp/>10<sp/>arguments<sp/>are<sp/>allowed.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`ElementsAreArray({<sp/>e0,<sp/>e1,<sp/>...,<sp/>en<sp/>})`,<sp/>`ElementsAreArray(array)`,<sp/>or<sp/>`ElementsAreArray(array,<sp/>count)`<sp/>|<sp/>The<sp/>same<sp/>as<sp/>`ElementsAre()`<sp/>except<sp/>that<sp/>the<sp/>expected<sp/>element<sp/>values/matchers<sp/>come<sp/>from<sp/>an<sp/>initializer<sp/>list,<sp/>STL-style<sp/>container,<sp/>or<sp/>C-style<sp/>array.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`IsEmpty()`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>`argument`<sp/>is<sp/>an<sp/>empty<sp/>container<sp/>(`container.empty()`).<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`Pointwise(m,<sp/>container)`<sp/>|<sp/>`argument`<sp/>contains<sp/>the<sp/>same<sp/>number<sp/>of<sp/>elements<sp/>as<sp/>in<sp/>`container`,<sp/>and<sp/>for<sp/>all<sp/>i,<sp/>(the<sp/>i-th<sp/>element<sp/>in<sp/>`argument`,<sp/>the<sp/>i-th<sp/>element<sp/>in<sp/>`container`)<sp/>match<sp/>`m`,<sp/>which<sp/>is<sp/>a<sp/>matcher<sp/>on<sp/>2-tuples.<sp/>E.g.<sp/>`Pointwise(Le(),<sp/>upper_bounds)`<sp/>verifies<sp/>that<sp/>each<sp/>element<sp/>in<sp/>`argument`<sp/>doesn&apos;t<sp/>exceed<sp/>the<sp/>corresponding<sp/>element<sp/>in<sp/>`upper_bounds`.<sp/>See<sp/>more<sp/>detail<sp/>below.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`SizeIs(m)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>`argument`<sp/>is<sp/>a<sp/>container<sp/>whose<sp/>size<sp/>matches<sp/>`m`.<sp/>E.g.<sp/>`SizeIs(2)`<sp/>or<sp/>`SizeIs(Lt(2))`.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`UnorderedElementsAre(e0,<sp/>e1,<sp/>...,<sp/>en)`<sp/>|<sp/>`argument`<sp/>has<sp/>`n<sp/>+<sp/>1`<sp/>elements,<sp/>and<sp/>under<sp/>some<sp/>permutation<sp/>each<sp/>element<sp/>matches<sp/>an<sp/>`ei`<sp/>(for<sp/>a<sp/>different<sp/>`i`),<sp/>which<sp/>can<sp/>be<sp/>a<sp/>value<sp/>or<sp/>a<sp/>matcher.<sp/>0<sp/>to<sp/>10<sp/>arguments<sp/>are<sp/>allowed.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`UnorderedElementsAreArray({<sp/>e0,<sp/>e1,<sp/>...,<sp/>en<sp/>})`,<sp/>`UnorderedElementsAreArray(array)`,<sp/>or<sp/>`UnorderedElementsAreArray(array,<sp/>count)`<sp/>|<sp/>The<sp/>same<sp/>as<sp/>`UnorderedElementsAre()`<sp/>except<sp/>that<sp/>the<sp/>expected<sp/>element<sp/>values/matchers<sp/>come<sp/>from<sp/>an<sp/>initializer<sp/>list,<sp/>STL-style<sp/>container,<sp/>or<sp/>C-style<sp/>array.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`WhenSorted(m)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>When<sp/>`argument`<sp/>is<sp/>sorted<sp/>using<sp/>the<sp/>`&lt;`<sp/>operator,<sp/>it<sp/>matches<sp/>container<sp/>matcher<sp/>`m`.<sp/>E.g.<sp/>`WhenSorted(UnorderedElementsAre(1,<sp/>2,<sp/>3))`<sp/>verifies<sp/>that<sp/>`argument`<sp/>contains<sp/>elements<sp/>`1`,<sp/>`2`,<sp/>and<sp/>`3`,<sp/>ignoring<sp/>order.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`WhenSortedBy(comparator,<sp/>m)`<sp/>|<sp/>The<sp/>same<sp/>as<sp/>`WhenSorted(m)`,<sp/>except<sp/>that<sp/>the<sp/>given<sp/>comparator<sp/>instead<sp/>of<sp/>`&lt;`<sp/>is<sp/>used<sp/>to<sp/>sort<sp/>`argument`.<sp/>E.g.<sp/>`WhenSortedBy(std::greater&lt;int&gt;(),<sp/>ElementsAre(3,<sp/>2,<sp/>1))`.<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Notes:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>These<sp/>matchers<sp/>can<sp/>also<sp/>match:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>1.<sp/>a<sp/>native<sp/>array<sp/>passed<sp/>by<sp/>reference<sp/>(e.g.<sp/>in<sp/>`Foo(const<sp/>int<sp/>(&amp;a)[5])`),<sp/>and</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>1.<sp/>an<sp/>array<sp/>passed<sp/>as<sp/>a<sp/>pointer<sp/>and<sp/>a<sp/>count<sp/>(e.g.<sp/>in<sp/>`Bar(const<sp/>T*<sp/>buffer,<sp/>int<sp/>len)`<sp/>--<sp/>see<sp/>[Multi-argument<sp/>Matchers](#Multiargument_Matchers.md)).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>The<sp/>array<sp/>being<sp/>matched<sp/>may<sp/>be<sp/>multi-dimensional<sp/>(i.e.<sp/>its<sp/>elements<sp/>can<sp/>be<sp/>arrays).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>`m`<sp/>in<sp/>`Pointwise(m,<sp/>...)`<sp/>should<sp/>be<sp/>a<sp/>matcher<sp/>for<sp/>`::testing::tuple&lt;T,<sp/>U&gt;`<sp/>where<sp/>`T`<sp/>and<sp/>`U`<sp/>are<sp/>the<sp/>element<sp/>type<sp/>of<sp/>the<sp/>actual<sp/>container<sp/>and<sp/>the<sp/>expected<sp/>container,<sp/>respectively.<sp/>For<sp/>example,<sp/>to<sp/>compare<sp/>two<sp/>`Foo`<sp/>containers<sp/>where<sp/>`Foo`<sp/>doesn&apos;t<sp/>support<sp/>`operator==`<sp/>but<sp/>has<sp/>an<sp/>`Equals()`<sp/>method,<sp/>one<sp/>might<sp/>write:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::get;</highlight></codeline>
+<codeline><highlight class="normal">MATCHER(FooEq,<sp/>&quot;&quot;)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>get&lt;0&gt;(arg).Equals(get&lt;1&gt;(arg));</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_THAT(actual_foos,<sp/>Pointwise(FooEq(),<sp/>expected_foos));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Member<sp/>Matchers<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`Field(&amp;class::field,<sp/>m)`|`argument.field`<sp/>(or<sp/>`argument-&gt;field`<sp/>when<sp/>`argument`<sp/>is<sp/>a<sp/>plain<sp/>pointer)<sp/>matches<sp/>matcher<sp/>`m`,<sp/>where<sp/>`argument`<sp/>is<sp/>an<sp/>object<sp/>of<sp/>type<sp/>_class_.|</highlight></codeline>
+<codeline><highlight class="normal">|:------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`Key(e)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|`argument.first`<sp/>matches<sp/>`e`,<sp/>which<sp/>can<sp/>be<sp/>either<sp/>a<sp/>value<sp/>or<sp/>a<sp/>matcher.<sp/>E.g.<sp/>`Contains(Key(Le(5)))`<sp/>can<sp/>verify<sp/>that<sp/>a<sp/>`map`<sp/>contains<sp/>a<sp/>key<sp/>`&lt;=<sp/>5`.|</highlight></codeline>
+<codeline><highlight class="normal">|`Pair(m1,<sp/>m2)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|`argument`<sp/>is<sp/>an<sp/>`std::pair`<sp/>whose<sp/>`first`<sp/>field<sp/>matches<sp/>`m1`<sp/>and<sp/>`second`<sp/>field<sp/>matches<sp/>`m2`.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`Property(&amp;class::property,<sp/>m)`|`argument.property()`<sp/>(or<sp/>`argument-&gt;property()`<sp/>when<sp/>`argument`<sp/>is<sp/>a<sp/>plain<sp/>pointer)<sp/>matches<sp/>matcher<sp/>`m`,<sp/>where<sp/>`argument`<sp/>is<sp/>an<sp/>object<sp/>of<sp/>type<sp/>_class_.|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Matching<sp/>the<sp/>Result<sp/>of<sp/>a<sp/>Function<sp/>or<sp/>Functor<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`ResultOf(f,<sp/>m)`|`f(argument)`<sp/>matches<sp/>matcher<sp/>`m`,<sp/>where<sp/>`f`<sp/>is<sp/>a<sp/>function<sp/>or<sp/>functor.|</highlight></codeline>
+<codeline><highlight class="normal">|:---------------|:---------------------------------------------------------------------|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Pointer<sp/>Matchers<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`Pointee(m)`|`argument`<sp/>(either<sp/>a<sp/>smart<sp/>pointer<sp/>or<sp/>a<sp/>raw<sp/>pointer)<sp/>points<sp/>to<sp/>a<sp/>value<sp/>that<sp/>matches<sp/>matcher<sp/>`m`.|</highlight></codeline>
+<codeline><highlight class="normal">|:-----------|:-----------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`WhenDynamicCastTo&lt;T&gt;(m)`|<sp/>when<sp/>`argument`<sp/>is<sp/>passed<sp/>through<sp/>`dynamic_cast&lt;T&gt;()`,<sp/>it<sp/>matches<sp/>matcher<sp/>`m`.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Multiargument<sp/>Matchers<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Technically,<sp/>all<sp/>matchers<sp/>match<sp/>a<sp/>_single_<sp/>value.<sp/>A<sp/>&quot;multi-argument&quot;</highlight></codeline>
+<codeline><highlight class="normal">matcher<sp/>is<sp/>just<sp/>one<sp/>that<sp/>matches<sp/>a<sp/>_tuple_.<sp/>The<sp/>following<sp/>matchers<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">be<sp/>used<sp/>to<sp/>match<sp/>a<sp/>tuple<sp/>`(x,<sp/>y)`:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`Eq()`|`x<sp/>==<sp/>y`|</highlight></codeline>
+<codeline><highlight class="normal">|:-----|:-------|</highlight></codeline>
+<codeline><highlight class="normal">|`Ge()`|`x<sp/>&gt;=<sp/>y`|</highlight></codeline>
+<codeline><highlight class="normal">|`Gt()`|`x<sp/>&gt;<sp/>y`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`Le()`|`x<sp/>&lt;=<sp/>y`|</highlight></codeline>
+<codeline><highlight class="normal">|`Lt()`|`x<sp/>&lt;<sp/>y`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`Ne()`|`x<sp/>!=<sp/>y`|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>use<sp/>the<sp/>following<sp/>selectors<sp/>to<sp/>pick<sp/>a<sp/>subset<sp/>of<sp/>the<sp/>arguments</highlight></codeline>
+<codeline><highlight class="normal">(or<sp/>reorder<sp/>them)<sp/>to<sp/>participate<sp/>in<sp/>the<sp/>matching:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`AllArgs(m)`|Equivalent<sp/>to<sp/>`m`.<sp/>Useful<sp/>as<sp/>syntactic<sp/>sugar<sp/>in<sp/>`.With(AllArgs(m))`.|</highlight></codeline>
+<codeline><highlight class="normal">|:-----------|:-------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`Args&lt;N1,<sp/>N2,<sp/>...,<sp/>Nk&gt;(m)`|The<sp/>tuple<sp/>of<sp/>the<sp/>`k`<sp/>selected<sp/>(using<sp/>0-based<sp/>indices)<sp/>arguments<sp/>matches<sp/>`m`,<sp/>e.g.<sp/>`Args&lt;1,<sp/>2&gt;(Eq())`.|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Composite<sp/>Matchers<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>make<sp/>a<sp/>matcher<sp/>from<sp/>one<sp/>or<sp/>more<sp/>other<sp/>matchers:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`AllOf(m1,<sp/>m2,<sp/>...,<sp/>mn)`|`argument`<sp/>matches<sp/>all<sp/>of<sp/>the<sp/>matchers<sp/>`m1`<sp/>to<sp/>`mn`.|</highlight></codeline>
+<codeline><highlight class="normal">|:-----------------------|:---------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`AnyOf(m1,<sp/>m2,<sp/>...,<sp/>mn)`|`argument`<sp/>matches<sp/>at<sp/>least<sp/>one<sp/>of<sp/>the<sp/>matchers<sp/>`m1`<sp/>to<sp/>`mn`.|</highlight></codeline>
+<codeline><highlight class="normal">|`Not(m)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|`argument`<sp/>doesn&apos;t<sp/>match<sp/>matcher<sp/>`m`.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Adapters<sp/>for<sp/>Matchers<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`MatcherCast&lt;T&gt;(m)`|casts<sp/>matcher<sp/>`m`<sp/>to<sp/>type<sp/>`Matcher&lt;T&gt;`.|</highlight></codeline>
+<codeline><highlight class="normal">|:------------------|:--------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`SafeMatcherCast&lt;T&gt;(m)`|<sp/>[safely<sp/>casts](CookBook.md#casting-matchers)<sp/>matcher<sp/>`m`<sp/>to<sp/>type<sp/>`Matcher&lt;T&gt;`.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`Truly(predicate)`<sp/>|`predicate(argument)`<sp/>returns<sp/>something<sp/>considered<sp/>by<sp/>C++<sp/>to<sp/>be<sp/>true,<sp/>where<sp/>`predicate`<sp/>is<sp/>a<sp/>function<sp/>or<sp/>functor.|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Matchers<sp/>as<sp/>Predicates<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`Matches(m)(value)`|evaluates<sp/>to<sp/>`true`<sp/>if<sp/>`value`<sp/>matches<sp/>`m`.<sp/>You<sp/>can<sp/>use<sp/>`Matches(m)`<sp/>alone<sp/>as<sp/>a<sp/>unary<sp/>functor.|</highlight></codeline>
+<codeline><highlight class="normal">|:------------------|:---------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`ExplainMatchResult(m,<sp/>value,<sp/>result_listener)`|evaluates<sp/>to<sp/>`true`<sp/>if<sp/>`value`<sp/>matches<sp/>`m`,<sp/>explaining<sp/>the<sp/>result<sp/>to<sp/>`result_listener`.<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`Value(value,<sp/>m)`<sp/><sp/>|evaluates<sp/>to<sp/>`true`<sp/>if<sp/>`value`<sp/>matches<sp/>`m`.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Defining<sp/>Matchers<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>`MATCHER(IsEven,<sp/>&quot;&quot;)<sp/>{<sp/>return<sp/>(arg<sp/>%<sp/>2)<sp/>==<sp/>0;<sp/>}`<sp/>|<sp/>Defines<sp/>a<sp/>matcher<sp/>`IsEven()`<sp/>to<sp/>match<sp/>an<sp/>even<sp/>number.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|:-------------------------------------------------|:------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`MATCHER_P(IsDivisibleBy,<sp/>n,<sp/>&quot;&quot;)<sp/>{<sp/>*result_listener<sp/>&lt;&lt;<sp/>&quot;where<sp/>the<sp/>remainder<sp/>is<sp/>&quot;<sp/>&lt;&lt;<sp/>(arg<sp/>%<sp/>n);<sp/>return<sp/>(arg<sp/>%<sp/>n)<sp/>==<sp/>0;<sp/>}`<sp/>|<sp/>Defines<sp/>a<sp/>macher<sp/>`IsDivisibleBy(n)`<sp/>to<sp/>match<sp/>a<sp/>number<sp/>divisible<sp/>by<sp/>`n`.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`MATCHER_P2(IsBetween,<sp/>a,<sp/>b,<sp/>std::string(negation<sp/>?<sp/>&quot;isn&apos;t&quot;<sp/>:<sp/>&quot;is&quot;)<sp/>+<sp/>&quot;<sp/>between<sp/>&quot;<sp/>+<sp/>PrintToString(a)<sp/>+<sp/>&quot;<sp/>and<sp/>&quot;<sp/>+<sp/>PrintToString(b))<sp/>{<sp/>return<sp/>a<sp/>&lt;=<sp/>arg<sp/>&amp;&amp;<sp/>arg<sp/>&lt;=<sp/>b;<sp/>}`<sp/>|<sp/>Defines<sp/>a<sp/>matcher<sp/>`IsBetween(a,<sp/>b)`<sp/>to<sp/>match<sp/>a<sp/>value<sp/>in<sp/>the<sp/>range<sp/>[`a`,<sp/>`b`].<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Notes:**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>The<sp/>`MATCHER*`<sp/>macros<sp/>cannot<sp/>be<sp/>used<sp/>inside<sp/>a<sp/>function<sp/>or<sp/>class.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>The<sp/>matcher<sp/>body<sp/>must<sp/>be<sp/>_purely<sp/>functional_<sp/>(i.e.<sp/>it<sp/>cannot<sp/>have<sp/>any<sp/>side<sp/>effect,<sp/>and<sp/>the<sp/>result<sp/>must<sp/>not<sp/>depend<sp/>on<sp/>anything<sp/>other<sp/>than<sp/>the<sp/>value<sp/>being<sp/>matched<sp/>and<sp/>the<sp/>matcher<sp/>parameters).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>You<sp/>can<sp/>use<sp/>`PrintToString(x)`<sp/>to<sp/>convert<sp/>a<sp/>value<sp/>`x`<sp/>of<sp/>any<sp/>type<sp/>to<sp/>a<sp/>string.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Matchers<sp/>as<sp/>Test<sp/>Assertions<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`ASSERT_THAT(expression,<sp/>m)`|Generates<sp/>a<sp/>[fatal<sp/>failure](../../googletest/docs/Primer.md#assertions)<sp/>if<sp/>the<sp/>value<sp/>of<sp/>`expression`<sp/>doesn&apos;t<sp/>match<sp/>matcher<sp/>`m`.|</highlight></codeline>
+<codeline><highlight class="normal">|:---------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`EXPECT_THAT(expression,<sp/>m)`|Generates<sp/>a<sp/>non-fatal<sp/>failure<sp/>if<sp/>the<sp/>value<sp/>of<sp/>`expression`<sp/>doesn&apos;t<sp/>match<sp/>matcher<sp/>`m`.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Actions<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Actions**<sp/>specify<sp/>what<sp/>a<sp/>mock<sp/>function<sp/>should<sp/>do<sp/>when<sp/>invoked.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Returning<sp/>a<sp/>Value<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`Return()`|Return<sp/>from<sp/>a<sp/>`void`<sp/>mock<sp/>function.|</highlight></codeline>
+<codeline><highlight class="normal">|:---------|:----------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`Return(value)`|Return<sp/>`value`.<sp/>If<sp/>the<sp/>type<sp/>of<sp/>`value`<sp/>is<sp/>different<sp/>to<sp/>the<sp/>mock<sp/>function&apos;s<sp/>return<sp/>type,<sp/>`value`<sp/>is<sp/>converted<sp/>to<sp/>the<sp/>latter<sp/>type<sp/>&lt;i&gt;at<sp/>the<sp/>time<sp/>the<sp/>expectation<sp/>is<sp/>set&lt;/i&gt;,<sp/>not<sp/>when<sp/>the<sp/>action<sp/>is<sp/>executed.|</highlight></codeline>
+<codeline><highlight class="normal">|`ReturnArg&lt;N&gt;()`|Return<sp/>the<sp/>`N`-th<sp/>(0-based)<sp/>argument.|</highlight></codeline>
+<codeline><highlight class="normal">|`ReturnNew&lt;T&gt;(a1,<sp/>...,<sp/>ak)`|Return<sp/>`new<sp/>T(a1,<sp/>...,<sp/>ak)`;<sp/>a<sp/>different<sp/>object<sp/>is<sp/>created<sp/>each<sp/>time.|</highlight></codeline>
+<codeline><highlight class="normal">|`ReturnNull()`|Return<sp/>a<sp/>null<sp/>pointer.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`ReturnPointee(ptr)`|Return<sp/>the<sp/>value<sp/>pointed<sp/>to<sp/>by<sp/>`ptr`.|</highlight></codeline>
+<codeline><highlight class="normal">|`ReturnRef(variable)`|Return<sp/>a<sp/>reference<sp/>to<sp/>`variable`.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`ReturnRefOfCopy(value)`|Return<sp/>a<sp/>reference<sp/>to<sp/>a<sp/>copy<sp/>of<sp/>`value`;<sp/>the<sp/>copy<sp/>lives<sp/>as<sp/>long<sp/>as<sp/>the<sp/>action.|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Side<sp/>Effects<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`Assign(&amp;variable,<sp/>value)`|Assign<sp/>`value`<sp/>to<sp/>variable.|</highlight></codeline>
+<codeline><highlight class="normal">|:-------------------------|:--------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`DeleteArg&lt;N&gt;()`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Delete<sp/>the<sp/>`N`-th<sp/>(0-based)<sp/>argument,<sp/>which<sp/>must<sp/>be<sp/>a<sp/>pointer.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`SaveArg&lt;N&gt;(pointer)`<sp/><sp/><sp/><sp/>|<sp/>Save<sp/>the<sp/>`N`-th<sp/>(0-based)<sp/>argument<sp/>to<sp/>`*pointer`.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`SaveArgPointee&lt;N&gt;(pointer)`<sp/>|<sp/>Save<sp/>the<sp/>value<sp/>pointed<sp/>to<sp/>by<sp/>the<sp/>`N`-th<sp/>(0-based)<sp/>argument<sp/>to<sp/>`*pointer`.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`SetArgReferee&lt;N&gt;(value)`<sp/>|<sp/><sp/><sp/>Assign<sp/>value<sp/>to<sp/>the<sp/>variable<sp/>referenced<sp/>by<sp/>the<sp/>`N`-th<sp/>(0-based)<sp/>argument.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`SetArgPointee&lt;N&gt;(value)`<sp/>|Assign<sp/>`value`<sp/>to<sp/>the<sp/>variable<sp/>pointed<sp/>by<sp/>the<sp/>`N`-th<sp/>(0-based)<sp/>argument.|</highlight></codeline>
+<codeline><highlight class="normal">|`SetArgumentPointee&lt;N&gt;(value)`|Same<sp/>as<sp/>`SetArgPointee&lt;N&gt;(value)`.<sp/>Deprecated.<sp/>Will<sp/>be<sp/>removed<sp/>in<sp/>v1.7.0.|</highlight></codeline>
+<codeline><highlight class="normal">|`SetArrayArgument&lt;N&gt;(first,<sp/>last)`|Copies<sp/>the<sp/>elements<sp/>in<sp/>source<sp/>range<sp/>[`first`,<sp/>`last`)<sp/>to<sp/>the<sp/>array<sp/>pointed<sp/>to<sp/>by<sp/>the<sp/>`N`-th<sp/>(0-based)<sp/>argument,<sp/>which<sp/>can<sp/>be<sp/>either<sp/>a<sp/>pointer<sp/>or<sp/>an<sp/>iterator.<sp/>The<sp/>action<sp/>does<sp/>not<sp/>take<sp/>ownership<sp/>of<sp/>the<sp/>elements<sp/>in<sp/>the<sp/>source<sp/>range.|</highlight></codeline>
+<codeline><highlight class="normal">|`SetErrnoAndReturn(error,<sp/>value)`|Set<sp/>`errno`<sp/>to<sp/>`error`<sp/>and<sp/>return<sp/>`value`.|</highlight></codeline>
+<codeline><highlight class="normal">|`Throw(exception)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|Throws<sp/>the<sp/>given<sp/>exception,<sp/>which<sp/>can<sp/>be<sp/>any<sp/>copyable<sp/>value.<sp/>Available<sp/>since<sp/>v1.1.0.|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Using<sp/>a<sp/>Function<sp/>or<sp/>a<sp/>Functor<sp/>as<sp/>an<sp/>Action<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`Invoke(f)`|Invoke<sp/>`f`<sp/>with<sp/>the<sp/>arguments<sp/>passed<sp/>to<sp/>the<sp/>mock<sp/>function,<sp/>where<sp/>`f`<sp/>can<sp/>be<sp/>a<sp/>global/static<sp/>function<sp/>or<sp/>a<sp/>functor.|</highlight></codeline>
+<codeline><highlight class="normal">|:----------|:-----------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`Invoke(object_pointer,<sp/>&amp;class::method)`|Invoke<sp/>the<sp/>{method<sp/>on<sp/>the<sp/>object<sp/>with<sp/>the<sp/>arguments<sp/>passed<sp/>to<sp/>the<sp/>mock<sp/>function.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`InvokeWithoutArgs(f)`|Invoke<sp/>`f`,<sp/>which<sp/>can<sp/>be<sp/>a<sp/>global/static<sp/>function<sp/>or<sp/>a<sp/>functor.<sp/>`f`<sp/>must<sp/>take<sp/>no<sp/>arguments.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`InvokeWithoutArgs(object_pointer,<sp/>&amp;class::method)`|Invoke<sp/>the<sp/>method<sp/>on<sp/>the<sp/>object,<sp/>which<sp/>takes<sp/>no<sp/>arguments.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`InvokeArgument&lt;N&gt;(arg1,<sp/>arg2,<sp/>...,<sp/>argk)`|Invoke<sp/>the<sp/>mock<sp/>function&apos;s<sp/>`N`-th<sp/>(0-based)<sp/>argument,<sp/>which<sp/>must<sp/>be<sp/>a<sp/>function<sp/>or<sp/>a<sp/>functor,<sp/>with<sp/>the<sp/>`k`<sp/>arguments.|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>return<sp/>value<sp/>of<sp/>the<sp/>invoked<sp/>function<sp/>is<sp/>used<sp/>as<sp/>the<sp/>return<sp/>value</highlight></codeline>
+<codeline><highlight class="normal">of<sp/>the<sp/>action.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">When<sp/>defining<sp/>a<sp/>function<sp/>or<sp/>functor<sp/>to<sp/>be<sp/>used<sp/>with<sp/>`Invoke*()`,<sp/>you<sp/>can<sp/>declare<sp/>any<sp/>unused<sp/>parameters<sp/>as<sp/>`Unused`:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>double<sp/>Distance(Unused,<sp/>double<sp/>x,<sp/>double<sp/>y)<sp/>{<sp/>return<sp/>sqrt(x*x<sp/>+<sp/>y*y);<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_CALL(mock,<sp/>Foo(&quot;Hi&quot;,<sp/>_,<sp/>_)).WillOnce(Invoke(Distance));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>`InvokeArgument&lt;N&gt;(...)`,<sp/>if<sp/>an<sp/>argument<sp/>needs<sp/>to<sp/>be<sp/>passed<sp/>by<sp/>reference,<sp/>wrap<sp/>it<sp/>inside<sp/>`ByRef()`.<sp/>For<sp/>example,</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>InvokeArgument&lt;2&gt;(5,<sp/>string(&quot;Hi&quot;),<sp/>ByRef(foo))</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">calls<sp/>the<sp/>mock<sp/>function&apos;s<sp/>#2<sp/>argument,<sp/>passing<sp/>to<sp/>it<sp/>`5`<sp/>and<sp/>`string(&quot;Hi&quot;)`<sp/>by<sp/>value,<sp/>and<sp/>`foo`<sp/>by<sp/>reference.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Default<sp/>Action<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`DoDefault()`|Do<sp/>the<sp/>default<sp/>action<sp/>(specified<sp/>by<sp/>`ON_CALL()`<sp/>or<sp/>the<sp/>built-in<sp/>one).|</highlight></codeline>
+<codeline><highlight class="normal">|:------------|:--------------------------------------------------------------------|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Note:**<sp/>due<sp/>to<sp/>technical<sp/>reasons,<sp/>`DoDefault()`<sp/>cannot<sp/>be<sp/>used<sp/>inside<sp/><sp/>a<sp/>composite<sp/>action<sp/>-<sp/>trying<sp/>to<sp/>do<sp/>so<sp/>will<sp/>result<sp/>in<sp/>a<sp/>run-time<sp/>error.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Composite<sp/>Actions<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`DoAll(a1,<sp/>a2,<sp/>...,<sp/>an)`|Do<sp/>all<sp/>actions<sp/>`a1`<sp/>to<sp/>`an`<sp/>and<sp/>return<sp/>the<sp/>result<sp/>of<sp/>`an`<sp/>in<sp/>each<sp/>invocation.<sp/>The<sp/>first<sp/>`n<sp/>-<sp/>1`<sp/>sub-actions<sp/>must<sp/>return<sp/>void.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|:-----------------------|:-----------------------------------------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`IgnoreResult(a)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|Perform<sp/>action<sp/>`a`<sp/>and<sp/>ignore<sp/>its<sp/>result.<sp/>`a`<sp/>must<sp/>not<sp/>return<sp/>void.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`WithArg&lt;N&gt;(a)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|Pass<sp/>the<sp/>`N`-th<sp/>(0-based)<sp/>argument<sp/>of<sp/>the<sp/>mock<sp/>function<sp/>to<sp/>action<sp/>`a`<sp/>and<sp/>perform<sp/>it.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`WithArgs&lt;N1,<sp/>N2,<sp/>...,<sp/>Nk&gt;(a)`|Pass<sp/>the<sp/>selected<sp/>(0-based)<sp/>arguments<sp/>of<sp/>the<sp/>mock<sp/>function<sp/>to<sp/>action<sp/>`a`<sp/>and<sp/>perform<sp/>it.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`WithoutArgs(a)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|Perform<sp/>action<sp/>`a`<sp/>without<sp/>any<sp/>arguments.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Defining<sp/>Actions<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>`ACTION(Sum)<sp/>{<sp/>return<sp/>arg0<sp/>+<sp/>arg1;<sp/>}`<sp/>|<sp/>Defines<sp/>an<sp/>action<sp/>`Sum()`<sp/>to<sp/>return<sp/>the<sp/>sum<sp/>of<sp/>the<sp/>mock<sp/>function&apos;s<sp/>argument<sp/>#0<sp/>and<sp/>#1.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|:--------------------------------------|:---------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`ACTION_P(Plus,<sp/>n)<sp/>{<sp/>return<sp/>arg0<sp/>+<sp/>n;<sp/>}`<sp/>|<sp/>Defines<sp/>an<sp/>action<sp/>`Plus(n)`<sp/>to<sp/>return<sp/>the<sp/>sum<sp/>of<sp/>the<sp/>mock<sp/>function&apos;s<sp/>argument<sp/>#0<sp/>and<sp/>`n`.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`ACTION_Pk(Foo,<sp/>p1,<sp/>...,<sp/>pk)<sp/>{<sp/>statements;<sp/>}`<sp/>|<sp/>Defines<sp/>a<sp/>parameterized<sp/>action<sp/>`Foo(p1,<sp/>...,<sp/>pk)`<sp/>to<sp/>execute<sp/>the<sp/>given<sp/>`statements`.<sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>`ACTION*`<sp/>macros<sp/>cannot<sp/>be<sp/>used<sp/>inside<sp/>a<sp/>function<sp/>or<sp/>class.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Cardinalities<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">These<sp/>are<sp/>used<sp/>in<sp/>`Times()`<sp/>to<sp/>specify<sp/>how<sp/>many<sp/>times<sp/>a<sp/>mock<sp/>function<sp/>will<sp/>be<sp/>called:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|`AnyNumber()`|The<sp/>function<sp/>can<sp/>be<sp/>called<sp/>any<sp/>number<sp/>of<sp/>times.|</highlight></codeline>
+<codeline><highlight class="normal">|:------------|:----------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|`AtLeast(n)`<sp/>|The<sp/>call<sp/>is<sp/>expected<sp/>at<sp/>least<sp/>`n`<sp/>times.<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`AtMost(n)`<sp/><sp/>|The<sp/>call<sp/>is<sp/>expected<sp/>at<sp/>most<sp/>`n`<sp/>times.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|`Between(m,<sp/>n)`|The<sp/>call<sp/>is<sp/>expected<sp/>between<sp/>`m`<sp/>and<sp/>`n`<sp/>(inclusive)<sp/>times.|</highlight></codeline>
+<codeline><highlight class="normal">|`Exactly(n)<sp/>or<sp/>n`|The<sp/>call<sp/>is<sp/>expected<sp/>exactly<sp/>`n`<sp/>times.<sp/>In<sp/>particular,<sp/>the<sp/>call<sp/>should<sp/>never<sp/>happen<sp/>when<sp/>`n`<sp/>is<sp/>0.|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Expectation<sp/>Order<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">By<sp/>default,<sp/>the<sp/>expectations<sp/>can<sp/>be<sp/>matched<sp/>in<sp/>_any_<sp/>order.<sp/><sp/>If<sp/>some</highlight></codeline>
+<codeline><highlight class="normal">or<sp/>all<sp/>expectations<sp/>must<sp/>be<sp/>matched<sp/>in<sp/>a<sp/>given<sp/>order,<sp/>there<sp/>are<sp/>two</highlight></codeline>
+<codeline><highlight class="normal">ways<sp/>to<sp/>specify<sp/>it.<sp/><sp/>They<sp/>can<sp/>be<sp/>used<sp/>either<sp/>independently<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">together.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>The<sp/>After<sp/>Clause<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::Expectation;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">Expectation<sp/>init_x<sp/>=<sp/>EXPECT_CALL(foo,<sp/>InitX());</highlight></codeline>
+<codeline><highlight class="normal">Expectation<sp/>init_y<sp/>=<sp/>EXPECT_CALL(foo,<sp/>InitY());</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(foo,<sp/>Bar())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.After(init_x,<sp/>init_y);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">says<sp/>that<sp/>`Bar()`<sp/>can<sp/>be<sp/>called<sp/>only<sp/>after<sp/>both<sp/>`InitX()`<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">`InitY()`<sp/>have<sp/>been<sp/>called.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>don&apos;t<sp/>know<sp/>how<sp/>many<sp/>pre-requisites<sp/>an<sp/>expectation<sp/>has<sp/>when<sp/>you</highlight></codeline>
+<codeline><highlight class="normal">write<sp/>it,<sp/>you<sp/>can<sp/>use<sp/>an<sp/>`ExpectationSet`<sp/>to<sp/>collect<sp/>them:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::ExpectationSet;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">ExpectationSet<sp/>all_inits;</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>(int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>element_count;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>all_inits<sp/>+=<sp/>EXPECT_CALL(foo,<sp/>InitElement(i));</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(foo,<sp/>Bar())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.After(all_inits);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">says<sp/>that<sp/>`Bar()`<sp/>can<sp/>be<sp/>called<sp/>only<sp/>after<sp/>all<sp/>elements<sp/>have<sp/>been</highlight></codeline>
+<codeline><highlight class="normal">initialized<sp/>(but<sp/>we<sp/>don&apos;t<sp/>care<sp/>about<sp/>which<sp/>elements<sp/>get<sp/>initialized</highlight></codeline>
+<codeline><highlight class="normal">before<sp/>the<sp/>others).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Modifying<sp/>an<sp/>`ExpectationSet`<sp/>after<sp/>using<sp/>it<sp/>in<sp/>an<sp/>`.After()`<sp/>doesn&apos;t</highlight></codeline>
+<codeline><highlight class="normal">affect<sp/>the<sp/>meaning<sp/>of<sp/>the<sp/>`.After()`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Sequences<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">When<sp/>you<sp/>have<sp/>a<sp/>long<sp/>chain<sp/>of<sp/>sequential<sp/>expectations,<sp/>it&apos;s<sp/>easier<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">specify<sp/>the<sp/>order<sp/>using<sp/>**sequences**,<sp/>which<sp/>don&apos;t<sp/>require<sp/>you<sp/>to<sp/>given</highlight></codeline>
+<codeline><highlight class="normal">each<sp/>expectation<sp/>in<sp/>the<sp/>chain<sp/>a<sp/>different<sp/>name.<sp/><sp/>&lt;i&gt;All<sp/>expected&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal">calls&lt;/i&gt;<sp/>in<sp/>the<sp/>same<sp/>sequence<sp/>must<sp/>occur<sp/>in<sp/>the<sp/>order<sp/>they<sp/>are</highlight></codeline>
+<codeline><highlight class="normal">specified.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::Sequence;</highlight></codeline>
+<codeline><highlight class="normal">Sequence<sp/>s1,<sp/>s2;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(foo,<sp/>Reset())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.InSequence(s1,<sp/>s2)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(Return(true));</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(foo,<sp/>GetSize())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.InSequence(s1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(Return(1));</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(foo,<sp/>Describe(A&lt;const<sp/>char*&gt;()))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.InSequence(s2)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(Return(&quot;dummy&quot;));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">says<sp/>that<sp/>`Reset()`<sp/>must<sp/>be<sp/>called<sp/>before<sp/>_both_<sp/>`GetSize()`<sp/>_and_</highlight></codeline>
+<codeline><highlight class="normal">`Describe()`,<sp/>and<sp/>the<sp/>latter<sp/>two<sp/>can<sp/>occur<sp/>in<sp/>any<sp/>order.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>put<sp/>many<sp/>expectations<sp/>in<sp/>a<sp/>sequence<sp/>conveniently:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::InSequence;</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>InSequence<sp/>dummy;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_CALL(...)...;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_CALL(...)...;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_CALL(...)...;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">says<sp/>that<sp/>all<sp/>expected<sp/>calls<sp/>in<sp/>the<sp/>scope<sp/>of<sp/>`dummy`<sp/>must<sp/>occur<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">strict<sp/>order.<sp/>The<sp/>name<sp/>`dummy`<sp/>is<sp/>irrelevant.)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Verifying<sp/>and<sp/>Resetting<sp/>a<sp/>Mock<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Mock<sp/>will<sp/>verify<sp/>the<sp/>expectations<sp/>on<sp/>a<sp/>mock<sp/>object<sp/>when<sp/>it<sp/>is<sp/>destructed,<sp/>or<sp/>you<sp/>can<sp/>do<sp/>it<sp/>earlier:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::Mock;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Verifies<sp/>and<sp/>removes<sp/>the<sp/>expectations<sp/>on<sp/>mock_obj;</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>returns<sp/>true<sp/>iff<sp/>successful.</highlight></codeline>
+<codeline><highlight class="normal">Mock::VerifyAndClearExpectations(&amp;mock_obj);</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Verifies<sp/>and<sp/>removes<sp/>the<sp/>expectations<sp/>on<sp/>mock_obj;</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>also<sp/>removes<sp/>the<sp/>default<sp/>actions<sp/>set<sp/>by<sp/>ON_CALL();</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>returns<sp/>true<sp/>iff<sp/>successful.</highlight></codeline>
+<codeline><highlight class="normal">Mock::VerifyAndClear(&amp;mock_obj);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>also<sp/>tell<sp/>Google<sp/>Mock<sp/>that<sp/>a<sp/>mock<sp/>object<sp/>can<sp/>be<sp/>leaked<sp/>and<sp/>doesn&apos;t</highlight></codeline>
+<codeline><highlight class="normal">need<sp/>to<sp/>be<sp/>verified:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Mock::AllowLeak(&amp;mock_obj);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Mock<sp/>Classes<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Mock<sp/>defines<sp/>a<sp/>convenient<sp/>mock<sp/>class<sp/>template</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>MockFunction&lt;R(A1,<sp/>...,<sp/>An)&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_METHODn(Call,<sp/>R(A1,<sp/>...,<sp/>An));</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">See<sp/>this<sp/>[recipe](CookBook.md#using-check-points)<sp/>for<sp/>one<sp/>application<sp/>of<sp/>it.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Flags<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>`--gmock_catch_leaked_mocks=0`<sp/>|<sp/>Don&apos;t<sp/>report<sp/>leaked<sp/>mock<sp/>objects<sp/>as<sp/>failures.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|:-------------------------------|:----------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`--gmock_verbose=LEVEL`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Sets<sp/>the<sp/>default<sp/>verbosity<sp/>level<sp/>(`info`,<sp/>`warning`,<sp/>or<sp/>`error`)<sp/>of<sp/>Google<sp/>Mock<sp/>messages.<sp/>|</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googlemock/docs/CheatSheet.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_v1__6___pump_manual_8md" kind="file" language="Markdown">
+    <compoundname>V1_6_PumpManual.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;b&gt;P&lt;/b&gt;ump<sp/>is<sp/>&lt;b&gt;U&lt;/b&gt;seful<sp/>for<sp/>&lt;b&gt;M&lt;/b&gt;eta<sp/>&lt;b&gt;P&lt;/b&gt;rogramming.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>Problem<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Template<sp/>and<sp/>macro<sp/>libraries<sp/>often<sp/>need<sp/>to<sp/>define<sp/>many<sp/>classes,</highlight></codeline>
+<codeline><highlight class="normal">functions,<sp/>or<sp/>macros<sp/>that<sp/>vary<sp/>only<sp/>(or<sp/>almost<sp/>only)<sp/>in<sp/>the<sp/>number<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">arguments<sp/>they<sp/>take.<sp/>It&apos;s<sp/>a<sp/>lot<sp/>of<sp/>repetitive,<sp/>mechanical,<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">error-prone<sp/>work.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Variadic<sp/>templates<sp/>and<sp/>variadic<sp/>macros<sp/>can<sp/>alleviate<sp/>the<sp/>problem.</highlight></codeline>
+<codeline><highlight class="normal">However,<sp/>while<sp/>both<sp/>are<sp/>being<sp/>considered<sp/>by<sp/>the<sp/>C++<sp/>committee,<sp/>neither</highlight></codeline>
+<codeline><highlight class="normal">is<sp/>in<sp/>the<sp/>standard<sp/>yet<sp/>or<sp/>widely<sp/>supported<sp/>by<sp/>compilers.<sp/><sp/>Thus<sp/>they</highlight></codeline>
+<codeline><highlight class="normal">are<sp/>often<sp/>not<sp/>a<sp/>good<sp/>choice,<sp/>especially<sp/>when<sp/>your<sp/>code<sp/>needs<sp/>to<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">portable.<sp/>And<sp/>their<sp/>capabilities<sp/>are<sp/>still<sp/>limited.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>a<sp/>result,<sp/>authors<sp/>of<sp/>such<sp/>libraries<sp/>often<sp/>have<sp/>to<sp/>write<sp/>scripts<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">generate<sp/>their<sp/>implementation.<sp/>However,<sp/>our<sp/>experience<sp/>is<sp/>that<sp/>it&apos;s</highlight></codeline>
+<codeline><highlight class="normal">tedious<sp/>to<sp/>write<sp/>such<sp/>scripts,<sp/>which<sp/>tend<sp/>to<sp/>reflect<sp/>the<sp/>structure<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>generated<sp/>code<sp/>poorly<sp/>and<sp/>are<sp/>often<sp/>hard<sp/>to<sp/>read<sp/>and<sp/>edit.<sp/>For</highlight></codeline>
+<codeline><highlight class="normal">example,<sp/>a<sp/>small<sp/>change<sp/>needed<sp/>in<sp/>the<sp/>generated<sp/>code<sp/>may<sp/>require<sp/>some</highlight></codeline>
+<codeline><highlight class="normal">non-intuitive,<sp/>non-trivial<sp/>changes<sp/>in<sp/>the<sp/>script.<sp/>This<sp/>is<sp/>especially</highlight></codeline>
+<codeline><highlight class="normal">painful<sp/>when<sp/>experimenting<sp/>with<sp/>the<sp/>code.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Our<sp/>Solution<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Pump<sp/>(for<sp/>Pump<sp/>is<sp/>Useful<sp/>for<sp/>Meta<sp/>Programming,<sp/>Pretty<sp/>Useful<sp/>for<sp/>Meta</highlight></codeline>
+<codeline><highlight class="normal">Programming,<sp/>or<sp/>Practical<sp/>Utility<sp/>for<sp/>Meta<sp/>Programming,<sp/>whichever<sp/>you</highlight></codeline>
+<codeline><highlight class="normal">prefer)<sp/>is<sp/>a<sp/>simple<sp/>meta-programming<sp/>tool<sp/>for<sp/>C++.<sp/>The<sp/>idea<sp/>is<sp/>that<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">programmer<sp/>writes<sp/>a<sp/>`foo.pump`<sp/>file<sp/>which<sp/>contains<sp/>C++<sp/>code<sp/>plus<sp/>meta</highlight></codeline>
+<codeline><highlight class="normal">code<sp/>that<sp/>manipulates<sp/>the<sp/>C++<sp/>code.<sp/>The<sp/>meta<sp/>code<sp/>can<sp/>handle</highlight></codeline>
+<codeline><highlight class="normal">iterations<sp/>over<sp/>a<sp/>range,<sp/>nested<sp/>iterations,<sp/>local<sp/>meta<sp/>variable</highlight></codeline>
+<codeline><highlight class="normal">definitions,<sp/>simple<sp/>arithmetic,<sp/>and<sp/>conditional<sp/>expressions.<sp/>You<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">view<sp/>it<sp/>as<sp/>a<sp/>small<sp/>Domain-Specific<sp/>Language.<sp/>The<sp/>meta<sp/>language<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">designed<sp/>to<sp/>be<sp/>non-intrusive<sp/>(s.t.<sp/>it<sp/>won&apos;t<sp/>confuse<sp/>Emacs&apos;<sp/>C++<sp/>mode,</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>example)<sp/>and<sp/>concise,<sp/>making<sp/>Pump<sp/>code<sp/>intuitive<sp/>and<sp/>easy<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">maintain.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Highlights<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>The<sp/>implementation<sp/>is<sp/>in<sp/>a<sp/>single<sp/>Python<sp/>script<sp/>and<sp/>thus<sp/>ultra<sp/>portable:<sp/>no<sp/>build<sp/>or<sp/>installation<sp/>is<sp/>needed<sp/>and<sp/>it<sp/>works<sp/>cross<sp/>platforms.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Pump<sp/>tries<sp/>to<sp/>be<sp/>smart<sp/>with<sp/>respect<sp/>to<sp/>[Google&apos;s<sp/>style<sp/>guide](http://code.google.com/p/google-styleguide/):<sp/>it<sp/>breaks<sp/>long<sp/>lines<sp/>(easy<sp/>to<sp/>have<sp/>when<sp/>they<sp/>are<sp/>generated)<sp/>at<sp/>acceptable<sp/>places<sp/>to<sp/>fit<sp/>within<sp/>80<sp/>columns<sp/>and<sp/>indent<sp/>the<sp/>continuation<sp/>lines<sp/>correctly.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>The<sp/>format<sp/>is<sp/>human-readable<sp/>and<sp/>more<sp/>concise<sp/>than<sp/>XML.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>The<sp/>format<sp/>works<sp/>relatively<sp/>well<sp/>with<sp/>Emacs&apos;<sp/>C++<sp/>mode.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Examples<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>following<sp/>Pump<sp/>code<sp/>(where<sp/>meta<sp/>keywords<sp/>start<sp/>with<sp/>`$`,<sp/>`[[`<sp/>and<sp/>`]]`<sp/>are<sp/>meta<sp/>brackets,<sp/>and<sp/>`$$`<sp/>starts<sp/>a<sp/>meta<sp/>comment<sp/>that<sp/>ends<sp/>with<sp/>the<sp/>line):</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">$var<sp/>n<sp/>=<sp/>3<sp/><sp/><sp/><sp/><sp/>$$<sp/>Defines<sp/>a<sp/>meta<sp/>variable<sp/>n.</highlight></codeline>
+<codeline><highlight class="normal">$range<sp/>i<sp/>0..n<sp/><sp/>$$<sp/>Declares<sp/>the<sp/>range<sp/>of<sp/>meta<sp/>iterator<sp/>i<sp/>(inclusive).</highlight></codeline>
+<codeline><highlight class="normal">$for<sp/>i<sp/>[[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$$<sp/>Meta<sp/>loop.</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Foo$i<sp/>does<sp/>blah<sp/>for<sp/>$i-ary<sp/>predicates.</highlight></codeline>
+<codeline><highlight class="normal">$range<sp/>j<sp/>1..i</highlight></codeline>
+<codeline><highlight class="normal">template<sp/>&lt;size_t<sp/>N<sp/>$for<sp/>j<sp/>[[,<sp/>typename<sp/>A$j]]&gt;</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>Foo$i<sp/>{</highlight></codeline>
+<codeline><highlight class="normal">$if<sp/>i<sp/>==<sp/>0<sp/>[[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>blah<sp/>a;</highlight></codeline>
+<codeline><highlight class="normal">]]<sp/>$elif<sp/>i<sp/>&lt;=<sp/>2<sp/>[[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>blah<sp/>b;</highlight></codeline>
+<codeline><highlight class="normal">]]<sp/>$else<sp/>[[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>blah<sp/>c;</highlight></codeline>
+<codeline><highlight class="normal">]]</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">]]</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">will<sp/>be<sp/>translated<sp/>by<sp/>the<sp/>Pump<sp/>compiler<sp/>to:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Foo0<sp/>does<sp/>blah<sp/>for<sp/>0-ary<sp/>predicates.</highlight></codeline>
+<codeline><highlight class="normal">template<sp/>&lt;size_t<sp/>N&gt;</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>Foo0<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>blah<sp/>a;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Foo1<sp/>does<sp/>blah<sp/>for<sp/>1-ary<sp/>predicates.</highlight></codeline>
+<codeline><highlight class="normal">template<sp/>&lt;size_t<sp/>N,<sp/>typename<sp/>A1&gt;</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>Foo1<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>blah<sp/>b;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Foo2<sp/>does<sp/>blah<sp/>for<sp/>2-ary<sp/>predicates.</highlight></codeline>
+<codeline><highlight class="normal">template<sp/>&lt;size_t<sp/>N,<sp/>typename<sp/>A1,<sp/>typename<sp/>A2&gt;</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>Foo2<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>blah<sp/>b;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Foo3<sp/>does<sp/>blah<sp/>for<sp/>3-ary<sp/>predicates.</highlight></codeline>
+<codeline><highlight class="normal">template<sp/>&lt;size_t<sp/>N,<sp/>typename<sp/>A1,<sp/>typename<sp/>A2,<sp/>typename<sp/>A3&gt;</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>Foo3<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>blah<sp/>c;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>another<sp/>example,</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">$range<sp/>i<sp/>1..n</highlight></codeline>
+<codeline><highlight class="normal">Func($for<sp/>i<sp/>+<sp/>[[a$i]]);</highlight></codeline>
+<codeline><highlight class="normal">$$<sp/>The<sp/>text<sp/>between<sp/>i<sp/>and<sp/>[[<sp/>is<sp/>the<sp/>separator<sp/>between<sp/>iterations.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">will<sp/>generate<sp/>one<sp/>of<sp/>the<sp/>following<sp/>lines<sp/>(without<sp/>the<sp/>comments),<sp/>depending<sp/>on<sp/>the<sp/>value<sp/>of<sp/>`n`:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Func();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>If<sp/>n<sp/>is<sp/>0.</highlight></codeline>
+<codeline><highlight class="normal">Func(a1);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>If<sp/>n<sp/>is<sp/>1.</highlight></codeline>
+<codeline><highlight class="normal">Func(a1<sp/>+<sp/>a2);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>If<sp/>n<sp/>is<sp/>2.</highlight></codeline>
+<codeline><highlight class="normal">Func(a1<sp/>+<sp/>a2<sp/>+<sp/>a3);<sp/><sp/>//<sp/>If<sp/>n<sp/>is<sp/>3.</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>And<sp/>so<sp/>on...</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Constructs<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>support<sp/>the<sp/>following<sp/>meta<sp/>programming<sp/>constructs:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>`$var<sp/>id<sp/>=<sp/>exp`<sp/>|<sp/>Defines<sp/>a<sp/>named<sp/>constant<sp/>value.<sp/>`$id`<sp/>is<sp/>valid<sp/>util<sp/>the<sp/>end<sp/>of<sp/>the<sp/>current<sp/>meta<sp/>lexical<sp/>block.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|:----------------|:-----------------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`$range<sp/>id<sp/>exp..exp`<sp/>|<sp/>Sets<sp/>the<sp/>range<sp/>of<sp/>an<sp/>iteration<sp/>variable,<sp/>which<sp/>can<sp/>be<sp/>reused<sp/>in<sp/>multiple<sp/>loops<sp/>later.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`$for<sp/>id<sp/>sep<sp/>[[<sp/>code<sp/>]]`<sp/>|<sp/>Iteration.<sp/>The<sp/>range<sp/>of<sp/>`id`<sp/>must<sp/>have<sp/>been<sp/>defined<sp/>earlier.<sp/>`$id`<sp/>is<sp/>valid<sp/>in<sp/>`code`.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`$($)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Generates<sp/>a<sp/>single<sp/>`$`<sp/>character.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`$id`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Value<sp/>of<sp/>the<sp/>named<sp/>constant<sp/>or<sp/>iteration<sp/>variable.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`$(exp)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Value<sp/>of<sp/>the<sp/>expression.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`$if<sp/>exp<sp/>[[<sp/>code<sp/>]]<sp/>else_branch`<sp/>|<sp/>Conditional.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`[[<sp/>code<sp/>]]`<sp/><sp/><sp/><sp/>|<sp/>Meta<sp/>lexical<sp/>block.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`cpp_code`<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Raw<sp/>C++<sp/>code.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`$$<sp/>comment`<sp/><sp/><sp/><sp/>|<sp/>Meta<sp/>comment.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Note:**<sp/>To<sp/>give<sp/>the<sp/>user<sp/>some<sp/>freedom<sp/>in<sp/>formatting<sp/>the<sp/>Pump<sp/>source</highlight></codeline>
+<codeline><highlight class="normal">code,<sp/>Pump<sp/>ignores<sp/>a<sp/>new-line<sp/>character<sp/>if<sp/>it&apos;s<sp/>right<sp/>after<sp/>`$for<sp/>foo`</highlight></codeline>
+<codeline><highlight class="normal">or<sp/>next<sp/>to<sp/>`[[`<sp/>or<sp/>`]]`.<sp/>Without<sp/>this<sp/>rule<sp/>you&apos;ll<sp/>often<sp/>be<sp/>forced<sp/>to<sp/>write</highlight></codeline>
+<codeline><highlight class="normal">very<sp/>long<sp/>lines<sp/>to<sp/>get<sp/>the<sp/>desired<sp/>output.<sp/>Therefore<sp/>sometimes<sp/>you<sp/>may</highlight></codeline>
+<codeline><highlight class="normal">need<sp/>to<sp/>insert<sp/>an<sp/>extra<sp/>new-line<sp/>in<sp/>such<sp/>places<sp/>for<sp/>a<sp/>new-line<sp/>to<sp/>show</highlight></codeline>
+<codeline><highlight class="normal">up<sp/>in<sp/>your<sp/>output.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Grammar<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">code<sp/>::=<sp/>atomic_code*</highlight></codeline>
+<codeline><highlight class="normal">atomic_code<sp/>::=<sp/>$var<sp/>id<sp/>=<sp/>exp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>$var<sp/>id<sp/>=<sp/>[[<sp/>code<sp/>]]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>$range<sp/>id<sp/>exp..exp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>$for<sp/>id<sp/>sep<sp/>[[<sp/>code<sp/>]]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>$($)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>$id</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>$(exp)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>$if<sp/>exp<sp/>[[<sp/>code<sp/>]]<sp/>else_branch</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>[[<sp/>code<sp/>]]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>cpp_code</highlight></codeline>
+<codeline><highlight class="normal">sep<sp/>::=<sp/>cpp_code<sp/>|<sp/>empty_string</highlight></codeline>
+<codeline><highlight class="normal">else_branch<sp/>::=<sp/>$else<sp/>[[<sp/>code<sp/>]]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>$elif<sp/>exp<sp/>[[<sp/>code<sp/>]]<sp/>else_branch</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>empty_string</highlight></codeline>
+<codeline><highlight class="normal">exp<sp/>::=<sp/>simple_expression_in_Python_syntax</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Code<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>find<sp/>the<sp/>source<sp/>code<sp/>of<sp/>Pump<sp/>in<sp/>[scripts/pump.py](../scripts/pump.py).<sp/>It<sp/>is<sp/>still</highlight></codeline>
+<codeline><highlight class="normal">very<sp/>unpolished<sp/>and<sp/>lacks<sp/>automated<sp/>tests,<sp/>although<sp/>it<sp/>has<sp/>been</highlight></codeline>
+<codeline><highlight class="normal">successfully<sp/>used<sp/>many<sp/>times.<sp/>If<sp/>you<sp/>find<sp/>a<sp/>chance<sp/>to<sp/>use<sp/>it<sp/>in<sp/>your</highlight></codeline>
+<codeline><highlight class="normal">project,<sp/>please<sp/>let<sp/>us<sp/>know<sp/>what<sp/>you<sp/>think!<sp/><sp/>We<sp/>also<sp/>welcome<sp/>help<sp/>on</highlight></codeline>
+<codeline><highlight class="normal">improving<sp/>Pump.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Real<sp/>Examples<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>find<sp/>real-world<sp/>applications<sp/>of<sp/>Pump<sp/>in<sp/>[Google<sp/>Test](http://www.google.com/codesearch?q=file%3A\.pump%24+package%3Ahttp%3A%2F%2Fgoogletest\.googlecode\.com)<sp/>and<sp/>[Google<sp/>Mock](http://www.google.com/codesearch?q=file%3A\.pump%24+package%3Ahttp%3A%2F%2Fgooglemock\.googlecode\.com).<sp/><sp/>The<sp/>source<sp/>file<sp/>`foo.h.pump`<sp/>generates<sp/>`foo.h`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Tips<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>If<sp/>a<sp/>meta<sp/>variable<sp/>is<sp/>followed<sp/>by<sp/>a<sp/>letter<sp/>or<sp/>digit,<sp/>you<sp/>can<sp/>separate<sp/>them<sp/>using<sp/>`[[]]`,<sp/>which<sp/>inserts<sp/>an<sp/>empty<sp/>string.<sp/>For<sp/>example<sp/>`Foo$j[[]]Helper`<sp/>generate<sp/>`Foo1Helper`<sp/>when<sp/>`j`<sp/>is<sp/>1.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>To<sp/>avoid<sp/>extra-long<sp/>Pump<sp/>source<sp/>lines,<sp/>you<sp/>can<sp/>break<sp/>a<sp/>line<sp/>anywhere<sp/>you<sp/>want<sp/>by<sp/>inserting<sp/>`[[]]`<sp/>followed<sp/>by<sp/>a<sp/>new<sp/>line.<sp/>Since<sp/>any<sp/>new-line<sp/>character<sp/>next<sp/>to<sp/>`[[`<sp/>or<sp/>`]]`<sp/>is<sp/>ignored,<sp/>the<sp/>generated<sp/>code<sp/>won&apos;t<sp/>contain<sp/>this<sp/>new<sp/>line.</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googletest/docs/V1_6_PumpManual.md"/>
+  </compounddef>
+</doxygen>

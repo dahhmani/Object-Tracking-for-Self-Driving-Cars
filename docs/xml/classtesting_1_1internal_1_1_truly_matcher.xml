@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_truly_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::TrulyMatcher</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Predicate</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_truly_matcher_1a5697cfc685ae7c8c690838650bdd2d0c" prot="private" static="no" mutable="no">
+        <type>Predicate</type>
+        <definition>Predicate testing::internal::TrulyMatcher&lt; Predicate &gt;::predicate_</definition>
+        <argsstring></argsstring>
+        <name>predicate_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1788" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1788" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_truly_matcher_1a9fdc4ddba121e0dad4773b5685e0f28d" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::TrulyMatcher&lt; Predicate &gt;::TrulyMatcher</definition>
+        <argsstring>(Predicate pred)</argsstring>
+        <name>TrulyMatcher</name>
+        <param>
+          <type>Predicate</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1759" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1759" bodyend="1759"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_truly_matcher_1ad3781c661936a845ec165c1aad239634" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::internal::TrulyMatcher&lt; Predicate &gt;::MatchAndExplain</definition>
+        <argsstring>(T &amp;x, MatchResultListener *) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1766" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1766" bodyend="1777"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_truly_matcher_1ac327b4bd408386f489c4279e7e3f9530" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::TrulyMatcher&lt; Predicate &gt;::DescribeTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1779" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1779" bodyend="1781"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_truly_matcher_1a2e753f5d571b6a51b8ef620dcbb3a591" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::TrulyMatcher&lt; Predicate &gt;::DescribeNegationTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1783" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1783" bodyend="1785"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_truly_matcher_1abea7de3761568ce8dc304db9788b69ef" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::TrulyMatcher&lt; Predicate &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(TrulyMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_truly_matcher" kindref="compound">TrulyMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1790" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1757" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1757" bodyend="1791"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_truly_matcher_1a2e753f5d571b6a51b8ef620dcbb3a591" prot="public" virt="non-virtual"><scope>testing::internal::TrulyMatcher</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_truly_matcher_1ac327b4bd408386f489c4279e7e3f9530" prot="public" virt="non-virtual"><scope>testing::internal::TrulyMatcher</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_truly_matcher_1abea7de3761568ce8dc304db9788b69ef" prot="private" virt="non-virtual"><scope>testing::internal::TrulyMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_truly_matcher_1ad3781c661936a845ec165c1aad239634" prot="public" virt="non-virtual"><scope>testing::internal::TrulyMatcher</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1internal_1_1_truly_matcher_1a5697cfc685ae7c8c690838650bdd2d0c" prot="private" virt="non-virtual"><scope>testing::internal::TrulyMatcher</scope><name>predicate_</name></member>
+      <member refid="classtesting_1_1internal_1_1_truly_matcher_1a9fdc4ddba121e0dad4773b5685e0f28d" prot="public" virt="non-virtual"><scope>testing::internal::TrulyMatcher</scope><name>TrulyMatcher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_new_even_matcher_impl" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::NewEvenMatcherImpl</compoundname>
+    <basecompoundref refid="classtesting_1_1_matcher_interface" prot="public" virt="non-virtual">testing::MatcherInterface&lt; int &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_new_even_matcher_impl_1a56819af55d88569fdfaa51b937f76337" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool testing::gmock_matchers_test::NewEvenMatcherImpl::MatchAndExplain</definition>
+        <argsstring>(int x, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="282" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="282" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_new_even_matcher_impl_1aece368c865501da4b30620d06a2690cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::gmock_matchers_test::NewEvenMatcherImpl::DescribeTo</definition>
+        <argsstring>(ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="294" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="294" bodyend="296"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1611">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="1609">
+        <label>testing::gmock_matchers_test::NewEvenMatcherImpl</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_new_even_matcher_impl"/>
+        <childnode refid="1610" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1610">
+        <label>testing::MatcherInterface&lt; int &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="1611" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1614">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="1612">
+        <label>testing::gmock_matchers_test::NewEvenMatcherImpl</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_new_even_matcher_impl"/>
+        <childnode refid="1613" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1613">
+        <label>testing::MatcherInterface&lt; int &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="1614" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="280" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="280" bodyend="297"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_matcher_describer_interface_1a2071afbc47097c4d1c0064275af34db0" prot="public" virt="virtual"><scope>testing::gmock_matchers_test::NewEvenMatcherImpl</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_new_even_matcher_impl_1aece368c865501da4b30620d06a2690cd" prot="public" virt="virtual"><scope>testing::gmock_matchers_test::NewEvenMatcherImpl</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1_matcher_describer_interface_1ad9f861588bd969b6e3e717f13bb94e7b" prot="public" virt="pure-virtual" ambiguityscope="testing::MatcherInterface::"><scope>testing::gmock_matchers_test::NewEvenMatcherImpl</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_new_even_matcher_impl_1a56819af55d88569fdfaa51b937f76337" prot="public" virt="virtual"><scope>testing::gmock_matchers_test::NewEvenMatcherImpl</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1_matcher_interface_1a296b43607cd99d60365f0e6a762777cf" prot="public" virt="pure-virtual" ambiguityscope="testing::MatcherInterface::"><scope>testing::gmock_matchers_test::NewEvenMatcherImpl</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1_matcher_describer_interface_1ae2236a56ad2cc35cad10efc1208854f4" prot="public" virt="virtual"><scope>testing::gmock_matchers_test::NewEvenMatcherImpl</scope><name>~MatcherDescriberInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

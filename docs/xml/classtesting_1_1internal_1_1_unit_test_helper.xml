@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_unit_test_helper" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::UnitTestHelper</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_unit_test_helper_1a9a549307062083d10358638af272cc98" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1_test_case" kindref="compound">TestCase</ref> const  **</type>
+        <definition>static TestCase const** testing::internal::UnitTestHelper::GetSortedTestCases</definition>
+        <argsstring>()</argsstring>
+        <name>GetSortedTestCases</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-unittest-api_test.cc" line="57" column="1" bodyfile="vendor/googletest/googletest/test/gtest-unittest-api_test.cc" bodystart="57" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_unit_test_helper_1a46303cbb7a6abb456f7b1350542113ac" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtesting_1_1_test_case" kindref="compound">TestCase</ref> *</type>
+        <definition>static const TestCase* testing::internal::UnitTestHelper::FindTestCase</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>FindTestCase</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-unittest-api_test.cc" line="73" column="1" bodyfile="vendor/googletest/googletest/test/gtest-unittest-api_test.cc" bodystart="73" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_unit_test_helper_1a02602d22fb74566dad78c0c9d4f24e78" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1_test_info" kindref="compound">TestInfo</ref> const  **</type>
+        <definition>static TestInfo const** testing::internal::UnitTestHelper::GetSortedTests</definition>
+        <argsstring>(const TestCase *test_case)</argsstring>
+        <name>GetSortedTests</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_case" kindref="compound">TestCase</ref> *</type>
+          <declname>test_case</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-unittest-api_test.cc" line="86" column="1" bodyfile="vendor/googletest/googletest/test/gtest-unittest-api_test.cc" bodystart="86" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest-unittest-api_test.cc" line="53" column="1" bodyfile="vendor/googletest/googletest/test/gtest-unittest-api_test.cc" bodystart="53" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_unit_test_helper_1a46303cbb7a6abb456f7b1350542113ac" prot="public" virt="non-virtual"><scope>testing::internal::UnitTestHelper</scope><name>FindTestCase</name></member>
+      <member refid="classtesting_1_1internal_1_1_unit_test_helper_1a9a549307062083d10358638af272cc98" prot="public" virt="non-virtual"><scope>testing::internal::UnitTestHelper</scope><name>GetSortedTestCases</name></member>
+      <member refid="classtesting_1_1internal_1_1_unit_test_helper_1a02602d22fb74566dad78c0c9d4f24e78" prot="public" virt="non-virtual"><scope>testing::internal::UnitTestHelper</scope><name>GetSortedTests</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

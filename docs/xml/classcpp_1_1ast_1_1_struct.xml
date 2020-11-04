@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classcpp_1_1ast_1_1_struct" kind="class" language="Python" prot="public">
+    <compoundname>cpp::ast::Struct</compoundname>
+    <basecompoundref refid="classcpp_1_1ast_1_1_class" prot="public" virt="non-virtual">cpp.ast.Class</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2021">
+        <label>cpp.ast.Node</label>
+        <link refid="classcpp_1_1ast_1_1_node"/>
+        <childnode refid="2022" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2019">
+        <label>cpp.ast.Class</label>
+        <link refid="classcpp_1_1ast_1_1_class"/>
+        <childnode refid="2020" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2018">
+        <label>cpp.ast.Struct</label>
+        <link refid="classcpp_1_1ast_1_1_struct"/>
+        <childnode refid="2019" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2020">
+        <label>cpp.ast._GenericDeclaration</label>
+        <link refid="classcpp_1_1ast_1_1___generic_declaration"/>
+        <childnode refid="2021" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2022">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2026">
+        <label>cpp.ast.Node</label>
+        <link refid="classcpp_1_1ast_1_1_node"/>
+        <childnode refid="2027" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2024">
+        <label>cpp.ast.Class</label>
+        <link refid="classcpp_1_1ast_1_1_class"/>
+        <childnode refid="2025" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2023">
+        <label>cpp.ast.Struct</label>
+        <link refid="classcpp_1_1ast_1_1_struct"/>
+        <childnode refid="2024" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2025">
+        <label>cpp.ast._GenericDeclaration</label>
+        <link refid="classcpp_1_1ast_1_1___generic_declaration"/>
+        <childnode refid="2026" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2027">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="356" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="356" bodyend="360"/>
+    <listofallmembers>
+      <member refid="classcpp_1_1ast_1_1_class_1acc17c34512d5cc54d5125734ce79f219" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>__init__</name></member>
+      <member refid="classcpp_1_1ast_1_1___generic_declaration_1afde72751e20708a7802eb7707d23bc3c" prot="public" virt="non-virtual" ambiguityscope="cpp::ast::_GenericDeclaration."><scope>cpp::ast::Struct</scope><name>__init__</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a2cbd6969346645259afc3be51faae904" prot="public" virt="non-virtual" ambiguityscope="cpp::ast::Node."><scope>cpp::ast::Struct</scope><name>__init__</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1ab89915656a60c7b7c752e5baa607c532" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>__repr__</name></member>
+      <member refid="classcpp_1_1ast_1_1_class_1a0a63f6fab75d61ffac6fb9f1c29ae84d" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>__str__</name></member>
+      <member refid="classcpp_1_1ast_1_1_class_1a5665eb67314a075d4e0ff91accbde5d1" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>bases</name></member>
+      <member refid="classcpp_1_1ast_1_1_class_1add39f61fdcf6dae42d79cac3dcbb7782" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>body</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a3c5e5246ccf619df28eca02e29d69647" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>end</name></member>
+      <member refid="classcpp_1_1ast_1_1___generic_declaration_1a1437d31271ea8cda62da22e2ce427a85" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>FullName</name></member>
+      <member refid="classcpp_1_1ast_1_1_class_1a4758bfb7c00410575932974e1ed8b7da" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>IsDeclaration</name></member>
+      <member refid="classcpp_1_1ast_1_1_class_1ae6d2356f835d06d5109d9e4609d86780" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>IsDefinition</name></member>
+      <member refid="classcpp_1_1ast_1_1_class_1a1ab749f8cfddb0903c6484791f70f42e" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>IsExportable</name></member>
+      <member refid="classcpp_1_1ast_1_1___generic_declaration_1af774f4729dfd78d0538a6782fe8514c1" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>name</name></member>
+      <member refid="classcpp_1_1ast_1_1___generic_declaration_1a8aee3f11b37449d54b42a78e0a689f46" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>namespace</name></member>
+      <member refid="classcpp_1_1ast_1_1_class_1a347673e0a2a7b840b7d2d1cae13977f7" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>Requires</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a7b2aa97e6a049bb1a93aea48c48f1f44" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>start</name></member>
+      <member refid="classcpp_1_1ast_1_1_class_1a48ed0d3115656554d9134bc1787390fa" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>templated_types</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1ab5dfeabcbcd7c1f5feb8522edffb8b4a" prot="public" virt="non-virtual"><scope>cpp::ast::Struct</scope><name>XXX__str__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

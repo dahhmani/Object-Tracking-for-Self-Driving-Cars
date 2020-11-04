@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_test_event_listeners" kind="class" language="C++" prot="public">
+    <compoundname>testing::TestEventListeners</compoundname>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtesting_1_1_test_event_listeners_1aff779e55b06adfa7c0088bd10253f0f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TestCase</definition>
+        <argsstring></argsstring>
+        <name>TestCase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1100" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtesting_1_1_test_event_listeners_1a4c49c2cdb6c328e6b709b4542f23de3c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TestInfo</definition>
+        <argsstring></argsstring>
+        <name>TestInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1101" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtesting_1_1_test_event_listeners_1abae39633da9932847b41cb80efd62115" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class internal::DefaultGlobalTestPartResultReporter</definition>
+        <argsstring></argsstring>
+        <name>internal::DefaultGlobalTestPartResultReporter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1102" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtesting_1_1_test_event_listeners_1afddba49fdf3f493532b4d5efb9814f4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class internal::NoExecDeathTest</definition>
+        <argsstring></argsstring>
+        <name>internal::NoExecDeathTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1103" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtesting_1_1_test_event_listeners_1addbc107b6b445617c880182bd4f44cf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class internal::TestEventListenersAccessor</definition>
+        <argsstring></argsstring>
+        <name>internal::TestEventListenersAccessor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1104" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtesting_1_1_test_event_listeners_1acc0a5e7573fd6ae7ad1878613bb86853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class internal::UnitTestImpl</definition>
+        <argsstring></argsstring>
+        <name>internal::UnitTestImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1105" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1_test_event_listeners_1a625d58b951893e80cde12862aece6fd8" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1internal_1_1_test_event_repeater" kindref="compound">internal::TestEventRepeater</ref> *</type>
+        <definition>internal::TestEventRepeater* testing::TestEventListeners::repeater_</definition>
+        <argsstring></argsstring>
+        <name>repeater_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1131" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_event_listeners_1a9ff9ebc31a9a52e5f108661cfcb7ecd9" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1_test_event_listener" kindref="compound">TestEventListener</ref> *</type>
+        <definition>TestEventListener* testing::TestEventListeners::default_result_printer_</definition>
+        <argsstring></argsstring>
+        <name>default_result_printer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1133" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_event_listeners_1a018a3952aa10c19251b88f27abe373d3" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1_test_event_listener" kindref="compound">TestEventListener</ref> *</type>
+        <definition>TestEventListener* testing::TestEventListeners::default_xml_generator_</definition>
+        <argsstring></argsstring>
+        <name>default_xml_generator_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1135" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_test_event_listeners_1af0716e4067a6f357ee5ea18802a591dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::TestEventListeners::TestEventListeners</definition>
+        <argsstring>()</argsstring>
+        <name>TestEventListeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1066" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3890" bodyend="3894"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_event_listeners_1abe9fbbbedf7f55fa898abfae60aa4913" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::TestEventListeners::~TestEventListeners</definition>
+        <argsstring>()</argsstring>
+        <name>~TestEventListeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1067" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3896" bodyend="3896"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_event_listeners_1a1207dce74d64c1c39ffa6105560536a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::TestEventListeners::Append</definition>
+        <argsstring>(TestEventListener *listener)</argsstring>
+        <name>Append</name>
+        <param>
+          <type><ref refid="classtesting_1_1_test_event_listener" kindref="compound">TestEventListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1072" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3902" bodyend="3904"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_event_listeners_1a038c9fa1975f84d6f3d25b52bc7bccdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1_test_event_listener" kindref="compound">TestEventListener</ref> *</type>
+        <definition>TestEventListener * testing::TestEventListeners::Release</definition>
+        <argsstring>(TestEventListener *listener)</argsstring>
+        <name>Release</name>
+        <param>
+          <type><ref refid="classtesting_1_1_test_event_listener" kindref="compound">TestEventListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1077" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3909" bodyend="3915"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_event_listeners_1a6293443acb5af942eeec638b6aa6dcf2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1_test_event_listener" kindref="compound">TestEventListener</ref> *</type>
+        <definition>TestEventListener* testing::TestEventListeners::default_result_printer</definition>
+        <argsstring>() const</argsstring>
+        <name>default_result_printer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1084" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1084" bodyend="1086"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_event_listeners_1aa880de6ddfc3f5824371853c6846abbd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1_test_event_listener" kindref="compound">TestEventListener</ref> *</type>
+        <definition>TestEventListener* testing::TestEventListeners::default_xml_generator</definition>
+        <argsstring>() const</argsstring>
+        <name>default_xml_generator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1095" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1095" bodyend="1097"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1_test_event_listeners_1ad28af964081553de465fbfc1c5a46650" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1_test_event_listener" kindref="compound">TestEventListener</ref> *</type>
+        <definition>TestEventListener * testing::TestEventListeners::repeater</definition>
+        <argsstring>()</argsstring>
+        <name>repeater</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1109" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3919" bodyend="3919"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_event_listeners_1aeaab55da7c18c35fb12c27c18ff99955" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::TestEventListeners::SetDefaultResultPrinter</definition>
+        <argsstring>(TestEventListener *listener)</argsstring>
+        <name>SetDefaultResultPrinter</name>
+        <param>
+          <type><ref refid="classtesting_1_1_test_event_listener" kindref="compound">TestEventListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1116" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3926" bodyend="3935"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_event_listeners_1a36dbac47563ef8bb78cb467d11f5b4d9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::TestEventListeners::SetDefaultXmlGenerator</definition>
+        <argsstring>(TestEventListener *listener)</argsstring>
+        <name>SetDefaultXmlGenerator</name>
+        <param>
+          <type><ref refid="classtesting_1_1_test_event_listener" kindref="compound">TestEventListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1123" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3942" bodyend="3951"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_event_listeners_1aa1878baf16a50f30f6435fad3c68ef3f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::TestEventListeners::EventForwardingEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>EventForwardingEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1127" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3955" bodyend="3957"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_event_listeners_1a7132550dc1c50bb3399a6d6d3fc9be3d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::TestEventListeners::SuppressEventForwarding</definition>
+        <argsstring>()</argsstring>
+        <name>SuppressEventForwarding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1128" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="3959" bodyend="3961"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_event_listeners_1a31d12292abc277dedbb7dc7748a6a60e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::TestEventListeners::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(TestEventListeners)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1_test_event_listeners" kindref="compound">TestEventListeners</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1138" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1064" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1064" bodyend="1139"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_test_event_listeners_1a1207dce74d64c1c39ffa6105560536a0" prot="public" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>Append</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1a6293443acb5af942eeec638b6aa6dcf2" prot="public" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>default_result_printer</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1a9ff9ebc31a9a52e5f108661cfcb7ecd9" prot="private" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>default_result_printer_</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1aa880de6ddfc3f5824371853c6846abbd" prot="public" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>default_xml_generator</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1a018a3952aa10c19251b88f27abe373d3" prot="private" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>default_xml_generator_</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1aa1878baf16a50f30f6435fad3c68ef3f" prot="private" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>EventForwardingEnabled</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1a31d12292abc277dedbb7dc7748a6a60e" prot="private" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1abae39633da9932847b41cb80efd62115" prot="public" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>internal::DefaultGlobalTestPartResultReporter</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1afddba49fdf3f493532b4d5efb9814f4e" prot="public" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>internal::NoExecDeathTest</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1addbc107b6b445617c880182bd4f44cf9" prot="public" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>internal::TestEventListenersAccessor</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1acc0a5e7573fd6ae7ad1878613bb86853" prot="public" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>internal::UnitTestImpl</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1a038c9fa1975f84d6f3d25b52bc7bccdd" prot="public" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>Release</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1ad28af964081553de465fbfc1c5a46650" prot="private" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>repeater</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1a625d58b951893e80cde12862aece6fd8" prot="private" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>repeater_</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1aeaab55da7c18c35fb12c27c18ff99955" prot="private" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>SetDefaultResultPrinter</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1a36dbac47563ef8bb78cb467d11f5b4d9" prot="private" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>SetDefaultXmlGenerator</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1a7132550dc1c50bb3399a6d6d3fc9be3d" prot="private" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>SuppressEventForwarding</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1aff779e55b06adfa7c0088bd10253f0f0" prot="private" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>TestCase</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1af0716e4067a6f357ee5ea18802a591dd" prot="public" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>TestEventListeners</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1a4c49c2cdb6c328e6b709b4542f23de3c" prot="private" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>TestInfo</name></member>
+      <member refid="classtesting_1_1_test_event_listeners_1abe9fbbbedf7f55fa898abfae60aa4913" prot="public" virt="non-virtual"><scope>testing::TestEventListeners</scope><name>~TestEventListeners</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

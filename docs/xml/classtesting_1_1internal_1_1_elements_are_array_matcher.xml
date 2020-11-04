@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_elements_are_array_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::ElementsAreArrayMatcher</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_elements_are_array_matcher_1af28db07928ad4eb3128d553757ed712c" prot="private" static="no" mutable="no">
+        <type>const ::std::vector&lt; T &gt;</type>
+        <definition>const ::std::vector&lt;T&gt; testing::internal::ElementsAreArrayMatcher&lt; T &gt;::matchers_</definition>
+        <argsstring></argsstring>
+        <name>matchers_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3537" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3537" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_elements_are_array_matcher_1aa076a0583c29dc7da6107775bba73be8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Iter</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::internal::ElementsAreArrayMatcher&lt; T &gt;::ElementsAreArrayMatcher</definition>
+        <argsstring>(Iter first, Iter last)</argsstring>
+        <name>ElementsAreArrayMatcher</name>
+        <param>
+          <type>Iter</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>Iter</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3528" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3528" bodyend="3528"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_elements_are_array_matcher_1ac776db6072208f39f3eced25fb353f75" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::internal::ElementsAreArrayMatcher&lt; T &gt;::operator Matcher&lt; Container &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Matcher&lt; Container &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3531" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3531" bodyend="3534"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_elements_are_array_matcher_1aa8d3686a9b297a93fa0ada490a7501f6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ElementsAreArrayMatcher&lt; T &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(ElementsAreArrayMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_elements_are_array_matcher" kindref="compound">ElementsAreArrayMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3539" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3525" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3525" bodyend="3540"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_elements_are_array_matcher_1aa076a0583c29dc7da6107775bba73be8" prot="public" virt="non-virtual"><scope>testing::internal::ElementsAreArrayMatcher</scope><name>ElementsAreArrayMatcher</name></member>
+      <member refid="classtesting_1_1internal_1_1_elements_are_array_matcher_1aa8d3686a9b297a93fa0ada490a7501f6" prot="private" virt="non-virtual"><scope>testing::internal::ElementsAreArrayMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_elements_are_array_matcher_1af28db07928ad4eb3128d553757ed712c" prot="private" virt="non-virtual"><scope>testing::internal::ElementsAreArrayMatcher</scope><name>matchers_</name></member>
+      <member refid="classtesting_1_1internal_1_1_elements_are_array_matcher_1ac776db6072208f39f3eced25fb353f75" prot="public" virt="non-virtual"><scope>testing::internal::ElementsAreArrayMatcher</scope><name>operator Matcher&lt; Container &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::WhenSortedByMatcher::Impl</compoundname>
+    <basecompoundref refid="classtesting_1_1_matcher_interface" prot="public" virt="non-virtual">testing::MatcherInterface&lt; LhsContainer &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename LhsContainer</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a4c84fddfe1bf967a73e5dae1940db427" prot="public" static="no">
+        <type><ref refid="classtesting_1_1internal_1_1_stl_container_view" kindref="compound">internal::StlContainerView</ref>&lt; GTEST_REMOVE_REFERENCE_AND_CONST_(LhsContainer)&gt;</type>
+        <definition>typedef internal::StlContainerView&lt; GTEST_REMOVE_REFERENCE_AND_CONST_(LhsContainer)&gt; testing::internal::WhenSortedByMatcher&lt; Comparator, ContainerMatcher &gt;::Impl&lt; LhsContainer &gt;::LhsView</definition>
+        <argsstring></argsstring>
+        <name>LhsView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2628" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a2cb1a8d85ca2c376b6abdbcb00d84759" prot="public" static="no">
+        <type>LhsView::type</type>
+        <definition>typedef LhsView::type testing::internal::WhenSortedByMatcher&lt; Comparator, ContainerMatcher &gt;::Impl&lt; LhsContainer &gt;::LhsStlContainer</definition>
+        <argsstring></argsstring>
+        <name>LhsStlContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2629" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2629" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1ab5e53a762bb213ccf84299b31c825b58" prot="public" static="no">
+        <type>LhsView::const_reference</type>
+        <definition>typedef LhsView::const_reference testing::internal::WhenSortedByMatcher&lt; Comparator, ContainerMatcher &gt;::Impl&lt; LhsContainer &gt;::LhsStlContainerReference</definition>
+        <argsstring></argsstring>
+        <name>LhsStlContainerReference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2630" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2630" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a93044f4ba53373fcfc424132b5e6c462" prot="public" static="no">
+        <type><ref refid="structtesting_1_1internal_1_1_remove_const_from_key" kindref="compound">RemoveConstFromKey</ref>&lt; typename LhsStlContainer::value_type &gt;::type</type>
+        <definition>typedef RemoveConstFromKey&lt; typename LhsStlContainer::value_type&gt;::type testing::internal::WhenSortedByMatcher&lt; Comparator, ContainerMatcher &gt;::Impl&lt; LhsContainer &gt;::LhsValue</definition>
+        <argsstring></argsstring>
+        <name>LhsValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2634" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2634" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a951b20230b095e7777c23cba8f143f32" prot="private" static="no" mutable="no">
+        <type>const Comparator</type>
+        <definition>const Comparator testing::internal::WhenSortedByMatcher&lt; Comparator, ContainerMatcher &gt;::Impl&lt; LhsContainer &gt;::comparator_</definition>
+        <argsstring></argsstring>
+        <name>comparator_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2675" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a4675b8bb38c5996ad8e570eafe4f72ea" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; const ::std::vector&lt; LhsValue &gt; &amp; &gt;</type>
+        <definition>const Matcher&lt;const ::std::vector&lt;LhsValue&gt;&amp;&gt; testing::internal::WhenSortedByMatcher&lt; Comparator, ContainerMatcher &gt;::Impl&lt; LhsContainer &gt;::matcher_</definition>
+        <argsstring></argsstring>
+        <name>matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2676" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2676" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a63235e98dec5478b7ff9d06f6babc716" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::WhenSortedByMatcher&lt; Comparator, ContainerMatcher &gt;::Impl&lt; LhsContainer &gt;::Impl</definition>
+        <argsstring>(const Comparator &amp;comparator, const ContainerMatcher &amp;matcher)</argsstring>
+        <name>Impl</name>
+        <param>
+          <type>const Comparator &amp;</type>
+          <declname>comparator</declname>
+        </param>
+        <param>
+          <type>const ContainerMatcher &amp;</type>
+          <declname>matcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2636" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2636" bodyend="2637"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a33f7b8bdce4adb02618e90ac2ec949f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::WhenSortedByMatcher&lt; Comparator, ContainerMatcher &gt;::Impl&lt; LhsContainer &gt;::DescribeTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <reimplements refid="classtesting_1_1_matcher_describer_interface_1ad9f861588bd969b6e3e717f13bb94e7b">DescribeTo</reimplements>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2639" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2639" bodyend="2642"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a0a59f77fdbb88a6326e5aba671f2aa3e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::WhenSortedByMatcher&lt; Comparator, ContainerMatcher &gt;::Impl&lt; LhsContainer &gt;::DescribeNegationTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <reimplements refid="classtesting_1_1_matcher_describer_interface_1a2071afbc47097c4d1c0064275af34db0">DescribeNegationTo</reimplements>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2644" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2644" bodyend="2647"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a9d8f57c729df8c041f2fd7febbc950da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool testing::internal::WhenSortedByMatcher&lt; Comparator, ContainerMatcher &gt;::Impl&lt; LhsContainer &gt;::MatchAndExplain</definition>
+        <argsstring>(LhsContainer lhs, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplain</name>
+        <reimplements refid="classtesting_1_1_matcher_interface_1a296b43607cd99d60365f0e6a762777cf">MatchAndExplain</reimplements>
+        <param>
+          <type>LhsContainer</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2649" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2649" bodyend="2672"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1af5327d86f58f006cba4e49eb26c69d79" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::WhenSortedByMatcher&lt; Comparator, ContainerMatcher &gt;::Impl&lt; LhsContainer &gt;::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(Impl)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl" kindref="compound">Impl</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2678" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1123">
+        <label>testing::internal::WhenSortedByMatcher&lt; Comparator, ContainerMatcher &gt;::Impl&lt; LhsContainer &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl"/>
+        <childnode refid="1124" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1125">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="1124">
+        <label>testing::MatcherInterface&lt; LhsContainer &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="1125" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1126">
+        <label>testing::internal::WhenSortedByMatcher&lt; Comparator, ContainerMatcher &gt;::Impl&lt; LhsContainer &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl"/>
+        <childnode refid="1127" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1128">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="1127">
+        <label>testing::MatcherInterface&lt; LhsContainer &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="1128" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2625" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2625" bodyend="2679"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a951b20230b095e7777c23cba8f143f32" prot="private" virt="non-virtual"><scope>testing::internal::WhenSortedByMatcher::Impl</scope><name>comparator_</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a0a59f77fdbb88a6326e5aba671f2aa3e" prot="public" virt="virtual"><scope>testing::internal::WhenSortedByMatcher::Impl</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a33f7b8bdce4adb02618e90ac2ec949f9" prot="public" virt="virtual"><scope>testing::internal::WhenSortedByMatcher::Impl</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1af5327d86f58f006cba4e49eb26c69d79" prot="private" virt="non-virtual"><scope>testing::internal::WhenSortedByMatcher::Impl</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a63235e98dec5478b7ff9d06f6babc716" prot="public" virt="non-virtual"><scope>testing::internal::WhenSortedByMatcher::Impl</scope><name>Impl</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a2cb1a8d85ca2c376b6abdbcb00d84759" prot="public" virt="non-virtual"><scope>testing::internal::WhenSortedByMatcher::Impl</scope><name>LhsStlContainer</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1ab5e53a762bb213ccf84299b31c825b58" prot="public" virt="non-virtual"><scope>testing::internal::WhenSortedByMatcher::Impl</scope><name>LhsStlContainerReference</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a93044f4ba53373fcfc424132b5e6c462" prot="public" virt="non-virtual"><scope>testing::internal::WhenSortedByMatcher::Impl</scope><name>LhsValue</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a4c84fddfe1bf967a73e5dae1940db427" prot="public" virt="non-virtual"><scope>testing::internal::WhenSortedByMatcher::Impl</scope><name>LhsView</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a9d8f57c729df8c041f2fd7febbc950da" prot="public" virt="virtual"><scope>testing::internal::WhenSortedByMatcher::Impl</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_1a4675b8bb38c5996ad8e570eafe4f72ea" prot="private" virt="non-virtual"><scope>testing::internal::WhenSortedByMatcher::Impl</scope><name>matcher_</name></member>
+      <member refid="classtesting_1_1_matcher_describer_interface_1ae2236a56ad2cc35cad10efc1208854f4" prot="public" virt="virtual"><scope>testing::internal::WhenSortedByMatcher::Impl</scope><name>~MatcherDescriberInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

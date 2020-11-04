@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1internal_1_1_boolean_constant" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::BooleanConstant</compoundname>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>kValue</declname>
+        <defname>kValue</defname>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h" line="505" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h" bodystart="505" bodyend="505"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

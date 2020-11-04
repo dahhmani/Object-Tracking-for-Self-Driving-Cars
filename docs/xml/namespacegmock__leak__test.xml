@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegmock__leak__test" kind="namespace" language="Python">
+    <compoundname>gmock_leak_test</compoundname>
+    <innerclass refid="classgmock__leak__test_1_1_g_mock_leak_test" prot="public">gmock_leak_test::GMockLeakTest</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gmock__leak__test_8py_1a555659792de702f147de663b6b2839c6" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gmock_leak_test.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;wan@google.com (Zhanyong Wan)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock_leak_test.py" line="34" column="1" bodyfile="vendor/googletest/googlemock/test/gmock_leak_test.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__leak__test_8py_1ace925116117368cd02a7b45571f5133d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gmock_leak_test.PROGRAM_PATH</definition>
+        <argsstring></argsstring>
+        <name>PROGRAM_PATH</name>
+        <initializer>=  gmock_test_utils.GetTestExecutablePath(&apos;gmock_leak_test_&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock_leak_test.py" line="40" column="1" bodyfile="vendor/googletest/googlemock/test/gmock_leak_test.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__leak__test_8py_1aa03214d2fad1ee0fd3f3101da688ebfc" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list gmock_leak_test.TEST_WITH_EXPECT_CALL</definition>
+        <argsstring></argsstring>
+        <name>TEST_WITH_EXPECT_CALL</name>
+        <initializer>=  [PROGRAM_PATH, &apos;--gtest_filter=*ExpectCall*&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock_leak_test.py" line="41" column="1" bodyfile="vendor/googletest/googlemock/test/gmock_leak_test.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__leak__test_8py_1a5b7e5890b4022a37ef82bdf4eb22ef44" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list gmock_leak_test.TEST_WITH_ON_CALL</definition>
+        <argsstring></argsstring>
+        <name>TEST_WITH_ON_CALL</name>
+        <initializer>=  [PROGRAM_PATH, &apos;--gtest_filter=*OnCall*&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock_leak_test.py" line="42" column="1" bodyfile="vendor/googletest/googlemock/test/gmock_leak_test.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__leak__test_8py_1a9a529935171ee6ab369902d9a77ffbf5" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list gmock_leak_test.TEST_MULTIPLE_LEAKS</definition>
+        <argsstring></argsstring>
+        <name>TEST_MULTIPLE_LEAKS</name>
+        <initializer>=  [PROGRAM_PATH, &apos;--gtest_filter=*MultipleLeaked*&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock_leak_test.py" line="43" column="1" bodyfile="vendor/googletest/googlemock/test/gmock_leak_test.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__leak__test_8py_1a9437a2d2e3bde77354e5c6443ef129f8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gmock_leak_test.environ</definition>
+        <argsstring></argsstring>
+        <name>environ</name>
+        <initializer>=  gmock_test_utils.environ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock_leak_test.py" line="45" column="1" bodyfile="vendor/googletest/googlemock/test/gmock_leak_test.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__leak__test_8py_1a1ab1da2afb1748500a059d59660330cb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gmock_leak_test.SetEnvVar</definition>
+        <argsstring></argsstring>
+        <name>SetEnvVar</name>
+        <initializer>=  gmock_test_utils.SetEnvVar</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock_leak_test.py" line="46" column="1" bodyfile="vendor/googletest/googlemock/test/gmock_leak_test.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock_leak_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

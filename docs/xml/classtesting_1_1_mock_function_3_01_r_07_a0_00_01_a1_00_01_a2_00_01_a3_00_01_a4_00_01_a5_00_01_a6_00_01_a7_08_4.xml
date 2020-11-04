@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_mock_function_3_01_r_07_a0_00_01_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_00_01_a6_00_01_a7_08_4" kind="class" language="C++" prot="public">
+    <compoundname>testing::MockFunction&lt; R(A0, A1, A2, A3, A4, A5, A6, A7)&gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename R</type>
+      </param>
+      <param>
+        <type>typename A0</type>
+      </param>
+      <param>
+        <type>typename A1</type>
+      </param>
+      <param>
+        <type>typename A2</type>
+      </param>
+      <param>
+        <type>typename A3</type>
+      </param>
+      <param>
+        <type>typename A4</type>
+      </param>
+      <param>
+        <type>typename A5</type>
+      </param>
+      <param>
+        <type>typename A6</type>
+      </param>
+      <param>
+        <type>typename A7</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_mock_function_3_01_r_07_a0_00_01_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_00_01_a6_00_01_a7_08_4_1ab2ac033046600396f088321ef0508e63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::MockFunction&lt; R(A0, A1, A2, A3, A4, A5, A6, A7)&gt;::MockFunction</definition>
+        <argsstring>()</argsstring>
+        <name>MockFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-function-mockers.h" line="1034" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-function-mockers.h" bodystart="1034" bodyend="1034"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_mock_function_3_01_r_07_a0_00_01_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_00_01_a6_00_01_a7_08_4_1a895c470e00e07294ab42c09588ae1e4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::MockFunction&lt; R(A0, A1, A2, A3, A4, A5, A6, A7)&gt;::MOCK_METHOD8_T</definition>
+        <argsstring>(Call, R(A0, A1, A2, A3, A4, A5, A6, A7))</argsstring>
+        <name>MOCK_METHOD8_T</name>
+        <param>
+          <type>Call</type>
+        </param>
+        <param>
+          <type>R(A0, A1, A2, A3, A4, A5, A6, A7)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-function-mockers.h" line="1036" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1_mock_function_3_01_r_07_a0_00_01_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_00_01_a6_00_01_a7_08_4_1a445a7908911449f9317225121af6a476" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::MockFunction&lt; R(A0, A1, A2, A3, A4, A5, A6, A7)&gt;::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(MockFunction)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1_mock_function" kindref="compound">MockFunction</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-function-mockers.h" line="1047" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-function-mockers.h" line="1032" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-function-mockers.h" bodystart="1032" bodyend="1048"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_mock_function_3_01_r_07_a0_00_01_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_00_01_a6_00_01_a7_08_4_1a445a7908911449f9317225121af6a476" prot="private" virt="non-virtual"><scope>testing::MockFunction&lt; R(A0, A1, A2, A3, A4, A5, A6, A7)&gt;</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1_mock_function_3_01_r_07_a0_00_01_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_00_01_a6_00_01_a7_08_4_1a895c470e00e07294ab42c09588ae1e4c" prot="public" virt="non-virtual"><scope>testing::MockFunction&lt; R(A0, A1, A2, A3, A4, A5, A6, A7)&gt;</scope><name>MOCK_METHOD8_T</name></member>
+      <member refid="classtesting_1_1_mock_function_3_01_r_07_a0_00_01_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_00_01_a6_00_01_a7_08_4_1ab2ac033046600396f088321ef0508e63" prot="public" virt="non-virtual"><scope>testing::MockFunction&lt; R(A0, A1, A2, A3, A4, A5, A6, A7)&gt;</scope><name>MockFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

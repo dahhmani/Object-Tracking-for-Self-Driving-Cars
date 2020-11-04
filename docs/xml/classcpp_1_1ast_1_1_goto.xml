@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classcpp_1_1ast_1_1_goto" kind="class" language="Python" prot="public">
+    <compoundname>cpp::ast::Goto</compoundname>
+    <basecompoundref refid="classcpp_1_1ast_1_1_node" prot="public" virt="non-virtual">cpp.ast.Node</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_goto_1a685284ea5f3b21f39aff7f5db841c8f5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.Goto::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="171" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_goto_1a928e79374a90d01fc060985ea1e45260" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.Goto.__init__</definition>
+        <argsstring>(self, start, end, label)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>start</type>
+          <defname>start</defname>
+        </param>
+        <param>
+          <type>end</type>
+          <defname>end</defname>
+        </param>
+        <param>
+          <type>label</type>
+          <defname>label</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="169" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="169" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_goto_1a508b6bc091cf06bfed73a33368c236c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.Goto.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="173" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="173" bodyend="176"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="980">
+        <label>cpp.ast.Node</label>
+        <link refid="classcpp_1_1ast_1_1_node"/>
+        <childnode refid="981" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="981">
+        <label>object</label>
+      </node>
+      <node id="979">
+        <label>cpp.ast.Goto</label>
+        <link refid="classcpp_1_1ast_1_1_goto"/>
+        <childnode refid="980" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="983">
+        <label>cpp.ast.Node</label>
+        <link refid="classcpp_1_1ast_1_1_node"/>
+        <childnode refid="984" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="984">
+        <label>object</label>
+      </node>
+      <node id="982">
+        <label>cpp.ast.Goto</label>
+        <link refid="classcpp_1_1ast_1_1_goto"/>
+        <childnode refid="983" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="168" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="168" bodyend="177"/>
+    <listofallmembers>
+      <member refid="classcpp_1_1ast_1_1_goto_1a928e79374a90d01fc060985ea1e45260" prot="public" virt="non-virtual"><scope>cpp::ast::Goto</scope><name>__init__</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a2cbd6969346645259afc3be51faae904" prot="public" virt="non-virtual" ambiguityscope="cpp::ast::Node."><scope>cpp::ast::Goto</scope><name>__init__</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1ab89915656a60c7b7c752e5baa607c532" prot="public" virt="non-virtual"><scope>cpp::ast::Goto</scope><name>__repr__</name></member>
+      <member refid="classcpp_1_1ast_1_1_goto_1a508b6bc091cf06bfed73a33368c236c9" prot="public" virt="non-virtual"><scope>cpp::ast::Goto</scope><name>__str__</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a3c5e5246ccf619df28eca02e29d69647" prot="public" virt="non-virtual"><scope>cpp::ast::Goto</scope><name>end</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1ab3eca703a79fb65bc25dfbcb7547c79e" prot="public" virt="non-virtual"><scope>cpp::ast::Goto</scope><name>IsDeclaration</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a684ee9a357168e7e07a24fc6812f66e6" prot="public" virt="non-virtual"><scope>cpp::ast::Goto</scope><name>IsDefinition</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a313273874ccf578485006d4000128234" prot="public" virt="non-virtual"><scope>cpp::ast::Goto</scope><name>IsExportable</name></member>
+      <member refid="classcpp_1_1ast_1_1_goto_1a685284ea5f3b21f39aff7f5db841c8f5" prot="public" virt="non-virtual"><scope>cpp::ast::Goto</scope><name>label</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a31ae211f954a8c578ef16226df5ac8c8" prot="public" virt="non-virtual"><scope>cpp::ast::Goto</scope><name>Requires</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a7b2aa97e6a049bb1a93aea48c48f1f44" prot="public" virt="non-virtual"><scope>cpp::ast::Goto</scope><name>start</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1ab5dfeabcbcd7c1f5feb8522edffb8b4a" prot="public" virt="non-virtual"><scope>cpp::ast::Goto</scope><name>XXX__str__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

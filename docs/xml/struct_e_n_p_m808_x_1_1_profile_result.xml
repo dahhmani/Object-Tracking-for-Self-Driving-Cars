@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_e_n_p_m808_x_1_1_profile_result" kind="struct" language="C++" prot="public">
+    <compoundname>ENPM808X::ProfileResult</compoundname>
+    <includes refid="profiler_8h" local="no">profiler.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_e_n_p_m808_x_1_1_profile_result_1a6aff91be06e3fc2ce80e39aa54379fe9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ENPM808X::ProfileResult::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/profiler.h" line="43" column="1" bodyfile="include/profiler.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_n_p_m808_x_1_1_profile_result_1ab884b7076e66d8a4ea2fbc68e0f1fcff" prot="public" static="no" mutable="no">
+        <type>std::chrono::milliseconds::rep</type>
+        <definition>std::chrono::milliseconds::rep ENPM808X::ProfileResult::elapsedTime</definition>
+        <argsstring></argsstring>
+        <name>elapsedTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/profiler.h" line="44" column="1" bodyfile="include/profiler.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure for holding a profiling result. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/profiler.h" line="42" column="1" bodyfile="include/profiler.h" bodystart="42" bodyend="45"/>
+    <listofallmembers>
+      <member refid="struct_e_n_p_m808_x_1_1_profile_result_1ab884b7076e66d8a4ea2fbc68e0f1fcff" prot="public" virt="non-virtual"><scope>ENPM808X::ProfileResult</scope><name>elapsedTime</name></member>
+      <member refid="struct_e_n_p_m808_x_1_1_profile_result_1a6aff91be06e3fc2ce80e39aa54379fe9" prot="public" virt="non-virtual"><scope>ENPM808X::ProfileResult</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

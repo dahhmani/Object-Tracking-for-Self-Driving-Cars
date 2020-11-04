@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_init_google_test_test" kind="class" language="C++" prot="public">
+    <compoundname>testing::InitGoogleTestTest</compoundname>
+    <basecompoundref refid="classtesting_1_1_test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtesting_1_1_init_google_test_test_1a49de9e552ea788c4b79924ec4135ca7a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::InitGoogleTestTest::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplements refid="classtesting_1_1_test_1a190315150c303ddf801313fd1a777733">SetUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5608" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5608" bodyend="5623"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classtesting_1_1_init_google_test_test_1af32acd91b1185c6868072009dce55a7b" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename CharType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void testing::InitGoogleTestTest::AssertStringArrayEq</definition>
+        <argsstring>(size_t size1, CharType **array1, size_t size2, CharType **array2)</argsstring>
+        <name>AssertStringArrayEq</name>
+        <param>
+          <type>size_t</type>
+          <declname>size1</declname>
+        </param>
+        <param>
+          <type>CharType **</type>
+          <declname>array1</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size2</declname>
+        </param>
+        <param>
+          <type>CharType **</type>
+          <declname>array2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5627" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5627" bodyend="5634"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_init_google_test_test_1aac37d5d592202bf6614b02fe0b4da9d2" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::InitGoogleTestTest::CheckFlags</definition>
+        <argsstring>(const Flags &amp;expected)</argsstring>
+        <name>CheckFlags</name>
+        <param>
+          <type>const <ref refid="structtesting_1_1_flags" kindref="compound">Flags</ref> &amp;</type>
+          <declname>expected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5637" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5637" bodyend="5654"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_init_google_test_test_1add290338cf429308d0ab275ae4c46e69" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename CharType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void testing::InitGoogleTestTest::TestParsingFlags</definition>
+        <argsstring>(int argc1, const CharType **argv1, int argc2, const CharType **argv2, const Flags &amp;expected, bool should_print_help)</argsstring>
+        <name>TestParsingFlags</name>
+        <param>
+          <type>int</type>
+          <declname>argc1</declname>
+        </param>
+        <param>
+          <type>const CharType **</type>
+          <declname>argv1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc2</declname>
+        </param>
+        <param>
+          <type>const CharType **</type>
+          <declname>argv2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtesting_1_1_flags" kindref="compound">Flags</ref> &amp;</type>
+          <declname>expected</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>should_print_help</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5660" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5660" bodyend="5700"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1186">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1185">
+        <label>testing::InitGoogleTestTest</label>
+        <link refid="classtesting_1_1_init_google_test_test"/>
+        <childnode refid="1186" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1188">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1187">
+        <label>testing::InitGoogleTestTest</label>
+        <link refid="classtesting_1_1_init_google_test_test"/>
+        <childnode refid="1188" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5605" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5605" bodyend="5709"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_init_google_test_test_1af32acd91b1185c6868072009dce55a7b" prot="protected" virt="non-virtual"><scope>testing::InitGoogleTestTest</scope><name>AssertStringArrayEq</name></member>
+      <member refid="classtesting_1_1_init_google_test_test_1aac37d5d592202bf6614b02fe0b4da9d2" prot="protected" virt="non-virtual"><scope>testing::InitGoogleTestTest</scope><name>CheckFlags</name></member>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual"><scope>testing::InitGoogleTestTest</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual"><scope>testing::InitGoogleTestTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual"><scope>testing::InitGoogleTestTest</scope><name>HasNonfatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual"><scope>testing::InitGoogleTestTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual"><scope>testing::InitGoogleTestTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_init_google_test_test_1a49de9e552ea788c4b79924ec4135ca7a" prot="protected" virt="virtual"><scope>testing::InitGoogleTestTest</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1_test_1a5ccbac42fee8c5b00b0bfe89b6c49d79" prot="public" virt="non-virtual"><scope>testing::InitGoogleTestTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual"><scope>testing::InitGoogleTestTest</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a5f0ab439802cbe0ef7552f1a9f791923" prot="protected" virt="virtual"><scope>testing::InitGoogleTestTest</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_test_1af374706cbaf0ffc460f4fd04e7c150f1" prot="public" virt="non-virtual"><scope>testing::InitGoogleTestTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual"><scope>testing::InitGoogleTestTest</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual"><scope>testing::InitGoogleTestTest</scope><name>Test</name></member>
+      <member refid="classtesting_1_1_init_google_test_test_1add290338cf429308d0ab275ae4c46e69" prot="protected" virt="non-virtual"><scope>testing::InitGoogleTestTest</scope><name>TestParsingFlags</name></member>
+      <member refid="classtesting_1_1_test_1a2b0a62f1e667bbe8d8cb18d785bfa991" prot="public" virt="virtual"><scope>testing::InitGoogleTestTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

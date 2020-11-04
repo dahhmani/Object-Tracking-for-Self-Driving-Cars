@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_ref_matcher_3_01_t_01_6_01_4" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::RefMatcher&lt; T &amp; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_ref_matcher_3_01_t_01_6_01_4_1a459e1fb16e9279031436dbdf1fcce6bd" prot="private" static="no" mutable="no">
+        <type>T &amp;</type>
+        <definition>T&amp; testing::internal::RefMatcher&lt; T &amp; &gt;::object_</definition>
+        <argsstring></argsstring>
+        <name>object_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1084" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1084" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_ref_matcher_3_01_t_01_6_01_4_1a94eaec01f11b3ed704092a62cdb9c21c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::RefMatcher&lt; T &amp; &gt;::RefMatcher</definition>
+        <argsstring>(T &amp;x)</argsstring>
+        <name>RefMatcher</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1042" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1042" bodyend="1042"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_ref_matcher_3_01_t_01_6_01_4_1ac146f2d10f0b2e361f903225be15d1a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Super</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::internal::RefMatcher&lt; T &amp; &gt;::operator Matcher&lt; Super &amp;&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Matcher&lt; Super &amp; &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1045" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1045" bodyend="1052"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_ref_matcher_3_01_t_01_6_01_4_1ac4c1d183a43743e39fa9334cfa184a46" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::RefMatcher&lt; T &amp; &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(RefMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_ref_matcher" kindref="compound">RefMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1086" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1032" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1032" bodyend="1087"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_ref_matcher_3_01_t_01_6_01_4_1ac4c1d183a43743e39fa9334cfa184a46" prot="private" virt="non-virtual"><scope>testing::internal::RefMatcher&lt; T &amp; &gt;</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_ref_matcher_3_01_t_01_6_01_4_1a459e1fb16e9279031436dbdf1fcce6bd" prot="private" virt="non-virtual"><scope>testing::internal::RefMatcher&lt; T &amp; &gt;</scope><name>object_</name></member>
+      <member refid="classtesting_1_1internal_1_1_ref_matcher_3_01_t_01_6_01_4_1ac146f2d10f0b2e361f903225be15d1a9" prot="public" virt="non-virtual"><scope>testing::internal::RefMatcher&lt; T &amp; &gt;</scope><name>operator Matcher&lt; Super &amp; &gt;</name></member>
+      <member refid="classtesting_1_1internal_1_1_ref_matcher_3_01_t_01_6_01_4_1a94eaec01f11b3ed704092a62cdb9c21c" prot="public" virt="non-virtual"><scope>testing::internal::RefMatcher&lt; T &amp; &gt;</scope><name>RefMatcher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

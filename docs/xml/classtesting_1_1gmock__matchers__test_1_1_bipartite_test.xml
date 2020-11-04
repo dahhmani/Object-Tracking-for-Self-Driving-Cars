@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_bipartite_test" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::BipartiteTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">testing::TestWithParam&lt; int &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="191">
+        <label>testing::gmock_matchers_test::BipartiteTest</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_bipartite_test"/>
+        <childnode refid="192" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>testing::TestWithParam&lt; int &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="193">
+        <label>testing::gmock_matchers_test::BipartiteTest</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_bipartite_test"/>
+        <childnode refid="194" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>testing::TestWithParam&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="5099" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="5099" bodyend="5099"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

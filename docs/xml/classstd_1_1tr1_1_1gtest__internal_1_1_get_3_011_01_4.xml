@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classstd_1_1tr1_1_1gtest__internal_1_1_get_3_011_01_4" kind="class" language="C++" prot="public">
+    <compoundname>std::tr1::gtest_internal::Get&lt; 1 &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classstd_1_1tr1_1_1gtest__internal_1_1_get_3_011_01_4_1a52b2f5d2bc283d76a3e8dede84dba154" prot="public" static="yes" const="no" explicit="no" inline="yes" refqual="lvalue" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Tuple</type>
+          </param>
+        </templateparamlist>
+        <type>static</type>
+        <definition>static std::tr1::gtest_internal::Get&lt; 1 &gt;::GTEST_ADD_REF_</definition>
+        <argsstring>(GTEST_TUPLE_ELEMENT_(1, Tuple)) Field(Tuple &amp;t)</argsstring>
+        <name>GTEST_ADD_REF_</name>
+        <param>
+          <type>GTEST_TUPLE_ELEMENT_(1, Tuple)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" line="823" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" bodystart="823" bodyend="824"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1tr1_1_1gtest__internal_1_1_get_3_011_01_4_1a481a2bf839c758408d46a1d0d41ff8f4" prot="public" static="yes" const="yes" explicit="no" inline="yes" refqual="lvalue" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Tuple</type>
+          </param>
+        </templateparamlist>
+        <type>static</type>
+        <definition>static std::tr1::gtest_internal::Get&lt; 1 &gt;::GTEST_BY_REF_</definition>
+        <argsstring>(GTEST_TUPLE_ELEMENT_(1, Tuple)) ConstField(const Tuple &amp;t)</argsstring>
+        <name>GTEST_BY_REF_</name>
+        <param>
+          <type>GTEST_TUPLE_ELEMENT_(1, Tuple)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" line="827" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" bodystart="827" bodyend="828"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" line="820" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" bodystart="820" bodyend="829"/>
+    <listofallmembers>
+      <member refid="classstd_1_1tr1_1_1gtest__internal_1_1_get_3_011_01_4_1a52b2f5d2bc283d76a3e8dede84dba154" prot="public" virt="non-virtual"><scope>std::tr1::gtest_internal::Get&lt; 1 &gt;</scope><name>GTEST_ADD_REF_</name></member>
+      <member refid="classstd_1_1tr1_1_1gtest__internal_1_1_get_3_011_01_4_1a481a2bf839c758408d46a1d0d41ff8f4" prot="public" virt="non-virtual"><scope>std::tr1::gtest_internal::Get&lt; 1 &gt;</scope><name>GTEST_BY_REF_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

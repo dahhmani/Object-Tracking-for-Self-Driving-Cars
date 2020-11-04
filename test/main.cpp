@@ -27,7 +27,7 @@
  * @author    Mahmoud Dahmani (Driver)
  * @author    Aditya Khopkar (Navigator)
  * @copyright MIT License
- * @brief     Entry point for the test program
+ * @brief     Entry point to the test program
  */
 
 #include <gtest/gtest.h>

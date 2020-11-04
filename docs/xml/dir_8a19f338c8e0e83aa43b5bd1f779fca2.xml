@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_8a19f338c8e0e83aa43b5bd1f779fca2" kind="dir">
+    <compoundname>vendor/googletest/googletest/codegear</compoundname>
+    <innerfile refid="gtest__all_8cc">gtest_all.cc</innerfile>
+    <innerfile refid="gtest__link_8cc">gtest_link.cc</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/codegear/"/>
+  </compounddef>
+</doxygen>

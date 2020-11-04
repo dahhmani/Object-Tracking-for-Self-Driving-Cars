@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_property_recording_test" kind="class" language="C++" prot="public">
+    <compoundname>PropertyRecordingTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Test</basecompoundref>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_property_recording_test_1a673c9dfcd9f0c8d10d0df765852c1669" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PropertyRecordingTest::SetUpTestCase</definition>
+        <argsstring>()</argsstring>
+        <name>SetUpTestCase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_output_unittest_.cc" line="99" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_output_unittest_.cc" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_property_recording_test_1ac0d2d47efbdc4399777dffca6071d15d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PropertyRecordingTest::TearDownTestCase</definition>
+        <argsstring>()</argsstring>
+        <name>TearDownTestCase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_xml_output_unittest_.cc" line="100" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_output_unittest_.cc" bodystart="100" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1811">
+        <label>Test</label>
+      </node>
+      <node id="1810">
+        <label>PropertyRecordingTest</label>
+        <link refid="class_property_recording_test"/>
+        <childnode refid="1811" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1813">
+        <label>Test</label>
+      </node>
+      <node id="1812">
+        <label>PropertyRecordingTest</label>
+        <link refid="class_property_recording_test"/>
+        <childnode refid="1813" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_xml_output_unittest_.cc" line="97" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_output_unittest_.cc" bodystart="97" bodyend="101"/>
+    <listofallmembers>
+      <member refid="class_property_recording_test_1a673c9dfcd9f0c8d10d0df765852c1669" prot="public" virt="non-virtual"><scope>PropertyRecordingTest</scope><name>SetUpTestCase</name></member>
+      <member refid="class_property_recording_test_1ac0d2d47efbdc4399777dffca6071d15d" prot="public" virt="non-virtual"><scope>PropertyRecordingTest</scope><name>TearDownTestCase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

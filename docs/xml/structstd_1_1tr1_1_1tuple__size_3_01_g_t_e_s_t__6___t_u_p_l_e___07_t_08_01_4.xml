@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structstd_1_1tr1_1_1tuple__size_3_01_g_t_e_s_t__6___t_u_p_l_e___07_t_08_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>std::tr1::tuple_size&lt; GTEST_6_TUPLE_(T) &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>GTEST_6_TYPENAMES_(T)</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structstd_1_1tr1_1_1tuple__size_3_01_g_t_e_s_t__6___t_u_p_l_e___07_t_08_01_4_1a8c6740533d301f5d47f86ef5370a4b06" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int std::tr1::tuple_size&lt; GTEST_6_TUPLE_(T) &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" line="772" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" bodystart="772" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" line="771" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" bodystart="771" bodyend="773"/>
+    <listofallmembers>
+      <member refid="structstd_1_1tr1_1_1tuple__size_3_01_g_t_e_s_t__6___t_u_p_l_e___07_t_08_01_4_1a8c6740533d301f5d47f86ef5370a4b06" prot="public" virt="non-virtual"><scope>std::tr1::tuple_size&lt; GTEST_6_TUPLE_(T) &gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

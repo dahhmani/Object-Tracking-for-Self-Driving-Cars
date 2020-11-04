@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespaceupload__gtest" kind="namespace" language="Python">
+    <compoundname>upload_gtest</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="upload__gtest_8py_1ae7f6ee6ec8f85faa6fb72465afce7c0d" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string upload_gtest.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;wan@google.com (Zhanyong Wan)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload_gtest.py" line="40" column="1" bodyfile="vendor/googletest/googletest/scripts/upload_gtest.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="upload__gtest_8py_1a83f0946f9ee3731253fc622acd581fc2" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string upload_gtest.CC_FLAG</definition>
+        <argsstring></argsstring>
+        <name>CC_FLAG</name>
+        <initializer>=  &apos;--cc=&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload_gtest.py" line="45" column="1" bodyfile="vendor/googletest/googletest/scripts/upload_gtest.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="upload__gtest_8py_1af282f4c60bf6069ed0abf4e06d9b70ab" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string upload_gtest.GTEST_GROUP</definition>
+        <argsstring></argsstring>
+        <name>GTEST_GROUP</name>
+        <initializer>=  &apos;googletestframework@googlegroups.com&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload_gtest.py" line="46" column="1" bodyfile="vendor/googletest/googletest/scripts/upload_gtest.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="upload__gtest_8py_1ab5bef7b968c54c632a52c1b4a3d37bdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload_gtest.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload_gtest.py" line="49" column="1" bodyfile="vendor/googletest/googletest/scripts/upload_gtest.py" bodystart="49" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/scripts/upload_gtest.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

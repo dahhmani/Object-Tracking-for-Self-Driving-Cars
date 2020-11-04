@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_test_factory_base" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>testing::internal::TestFactoryBase</compoundname>
+    <derivedcompoundref refid="classtesting_1_1internal_1_1_test_factory_impl" prot="public" virt="non-virtual">testing::internal::TestFactoryImpl&lt; TestClass &gt;</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_factory_base_1a18f22a7594336a36642289c1decddc9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual testing::internal::TestFactoryBase::~TestFactoryBase</definition>
+        <argsstring>()</argsstring>
+        <name>~TestFactoryBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="466" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="466" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_factory_base_1a07ac3ca0b196cdb092da0bb186b7c030" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classtesting_1_1_test" kindref="compound">Test</ref> *</type>
+        <definition>virtual Test* testing::internal::TestFactoryBase::CreateTest</definition>
+        <argsstring>()=0</argsstring>
+        <name>CreateTest</name>
+        <reimplementedby refid="classtesting_1_1internal_1_1_test_factory_impl_1a8860c89bdb06450a5d5e8137ebd9d775">CreateTest</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="470" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_factory_base_1afedbf147b2a213517b315880d8c81427" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::TestFactoryBase::TestFactoryBase</definition>
+        <argsstring>()</argsstring>
+        <name>TestFactoryBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="473" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="473" bodyend="473"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_factory_base_1a85d7cb90e00f165e61a008be77293fb4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::TestFactoryBase::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(TestFactoryBase)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_test_factory_base" kindref="compound">TestFactoryBase</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="476" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2136">
+        <label>testing::internal::TestFactoryBase</label>
+        <link refid="classtesting_1_1internal_1_1_test_factory_base"/>
+      </node>
+      <node id="2137">
+        <label>testing::internal::TestFactoryImpl&lt; TestClass &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_test_factory_impl"/>
+        <childnode refid="2136" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="464" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="464" bodyend="477"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_test_factory_base_1a07ac3ca0b196cdb092da0bb186b7c030" prot="public" virt="pure-virtual"><scope>testing::internal::TestFactoryBase</scope><name>CreateTest</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_factory_base_1a85d7cb90e00f165e61a008be77293fb4" prot="private" virt="non-virtual"><scope>testing::internal::TestFactoryBase</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_factory_base_1afedbf147b2a213517b315880d8c81427" prot="protected" virt="non-virtual"><scope>testing::internal::TestFactoryBase</scope><name>TestFactoryBase</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_factory_base_1a18f22a7594336a36642289c1decddc9e" prot="public" virt="virtual"><scope>testing::internal::TestFactoryBase</scope><name>~TestFactoryBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

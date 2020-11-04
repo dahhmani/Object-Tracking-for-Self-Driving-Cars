@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_polymorphic_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::PolymorphicMatcher</compoundname>
+    <innerclass refid="classtesting_1_1_polymorphic_matcher_1_1_monomorphic_impl" prot="private">testing::PolymorphicMatcher::MonomorphicImpl</innerclass>
+    <templateparamlist>
+      <param>
+        <type>class Impl</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1_polymorphic_matcher_1adadea4f2c7b639586ed2f21b27303382" prot="private" static="no" mutable="no">
+        <type>Impl</type>
+        <definition>Impl testing::PolymorphicMatcher&lt; Impl &gt;::impl_</definition>
+        <argsstring></argsstring>
+        <name>impl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="471" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_polymorphic_matcher_1a04c23972b2dcc6e036b00006d7689712" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::PolymorphicMatcher&lt; Impl &gt;::PolymorphicMatcher</definition>
+        <argsstring>(const Impl &amp;an_impl)</argsstring>
+        <name>PolymorphicMatcher</name>
+        <param>
+          <type>const Impl &amp;</type>
+          <declname>an_impl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="432" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="432" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_polymorphic_matcher_1a3b7227b1f5c203efd47d393b781b317c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Impl &amp;</type>
+        <definition>Impl&amp; testing::PolymorphicMatcher&lt; Impl &gt;::mutable_impl</definition>
+        <argsstring>()</argsstring>
+        <name>mutable_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="436" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="436" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_polymorphic_matcher_1ab10e4858d8dc903d3e1e378d53d25882" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const Impl &amp;</type>
+        <definition>const Impl&amp; testing::PolymorphicMatcher&lt; Impl &gt;::impl</definition>
+        <argsstring>() const</argsstring>
+        <name>impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="440" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="440" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_polymorphic_matcher_1a6280c1485ca41a48c858c38828c1e04e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::PolymorphicMatcher&lt; Impl &gt;::operator Matcher&lt; T &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Matcher&lt; T &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="443" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="443" bodyend="445"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1_polymorphic_matcher_1a008970faa86ba4970cf4633ecfe8e46c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::PolymorphicMatcher&lt; Impl &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(PolymorphicMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1_polymorphic_matcher" kindref="compound">PolymorphicMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="473" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="430" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="430" bodyend="474"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_polymorphic_matcher_1a008970faa86ba4970cf4633ecfe8e46c" prot="private" virt="non-virtual"><scope>testing::PolymorphicMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1_polymorphic_matcher_1ab10e4858d8dc903d3e1e378d53d25882" prot="public" virt="non-virtual"><scope>testing::PolymorphicMatcher</scope><name>impl</name></member>
+      <member refid="classtesting_1_1_polymorphic_matcher_1adadea4f2c7b639586ed2f21b27303382" prot="private" virt="non-virtual"><scope>testing::PolymorphicMatcher</scope><name>impl_</name></member>
+      <member refid="classtesting_1_1_polymorphic_matcher_1a3b7227b1f5c203efd47d393b781b317c" prot="public" virt="non-virtual"><scope>testing::PolymorphicMatcher</scope><name>mutable_impl</name></member>
+      <member refid="classtesting_1_1_polymorphic_matcher_1a6280c1485ca41a48c858c38828c1e04e" prot="public" virt="non-virtual"><scope>testing::PolymorphicMatcher</scope><name>operator Matcher&lt; T &gt;</name></member>
+      <member refid="classtesting_1_1_polymorphic_matcher_1a04c23972b2dcc6e036b00006d7689712" prot="public" virt="non-virtual"><scope>testing::PolymorphicMatcher</scope><name>PolymorphicMatcher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

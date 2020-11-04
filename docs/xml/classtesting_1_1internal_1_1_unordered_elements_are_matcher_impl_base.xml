@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::UnorderedElementsAreMatcherImplBase</compoundname>
+    <derivedcompoundref refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl" prot="public" virt="non-virtual">testing::internal::UnorderedElementsAreMatcherImpl&lt; Container &gt;</derivedcompoundref>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1a81ca7ce793d4b25ce2a7d3e28b48cd64" prot="protected" static="no">
+        <type>::std::vector&lt; const <ref refid="classtesting_1_1_matcher_describer_interface" kindref="compound">MatcherDescriberInterface</ref> * &gt;</type>
+        <definition>typedef ::std::vector&lt;const MatcherDescriberInterface*&gt; testing::internal::UnorderedElementsAreMatcherImplBase::MatcherDescriberVec</definition>
+        <argsstring></argsstring>
+        <name>MatcherDescriberVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3316" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3316" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1af416e45f53ebdfe4bccd710142db1600" prot="private" static="no" mutable="no">
+        <type>MatcherDescriberVec</type>
+        <definition>MatcherDescriberVec testing::internal::UnorderedElementsAreMatcherImplBase::matcher_describers_</definition>
+        <argsstring></argsstring>
+        <name>matcher_describers_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3338" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3338" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1a40318adf9a89d830a26a96b2eb06b4e3" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::UnorderedElementsAreMatcherImplBase::DescribeToImpl</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeToImpl</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3319" column="1" bodyfile="vendor/googletest/googlemock/src/gmock-matchers.cc" bodystart="395" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1ab3ca5ae4aef146b093a3fb35f53d1a38" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::UnorderedElementsAreMatcherImplBase::DescribeNegationToImpl</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeNegationToImpl</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3322" column="1" bodyfile="vendor/googletest/googlemock/src/gmock-matchers.cc" bodystart="416" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1a515ec900bd84fe4d28e3ccf55db25822" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::UnorderedElementsAreMatcherImplBase::VerifyAllElementsAndMatchersAreMatched</definition>
+        <argsstring>(const ::std::vector&lt; string &gt; &amp;element_printouts, const MatchMatrix &amp;matrix, MatchResultListener *listener) const</argsstring>
+        <name>VerifyAllElementsAndMatchersAreMatched</name>
+        <param>
+          <type>const ::std::vector&lt; string &gt; &amp;</type>
+          <declname>element_printouts</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1_match_matrix" kindref="compound">MatchMatrix</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3324" column="1" bodyfile="vendor/googletest/googlemock/src/gmock-matchers.cc" bodystart="444" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1a04d4adc809d9c06331f8dbb67b879ac0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MatcherDescriberVec &amp;</type>
+        <definition>MatcherDescriberVec&amp; testing::internal::UnorderedElementsAreMatcherImplBase::matcher_describers</definition>
+        <argsstring>()</argsstring>
+        <name>matcher_describers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3329" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3329" bodyend="3331"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1ab6d5a2342e07730b913f419cf662d16a" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1_message" kindref="compound">Message</ref></type>
+        <definition>static Message testing::internal::UnorderedElementsAreMatcherImplBase::Elements</definition>
+        <argsstring>(size_t n)</argsstring>
+        <name>Elements</name>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3333" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3333" bodyend="3335"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1aeefc48c43ed3693c8f37df816efa0e2b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::UnorderedElementsAreMatcherImplBase::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(UnorderedElementsAreMatcherImplBase)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base" kindref="compound">UnorderedElementsAreMatcherImplBase</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3340" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2400">
+        <label>testing::internal::UnorderedElementsAreMatcherImplBase</label>
+        <link refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base"/>
+      </node>
+      <node id="2401">
+        <label>testing::internal::UnorderedElementsAreMatcherImpl&lt; Container &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl"/>
+        <childnode refid="2400" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3311" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3311" bodyend="3341"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1ab3ca5ae4aef146b093a3fb35f53d1a38" prot="protected" virt="non-virtual"><scope>testing::internal::UnorderedElementsAreMatcherImplBase</scope><name>DescribeNegationToImpl</name></member>
+      <member refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1a40318adf9a89d830a26a96b2eb06b4e3" prot="protected" virt="non-virtual"><scope>testing::internal::UnorderedElementsAreMatcherImplBase</scope><name>DescribeToImpl</name></member>
+      <member refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1ab6d5a2342e07730b913f419cf662d16a" prot="protected" virt="non-virtual"><scope>testing::internal::UnorderedElementsAreMatcherImplBase</scope><name>Elements</name></member>
+      <member refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1aeefc48c43ed3693c8f37df816efa0e2b" prot="private" virt="non-virtual"><scope>testing::internal::UnorderedElementsAreMatcherImplBase</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1a04d4adc809d9c06331f8dbb67b879ac0" prot="protected" virt="non-virtual"><scope>testing::internal::UnorderedElementsAreMatcherImplBase</scope><name>matcher_describers</name></member>
+      <member refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1af416e45f53ebdfe4bccd710142db1600" prot="private" virt="non-virtual"><scope>testing::internal::UnorderedElementsAreMatcherImplBase</scope><name>matcher_describers_</name></member>
+      <member refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1a81ca7ce793d4b25ce2a7d3e28b48cd64" prot="protected" virt="non-virtual"><scope>testing::internal::UnorderedElementsAreMatcherImplBase</scope><name>MatcherDescriberVec</name></member>
+      <member refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_impl_base_1a515ec900bd84fe4d28e3ccf55db25822" prot="protected" virt="non-virtual"><scope>testing::internal::UnorderedElementsAreMatcherImplBase</scope><name>VerifyAllElementsAndMatchersAreMatched</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacecpp_1_1tokenize" kind="namespace" language="Python">
+    <compoundname>cpp::tokenize</compoundname>
+    <innerclass refid="classcpp_1_1tokenize_1_1_token" prot="public">cpp::tokenize::Token</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="tokenize_8py_1a13ec118ce7f7df6ecd18b3c74d37708a" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string cpp::tokenize.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;nnorwitz@google.com (Neal Norwitz)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="20" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tokenize_8py_1ab5a9d36b61d51e76473c383db9e4b934" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string cpp::tokenize._letters</definition>
+        <argsstring></argsstring>
+        <name>_letters</name>
+        <initializer>=  &apos;abcdefghijklmnopqrstuvwxyz&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="42" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tokenize_8py_1a733f1cf605b1630fb6a0a7f30aaefbec" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp::tokenize.VALID_IDENTIFIER_CHARS</definition>
+        <argsstring></argsstring>
+        <name>VALID_IDENTIFIER_CHARS</name>
+        <initializer>=  set(_letters + _letters.upper() + &apos;_0123456789$&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="43" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tokenize_8py_1a8b45b0f0f2b504757e9ede9c342b2c36" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp::tokenize.HEX_DIGITS</definition>
+        <argsstring></argsstring>
+        <name>HEX_DIGITS</name>
+        <initializer>=  set(&apos;0123456789abcdefABCDEF&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="44" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tokenize_8py_1ad8c6dd06d4e6ef2e24e9186acb0aff43" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp::tokenize.INT_OR_FLOAT_DIGITS</definition>
+        <argsstring></argsstring>
+        <name>INT_OR_FLOAT_DIGITS</name>
+        <initializer>=  set(&apos;01234567890eE-+&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="45" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tokenize_8py_1aef952930004258aec982a51c8875e82a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>cpp::tokenize._STR_PREFIXES</definition>
+        <argsstring></argsstring>
+        <name>_STR_PREFIXES</name>
+        <initializer>=  set((&apos;R&apos;, &apos;u8&apos;, &apos;u8R&apos;, &apos;u&apos;, &apos;uR&apos;, &apos;U&apos;, &apos;UR&apos;, &apos;L&apos;, &apos;LR&apos;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="49" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tokenize_8py_1a0dfd65c08216eed29f74a64b603ac540" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string cpp::tokenize.UNKNOWN</definition>
+        <argsstring></argsstring>
+        <name>UNKNOWN</name>
+        <initializer>=  &apos;UNKNOWN&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="53" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tokenize_8py_1a1655e62b60899059935930c81ba25c01" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string cpp::tokenize.SYNTAX</definition>
+        <argsstring></argsstring>
+        <name>SYNTAX</name>
+        <initializer>=  &apos;SYNTAX&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="54" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tokenize_8py_1a5e3bf1014a301906871113a989188a78" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string cpp::tokenize.CONSTANT</definition>
+        <argsstring></argsstring>
+        <name>CONSTANT</name>
+        <initializer>=  &apos;CONSTANT&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="55" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tokenize_8py_1aa14251ded979d72f93d7b234d8cfb584" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string cpp::tokenize.NAME</definition>
+        <argsstring></argsstring>
+        <name>NAME</name>
+        <initializer>=  &apos;NAME&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="56" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tokenize_8py_1a3c8918ee13b9acf5ea4e70b484d67268" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string cpp::tokenize.PREPROCESSOR</definition>
+        <argsstring></argsstring>
+        <name>PREPROCESSOR</name>
+        <initializer>=  &apos;PREPROCESSOR&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="57" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tokenize_8py_1a8dd117207e391864f7d9cb656e826a9e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp::tokenize.WHENCE_STREAM</definition>
+        <argsstring></argsstring>
+        <name>WHENCE_STREAM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="61" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tokenize_8py_1ad02466a473c5e9c2ac256e18209f0967" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp::tokenize.WHENCE_QUEUE</definition>
+        <argsstring></argsstring>
+        <name>WHENCE_QUEUE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="61" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tokenize_8py_1a3c6a8b154110b4b6a0385ccc3469db77" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.tokenize._GetString</definition>
+        <argsstring>(source, start, i)</argsstring>
+        <name>_GetString</name>
+        <param>
+          <type>source</type>
+          <defname>source</defname>
+        </param>
+        <param>
+          <type>start</type>
+          <defname>start</defname>
+        </param>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="89" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="89" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="tokenize_8py_1abeb75f493bd3035922daf150f5213ba9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.tokenize._GetChar</definition>
+        <argsstring>(source, start, i)</argsstring>
+        <name>_GetChar</name>
+        <param>
+          <type>source</type>
+          <defname>source</defname>
+        </param>
+        <param>
+          <type>start</type>
+          <defname>start</defname>
+        </param>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="105" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="105" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="tokenize_8py_1ab78959b4d0a9c3bade98904a23129afc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.tokenize.GetTokens</definition>
+        <argsstring>(source)</argsstring>
+        <name>GetTokens</name>
+        <param>
+          <type>source</type>
+          <defname>source</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns a sequence of Tokens.
+
+Args:
+  source: string of C++ source code.
+
+Yields:
+  Token that represents the next token in the source.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="119" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="119" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="tokenize_8py_1ae666c331b4bd7d1f3e8956c78cc6f3a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.tokenize.main</definition>
+        <argsstring>(argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>argv</type>
+          <defname>argv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Driver mostly for testing purposes.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="274" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" bodystart="274" bodyend="286"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/tokenize.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

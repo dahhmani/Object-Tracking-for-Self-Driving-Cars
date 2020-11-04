@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_test_listener" kind="class" language="C++" prot="public">
+    <compoundname>TestListener</compoundname>
+    <basecompoundref refid="classtesting_1_1_empty_test_event_listener" prot="public" virt="non-virtual">testing::EmptyTestEventListener</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_test_listener_1adb080d3283e9cdca64b535be2842719e" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* TestListener::on_start_counter_</definition>
+        <argsstring></argsstring>
+        <name>on_start_counter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="7002" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="7002" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_test_listener_1a64a43d9e313813c6530fd20d8aa2f23f" prot="private" static="no" mutable="no">
+        <type>bool *</type>
+        <definition>bool* TestListener::is_destroyed_</definition>
+        <argsstring></argsstring>
+        <name>is_destroyed_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="7003" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="7003" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_test_listener_1ae20c874ce92777371de6d024df229e9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TestListener::TestListener</definition>
+        <argsstring>()</argsstring>
+        <name>TestListener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="6985" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="6985" bodyend="6985"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_listener_1ab65604c6c3742c494e9378e770da5d42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TestListener::TestListener</definition>
+        <argsstring>(int *on_start_counter, bool *is_destroyed)</argsstring>
+        <name>TestListener</name>
+        <param>
+          <type>int *</type>
+          <declname>on_start_counter</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>is_destroyed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="6986" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="6986" bodyend="6988"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_listener_1ae59dec3ae673618185eebf71881902e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual TestListener::~TestListener</definition>
+        <argsstring>()</argsstring>
+        <name>~TestListener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="6990" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="6990" bodyend="6993"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_test_listener_1a6218f522f5b6b37050ff0ea630ac5fd3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void TestListener::OnTestProgramStart</definition>
+        <argsstring>(const UnitTest &amp;)</argsstring>
+        <name>OnTestProgramStart</name>
+        <reimplements refid="classtesting_1_1_empty_test_event_listener_1aa3847c8a3c22d8d69a6006dfdd6589fc">OnTestProgramStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="6996" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="6996" bodyend="6999"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2153">
+        <label>TestListener</label>
+        <link refid="class_test_listener"/>
+        <childnode refid="2154" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2154">
+        <label>testing::EmptyTestEventListener</label>
+        <link refid="classtesting_1_1_empty_test_event_listener"/>
+        <childnode refid="2155" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2155">
+        <label>testing::TestEventListener</label>
+        <link refid="classtesting_1_1_test_event_listener"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2156">
+        <label>TestListener</label>
+        <link refid="class_test_listener"/>
+        <childnode refid="2157" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2157">
+        <label>testing::EmptyTestEventListener</label>
+        <link refid="classtesting_1_1_empty_test_event_listener"/>
+        <childnode refid="2158" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2158">
+        <label>testing::TestEventListener</label>
+        <link refid="classtesting_1_1_test_event_listener"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="6983" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="6983" bodyend="7004"/>
+    <listofallmembers>
+      <member refid="class_test_listener_1a64a43d9e313813c6530fd20d8aa2f23f" prot="private" virt="non-virtual"><scope>TestListener</scope><name>is_destroyed_</name></member>
+      <member refid="class_test_listener_1adb080d3283e9cdca64b535be2842719e" prot="private" virt="non-virtual"><scope>TestListener</scope><name>on_start_counter_</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1abc481c6648d15d4242245195a06f5aa0" prot="public" virt="virtual"><scope>TestListener</scope><name>OnEnvironmentsSetUpEnd</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1a156d1965248fbdced6aabacadfa2d63f" prot="public" virt="virtual"><scope>TestListener</scope><name>OnEnvironmentsSetUpStart</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1aea64c83c415b33a4c0b0239bafd1438d" prot="public" virt="virtual"><scope>TestListener</scope><name>OnEnvironmentsTearDownEnd</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1a00fa1a4ea5831e20746188414268e7c6" prot="public" virt="virtual"><scope>TestListener</scope><name>OnEnvironmentsTearDownStart</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1a6bec703158283104c4298f7d8a528515" prot="public" virt="virtual"><scope>TestListener</scope><name>OnTestCaseEnd</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1ae4707ed9cc7ace5241bc8ccc4051209b" prot="public" virt="virtual"><scope>TestListener</scope><name>OnTestCaseStart</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1afd58d21005f0d0d0399fb114627545d3" prot="public" virt="virtual"><scope>TestListener</scope><name>OnTestEnd</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1a2253e5a18b3cf7bccd349567a252209d" prot="public" virt="virtual"><scope>TestListener</scope><name>OnTestIterationEnd</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1a836f05829855dc60d13ba99ad712c0dd" prot="public" virt="virtual"><scope>TestListener</scope><name>OnTestIterationStart</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1a59e7f7d9f2e2d089a6e8c1e2577f4718" prot="public" virt="virtual"><scope>TestListener</scope><name>OnTestPartResult</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1a0abcc02bd2331a2e29ad6f4d9daf2a32" prot="public" virt="virtual"><scope>TestListener</scope><name>OnTestProgramEnd</name></member>
+      <member refid="class_test_listener_1a6218f522f5b6b37050ff0ea630ac5fd3" prot="protected" virt="virtual"><scope>TestListener</scope><name>OnTestProgramStart</name></member>
+      <member refid="classtesting_1_1_empty_test_event_listener_1a84fa74cc9ba742f9f847ea405ca84e5e" prot="public" virt="virtual"><scope>TestListener</scope><name>OnTestStart</name></member>
+      <member refid="class_test_listener_1ae20c874ce92777371de6d024df229e9f" prot="public" virt="non-virtual"><scope>TestListener</scope><name>TestListener</name></member>
+      <member refid="class_test_listener_1ab65604c6c3742c494e9378e770da5d42" prot="public" virt="non-virtual"><scope>TestListener</scope><name>TestListener</name></member>
+      <member refid="classtesting_1_1_test_event_listener_1a4512d19e7a108ec4926239ec1ea85d63" prot="public" virt="virtual"><scope>TestListener</scope><name>~TestEventListener</name></member>
+      <member refid="class_test_listener_1ae59dec3ae673618185eebf71881902e9" prot="public" virt="virtual"><scope>TestListener</scope><name>~TestListener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

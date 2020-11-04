@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_scoped_fake_test_part_result_reporter" kind="class" language="C++" prot="public">
+    <compoundname>testing::ScopedFakeTestPartResultReporter</compoundname>
+    <basecompoundref refid="classtesting_1_1_test_part_result_reporter_interface" prot="public" virt="non-virtual">testing::TestPartResultReporterInterface</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classtesting_1_1_scoped_fake_test_part_result_reporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5" prot="public" static="no">
+        <name>InterceptMode</name>
+        <enumvalue id="classtesting_1_1_scoped_fake_test_part_result_reporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5aed6c5f87d33207768db503526e6a1e8a" prot="public">
+          <name>INTERCEPT_ONLY_CURRENT_THREAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtesting_1_1_scoped_fake_test_part_result_reporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5a187f4164aad7fbb9414b263c68a693cd" prot="public">
+          <name>INTERCEPT_ALL_THREADS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-spi.h" line="55" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-spi.h" bodystart="55" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1_scoped_fake_test_part_result_reporter_1ae62ed825619c11ac21fdd06480e0d982" prot="private" static="no" mutable="no">
+        <type>const InterceptMode</type>
+        <definition>const InterceptMode testing::ScopedFakeTestPartResultReporter::intercept_mode_</definition>
+        <argsstring></argsstring>
+        <name>intercept_mode_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-spi.h" line="82" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-spi.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_scoped_fake_test_part_result_reporter_1a4183b091842a83dd8ce4927746c43092" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1_test_part_result_reporter_interface" kindref="compound">TestPartResultReporterInterface</ref> *</type>
+        <definition>TestPartResultReporterInterface* testing::ScopedFakeTestPartResultReporter::old_reporter_</definition>
+        <argsstring></argsstring>
+        <name>old_reporter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-spi.h" line="83" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-spi.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_scoped_fake_test_part_result_reporter_1a729a26c94e4082ee0dc3312395a3f480" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1_test_part_result_array" kindref="compound">TestPartResultArray</ref> *const</type>
+        <definition>TestPartResultArray* const testing::ScopedFakeTestPartResultReporter::result_</definition>
+        <argsstring></argsstring>
+        <name>result_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-spi.h" line="84" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-spi.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_scoped_fake_test_part_result_reporter_1aa0100ecf4799fb51d45167be6a5de1d5" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::ScopedFakeTestPartResultReporter::ScopedFakeTestPartResultReporter</definition>
+        <argsstring>(TestPartResultArray *result)</argsstring>
+        <name>ScopedFakeTestPartResultReporter</name>
+        <param>
+          <type><ref refid="classtesting_1_1_test_part_result_array" kindref="compound">TestPartResultArray</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-spi.h" line="64" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="563" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_scoped_fake_test_part_result_reporter_1a57cbc09ed48627c8a73e622618dc4b4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::ScopedFakeTestPartResultReporter::ScopedFakeTestPartResultReporter</definition>
+        <argsstring>(InterceptMode intercept_mode, TestPartResultArray *result)</argsstring>
+        <name>ScopedFakeTestPartResultReporter</name>
+        <param>
+          <type>InterceptMode</type>
+          <declname>intercept_mode</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_test_part_result_array" kindref="compound">TestPartResultArray</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-spi.h" line="67" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="573" bodyend="578"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_scoped_fake_test_part_result_reporter_1a4817d59ca70228ebd5d5c3c4e8dd729d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>testing::ScopedFakeTestPartResultReporter::~ScopedFakeTestPartResultReporter</definition>
+        <argsstring>()</argsstring>
+        <name>~ScopedFakeTestPartResultReporter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-spi.h" line="71" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="593" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_scoped_fake_test_part_result_reporter_1a82531434f51632d98ed7cdcdb10b8b92" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void testing::ScopedFakeTestPartResultReporter::ReportTestPartResult</definition>
+        <argsstring>(const TestPartResult &amp;result)</argsstring>
+        <name>ReportTestPartResult</name>
+        <reimplements refid="classtesting_1_1_test_part_result_reporter_interface_1aa2f920e7a5a0a6d0faf19e3727928c22">ReportTestPartResult</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-spi.h" line="78" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="604" bodyend="607"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1_scoped_fake_test_part_result_reporter_1a28d280a3f5d172d63b94f70b8e7660d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::ScopedFakeTestPartResultReporter::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-spi.h" line="80" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="580" bodyend="589"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_scoped_fake_test_part_result_reporter_1ad7d21ddf4a50ff918571e8a08e73fd59" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::ScopedFakeTestPartResultReporter::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(ScopedFakeTestPartResultReporter)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1_scoped_fake_test_part_result_reporter" kindref="compound">ScopedFakeTestPartResultReporter</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-spi.h" line="86" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1924">
+        <label>testing::TestPartResultReporterInterface</label>
+        <link refid="classtesting_1_1_test_part_result_reporter_interface"/>
+      </node>
+      <node id="1923">
+        <label>testing::ScopedFakeTestPartResultReporter</label>
+        <link refid="classtesting_1_1_scoped_fake_test_part_result_reporter"/>
+        <childnode refid="1924" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1926">
+        <label>testing::TestPartResultReporterInterface</label>
+        <link refid="classtesting_1_1_test_part_result_reporter_interface"/>
+      </node>
+      <node id="1925">
+        <label>testing::ScopedFakeTestPartResultReporter</label>
+        <link refid="classtesting_1_1_scoped_fake_test_part_result_reporter"/>
+        <childnode refid="1926" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/include/gtest/gtest-spi.h" line="52" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-spi.h" bodystart="51" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_scoped_fake_test_part_result_reporter_1ad7d21ddf4a50ff918571e8a08e73fd59" prot="private" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1_scoped_fake_test_part_result_reporter_1a28d280a3f5d172d63b94f70b8e7660d7" prot="private" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>Init</name></member>
+      <member refid="classtesting_1_1_scoped_fake_test_part_result_reporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5a187f4164aad7fbb9414b263c68a693cd" prot="public" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>INTERCEPT_ALL_THREADS</name></member>
+      <member refid="classtesting_1_1_scoped_fake_test_part_result_reporter_1ae62ed825619c11ac21fdd06480e0d982" prot="private" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>intercept_mode_</name></member>
+      <member refid="classtesting_1_1_scoped_fake_test_part_result_reporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5aed6c5f87d33207768db503526e6a1e8a" prot="public" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>INTERCEPT_ONLY_CURRENT_THREAD</name></member>
+      <member refid="classtesting_1_1_scoped_fake_test_part_result_reporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5" prot="public" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>InterceptMode</name></member>
+      <member refid="classtesting_1_1_scoped_fake_test_part_result_reporter_1a4183b091842a83dd8ce4927746c43092" prot="private" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>old_reporter_</name></member>
+      <member refid="classtesting_1_1_scoped_fake_test_part_result_reporter_1a82531434f51632d98ed7cdcdb10b8b92" prot="public" virt="virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>ReportTestPartResult</name></member>
+      <member refid="classtesting_1_1_scoped_fake_test_part_result_reporter_1a729a26c94e4082ee0dc3312395a3f480" prot="private" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>result_</name></member>
+      <member refid="classtesting_1_1_scoped_fake_test_part_result_reporter_1aa0100ecf4799fb51d45167be6a5de1d5" prot="public" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>ScopedFakeTestPartResultReporter</name></member>
+      <member refid="classtesting_1_1_scoped_fake_test_part_result_reporter_1a57cbc09ed48627c8a73e622618dc4b4f" prot="public" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>ScopedFakeTestPartResultReporter</name></member>
+      <member refid="classtesting_1_1_scoped_fake_test_part_result_reporter_1a4817d59ca70228ebd5d5c3c4e8dd729d" prot="public" virt="virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>~ScopedFakeTestPartResultReporter</name></member>
+      <member refid="classtesting_1_1_test_part_result_reporter_interface_1a338b51591ed654f84dc0feaaf2b66917" prot="public" virt="virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>~TestPartResultReporterInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

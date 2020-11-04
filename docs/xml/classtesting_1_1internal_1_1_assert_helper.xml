@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_assert_helper" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::AssertHelper</compoundname>
+    <innerclass refid="structtesting_1_1internal_1_1_assert_helper_1_1_assert_helper_data" prot="private">testing::internal::AssertHelper::AssertHelperData</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_assert_helper_1af69a4d66a929d0c6e419f4efd3ba6b3a" prot="private" static="no" mutable="no">
+        <type>AssertHelperData *const</type>
+        <definition>AssertHelperData* const testing::internal::AssertHelper::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1702" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1702" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_assert_helper_1ac2c9334518fd4087189b4505567a3c90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::AssertHelper::AssertHelper</definition>
+        <argsstring>(TestPartResult::Type type, const char *file, int line, const char *message)</argsstring>
+        <name>AssertHelper</name>
+        <param>
+          <type>TestPartResult::Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1671" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="361" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_assert_helper_1a51c640785d4ed4a0155cc9aa857d8931" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::AssertHelper::~AssertHelper</definition>
+        <argsstring>()</argsstring>
+        <name>~AssertHelper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1675" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="368" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_assert_helper_1a97bf22d786131ab7baa86b97a27aeb4d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::AssertHelper::operator=</definition>
+        <argsstring>(const Message &amp;message) const</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1679" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="373" bodyend="381"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_assert_helper_1a264544ac41950b296c34253d2e656b10" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::AssertHelper::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(AssertHelper)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_assert_helper" kindref="compound">AssertHelper</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1704" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1668" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1668" bodyend="1705"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_assert_helper_1ac2c9334518fd4087189b4505567a3c90" prot="public" virt="non-virtual"><scope>testing::internal::AssertHelper</scope><name>AssertHelper</name></member>
+      <member refid="classtesting_1_1internal_1_1_assert_helper_1af69a4d66a929d0c6e419f4efd3ba6b3a" prot="private" virt="non-virtual"><scope>testing::internal::AssertHelper</scope><name>data_</name></member>
+      <member refid="classtesting_1_1internal_1_1_assert_helper_1a264544ac41950b296c34253d2e656b10" prot="private" virt="non-virtual"><scope>testing::internal::AssertHelper</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_assert_helper_1a97bf22d786131ab7baa86b97a27aeb4d" prot="public" virt="non-virtual"><scope>testing::internal::AssertHelper</scope><name>operator=</name></member>
+      <member refid="classtesting_1_1internal_1_1_assert_helper_1a51c640785d4ed4a0155cc9aa857d8931" prot="public" virt="non-virtual"><scope>testing::internal::AssertHelper</scope><name>~AssertHelper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

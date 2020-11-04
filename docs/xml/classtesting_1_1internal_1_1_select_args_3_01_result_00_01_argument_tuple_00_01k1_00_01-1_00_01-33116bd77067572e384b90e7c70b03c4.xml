@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_select_args_3_01_result_00_01_argument_tuple_00_01k1_00_01-1_00_01-33116bd77067572e384b90e7c70b03c4" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::SelectArgs&lt; Result, ArgumentTuple, k1, -1, -1, -1, -1, -1, -1, -1, -1, -1 &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Result</type>
+      </param>
+      <param>
+        <type>typename ArgumentTuple</type>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k1</declname>
+        <defname>k1</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_select_args_3_01_result_00_01_argument_tuple_00_01k1_00_01-1_00_01-33116bd77067572e384b90e7c70b03c4_1af1aee025a91b513b1d90a200748377dc" prot="public" static="no">
+        <type>Result</type>
+        <definition>typedef Result testing::internal::SelectArgs&lt; Result, ArgumentTuple, k1, -1, -1, -1, -1, -1, -1, -1, -1, -1 &gt;::type(GMOCK_FIELD_(ArgumentTuple, k1))</definition>
+        <argsstring>(GMOCK_FIELD_(ArgumentTuple, k1))</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="326" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_select_args_3_01_result_00_01_argument_tuple_00_01k1_00_01-1_00_01-33116bd77067572e384b90e7c70b03c4_1a40e5cbd362d7bdd16d0d60a39b7e5c14" prot="public" static="no">
+        <type><ref refid="structtesting_1_1internal_1_1_function" kindref="compound">Function</ref>&lt; type &gt;::ArgumentTuple</type>
+        <definition>typedef Function&lt;type&gt;::ArgumentTuple testing::internal::SelectArgs&lt; Result, ArgumentTuple, k1, -1, -1, -1, -1, -1, -1, -1, -1, -1 &gt;::SelectedArgs</definition>
+        <argsstring></argsstring>
+        <name>SelectedArgs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="327" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_select_args_3_01_result_00_01_argument_tuple_00_01k1_00_01-1_00_01-33116bd77067572e384b90e7c70b03c4_1a7aaf6f5192da4e05fbc2bf595418546b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SelectedArgs</type>
+        <definition>static SelectedArgs testing::internal::SelectArgs&lt; Result, ArgumentTuple, k1, -1, -1, -1, -1, -1, -1, -1, -1, -1 &gt;::Select</definition>
+        <argsstring>(const ArgumentTuple &amp;args)</argsstring>
+        <name>Select</name>
+        <param>
+          <type>const ArgumentTuple &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="328" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="328" bodyend="330"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="324" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="323" bodyend="331"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_select_args_3_01_result_00_01_argument_tuple_00_01k1_00_01-1_00_01-33116bd77067572e384b90e7c70b03c4_1a7aaf6f5192da4e05fbc2bf595418546b" prot="public" virt="non-virtual"><scope>testing::internal::SelectArgs&lt; Result, ArgumentTuple, k1, -1, -1, -1, -1, -1, -1, -1, -1, -1 &gt;</scope><name>Select</name></member>
+      <member refid="classtesting_1_1internal_1_1_select_args_3_01_result_00_01_argument_tuple_00_01k1_00_01-1_00_01-33116bd77067572e384b90e7c70b03c4_1a40e5cbd362d7bdd16d0d60a39b7e5c14" prot="public" virt="non-virtual"><scope>testing::internal::SelectArgs&lt; Result, ArgumentTuple, k1, -1, -1, -1, -1, -1, -1, -1, -1, -1 &gt;</scope><name>SelectedArgs</name></member>
+      <member refid="classtesting_1_1internal_1_1_select_args_3_01_result_00_01_argument_tuple_00_01k1_00_01-1_00_01-33116bd77067572e384b90e7c70b03c4_1af1aee025a91b513b1d90a200748377dc" prot="public" virt="non-virtual"><scope>testing::internal::SelectArgs&lt; Result, ArgumentTuple, k1, -1, -1, -1, -1, -1, -1, -1, -1, -1 &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

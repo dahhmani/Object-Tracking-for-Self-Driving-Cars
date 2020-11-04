@@ -30,8 +30,9 @@
  * @brief     ObjectTracker class implementation
  */
 
-#include "include/tracker.h"
-#include <stdio.h>
+#include "./tracker.h"
+
+#include <cstdio>
 #include <iostream>
 #include <fstream>
 #include <opencv2/imgproc.hpp>
@@ -42,32 +43,124 @@ ENPM808X::ObjectTracker::ObjectTracker(
     const std::string& detectionModel, float minConfidence, float minOverlap)
     : objectClasses_{objectClasses},
       minConfidence_{minConfidence},
-      minOverlap_{minOverlap} {}
+      minOverlap_{minOverlap} {
+  datasetLabels_ = {parseFile("../models/" +
+                              detectionModel + "/coco.names")};
+  cv::Size inputResolution{320, 320};
+  // network_ = cv::dnn::DetectionModel(detectionModel + "/yolov4.weights",
+  //                                    detectionModel + "/yolov4.cfg");
+  network_.setPreferableBackend(cv::dnn::DNN_BACKEND_CUDA);
+  network_.setPreferableTarget(cv::dnn::DNN_TARGET_CUDA);
+  network_.setInputSize(inputResolution);
+  network_.setInputScale(1.0 / 255.0);
+  network_.setInputSwapRB(true);
+  P_ = intP * extP;
+  colors_ = {{"safe", {0, 255, 0}}, {"unsafe", {0, 0, 255}}};
+}
 
 std::vector<cv::Point3f> ENPM808X::ObjectTracker::localizeObjects(
     cv::Mat frame) {
-  std::vector<cv::Point3f> dummyOutput{{0, 0, 0}};
+  std::vector<cv::Point3f> locations;
+  cv::Point3f objectLocation;
+  cv::Point2i objectKeypoint;
+  cv::Point2f robotXY{5, 50}, objectXY;
+  float distance;
 
-  return dummyOutput;
+  auto [classIds, confidences, boxes] = detectObjects(frame);
+
+  locations.reserve(boxes.size());
+  for (std::size_t i = 0; i < boxes.size(); ++i) {
+    auto [x, y, w, h] = boxes[i];
+    objectKeypoint = {x + w / 2, y + h};  // ground midpoint
+    objectLocation = localize(objectKeypoint);
+    objectXY = {objectLocation.x, objectLocation.y};
+    distance = cv::norm(objectXY - robotXY);
+    locations.emplace_back(objectLocation);
+    visualize(frame, classIds[i], confidences[i], boxes[i],
+              objectKeypoint, objectLocation, distance);
+  }
+
+  return locations;
 }
 
-cv::Point3f ENPM808X::ObjectTracker::localizeObjectKeypoint(
-    const cv::Point2i& object) const {
-  cv::Point3f dummyOutput{0, 0, 0};
+cv::Point3f ENPM808X::ObjectTracker::localize(
+    const cv::Point2i& objectKeypoint) const {
+  cv::Matx31f worldPoint;
 
-  return dummyOutput;
+  // camera projection matrix P_ simplifies to a planar hoography H
+  // as a result of restricting the 3D world points of interest to
+  // the plane Z = 0 (i.e. road plane in the robot frame)
+  cv::Matx33f H{P_(0, 0), P_(0, 1), P_(0, 3),
+                P_(1, 0), P_(1, 1), P_(1, 3),
+                P_(2, 0), P_(2, 1), P_(2, 3)};
+  cv::Matx31f pixel{static_cast<float>(objectKeypoint.x),
+                    static_cast<float>(objectKeypoint.y),
+                    1};
+  worldPoint = H.inv() * pixel;
+  worldPoint /= worldPoint(2);
+
+  return {worldPoint(0), worldPoint(1), 0};
 }
 
-std::vector<cv::Point2i> ENPM808X::ObjectTracker::detectObjectKeypoints(
-    cv::Mat frame) {
-  std::vector<cv::Point2i> dummyOutput{{0, 0}};
+std::tuple<std::vector<int>, std::vector<float>, std::vector<cv::Rect>>
+ENPM808X::ObjectTracker::detectObjects(cv::Mat frame) {
+  std::vector<int> classIds;
+  std::vector<float> confidences;
+  std::vector<cv::Rect> boxes;
 
-  return dummyOutput;
+  network_.detect(frame, classIds, confidences, boxes,
+                  minConfidence_, minOverlap_);
+
+  return {classIds, confidences, boxes};
+}
+
+std::vector<std::string> ENPM808X::ObjectTracker::datasetLabels() const {
+  return datasetLabels_;
+}
+
+void ENPM808X::ObjectTracker::visualize(cv::Mat frame, int classId,
+                                        float confidence, const cv::Rect& box,
+                                        const cv::Point2i& keypoint,
+                                        const cv::Point3f& location,
+                                        float distance) {
+  static_cast<void>(confidence);
+  float safetyMargin {5};
+  cv::Point robotKeypoint{frame.cols / 2, frame.rows};
+  cv::Scalar color {(distance >= safetyMargin) ? colors_["safe"]
+                                               : colors_["unsafe"]};
+  char caption[50];  // buffer of size 50
+  if (objectClasses_.find(datasetLabels_[classId]) !=
+      objectClasses_.end()) {
+    cv::rectangle(frame, box, color, 2);
+    cv::circle(frame, keypoint, 5, color, cv::FILLED);
+    cv::line(frame, robotKeypoint, keypoint, color, 2);
+
+    snprintf(caption, sizeof(caption), "%s(%.1fm,%.1fm,0m)",
+             datasetLabels_[classId].c_str(), location.x, location.y);
+    cv::putText(frame, caption, cv::Point(box.x, box.y + 15),
+                cv::FONT_HERSHEY_SIMPLEX, 0.5, color, 1.5);
+    // auto yo = cv::getTextSize(caption, cv::LINE_AA, 0.5, 2);
+    snprintf(caption, sizeof(caption), "%.1fm", distance);
+    cv::putText(frame, caption, cv::Point(box.x + box.width/2, box.y - 5),
+                cv::FONT_HERSHEY_SIMPLEX, 0.5, color, 1.5);
+  }
 }
 
 std::vector<std::string> ENPM808X::ObjectTracker::parseFile(
     const std::string& fileName) const {
-  std::vector<std::string> dummyOutput{""};
+  std::vector<std::string> classLabels;
+  std::ifstream cocoNames(fileName);
+  std::string line;
 
-  return dummyOutput;
+  classLabels.reserve(80);  // there are 80 classes in COCO
+  if (cocoNames) {
+    while (getline(cocoNames, line)) classLabels.emplace_back(line);
+    cocoNames.close();
+  } else {
+    std::cout << "file could not be opened !\n";
+    std::cin.get();
+    exit(0);
+  }
+
+  return classLabels;
 }

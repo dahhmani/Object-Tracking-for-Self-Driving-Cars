@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegen__gtest__pred__impl" kind="namespace" language="Python">
+    <compoundname>gen_gtest_pred_impl</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gen__gtest__pred__impl_8py_1af32e92d473ee6c427929cb7ddb4db7e6" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gen_gtest_pred_impl.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;wan@google.com (Zhanyong Wan)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="49" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gen__gtest__pred__impl_8py_1aed087c7fc787a064f0a9fd5f5f9f6487" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gen_gtest_pred_impl.SCRIPT_DIR</definition>
+        <argsstring></argsstring>
+        <name>SCRIPT_DIR</name>
+        <initializer>=  os.path.dirname(sys.argv[0])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="56" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gen__gtest__pred__impl_8py_1ab96c63705e2cb7619876ba592dab4c8e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gen_gtest_pred_impl.HEADER</definition>
+        <argsstring></argsstring>
+        <name>HEADER</name>
+        <initializer>=  os.path.join(SCRIPT_DIR, &apos;../include/gtest/gtest_pred_impl.h&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="59" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gen__gtest__pred__impl_8py_1a8c1cb8e87c4bd84edbb958f73b7df200" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gen_gtest_pred_impl.UNIT_TEST</definition>
+        <argsstring></argsstring>
+        <name>UNIT_TEST</name>
+        <initializer>=  os.path.join(SCRIPT_DIR, &apos;../test/gtest_pred_impl_unittest.cc&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="62" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gen__gtest__pred__impl_8py_1a0b99cadcffab4bf161654a382163bac8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gen_gtest_pred_impl.HeaderPreamble</definition>
+        <argsstring>(n)</argsstring>
+        <name>HeaderPreamble</name>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the preamble for the header file.
+
+Args:
+  n:  the maximum arity of the predicate macros to be generated.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="65" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="65" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="gen__gtest__pred__impl_8py_1a5bbb7272f3588b969ab3ded6f49836a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gen_gtest_pred_impl.Arity</definition>
+        <argsstring>(n)</argsstring>
+        <name>Arity</name>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the English name of the given arity.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="164" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="164" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="gen__gtest__pred__impl_8py_1ae49dd9bd9152dbcb3ca7994ce04c37ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gen_gtest_pred_impl.Title</definition>
+        <argsstring>(word)</argsstring>
+        <name>Title</name>
+        <param>
+          <type>word</type>
+          <defname>word</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the given word in title case.  The difference between
+this and string&apos;s title() method is that Title(&apos;4-ary&apos;) is &apos;4-ary&apos;
+while &apos;4-ary&apos;.title() is &apos;4-Ary&apos;.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="175" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="175" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="gen__gtest__pred__impl_8py_1a7920598d51c9dded76a4ef9ffde339e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gen_gtest_pred_impl.OneTo</definition>
+        <argsstring>(n)</argsstring>
+        <name>OneTo</name>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the list [1, 2, 3, ..., n].</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="183" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="183" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="gen__gtest__pred__impl_8py_1ac016218b7c9437d1d5ac85c574c83069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gen_gtest_pred_impl.Iter</definition>
+        <argsstring>(n, format, sep=&apos;&apos;)</argsstring>
+        <name>Iter</name>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <param>
+          <type>format</type>
+          <defname>format</defname>
+        </param>
+        <param>
+          <type>sep</type>
+          <defname>sep</defname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Given a positive integer n, a format string that contains 0 or
+more &apos;%s&apos; format specs, and optionally a separator string, returns
+the join of n strings, each formatted with the format string on an
+iterator ranged from 1 to n.
+
+Example:
+
+Iter(3, &apos;v%s&apos;, sep=&apos;, &apos;) returns &apos;v1, v2, v3&apos;.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="189" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="189" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="gen__gtest__pred__impl_8py_1a8c53b141b89f9c05d0131d9756dfeab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gen_gtest_pred_impl.ImplementationForArity</definition>
+        <argsstring>(n)</argsstring>
+        <name>ImplementationForArity</name>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the implementation of n-ary predicate assertions.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="205" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="205" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="gen__gtest__pred__impl_8py_1a3d40c7ef70cf4d46e56c9612f34027bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gen_gtest_pred_impl.HeaderPostamble</definition>
+        <argsstring>()</argsstring>
+        <name>HeaderPostamble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the postamble for the header file.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="293" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="293" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="gen__gtest__pred__impl_8py_1a16210fe365dfd176e04aa2578ac5a8d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gen_gtest_pred_impl.GenerateFile</definition>
+        <argsstring>(path, content)</argsstring>
+        <name>GenerateFile</name>
+        <param>
+          <type>path</type>
+          <defname>path</defname>
+        </param>
+        <param>
+          <type>content</type>
+          <defname>content</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Given a file path and a content string, overwrites it with the
+given content.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="302" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="302" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="gen__gtest__pred__impl_8py_1a6f3039a82a5283846fb272f8a3af6743" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gen_gtest_pred_impl.GenerateHeader</definition>
+        <argsstring>(n)</argsstring>
+        <name>GenerateHeader</name>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Given the maximum arity n, updates the header file that implements
+the predicate assertions.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="315" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="315" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="gen__gtest__pred__impl_8py_1ae52dc86461d1b666c7b658a8c27c69f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gen_gtest_pred_impl.UnitTestPreamble</definition>
+        <argsstring>()</argsstring>
+        <name>UnitTestPreamble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the preamble for the unit test file.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="325" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="325" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="gen__gtest__pred__impl_8py_1ab0da913fa15e5695d5bb2dd1de5dec57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gen_gtest_pred_impl.TestsForArity</definition>
+        <argsstring>(n)</argsstring>
+        <name>TestsForArity</name>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the tests for n-ary predicate assertions.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="411" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="411" bodyend="699"/>
+      </memberdef>
+      <memberdef kind="function" id="gen__gtest__pred__impl_8py_1a57b922f50d0807896496dcd883c1f098" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gen_gtest_pred_impl.UnitTestPostamble</definition>
+        <argsstring>()</argsstring>
+        <name>UnitTestPostamble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the postamble for the tests.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="700" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="700" bodyend="705"/>
+      </memberdef>
+      <memberdef kind="function" id="gen__gtest__pred__impl_8py_1acbd42b5b7fb7ddbb06a4dd58fc37e9ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gen_gtest_pred_impl.GenerateUnitTest</definition>
+        <argsstring>(n)</argsstring>
+        <name>GenerateUnitTest</name>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the tests for up-to n-ary predicate assertions.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="706" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="706" bodyend="714"/>
+      </memberdef>
+      <memberdef kind="function" id="gen__gtest__pred__impl_8py_1a50dd74615a1507ce657c8fa24d7c161e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gen_gtest_pred_impl._Main</definition>
+        <argsstring>()</argsstring>
+        <name>_Main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>The entry point of the script.  Generates the header file and its
+unit test.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="715" column="1" bodyfile="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" bodystart="715" bodyend="728"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/scripts/gen_gtest_pred_impl.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

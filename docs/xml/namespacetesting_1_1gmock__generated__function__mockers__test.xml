@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacetesting_1_1gmock__generated__function__mockers__test" kind="namespace" language="C++">
+    <compoundname>testing::gmock_generated_function_mockers_test</compoundname>
+    <innerclass refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_foo_interface" prot="public">testing::gmock_generated_function_mockers_test::FooInterface</innerclass>
+    <innerclass refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_function_mocker_test" prot="public">testing::gmock_generated_function_mockers_test::FunctionMockerTest</innerclass>
+    <innerclass refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_b" prot="public">testing::gmock_generated_function_mockers_test::MockB</innerclass>
+    <innerclass refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_foo" prot="public">testing::gmock_generated_function_mockers_test::MockFoo</innerclass>
+    <innerclass refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_arg_number" prot="public">testing::gmock_generated_function_mockers_test::MockOverloadedOnArgNumber</innerclass>
+    <innerclass refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_overloaded_on_constness" prot="public">testing::gmock_generated_function_mockers_test::MockOverloadedOnConstness</innerclass>
+    <innerclass refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_mock_stack" prot="public">testing::gmock_generated_function_mockers_test::MockStack</innerclass>
+    <innerclass refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_stack_interface" prot="public">testing::gmock_generated_function_mockers_test::StackInterface</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1aee64a5117451830331c321aecd10025f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST_F</definition>
+        <argsstring>(FunctionMockerTest, MocksVoidFunction)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_function_mocker_test" kindref="compound">FunctionMockerTest</ref></type>
+        </param>
+        <param>
+          <type>MocksVoidFunction</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="191" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="191" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1a0a1348d6814b9bc02ad5b2ac46361ac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST_F</definition>
+        <argsstring>(FunctionMockerTest, MocksNullaryFunction)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_function_mocker_test" kindref="compound">FunctionMockerTest</ref></type>
+        </param>
+        <param>
+          <type>MocksNullaryFunction</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="197" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="197" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1a835348f70c0335c9213153f72138d12f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST_F</definition>
+        <argsstring>(FunctionMockerTest, MocksUnaryFunction)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_function_mocker_test" kindref="compound">FunctionMockerTest</ref></type>
+        </param>
+        <param>
+          <type>MocksUnaryFunction</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="207" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="207" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1aa8d2e25f60ad3ac49736ee90fb7ac190" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST_F</definition>
+        <argsstring>(FunctionMockerTest, MocksBinaryFunction)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_function_mocker_test" kindref="compound">FunctionMockerTest</ref></type>
+        </param>
+        <param>
+          <type>MocksBinaryFunction</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="217" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="217" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1a279ba48bf6f937eecfc12530b9dde497" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST_F</definition>
+        <argsstring>(FunctionMockerTest, MocksDecimalFunction)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_function_mocker_test" kindref="compound">FunctionMockerTest</ref></type>
+        </param>
+        <param>
+          <type>MocksDecimalFunction</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="225" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="225" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1a852587f21316c0341b60b29d44cd61ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST_F</definition>
+        <argsstring>(FunctionMockerTest, MocksFunctionWithNonConstReferenceArgument)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_function_mocker_test" kindref="compound">FunctionMockerTest</ref></type>
+        </param>
+        <param>
+          <type>MocksFunctionWithNonConstReferenceArgument</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="234" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="234" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1a5367aba117b37aff1ceb4be3d4732559" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST_F</definition>
+        <argsstring>(FunctionMockerTest, MocksFunctionWithConstReferenceArgument)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_function_mocker_test" kindref="compound">FunctionMockerTest</ref></type>
+        </param>
+        <param>
+          <type>MocksFunctionWithConstReferenceArgument</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="243" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="243" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1a957ee1afed65097f1c25790f266ec91e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST_F</definition>
+        <argsstring>(FunctionMockerTest, MocksFunctionWithConstArgument)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_function_mocker_test" kindref="compound">FunctionMockerTest</ref></type>
+        </param>
+        <param>
+          <type>MocksFunctionWithConstArgument</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="253" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="253" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1a23b4f6d7bf9f6b35126ee137aa48ae3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST_F</definition>
+        <argsstring>(FunctionMockerTest, MocksFunctionsOverloadedOnArgumentNumber)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_function_mocker_test" kindref="compound">FunctionMockerTest</ref></type>
+        </param>
+        <param>
+          <type>MocksFunctionsOverloadedOnArgumentNumber</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="262" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="262" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1a6fb9a5901e2d2066a9fe5a3d05c0cbe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST_F</definition>
+        <argsstring>(FunctionMockerTest, MocksFunctionsOverloadedOnArgumentType)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_function_mocker_test" kindref="compound">FunctionMockerTest</ref></type>
+        </param>
+        <param>
+          <type>MocksFunctionsOverloadedOnArgumentType</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="273" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="273" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1ad580a4b2f97b3c2643794a627b347511" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST_F</definition>
+        <argsstring>(FunctionMockerTest, MocksFunctionsOverloadedOnConstnessOfThis)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_function_mocker_test" kindref="compound">FunctionMockerTest</ref></type>
+        </param>
+        <param>
+          <type>MocksFunctionsOverloadedOnConstnessOfThis</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="284" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="284" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1abb74ac8e211661c0d87c902f87002e6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST_F</definition>
+        <argsstring>(FunctionMockerTest, MocksReturnTypeWithComma)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__generated__function__mockers__test_1_1_function_mocker_test" kindref="compound">FunctionMockerTest</ref></type>
+        </param>
+        <param>
+          <type>MocksReturnTypeWithComma</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="293" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="293" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1ae0d5aa8e715f3c183f1ccdcf390187e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST</definition>
+        <argsstring>(ExpectCallTest, UnmentionedFunctionCanBeCalledAnyNumberOfTimes)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>ExpectCallTest</type>
+        </param>
+        <param>
+          <type>UnmentionedFunctionCanBeCalledAnyNumberOfTimes</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="365" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="365" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1a5f59a7b507101fc0dbb558c090974f02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST</definition>
+        <argsstring>(TemplateMockTest, Works)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>TemplateMockTest</type>
+        </param>
+        <param>
+          <type>Works</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="416" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="416" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1aa998c7e5e8b6fd378cacb53663e8c4a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST</definition>
+        <argsstring>(TemplateMockTest, MethodWithCommaInReturnTypeWorks)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>TemplateMockTest</type>
+        </param>
+        <param>
+          <type>MethodWithCommaInReturnTypeWorks</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="438" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="438" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1a6542d3ae3f153907c32f3cf15a2ff6cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST</definition>
+        <argsstring>(OverloadedMockMethodTest, CanOverloadOnArgNumberInMacroBody)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>OverloadedMockMethodTest</type>
+        </param>
+        <param>
+          <type>CanOverloadOnArgNumberInMacroBody</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="520" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="520" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1aa58ec93a77bee21244c10da2bc8cf70e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST</definition>
+        <argsstring>(OverloadedMockMethodTest, CanOverloadOnConstnessInMacroBody)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>OverloadedMockMethodTest</type>
+        </param>
+        <param>
+          <type>CanOverloadOnConstnessInMacroBody</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="545" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="545" bodyend="553"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1a8d67aadbc04fee7e2afc10ee91a76b74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST</definition>
+        <argsstring>(MockFunctionTest, WorksForVoidNullary)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>MockFunctionTest</type>
+        </param>
+        <param>
+          <type>WorksForVoidNullary</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="555" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="555" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1a90817999d7f25ecf280453efb157db84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST</definition>
+        <argsstring>(MockFunctionTest, WorksForNonVoidNullary)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>MockFunctionTest</type>
+        </param>
+        <param>
+          <type>WorksForNonVoidNullary</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="561" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="561" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1ab0e1ede6a1f6ef1774e27f5793a33599" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST</definition>
+        <argsstring>(MockFunctionTest, WorksForVoidUnary)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>MockFunctionTest</type>
+        </param>
+        <param>
+          <type>WorksForVoidUnary</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="570" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="570" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1ab6337da98bc6bc97100ab177386f3b2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST</definition>
+        <argsstring>(MockFunctionTest, WorksForNonVoidBinary)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>MockFunctionTest</type>
+        </param>
+        <param>
+          <type>WorksForNonVoidBinary</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="576" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="576" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-function-mockers__test_8cc_1aa92f0b2b98d76f2c881103a19bed7ba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_generated_function_mockers_test::TEST</definition>
+        <argsstring>(MockFunctionTest, WorksFor10Arguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>MockFunctionTest</type>
+        </param>
+        <param>
+          <type>WorksFor10Arguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="588" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" bodystart="588" bodyend="596"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc" line="58" column="1"/>
+  </compounddef>
+</doxygen>

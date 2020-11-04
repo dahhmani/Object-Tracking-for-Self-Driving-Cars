@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_ge2_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::Ge2Matcher</compoundname>
+    <basecompoundref refid="classtesting_1_1internal_1_1_pair_match_base" prot="public" virt="non-virtual">testing::internal::PairMatchBase&lt; Ge2Matcher, AnyGe &gt;</basecompoundref>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_ge2_matcher_1a29fa53bdfa6778b709eaef017aeea855" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* testing::internal::Ge2Matcher::Desc</definition>
+        <argsstring>()</argsstring>
+        <name>Desc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1436" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1436" bodyend="1436"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="911">
+        <label>testing::internal::Ge2Matcher</label>
+        <link refid="classtesting_1_1internal_1_1_ge2_matcher"/>
+        <childnode refid="912" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="912">
+        <label>testing::internal::PairMatchBase&lt; Ge2Matcher, AnyGe &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_pair_match_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="913">
+        <label>testing::internal::Ge2Matcher</label>
+        <link refid="classtesting_1_1internal_1_1_ge2_matcher"/>
+        <childnode refid="914" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="914">
+        <label>testing::internal::PairMatchBase&lt; Ge2Matcher, AnyGe &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_pair_match_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1434" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1434" bodyend="1437"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_ge2_matcher_1a29fa53bdfa6778b709eaef017aeea855" prot="public" virt="non-virtual"><scope>testing::internal::Ge2Matcher</scope><name>Desc</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_match_base_1ae73a3764537d725ce10e9e806ebdb417" prot="public" virt="non-virtual"><scope>testing::internal::Ge2Matcher</scope><name>operator Matcher&lt; ::testing::tuple&lt; T1, T2 &gt; &gt;</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_match_base_1a0482f7e530420faecf00b9fca059b694" prot="public" virt="non-virtual"><scope>testing::internal::Ge2Matcher</scope><name>operator Matcher&lt; const ::testing::tuple&lt; T1, T2 &gt; &amp;&gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classcpp_1_1gmock__class__test_1_1_generate_methods_test" kind="class" language="Python" prot="public">
+    <compoundname>cpp::gmock_class_test::GenerateMethodsTest</compoundname>
+    <basecompoundref refid="classcpp_1_1gmock__class__test_1_1_test_case" prot="public" virt="non-virtual">cpp.gmock_class_test.TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1af96a6c9fd394f7e27cf24f86814549c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.GenerateMethodSource</definition>
+        <argsstring>(self, cpp_source)</argsstring>
+        <name>GenerateMethodSource</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>cpp_source</type>
+          <defname>cpp_source</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Convert C++ source to Google Mock output source lines.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="48" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="48" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a3ece43a88823e3fe1b4731819505bd61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testSimpleMethod</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSimpleMethod</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="57" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="57" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1abb0adf9fa7afd25d63964a9075af1414" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testSimpleConstructorsAndDestructor</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSimpleConstructorsAndDestructor</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="68" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="68" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a3095f7046a089b3c8a13e7e8161a2ab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testVirtualDestructor</definition>
+        <argsstring>(self)</argsstring>
+        <name>testVirtualDestructor</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="85" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="85" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a0a2a15e9eb43aff0fec7e89a81c30987" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testExplicitlyDefaultedConstructorsAndDestructor</definition>
+        <argsstring>(self)</argsstring>
+        <name>testExplicitlyDefaultedConstructorsAndDestructor</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="98" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="98" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a4e6c2d2de1e21e63672ebbb75676c45c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testExplicitlyDeletedConstructorsAndDestructor</definition>
+        <argsstring>(self)</argsstring>
+        <name>testExplicitlyDeletedConstructorsAndDestructor</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="114" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="114" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a2b1501cf9517acbeb48d11e9d8992a9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testSimpleOverrideMethod</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSimpleOverrideMethod</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="130" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="130" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1ad8cb9c2f99fa65c7d3fee054dde0e30d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testSimpleConstMethod</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSimpleConstMethod</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="141" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="141" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a4db373bb8953d0523425b5a3f392e761" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testExplicitVoid</definition>
+        <argsstring>(self)</argsstring>
+        <name>testExplicitVoid</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="152" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="152" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a184995b077a46f3408fa203cb0626614" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testStrangeNewlineInParameter</definition>
+        <argsstring>(self)</argsstring>
+        <name>testStrangeNewlineInParameter</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="163" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="163" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a61abb614ad02a1fef3ece3813695c22a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testDefaultParameters</definition>
+        <argsstring>(self)</argsstring>
+        <name>testDefaultParameters</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="175" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="175" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a41b91cc39a55385b8c4b97d804e80345" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testMultipleDefaultParameters</definition>
+        <argsstring>(self)</argsstring>
+        <name>testMultipleDefaultParameters</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="186" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="186" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1add445941c6503198f0c3a25e00d20b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testRemovesCommentsWhenDefaultsArePresent</definition>
+        <argsstring>(self)</argsstring>
+        <name>testRemovesCommentsWhenDefaultsArePresent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="197" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="197" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1abb9fce46de4ac1d2943b85e84ce14c83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testDoubleSlashCommentsInParameterListAreRemoved</definition>
+        <argsstring>(self)</argsstring>
+        <name>testDoubleSlashCommentsInParameterListAreRemoved</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="209" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="209" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1afa44c6ac675ce7454ff0f51164bde59e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testCStyleCommentsInParameterListAreNotRemoved</definition>
+        <argsstring>(self)</argsstring>
+        <name>testCStyleCommentsInParameterListAreNotRemoved</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="222" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="222" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1ade05313ccffe74f9eaa42fb66c14f702" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testArgsOfTemplateTypes</definition>
+        <argsstring>(self)</argsstring>
+        <name>testArgsOfTemplateTypes</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="236" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="236" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a747b7b1b9da071eb8e1e2b84c7ee3614" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testReturnTypeWithOneTemplateArg</definition>
+        <argsstring>(self)</argsstring>
+        <name>testReturnTypeWithOneTemplateArg</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="247" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="247" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1affdc748928d26be259345ed6a8753988" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testReturnTypeWithManyTemplateArgs</definition>
+        <argsstring>(self)</argsstring>
+        <name>testReturnTypeWithManyTemplateArgs</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="257" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="257" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a964a1b55f2096edf7a6165734b1f0619" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testSimpleMethodInTemplatedClass</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSimpleMethodInTemplatedClass</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="272" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="272" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a6a2118fde4c59d2f8f402652e7aa8896" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testPointerArgWithoutNames</definition>
+        <argsstring>(self)</argsstring>
+        <name>testPointerArgWithoutNames</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="284" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="284" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1af82b50cc3f5daee5f6650fff1323e30c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testReferenceArgWithoutNames</definition>
+        <argsstring>(self)</argsstring>
+        <name>testReferenceArgWithoutNames</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="294" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="294" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a544cd40e30b5dc3fbcf42385f0a54ad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.GenerateMethodsTest.testArrayArgWithoutNames</definition>
+        <argsstring>(self)</argsstring>
+        <name>testArrayArgWithoutNames</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="304" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="304" bodyend="314"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="920">
+        <label>cpp.gmock_class_test.TestCase</label>
+        <link refid="classcpp_1_1gmock__class__test_1_1_test_case"/>
+        <childnode refid="921" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="921">
+        <label>unittest::TestCase</label>
+      </node>
+      <node id="919">
+        <label>cpp.gmock_class_test.GenerateMethodsTest</label>
+        <link refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test"/>
+        <childnode refid="920" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="923">
+        <label>cpp.gmock_class_test.TestCase</label>
+        <link refid="classcpp_1_1gmock__class__test_1_1_test_case"/>
+        <childnode refid="924" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="924">
+        <label>unittest::TestCase</label>
+      </node>
+      <node id="922">
+        <label>cpp.gmock_class_test.GenerateMethodsTest</label>
+        <link refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test"/>
+        <childnode refid="923" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="46" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="46" bodyend="315"/>
+    <listofallmembers>
+      <member refid="classcpp_1_1gmock__class__test_1_1_test_case_1a68f88bba11511f8c582123d47bf80464" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>assertEqualIgnoreLeadingWhitespace</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1af96a6c9fd394f7e27cf24f86814549c9" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>GenerateMethodSource</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_test_case_1a366b15717eebc41e397357868c5734c5" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>StripLeadingWhitespace</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1ade05313ccffe74f9eaa42fb66c14f702" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testArgsOfTemplateTypes</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a544cd40e30b5dc3fbcf42385f0a54ad1" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testArrayArgWithoutNames</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1afa44c6ac675ce7454ff0f51164bde59e" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testCStyleCommentsInParameterListAreNotRemoved</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a61abb614ad02a1fef3ece3813695c22a" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testDefaultParameters</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1abb9fce46de4ac1d2943b85e84ce14c83" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testDoubleSlashCommentsInParameterListAreRemoved</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a0a2a15e9eb43aff0fec7e89a81c30987" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testExplicitlyDefaultedConstructorsAndDestructor</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a4e6c2d2de1e21e63672ebbb75676c45c" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testExplicitlyDeletedConstructorsAndDestructor</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a4db373bb8953d0523425b5a3f392e761" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testExplicitVoid</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a41b91cc39a55385b8c4b97d804e80345" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testMultipleDefaultParameters</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a6a2118fde4c59d2f8f402652e7aa8896" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testPointerArgWithoutNames</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1af82b50cc3f5daee5f6650fff1323e30c" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testReferenceArgWithoutNames</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1add445941c6503198f0c3a25e00d20b9f" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testRemovesCommentsWhenDefaultsArePresent</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1affdc748928d26be259345ed6a8753988" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testReturnTypeWithManyTemplateArgs</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a747b7b1b9da071eb8e1e2b84c7ee3614" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testReturnTypeWithOneTemplateArg</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1ad8cb9c2f99fa65c7d3fee054dde0e30d" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testSimpleConstMethod</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1abb0adf9fa7afd25d63964a9075af1414" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testSimpleConstructorsAndDestructor</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a3ece43a88823e3fe1b4731819505bd61" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testSimpleMethod</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a964a1b55f2096edf7a6165734b1f0619" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testSimpleMethodInTemplatedClass</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a2b1501cf9517acbeb48d11e9d8992a9b" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testSimpleOverrideMethod</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a184995b077a46f3408fa203cb0626614" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testStrangeNewlineInParameter</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test_1a3095f7046a089b3c8a13e7e8161a2ab2" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::GenerateMethodsTest</scope><name>testVirtualDestructor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

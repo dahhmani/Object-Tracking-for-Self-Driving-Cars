@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_prime_table" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>PrimeTable</compoundname>
+    <derivedcompoundref refid="class_on_the_fly_prime_table" prot="public" virt="non-virtual">OnTheFlyPrimeTable</derivedcompoundref>
+    <derivedcompoundref refid="class_pre_calculated_prime_table" prot="public" virt="non-virtual">PreCalculatedPrimeTable</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_prime_table_1af2cdea4896fd86a42b4dfd5e5027d640" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual PrimeTable::~PrimeTable</definition>
+        <argsstring>()</argsstring>
+        <name>~PrimeTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/prime_tables.h" line="45" column="1" bodyfile="vendor/googletest/googletest/samples/prime_tables.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_prime_table_1a2ab9243364ded0c51541f641b2df362a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool PrimeTable::IsPrime</definition>
+        <argsstring>(int n) const =0</argsstring>
+        <name>IsPrime</name>
+        <reimplementedby refid="class_on_the_fly_prime_table_1a1d49b78f79e018441289e79d75680067">IsPrime</reimplementedby>
+        <reimplementedby refid="class_pre_calculated_prime_table_1a8a9ab7f99b09e5e987933c260e7304cf">IsPrime</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/prime_tables.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_prime_table_1ae537c939f56617d8937d57bbbae3ab30" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int PrimeTable::GetNextPrime</definition>
+        <argsstring>(int p) const =0</argsstring>
+        <name>GetNextPrime</name>
+        <reimplementedby refid="class_on_the_fly_prime_table_1a5a4644fedd95d33136723f33b9302bfc">GetNextPrime</reimplementedby>
+        <reimplementedby refid="class_pre_calculated_prime_table_1a0ff10b1fe13df7e56b8d7ed9f41d3998">GetNextPrime</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/prime_tables.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1788">
+        <label>OnTheFlyPrimeTable</label>
+        <link refid="class_on_the_fly_prime_table"/>
+        <childnode refid="1787" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1789">
+        <label>PreCalculatedPrimeTable</label>
+        <link refid="class_pre_calculated_prime_table"/>
+        <childnode refid="1787" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1787">
+        <label>PrimeTable</label>
+        <link refid="class_prime_table"/>
+      </node>
+    </inheritancegraph>
+    <location file="vendor/googletest/googletest/samples/prime_tables.h" line="43" column="1" bodyfile="vendor/googletest/googletest/samples/prime_tables.h" bodystart="43" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_prime_table_1ae537c939f56617d8937d57bbbae3ab30" prot="public" virt="pure-virtual"><scope>PrimeTable</scope><name>GetNextPrime</name></member>
+      <member refid="class_prime_table_1a2ab9243364ded0c51541f641b2df362a" prot="public" virt="pure-virtual"><scope>PrimeTable</scope><name>IsPrime</name></member>
+      <member refid="class_prime_table_1af2cdea4896fd86a42b4dfd5e5027d640" prot="public" virt="virtual"><scope>PrimeTable</scope><name>~PrimeTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

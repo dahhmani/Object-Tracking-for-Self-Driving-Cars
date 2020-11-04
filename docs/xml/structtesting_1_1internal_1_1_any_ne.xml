@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1internal_1_1_any_ne" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::AnyNe</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtesting_1_1internal_1_1_any_ne_1a9f50f8ede12e394c6bc64bad05e94742" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename A</type>
+          </param>
+          <param>
+            <type>typename B</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::internal::AnyNe::operator()</definition>
+        <argsstring>(const A &amp;a, const B &amp;b) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const A &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const B &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="208" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="208" bodyend="208"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="206" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="206" bodyend="209"/>
+    <listofallmembers>
+      <member refid="structtesting_1_1internal_1_1_any_ne_1a9f50f8ede12e394c6bc64bad05e94742" prot="public" virt="non-virtual"><scope>testing::internal::AnyNe</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

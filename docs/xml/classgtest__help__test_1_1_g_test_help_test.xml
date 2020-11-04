@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgtest__help__test_1_1_g_test_help_test" kind="class" language="Python" prot="public">
+    <compoundname>gtest_help_test::GTestHelpTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgtest__help__test_1_1_g_test_help_test_1a26cc1a64bd67278252ebfcd0ac0dca0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_help_test.GTestHelpTest.TestHelpFlag</definition>
+        <argsstring>(self, flag)</argsstring>
+        <name>TestHelpFlag</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>flag</type>
+          <defname>flag</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Verifies correct behavior when help flag is specified.
+
+The right message must be printed and the tests must
+skipped when the given flag is specified.
+
+Args:
+  flag:  A flag to pass to the binary or None.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="101" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="101" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__help__test_1_1_g_test_help_test_1a03ffa91ecf6193ed2ed80b53933112ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_help_test.GTestHelpTest.TestNonHelpFlag</definition>
+        <argsstring>(self, flag)</argsstring>
+        <name>TestNonHelpFlag</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>flag</type>
+          <defname>flag</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Verifies correct behavior when no help flag is specified.
+
+Verifies that when no help flag is specified, the tests are run
+and the help message is not printed.
+
+Args:
+  flag:  A flag to pass to the binary or None.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="125" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="125" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__help__test_1_1_g_test_help_test_1ad91b46ad4506ff52b337b63f6b6c2ad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_help_test.GTestHelpTest.testPrintsHelpWithFullFlag</definition>
+        <argsstring>(self)</argsstring>
+        <name>testPrintsHelpWithFullFlag</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="139" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__help__test_1_1_g_test_help_test_1a3dd96058d093a89350769b4e2cc36563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_help_test.GTestHelpTest.testPrintsHelpWithShortFlag</definition>
+        <argsstring>(self)</argsstring>
+        <name>testPrintsHelpWithShortFlag</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="142" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__help__test_1_1_g_test_help_test_1aafd4d1857c2538c8b1f7cc5a5d1e38b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_help_test.GTestHelpTest.testPrintsHelpWithQuestionFlag</definition>
+        <argsstring>(self)</argsstring>
+        <name>testPrintsHelpWithQuestionFlag</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="145" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__help__test_1_1_g_test_help_test_1a7be99cd30193e2eecf79f9d65f561afc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_help_test.GTestHelpTest.testPrintsHelpWithWindowsStyleQuestionFlag</definition>
+        <argsstring>(self)</argsstring>
+        <name>testPrintsHelpWithWindowsStyleQuestionFlag</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="148" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="148" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__help__test_1_1_g_test_help_test_1a701abb8f34df726b9129d7654cb32066" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_help_test.GTestHelpTest.testPrintsHelpWithUnrecognizedGoogleTestFlag</definition>
+        <argsstring>(self)</argsstring>
+        <name>testPrintsHelpWithUnrecognizedGoogleTestFlag</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="151" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__help__test_1_1_g_test_help_test_1ab8d379bbb0da7403ced599f4ee498728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_help_test.GTestHelpTest.testPrintsHelpWithIncorrectFlagStyle</definition>
+        <argsstring>(self)</argsstring>
+        <name>testPrintsHelpWithIncorrectFlagStyle</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="154" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__help__test_1_1_g_test_help_test_1ae7831f92e8e3763c07afb908915b3d20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_help_test.GTestHelpTest.testRunsTestsWithoutHelpFlag</definition>
+        <argsstring>(self)</argsstring>
+        <name>testRunsTestsWithoutHelpFlag</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Verifies that when no help flag is specified, the tests are run
+and the help message is not printed.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="158" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="158" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__help__test_1_1_g_test_help_test_1a0ebec2e3154d22a63e362d2196f9c638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_help_test.GTestHelpTest.testRunsTestsWithGtestInternalFlag</definition>
+        <argsstring>(self)</argsstring>
+        <name>testRunsTestsWithGtestInternalFlag</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Verifies that the tests are run and no help message is printed when
+a flag starting with Google Test prefix and &apos;internal_&apos; is supplied.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="164" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="164" bodyend="170"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Tests the --help flag and its equivalent forms.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1014">
+        <label>TestCase</label>
+      </node>
+      <node id="1013">
+        <label>gtest_help_test.GTestHelpTest</label>
+        <link refid="classgtest__help__test_1_1_g_test_help_test"/>
+        <childnode refid="1014" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1016">
+        <label>TestCase</label>
+      </node>
+      <node id="1015">
+        <label>gtest_help_test.GTestHelpTest</label>
+        <link refid="classgtest__help__test_1_1_g_test_help_test"/>
+        <childnode refid="1016" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_help_test.py" line="98" column="1" bodyfile="vendor/googletest/googletest/test/gtest_help_test.py" bodystart="98" bodyend="171"/>
+    <listofallmembers>
+      <member refid="classgtest__help__test_1_1_g_test_help_test_1a26cc1a64bd67278252ebfcd0ac0dca0c" prot="public" virt="non-virtual"><scope>gtest_help_test::GTestHelpTest</scope><name>TestHelpFlag</name></member>
+      <member refid="classgtest__help__test_1_1_g_test_help_test_1a03ffa91ecf6193ed2ed80b53933112ab" prot="public" virt="non-virtual"><scope>gtest_help_test::GTestHelpTest</scope><name>TestNonHelpFlag</name></member>
+      <member refid="classgtest__help__test_1_1_g_test_help_test_1ad91b46ad4506ff52b337b63f6b6c2ad1" prot="public" virt="non-virtual"><scope>gtest_help_test::GTestHelpTest</scope><name>testPrintsHelpWithFullFlag</name></member>
+      <member refid="classgtest__help__test_1_1_g_test_help_test_1ab8d379bbb0da7403ced599f4ee498728" prot="public" virt="non-virtual"><scope>gtest_help_test::GTestHelpTest</scope><name>testPrintsHelpWithIncorrectFlagStyle</name></member>
+      <member refid="classgtest__help__test_1_1_g_test_help_test_1aafd4d1857c2538c8b1f7cc5a5d1e38b4" prot="public" virt="non-virtual"><scope>gtest_help_test::GTestHelpTest</scope><name>testPrintsHelpWithQuestionFlag</name></member>
+      <member refid="classgtest__help__test_1_1_g_test_help_test_1a3dd96058d093a89350769b4e2cc36563" prot="public" virt="non-virtual"><scope>gtest_help_test::GTestHelpTest</scope><name>testPrintsHelpWithShortFlag</name></member>
+      <member refid="classgtest__help__test_1_1_g_test_help_test_1a701abb8f34df726b9129d7654cb32066" prot="public" virt="non-virtual"><scope>gtest_help_test::GTestHelpTest</scope><name>testPrintsHelpWithUnrecognizedGoogleTestFlag</name></member>
+      <member refid="classgtest__help__test_1_1_g_test_help_test_1a7be99cd30193e2eecf79f9d65f561afc" prot="public" virt="non-virtual"><scope>gtest_help_test::GTestHelpTest</scope><name>testPrintsHelpWithWindowsStyleQuestionFlag</name></member>
+      <member refid="classgtest__help__test_1_1_g_test_help_test_1a0ebec2e3154d22a63e362d2196f9c638" prot="public" virt="non-virtual"><scope>gtest_help_test::GTestHelpTest</scope><name>testRunsTestsWithGtestInternalFlag</name></member>
+      <member refid="classgtest__help__test_1_1_g_test_help_test_1ae7831f92e8e3763c07afb908915b3d20" prot="public" virt="non-virtual"><scope>gtest_help_test::GTestHelpTest</scope><name>testRunsTestsWithoutHelpFlag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

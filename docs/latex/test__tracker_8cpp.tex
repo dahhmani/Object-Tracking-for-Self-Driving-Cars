@@ -1,0 +1,52 @@
+\hypertarget{test__tracker_8cpp}{}\section{test/test\+\_\+tracker.cpp File Reference}
+\label{test__tracker_8cpp}\index{test/test\+\_\+tracker.\+cpp@{test/test\+\_\+tracker.\+cpp}}
+
+
+Test Suite for Object\+Tracker class methods.  
+
+
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}tracker.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}profiler.\+h\char`\"{}}\newline
+Include dependency graph for test\+\_\+tracker.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test__tracker_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_object_tracker_test}{Object\+Tracker\+Test}
+\begin{DoxyCompactList}\small\item\em Test fixture for Object\+Tracker class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{test__tracker_8cpp_a567724948cdce4788a1e8c8baf6b6cfe}\label{test__tracker_8cpp_a567724948cdce4788a1e8c8baf6b6cfe}} 
+\hyperlink{test__tracker_8cpp_a567724948cdce4788a1e8c8baf6b6cfe}{T\+E\+S\+T\+\_\+F} (\hyperlink{class_object_tracker_test}{Object\+Tracker\+Test}, Localization\+Works)
+\begin{DoxyCompactList}\small\item\em Test Case for the localization function of Object\+Tracker class Checks if the localiztion method \char`\"{}\+F\char`\"{} implements the inverse mapping of the camera projection operator \char`\"{}\+F-\/1\char`\"{}. In mathematical terms, the following condition \mbox{[}F-\/1(F(pixel\+\_\+given) == pixel\+\_\+reconstructed\mbox{]} is evaluated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{test__tracker_8cpp_af71cdd56a3b5416424ab911c1798c3a5}\label{test__tracker_8cpp_af71cdd56a3b5416424ab911c1798c3a5}} 
+\hyperlink{test__tracker_8cpp_af71cdd56a3b5416424ab911c1798c3a5}{T\+E\+S\+T\+\_\+F} (\hyperlink{class_object_tracker_test}{Object\+Tracker\+Test}, Multiple\+Human\+Detection\+Works)
+\begin{DoxyCompactList}\small\item\em Test Case for the multiple object detection function of Object\+Tracker Checks if the number of detections matches the number objects in the test image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{test__tracker_8cpp_ab4dde97030dd8e7e999d81c011739a20}\label{test__tracker_8cpp_ab4dde97030dd8e7e999d81c011739a20}} 
+\hyperlink{test__tracker_8cpp_ab4dde97030dd8e7e999d81c011739a20}{T\+E\+S\+T\+\_\+F} (\hyperlink{class_object_tracker_test}{Object\+Tracker\+Test}, Coco\+Labels\+Are\+Read)
+\begin{DoxyCompactList}\small\item\em Test Case for the file parsing function of Object\+Tracker class Checks if all the labels in the C\+O\+CO dataset (which contains 80 classes) are correctly loaded. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{test__tracker_8cpp_aaf8d696981e7cd18eef3fd237de86808}\label{test__tracker_8cpp_aaf8d696981e7cd18eef3fd237de86808}} 
+\hyperlink{test__tracker_8cpp_aaf8d696981e7cd18eef3fd237de86808}{T\+E\+S\+T\+\_\+F} (\hyperlink{class_object_tracker_test}{Object\+Tracker\+Test}, Realtime\+Performance\+Is\+Achieved)
+\begin{DoxyCompactList}\small\item\em Test Case for benchmarking the speed of the tracker Checks if the achieved frame rate fulfills the real-\/time requirement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Test Suite for Object\+Tracker class methods. 
+
+\begin{DoxyAuthor}{Author}
+Mahmoud Dahmani (Driver) 
+
+Aditya Khopkar (Navigator) 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License 
+\end{DoxyCopyright}

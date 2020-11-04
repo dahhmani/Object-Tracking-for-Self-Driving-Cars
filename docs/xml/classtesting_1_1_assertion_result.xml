@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_assertion_result" kind="class" language="C++" prot="public">
+    <compoundname>testing::AssertionResult</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1_assertion_result_1ae7348f9fffe7a20980dfc94fc261d7ca" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool testing::AssertionResult::success_</definition>
+        <argsstring></argsstring>
+        <name>success_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="330" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_assertion_result_1a5dee995939457def35f0bf496d070957" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1internal_1_1scoped__ptr" kindref="compound">internal::scoped_ptr</ref>&lt; ::std::string &gt;</type>
+        <definition>internal::scoped_ptr&lt; ::std::string&gt; testing::AssertionResult::message_</definition>
+        <argsstring></argsstring>
+        <name>message_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="335" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_assertion_result_1a27788116f03f90aec4daf592fd809ead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::AssertionResult::AssertionResult</definition>
+        <argsstring>(const AssertionResult &amp;other)</argsstring>
+        <name>AssertionResult</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="260" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="987" bodyend="992"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_assertion_result_1a9b8d1d6d0a979d0769ed4ff97d06c4e3" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::AssertionResult::AssertionResult</definition>
+        <argsstring>(const T &amp;success, typename internal::EnableIf&lt; !internal::ImplicitlyConvertible&lt; T, AssertionResult &gt;::value &gt;::type *=NULL)</argsstring>
+        <name>AssertionResult</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>success</declname>
+        </param>
+        <param>
+          <type>typename <ref refid="structtesting_1_1internal_1_1_enable_if" kindref="compound">internal::EnableIf</ref>&lt; !<ref refid="classtesting_1_1internal_1_1_implicitly_convertible" kindref="compound">internal::ImplicitlyConvertible</ref>&lt; T, <ref refid="classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref> &gt;::value &gt;::type *</type>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="272" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="272" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_assertion_result_1aad9274c7b69eda67eb9306963a790839" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref> &amp;</type>
+        <definition>AssertionResult&amp; testing::AssertionResult::operator=</definition>
+        <argsstring>(AssertionResult other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="282" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="282" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_assertion_result_1ab3f34b1623c82762ef4a8f52b535159c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::AssertionResult::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="288" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="288" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_assertion_result_1a5b0784686a756660ac8dfe528d89386b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::AssertionResult::operator!</definition>
+        <argsstring>() const</argsstring>
+        <name>operator!</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="291" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="1002" bodyend="1007"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_assertion_result_1a33c14dafd28e3393c841e03f4b70a017" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::AssertionResult::message</definition>
+        <argsstring>() const</argsstring>
+        <name>message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="297" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="297" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_assertion_result_1aa38908d5a48c912434a80c8725f52583" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::AssertionResult::failure_message</definition>
+        <argsstring>() const</argsstring>
+        <name>failure_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="302" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="302" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_assertion_result_1a3230efa81aafe7c61f5fb878cfa39e91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref> &amp;</type>
+        <definition>AssertionResult&amp; testing::AssertionResult::operator&lt;&lt;</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="305" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="305" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_assertion_result_1a43ae8a260843ce2ff3dc9af262672b8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref> &amp;</type>
+        <definition>AssertionResult&amp; testing::AssertionResult::operator&lt;&lt;</definition>
+        <argsstring>(::std::ostream &amp;(*basic_manipulator)(::std::ostream &amp;stream))</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>::std::ostream &amp;(*)(::std::ostream &amp;stream)</type>
+          <declname>basic_manipulator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="312" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="312" bodyend="316"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1_assertion_result_1a5b55e01f1321d744a594dbe51d46a139" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::AssertionResult::AppendMessage</definition>
+        <argsstring>(const Message &amp;a_message)</argsstring>
+        <name>AppendMessage</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>a_message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="320" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="320" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_assertion_result_1ab5b92c1be40f9ce9d7c3e0cf7bf65c61" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::AssertionResult::swap</definition>
+        <argsstring>(AssertionResult &amp;other)</argsstring>
+        <name>swap</name>
+        <param>
+          <type><ref refid="classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="327" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="995" bodyend="999"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="256" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="256" bodyend="336"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_assertion_result_1a5b55e01f1321d744a594dbe51d46a139" prot="private" virt="non-virtual"><scope>testing::AssertionResult</scope><name>AppendMessage</name></member>
+      <member refid="classtesting_1_1_assertion_result_1a27788116f03f90aec4daf592fd809ead" prot="public" virt="non-virtual"><scope>testing::AssertionResult</scope><name>AssertionResult</name></member>
+      <member refid="classtesting_1_1_assertion_result_1a9b8d1d6d0a979d0769ed4ff97d06c4e3" prot="public" virt="non-virtual"><scope>testing::AssertionResult</scope><name>AssertionResult</name></member>
+      <member refid="classtesting_1_1_assertion_result_1aa38908d5a48c912434a80c8725f52583" prot="public" virt="non-virtual"><scope>testing::AssertionResult</scope><name>failure_message</name></member>
+      <member refid="classtesting_1_1_assertion_result_1a33c14dafd28e3393c841e03f4b70a017" prot="public" virt="non-virtual"><scope>testing::AssertionResult</scope><name>message</name></member>
+      <member refid="classtesting_1_1_assertion_result_1a5dee995939457def35f0bf496d070957" prot="private" virt="non-virtual"><scope>testing::AssertionResult</scope><name>message_</name></member>
+      <member refid="classtesting_1_1_assertion_result_1ab3f34b1623c82762ef4a8f52b535159c" prot="public" virt="non-virtual"><scope>testing::AssertionResult</scope><name>operator bool</name></member>
+      <member refid="classtesting_1_1_assertion_result_1a5b0784686a756660ac8dfe528d89386b" prot="public" virt="non-virtual"><scope>testing::AssertionResult</scope><name>operator!</name></member>
+      <member refid="classtesting_1_1_assertion_result_1a3230efa81aafe7c61f5fb878cfa39e91" prot="public" virt="non-virtual"><scope>testing::AssertionResult</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classtesting_1_1_assertion_result_1a43ae8a260843ce2ff3dc9af262672b8b" prot="public" virt="non-virtual"><scope>testing::AssertionResult</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classtesting_1_1_assertion_result_1aad9274c7b69eda67eb9306963a790839" prot="public" virt="non-virtual"><scope>testing::AssertionResult</scope><name>operator=</name></member>
+      <member refid="classtesting_1_1_assertion_result_1ae7348f9fffe7a20980dfc94fc261d7ca" prot="private" virt="non-virtual"><scope>testing::AssertionResult</scope><name>success_</name></member>
+      <member refid="classtesting_1_1_assertion_result_1ab5b92c1be40f9ce9d7c3e0cf7bf65c61" prot="private" virt="non-virtual"><scope>testing::AssertionResult</scope><name>swap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

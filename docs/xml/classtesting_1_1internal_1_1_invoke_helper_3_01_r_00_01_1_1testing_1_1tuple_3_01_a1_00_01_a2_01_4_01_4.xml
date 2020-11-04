@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_invoke_helper_3_01_r_00_01_1_1testing_1_1tuple_3_01_a1_00_01_a2_01_4_01_4" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::InvokeHelper&lt; R, ::testing::tuple&lt; A1, A2 &gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename R</type>
+      </param>
+      <param>
+        <type>typename A1</type>
+      </param>
+      <param>
+        <type>typename A2</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_invoke_helper_3_01_r_00_01_1_1testing_1_1tuple_3_01_a1_00_01_a2_01_4_01_4_1af3863b86ae4b7fbfd5a5f14e20b57423" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="structtesting_1_1internal_1_1_function" kindref="compound">Function</ref></type>
+          </param>
+        </templateparamlist>
+        <type>R</type>
+        <definition>static R testing::internal::InvokeHelper&lt; R, ::testing::tuple&lt; A1, A2 &gt; &gt;::Invoke</definition>
+        <argsstring>(Function function, const ::testing::tuple&lt; A1, A2 &gt; &amp;args)</argsstring>
+        <name>Invoke</name>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1_function" kindref="compound">Function</ref></type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>const ::testing::tuple&lt; A1, A2 &gt; &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="89" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_invoke_helper_3_01_r_00_01_1_1testing_1_1tuple_3_01_a1_00_01_a2_01_4_01_4_1a227b8f07bfda13f6cb390655fc84f1ee" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Class</type>
+          </param>
+          <param>
+            <type>typename MethodPtr</type>
+          </param>
+        </templateparamlist>
+        <type>R</type>
+        <definition>static R testing::internal::InvokeHelper&lt; R, ::testing::tuple&lt; A1, A2 &gt; &gt;::InvokeMethod</definition>
+        <argsstring>(Class *obj_ptr, MethodPtr method_ptr, const ::testing::tuple&lt; A1, A2 &gt; &amp;args)</argsstring>
+        <name>InvokeMethod</name>
+        <param>
+          <type>Class *</type>
+          <declname>obj_ptr</declname>
+        </param>
+        <param>
+          <type>MethodPtr</type>
+          <declname>method_ptr</declname>
+        </param>
+        <param>
+          <type>const ::testing::tuple&lt; A1, A2 &gt; &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="94" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="94" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="86" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="86" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_invoke_helper_3_01_r_00_01_1_1testing_1_1tuple_3_01_a1_00_01_a2_01_4_01_4_1af3863b86ae4b7fbfd5a5f14e20b57423" prot="public" virt="non-virtual"><scope>testing::internal::InvokeHelper&lt; R, ::testing::tuple&lt; A1, A2 &gt; &gt;</scope><name>Invoke</name></member>
+      <member refid="classtesting_1_1internal_1_1_invoke_helper_3_01_r_00_01_1_1testing_1_1tuple_3_01_a1_00_01_a2_01_4_01_4_1a227b8f07bfda13f6cb390655fc84f1ee" prot="public" virt="non-virtual"><scope>testing::internal::InvokeHelper&lt; R, ::testing::tuple&lt; A1, A2 &gt; &gt;</scope><name>InvokeMethod</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

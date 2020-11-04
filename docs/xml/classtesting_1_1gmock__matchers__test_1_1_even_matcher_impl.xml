@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_even_matcher_impl" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::EvenMatcherImpl</compoundname>
+    <basecompoundref refid="classtesting_1_1_matcher_interface" prot="public" virt="non-virtual">testing::MatcherInterface&lt; int &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_even_matcher_impl_1a0ca990403daf3856cda897e4b1a02ae4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool testing::gmock_matchers_test::EvenMatcherImpl::MatchAndExplain</definition>
+        <argsstring>(int x, MatchResultListener *) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="259" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="259" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_even_matcher_impl_1ae72d37964b4004dfa3a04d7b529ad2f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::gmock_matchers_test::EvenMatcherImpl::DescribeTo</definition>
+        <argsstring>(ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="264" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="264" bodyend="266"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="507">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="505">
+        <label>testing::gmock_matchers_test::EvenMatcherImpl</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_even_matcher_impl"/>
+        <childnode refid="506" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="506">
+        <label>testing::MatcherInterface&lt; int &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="507" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="510">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="508">
+        <label>testing::gmock_matchers_test::EvenMatcherImpl</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_even_matcher_impl"/>
+        <childnode refid="509" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="509">
+        <label>testing::MatcherInterface&lt; int &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="510" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="257" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="257" bodyend="271"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_matcher_describer_interface_1a2071afbc47097c4d1c0064275af34db0" prot="public" virt="virtual"><scope>testing::gmock_matchers_test::EvenMatcherImpl</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_even_matcher_impl_1ae72d37964b4004dfa3a04d7b529ad2f9" prot="public" virt="virtual"><scope>testing::gmock_matchers_test::EvenMatcherImpl</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1_matcher_describer_interface_1ad9f861588bd969b6e3e717f13bb94e7b" prot="public" virt="pure-virtual" ambiguityscope="testing::MatcherInterface::"><scope>testing::gmock_matchers_test::EvenMatcherImpl</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_even_matcher_impl_1a0ca990403daf3856cda897e4b1a02ae4" prot="public" virt="virtual"><scope>testing::gmock_matchers_test::EvenMatcherImpl</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1_matcher_interface_1a296b43607cd99d60365f0e6a762777cf" prot="public" virt="pure-virtual" ambiguityscope="testing::MatcherInterface::"><scope>testing::gmock_matchers_test::EvenMatcherImpl</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1_matcher_describer_interface_1ae2236a56ad2cc35cad10efc1208854f4" prot="public" virt="virtual"><scope>testing::gmock_matchers_test::EvenMatcherImpl</scope><name>~MatcherDescriberInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

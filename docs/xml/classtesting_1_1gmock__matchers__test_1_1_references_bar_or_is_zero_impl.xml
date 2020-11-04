@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_references_bar_or_is_zero_impl" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::ReferencesBarOrIsZeroImpl</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_references_bar_or_is_zero_impl_1ac74ff2f707bebea05a995beb77c77041" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::gmock_matchers_test::ReferencesBarOrIsZeroImpl::MatchAndExplain</definition>
+        <argsstring>(const T &amp;x, MatchResultListener *) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="443" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="443" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_references_bar_or_is_zero_impl_1a8d8496ad72753723598efd45e6a4dcbf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_matchers_test::ReferencesBarOrIsZeroImpl::DescribeTo</definition>
+        <argsstring>(ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="449" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="449" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_references_bar_or_is_zero_impl_1a849b65d96bf7a31b7b0e81005e466605" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_matchers_test::ReferencesBarOrIsZeroImpl::DescribeNegationTo</definition>
+        <argsstring>(ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <param>
+          <type>ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="451" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="451" bodyend="453"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="440" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="440" bodyend="454"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_references_bar_or_is_zero_impl_1a849b65d96bf7a31b7b0e81005e466605" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::ReferencesBarOrIsZeroImpl</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_references_bar_or_is_zero_impl_1a8d8496ad72753723598efd45e6a4dcbf" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::ReferencesBarOrIsZeroImpl</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_references_bar_or_is_zero_impl_1ac74ff2f707bebea05a995beb77c77041" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::ReferencesBarOrIsZeroImpl</scope><name>MatchAndExplain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

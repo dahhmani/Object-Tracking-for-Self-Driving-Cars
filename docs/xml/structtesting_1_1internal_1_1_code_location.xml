@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1internal_1_1_code_location" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::CodeLocation</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtesting_1_1internal_1_1_code_location_1ab8a24d5e63295e411d37578dbb9427c0" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string testing::internal::CodeLocation::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="507" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="507" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtesting_1_1internal_1_1_code_location_1a01c977c7e8834a05a6d6c40b0c416045" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::internal::CodeLocation::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="508" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtesting_1_1internal_1_1_code_location_1ade3ecb2a54905619cd40a6856b48cd5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::CodeLocation::CodeLocation</definition>
+        <argsstring>(const string &amp;a_file, int a_line)</argsstring>
+        <name>CodeLocation</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>a_file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a_line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="505" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="505" bodyend="505"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="504" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="504" bodyend="509"/>
+    <listofallmembers>
+      <member refid="structtesting_1_1internal_1_1_code_location_1ade3ecb2a54905619cd40a6856b48cd5a" prot="public" virt="non-virtual"><scope>testing::internal::CodeLocation</scope><name>CodeLocation</name></member>
+      <member refid="structtesting_1_1internal_1_1_code_location_1ab8a24d5e63295e411d37578dbb9427c0" prot="public" virt="non-virtual"><scope>testing::internal::CodeLocation</scope><name>file</name></member>
+      <member refid="structtesting_1_1internal_1_1_code_location_1a01c977c7e8834a05a6d6c40b0c416045" prot="public" virt="non-virtual"><scope>testing::internal::CodeLocation</scope><name>line</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_c6dd1e0e8863f752489db1a63489604a" kind="dir">
+    <compoundname>vendor/googletest/googletest/xcode/Samples</compoundname>
+    <innerdir refid="dir_dd942def2ebff1fa51a3a28aaa0980e2">vendor/googletest/googletest/xcode/Samples/FrameworkSample</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/xcode/Samples/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_integer_function_test" kind="class" language="C++" prot="public">
+    <compoundname>IntegerFunctionTest</compoundname>
+    <basecompoundref refid="class_quick_test" prot="public" virt="non-virtual">QuickTest</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1193">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1192">
+        <label>QuickTest</label>
+        <link refid="class_quick_test"/>
+        <childnode refid="1193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1191">
+        <label>IntegerFunctionTest</label>
+        <link refid="class_integer_function_test"/>
+        <childnode refid="1192" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1196">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1195">
+        <label>QuickTest</label>
+        <link refid="class_quick_test"/>
+        <childnode refid="1196" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1194">
+        <label>IntegerFunctionTest</label>
+        <link refid="class_integer_function_test"/>
+        <childnode refid="1195" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/samples/sample5_unittest.cc" line="91" column="1" bodyfile="vendor/googletest/googletest/samples/sample5_unittest.cc" bodystart="91" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual"><scope>IntegerFunctionTest</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual"><scope>IntegerFunctionTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual"><scope>IntegerFunctionTest</scope><name>HasNonfatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual"><scope>IntegerFunctionTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual"><scope>IntegerFunctionTest</scope><name>RecordProperty</name></member>
+      <member refid="class_quick_test_1ae52ad082887512b92240ce40a1a05650" prot="protected" virt="virtual"><scope>IntegerFunctionTest</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1_test_1a5ccbac42fee8c5b00b0bfe89b6c49d79" prot="public" virt="non-virtual"><scope>IntegerFunctionTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual"><scope>IntegerFunctionTest</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="class_quick_test_1aba6a28bbd733e72e3b088a0b66386809" prot="protected" virt="non-virtual"><scope>IntegerFunctionTest</scope><name>start_time_</name></member>
+      <member refid="class_quick_test_1a6b2d16cc0c69d30a16fe612db5abfc39" prot="protected" virt="virtual"><scope>IntegerFunctionTest</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_test_1af374706cbaf0ffc460f4fd04e7c150f1" prot="public" virt="non-virtual"><scope>IntegerFunctionTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual"><scope>IntegerFunctionTest</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual"><scope>IntegerFunctionTest</scope><name>Test</name></member>
+      <member refid="classtesting_1_1_test_1a2b0a62f1e667bbe8d8cb18d785bfa991" prot="public" virt="virtual"><scope>IntegerFunctionTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

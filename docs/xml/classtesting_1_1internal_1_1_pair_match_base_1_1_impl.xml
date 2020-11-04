@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_pair_match_base_1_1_impl" kind="class" language="C++" prot="private">
+    <compoundname>testing::internal::PairMatchBase::Impl</compoundname>
+    <basecompoundref refid="classtesting_1_1_matcher_interface" prot="public" virt="non-virtual">testing::MatcherInterface&lt; Tuple &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename Tuple</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pair_match_base_1_1_impl_1abba39c0ceaf795ded3845af76af8772f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool testing::internal::PairMatchBase&lt; D, Op &gt;::Impl&lt; Tuple &gt;::MatchAndExplain</definition>
+        <argsstring>(Tuple args, MatchResultListener *) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>Tuple</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1400" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1400" bodyend="1404"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pair_match_base_1_1_impl_1a15875cb34c31a19a8decad64899fff3f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::PairMatchBase&lt; D, Op &gt;::Impl&lt; Tuple &gt;::DescribeTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1405" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1405" bodyend="1407"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pair_match_base_1_1_impl_1ac687a0bd4df52f60a25ef9bf31b269db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::PairMatchBase&lt; D, Op &gt;::Impl&lt; Tuple &gt;::DescribeNegationTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1408" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1408" bodyend="1410"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1107">
+        <label>testing::internal::PairMatchBase&lt; D, Op &gt;::Impl&lt; Tuple &gt;</label>
+        <childnode refid="1108" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1109">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="1108">
+        <label>testing::MatcherInterface&lt; Tuple &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="1109" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1110">
+        <label>testing::internal::PairMatchBase&lt; D, Op &gt;::Impl&lt; Tuple &gt;</label>
+        <childnode refid="1111" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1112">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="1111">
+        <label>testing::MatcherInterface&lt; Tuple &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="1112" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1398" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1398" bodyend="1411"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_pair_match_base_1_1_impl_1ac687a0bd4df52f60a25ef9bf31b269db" prot="public" virt="virtual"><scope>testing::internal::PairMatchBase::Impl</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_match_base_1_1_impl_1a15875cb34c31a19a8decad64899fff3f" prot="public" virt="virtual"><scope>testing::internal::PairMatchBase::Impl</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_match_base_1_1_impl_1abba39c0ceaf795ded3845af76af8772f" prot="public" virt="virtual"><scope>testing::internal::PairMatchBase::Impl</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1_matcher_describer_interface_1ae2236a56ad2cc35cad10efc1208854f4" prot="public" virt="virtual"><scope>testing::internal::PairMatchBase::Impl</scope><name>~MatcherDescriberInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

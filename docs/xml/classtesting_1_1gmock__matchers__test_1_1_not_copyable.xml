@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_not_copyable" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::NotCopyable</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1gmock__matchers__test_1_1_not_copyable_1ad39e5f41c6359a24bca90fb734dd0f89" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::gmock_matchers_test::NotCopyable::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4050" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4050" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_not_copyable_1a3d15763c115415a26d8acc9ce5a26e19" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::NotCopyable::NotCopyable</definition>
+        <argsstring>(int a_value)</argsstring>
+        <name>NotCopyable</name>
+        <param>
+          <type>int</type>
+          <declname>a_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4038" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4038" bodyend="4038"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_not_copyable_1af6c134767462948fa8dbd35c68370004" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_matchers_test::NotCopyable::value</definition>
+        <argsstring>() const</argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4040" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4040" bodyend="4040"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_not_copyable_1a2e68fcd9a588a184d54e6b54e41fb978" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::gmock_matchers_test::NotCopyable::operator==</definition>
+        <argsstring>(const NotCopyable &amp;rhs) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1gmock__matchers__test_1_1_not_copyable" kindref="compound">NotCopyable</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4042" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4042" bodyend="4044"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_not_copyable_1a36eb6a25f5559bee00fe52a6d86b42d6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::gmock_matchers_test::NotCopyable::operator&gt;=</definition>
+        <argsstring>(const NotCopyable &amp;rhs) const</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1gmock__matchers__test_1_1_not_copyable" kindref="compound">NotCopyable</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4046" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4046" bodyend="4048"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_not_copyable_1af82cf7cef1eb3f1eb59850e34910fe2b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::NotCopyable::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(NotCopyable)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__matchers__test_1_1_not_copyable" kindref="compound">NotCopyable</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4052" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4036" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4036" bodyend="4053"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_not_copyable_1af82cf7cef1eb3f1eb59850e34910fe2b" prot="private" virt="non-virtual"><scope>testing::gmock_matchers_test::NotCopyable</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_not_copyable_1a3d15763c115415a26d8acc9ce5a26e19" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::NotCopyable</scope><name>NotCopyable</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_not_copyable_1a2e68fcd9a588a184d54e6b54e41fb978" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::NotCopyable</scope><name>operator==</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_not_copyable_1a36eb6a25f5559bee00fe52a6d86b42d6" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::NotCopyable</scope><name>operator&gt;=</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_not_copyable_1af6c134767462948fa8dbd35c68370004" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::NotCopyable</scope><name>value</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_not_copyable_1ad39e5f41c6359a24bca90fb734dd0f89" prot="private" virt="non-virtual"><scope>testing::gmock_matchers_test::NotCopyable</scope><name>value_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

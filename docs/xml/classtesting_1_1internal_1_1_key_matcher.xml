@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_key_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::KeyMatcher</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename M</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_key_matcher_1a78174b3635ea2d666d78a62b78a9f5e6" prot="private" static="no" mutable="no">
+        <type>const M</type>
+        <definition>const M testing::internal::KeyMatcher&lt; M &gt;::matcher_for_key_</definition>
+        <argsstring></argsstring>
+        <name>matcher_for_key_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2993" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2993" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_key_matcher_1a08429692150bf9304b493192abcf16d4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::KeyMatcher&lt; M &gt;::KeyMatcher</definition>
+        <argsstring>(M m)</argsstring>
+        <name>KeyMatcher</name>
+        <param>
+          <type>M</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2985" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2985" bodyend="2985"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_key_matcher_1aa3861b06dd9e3255a7c1c013ddf88fb5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename PairType</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::internal::KeyMatcher&lt; M &gt;::operator Matcher&lt; PairType &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Matcher&lt; PairType &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2988" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2988" bodyend="2990"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_key_matcher_1aa9f20802fb17319e45975a76662ff176" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::KeyMatcher&lt; M &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(KeyMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_key_matcher" kindref="compound">KeyMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2995" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2983" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2983" bodyend="2996"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_key_matcher_1aa9f20802fb17319e45975a76662ff176" prot="private" virt="non-virtual"><scope>testing::internal::KeyMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_key_matcher_1a08429692150bf9304b493192abcf16d4" prot="public" virt="non-virtual"><scope>testing::internal::KeyMatcher</scope><name>KeyMatcher</name></member>
+      <member refid="classtesting_1_1internal_1_1_key_matcher_1a78174b3635ea2d666d78a62b78a9f5e6" prot="private" virt="non-virtual"><scope>testing::internal::KeyMatcher</scope><name>matcher_for_key_</name></member>
+      <member refid="classtesting_1_1internal_1_1_key_matcher_1aa3861b06dd9e3255a7c1c013ddf88fb5" prot="public" virt="non-virtual"><scope>testing::internal::KeyMatcher</scope><name>operator Matcher&lt; PairType &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

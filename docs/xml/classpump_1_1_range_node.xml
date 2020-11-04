@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classpump_1_1_range_node" kind="class" language="Python" prot="public">
+    <compoundname>pump::RangeNode</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpump_1_1_range_node_1ae75b9f31ba8c3bd048cf09b22035efa0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.RangeNode::identifier</definition>
+        <argsstring></argsstring>
+        <name>identifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="403" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpump_1_1_range_node_1acbb59f8c5e23d23563ca03f21574ce63" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.RangeNode::exp1</definition>
+        <argsstring></argsstring>
+        <name>exp1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="404" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpump_1_1_range_node_1afe153ee472b121652a51c62c1522cc13" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.RangeNode::exp2</definition>
+        <argsstring></argsstring>
+        <name>exp2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="405" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpump_1_1_range_node_1a58e85945a5a6e2f899e8243422c871e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pump.RangeNode.__init__</definition>
+        <argsstring>(self, identifier=None, exp1=None, exp2=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>identifier</type>
+          <defname>identifier</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>exp2</type>
+          <defname>exp2</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="402" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="402" bodyend="407"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/scripts/pump.py" line="401" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="401" bodyend="408"/>
+    <listofallmembers>
+      <member refid="classpump_1_1_range_node_1a58e85945a5a6e2f899e8243422c871e3" prot="public" virt="non-virtual"><scope>pump::RangeNode</scope><name>__init__</name></member>
+      <member refid="classpump_1_1_range_node_1acbb59f8c5e23d23563ca03f21574ce63" prot="public" virt="non-virtual"><scope>pump::RangeNode</scope><name>exp1</name></member>
+      <member refid="classpump_1_1_range_node_1afe153ee472b121652a51c62c1522cc13" prot="public" virt="non-virtual"><scope>pump::RangeNode</scope><name>exp2</name></member>
+      <member refid="classpump_1_1_range_node_1ae75b9f31ba8c3bd048cf09b22035efa0" prot="public" virt="non-virtual"><scope>pump::RangeNode</scope><name>identifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

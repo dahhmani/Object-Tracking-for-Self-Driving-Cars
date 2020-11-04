@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="md_vendor_googletest_googletest_docs__v1_6__documentation" kind="page">
+    <compoundname>md_vendor_googletest_googletest_docs_V1_6_Documentation</compoundname>
+    <title>V1_6_Documentation</title>
+    <detaileddescription>
+<para>This page lists all documentation wiki pages for Google Test <bold>1.6</bold> <ndash/> <bold>if you use a released version of Google Test, please read the documentation for that specific version instead.</bold></para><para><itemizedlist>
+<listitem><para>Primer <ndash/> start here if you are new to Google Test.</para></listitem><listitem><para>Samples <ndash/> learn from examples.</para></listitem><listitem><para>AdvancedGuide <ndash/> learn more about Google Test.</para></listitem><listitem><para>XcodeGuide <ndash/> how to use Google Test in Xcode on Mac.</para></listitem><listitem><para>Frequently-Asked Questions <ndash/> check here before asking a question on the mailing list.</para></listitem></itemizedlist>
+</para><para>To contribute code to Google Test, read:</para><para><itemizedlist>
+<listitem><para>DevGuide <ndash/> read this <emphasis>before</emphasis> writing your first patch.</para></listitem><listitem><para>PumpManual <ndash/> how we generate some of Google Test&apos;s source files. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_type_with_size_3_018_01_4" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::TypeWithSize&lt; 8 &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_type_with_size_3_018_01_4_1a36d5697e5f5254b0495f13c97d747e36" prot="public" static="no">
+        <type>long long</type>
+        <definition>typedef long long testing::internal::TypeWithSize&lt; 8 &gt;::Int</definition>
+        <argsstring></argsstring>
+        <name>Int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2494" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2494" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_type_with_size_3_018_01_4_1a747e21c5aee8faf07ec65cd4c3d1ca62" prot="public" static="no">
+        <type>unsigned long long</type>
+        <definition>typedef unsigned long long testing::internal::TypeWithSize&lt; 8 &gt;::UInt</definition>
+        <argsstring></argsstring>
+        <name>UInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2495" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2495" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2488" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2488" bodyend="2497"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_type_with_size_3_018_01_4_1a36d5697e5f5254b0495f13c97d747e36" prot="public" virt="non-virtual"><scope>testing::internal::TypeWithSize&lt; 8 &gt;</scope><name>Int</name></member>
+      <member refid="classtesting_1_1internal_1_1_type_with_size_3_018_01_4_1a747e21c5aee8faf07ec65cd4c3d1ca62" prot="public" virt="non-virtual"><scope>testing::internal::TypeWithSize&lt; 8 &gt;</scope><name>UInt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

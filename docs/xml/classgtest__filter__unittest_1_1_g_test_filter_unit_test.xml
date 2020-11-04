@@ -1,0 +1,589 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgtest__filter__unittest_1_1_g_test_filter_unit_test" kind="class" language="Python" prot="public">
+    <compoundname>gtest_filter_unittest::GTestFilterUnitTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1aeebdbdcc59594ad0a69cf11eafe94997" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.AssertSetEqual</definition>
+        <argsstring>(self, lhs, rhs)</argsstring>
+        <name>AssertSetEqual</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>lhs</type>
+          <defname>lhs</defname>
+        </param>
+        <param>
+          <type>rhs</type>
+          <defname>rhs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Asserts that two sets are equal.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="233" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="233" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a87656eac0cf4136252eef43da0121381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.AssertPartitionIsValid</definition>
+        <argsstring>(self, set_var, list_of_sets)</argsstring>
+        <name>AssertPartitionIsValid</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>set_var</type>
+          <defname>set_var</defname>
+        </param>
+        <param>
+          <type>list_of_sets</type>
+          <defname>list_of_sets</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Asserts that list_of_sets is a valid partition of set_var.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="242" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="242" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a11c48bf404bca6806b14a1a71d169ace" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.AdjustForParameterizedTests</definition>
+        <argsstring>(self, tests_to_run)</argsstring>
+        <name>AdjustForParameterizedTests</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tests_to_run</type>
+          <defname>tests_to_run</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Adjust tests_to_run in case value parameterized tests are disabled.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="251" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="251" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1acf341ed9a265b346a050afa9a9a85c65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.RunAndVerify</definition>
+        <argsstring>(self, gtest_filter, tests_to_run)</argsstring>
+        <name>RunAndVerify</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>gtest_filter</type>
+          <defname>gtest_filter</defname>
+        </param>
+        <param>
+          <type>tests_to_run</type>
+          <defname>tests_to_run</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Checks that the binary runs correct set of tests for a given filter.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="260" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="260" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a2022ed99e18a6e5afd1023b9dd19d6e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.RunAndVerifyWithSharding</definition>
+        <argsstring>(self, gtest_filter, total_shards, tests_to_run, args=None, check_exit_0=False)</argsstring>
+        <name>RunAndVerifyWithSharding</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>gtest_filter</type>
+          <defname>gtest_filter</defname>
+        </param>
+        <param>
+          <type>total_shards</type>
+          <defname>total_shards</defname>
+        </param>
+        <param>
+          <type>tests_to_run</type>
+          <defname>tests_to_run</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>check_exit_0</type>
+          <defname>check_exit_0</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Checks that binary runs correct tests for the given filter and shard.
+
+Runs all shards of gtest_filter_unittest_ with the given filter, and
+verifies that the right set of tests were run. The union of tests run
+on each shard should be identical to tests_to_run, without duplicates.
+
+Args:
+  gtest_filter: A filter to apply to the tests.
+  total_shards: A total number of shards to split test run into.
+  tests_to_run: A set of tests expected to run.
+  args   :      Arguments to pass to the to the test binary.
+  check_exit_0: When set to a true value, make sure that all shards
+            return 0.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="290" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="291" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1ae52bd70ef1dcb68c83c0379ddfb987a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.RunAndVerifyAllowingDisabled</definition>
+        <argsstring>(self, gtest_filter, tests_to_run)</argsstring>
+        <name>RunAndVerifyAllowingDisabled</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>gtest_filter</type>
+          <defname>gtest_filter</defname>
+        </param>
+        <param>
+          <type>tests_to_run</type>
+          <defname>tests_to_run</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Checks that the binary runs correct set of tests for the given filter.
+
+Runs gtest_filter_unittest_ with the given filter, and enables
+disabled tests. Verifies that the right set of tests were run.
+
+Args:
+  gtest_filter: A filter to apply to the tests.
+  tests_to_run: A set of tests expected to run.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="328" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="328" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1af20a71b1659314a5cc1093d77a673495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.setUp</definition>
+        <argsstring>(self)</argsstring>
+        <name>setUp</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Sets up test case.
+
+Determines whether value-parameterized tests are enabled in the binary and
+sets the flags accordingly.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="349" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="349" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1adef3a9b539c73bda785a631a5aac424f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testDefaultBehavior</definition>
+        <argsstring>(self)</argsstring>
+        <name>testDefaultBehavior</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests the behavior of not specifying the filter.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="361" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="361" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a8d5ad564f41c052864a3957a71daa535" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testDefaultBehaviorWithShards</definition>
+        <argsstring>(self)</argsstring>
+        <name>testDefaultBehaviorWithShards</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests the behavior without the filter, with sharding enabled.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="366" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="366" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1afce65847b463ec5bca4458e9348d9a9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testEmptyFilter</definition>
+        <argsstring>(self)</argsstring>
+        <name>testEmptyFilter</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests an empty filter.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="375" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="375" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a2456062c177350a53244aea030aaf617" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testBadFilter</definition>
+        <argsstring>(self)</argsstring>
+        <name>testBadFilter</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests a filter that matches nothing.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="382" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="382" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a336d9203e26493bae11fbb514af38a6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testFullName</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFullName</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests filtering by full name.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="388" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="388" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1ae9da48a79483e22e3f986e57de0dee37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testUniversalFilters</definition>
+        <argsstring>(self)</argsstring>
+        <name>testUniversalFilters</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests filters that match everything.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="395" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="395" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1ac59206c94324afdc09adbe5853856174" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testFilterByTestCase</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFilterByTestCase</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests filtering by test case name.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="404" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="404" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1aaea691324a6c0765403b26a895702a63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testFilterByTest</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFilterByTest</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests filtering by test name.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="414" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="414" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a6d962adae2ee2697b3b92e84b60a795a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testFilterDisabledTests</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFilterDisabledTests</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Select only the disabled tests to run.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="419" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="419" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1af855132606c1fa02fb765e8619108114" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testWildcardInTestCaseName</definition>
+        <argsstring>(self)</argsstring>
+        <name>testWildcardInTestCaseName</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests using wildcard in the test case name.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="444" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="444" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a9b1e6b35e158d7c6d11b8f4d2cb600cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testWildcardInTestName</definition>
+        <argsstring>(self)</argsstring>
+        <name>testWildcardInTestName</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests using wildcard in the test name.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="456" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="456" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a874aea28690300d8c0dc0910304f7ab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testFilterWithoutDot</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFilterWithoutDot</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests a filter that has no &apos;.&apos; in it.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="461" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="461" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a2563885e647205586b135c5ead55e6ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testTwoPatterns</definition>
+        <argsstring>(self)</argsstring>
+        <name>testTwoPatterns</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests filters that consist of two patterns.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="472" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="472" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1af4858e153245f0974632fd36dc1dd804" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testThreePatterns</definition>
+        <argsstring>(self)</argsstring>
+        <name>testThreePatterns</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests filters that consist of three patterns.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="485" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="485" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1aff878809d524797f62e2fe38bbfcc8da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testNegativeFilters</definition>
+        <argsstring>(self)</argsstring>
+        <name>testNegativeFilters</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="514" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="514" bodyend="565"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a81e4256da0e0ad8cb4b764ffd573cc6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testFlagOverridesEnvVar</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFlagOverridesEnvVar</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that the filter flag overrides the filtering env. variable.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="566" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="566" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a7a2c7b8d758abba0ae883bbb272f344b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testShardStatusFileIsCreated</definition>
+        <argsstring>(self)</argsstring>
+        <name>testShardStatusFileIsCreated</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that the shard file is created if specified in the environment.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="576" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="576" bodyend="589"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a1dac68948f6170e39ae9ee7bca0bc1eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testShardStatusFileIsCreatedWithListTests</definition>
+        <argsstring>(self)</argsstring>
+        <name>testShardStatusFileIsCreatedWithListTests</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that the shard file is created with the &quot;list_tests&quot; flag.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="590" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="590" bodyend="612"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a4b4f7428d9219dff5960968477927626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_filter_unittest.GTestFilterUnitTest.testShardingWorksWithDeathTests</definition>
+        <argsstring>(self)</argsstring>
+        <name>testShardingWorksWithDeathTests</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests integration with death tests and sharding.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="614" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="614" bodyend="634"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Tests the env variable or the command line flag to filter tests.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1007">
+        <label>gtest_filter_unittest.GTestFilterUnitTest</label>
+        <link refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test"/>
+        <childnode refid="1008" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1008">
+        <label>TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1009">
+        <label>gtest_filter_unittest.GTestFilterUnitTest</label>
+        <link refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test"/>
+        <childnode refid="1010" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1010">
+        <label>TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_filter_unittest.py" line="228" column="1" bodyfile="vendor/googletest/googletest/test/gtest_filter_unittest.py" bodystart="228" bodyend="635"/>
+    <listofallmembers>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a11c48bf404bca6806b14a1a71d169ace" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>AdjustForParameterizedTests</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a87656eac0cf4136252eef43da0121381" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>AssertPartitionIsValid</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1aeebdbdcc59594ad0a69cf11eafe94997" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>AssertSetEqual</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1acf341ed9a265b346a050afa9a9a85c65" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>RunAndVerify</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1ae52bd70ef1dcb68c83c0379ddfb987a9" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>RunAndVerifyAllowingDisabled</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a2022ed99e18a6e5afd1023b9dd19d6e0" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>RunAndVerifyWithSharding</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1af20a71b1659314a5cc1093d77a673495" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>setUp</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a2456062c177350a53244aea030aaf617" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testBadFilter</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1adef3a9b539c73bda785a631a5aac424f" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testDefaultBehavior</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a8d5ad564f41c052864a3957a71daa535" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testDefaultBehaviorWithShards</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1afce65847b463ec5bca4458e9348d9a9f" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testEmptyFilter</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1aaea691324a6c0765403b26a895702a63" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testFilterByTest</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1ac59206c94324afdc09adbe5853856174" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testFilterByTestCase</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a6d962adae2ee2697b3b92e84b60a795a" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testFilterDisabledTests</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a874aea28690300d8c0dc0910304f7ab2" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testFilterWithoutDot</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a81e4256da0e0ad8cb4b764ffd573cc6d" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testFlagOverridesEnvVar</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a336d9203e26493bae11fbb514af38a6b" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testFullName</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1aff878809d524797f62e2fe38bbfcc8da" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testNegativeFilters</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a4b4f7428d9219dff5960968477927626" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testShardingWorksWithDeathTests</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a7a2c7b8d758abba0ae883bbb272f344b" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testShardStatusFileIsCreated</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a1dac68948f6170e39ae9ee7bca0bc1eb" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testShardStatusFileIsCreatedWithListTests</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1af4858e153245f0974632fd36dc1dd804" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testThreePatterns</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a2563885e647205586b135c5ead55e6ab" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testTwoPatterns</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1ae9da48a79483e22e3f986e57de0dee37" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testUniversalFilters</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1af855132606c1fa02fb765e8619108114" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testWildcardInTestCaseName</name></member>
+      <member refid="classgtest__filter__unittest_1_1_g_test_filter_unit_test_1a9b1e6b35e158d7c6d11b8f4d2cb600cb" prot="public" virt="non-virtual"><scope>gtest_filter_unittest::GTestFilterUnitTest</scope><name>testWildcardInTestName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

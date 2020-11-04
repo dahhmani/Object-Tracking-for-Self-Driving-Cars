@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1internal_1_1type__equals" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::type_equals</compoundname>
+    <basecompoundref refid="structtesting_1_1internal_1_1bool__constant" prot="public" virt="non-virtual">testing::internal::bool_constant&lt; false &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T1</type>
+      </param>
+      <param>
+        <type>typename T2</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2290">
+        <label>testing::internal::type_equals&lt; T1, T2 &gt;</label>
+        <link refid="structtesting_1_1internal_1_1type__equals"/>
+        <childnode refid="2291" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2291">
+        <label>false_type</label>
+        <link refid="structtesting_1_1internal_1_1bool__constant"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2292">
+        <label>testing::internal::type_equals&lt; T1, T2 &gt;</label>
+        <link refid="structtesting_1_1internal_1_1type__equals"/>
+        <childnode refid="2293" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2293">
+        <label>false_type</label>
+        <link refid="structtesting_1_1internal_1_1bool__constant"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h" line="344" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h" bodystart="344" bodyend="344"/>
+    <listofallmembers>
+      <member refid="structtesting_1_1internal_1_1bool__constant_1aba6d09ecf7eecea6c93480f0d627a167" prot="public" virt="non-virtual"><scope>testing::internal::type_equals</scope><name>type</name></member>
+      <member refid="structtesting_1_1internal_1_1bool__constant_1a499fba6576296b04d99690a486424b32" prot="public" virt="non-virtual"><scope>testing::internal::type_equals</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

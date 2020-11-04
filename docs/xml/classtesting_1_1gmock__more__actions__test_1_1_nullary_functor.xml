@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__more__actions__test_1_1_nullary_functor" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_more_actions_test::NullaryFunctor</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__more__actions__test_1_1_nullary_functor_1a50f1e39b9ee381693e8bb871acf4e3a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_more_actions_test::NullaryFunctor::operator()</definition>
+        <argsstring>()</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="80" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="80" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="78" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="78" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__more__actions__test_1_1_nullary_functor_1a50f1e39b9ee381693e8bb871acf4e3a9" prot="public" virt="non-virtual"><scope>testing::gmock_more_actions_test::NullaryFunctor</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_default_value_3_01_t_01_6_01_4" kind="class" language="C++" prot="public">
+    <compoundname>testing::DefaultValue&lt; T &amp; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classtesting_1_1_default_value_3_01_t_01_6_01_4_1a320c8ae0a0e290d9058dfaca1d65f02f" prot="private" static="yes" mutable="no">
+        <type>T *</type>
+        <definition>T* testing::DefaultValue&lt; T &amp; &gt;::address_</definition>
+        <argsstring></argsstring>
+        <name>address_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="305" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1_default_value_3_01_t_01_6_01_4_1a9863abf3d311ce5007d7e57dfce2f252" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::DefaultValue&lt; T &amp; &gt;::Set</definition>
+        <argsstring>(T &amp;x)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="278" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="278" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_default_value_3_01_t_01_6_01_4_1a3c8f9f81e591370f9b33798f58ca1a10" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::DefaultValue&lt; T &amp; &gt;::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="283" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="283" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_default_value_3_01_t_01_6_01_4_1a3e61547c2f0141cc8004385f3a9c817d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool testing::DefaultValue&lt; T &amp; &gt;::IsSet</definition>
+        <argsstring>()</argsstring>
+        <name>IsSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="288" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="288" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_default_value_3_01_t_01_6_01_4_1a38420499e17d2fb4146ae6c4265f0d55" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool testing::DefaultValue&lt; T &amp; &gt;::Exists</definition>
+        <argsstring>()</argsstring>
+        <name>Exists</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="292" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="292" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_default_value_3_01_t_01_6_01_4_1a1310448dd8c171aecfcbf7c8df5de7bd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>static T&amp; testing::DefaultValue&lt; T &amp; &gt;::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="299" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="299" bodyend="302"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="275" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="275" bodyend="306"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_default_value_3_01_t_01_6_01_4_1a320c8ae0a0e290d9058dfaca1d65f02f" prot="private" virt="non-virtual"><scope>testing::DefaultValue&lt; T &amp; &gt;</scope><name>address_</name></member>
+      <member refid="classtesting_1_1_default_value_3_01_t_01_6_01_4_1a3c8f9f81e591370f9b33798f58ca1a10" prot="public" virt="non-virtual"><scope>testing::DefaultValue&lt; T &amp; &gt;</scope><name>Clear</name></member>
+      <member refid="classtesting_1_1_default_value_3_01_t_01_6_01_4_1a38420499e17d2fb4146ae6c4265f0d55" prot="public" virt="non-virtual"><scope>testing::DefaultValue&lt; T &amp; &gt;</scope><name>Exists</name></member>
+      <member refid="classtesting_1_1_default_value_3_01_t_01_6_01_4_1a1310448dd8c171aecfcbf7c8df5de7bd" prot="public" virt="non-virtual"><scope>testing::DefaultValue&lt; T &amp; &gt;</scope><name>Get</name></member>
+      <member refid="classtesting_1_1_default_value_3_01_t_01_6_01_4_1a3e61547c2f0141cc8004385f3a9c817d" prot="public" virt="non-virtual"><scope>testing::DefaultValue&lt; T &amp; &gt;</scope><name>IsSet</name></member>
+      <member refid="classtesting_1_1_default_value_3_01_t_01_6_01_4_1a9863abf3d311ce5007d7e57dfce2f252" prot="public" virt="non-virtual"><scope>testing::DefaultValue&lt; T &amp; &gt;</scope><name>Set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

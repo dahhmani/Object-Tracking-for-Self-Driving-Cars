@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_matches_regex_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::MatchesRegexMatcher</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_matches_regex_matcher_1a585228fef5cc1158f064aa4f3eaf882e" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">internal::linked_ptr</ref>&lt; const <ref refid="classtesting_1_1internal_1_1_r_e" kindref="compound">RE</ref> &gt;</type>
+        <definition>const internal::linked_ptr&lt;const RE&gt; testing::internal::MatchesRegexMatcher::regex_</definition>
+        <argsstring></argsstring>
+        <name>regex_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1366" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_matches_regex_matcher_1ac2690d696a5a1ec134a90c5cc21b2072" prot="private" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool testing::internal::MatchesRegexMatcher::full_match_</definition>
+        <argsstring></argsstring>
+        <name>full_match_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1367" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1367" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_matches_regex_matcher_1acce0beb9c72166b1c5771869cfebedd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::MatchesRegexMatcher::MatchesRegexMatcher</definition>
+        <argsstring>(const RE *regex, bool full_match)</argsstring>
+        <name>MatchesRegexMatcher</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1_r_e" kindref="compound">RE</ref> *</type>
+          <declname>regex</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>full_match</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1328" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1328" bodyend="1329"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_matches_regex_matcher_1a00f5f9b19a5308d8daacc502c88a91ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename CharType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::internal::MatchesRegexMatcher::MatchAndExplain</definition>
+        <argsstring>(CharType *s, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>CharType *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1337" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1337" bodyend="1339"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_matches_regex_matcher_1a57042ed4ce640738728d976f63f0702e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class MatcheeStringType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::internal::MatchesRegexMatcher::MatchAndExplain</definition>
+        <argsstring>(const MatcheeStringType &amp;s, MatchResultListener *) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>const MatcheeStringType &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1346" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1346" bodyend="1351"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_matches_regex_matcher_1a8ebd3a0cf33a7bad04a3daf4b0653d8f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::MatchesRegexMatcher::DescribeTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1353" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1353" bodyend="1357"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_matches_regex_matcher_1a63154c9c572c1e44a130d58539fde707" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::MatchesRegexMatcher::DescribeNegationTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1359" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1359" bodyend="1363"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_matches_regex_matcher_1a1dcc2e98d0e00bb3fed63d1e19f324b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::MatchesRegexMatcher::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(MatchesRegexMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_matches_regex_matcher" kindref="compound">MatchesRegexMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1369" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1326" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1326" bodyend="1370"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_matches_regex_matcher_1a63154c9c572c1e44a130d58539fde707" prot="public" virt="non-virtual"><scope>testing::internal::MatchesRegexMatcher</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_matches_regex_matcher_1a8ebd3a0cf33a7bad04a3daf4b0653d8f" prot="public" virt="non-virtual"><scope>testing::internal::MatchesRegexMatcher</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_matches_regex_matcher_1ac2690d696a5a1ec134a90c5cc21b2072" prot="private" virt="non-virtual"><scope>testing::internal::MatchesRegexMatcher</scope><name>full_match_</name></member>
+      <member refid="classtesting_1_1internal_1_1_matches_regex_matcher_1a1dcc2e98d0e00bb3fed63d1e19f324b8" prot="private" virt="non-virtual"><scope>testing::internal::MatchesRegexMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_matches_regex_matcher_1a00f5f9b19a5308d8daacc502c88a91ba" prot="public" virt="non-virtual"><scope>testing::internal::MatchesRegexMatcher</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1internal_1_1_matches_regex_matcher_1a57042ed4ce640738728d976f63f0702e" prot="public" virt="non-virtual"><scope>testing::internal::MatchesRegexMatcher</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1internal_1_1_matches_regex_matcher_1acce0beb9c72166b1c5771869cfebedd1" prot="public" virt="non-virtual"><scope>testing::internal::MatchesRegexMatcher</scope><name>MatchesRegexMatcher</name></member>
+      <member refid="classtesting_1_1internal_1_1_matches_regex_matcher_1a585228fef5cc1158f064aa4f3eaf882e" prot="private" virt="non-virtual"><scope>testing::internal::MatchesRegexMatcher</scope><name>regex_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

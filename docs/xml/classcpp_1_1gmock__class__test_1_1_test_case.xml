@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classcpp_1_1gmock__class__test_1_1_test_case" kind="class" language="Python" prot="public">
+    <compoundname>cpp::gmock_class_test::TestCase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+    <derivedcompoundref refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test" prot="public" virt="non-virtual">cpp.gmock_class_test.GenerateMethodsTest</derivedcompoundref>
+    <derivedcompoundref refid="classcpp_1_1gmock__class__test_1_1_generate_mocks_test" prot="public" virt="non-virtual">cpp.gmock_class_test.GenerateMocksTest</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_test_case_1a366b15717eebc41e397357868c5734c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.TestCase.StripLeadingWhitespace</definition>
+        <argsstring>(self, lines)</argsstring>
+        <name>StripLeadingWhitespace</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>lines</type>
+          <defname>lines</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Strip leading whitespace in each line in &apos;lines&apos;.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="37" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1gmock__class__test_1_1_test_case_1a68f88bba11511f8c582123d47bf80464" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class_test.TestCase.assertEqualIgnoreLeadingWhitespace</definition>
+        <argsstring>(self, expected_lines, lines)</argsstring>
+        <name>assertEqualIgnoreLeadingWhitespace</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>expected_lines</type>
+          <defname>expected_lines</defname>
+        </param>
+        <param>
+          <type>lines</type>
+          <defname>lines</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Specialized assert that ignores the indent level.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="41" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="41" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Helper class that adds assert methods.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2114">
+        <label>cpp.gmock_class_test.GenerateMocksTest</label>
+        <link refid="classcpp_1_1gmock__class__test_1_1_generate_mocks_test"/>
+        <childnode refid="2111" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2111">
+        <label>cpp.gmock_class_test.TestCase</label>
+        <link refid="classcpp_1_1gmock__class__test_1_1_test_case"/>
+        <childnode refid="2112" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2112">
+        <label>unittest::TestCase</label>
+      </node>
+      <node id="2113">
+        <label>cpp.gmock_class_test.GenerateMethodsTest</label>
+        <link refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test"/>
+        <childnode refid="2111" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2115">
+        <label>cpp.gmock_class_test.TestCase</label>
+        <link refid="classcpp_1_1gmock__class__test_1_1_test_case"/>
+        <childnode refid="2116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2116">
+        <label>unittest::TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="34" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="34" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classcpp_1_1gmock__class__test_1_1_test_case_1a68f88bba11511f8c582123d47bf80464" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::TestCase</scope><name>assertEqualIgnoreLeadingWhitespace</name></member>
+      <member refid="classcpp_1_1gmock__class__test_1_1_test_case_1a366b15717eebc41e397357868c5734c5" prot="public" virt="non-virtual"><scope>cpp::gmock_class_test::TestCase</scope><name>StripLeadingWhitespace</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

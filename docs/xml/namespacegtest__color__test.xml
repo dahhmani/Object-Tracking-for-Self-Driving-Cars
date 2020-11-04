@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegtest__color__test" kind="namespace" language="Python">
+    <compoundname>gtest_color_test</compoundname>
+    <innerclass refid="classgtest__color__test_1_1_g_test_color_test" prot="public">gtest_color_test::GTestColorTest</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gtest__color__test_8py_1aed3212d01eb48ec3b2ce43de461f9e84" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_color_test.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;wan@google.com (Zhanyong Wan)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_color_test.py" line="34" column="1" bodyfile="vendor/googletest/googletest/test/gtest_color_test.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__color__test_8py_1a0d4451a99f88105308f0842eb3ec2938" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_color_test.IS_WINDOWS</definition>
+        <argsstring></argsstring>
+        <name>IS_WINDOWS</name>
+        <initializer>=  &apos;nt&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_color_test.py" line="40" column="1" bodyfile="vendor/googletest/googletest/test/gtest_color_test.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__color__test_8py_1aa6deaa7da27bcc115fe666abad13419c" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_color_test.COLOR_ENV_VAR</definition>
+        <argsstring></argsstring>
+        <name>COLOR_ENV_VAR</name>
+        <initializer>=  &apos;GTEST_COLOR&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_color_test.py" line="42" column="1" bodyfile="vendor/googletest/googletest/test/gtest_color_test.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__color__test_8py_1af5818cea608c0551909fefbeaf0edf20" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_color_test.COLOR_FLAG</definition>
+        <argsstring></argsstring>
+        <name>COLOR_FLAG</name>
+        <initializer>=  &apos;gtest_color&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_color_test.py" line="43" column="1" bodyfile="vendor/googletest/googletest/test/gtest_color_test.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__color__test_8py_1a5b2d1937052a86cc99b722dd0db8e4fc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gtest_color_test.COMMAND</definition>
+        <argsstring></argsstring>
+        <name>COMMAND</name>
+        <initializer>=  gtest_test_utils.GetTestExecutablePath(&apos;gtest_color_test_&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_color_test.py" line="44" column="1" bodyfile="vendor/googletest/googletest/test/gtest_color_test.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gtest__color__test_8py_1af8659dcaaf59478690f30d7ac141b1c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_color_test.SetEnvVar</definition>
+        <argsstring>(env_var, value)</argsstring>
+        <name>SetEnvVar</name>
+        <param>
+          <type>env_var</type>
+          <defname>env_var</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Sets the env variable to &apos;value&apos;; unsets it when &apos;value&apos; is None.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_color_test.py" line="47" column="1" bodyfile="vendor/googletest/googletest/test/gtest_color_test.py" bodystart="47" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__color__test_8py_1a96a2e5fa77bff1cba4a791ad1e5bdafa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_color_test.UsesColor</definition>
+        <argsstring>(term, color_env_var, color_flag)</argsstring>
+        <name>UsesColor</name>
+        <param>
+          <type>term</type>
+          <defname>term</defname>
+        </param>
+        <param>
+          <type>color_env_var</type>
+          <defname>color_env_var</defname>
+        </param>
+        <param>
+          <type>color_flag</type>
+          <defname>color_flag</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Runs gtest_color_test_ and returns its exit code.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_color_test.py" line="56" column="1" bodyfile="vendor/googletest/googletest/test/gtest_color_test.py" bodystart="56" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest_color_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

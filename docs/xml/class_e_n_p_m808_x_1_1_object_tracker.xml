@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_e_n_p_m808_x_1_1_object_tracker" kind="class" language="C++" prot="public">
+    <compoundname>ENPM808X::ObjectTracker</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_e_n_p_m808_x_1_1_object_tracker_1aa1b56583999590f13ab520cf1f85847c" prot="private" static="no" mutable="no">
+        <type>std::unordered_set&lt; std::string &gt;</type>
+        <definition>std::unordered_set&lt;std::string&gt; ENPM808X::ObjectTracker::objectClasses_</definition>
+        <argsstring></argsstring>
+        <name>objectClasses_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tracker.h" line="94" column="1" bodyfile="include/tracker.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_n_p_m808_x_1_1_object_tracker_1a0859af32a01170aabe7ef259b1417ad5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ENPM808X::ObjectTracker::minConfidence_</definition>
+        <argsstring></argsstring>
+        <name>minConfidence_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tracker.h" line="95" column="1" bodyfile="include/tracker.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_n_p_m808_x_1_1_object_tracker_1afa7c55e4071285ecb04f2c1b8489c090" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ENPM808X::ObjectTracker::minOverlap_</definition>
+        <argsstring></argsstring>
+        <name>minOverlap_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tracker.h" line="95" column="1" bodyfile="include/tracker.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_n_p_m808_x_1_1_object_tracker_1a636a7fd4850b5331a21b3e01e54d71cf" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; ENPM808X::ObjectTracker::datasetLabels_</definition>
+        <argsstring></argsstring>
+        <name>datasetLabels_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tracker.h" line="96" column="1" bodyfile="include/tracker.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_n_p_m808_x_1_1_object_tracker_1a26323cb6595e331ddb7eddc7a4acc61b" prot="private" static="no" mutable="no">
+        <type>cv::dnn::DetectionModel</type>
+        <definition>cv::dnn::DetectionModel ENPM808X::ObjectTracker::network_</definition>
+        <argsstring></argsstring>
+        <name>network_</name>
+        <initializer>{
+      &quot;../models/yolo/yolov4.weights&quot;,
+      &quot;../models/yolo/yolov4.cfg&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tracker.h" line="97" column="1" bodyfile="include/tracker.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_n_p_m808_x_1_1_object_tracker_1a7e087dcfe0fb3805746d5c72f0b6295b" prot="private" static="no" mutable="no">
+        <type>cv::Matx34f</type>
+        <definition>cv::Matx34f ENPM808X::ObjectTracker::P_</definition>
+        <argsstring></argsstring>
+        <name>P_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tracker.h" line="100" column="1" bodyfile="include/tracker.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_n_p_m808_x_1_1_object_tracker_1a08f1728fff04f47132c8e5aae8638f01" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, cv::Scalar &gt;</type>
+        <definition>std::map&lt;std::string, cv::Scalar&gt; ENPM808X::ObjectTracker::colors_</definition>
+        <argsstring></argsstring>
+        <name>colors_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tracker.h" line="101" column="1" bodyfile="include/tracker.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_e_n_p_m808_x_1_1_object_tracker_1a457dcaca4e26ff55678ac2f2d727f322" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ENPM808X::ObjectTracker::ObjectTracker</definition>
+        <argsstring>(const std::unordered_set&lt; std::string &gt; &amp;objectClasses, const cv::Matx34f &amp;extP, const cv::Matx33f &amp;intP, const std::string &amp;detectionModel=&quot;yolo&quot;, float minConfidence=0.5, float minOverlap=0.3)</argsstring>
+        <name>ObjectTracker</name>
+        <param>
+          <type>const std::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>objectClasses</declname>
+        </param>
+        <param>
+          <type>const cv::Matx34f &amp;</type>
+          <declname>extP</declname>
+        </param>
+        <param>
+          <type>const cv::Matx33f &amp;</type>
+          <declname>intP</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>detectionModel</declname>
+          <defval>&quot;yolo&quot;</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>minConfidence</declname>
+          <defval>0.5</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>minOverlap</declname>
+          <defval>0.3</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>categories, camera extrinsics, camera intrinsics, detection model, minimum confidence, minimum overlap </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tracker.h" line="54" column="1" bodyfile="app/tracker.cpp" bodystart="40" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_n_p_m808_x_1_1_object_tracker_1aaabe274d63cce01922a9c1a834a52039" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; cv::Point3f &gt;</type>
+        <definition>std::vector&lt; cv::Point3f &gt; ENPM808X::ObjectTracker::localizeObjects</definition>
+        <argsstring>(cv::Mat frame)</argsstring>
+        <name>localizeObjects</name>
+        <param>
+          <type>cv::Mat</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Function for tracking all specified objects through every frame. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vector of the objects&apos; 3D locations in the robot coordinate system </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tracker.h" line="64" column="1" bodyfile="app/tracker.cpp" bodystart="61" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_n_p_m808_x_1_1_object_tracker_1a488d16d7015a48a0fbdd0cf4b766bb54" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>cv::Point3f</type>
+        <definition>cv::Point3f ENPM808X::ObjectTracker::localize</definition>
+        <argsstring>(const cv::Point2i &amp;objectKeypoint) const</argsstring>
+        <name>localize</name>
+        <param>
+          <type>const cv::Point2i &amp;</type>
+          <declname>objectKeypoint</declname>
+        </param>
+        <briefdescription>
+<para>Function for estimating the 3D location of a given pixel. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pixel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in the image </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>3D location in the robot coordinate system </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tracker.h" line="71" column="1" bodyfile="app/tracker.cpp" bodystart="86" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_n_p_m808_x_1_1_object_tracker_1a109217a8fae2ca7ec36eb8e437e82b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::tuple&lt; std::vector&lt; int &gt;, std::vector&lt; float &gt;, std::vector&lt; cv::Rect &gt; &gt;</type>
+        <definition>std::tuple&lt; std::vector&lt; int &gt;, std::vector&lt; float &gt;, std::vector&lt; cv::Rect &gt; &gt; ENPM808X::ObjectTracker::detectObjects</definition>
+        <argsstring>(cv::Mat frame)</argsstring>
+        <name>detectObjects</name>
+        <param>
+          <type>cv::Mat</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Function for detecting objects in a given frame. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>classIds, confidences, bounding boxes </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tracker.h" line="79" column="1" bodyfile="app/tracker.cpp" bodystart="106" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_n_p_m808_x_1_1_object_tracker_1abec22b27cb028cf5911b4198970f3c57" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; ENPM808X::ObjectTracker::datasetLabels</definition>
+        <argsstring>() const</argsstring>
+        <name>datasetLabels</name>
+        <briefdescription>
+<para>Getter method for the classes of the pre-trained detection model. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vector of the the dataset classes </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tracker.h" line="86" column="1" bodyfile="app/tracker.cpp" bodystart="117" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_e_n_p_m808_x_1_1_object_tracker_1a85926bd7ef0f46185ffc6d7282bf081c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ENPM808X::ObjectTracker::visualize</definition>
+        <argsstring>(cv::Mat frame, int classId, float confidence, const cv::Rect &amp;box, const cv::Point2i &amp;objectKeypoint, const cv::Point3f &amp;objectLocation, float distance)</argsstring>
+        <name>visualize</name>
+        <param>
+          <type>cv::Mat</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>classId</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>confidence</declname>
+        </param>
+        <param>
+          <type>const cv::Rect &amp;</type>
+          <declname>box</declname>
+        </param>
+        <param>
+          <type>const cv::Point2i &amp;</type>
+          <declname>objectKeypoint</declname>
+        </param>
+        <param>
+          <type>const cv::Point3f &amp;</type>
+          <declname>objectLocation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tracker.h" line="89" column="1" bodyfile="app/tracker.cpp" bodystart="121" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_n_p_m808_x_1_1_object_tracker_1ab6fe644d3760d5f306dbe356b7f0162e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; ENPM808X::ObjectTracker::parseFile</definition>
+        <argsstring>(const std::string &amp;fileName) const</argsstring>
+        <name>parseFile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tracker.h" line="92" column="1" bodyfile="app/tracker.cpp" bodystart="148" bodyend="165"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tracker.h" line="46" column="1" bodyfile="include/tracker.h" bodystart="46" bodyend="102"/>
+    <listofallmembers>
+      <member refid="class_e_n_p_m808_x_1_1_object_tracker_1a08f1728fff04f47132c8e5aae8638f01" prot="private" virt="non-virtual"><scope>ENPM808X::ObjectTracker</scope><name>colors_</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_object_tracker_1abec22b27cb028cf5911b4198970f3c57" prot="public" virt="non-virtual"><scope>ENPM808X::ObjectTracker</scope><name>datasetLabels</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_object_tracker_1a636a7fd4850b5331a21b3e01e54d71cf" prot="private" virt="non-virtual"><scope>ENPM808X::ObjectTracker</scope><name>datasetLabels_</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_object_tracker_1a109217a8fae2ca7ec36eb8e437e82b45" prot="public" virt="non-virtual"><scope>ENPM808X::ObjectTracker</scope><name>detectObjects</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_object_tracker_1a488d16d7015a48a0fbdd0cf4b766bb54" prot="public" virt="non-virtual"><scope>ENPM808X::ObjectTracker</scope><name>localize</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_object_tracker_1aaabe274d63cce01922a9c1a834a52039" prot="public" virt="non-virtual"><scope>ENPM808X::ObjectTracker</scope><name>localizeObjects</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_object_tracker_1a0859af32a01170aabe7ef259b1417ad5" prot="private" virt="non-virtual"><scope>ENPM808X::ObjectTracker</scope><name>minConfidence_</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_object_tracker_1afa7c55e4071285ecb04f2c1b8489c090" prot="private" virt="non-virtual"><scope>ENPM808X::ObjectTracker</scope><name>minOverlap_</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_object_tracker_1a26323cb6595e331ddb7eddc7a4acc61b" prot="private" virt="non-virtual"><scope>ENPM808X::ObjectTracker</scope><name>network_</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_object_tracker_1aa1b56583999590f13ab520cf1f85847c" prot="private" virt="non-virtual"><scope>ENPM808X::ObjectTracker</scope><name>objectClasses_</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_object_tracker_1a457dcaca4e26ff55678ac2f2d727f322" prot="public" virt="non-virtual"><scope>ENPM808X::ObjectTracker</scope><name>ObjectTracker</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_object_tracker_1a7e087dcfe0fb3805746d5c72f0b6295b" prot="private" virt="non-virtual"><scope>ENPM808X::ObjectTracker</scope><name>P_</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_object_tracker_1ab6fe644d3760d5f306dbe356b7f0162e" prot="private" virt="non-virtual"><scope>ENPM808X::ObjectTracker</scope><name>parseFile</name></member>
+      <member refid="class_e_n_p_m808_x_1_1_object_tracker_1a85926bd7ef0f46185ffc6d7282bf081c" prot="private" virt="non-virtual"><scope>ENPM808X::ObjectTracker</scope><name>visualize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="v1__5_2_for_dummies_8md" kind="file" language="Markdown">
+    <compoundname>ForDummies.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">(**Note:**<sp/>If<sp/>you<sp/>get<sp/>compiler<sp/>errors<sp/>that<sp/>you<sp/>don&apos;t<sp/>understand,<sp/>be<sp/>sure<sp/>to<sp/>consult<sp/>[Google<sp/>Mock<sp/>Doctor](V1_5_FrequentlyAskedQuestions#How_am_I_supposed_to_make_sense_of_these_horrible_template_error.md).)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>What<sp/>Is<sp/>Google<sp/>C++<sp/>Mocking<sp/>Framework?<sp/>#</highlight></codeline>
+<codeline><highlight class="normal">When<sp/>you<sp/>write<sp/>a<sp/>prototype<sp/>or<sp/>test,<sp/>often<sp/>it&apos;s<sp/>not<sp/>feasible<sp/>or<sp/>wise<sp/>to<sp/>rely<sp/>on<sp/>real<sp/>objects<sp/>entirely.<sp/>A<sp/>**mock<sp/>object**<sp/>implements<sp/>the<sp/>same<sp/>interface<sp/>as<sp/>a<sp/>real<sp/>object<sp/>(so<sp/>it<sp/>can<sp/>be<sp/>used<sp/>as<sp/>one),<sp/>but<sp/>lets<sp/>you<sp/>specify<sp/>at<sp/>run<sp/>time<sp/>how<sp/>it<sp/>will<sp/>be<sp/>used<sp/>and<sp/>what<sp/>it<sp/>should<sp/>do<sp/>(which<sp/>methods<sp/>will<sp/>be<sp/>called?<sp/>in<sp/>which<sp/>order?<sp/>how<sp/>many<sp/>times?<sp/>with<sp/>what<sp/>arguments?<sp/>what<sp/>will<sp/>they<sp/>return?<sp/>etc).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Note:**<sp/>It<sp/>is<sp/>easy<sp/>to<sp/>confuse<sp/>the<sp/>term<sp/>_fake<sp/>objects_<sp/>with<sp/>mock<sp/>objects.<sp/>Fakes<sp/>and<sp/>mocks<sp/>actually<sp/>mean<sp/>very<sp/>different<sp/>things<sp/>in<sp/>the<sp/>Test-Driven<sp/>Development<sp/>(TDD)<sp/>community:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Fake**<sp/>objects<sp/>have<sp/>working<sp/>implementations,<sp/>but<sp/>usually<sp/>take<sp/>some<sp/>shortcut<sp/>(perhaps<sp/>to<sp/>make<sp/>the<sp/>operations<sp/>less<sp/>expensive),<sp/>which<sp/>makes<sp/>them<sp/>not<sp/>suitable<sp/>for<sp/>production.<sp/>An<sp/>in-memory<sp/>file<sp/>system<sp/>would<sp/>be<sp/>an<sp/>example<sp/>of<sp/>a<sp/>fake.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Mocks**<sp/>are<sp/>objects<sp/>pre-programmed<sp/>with<sp/>_expectations_,<sp/>which<sp/>form<sp/>a<sp/>specification<sp/>of<sp/>the<sp/>calls<sp/>they<sp/>are<sp/>expected<sp/>to<sp/>receive.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>all<sp/>this<sp/>seems<sp/>too<sp/>abstract<sp/>for<sp/>you,<sp/>don&apos;t<sp/>worry<sp/>-<sp/>the<sp/>most<sp/>important<sp/>thing<sp/>to<sp/>remember<sp/>is<sp/>that<sp/>a<sp/>mock<sp/>allows<sp/>you<sp/>to<sp/>check<sp/>the<sp/>_interaction_<sp/>between<sp/>itself<sp/>and<sp/>code<sp/>that<sp/>uses<sp/>it.<sp/>The<sp/>difference<sp/>between<sp/>fakes<sp/>and<sp/>mocks<sp/>will<sp/>become<sp/>much<sp/>clearer<sp/>once<sp/>you<sp/>start<sp/>to<sp/>use<sp/>mocks.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Google<sp/>C++<sp/>Mocking<sp/>Framework**<sp/>(or<sp/>**Google<sp/>Mock**<sp/>for<sp/>short)<sp/>is<sp/>a<sp/>library<sp/>(sometimes<sp/>we<sp/>also<sp/>call<sp/>it<sp/>a<sp/>&quot;framework&quot;<sp/>to<sp/>make<sp/>it<sp/>sound<sp/>cool)<sp/>for<sp/>creating<sp/>mock<sp/>classes<sp/>and<sp/>using<sp/>them.<sp/>It<sp/>does<sp/>to<sp/>C++<sp/>what<sp/>[jMock](http://www.jmock.org/)<sp/>and<sp/>[EasyMock](http://www.easymock.org/)<sp/>do<sp/>to<sp/>Java.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Using<sp/>Google<sp/>Mock<sp/>involves<sp/>three<sp/>basic<sp/>steps:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Use<sp/>some<sp/>simple<sp/>macros<sp/>to<sp/>describe<sp/>the<sp/>interface<sp/>you<sp/>want<sp/>to<sp/>mock,<sp/>and<sp/>they<sp/>will<sp/>expand<sp/>to<sp/>the<sp/>implementation<sp/>of<sp/>your<sp/>mock<sp/>class;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Create<sp/>some<sp/>mock<sp/>objects<sp/>and<sp/>specify<sp/>its<sp/>expectations<sp/>and<sp/>behavior<sp/>using<sp/>an<sp/>intuitive<sp/>syntax;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Exercise<sp/>code<sp/>that<sp/>uses<sp/>the<sp/>mock<sp/>objects.<sp/>Google<sp/>Mock<sp/>will<sp/>catch<sp/>any<sp/>violation<sp/>of<sp/>the<sp/>expectations<sp/>as<sp/>soon<sp/>as<sp/>it<sp/>arises.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Why<sp/>Google<sp/>Mock?<sp/>#</highlight></codeline>
+<codeline><highlight class="normal">While<sp/>mock<sp/>objects<sp/>help<sp/>you<sp/>remove<sp/>unnecessary<sp/>dependencies<sp/>in<sp/>tests<sp/>and<sp/>make<sp/>them<sp/>fast<sp/>and<sp/>reliable,<sp/>using<sp/>mocks<sp/>manually<sp/>in<sp/>C++<sp/>is<sp/>_hard_:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Someone<sp/>has<sp/>to<sp/>implement<sp/>the<sp/>mocks.<sp/>The<sp/>job<sp/>is<sp/>usually<sp/>tedious<sp/>and<sp/>error-prone.<sp/>No<sp/>wonder<sp/>people<sp/>go<sp/>great<sp/>distance<sp/>to<sp/>avoid<sp/>it.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>The<sp/>quality<sp/>of<sp/>those<sp/>manually<sp/>written<sp/>mocks<sp/>is<sp/>a<sp/>bit,<sp/>uh,<sp/>unpredictable.<sp/>You<sp/>may<sp/>see<sp/>some<sp/>really<sp/>polished<sp/>ones,<sp/>but<sp/>you<sp/>may<sp/>also<sp/>see<sp/>some<sp/>that<sp/>were<sp/>hacked<sp/>up<sp/>in<sp/>a<sp/>hurry<sp/>and<sp/>have<sp/>all<sp/>sorts<sp/>of<sp/>ad<sp/>hoc<sp/>restrictions.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>The<sp/>knowledge<sp/>you<sp/>gained<sp/>from<sp/>using<sp/>one<sp/>mock<sp/>doesn&apos;t<sp/>transfer<sp/>to<sp/>the<sp/>next.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>contrast,<sp/>Java<sp/>and<sp/>Python<sp/>programmers<sp/>have<sp/>some<sp/>fine<sp/>mock<sp/>frameworks,<sp/>which<sp/>automate<sp/>the<sp/>creation<sp/>of<sp/>mocks.<sp/>As<sp/>a<sp/>result,<sp/>mocking<sp/>is<sp/>a<sp/>proven<sp/>effective<sp/>technique<sp/>and<sp/>widely<sp/>adopted<sp/>practice<sp/>in<sp/>those<sp/>communities.<sp/>Having<sp/>the<sp/>right<sp/>tool<sp/>absolutely<sp/>makes<sp/>the<sp/>difference.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Mock<sp/>was<sp/>built<sp/>to<sp/>help<sp/>C++<sp/>programmers.<sp/>It<sp/>was<sp/>inspired<sp/>by<sp/>[jMock](http://www.jmock.org/)<sp/>and<sp/>[EasyMock](http://www.easymock.org/),<sp/>but<sp/>designed<sp/>with<sp/>C++&apos;s<sp/>specifics<sp/>in<sp/>mind.<sp/>It<sp/>is<sp/>your<sp/>friend<sp/>if<sp/>any<sp/>of<sp/>the<sp/>following<sp/>problems<sp/>is<sp/>bothering<sp/>you:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>You<sp/>are<sp/>stuck<sp/>with<sp/>a<sp/>sub-optimal<sp/>design<sp/>and<sp/>wish<sp/>you<sp/>had<sp/>done<sp/>more<sp/>prototyping<sp/>before<sp/>it<sp/>was<sp/>too<sp/>late,<sp/>but<sp/>prototyping<sp/>in<sp/>C++<sp/>is<sp/>by<sp/>no<sp/>means<sp/>&quot;rapid&quot;.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Your<sp/>tests<sp/>are<sp/>slow<sp/>as<sp/>they<sp/>depend<sp/>on<sp/>too<sp/>many<sp/>libraries<sp/>or<sp/>use<sp/>expensive<sp/>resources<sp/>(e.g.<sp/>a<sp/>database).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Your<sp/>tests<sp/>are<sp/>brittle<sp/>as<sp/>some<sp/>resources<sp/>they<sp/>use<sp/>are<sp/>unreliable<sp/>(e.g.<sp/>the<sp/>network).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>You<sp/>want<sp/>to<sp/>test<sp/>how<sp/>your<sp/>code<sp/>handles<sp/>a<sp/>failure<sp/>(e.g.<sp/>a<sp/>file<sp/>checksum<sp/>error),<sp/>but<sp/>it&apos;s<sp/>not<sp/>easy<sp/>to<sp/>cause<sp/>one.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>You<sp/>need<sp/>to<sp/>make<sp/>sure<sp/>that<sp/>your<sp/>module<sp/>interacts<sp/>with<sp/>other<sp/>modules<sp/>in<sp/>the<sp/>right<sp/>way,<sp/>but<sp/>it&apos;s<sp/>hard<sp/>to<sp/>observe<sp/>the<sp/>interaction;<sp/>therefore<sp/>you<sp/>resort<sp/>to<sp/>observing<sp/>the<sp/>side<sp/>effects<sp/>at<sp/>the<sp/>end<sp/>of<sp/>the<sp/>action,<sp/>which<sp/>is<sp/>awkward<sp/>at<sp/>best.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>You<sp/>want<sp/>to<sp/>&quot;mock<sp/>out&quot;<sp/>your<sp/>dependencies,<sp/>except<sp/>that<sp/>they<sp/>don&apos;t<sp/>have<sp/>mock<sp/>implementations<sp/>yet;<sp/>and,<sp/>frankly,<sp/>you<sp/>aren&apos;t<sp/>thrilled<sp/>by<sp/>some<sp/>of<sp/>those<sp/>hand-written<sp/>mocks.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>encourage<sp/>you<sp/>to<sp/>use<sp/>Google<sp/>Mock<sp/>as:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>a<sp/>_design_<sp/>tool,<sp/>for<sp/>it<sp/>lets<sp/>you<sp/>experiment<sp/>with<sp/>your<sp/>interface<sp/>design<sp/>early<sp/>and<sp/>often.<sp/>More<sp/>iterations<sp/>lead<sp/>to<sp/>better<sp/>designs!</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>a<sp/>_testing_<sp/>tool<sp/>to<sp/>cut<sp/>your<sp/>tests&apos;<sp/>outbound<sp/>dependencies<sp/>and<sp/>probe<sp/>the<sp/>interaction<sp/>between<sp/>your<sp/>module<sp/>and<sp/>its<sp/>collaborators.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Getting<sp/>Started<sp/>#</highlight></codeline>
+<codeline><highlight class="normal">Using<sp/>Google<sp/>Mock<sp/>is<sp/>easy!<sp/>Inside<sp/>your<sp/>C++<sp/>source<sp/>file,<sp/>just<sp/>`#include`<sp/>`&lt;gtest/gtest.h&gt;`<sp/>and<sp/>`&lt;gmock/gmock.h&gt;`,<sp/>and<sp/>you<sp/>are<sp/>ready<sp/>to<sp/>go.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>A<sp/>Case<sp/>for<sp/>Mock<sp/>Turtles<sp/>#</highlight></codeline>
+<codeline><highlight class="normal">Let&apos;s<sp/>look<sp/>at<sp/>an<sp/>example.<sp/>Suppose<sp/>you<sp/>are<sp/>developing<sp/>a<sp/>graphics<sp/>program<sp/>that<sp/>relies<sp/>on<sp/>a<sp/>LOGO-like<sp/>API<sp/>for<sp/>drawing.<sp/>How<sp/>would<sp/>you<sp/>test<sp/>that<sp/>it<sp/>does<sp/>the<sp/>right<sp/>thing?<sp/>Well,<sp/>you<sp/>can<sp/>run<sp/>it<sp/>and<sp/>compare<sp/>the<sp/>screen<sp/>with<sp/>a<sp/>golden<sp/>screen<sp/>snapshot,<sp/>but<sp/>let&apos;s<sp/>admit<sp/>it:<sp/>tests<sp/>like<sp/>this<sp/>are<sp/>expensive<sp/>to<sp/>run<sp/>and<sp/>fragile<sp/>(What<sp/>if<sp/>you<sp/>just<sp/>upgraded<sp/>to<sp/>a<sp/>shiny<sp/>new<sp/>graphics<sp/>card<sp/>that<sp/>has<sp/>better<sp/>anti-aliasing?<sp/>Suddenly<sp/>you<sp/>have<sp/>to<sp/>update<sp/>all<sp/>your<sp/>golden<sp/>images.).<sp/>It<sp/>would<sp/>be<sp/>too<sp/>painful<sp/>if<sp/>all<sp/>your<sp/>tests<sp/>are<sp/>like<sp/>this.<sp/>Fortunately,<sp/>you<sp/>learned<sp/>about<sp/>Dependency<sp/>Injection<sp/>and<sp/>know<sp/>the<sp/>right<sp/>thing<sp/>to<sp/>do:<sp/>instead<sp/>of<sp/>having<sp/>your<sp/>application<sp/>talk<sp/>to<sp/>the<sp/>drawing<sp/>API<sp/>directly,<sp/>wrap<sp/>the<sp/>API<sp/>in<sp/>an<sp/>interface<sp/>(say,<sp/>`Turtle`)<sp/>and<sp/>code<sp/>to<sp/>that<sp/>interface:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>Turtle<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>~Turtle()<sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>void<sp/>PenUp()<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>void<sp/>PenDown()<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>void<sp/>Forward(int<sp/>distance)<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>void<sp/>Turn(int<sp/>degrees)<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>void<sp/>GoTo(int<sp/>x,<sp/>int<sp/>y)<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>int<sp/>GetX()<sp/>const<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>int<sp/>GetY()<sp/>const<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">(Note<sp/>that<sp/>the<sp/>destructor<sp/>of<sp/>`Turtle`<sp/>**must**<sp/>be<sp/>virtual,<sp/>as<sp/>is<sp/>the<sp/>case<sp/>for<sp/>**all**<sp/>classes<sp/>you<sp/>intend<sp/>to<sp/>inherit<sp/>from<sp/>-<sp/>otherwise<sp/>the<sp/>destructor<sp/>of<sp/>the<sp/>derived<sp/>class<sp/>will<sp/>not<sp/>be<sp/>called<sp/>when<sp/>you<sp/>delete<sp/>an<sp/>object<sp/>through<sp/>a<sp/>base<sp/>pointer,<sp/>and<sp/>you&apos;ll<sp/>get<sp/>corrupted<sp/>program<sp/>states<sp/>like<sp/>memory<sp/>leaks.)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>control<sp/>whether<sp/>the<sp/>turtle&apos;s<sp/>movement<sp/>will<sp/>leave<sp/>a<sp/>trace<sp/>using<sp/>`PenUp()`<sp/>and<sp/>`PenDown()`,<sp/>and<sp/>control<sp/>its<sp/>movement<sp/>using<sp/>`Forward()`,<sp/>`Turn()`,<sp/>and<sp/>`GoTo()`.<sp/>Finally,<sp/>`GetX()`<sp/>and<sp/>`GetY()`<sp/>tell<sp/>you<sp/>the<sp/>current<sp/>position<sp/>of<sp/>the<sp/>turtle.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Your<sp/>program<sp/>will<sp/>normally<sp/>use<sp/>a<sp/>real<sp/>implementation<sp/>of<sp/>this<sp/>interface.<sp/>In<sp/>tests,<sp/>you<sp/>can<sp/>use<sp/>a<sp/>mock<sp/>implementation<sp/>instead.<sp/>This<sp/>allows<sp/>you<sp/>to<sp/>easily<sp/>check<sp/>what<sp/>drawing<sp/>primitives<sp/>your<sp/>program<sp/>is<sp/>calling,<sp/>with<sp/>what<sp/>arguments,<sp/>and<sp/>in<sp/>which<sp/>order.<sp/>Tests<sp/>written<sp/>this<sp/>way<sp/>are<sp/>much<sp/>more<sp/>robust<sp/>(they<sp/>won&apos;t<sp/>break<sp/>because<sp/>your<sp/>new<sp/>machine<sp/>does<sp/>anti-aliasing<sp/>differently),<sp/>easier<sp/>to<sp/>read<sp/>and<sp/>maintain<sp/>(the<sp/>intent<sp/>of<sp/>a<sp/>test<sp/>is<sp/>expressed<sp/>in<sp/>the<sp/>code,<sp/>not<sp/>in<sp/>some<sp/>binary<sp/>images),<sp/>and<sp/>run<sp/>_much,<sp/>much<sp/>faster_.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Writing<sp/>the<sp/>Mock<sp/>Class<sp/>#</highlight></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>are<sp/>lucky,<sp/>the<sp/>mocks<sp/>you<sp/>need<sp/>to<sp/>use<sp/>have<sp/>already<sp/>been<sp/>implemented<sp/>by<sp/>some<sp/>nice<sp/>people.<sp/>If,<sp/>however,<sp/>you<sp/>find<sp/>yourself<sp/>in<sp/>the<sp/>position<sp/>to<sp/>write<sp/>a<sp/>mock<sp/>class,<sp/>relax<sp/>-<sp/>Google<sp/>Mock<sp/>turns<sp/>this<sp/>task<sp/>into<sp/>a<sp/>fun<sp/>game!<sp/>(Well,<sp/>almost.)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>How<sp/>to<sp/>Define<sp/>It<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">Using<sp/>the<sp/>`Turtle`<sp/>interface<sp/>as<sp/>example,<sp/>here<sp/>are<sp/>the<sp/>simple<sp/>steps<sp/>you<sp/>need<sp/>to<sp/>follow:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Derive<sp/>a<sp/>class<sp/>`MockTurtle`<sp/>from<sp/>`Turtle`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Take<sp/>a<sp/>virtual<sp/>function<sp/>of<sp/>`Turtle`.<sp/>Count<sp/>how<sp/>many<sp/>arguments<sp/>it<sp/>has.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>In<sp/>the<sp/>`public:`<sp/>section<sp/>of<sp/>the<sp/>child<sp/>class,<sp/>write<sp/>`MOCK_METHODn();`<sp/>(or<sp/>`MOCK_CONST_METHODn();`<sp/>if<sp/>you<sp/>are<sp/>mocking<sp/>a<sp/>`const`<sp/>method),<sp/>where<sp/>`n`<sp/>is<sp/>the<sp/>number<sp/>of<sp/>the<sp/>arguments;<sp/>if<sp/>you<sp/>counted<sp/>wrong,<sp/>shame<sp/>on<sp/>you,<sp/>and<sp/>a<sp/>compiler<sp/>error<sp/>will<sp/>tell<sp/>you<sp/>so.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Now<sp/>comes<sp/>the<sp/>fun<sp/>part:<sp/>you<sp/>take<sp/>the<sp/>function<sp/>signature,<sp/>cut-and-paste<sp/>the<sp/>_function<sp/>name_<sp/>as<sp/>the<sp/>_first_<sp/>argument<sp/>to<sp/>the<sp/>macro,<sp/>and<sp/>leave<sp/>what&apos;s<sp/>left<sp/>as<sp/>the<sp/>_second_<sp/>argument<sp/>(in<sp/>case<sp/>you&apos;re<sp/>curious,<sp/>this<sp/>is<sp/>the<sp/>_type<sp/>of<sp/>the<sp/>function_).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Repeat<sp/>until<sp/>all<sp/>virtual<sp/>functions<sp/>you<sp/>want<sp/>to<sp/>mock<sp/>are<sp/>done.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">After<sp/>the<sp/>process,<sp/>you<sp/>should<sp/>have<sp/>something<sp/>like:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;gmock/gmock.h&gt;<sp/><sp/>//<sp/>Brings<sp/>in<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>MockTurtle<sp/>:<sp/>public<sp/>Turtle<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_METHOD0(PenUp,<sp/>void());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_METHOD0(PenDown,<sp/>void());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_METHOD1(Forward,<sp/>void(int<sp/>distance));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_METHOD1(Turn,<sp/>void(int<sp/>degrees));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_METHOD2(GoTo,<sp/>void(int<sp/>x,<sp/>int<sp/>y));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_CONST_METHOD0(GetX,<sp/>int());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_CONST_METHOD0(GetY,<sp/>int());</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>don&apos;t<sp/>need<sp/>to<sp/>define<sp/>these<sp/>mock<sp/>methods<sp/>somewhere<sp/>else<sp/>-<sp/>the<sp/>`MOCK_METHOD*`<sp/>macros<sp/>will<sp/>generate<sp/>the<sp/>definitions<sp/>for<sp/>you.<sp/>It&apos;s<sp/>that<sp/>simple!<sp/>Once<sp/>you<sp/>get<sp/>the<sp/>hang<sp/>of<sp/>it,<sp/>you<sp/>can<sp/>pump<sp/>out<sp/>mock<sp/>classes<sp/>faster<sp/>than<sp/>your<sp/>source-control<sp/>system<sp/>can<sp/>handle<sp/>your<sp/>check-ins.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Tip:**<sp/>If<sp/>even<sp/>this<sp/>is<sp/>too<sp/>much<sp/>work<sp/>for<sp/>you,<sp/>you&apos;ll<sp/>find<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">`gmock_gen.py`<sp/>tool<sp/>in<sp/>Google<sp/>Mock&apos;s<sp/>`scripts/generator/`<sp/>directory<sp/>(courtesy<sp/>of<sp/>the<sp/>[cppclean](http://code.google.com/p/cppclean/)<sp/>project)<sp/>useful.<sp/><sp/>This<sp/>command-line</highlight></codeline>
+<codeline><highlight class="normal">tool<sp/>requires<sp/>that<sp/>you<sp/>have<sp/>Python<sp/>2.4<sp/>installed.<sp/><sp/>You<sp/>give<sp/>it<sp/>a<sp/>C++<sp/>file<sp/>and<sp/>the<sp/>name<sp/>of<sp/>an<sp/>abstract<sp/>class<sp/>defined<sp/>in<sp/>it,</highlight></codeline>
+<codeline><highlight class="normal">and<sp/>it<sp/>will<sp/>print<sp/>the<sp/>definition<sp/>of<sp/>the<sp/>mock<sp/>class<sp/>for<sp/>you.<sp/><sp/>Due<sp/>to<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">complexity<sp/>of<sp/>the<sp/>C++<sp/>language,<sp/>this<sp/>script<sp/>may<sp/>not<sp/>always<sp/>work,<sp/>but</highlight></codeline>
+<codeline><highlight class="normal">it<sp/>can<sp/>be<sp/>quite<sp/>handy<sp/>when<sp/>it<sp/>does.<sp/><sp/>For<sp/>more<sp/>details,<sp/>read<sp/>the<sp/>[user<sp/>documentation](http://code.google.com/p/googlemock/source/browse/trunk/scripts/generator/README).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Where<sp/>to<sp/>Put<sp/>It<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">When<sp/>you<sp/>define<sp/>a<sp/>mock<sp/>class,<sp/>you<sp/>need<sp/>to<sp/>decide<sp/>where<sp/>to<sp/>put<sp/>its<sp/>definition.<sp/>Some<sp/>people<sp/>put<sp/>it<sp/>in<sp/>a<sp/>`*_test.cc`.<sp/>This<sp/>is<sp/>fine<sp/>when<sp/>the<sp/>interface<sp/>being<sp/>mocked<sp/>(say,<sp/>`Foo`)<sp/>is<sp/>owned<sp/>by<sp/>the<sp/>same<sp/>person<sp/>or<sp/>team.<sp/>Otherwise,<sp/>when<sp/>the<sp/>owner<sp/>of<sp/>`Foo`<sp/>changes<sp/>it,<sp/>your<sp/>test<sp/>could<sp/>break.<sp/>(You<sp/>can&apos;t<sp/>really<sp/>expect<sp/>`Foo`&apos;s<sp/>maintainer<sp/>to<sp/>fix<sp/>every<sp/>test<sp/>that<sp/>uses<sp/>`Foo`,<sp/>can<sp/>you?)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">So,<sp/>the<sp/>rule<sp/>of<sp/>thumb<sp/>is:<sp/>if<sp/>you<sp/>need<sp/>to<sp/>mock<sp/>`Foo`<sp/>and<sp/>it&apos;s<sp/>owned<sp/>by<sp/>others,<sp/>define<sp/>the<sp/>mock<sp/>class<sp/>in<sp/>`Foo`&apos;s<sp/>package<sp/>(better,<sp/>in<sp/>a<sp/>`testing`<sp/>sub-package<sp/>such<sp/>that<sp/>you<sp/>can<sp/>clearly<sp/>separate<sp/>production<sp/>code<sp/>and<sp/>testing<sp/>utilities),<sp/>and<sp/>put<sp/>it<sp/>in<sp/>a<sp/>`mock_foo.h`.<sp/>Then<sp/>everyone<sp/>can<sp/>reference<sp/>`mock_foo.h`<sp/>from<sp/>their<sp/>tests.<sp/>If<sp/>`Foo`<sp/>ever<sp/>changes,<sp/>there<sp/>is<sp/>only<sp/>one<sp/>copy<sp/>of<sp/>`MockFoo`<sp/>to<sp/>change,<sp/>and<sp/>only<sp/>tests<sp/>that<sp/>depend<sp/>on<sp/>the<sp/>changed<sp/>methods<sp/>need<sp/>to<sp/>be<sp/>fixed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Another<sp/>way<sp/>to<sp/>do<sp/>it:<sp/>you<sp/>can<sp/>introduce<sp/>a<sp/>thin<sp/>layer<sp/>`FooAdaptor`<sp/>on<sp/>top<sp/>of<sp/>`Foo`<sp/>and<sp/>code<sp/>to<sp/>this<sp/>new<sp/>interface.<sp/>Since<sp/>you<sp/>own<sp/>`FooAdaptor`,<sp/>you<sp/>can<sp/>absorb<sp/>changes<sp/>in<sp/>`Foo`<sp/>much<sp/>more<sp/>easily.<sp/>While<sp/>this<sp/>is<sp/>more<sp/>work<sp/>initially,<sp/>carefully<sp/>choosing<sp/>the<sp/>adaptor<sp/>interface<sp/>can<sp/>make<sp/>your<sp/>code<sp/>easier<sp/>to<sp/>write<sp/>and<sp/>more<sp/>readable<sp/>(a<sp/>net<sp/>win<sp/>in<sp/>the<sp/>long<sp/>run),<sp/>as<sp/>you<sp/>can<sp/>choose<sp/>`FooAdaptor`<sp/>to<sp/>fit<sp/>your<sp/>specific<sp/>domain<sp/>much<sp/>better<sp/>than<sp/>`Foo`<sp/>does.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Using<sp/>Mocks<sp/>in<sp/>Tests<sp/>#</highlight></codeline>
+<codeline><highlight class="normal">Once<sp/>you<sp/>have<sp/>a<sp/>mock<sp/>class,<sp/>using<sp/>it<sp/>is<sp/>easy.<sp/>The<sp/>typical<sp/>work<sp/>flow<sp/>is:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Import<sp/>the<sp/>Google<sp/>Mock<sp/>names<sp/>from<sp/>the<sp/>`testing`<sp/>namespace<sp/>such<sp/>that<sp/>you<sp/>can<sp/>use<sp/>them<sp/>unqualified<sp/>(You<sp/>only<sp/>have<sp/>to<sp/>do<sp/>it<sp/>once<sp/>per<sp/>file.<sp/>Remember<sp/>that<sp/>namespaces<sp/>are<sp/>a<sp/>good<sp/>idea<sp/>and<sp/>good<sp/>for<sp/>your<sp/>health.).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Create<sp/>some<sp/>mock<sp/>objects.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Specify<sp/>your<sp/>expectations<sp/>on<sp/>them<sp/>(How<sp/>many<sp/>times<sp/>will<sp/>a<sp/>method<sp/>be<sp/>called?<sp/>With<sp/>what<sp/>arguments?<sp/>What<sp/>should<sp/>it<sp/>do?<sp/>etc.).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Exercise<sp/>some<sp/>code<sp/>that<sp/>uses<sp/>the<sp/>mocks;<sp/>optionally,<sp/>check<sp/>the<sp/>result<sp/>using<sp/>Google<sp/>Test<sp/>assertions.<sp/>If<sp/>a<sp/>mock<sp/>method<sp/>is<sp/>called<sp/>more<sp/>than<sp/>expected<sp/>or<sp/>with<sp/>wrong<sp/>arguments,<sp/>you&apos;ll<sp/>get<sp/>an<sp/>error<sp/>immediately.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>When<sp/>a<sp/>mock<sp/>is<sp/>destructed,<sp/>Google<sp/>Mock<sp/>will<sp/>automatically<sp/>check<sp/>whether<sp/>all<sp/>expectations<sp/>on<sp/>it<sp/>have<sp/>been<sp/>satisfied.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Here&apos;s<sp/>an<sp/>example:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;path/to/mock-turtle.h&quot;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;gmock/gmock.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;gtest/gtest.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::AtLeast;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>#1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">TEST(PainterTest,<sp/>CanDrawSomething)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MockTurtle<sp/>turtle;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>#2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_CALL(turtle,<sp/>PenDown())<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>#3</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.Times(AtLeast(1));</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Painter<sp/>painter(&amp;turtle);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>#4</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_TRUE(painter.DrawCircle(0,<sp/>0,<sp/>10));</highlight></codeline>
+<codeline><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>#5</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>main(int<sp/>argc,<sp/>char**<sp/>argv)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>The<sp/>following<sp/>line<sp/>must<sp/>be<sp/>executed<sp/>to<sp/>initialize<sp/>Google<sp/>Mock</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>(and<sp/>Google<sp/>Test)<sp/>before<sp/>running<sp/>the<sp/>tests.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>::testing::InitGoogleMock(&amp;argc,<sp/>argv);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>RUN_ALL_TESTS();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>you<sp/>might<sp/>have<sp/>guessed,<sp/>this<sp/>test<sp/>checks<sp/>that<sp/>`PenDown()`<sp/>is<sp/>called<sp/>at<sp/>least<sp/>once.<sp/>If<sp/>the<sp/>`painter`<sp/>object<sp/>didn&apos;t<sp/>call<sp/>this<sp/>method,<sp/>your<sp/>test<sp/>will<sp/>fail<sp/>with<sp/>a<sp/>message<sp/>like<sp/>this:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">path/to/my_test.cc:119:<sp/>Failure</highlight></codeline>
+<codeline><highlight class="normal">Actual<sp/>function<sp/>call<sp/>count<sp/>doesn&apos;t<sp/>match<sp/>this<sp/>expectation:</highlight></codeline>
+<codeline><highlight class="normal">Actually:<sp/>never<sp/>called;</highlight></codeline>
+<codeline><highlight class="normal">Expected:<sp/>called<sp/>at<sp/>least<sp/>once.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Tip<sp/>1:**<sp/>If<sp/>you<sp/>run<sp/>the<sp/>test<sp/>from<sp/>an<sp/>Emacs<sp/>buffer,<sp/>you<sp/>can<sp/>hit<sp/>`&lt;Enter&gt;`<sp/>on<sp/>the<sp/>line<sp/>number<sp/>displayed<sp/>in<sp/>the<sp/>error<sp/>message<sp/>to<sp/>jump<sp/>right<sp/>to<sp/>the<sp/>failed<sp/>expectation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Tip<sp/>2:**<sp/>If<sp/>your<sp/>mock<sp/>objects<sp/>are<sp/>never<sp/>deleted,<sp/>the<sp/>final<sp/>verification<sp/>won&apos;t<sp/>happen.<sp/>Therefore<sp/>it&apos;s<sp/>a<sp/>good<sp/>idea<sp/>to<sp/>use<sp/>a<sp/>heap<sp/>leak<sp/>checker<sp/>in<sp/>your<sp/>tests<sp/>when<sp/>you<sp/>allocate<sp/>mocks<sp/>on<sp/>the<sp/>heap.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Important<sp/>note:**<sp/>Google<sp/>Mock<sp/>requires<sp/>expectations<sp/>to<sp/>be<sp/>set<sp/>**before**<sp/>the<sp/>mock<sp/>functions<sp/>are<sp/>called,<sp/>otherwise<sp/>the<sp/>behavior<sp/>is<sp/>**undefined**.<sp/>In<sp/>particular,<sp/>you<sp/>mustn&apos;t<sp/>interleave<sp/>`EXPECT_CALL()`s<sp/>and<sp/>calls<sp/>to<sp/>the<sp/>mock<sp/>functions.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>means<sp/>`EXPECT_CALL()`<sp/>should<sp/>be<sp/>read<sp/>as<sp/>expecting<sp/>that<sp/>a<sp/>call<sp/>will<sp/>occur<sp/>_in<sp/>the<sp/>future_,<sp/>not<sp/>that<sp/>a<sp/>call<sp/>has<sp/>occurred.<sp/>Why<sp/>does<sp/>Google<sp/>Mock<sp/>work<sp/>like<sp/>that?<sp/>Well,<sp/>specifying<sp/>the<sp/>expectation<sp/>beforehand<sp/>allows<sp/>Google<sp/>Mock<sp/>to<sp/>report<sp/>a<sp/>violation<sp/>as<sp/>soon<sp/>as<sp/>it<sp/>arises,<sp/>when<sp/>the<sp/>context<sp/>(stack<sp/>trace,<sp/>etc)<sp/>is<sp/>still<sp/>available.<sp/>This<sp/>makes<sp/>debugging<sp/>much<sp/>easier.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Admittedly,<sp/>this<sp/>test<sp/>is<sp/>contrived<sp/>and<sp/>doesn&apos;t<sp/>do<sp/>much.<sp/>You<sp/>can<sp/>easily<sp/>achieve<sp/>the<sp/>same<sp/>effect<sp/>without<sp/>using<sp/>Google<sp/>Mock.<sp/>However,<sp/>as<sp/>we<sp/>shall<sp/>reveal<sp/>soon,<sp/>Google<sp/>Mock<sp/>allows<sp/>you<sp/>to<sp/>do<sp/>_much<sp/>more_<sp/>with<sp/>the<sp/>mocks.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Using<sp/>Google<sp/>Mock<sp/>with<sp/>Any<sp/>Testing<sp/>Framework<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>want<sp/>to<sp/>use<sp/>something<sp/>other<sp/>than<sp/>Google<sp/>Test<sp/>(e.g.<sp/>[CppUnit](http://apps.sourceforge.net/mediawiki/cppunit/index.php?title=Main_Page)<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">[CxxTest](http://cxxtest.tigris.org/))<sp/>as<sp/>your<sp/>testing<sp/>framework,<sp/>just<sp/>change<sp/>the<sp/>`main()`<sp/>function<sp/>in<sp/>the<sp/>previous<sp/>section<sp/>to:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>main(int<sp/>argc,<sp/>char**<sp/>argv)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>The<sp/>following<sp/>line<sp/>causes<sp/>Google<sp/>Mock<sp/>to<sp/>throw<sp/>an<sp/>exception<sp/>on<sp/>failure,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>which<sp/>will<sp/>be<sp/>interpreted<sp/>by<sp/>your<sp/>testing<sp/>framework<sp/>as<sp/>a<sp/>test<sp/>failure.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>::testing::GTEST_FLAG(throw_on_failure)<sp/>=<sp/>true;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>::testing::InitGoogleMock(&amp;argc,<sp/>argv);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...<sp/>whatever<sp/>your<sp/>testing<sp/>framework<sp/>requires<sp/>...</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>approach<sp/>has<sp/>a<sp/>catch:<sp/>it<sp/>makes<sp/>Google<sp/>Mock<sp/>throw<sp/>an<sp/>exception</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>a<sp/>mock<sp/>object&apos;s<sp/>destructor<sp/>sometimes.<sp/><sp/>With<sp/>some<sp/>compilers,<sp/>this</highlight></codeline>
+<codeline><highlight class="normal">sometimes<sp/>causes<sp/>the<sp/>test<sp/>program<sp/>to<sp/>crash.<sp/><sp/>You&apos;ll<sp/>still<sp/>be<sp/>able<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">notice<sp/>that<sp/>the<sp/>test<sp/>has<sp/>failed,<sp/>but<sp/>it&apos;s<sp/>not<sp/>a<sp/>graceful<sp/>failure.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>better<sp/>solution<sp/>is<sp/>to<sp/>use<sp/>Google<sp/>Test&apos;s</highlight></codeline>
+<codeline><highlight class="normal">[event<sp/>listener<sp/>API](http://code.google.com/p/googletest/wiki/GoogleTestAdvancedGuide#Extending_Google_Test_by_Handling_Test_Events)</highlight></codeline>
+<codeline><highlight class="normal">to<sp/>report<sp/>a<sp/>test<sp/>failure<sp/>to<sp/>your<sp/>testing<sp/>framework<sp/>properly.<sp/><sp/>You&apos;ll<sp/>need<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">implement<sp/>the<sp/>`OnTestPartResult()`<sp/>method<sp/>of<sp/>the<sp/>event<sp/>listener<sp/>interface,<sp/>but<sp/>it</highlight></codeline>
+<codeline><highlight class="normal">should<sp/>be<sp/>straightforward.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>this<sp/>turns<sp/>out<sp/>to<sp/>be<sp/>too<sp/>much<sp/>work,<sp/>we<sp/>suggest<sp/>that<sp/>you<sp/>stick<sp/>with</highlight></codeline>
+<codeline><highlight class="normal">Google<sp/>Test,<sp/>which<sp/>works<sp/>with<sp/>Google<sp/>Mock<sp/>seamlessly<sp/>(in<sp/>fact,<sp/>it<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">technically<sp/>part<sp/>of<sp/>Google<sp/>Mock.).<sp/><sp/>If<sp/>there<sp/>is<sp/>a<sp/>reason<sp/>that<sp/>you</highlight></codeline>
+<codeline><highlight class="normal">cannot<sp/>use<sp/>Google<sp/>Test,<sp/>please<sp/>let<sp/>us<sp/>know.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Setting<sp/>Expectations<sp/>#</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>key<sp/>to<sp/>using<sp/>a<sp/>mock<sp/>object<sp/>successfully<sp/>is<sp/>to<sp/>set<sp/>the<sp/>_right<sp/>expectations_<sp/>on<sp/>it.<sp/>If<sp/>you<sp/>set<sp/>the<sp/>expectations<sp/>too<sp/>strict,<sp/>your<sp/>test<sp/>will<sp/>fail<sp/>as<sp/>the<sp/>result<sp/>of<sp/>unrelated<sp/>changes.<sp/>If<sp/>you<sp/>set<sp/>them<sp/>too<sp/>loose,<sp/>bugs<sp/>can<sp/>slip<sp/>through.<sp/>You<sp/>want<sp/>to<sp/>do<sp/>it<sp/>just<sp/>right<sp/>such<sp/>that<sp/>your<sp/>test<sp/>can<sp/>catch<sp/>exactly<sp/>the<sp/>kind<sp/>of<sp/>bugs<sp/>you<sp/>intend<sp/>it<sp/>to<sp/>catch.<sp/>Google<sp/>Mock<sp/>provides<sp/>the<sp/>necessary<sp/>means<sp/>for<sp/>you<sp/>to<sp/>do<sp/>it<sp/>&quot;just<sp/>right.&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>General<sp/>Syntax<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">In<sp/>Google<sp/>Mock<sp/>we<sp/>use<sp/>the<sp/>`EXPECT_CALL()`<sp/>macro<sp/>to<sp/>set<sp/>an<sp/>expectation<sp/>on<sp/>a<sp/>mock<sp/>method.<sp/>The<sp/>general<sp/>syntax<sp/>is:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(mock_object,<sp/>method(matchers))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.Times(cardinality)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(action)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillRepeatedly(action);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>macro<sp/>has<sp/>two<sp/>arguments:<sp/>first<sp/>the<sp/>mock<sp/>object,<sp/>and<sp/>then<sp/>the<sp/>method<sp/>and<sp/>its<sp/>arguments.<sp/>Note<sp/>that<sp/>the<sp/>two<sp/>are<sp/>separated<sp/>by<sp/>a<sp/>comma<sp/>(`,`),<sp/>not<sp/>a<sp/>period<sp/>(`.`).<sp/>(Why<sp/>using<sp/>a<sp/>comma?<sp/>The<sp/>answer<sp/>is<sp/>that<sp/>it<sp/>was<sp/>necessary<sp/>for<sp/>technical<sp/>reasons.)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>macro<sp/>can<sp/>be<sp/>followed<sp/>by<sp/>some<sp/>optional<sp/>_clauses_<sp/>that<sp/>provide<sp/>more<sp/>information<sp/>about<sp/>the<sp/>expectation.<sp/>We&apos;ll<sp/>discuss<sp/>how<sp/>each<sp/>clause<sp/>works<sp/>in<sp/>the<sp/>coming<sp/>sections.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>syntax<sp/>is<sp/>designed<sp/>to<sp/>make<sp/>an<sp/>expectation<sp/>read<sp/>like<sp/>English.<sp/>For<sp/>example,<sp/>you<sp/>can<sp/>probably<sp/>guess<sp/>that</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::Return;...</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(turtle,<sp/>GetX())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.Times(5)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(Return(100))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(Return(150))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillRepeatedly(Return(200));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">says<sp/>that<sp/>the<sp/>`turtle`<sp/>object&apos;s<sp/>`GetX()`<sp/>method<sp/>will<sp/>be<sp/>called<sp/>five<sp/>times,<sp/>it<sp/>will<sp/>return<sp/>100<sp/>the<sp/>first<sp/>time,<sp/>150<sp/>the<sp/>second<sp/>time,<sp/>and<sp/>then<sp/>200<sp/>every<sp/>time.<sp/>Some<sp/>people<sp/>like<sp/>to<sp/>call<sp/>this<sp/>style<sp/>of<sp/>syntax<sp/>a<sp/>Domain-Specific<sp/>Language<sp/>(DSL).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Note:**<sp/>Why<sp/>do<sp/>we<sp/>use<sp/>a<sp/>macro<sp/>to<sp/>do<sp/>this?<sp/>It<sp/>serves<sp/>two<sp/>purposes:<sp/>first<sp/>it<sp/>makes<sp/>expectations<sp/>easily<sp/>identifiable<sp/>(either<sp/>by<sp/>`grep`<sp/>or<sp/>by<sp/>a<sp/>human<sp/>reader),<sp/>and<sp/>second<sp/>it<sp/>allows<sp/>Google<sp/>Mock<sp/>to<sp/>include<sp/>the<sp/>source<sp/>file<sp/>location<sp/>of<sp/>a<sp/>failed<sp/>expectation<sp/>in<sp/>messages,<sp/>making<sp/>debugging<sp/>easier.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Matchers:<sp/>What<sp/>Arguments<sp/>Do<sp/>We<sp/>Expect?<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">When<sp/>a<sp/>mock<sp/>function<sp/>takes<sp/>arguments,<sp/>we<sp/>must<sp/>specify<sp/>what<sp/>arguments<sp/>we<sp/>are<sp/>expecting;<sp/>for<sp/>example:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Expects<sp/>the<sp/>turtle<sp/>to<sp/>move<sp/>forward<sp/>by<sp/>100<sp/>units.</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(turtle,<sp/>Forward(100));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Sometimes<sp/>you<sp/>may<sp/>not<sp/>want<sp/>to<sp/>be<sp/>too<sp/>specific<sp/>(Remember<sp/>that<sp/>talk<sp/>about<sp/>tests<sp/>being<sp/>too<sp/>rigid?<sp/>Over<sp/>specification<sp/>leads<sp/>to<sp/>brittle<sp/>tests<sp/>and<sp/>obscures<sp/>the<sp/>intent<sp/>of<sp/>tests.<sp/>Therefore<sp/>we<sp/>encourage<sp/>you<sp/>to<sp/>specify<sp/>only<sp/>what&apos;s<sp/>necessary<sp/>-<sp/>no<sp/>more,<sp/>no<sp/>less.).<sp/>If<sp/>you<sp/>care<sp/>to<sp/>check<sp/>that<sp/>`Forward()`<sp/>will<sp/>be<sp/>called<sp/>but<sp/>aren&apos;t<sp/>interested<sp/>in<sp/>its<sp/>actual<sp/>argument,<sp/>write<sp/>`_`<sp/>as<sp/>the<sp/>argument,<sp/>which<sp/>means<sp/>&quot;anything<sp/>goes&quot;:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::_;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Expects<sp/>the<sp/>turtle<sp/>to<sp/>move<sp/>forward.</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(turtle,<sp/>Forward(_));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`_`<sp/>is<sp/>an<sp/>instance<sp/>of<sp/>what<sp/>we<sp/>call<sp/>**matchers**.<sp/>A<sp/>matcher<sp/>is<sp/>like<sp/>a<sp/>predicate<sp/>and<sp/>can<sp/>test<sp/>whether<sp/>an<sp/>argument<sp/>is<sp/>what<sp/>we&apos;d<sp/>expect.<sp/>You<sp/>can<sp/>use<sp/>a<sp/>matcher<sp/>inside<sp/>`EXPECT_CALL()`<sp/>wherever<sp/>a<sp/>function<sp/>argument<sp/>is<sp/>expected.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>list<sp/>of<sp/>built-in<sp/>matchers<sp/>can<sp/>be<sp/>found<sp/>in<sp/>the<sp/>[CheatSheet](V1_5_CheatSheet.md).<sp/>For<sp/>example,<sp/>here&apos;s<sp/>the<sp/>`Ge`<sp/>(greater<sp/>than<sp/>or<sp/>equal)<sp/>matcher:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::Ge;...</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(turtle,<sp/>Forward(Ge(100)));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>checks<sp/>that<sp/>the<sp/>turtle<sp/>will<sp/>be<sp/>told<sp/>to<sp/>go<sp/>forward<sp/>by<sp/>at<sp/>least<sp/>100<sp/>units.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Cardinalities:<sp/>How<sp/>Many<sp/>Times<sp/>Will<sp/>It<sp/>Be<sp/>Called?<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>first<sp/>clause<sp/>we<sp/>can<sp/>specify<sp/>following<sp/>an<sp/>`EXPECT_CALL()`<sp/>is<sp/>`Times()`.<sp/>We<sp/>call<sp/>its<sp/>argument<sp/>a<sp/>**cardinality**<sp/>as<sp/>it<sp/>tells<sp/>_how<sp/>many<sp/>times_<sp/>the<sp/>call<sp/>should<sp/>occur.<sp/>It<sp/>allows<sp/>us<sp/>to<sp/>repeat<sp/>an<sp/>expectation<sp/>many<sp/>times<sp/>without<sp/>actually<sp/>writing<sp/>it<sp/>as<sp/>many<sp/>times.<sp/>More<sp/>importantly,<sp/>a<sp/>cardinality<sp/>can<sp/>be<sp/>&quot;fuzzy&quot;,<sp/>just<sp/>like<sp/>a<sp/>matcher<sp/>can<sp/>be.<sp/>This<sp/>allows<sp/>a<sp/>user<sp/>to<sp/>express<sp/>the<sp/>intent<sp/>of<sp/>a<sp/>test<sp/>exactly.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">An<sp/>interesting<sp/>special<sp/>case<sp/>is<sp/>when<sp/>we<sp/>say<sp/>`Times(0)`.<sp/>You<sp/>may<sp/>have<sp/>guessed<sp/>-<sp/>it<sp/>means<sp/>that<sp/>the<sp/>function<sp/>shouldn&apos;t<sp/>be<sp/>called<sp/>with<sp/>the<sp/>given<sp/>arguments<sp/>at<sp/>all,<sp/>and<sp/>Google<sp/>Mock<sp/>will<sp/>report<sp/>a<sp/>Google<sp/>Test<sp/>failure<sp/>whenever<sp/>the<sp/>function<sp/>is<sp/>(wrongfully)<sp/>called.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We&apos;ve<sp/>seen<sp/>`AtLeast(n)`<sp/>as<sp/>an<sp/>example<sp/>of<sp/>fuzzy<sp/>cardinalities<sp/>earlier.<sp/>For<sp/>the<sp/>list<sp/>of<sp/>built-in<sp/>cardinalities<sp/>you<sp/>can<sp/>use,<sp/>see<sp/>the<sp/>[CheatSheet](V1_5_CheatSheet.md).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>`Times()`<sp/>clause<sp/>can<sp/>be<sp/>omitted.<sp/>**If<sp/>you<sp/>omit<sp/>`Times()`,<sp/>Google<sp/>Mock<sp/>will<sp/>infer<sp/>the<sp/>cardinality<sp/>for<sp/>you.**<sp/>The<sp/>rules<sp/>are<sp/>easy<sp/>to<sp/>remember:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>If<sp/>**neither**<sp/>`WillOnce()`<sp/>**nor**<sp/>`WillRepeatedly()`<sp/>is<sp/>in<sp/>the<sp/>`EXPECT_CALL()`,<sp/>the<sp/>inferred<sp/>cardinality<sp/>is<sp/>`Times(1)`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>If<sp/>there<sp/>are<sp/>`n<sp/>WillOnce()`&apos;s<sp/>but<sp/>**no**<sp/>`WillRepeatedly()`,<sp/>where<sp/>`n`<sp/>&gt;=<sp/>1,<sp/>the<sp/>cardinality<sp/>is<sp/>`Times(n)`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>If<sp/>there<sp/>are<sp/>`n<sp/>WillOnce()`&apos;s<sp/>and<sp/>**one**<sp/>`WillRepeatedly()`,<sp/>where<sp/>`n`<sp/>&gt;=<sp/>0,<sp/>the<sp/>cardinality<sp/>is<sp/>`Times(AtLeast(n))`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Quick<sp/>quiz:**<sp/>what<sp/>do<sp/>you<sp/>think<sp/>will<sp/>happen<sp/>if<sp/>a<sp/>function<sp/>is<sp/>expected<sp/>to<sp/>be<sp/>called<sp/>twice<sp/>but<sp/>actually<sp/>called<sp/>four<sp/>times?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Actions:<sp/>What<sp/>Should<sp/>It<sp/>Do?<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">Remember<sp/>that<sp/>a<sp/>mock<sp/>object<sp/>doesn&apos;t<sp/>really<sp/>have<sp/>a<sp/>working<sp/>implementation?<sp/>We<sp/>as<sp/>users<sp/>have<sp/>to<sp/>tell<sp/>it<sp/>what<sp/>to<sp/>do<sp/>when<sp/>a<sp/>method<sp/>is<sp/>invoked.<sp/>This<sp/>is<sp/>easy<sp/>in<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">First,<sp/>if<sp/>the<sp/>return<sp/>type<sp/>of<sp/>a<sp/>mock<sp/>function<sp/>is<sp/>a<sp/>built-in<sp/>type<sp/>or<sp/>a<sp/>pointer,<sp/>the<sp/>function<sp/>has<sp/>a<sp/>**default<sp/>action**<sp/>(a<sp/>`void`<sp/>function<sp/>will<sp/>just<sp/>return,<sp/>a<sp/>`bool`<sp/>function<sp/>will<sp/>return<sp/>`false`,<sp/>and<sp/>other<sp/>functions<sp/>will<sp/>return<sp/>0).<sp/>If<sp/>you<sp/>don&apos;t<sp/>say<sp/>anything,<sp/>this<sp/>behavior<sp/>will<sp/>be<sp/>used.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Second,<sp/>if<sp/>a<sp/>mock<sp/>function<sp/>doesn&apos;t<sp/>have<sp/>a<sp/>default<sp/>action,<sp/>or<sp/>the<sp/>default<sp/>action<sp/>doesn&apos;t<sp/>suit<sp/>you,<sp/>you<sp/>can<sp/>specify<sp/>the<sp/>action<sp/>to<sp/>be<sp/>taken<sp/>each<sp/>time<sp/>the<sp/>expectation<sp/>matches<sp/>using<sp/>a<sp/>series<sp/>of<sp/>`WillOnce()`<sp/>clauses<sp/>followed<sp/>by<sp/>an<sp/>optional<sp/>`WillRepeatedly()`.<sp/>For<sp/>example,</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::Return;...</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(turtle,<sp/>GetX())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(Return(100))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(Return(200))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(Return(300));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>says<sp/>that<sp/>`turtle.GetX()`<sp/>will<sp/>be<sp/>called<sp/>_exactly<sp/>three<sp/>times_<sp/>(Google<sp/>Mock<sp/>inferred<sp/>this<sp/>from<sp/>how<sp/>many<sp/>`WillOnce()`<sp/>clauses<sp/>we&apos;ve<sp/>written,<sp/>since<sp/>we<sp/>didn&apos;t<sp/>explicitly<sp/>write<sp/>`Times()`),<sp/>and<sp/>will<sp/>return<sp/>100,<sp/>200,<sp/>and<sp/>300<sp/>respectively.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::Return;...</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(turtle,<sp/>GetY())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(Return(100))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(Return(200))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillRepeatedly(Return(300));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">says<sp/>that<sp/>`turtle.GetY()`<sp/>will<sp/>be<sp/>called<sp/>_at<sp/>least<sp/>twice_<sp/>(Google<sp/>Mock<sp/>knows<sp/>this<sp/>as<sp/>we&apos;ve<sp/>written<sp/>two<sp/>`WillOnce()`<sp/>clauses<sp/>and<sp/>a<sp/>`WillRepeatedly()`<sp/>while<sp/>having<sp/>no<sp/>explicit<sp/>`Times()`),<sp/>will<sp/>return<sp/>100<sp/>the<sp/>first<sp/>time,<sp/>200<sp/>the<sp/>second<sp/>time,<sp/>and<sp/>300<sp/>from<sp/>the<sp/>third<sp/>time<sp/>on.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Of<sp/>course,<sp/>if<sp/>you<sp/>explicitly<sp/>write<sp/>a<sp/>`Times()`,<sp/>Google<sp/>Mock<sp/>will<sp/>not<sp/>try<sp/>to<sp/>infer<sp/>the<sp/>cardinality<sp/>itself.<sp/>What<sp/>if<sp/>the<sp/>number<sp/>you<sp/>specified<sp/>is<sp/>larger<sp/>than<sp/>there<sp/>are<sp/>`WillOnce()`<sp/>clauses?<sp/>Well,<sp/>after<sp/>all<sp/>`WillOnce()`s<sp/>are<sp/>used<sp/>up,<sp/>Google<sp/>Mock<sp/>will<sp/>do<sp/>the<sp/>_default_<sp/>action<sp/>for<sp/>the<sp/>function<sp/>every<sp/>time<sp/>(unless,<sp/>of<sp/>course,<sp/>you<sp/>have<sp/>a<sp/>`WillRepeatedly()`.).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">What<sp/>can<sp/>we<sp/>do<sp/>inside<sp/>`WillOnce()`<sp/>besides<sp/>`Return()`?<sp/>You<sp/>can<sp/>return<sp/>a<sp/>reference<sp/>using<sp/>`ReturnRef(variable)`,<sp/>or<sp/>invoke<sp/>a<sp/>pre-defined<sp/>function,<sp/>among<sp/>[others](V1_5_CheatSheet#Actions.md).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Important<sp/>note:**<sp/>The<sp/>`EXPECT_CALL()`<sp/>statement<sp/>evaluates<sp/>the<sp/>action<sp/>clause<sp/>only<sp/>once,<sp/>even<sp/>though<sp/>the<sp/>action<sp/>may<sp/>be<sp/>performed<sp/>many<sp/>times.<sp/>Therefore<sp/>you<sp/>must<sp/>be<sp/>careful<sp/>about<sp/>side<sp/>effects.<sp/>The<sp/>following<sp/>may<sp/>not<sp/>do<sp/>what<sp/>you<sp/>want:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>n<sp/>=<sp/>100;</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(turtle,<sp/>GetX())</highlight></codeline>
+<codeline><highlight class="normal">.Times(4)</highlight></codeline>
+<codeline><highlight class="normal">.WillOnce(Return(n++));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Instead<sp/>of<sp/>returning<sp/>100,<sp/>101,<sp/>102,<sp/>...,<sp/>consecutively,<sp/>this<sp/>mock<sp/>function<sp/>will<sp/>always<sp/>return<sp/>100<sp/>as<sp/>`n++`<sp/>is<sp/>only<sp/>evaluated<sp/>once.<sp/>Similarly,<sp/>`Return(new<sp/>Foo)`<sp/>will<sp/>create<sp/>a<sp/>new<sp/>`Foo`<sp/>object<sp/>when<sp/>the<sp/>`EXPECT_CALL()`<sp/>is<sp/>executed,<sp/>and<sp/>will<sp/>return<sp/>the<sp/>same<sp/>pointer<sp/>every<sp/>time.<sp/>If<sp/>you<sp/>want<sp/>the<sp/>side<sp/>effect<sp/>to<sp/>happen<sp/>every<sp/>time,<sp/>you<sp/>need<sp/>to<sp/>define<sp/>a<sp/>custom<sp/>action,<sp/>which<sp/>we&apos;ll<sp/>teach<sp/>in<sp/>the<sp/>[CookBook](V1_5_CookBook.md).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Time<sp/>for<sp/>another<sp/>quiz!<sp/>What<sp/>do<sp/>you<sp/>think<sp/>the<sp/>following<sp/>means?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::Return;...</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(turtle,<sp/>GetY())</highlight></codeline>
+<codeline><highlight class="normal">.Times(4)</highlight></codeline>
+<codeline><highlight class="normal">.WillOnce(Return(100));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Obviously<sp/>`turtle.GetY()`<sp/>is<sp/>expected<sp/>to<sp/>be<sp/>called<sp/>four<sp/>times.<sp/>But<sp/>if<sp/>you<sp/>think<sp/>it<sp/>will<sp/>return<sp/>100<sp/>every<sp/>time,<sp/>think<sp/>twice!<sp/>Remember<sp/>that<sp/>one<sp/>`WillOnce()`<sp/>clause<sp/>will<sp/>be<sp/>consumed<sp/>each<sp/>time<sp/>the<sp/>function<sp/>is<sp/>invoked<sp/>and<sp/>the<sp/>default<sp/>action<sp/>will<sp/>be<sp/>taken<sp/>afterwards.<sp/>So<sp/>the<sp/>right<sp/>answer<sp/>is<sp/>that<sp/>`turtle.GetY()`<sp/>will<sp/>return<sp/>100<sp/>the<sp/>first<sp/>time,<sp/>but<sp/>**return<sp/>0<sp/>from<sp/>the<sp/>second<sp/>time<sp/>on**,<sp/>as<sp/>returning<sp/>0<sp/>is<sp/>the<sp/>default<sp/>action<sp/>for<sp/>`int`<sp/>functions.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Using<sp/>Multiple<sp/>Expectations<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">So<sp/>far<sp/>we&apos;ve<sp/>only<sp/>shown<sp/>examples<sp/>where<sp/>you<sp/>have<sp/>a<sp/>single<sp/>expectation.<sp/>More<sp/>realistically,<sp/>you&apos;re<sp/>going<sp/>to<sp/>specify<sp/>expectations<sp/>on<sp/>multiple<sp/>mock<sp/>methods,<sp/>which<sp/>may<sp/>be<sp/>from<sp/>multiple<sp/>mock<sp/>objects.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">By<sp/>default,<sp/>when<sp/>a<sp/>mock<sp/>method<sp/>is<sp/>invoked,<sp/>Google<sp/>Mock<sp/>will<sp/>search<sp/>the<sp/>expectations<sp/>in<sp/>the<sp/>**reverse<sp/>order**<sp/>they<sp/>are<sp/>defined,<sp/>and<sp/>stop<sp/>when<sp/>an<sp/>active<sp/>expectation<sp/>that<sp/>matches<sp/>the<sp/>arguments<sp/>is<sp/>found<sp/>(you<sp/>can<sp/>think<sp/>of<sp/>it<sp/>as<sp/>&quot;newer<sp/>rules<sp/>override<sp/>older<sp/>ones.&quot;).<sp/>If<sp/>the<sp/>matching<sp/>expectation<sp/>cannot<sp/>take<sp/>any<sp/>more<sp/>calls,<sp/>you<sp/>will<sp/>get<sp/>an<sp/>upper-bound-violated<sp/>failure.<sp/>Here&apos;s<sp/>an<sp/>example:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::_;...</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(turtle,<sp/>Forward(_));<sp/><sp/>//<sp/>#1</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(turtle,<sp/>Forward(10))<sp/><sp/>//<sp/>#2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.Times(2);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>`Forward(10)`<sp/>is<sp/>called<sp/>three<sp/>times<sp/>in<sp/>a<sp/>row,<sp/>the<sp/>third<sp/>time<sp/>it<sp/>will<sp/>be<sp/>an<sp/>error,<sp/>as<sp/>the<sp/>last<sp/>matching<sp/>expectation<sp/>(#2)<sp/>has<sp/>been<sp/>saturated.<sp/>If,<sp/>however,<sp/>the<sp/>third<sp/>`Forward(10)`<sp/>call<sp/>is<sp/>replaced<sp/>by<sp/>`Forward(20)`,<sp/>then<sp/>it<sp/>would<sp/>be<sp/>OK,<sp/>as<sp/>now<sp/>#1<sp/>will<sp/>be<sp/>the<sp/>matching<sp/>expectation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Side<sp/>note:**<sp/>Why<sp/>does<sp/>Google<sp/>Mock<sp/>search<sp/>for<sp/>a<sp/>match<sp/>in<sp/>the<sp/>_reverse_<sp/>order<sp/>of<sp/>the<sp/>expectations?<sp/>The<sp/>reason<sp/>is<sp/>that<sp/>this<sp/>allows<sp/>a<sp/>user<sp/>to<sp/>set<sp/>up<sp/>the<sp/>default<sp/>expectations<sp/>in<sp/>a<sp/>mock<sp/>object&apos;s<sp/>constructor<sp/>or<sp/>the<sp/>test<sp/>fixture&apos;s<sp/>set-up<sp/>phase<sp/>and<sp/>then<sp/>customize<sp/>the<sp/>mock<sp/>by<sp/>writing<sp/>more<sp/>specific<sp/>expectations<sp/>in<sp/>the<sp/>test<sp/>body.<sp/>So,<sp/>if<sp/>you<sp/>have<sp/>two<sp/>expectations<sp/>on<sp/>the<sp/>same<sp/>method,<sp/>you<sp/>want<sp/>to<sp/>put<sp/>the<sp/>one<sp/>with<sp/>more<sp/>specific<sp/>matchers<sp/>**after**<sp/>the<sp/>other,<sp/>or<sp/>the<sp/>more<sp/>specific<sp/>rule<sp/>would<sp/>be<sp/>shadowed<sp/>by<sp/>the<sp/>more<sp/>general<sp/>one<sp/>that<sp/>comes<sp/>after<sp/>it.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Ordered<sp/>vs<sp/>Unordered<sp/>Calls<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">By<sp/>default,<sp/>an<sp/>expectation<sp/>can<sp/>match<sp/>a<sp/>call<sp/>even<sp/>though<sp/>an<sp/>earlier<sp/>expectation<sp/>hasn&apos;t<sp/>been<sp/>satisfied.<sp/>In<sp/>other<sp/>words,<sp/>the<sp/>calls<sp/>don&apos;t<sp/>have<sp/>to<sp/>occur<sp/>in<sp/>the<sp/>order<sp/>the<sp/>expectations<sp/>are<sp/>specified.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Sometimes,<sp/>you<sp/>may<sp/>want<sp/>all<sp/>the<sp/>expected<sp/>calls<sp/>to<sp/>occur<sp/>in<sp/>a<sp/>strict<sp/>order.<sp/>To<sp/>say<sp/>this<sp/>in<sp/>Google<sp/>Mock<sp/>is<sp/>easy:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::InSequence;...</highlight></codeline>
+<codeline><highlight class="normal">TEST(FooTest,<sp/>DrawsLineSegment)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>InSequence<sp/>dummy;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_CALL(turtle,<sp/>PenDown());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_CALL(turtle,<sp/>Forward(100));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_CALL(turtle,<sp/>PenUp());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Foo();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">By<sp/>creating<sp/>an<sp/>object<sp/>of<sp/>type<sp/>`InSequence`,<sp/>all<sp/>expectations<sp/>in<sp/>its<sp/>scope<sp/>are<sp/>put<sp/>into<sp/>a<sp/>_sequence_<sp/>and<sp/>have<sp/>to<sp/>occur<sp/>_sequentially_.<sp/>Since<sp/>we<sp/>are<sp/>just<sp/>relying<sp/>on<sp/>the<sp/>constructor<sp/>and<sp/>destructor<sp/>of<sp/>this<sp/>object<sp/>to<sp/>do<sp/>the<sp/>actual<sp/>work,<sp/>its<sp/>name<sp/>is<sp/>really<sp/>irrelevant.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>this<sp/>example,<sp/>we<sp/>test<sp/>that<sp/>`Foo()`<sp/>calls<sp/>the<sp/>three<sp/>expected<sp/>functions<sp/>in<sp/>the<sp/>order<sp/>as<sp/>written.<sp/>If<sp/>a<sp/>call<sp/>is<sp/>made<sp/>out-of-order,<sp/>it<sp/>will<sp/>be<sp/>an<sp/>error.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">(What<sp/>if<sp/>you<sp/>care<sp/>about<sp/>the<sp/>relative<sp/>order<sp/>of<sp/>some<sp/>of<sp/>the<sp/>calls,<sp/>but<sp/>not<sp/>all<sp/>of<sp/>them?<sp/>Can<sp/>you<sp/>specify<sp/>an<sp/>arbitrary<sp/>partial<sp/>order?<sp/>The<sp/>answer<sp/>is<sp/>...<sp/>yes!<sp/>If<sp/>you<sp/>are<sp/>impatient,<sp/>the<sp/>details<sp/>can<sp/>be<sp/>found<sp/>in<sp/>the<sp/>[CookBook](V1_5_CookBook.md).)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>All<sp/>Expectations<sp/>Are<sp/>Sticky<sp/>(Unless<sp/>Said<sp/>Otherwise)<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">Now<sp/>let&apos;s<sp/>do<sp/>a<sp/>quick<sp/>quiz<sp/>to<sp/>see<sp/>how<sp/>well<sp/>you<sp/>can<sp/>use<sp/>this<sp/>mock<sp/>stuff<sp/>already.<sp/>How<sp/>would<sp/>you<sp/>test<sp/>that<sp/>the<sp/>turtle<sp/>is<sp/>asked<sp/>to<sp/>go<sp/>to<sp/>the<sp/>origin<sp/>_exactly<sp/>twice_<sp/>(you<sp/>want<sp/>to<sp/>ignore<sp/>any<sp/>other<sp/>instructions<sp/>it<sp/>receives)?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">After<sp/>you&apos;ve<sp/>come<sp/>up<sp/>with<sp/>your<sp/>answer,<sp/>take<sp/>a<sp/>look<sp/>at<sp/>ours<sp/>and<sp/>compare<sp/>notes<sp/>(solve<sp/>it<sp/>yourself<sp/>first<sp/>-<sp/>don&apos;t<sp/>cheat!):</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::_;...</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(turtle,<sp/>GoTo(_,<sp/>_))<sp/><sp/>//<sp/>#1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.Times(AnyNumber());</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(turtle,<sp/>GoTo(0,<sp/>0))<sp/><sp/>//<sp/>#2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.Times(2);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Suppose<sp/>`turtle.GoTo(0,<sp/>0)`<sp/>is<sp/>called<sp/>three<sp/>times.<sp/>In<sp/>the<sp/>third<sp/>time,<sp/>Google<sp/>Mock<sp/>will<sp/>see<sp/>that<sp/>the<sp/>arguments<sp/>match<sp/>expectation<sp/>#2<sp/>(remember<sp/>that<sp/>we<sp/>always<sp/>pick<sp/>the<sp/>last<sp/>matching<sp/>expectation).<sp/>Now,<sp/>since<sp/>we<sp/>said<sp/>that<sp/>there<sp/>should<sp/>be<sp/>only<sp/>two<sp/>such<sp/>calls,<sp/>Google<sp/>Mock<sp/>will<sp/>report<sp/>an<sp/>error<sp/>immediately.<sp/>This<sp/>is<sp/>basically<sp/>what<sp/>we&apos;ve<sp/>told<sp/>you<sp/>in<sp/>the<sp/>&quot;Using<sp/>Multiple<sp/>Expectations&quot;<sp/>section<sp/>above.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>example<sp/>shows<sp/>that<sp/>**expectations<sp/>in<sp/>Google<sp/>Mock<sp/>are<sp/>&quot;sticky&quot;<sp/>by<sp/>default**,<sp/>in<sp/>the<sp/>sense<sp/>that<sp/>they<sp/>remain<sp/>active<sp/>even<sp/>after<sp/>we<sp/>have<sp/>reached<sp/>their<sp/>invocation<sp/>upper<sp/>bounds.<sp/>This<sp/>is<sp/>an<sp/>important<sp/>rule<sp/>to<sp/>remember,<sp/>as<sp/>it<sp/>affects<sp/>the<sp/>meaning<sp/>of<sp/>the<sp/>spec,<sp/>and<sp/>is<sp/>**different**<sp/>to<sp/>how<sp/>it&apos;s<sp/>done<sp/>in<sp/>many<sp/>other<sp/>mocking<sp/>frameworks<sp/>(Why&apos;d<sp/>we<sp/>do<sp/>that?<sp/>Because<sp/>we<sp/>think<sp/>our<sp/>rule<sp/>makes<sp/>the<sp/>common<sp/>cases<sp/>easier<sp/>to<sp/>express<sp/>and<sp/>understand.).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Simple?<sp/>Let&apos;s<sp/>see<sp/>if<sp/>you&apos;ve<sp/>really<sp/>understood<sp/>it:<sp/>what<sp/>does<sp/>the<sp/>following<sp/>code<sp/>say?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::Return;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>(int<sp/>i<sp/>=<sp/>n;<sp/>i<sp/>&gt;<sp/>0;<sp/>i--)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_CALL(turtle,<sp/>GetX())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.WillOnce(Return(10*i));</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>think<sp/>it<sp/>says<sp/>that<sp/>`turtle.GetX()`<sp/>will<sp/>be<sp/>called<sp/>`n`<sp/>times<sp/>and<sp/>will<sp/>return<sp/>10,<sp/>20,<sp/>30,<sp/>...,<sp/>consecutively,<sp/>think<sp/>twice!<sp/>The<sp/>problem<sp/>is<sp/>that,<sp/>as<sp/>we<sp/>said,<sp/>expectations<sp/>are<sp/>sticky.<sp/>So,<sp/>the<sp/>second<sp/>time<sp/>`turtle.GetX()`<sp/>is<sp/>called,<sp/>the<sp/>last<sp/>(latest)<sp/>`EXPECT_CALL()`<sp/>statement<sp/>will<sp/>match,<sp/>and<sp/>will<sp/>immediately<sp/>lead<sp/>to<sp/>an<sp/>&quot;upper<sp/>bound<sp/>exceeded&quot;<sp/>error<sp/>-<sp/>this<sp/>piece<sp/>of<sp/>code<sp/>is<sp/>not<sp/>very<sp/>useful!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">One<sp/>correct<sp/>way<sp/>of<sp/>saying<sp/>that<sp/>`turtle.GetX()`<sp/>will<sp/>return<sp/>10,<sp/>20,<sp/>30,<sp/>...,<sp/>is<sp/>to<sp/>explicitly<sp/>say<sp/>that<sp/>the<sp/>expectations<sp/>are<sp/>_not_<sp/>sticky.<sp/>In<sp/>other<sp/>words,<sp/>they<sp/>should<sp/>_retire_<sp/>as<sp/>soon<sp/>as<sp/>they<sp/>are<sp/>saturated:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::Return;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>(int<sp/>i<sp/>=<sp/>n;<sp/>i<sp/>&gt;<sp/>0;<sp/>i--)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_CALL(turtle,<sp/>GetX())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(Return(10*i))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.RetiresOnSaturation();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">And,<sp/>there&apos;s<sp/>a<sp/>better<sp/>way<sp/>to<sp/>do<sp/>it:<sp/>in<sp/>this<sp/>case,<sp/>we<sp/>expect<sp/>the<sp/>calls<sp/>to<sp/>occur<sp/>in<sp/>a<sp/>specific<sp/>order,<sp/>and<sp/>we<sp/>line<sp/>up<sp/>the<sp/>actions<sp/>to<sp/>match<sp/>the<sp/>order.<sp/>Since<sp/>the<sp/>order<sp/>is<sp/>important<sp/>here,<sp/>we<sp/>should<sp/>make<sp/>it<sp/>explicit<sp/>using<sp/>a<sp/>sequence:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::InSequence;</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::Return;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>InSequence<sp/>s;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>for<sp/>(int<sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;=<sp/>n;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_CALL(turtle,<sp/>GetX())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.WillOnce(Return(10*i))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.RetiresOnSaturation();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">By<sp/>the<sp/>way,<sp/>the<sp/>other<sp/>situation<sp/>where<sp/>an<sp/>expectation<sp/>may<sp/>_not_<sp/>be<sp/>sticky<sp/>is<sp/>when<sp/>it&apos;s<sp/>in<sp/>a<sp/>sequence<sp/>-<sp/>as<sp/>soon<sp/>as<sp/>another<sp/>expectation<sp/>that<sp/>comes<sp/>after<sp/>it<sp/>in<sp/>the<sp/>sequence<sp/>has<sp/>been<sp/>used,<sp/>it<sp/>automatically<sp/>retires<sp/>(and<sp/>will<sp/>never<sp/>be<sp/>used<sp/>to<sp/>match<sp/>any<sp/>call).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Uninteresting<sp/>Calls<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">A<sp/>mock<sp/>object<sp/>may<sp/>have<sp/>many<sp/>methods,<sp/>and<sp/>not<sp/>all<sp/>of<sp/>them<sp/>are<sp/>that<sp/>interesting.<sp/>For<sp/>example,<sp/>in<sp/>some<sp/>tests<sp/>we<sp/>may<sp/>not<sp/>care<sp/>about<sp/>how<sp/>many<sp/>times<sp/>`GetX()`<sp/>and<sp/>`GetY()`<sp/>get<sp/>called.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>Google<sp/>Mock,<sp/>if<sp/>you<sp/>are<sp/>not<sp/>interested<sp/>in<sp/>a<sp/>method,<sp/>just<sp/>don&apos;t<sp/>say<sp/>anything<sp/>about<sp/>it.<sp/>If<sp/>a<sp/>call<sp/>to<sp/>this<sp/>method<sp/>occurs,<sp/>you&apos;ll<sp/>see<sp/>a<sp/>warning<sp/>in<sp/>the<sp/>test<sp/>output,<sp/>but<sp/>it<sp/>won&apos;t<sp/>be<sp/>a<sp/>failure.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>What<sp/>Now?<sp/>#</highlight></codeline>
+<codeline><highlight class="normal">Congratulations!<sp/>You&apos;ve<sp/>learned<sp/>enough<sp/>about<sp/>Google<sp/>Mock<sp/>to<sp/>start<sp/>using<sp/>it.<sp/>Now,<sp/>you<sp/>might<sp/>want<sp/>to<sp/>join<sp/>the<sp/>[googlemock](http://groups.google.com/group/googlemock)<sp/>discussion<sp/>group<sp/>and<sp/>actually<sp/>write<sp/>some<sp/>tests<sp/>using<sp/>Google<sp/>Mock<sp/>-<sp/>it<sp/>will<sp/>be<sp/>fun.<sp/>Hey,<sp/>it<sp/>may<sp/>even<sp/>be<sp/>addictive<sp/>-<sp/>you&apos;ve<sp/>been<sp/>warned.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Then,<sp/>if<sp/>you<sp/>feel<sp/>like<sp/>increasing<sp/>your<sp/>mock<sp/>quotient,<sp/>you<sp/>should<sp/>move<sp/>on<sp/>to<sp/>the<sp/>[CookBook](V1_5_CookBook.md).<sp/>You<sp/>can<sp/>learn<sp/>many<sp/>advanced<sp/>features<sp/>of<sp/>Google<sp/>Mock<sp/>there<sp/>--<sp/>and<sp/>advance<sp/>your<sp/>level<sp/>of<sp/>enjoyment<sp/>and<sp/>testing<sp/>bliss.</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googlemock/docs/v1_5/ForDummies.md"/>
+  </compounddef>
+</doxygen>

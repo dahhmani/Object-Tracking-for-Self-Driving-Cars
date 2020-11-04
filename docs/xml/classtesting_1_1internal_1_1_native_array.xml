@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_native_array" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::NativeArray</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Element</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classtesting_1_1internal_1_1_native_array_1ac1cedc14f45f7b5e3a4c91f2e39b700f" prot="private" static="no">
+        <name>@1</name>
+        <enumvalue id="classtesting_1_1internal_1_1_native_array_1ac1cedc14f45f7b5e3a4c91f2e39b700fa3be52e24b6c1558a819baf99922f9296" prot="private">
+          <name>kCheckTypeIsNotConstOrAReference</name>
+          <initializer>= StaticAssertTypeEqHelper&lt;
+        Element, GTEST_REMOVE_REFERENCE_AND_CONST_(Element)&gt;::value</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1071" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1071" bodyend="1074"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_native_array_1a12216d686e16e4cc63d952fada5b2ba9" prot="public" static="no">
+        <type>Element</type>
+        <definition>typedef Element testing::internal::NativeArray&lt; Element &gt;::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1037" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1037" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_native_array_1ac1301a57977b57a1ad013e4e25fc2a72" prot="public" static="no">
+        <type>Element *</type>
+        <definition>typedef Element* testing::internal::NativeArray&lt; Element &gt;::iterator</definition>
+        <argsstring></argsstring>
+        <name>iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1038" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1038" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_native_array_1a9ce7c8408460d7158a2870456d134557" prot="public" static="no">
+        <type>const Element *</type>
+        <definition>typedef const Element* testing::internal::NativeArray&lt; Element &gt;::const_iterator</definition>
+        <argsstring></argsstring>
+        <name>const_iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1039" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1039" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_native_array_1adadc025fbbbd43904d4036991019f18f" prot="private" static="no" mutable="no">
+        <type>const Element *</type>
+        <definition>const Element* testing::internal::NativeArray&lt; Element &gt;::array_</definition>
+        <argsstring></argsstring>
+        <name>array_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1092" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1092" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_native_array_1aa7e4251de39aaa75f697f0eaeedbf06e" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t testing::internal::NativeArray&lt; Element &gt;::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1093" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1093" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_native_array_1addd7442a10398a60215a9989bcbd8078" prot="private" static="no" mutable="no">
+        <type>void(NativeArray::*</type>
+        <definition>void(NativeArray::* testing::internal::NativeArray&lt; Element &gt;::clone_) (const Element *, size_t)</definition>
+        <argsstring>)(const Element *, size_t)</argsstring>
+        <name>clone_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1094" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1094" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_native_array_1a52b3689c62532703d11e9d82939a7141" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::NativeArray&lt; Element &gt;::NativeArray</definition>
+        <argsstring>(const Element *array, size_t count, RelationToSourceReference)</argsstring>
+        <name>NativeArray</name>
+        <param>
+          <type>const Element *</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1_relation_to_source_reference" kindref="compound">RelationToSourceReference</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1042" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1042" bodyend="1044"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_native_array_1ac184ee5741af5be3402213819c834405" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::NativeArray&lt; Element &gt;::NativeArray</definition>
+        <argsstring>(const Element *array, size_t count, RelationToSourceCopy)</argsstring>
+        <name>NativeArray</name>
+        <param>
+          <type>const Element *</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1_relation_to_source_copy" kindref="compound">RelationToSourceCopy</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1047" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1047" bodyend="1049"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_native_array_1abb346ac3040f5da733f594cc2d5958bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::NativeArray&lt; Element &gt;::NativeArray</definition>
+        <argsstring>(const NativeArray &amp;rhs)</argsstring>
+        <name>NativeArray</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1_native_array" kindref="compound">NativeArray</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1052" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1052" bodyend="1054"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_native_array_1a55ab5948d473a487303dcf6e02ad1f60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::NativeArray&lt; Element &gt;::~NativeArray</definition>
+        <argsstring>()</argsstring>
+        <name>~NativeArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1056" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1056" bodyend="1059"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_native_array_1af96a4a5ca0cdd5d163c47a081f08bd89" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t testing::internal::NativeArray&lt; Element &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1062" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1062" bodyend="1062"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_native_array_1a3046d93cfa23097e7b7c91f5f982dc78" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>const_iterator testing::internal::NativeArray&lt; Element &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1063" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1063" bodyend="1063"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_native_array_1ae1cda748e49c6906421c6183c4d07c5a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>const_iterator testing::internal::NativeArray&lt; Element &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1064" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1064" bodyend="1064"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_native_array_1a81b90f5739ed812610e68dc34c9e3850" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::NativeArray&lt; Element &gt;::operator==</definition>
+        <argsstring>(const NativeArray &amp;rhs) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1_native_array" kindref="compound">NativeArray</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1065" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1065" bodyend="1068"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_native_array_1a8c0069cc09f559785fe4923fc118056f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::NativeArray&lt; Element &gt;::InitCopy</definition>
+        <argsstring>(const Element *array, size_t a_size)</argsstring>
+        <name>InitCopy</name>
+        <param>
+          <type>const Element *</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>a_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1077" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1077" bodyend="1083"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_native_array_1ac6ad6d79e17e2c98a9d4d684afcb7f79" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::NativeArray&lt; Element &gt;::InitRef</definition>
+        <argsstring>(const Element *array, size_t a_size)</argsstring>
+        <name>InitRef</name>
+        <param>
+          <type>const Element *</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>a_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1086" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1086" bodyend="1090"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_native_array_1a6633f3eab6947d4502fb1c69f95be66e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::NativeArray&lt; Element &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(NativeArray)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_native_array" kindref="compound">NativeArray</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1096" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="1034" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="1034" bodyend="1097"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_native_array_1adadc025fbbbd43904d4036991019f18f" prot="private" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>array_</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1a3046d93cfa23097e7b7c91f5f982dc78" prot="public" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>begin</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1addd7442a10398a60215a9989bcbd8078" prot="private" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>clone_</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1a9ce7c8408460d7158a2870456d134557" prot="public" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>const_iterator</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1ae1cda748e49c6906421c6183c4d07c5a" prot="public" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>end</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1a6633f3eab6947d4502fb1c69f95be66e" prot="private" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1a8c0069cc09f559785fe4923fc118056f" prot="private" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>InitCopy</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1ac6ad6d79e17e2c98a9d4d684afcb7f79" prot="private" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>InitRef</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1ac1301a57977b57a1ad013e4e25fc2a72" prot="public" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>iterator</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1ac1cedc14f45f7b5e3a4c91f2e39b700fa3be52e24b6c1558a819baf99922f9296" prot="private" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>kCheckTypeIsNotConstOrAReference</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1a52b3689c62532703d11e9d82939a7141" prot="public" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>NativeArray</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1ac184ee5741af5be3402213819c834405" prot="public" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>NativeArray</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1abb346ac3040f5da733f594cc2d5958bc" prot="public" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>NativeArray</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1a81b90f5739ed812610e68dc34c9e3850" prot="public" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>operator==</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1af96a4a5ca0cdd5d163c47a081f08bd89" prot="public" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>size</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1aa7e4251de39aaa75f697f0eaeedbf06e" prot="private" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>size_</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1a12216d686e16e4cc63d952fada5b2ba9" prot="public" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>value_type</name></member>
+      <member refid="classtesting_1_1internal_1_1_native_array_1a55ab5948d473a487303dcf6e02ad1f60" prot="public" virt="non-virtual"><scope>testing::internal::NativeArray</scope><name>~NativeArray</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

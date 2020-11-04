@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacecpp_1_1utils" kind="namespace" language="Python">
+    <compoundname>cpp::utils</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="utils_8py_1a4881c422e2e8cfc2e4f716b6f7bb0b58" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string cpp::utils.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;nnorwitz@google.com (Neal Norwitz)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/utils.py" line="20" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/utils.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="utils_8py_1aa59cfd61e9b0495b717753e45fe9d201" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cpp::utils.DEBUG</definition>
+        <argsstring></argsstring>
+        <name>DEBUG</name>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/utils.py" line="27" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/utils.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="utils_8py_1a4258aa53673d101d6f57320ec9a3c3a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.utils.ReadFile</definition>
+        <argsstring>(filename, print_error=True)</argsstring>
+        <name>ReadFile</name>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <param>
+          <type>print_error</type>
+          <defname>print_error</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the contents of a file.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/utils.py" line="30" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/utils.py" bodystart="30" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

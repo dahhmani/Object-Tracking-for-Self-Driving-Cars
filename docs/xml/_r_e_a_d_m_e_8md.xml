@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">[![License:<sp/>MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Pedestrian<sp/>Tracker<sp/>for<sp/>Self-Driving<sp/>Cars</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Authors</highlight></codeline>
+<codeline><highlight class="normal">Mahmoud<sp/>Dahmani<sp/>(Driver)<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">Aditya<sp/>Khopkar<sp/>(Navigator)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Build</highlight></codeline>
+<codeline><highlight class="normal">Run<sp/>the<sp/>following<sp/>commands<sp/>in<sp/>a<sp/>new<sp/>terminal:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>clone<sp/>--recursive<sp/>https://github.com/dahhmani/Object-Tracking-for-Self-Driving-Cars</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>&lt;path<sp/>to<sp/>repository&gt;/scripts/</highlight></codeline>
+<codeline><highlight class="normal">sh<sp/>download_pretrained_model.sh</highlight></codeline>
+<codeline><highlight class="normal">sh<sp/>build.sh</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Run</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>App</highlight></codeline>
+<codeline><highlight class="normal">Run<sp/>the<sp/>following<sp/>commands<sp/>in<sp/>a<sp/>new<sp/>terminal:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>&lt;path<sp/>to<sp/>repository&gt;/scripts/</highlight></codeline>
+<codeline><highlight class="normal">sh<sp/>run_app.sh</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Tests</highlight></codeline>
+<codeline><highlight class="normal">Run<sp/>the<sp/>following<sp/>commands<sp/>in<sp/>a<sp/>new<sp/>terminal:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>&lt;path<sp/>to<sp/>repository&gt;/scripts/</highlight></codeline>
+<codeline><highlight class="normal">sh<sp/>run_tests.sh</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Agile<sp/>Iterative<sp/>Process<sp/>(AIP)</highlight></codeline>
+<codeline><highlight class="normal">AIP<sp/>was<sp/>followed<sp/>through<sp/>this<sp/>project.<sp/>The<sp/>spreadsheet<sp/>for<sp/>AIP<sp/>can<sp/>be<sp/>found<sp/>[here](https://docs.google.com/spreadsheets/d/1BaOfv9Mm0KZr2UOX5iRpPzrG3YCumrxETiyOKJdlnB4/edit?usp=sharing)<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Sprint<sp/>1<sp/>Presentation</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>authors&apos;<sp/>video<sp/>for<sp/>a<sp/>walkthrough<sp/>through<sp/>sprint<sp/>1<sp/>can<sp/>be<sp/>found<sp/>[here](https://drive.google.com/drive/folders/1pAYf5VVa0utqFDkQDwOQhmljQUaqd09Y?usp=sharing)</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

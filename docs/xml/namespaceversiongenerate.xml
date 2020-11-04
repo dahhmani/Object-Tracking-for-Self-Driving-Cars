@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespaceversiongenerate" kind="namespace" language="Python">
+    <compoundname>versiongenerate</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="versiongenerate_8py_1a68af424183a162a61507cdc378cf255e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>versiongenerate.input_dir</definition>
+        <argsstring></argsstring>
+        <name>input_dir</name>
+        <initializer>=  sys.argv[1]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" line="60" column="1" bodyfile="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="versiongenerate_8py_1aab714e0aa9036025ba7c83eb7422c567" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>versiongenerate.output_dir</definition>
+        <argsstring></argsstring>
+        <name>output_dir</name>
+        <initializer>=  sys.argv[2]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" line="61" column="1" bodyfile="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="versiongenerate_8py_1afdfd8d6de9b62e742923b2b3326798e6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>versiongenerate.config_file</definition>
+        <argsstring></argsstring>
+        <name>config_file</name>
+        <initializer>=  open(&quot;%s/configure.ac&quot; % input_dir, &apos;r&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" line="64" column="1" bodyfile="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="versiongenerate_8py_1a5656c48d43f7e869041b6a30c124702e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int versiongenerate.buffer_size</definition>
+        <argsstring></argsstring>
+        <name>buffer_size</name>
+        <initializer>=  1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" line="65" column="1" bodyfile="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="versiongenerate_8py_1a88cc36d80d757546e04817490ebb0640" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>versiongenerate.opening_string</definition>
+        <argsstring></argsstring>
+        <name>opening_string</name>
+        <initializer>=  config_file.read(buffer_size)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" line="66" column="1" bodyfile="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="versiongenerate_8py_1a83861e707250395976fdfee3396a0fff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>versiongenerate.version_expression</definition>
+        <argsstring></argsstring>
+        <name>version_expression</name>
+        <initializer>=  re.compile(r&quot;AC_INIT\(.*?\[(\d+)\.(\d+)\.(\d+)\].*?\)&quot;,
+                                re.DOTALL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" line="75" column="1" bodyfile="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="versiongenerate_8py_1a0ce22d4ba772e519b000413a3bf5445c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>versiongenerate.version_values</definition>
+        <argsstring></argsstring>
+        <name>version_values</name>
+        <initializer>=  version_expression.search(opening_string)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" line="77" column="1" bodyfile="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="versiongenerate_8py_1a4b536109523f1bc805806f8d76ca34ac" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>versiongenerate.major_version</definition>
+        <argsstring></argsstring>
+        <name>major_version</name>
+        <initializer>=  version_values.group(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" line="78" column="1" bodyfile="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="versiongenerate_8py_1af8027cbccfcda6a243f0544cc3c08b28" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>versiongenerate.minor_version</definition>
+        <argsstring></argsstring>
+        <name>minor_version</name>
+        <initializer>=  version_values.group(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" line="79" column="1" bodyfile="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="versiongenerate_8py_1aa92fb32c5f03f516f3b6224c620b66e4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>versiongenerate.fix_version</definition>
+        <argsstring></argsstring>
+        <name>fix_version</name>
+        <initializer>=  version_values.group(3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" line="80" column="1" bodyfile="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="versiongenerate_8py_1aa7a8a587902d8dc493945992ec3fcf60" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string versiongenerate.file_data</definition>
+        <argsstring></argsstring>
+        <name>file_data</name>
+        <initializer>=  &quot;&quot;&quot;//
+// DO NOT MODIFY THIS FILE (but you can delete it)
+//
+// This file is autogenerated by the versiongenerate.py script. This script
+// is executed in a &quot;Run Script&quot; build phase when creating gtest.framework. This
+// header file is not used during compilation of C-source. Rather, it simply
+// defines some version strings for substitution in the Info.plist. Because of
+// this, we are not not restricted to C-syntax nor are we using include guards.
+//
+
+#define GTEST_VERSIONINFO_SHORT %s.%s
+#define GTEST_VERSIONINFO_LONG %s.%s.%s
+
+&quot;&quot;&quot; % (major_version, minor_version, major_version, minor_version, fix_version)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" line="84" column="1" bodyfile="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="versiongenerate_8py_1a3cb3deeb1538014cd32e4253fe298e27" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>versiongenerate.version_file</definition>
+        <argsstring></argsstring>
+        <name>version_file</name>
+        <initializer>=  open(&quot;%s/Version.h&quot; % output_dir, &apos;w&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" line="98" column="1" bodyfile="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/xcode/Scripts/versiongenerate.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

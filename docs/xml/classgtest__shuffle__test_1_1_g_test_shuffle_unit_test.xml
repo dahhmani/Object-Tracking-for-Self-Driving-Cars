@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test" kind="class" language="Python" prot="public">
+    <compoundname>gtest_shuffle_test::GTestShuffleUnitTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1adf9841ae9c86eaafc3c3f7c9690c7bd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_shuffle_test.GTestShuffleUnitTest.setUp</definition>
+        <argsstring>(self)</argsstring>
+        <name>setUp</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_shuffle_test.py" line="172" column="1" bodyfile="vendor/googletest/googletest/test/gtest_shuffle_test.py" bodystart="172" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1aafc33d6129c37043ef5c95dbe766a8db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_shuffle_test.GTestShuffleUnitTest.testShufflePreservesNumberOfTests</definition>
+        <argsstring>(self)</argsstring>
+        <name>testShufflePreservesNumberOfTests</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_shuffle_test.py" line="175" column="1" bodyfile="vendor/googletest/googletest/test/gtest_shuffle_test.py" bodystart="175" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1a0ba25ee553b62281e16b6a28873abc01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_shuffle_test.GTestShuffleUnitTest.testShuffleChangesTestOrder</definition>
+        <argsstring>(self)</argsstring>
+        <name>testShuffleChangesTestOrder</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_shuffle_test.py" line="181" column="1" bodyfile="vendor/googletest/googletest/test/gtest_shuffle_test.py" bodystart="181" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1a8a82320ea310d1e3660bef2efb665bd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_shuffle_test.GTestShuffleUnitTest.testShuffleChangesTestCaseOrder</definition>
+        <argsstring>(self)</argsstring>
+        <name>testShuffleChangesTestCaseOrder</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_shuffle_test.py" line="189" column="1" bodyfile="vendor/googletest/googletest/test/gtest_shuffle_test.py" bodystart="189" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1a7537baa50e9e14b430fb80eaf4ea18f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_shuffle_test.GTestShuffleUnitTest.testShuffleDoesNotRepeatTest</definition>
+        <argsstring>(self)</argsstring>
+        <name>testShuffleDoesNotRepeatTest</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_shuffle_test.py" line="202" column="1" bodyfile="vendor/googletest/googletest/test/gtest_shuffle_test.py" bodystart="202" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1aeea745f7ce2ab19a067c5cde6e083ba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_shuffle_test.GTestShuffleUnitTest.testShuffleDoesNotCreateNewTest</definition>
+        <argsstring>(self)</argsstring>
+        <name>testShuffleDoesNotCreateNewTest</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_shuffle_test.py" line="216" column="1" bodyfile="vendor/googletest/googletest/test/gtest_shuffle_test.py" bodystart="216" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1ab9e25e62817f7cdbd32833f9b2be5794" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_shuffle_test.GTestShuffleUnitTest.testShuffleIncludesAllTests</definition>
+        <argsstring>(self)</argsstring>
+        <name>testShuffleIncludesAllTests</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_shuffle_test.py" line="226" column="1" bodyfile="vendor/googletest/googletest/test/gtest_shuffle_test.py" bodystart="226" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1a6fa91b262595e35bd3e9b52e188dc634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_shuffle_test.GTestShuffleUnitTest.testShuffleLeavesDeathTestsAtFront</definition>
+        <argsstring>(self)</argsstring>
+        <name>testShuffleLeavesDeathTestsAtFront</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_shuffle_test.py" line="236" column="1" bodyfile="vendor/googletest/googletest/test/gtest_shuffle_test.py" bodystart="236" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1a34bfc9696191f4c2782327e1e35ae902" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_shuffle_test.GTestShuffleUnitTest.testShuffleDoesNotInterleaveTestCases</definition>
+        <argsstring>(self)</argsstring>
+        <name>testShuffleDoesNotInterleaveTestCases</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_shuffle_test.py" line="255" column="1" bodyfile="vendor/googletest/googletest/test/gtest_shuffle_test.py" bodystart="255" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1a77b83a9870ad8d68524e1177f5320fb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_shuffle_test.GTestShuffleUnitTest.testShuffleRestoresOrderAfterEachIteration</definition>
+        <argsstring>(self)</argsstring>
+        <name>testShuffleRestoresOrderAfterEachIteration</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_shuffle_test.py" line="261" column="1" bodyfile="vendor/googletest/googletest/test/gtest_shuffle_test.py" bodystart="261" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1ada78bae27e0d82d07bd663d53a36552b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_shuffle_test.GTestShuffleUnitTest.testShuffleGeneratesNewOrderInEachIteration</definition>
+        <argsstring>(self)</argsstring>
+        <name>testShuffleGeneratesNewOrderInEachIteration</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_shuffle_test.py" line="293" column="1" bodyfile="vendor/googletest/googletest/test/gtest_shuffle_test.py" bodystart="293" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1abd33c5ef01ce6d1d025ebcc816d47c19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_shuffle_test.GTestShuffleUnitTest.testShuffleShardedTestsPreservesPartition</definition>
+        <argsstring>(self)</argsstring>
+        <name>testShuffleShardedTestsPreservesPartition</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_shuffle_test.py" line="305" column="1" bodyfile="vendor/googletest/googletest/test/gtest_shuffle_test.py" bodystart="305" bodyend="323"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1a121df1a9c3bf7c713ae4bcd18d0aacb8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_shuffle_test.GTestShuffleUnitTest._VerifyTestCasesDoNotInterleave</definition>
+        <argsstring>(self, tests)</argsstring>
+        <name>_VerifyTestCasesDoNotInterleave</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tests</type>
+          <defname>tests</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_shuffle_test.py" line="245" column="1" bodyfile="vendor/googletest/googletest/test/gtest_shuffle_test.py" bodystart="245" bodyend="254"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Tests test shuffling.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1029">
+        <label>gtest_shuffle_test.GTestShuffleUnitTest</label>
+        <link refid="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test"/>
+        <childnode refid="1030" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1030">
+        <label>TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1031">
+        <label>gtest_shuffle_test.GTestShuffleUnitTest</label>
+        <link refid="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test"/>
+        <childnode refid="1032" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1032">
+        <label>TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_shuffle_test.py" line="169" column="1" bodyfile="vendor/googletest/googletest/test/gtest_shuffle_test.py" bodystart="169" bodyend="324"/>
+    <listofallmembers>
+      <member refid="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1a121df1a9c3bf7c713ae4bcd18d0aacb8" prot="private" virt="non-virtual"><scope>gtest_shuffle_test::GTestShuffleUnitTest</scope><name>_VerifyTestCasesDoNotInterleave</name></member>
+      <member refid="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1adf9841ae9c86eaafc3c3f7c9690c7bd8" prot="public" virt="non-virtual"><scope>gtest_shuffle_test::GTestShuffleUnitTest</scope><name>setUp</name></member>
+      <member refid="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1a8a82320ea310d1e3660bef2efb665bd2" prot="public" virt="non-virtual"><scope>gtest_shuffle_test::GTestShuffleUnitTest</scope><name>testShuffleChangesTestCaseOrder</name></member>
+      <member refid="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1a0ba25ee553b62281e16b6a28873abc01" prot="public" virt="non-virtual"><scope>gtest_shuffle_test::GTestShuffleUnitTest</scope><name>testShuffleChangesTestOrder</name></member>
+      <member refid="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1aeea745f7ce2ab19a067c5cde6e083ba7" prot="public" virt="non-virtual"><scope>gtest_shuffle_test::GTestShuffleUnitTest</scope><name>testShuffleDoesNotCreateNewTest</name></member>
+      <member refid="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1a34bfc9696191f4c2782327e1e35ae902" prot="public" virt="non-virtual"><scope>gtest_shuffle_test::GTestShuffleUnitTest</scope><name>testShuffleDoesNotInterleaveTestCases</name></member>
+      <member refid="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1a7537baa50e9e14b430fb80eaf4ea18f6" prot="public" virt="non-virtual"><scope>gtest_shuffle_test::GTestShuffleUnitTest</scope><name>testShuffleDoesNotRepeatTest</name></member>
+      <member refid="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1ada78bae27e0d82d07bd663d53a36552b" prot="public" virt="non-virtual"><scope>gtest_shuffle_test::GTestShuffleUnitTest</scope><name>testShuffleGeneratesNewOrderInEachIteration</name></member>
+      <member refid="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1ab9e25e62817f7cdbd32833f9b2be5794" prot="public" virt="non-virtual"><scope>gtest_shuffle_test::GTestShuffleUnitTest</scope><name>testShuffleIncludesAllTests</name></member>
+      <member refid="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1a6fa91b262595e35bd3e9b52e188dc634" prot="public" virt="non-virtual"><scope>gtest_shuffle_test::GTestShuffleUnitTest</scope><name>testShuffleLeavesDeathTestsAtFront</name></member>
+      <member refid="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1aafc33d6129c37043ef5c95dbe766a8db" prot="public" virt="non-virtual"><scope>gtest_shuffle_test::GTestShuffleUnitTest</scope><name>testShufflePreservesNumberOfTests</name></member>
+      <member refid="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1a77b83a9870ad8d68524e1177f5320fb0" prot="public" virt="non-virtual"><scope>gtest_shuffle_test::GTestShuffleUnitTest</scope><name>testShuffleRestoresOrderAfterEachIteration</name></member>
+      <member refid="classgtest__shuffle__test_1_1_g_test_shuffle_unit_test_1abd33c5ef01ce6d1d025ebcc816d47c19" prot="public" virt="non-virtual"><scope>gtest_shuffle_test::GTestShuffleUnitTest</scope><name>testShuffleShardedTestsPreservesPartition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1internal_1_1_cast_and_append_transform" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::CastAndAppendTransform</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Target</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtesting_1_1internal_1_1_cast_and_append_transform_1a90e722b0df4f0e6368bd89b848b71f45" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Arg</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; Target &gt;</type>
+        <definition>Matcher&lt;Target&gt; testing::internal::CastAndAppendTransform&lt; Target &gt;::operator()</definition>
+        <argsstring>(const Arg &amp;a) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const Arg &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3444" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3444" bodyend="3446"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3442" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3442" bodyend="3447"/>
+    <listofallmembers>
+      <member refid="structtesting_1_1internal_1_1_cast_and_append_transform_1a90e722b0df4f0e6368bd89b848b71f45" prot="public" virt="non-virtual"><scope>testing::internal::CastAndAppendTransform</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

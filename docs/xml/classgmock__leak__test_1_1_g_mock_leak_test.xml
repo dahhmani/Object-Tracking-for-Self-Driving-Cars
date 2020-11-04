@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgmock__leak__test_1_1_g_mock_leak_test" kind="class" language="Python" prot="public">
+    <compoundname>gmock_leak_test::GMockLeakTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgmock__leak__test_1_1_g_mock_leak_test_1ad87d271de7b3f106e51272d6e9139c76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_leak_test.GMockLeakTest.testCatchesLeakedMockByDefault</definition>
+        <argsstring>(self)</argsstring>
+        <name>testCatchesLeakedMockByDefault</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock_leak_test.py" line="58" column="1" bodyfile="vendor/googletest/googlemock/test/gmock_leak_test.py" bodystart="58" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classgmock__leak__test_1_1_g_mock_leak_test_1a3107bf5a603558ab2d97d88fb5589951" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_leak_test.GMockLeakTest.testDoesNotCatchLeakedMockWhenDisabled</definition>
+        <argsstring>(self)</argsstring>
+        <name>testDoesNotCatchLeakedMockWhenDisabled</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock_leak_test.py" line="68" column="1" bodyfile="vendor/googletest/googlemock/test/gmock_leak_test.py" bodystart="68" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classgmock__leak__test_1_1_g_mock_leak_test_1a78f4040a392d183597f71d92da8c1246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_leak_test.GMockLeakTest.testCatchesLeakedMockWhenEnabled</definition>
+        <argsstring>(self)</argsstring>
+        <name>testCatchesLeakedMockWhenEnabled</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock_leak_test.py" line="80" column="1" bodyfile="vendor/googletest/googlemock/test/gmock_leak_test.py" bodystart="80" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classgmock__leak__test_1_1_g_mock_leak_test_1ab19cf302ea06e1b186bd6ab951d9161e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_leak_test.GMockLeakTest.testCatchesLeakedMockWhenEnabledWithExplictFlagValue</definition>
+        <argsstring>(self)</argsstring>
+        <name>testCatchesLeakedMockWhenEnabledWithExplictFlagValue</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock_leak_test.py" line="92" column="1" bodyfile="vendor/googletest/googlemock/test/gmock_leak_test.py" bodystart="92" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classgmock__leak__test_1_1_g_mock_leak_test_1a09465b2bfde98834e4bb9563c035f034" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gmock_leak_test.GMockLeakTest.testCatchesMultipleLeakedMocks</definition>
+        <argsstring>(self)</argsstring>
+        <name>testCatchesMultipleLeakedMocks</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock_leak_test.py" line="99" column="1" bodyfile="vendor/googletest/googlemock/test/gmock_leak_test.py" bodystart="99" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="961">
+        <label>gmock_leak_test.GMockLeakTest</label>
+        <link refid="classgmock__leak__test_1_1_g_mock_leak_test"/>
+        <childnode refid="962" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="962">
+        <label>gmock_test_utils::TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="963">
+        <label>gmock_leak_test.GMockLeakTest</label>
+        <link refid="classgmock__leak__test_1_1_g_mock_leak_test"/>
+        <childnode refid="964" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="964">
+        <label>gmock_test_utils::TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/test/gmock_leak_test.py" line="56" column="1" bodyfile="vendor/googletest/googlemock/test/gmock_leak_test.py" bodystart="56" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classgmock__leak__test_1_1_g_mock_leak_test_1ad87d271de7b3f106e51272d6e9139c76" prot="public" virt="non-virtual"><scope>gmock_leak_test::GMockLeakTest</scope><name>testCatchesLeakedMockByDefault</name></member>
+      <member refid="classgmock__leak__test_1_1_g_mock_leak_test_1a78f4040a392d183597f71d92da8c1246" prot="public" virt="non-virtual"><scope>gmock_leak_test::GMockLeakTest</scope><name>testCatchesLeakedMockWhenEnabled</name></member>
+      <member refid="classgmock__leak__test_1_1_g_mock_leak_test_1ab19cf302ea06e1b186bd6ab951d9161e" prot="public" virt="non-virtual"><scope>gmock_leak_test::GMockLeakTest</scope><name>testCatchesLeakedMockWhenEnabledWithExplictFlagValue</name></member>
+      <member refid="classgmock__leak__test_1_1_g_mock_leak_test_1a09465b2bfde98834e4bb9563c035f034" prot="public" virt="non-virtual"><scope>gmock_leak_test::GMockLeakTest</scope><name>testCatchesMultipleLeakedMocks</name></member>
+      <member refid="classgmock__leak__test_1_1_g_mock_leak_test_1a3107bf5a603558ab2d97d88fb5589951" prot="public" virt="non-virtual"><scope>gmock_leak_test::GMockLeakTest</scope><name>testDoesNotCatchLeakedMockWhenDisabled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

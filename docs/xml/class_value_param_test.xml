@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_value_param_test" kind="class" language="C++" prot="public">
+    <compoundname>ValueParamTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">testing::TestWithParam&lt; int &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">testing::TestWithParam&lt; MyType &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2464">
+        <label>testing::TestWithParam&lt; MyType &gt;</label>
+      </node>
+      <node id="2463">
+        <label>testing::TestWithParam&lt; int &gt;</label>
+      </node>
+      <node id="2462">
+        <label>ValueParamTest</label>
+        <link refid="class_value_param_test"/>
+        <childnode refid="2463" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2464" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2467">
+        <label>testing::TestWithParam&lt; MyType &gt;</label>
+      </node>
+      <node id="2466">
+        <label>testing::TestWithParam&lt; int &gt;</label>
+      </node>
+      <node id="2465">
+        <label>ValueParamTest</label>
+        <link refid="class_value_param_test"/>
+        <childnode refid="2466" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2467" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest_.cc" line="94" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest_.cc" bodystart="94" bodyend="95"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

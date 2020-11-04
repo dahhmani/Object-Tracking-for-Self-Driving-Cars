@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1internal_1_1_transform_tuple_values_helper_1_1_iterate_over_tuple" kind="struct" language="C++" prot="private">
+    <compoundname>testing::internal::TransformTupleValuesHelper::IterateOverTuple</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Tup</type>
+      </param>
+      <param>
+        <type>size_t</type>
+        <declname>kRemainingSize</declname>
+        <defname>kRemainingSize</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtesting_1_1internal_1_1_transform_tuple_values_helper_1_1_iterate_over_tuple_1a2ce58379c68390ce846d6e7de1457411" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>OutIter</type>
+        <definition>OutIter testing::internal::TransformTupleValuesHelper&lt; Tuple, Func, OutIter &gt;::IterateOverTuple&lt; Tup, kRemainingSize &gt;::operator()</definition>
+        <argsstring>(Func f, const Tup &amp;t, OutIter out) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>Func</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const Tup &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>OutIter</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="836" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="836" bodyend="839"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="835" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="835" bodyend="840"/>
+    <listofallmembers>
+      <member refid="structtesting_1_1internal_1_1_transform_tuple_values_helper_1_1_iterate_over_tuple_1a2ce58379c68390ce846d6e7de1457411" prot="public" virt="non-virtual"><scope>testing::internal::TransformTupleValuesHelper::IterateOverTuple</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

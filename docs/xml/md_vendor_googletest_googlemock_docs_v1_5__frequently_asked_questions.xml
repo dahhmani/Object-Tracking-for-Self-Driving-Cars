@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="md_vendor_googletest_googlemock_docs_v1_5__frequently_asked_questions" kind="page">
+    <compoundname>md_vendor_googletest_googlemock_docs_v1_5_FrequentlyAskedQuestions</compoundname>
+    <title>FrequentlyAskedQuestions</title>
+    <detaileddescription>
+<para>Please send your questions to the <ulink url="http://groups.google.com/group/googlemock">googlemock</ulink> discussion group. If you need help with compiler errors, make sure you have tried Google Mock Doctor first.</para><para><heading level="2">I wrote some matchers. After I upgraded to a new version of Google <ref refid="class_mock" kindref="compound">Mock</ref>, they no longer compile. What&apos;s going on?</heading>
+</para><para>After version 1.4.0 of Google <ref refid="class_mock" kindref="compound">Mock</ref> was released, we had an idea on how to make it easier to write matchers that can generate informative messages efficiently. We experimented with this idea and liked what we saw. Therefore we decided to implement it.</para><para>Unfortunately, this means that if you have defined your own matchers by implementing <computeroutput>MatcherInterface</computeroutput> or using <computeroutput>MakePolymorphicMatcher()</computeroutput>, your definitions will no longer compile. Matchers defined using the <computeroutput>MATCHER*</computeroutput> family of macros are not affected.</para><para>Sorry for the hassle if your matchers are affected. We believe it&apos;s in everyone&apos;s long-term interest to make this change sooner than later. Fortunately, it&apos;s usually not hard to migrate an existing matcher to the new API. Here&apos;s what you need to do:</para><para>If you wrote your matcher like this: <programlisting><codeline><highlight class="normal">//<sp/>Old<sp/>matcher<sp/>definition<sp/>that<sp/>doesn&apos;t<sp/>work<sp/>with<sp/>the<sp/>latest</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::MatcherInterface;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>MyWonderfulMatcher<sp/>:<sp/>public<sp/>MatcherInterface&lt;MyType&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>bool<sp/>Matches(MyType<sp/>value)<sp/>const<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Returns<sp/>true<sp/>if<sp/>value<sp/>matches.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>value.GetFoo()<sp/>&gt;<sp/>5;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para><para>you&apos;ll need to change it to: <programlisting><codeline><highlight class="normal">//<sp/>New<sp/>matcher<sp/>definition<sp/>that<sp/>works<sp/>with<sp/>the<sp/>latest<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::MatcherInterface;</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::MatchResultListener;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>MyWonderfulMatcher<sp/>:<sp/>public<sp/>MatcherInterface&lt;MyType&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>bool<sp/>MatchAndExplain(MyType<sp/>value,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MatchResultListener*<sp/>listener)<sp/>const<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Returns<sp/>true<sp/>if<sp/>value<sp/>matches.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>value.GetFoo()<sp/>&gt;<sp/>5;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> (i.e. rename <computeroutput>Matches()</computeroutput> to <computeroutput>MatchAndExplain()</computeroutput> and give it a second argument of type <computeroutput>MatchResultListener*</computeroutput>.)</para><para>If you were also using <computeroutput>ExplainMatchResultTo()</computeroutput> to improve the matcher message: <programlisting><codeline><highlight class="normal">//<sp/>Old<sp/>matcher<sp/>definition<sp/>that<sp/>doesn&apos;t<sp/>work<sp/>with<sp/>the<sp/>lastest</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::MatcherInterface;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>MyWonderfulMatcher<sp/>:<sp/>public<sp/>MatcherInterface&lt;MyType&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>bool<sp/>Matches(MyType<sp/>value)<sp/>const<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Returns<sp/>true<sp/>if<sp/>value<sp/>matches.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>value.GetFoo()<sp/>&gt;<sp/>5;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>void<sp/>ExplainMatchResultTo(MyType<sp/>value,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::std::ostream*<sp/>os)<sp/>const<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Prints<sp/>some<sp/>helpful<sp/>information<sp/>to<sp/>os<sp/>to<sp/>help</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>a<sp/>user<sp/>understand<sp/>why<sp/>value<sp/>matches<sp/>(or<sp/>doesn&apos;t<sp/>match).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*os<sp/>&lt;&lt;<sp/>&quot;the<sp/>Foo<sp/>property<sp/>is<sp/>&quot;<sp/>&lt;&lt;<sp/>value.GetFoo();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para><para>you should move the logic of <computeroutput>ExplainMatchResultTo()</computeroutput> into <computeroutput>MatchAndExplain()</computeroutput>, using the <computeroutput>MatchResultListener</computeroutput> argument where the <computeroutput>::std::ostream</computeroutput> was used: <programlisting><codeline><highlight class="normal">//<sp/>New<sp/>matcher<sp/>definition<sp/>that<sp/>works<sp/>with<sp/>the<sp/>latest<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::MatcherInterface;</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::MatchResultListener;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>MyWonderfulMatcher<sp/>:<sp/>public<sp/>MatcherInterface&lt;MyType&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>bool<sp/>MatchAndExplain(MyType<sp/>value,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MatchResultListener*<sp/>listener)<sp/>const<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Returns<sp/>true<sp/>if<sp/>value<sp/>matches.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*listener<sp/>&lt;&lt;<sp/>&quot;the<sp/>Foo<sp/>property<sp/>is<sp/>&quot;<sp/>&lt;&lt;<sp/>value.GetFoo();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>value.GetFoo()<sp/>&gt;<sp/>5;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para><para>If your matcher is defined using <computeroutput>MakePolymorphicMatcher()</computeroutput>: <programlisting><codeline><highlight class="normal">//<sp/>Old<sp/>matcher<sp/>definition<sp/>that<sp/>doesn&apos;t<sp/>work<sp/>with<sp/>the<sp/>latest</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::MakePolymorphicMatcher;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>MyGreatMatcher<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>bool<sp/>Matches(MyType<sp/>value)<sp/>const<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Returns<sp/>true<sp/>if<sp/>value<sp/>matches.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>value.GetBar()<sp/>&lt;<sp/>42;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">...<sp/>MakePolymorphicMatcher(MyGreatMatcher())<sp/>...</highlight></codeline>
+</programlisting></para><para>you should rename the <computeroutput>Matches()</computeroutput> method to <computeroutput>MatchAndExplain()</computeroutput> and add a <computeroutput>MatchResultListener*</computeroutput> argument (the same as what you need to do for matchers defined by implementing <computeroutput>MatcherInterface</computeroutput>): <programlisting><codeline><highlight class="normal">//<sp/>New<sp/>matcher<sp/>definition<sp/>that<sp/>works<sp/>with<sp/>the<sp/>latest<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::MakePolymorphicMatcher;</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::MatchResultListener;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>MyGreatMatcher<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>bool<sp/>MatchAndExplain(MyType<sp/>value,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MatchResultListener*<sp/>listener)<sp/>const<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Returns<sp/>true<sp/>if<sp/>value<sp/>matches.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>value.GetBar()<sp/>&lt;<sp/>42;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">...<sp/>MakePolymorphicMatcher(MyGreatMatcher())<sp/>...</highlight></codeline>
+</programlisting></para><para>If your polymorphic matcher uses <computeroutput>ExplainMatchResultTo()</computeroutput> for better failure messages: <programlisting><codeline><highlight class="normal">//<sp/>Old<sp/>matcher<sp/>definition<sp/>that<sp/>doesn&apos;t<sp/>work<sp/>with<sp/>the<sp/>latest</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::MakePolymorphicMatcher;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>MyGreatMatcher<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>bool<sp/>Matches(MyType<sp/>value)<sp/>const<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Returns<sp/>true<sp/>if<sp/>value<sp/>matches.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>value.GetBar()<sp/>&lt;<sp/>42;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>ExplainMatchResultTo(const<sp/>MyGreatMatcher&amp;<sp/>matcher,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MyType<sp/>value,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::std::ostream*<sp/>os)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>Prints<sp/>some<sp/>helpful<sp/>information<sp/>to<sp/>os<sp/>to<sp/>help</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>a<sp/>user<sp/>understand<sp/>why<sp/>value<sp/>matches<sp/>(or<sp/>doesn&apos;t<sp/>match).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*os<sp/>&lt;&lt;<sp/>&quot;the<sp/>Bar<sp/>property<sp/>is<sp/>&quot;<sp/>&lt;&lt;<sp/>value.GetBar();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">...<sp/>MakePolymorphicMatcher(MyGreatMatcher())<sp/>...</highlight></codeline>
+</programlisting></para><para>you&apos;ll need to move the logic inside <computeroutput>ExplainMatchResultTo()</computeroutput> to <computeroutput>MatchAndExplain()</computeroutput>: <programlisting><codeline><highlight class="normal">//<sp/>New<sp/>matcher<sp/>definition<sp/>that<sp/>works<sp/>with<sp/>the<sp/>latest<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::MakePolymorphicMatcher;</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>::testing::MatchResultListener;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>MyGreatMatcher<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>bool<sp/>MatchAndExplain(MyType<sp/>value,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MatchResultListener*<sp/>listener)<sp/>const<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Returns<sp/>true<sp/>if<sp/>value<sp/>matches.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*listener<sp/>&lt;&lt;<sp/>&quot;the<sp/>Bar<sp/>property<sp/>is<sp/>&quot;<sp/>&lt;&lt;<sp/>value.GetBar();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>value.GetBar()<sp/>&lt;<sp/>42;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">...<sp/>MakePolymorphicMatcher(MyGreatMatcher())<sp/>...</highlight></codeline>
+</programlisting></para><para>For more information, you can read these two recipes from the cookbook. As always, you are welcome to post questions on <computeroutput>googlemock@googlegroups.com</computeroutput> if you need any help.</para><para><heading level="2">When using Google <ref refid="class_mock" kindref="compound">Mock</ref>, do I have to use Google Test as the testing framework? I have my favorite testing framework and don&apos;t want to switch.</heading>
+</para><para>Google <ref refid="class_mock" kindref="compound">Mock</ref> works out of the box with Google Test. However, it&apos;s easy to configure it to work with any testing framework of your choice. Here is how.</para><para><heading level="2">How am I supposed to make sense of these horrible template errors?</heading>
+</para><para>If you are confused by the compiler errors gcc threw at you, try consulting the <emphasis>Google <ref refid="class_mock" kindref="compound">Mock</ref> Doctor</emphasis> tool first. What it does is to scan stdin for gcc error messages, and spit out diagnoses on the problems (we call them diseases) your code has.</para><para>To &quot;install&quot;, run command: <programlisting><codeline><highlight class="normal">alias<sp/>gmd=&apos;&lt;path<sp/>to<sp/>googlemock&gt;/scripts/gmock_doctor.py&apos;</highlight></codeline>
+</programlisting></para><para>To use it, do: <programlisting><codeline><highlight class="normal">&lt;your-favorite-build-command&gt;<sp/>&lt;your-test&gt;<sp/>2&gt;&amp;1<sp/>|<sp/>gmd</highlight></codeline>
+</programlisting></para><para>For example: <programlisting><codeline><highlight class="normal">make<sp/>my_test<sp/>2&gt;&amp;1<sp/>|<sp/>gmd</highlight></codeline>
+</programlisting></para><para>Or you can run <computeroutput>gmd</computeroutput> and copy-n-paste gcc&apos;s error messages to it.</para><para><heading level="2">Can I mock a variadic function?</heading>
+</para><para>You cannot mock a variadic function (i.e. a function taking ellipsis (<computeroutput>...</computeroutput>) arguments) directly in Google <ref refid="class_mock" kindref="compound">Mock</ref>.</para><para>The problem is that in general, there is <emphasis>no way</emphasis> for a mock object to know how many arguments are passed to the variadic method, and what the arguments&apos; types are. Only the <emphasis>author of the base class</emphasis> knows the protocol, and we cannot look into his head.</para><para>Therefore, to mock such a function, the <emphasis>user</emphasis> must teach the mock object how to figure out the number of arguments and their types. One way to do it is to provide overloaded versions of the function.</para><para>Ellipsis arguments are inherited from C and not really a C++ feature. They are unsafe to use and don&apos;t work with arguments that have constructors or destructors. Therefore we recommend to avoid them in C++ as much as possible.</para><para><heading level="2">MSVC gives me warning C4301 or C4373 when I define a mock method with a const parameter. Why?</heading>
+</para><para>If you compile this using Microsoft Visual C++ 2005 SP1: <programlisting><codeline><highlight class="normal">class<sp/>Foo<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>void<sp/>Bar(const<sp/>int<sp/>i)<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">class<sp/>MockFoo<sp/>:<sp/>public<sp/>Foo<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>MOCK_METHOD1(Bar,<sp/>void(const<sp/>int<sp/>i));</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> You may get the following warning: <programlisting><codeline><highlight class="normal">warning<sp/>C4301:<sp/>&apos;MockFoo::Bar&apos;:<sp/>overriding<sp/>virtual<sp/>function<sp/>only<sp/>differs<sp/>from<sp/>&apos;Foo::Bar&apos;<sp/>by<sp/>const/volatile<sp/>qualifier</highlight></codeline>
+</programlisting></para><para>This is a MSVC bug. The same code compiles fine with gcc ,for example. If you use Visual C++ 2008 SP1, you would get the warning: <programlisting><codeline><highlight class="normal">warning<sp/>C4373:<sp/>&apos;MockFoo::Bar&apos;:<sp/>virtual<sp/>function<sp/>overrides<sp/>&apos;Foo::Bar&apos;,<sp/>previous<sp/>versions<sp/>of<sp/>the<sp/>compiler<sp/>did<sp/>not<sp/>override<sp/>when<sp/>parameters<sp/>only<sp/>differed<sp/>by<sp/>const/volatile<sp/>qualifiers</highlight></codeline>
+</programlisting></para><para>In C++, if you <emphasis>declare</emphasis> a function with a <computeroutput>const</computeroutput> parameter, the <computeroutput>const</computeroutput> modifier is <emphasis>ignored</emphasis>. Therefore, the <computeroutput>Foo</computeroutput> base class above is equivalent to: <programlisting><codeline><highlight class="normal">class<sp/>Foo<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>virtual<sp/>void<sp/>Bar(int<sp/>i)<sp/>=<sp/>0;<sp/><sp/>//<sp/>int<sp/>or<sp/>const<sp/>int?<sp/><sp/>Makes<sp/>no<sp/>difference.</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para><para>In fact, you can <emphasis>declare</emphasis> Bar() with an <computeroutput>int</computeroutput> parameter, and <emphasis>define</emphasis> it with a <computeroutput>const int</computeroutput> parameter. The compiler will still match them up.</para><para>Since making a parameter <computeroutput>const</computeroutput> is meaningless in the method <emphasis>declaration</emphasis>, we recommend to remove it in both <computeroutput>Foo</computeroutput> and <computeroutput><ref refid="class_mock_foo" kindref="compound">MockFoo</ref></computeroutput>. That should workaround the VC bug.</para><para>Note that we are talking about the <emphasis>top-level</emphasis> <computeroutput>const</computeroutput> modifier here. If the function parameter is passed by pointer or reference, declaring the <emphasis>pointee</emphasis> or <emphasis>referee</emphasis> as <computeroutput>const</computeroutput> is still meaningful. For example, the following two declarations are <emphasis>not</emphasis> equivalent: <programlisting><codeline><highlight class="normal">void<sp/>Bar(int*<sp/>p);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Neither<sp/>p<sp/>nor<sp/>*p<sp/>is<sp/>const.</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>Bar(const<sp/>int*<sp/>p);<sp/><sp/>//<sp/>p<sp/>is<sp/>not<sp/>const,<sp/>but<sp/>*p<sp/>is.</highlight></codeline>
+</programlisting></para><para><heading level="2">I have a huge mock class, and Microsoft Visual C++ runs out of memory when compiling it. What can I do?</heading>
+</para><para>We&apos;ve noticed that when the <computeroutput>/clr</computeroutput> compiler flag is used, Visual C++ uses 5~6 times as much memory when compiling a mock class. We suggest to avoid <computeroutput>/clr</computeroutput> when compiling native C++ mocks.</para><para><heading level="2">I can&apos;t figure out why Google <ref refid="class_mock" kindref="compound">Mock</ref> thinks my expectations are not satisfied. What should I do?</heading>
+</para><para>You might want to run your test with <computeroutput>--gmock_verbose=info</computeroutput>. This flag lets Google <ref refid="class_mock" kindref="compound">Mock</ref> print a trace of every mock function call it receives. By studying the trace, you&apos;ll gain insights on why the expectations you set are not met.</para><para><heading level="2">How can I assert that a function is NEVER called?</heading>
+</para><para><programlisting><codeline><highlight class="normal">EXPECT_CALL(foo,<sp/>Bar(_))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.Times(0);</highlight></codeline>
+</programlisting></para><para><heading level="2">I have a failed test where Google <ref refid="class_mock" kindref="compound">Mock</ref> tells me TWICE that a particular expectation is not satisfied. Isn&apos;t this redundant?</heading>
+</para><para>When Google <ref refid="class_mock" kindref="compound">Mock</ref> detects a failure, it prints relevant information (the mock function arguments, the state of relevant expectations, and etc) to help the user debug. If another failure is detected, Google <ref refid="class_mock" kindref="compound">Mock</ref> will do the same, including printing the state of relevant expectations.</para><para>Sometimes an expectation&apos;s state didn&apos;t change between two failures, and you&apos;ll see the same description of the state twice. They are however <emphasis>not</emphasis> redundant, as they refer to <emphasis>different points in time</emphasis>. The fact they are the same <emphasis>is</emphasis> interesting information.</para><para><heading level="2">I get a heap check failure when using a mock object, but using a real object is fine. What can be wrong?</heading>
+</para><para>Does the class (hopefully a pure interface) you are mocking have a virtual destructor?</para><para>Whenever you derive from a base class, make sure its destructor is virtual. Otherwise Bad Things will happen. Consider the following code:</para><para><programlisting><codeline><highlight class="normal">class<sp/>Base<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>Not<sp/>virtual,<sp/>but<sp/>should<sp/>be.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>~Base()<sp/>{<sp/>...<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">class<sp/>Derived<sp/>:<sp/>public<sp/>Base<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/>private:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::string<sp/>value_;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Base*<sp/>p<sp/>=<sp/>new<sp/>Derived;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>delete<sp/>p;<sp/><sp/>//<sp/>Surprise!<sp/>~Base()<sp/>will<sp/>be<sp/>called,<sp/>but<sp/>~Derived()<sp/>will<sp/>not</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>-<sp/>value_<sp/>is<sp/>leaked.</highlight></codeline>
+</programlisting></para><para>By changing <computeroutput>~Base()</computeroutput> to virtual, <computeroutput>~Derived()</computeroutput> will be correctly called when <computeroutput>delete p</computeroutput> is executed, and the heap checker will be happy.</para><para><heading level="2">The &quot;newer expectations override older ones&quot; rule makes writing expectations awkward. Why does Google <ref refid="class_mock" kindref="compound">Mock</ref> do that?</heading>
+</para><para>When people complain about this, often they are referring to code like:</para><para><programlisting><codeline><highlight class="normal">//<sp/>foo.Bar()<sp/>should<sp/>be<sp/>called<sp/>twice,<sp/>return<sp/>1<sp/>the<sp/>first<sp/>time,<sp/>and<sp/>return</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>2<sp/>the<sp/>second<sp/>time.<sp/><sp/>However,<sp/>I<sp/>have<sp/>to<sp/>write<sp/>the<sp/>expectations<sp/>in<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>reverse<sp/>order.<sp/><sp/>This<sp/>sucks<sp/>big<sp/>time!!!</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(foo,<sp/>Bar())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(Return(2))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.RetiresOnSaturation();</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(foo,<sp/>Bar())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(Return(1))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.RetiresOnSaturation();</highlight></codeline>
+</programlisting></para><para>The problem is that they didn&apos;t pick the <bold>best</bold> way to express the test&apos;s intent.</para><para>By default, expectations don&apos;t have to be matched in <emphasis>any</emphasis> particular order. If you want them to match in a certain order, you need to be explicit. This is Google <ref refid="class_mock" kindref="compound">Mock</ref>&apos;s (and jMock&apos;s) fundamental philosophy: it&apos;s easy to accidentally over-specify your tests, and we want to make it harder to do so.</para><para>There are two better ways to write the test spec. You could either put the expectations in sequence:</para><para><programlisting><codeline><highlight class="normal">//<sp/>foo.Bar()<sp/>should<sp/>be<sp/>called<sp/>twice,<sp/>return<sp/>1<sp/>the<sp/>first<sp/>time,<sp/>and<sp/>return</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>2<sp/>the<sp/>second<sp/>time.<sp/><sp/>Using<sp/>a<sp/>sequence,<sp/>we<sp/>can<sp/>write<sp/>the<sp/>expectations</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>in<sp/>their<sp/>natural<sp/>order.</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>InSequence<sp/>s;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_CALL(foo,<sp/>Bar())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.WillOnce(Return(1))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.RetiresOnSaturation();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>EXPECT_CALL(foo,<sp/>Bar())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.WillOnce(Return(2))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.RetiresOnSaturation();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para>or you can put the sequence of actions in the same expectation:</para><para><programlisting><codeline><highlight class="normal">//<sp/>foo.Bar()<sp/>should<sp/>be<sp/>called<sp/>twice,<sp/>return<sp/>1<sp/>the<sp/>first<sp/>time,<sp/>and<sp/>return</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>2<sp/>the<sp/>second<sp/>time.</highlight></codeline>
+<codeline><highlight class="normal">EXPECT_CALL(foo,<sp/>Bar())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(Return(1))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillOnce(Return(2))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.RetiresOnSaturation();</highlight></codeline>
+</programlisting></para><para>Back to the original questions: why does Google <ref refid="class_mock" kindref="compound">Mock</ref> search the expectations (and <computeroutput>ON_CALL</computeroutput>s) from back to front? Because this allows a user to set up a mock&apos;s behavior for the common case early (e.g. in the mock&apos;s constructor or the test fixture&apos;s set-up phase) and customize it with more specific rules later. If Google <ref refid="class_mock" kindref="compound">Mock</ref> searches from front to back, this very useful pattern won&apos;t be possible.</para><para><heading level="2">Google <ref refid="class_mock" kindref="compound">Mock</ref> prints a warning when a function without EXPECT_CALL is called, even if I have set its behavior using ON_CALL. Would it be reasonable not to show the warning in this case?</heading>
+</para><para>When choosing between being neat and being safe, we lean toward the latter. So the answer is that we think it&apos;s better to show the warning.</para><para>Often people write <computeroutput>ON_CALL</computeroutput>s in the mock object&apos;s constructor or <computeroutput>SetUp()</computeroutput>, as the default behavior rarely changes from test to test. Then in the test body they set the expectations, which are often different for each test. Having an <computeroutput>ON_CALL</computeroutput> in the set-up part of a test doesn&apos;t mean that the calls are expected. If there&apos;s no <computeroutput>EXPECT_CALL</computeroutput> and the method is called, it&apos;s possibly an error. If we quietly let the call go through without notifying the user, bugs may creep in unnoticed.</para><para>If, however, you are sure that the calls are OK, you can write</para><para><programlisting><codeline><highlight class="normal">EXPECT_CALL(foo,<sp/>Bar(_))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillRepeatedly(...);</highlight></codeline>
+</programlisting></para><para>instead of</para><para><programlisting><codeline><highlight class="normal">ON_CALL(foo,<sp/>Bar(_))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.WillByDefault(...);</highlight></codeline>
+</programlisting></para><para>This tells Google <ref refid="class_mock" kindref="compound">Mock</ref> that you do expect the calls and no warning should be printed.</para><para>Also, you can control the verbosity using the <computeroutput>--gmock_verbose</computeroutput> flag. If you find the output too noisy when debugging, just choose a less verbose level.</para><para><heading level="2">How can I delete the mock function&apos;s argument in an action?</heading>
+</para><para>If you find yourself needing to perform some action that&apos;s not supported by Google <ref refid="class_mock" kindref="compound">Mock</ref> directly, remember that you can define your own actions using MakeAction() or MakePolymorphicAction(), or you can write a stub function and invoke it using Invoke().</para><para><heading level="2">MOCK_METHODn()&apos;s second argument looks funny. Why don&apos;t you use the MOCK_METHODn(Method, return_type, arg_1, ..., arg_n) syntax?</heading>
+</para><para>What?! I think it&apos;s beautiful. :-)</para><para>While which syntax looks more natural is a subjective matter to some extent, Google <ref refid="class_mock" kindref="compound">Mock</ref>&apos;s syntax was chosen for several practical advantages it has.</para><para>Try to mock a function that takes a map as an argument: <programlisting><codeline><highlight class="normal">virtual<sp/>int<sp/>GetSize(const<sp/>map&lt;int,<sp/>std::string&gt;&amp;<sp/>m);</highlight></codeline>
+</programlisting></para><para>Using the proposed syntax, it would be: <programlisting><codeline><highlight class="normal">MOCK_METHOD1(GetSize,<sp/>int,<sp/>const<sp/>map&lt;int,<sp/>std::string&gt;&amp;<sp/>m);</highlight></codeline>
+</programlisting></para><para>Guess what? You&apos;ll get a compiler error as the compiler thinks that <computeroutput>const map&lt;int, std::string&gt;&amp; m</computeroutput> are <bold>two</bold>, not one, arguments. To work around this you can use <computeroutput>typedef</computeroutput> to give the map type a name, but that gets in the way of your work. Google <ref refid="class_mock" kindref="compound">Mock</ref>&apos;s syntax avoids this problem as the function&apos;s argument types are protected inside a pair of parentheses: <programlisting><codeline><highlight class="normal">//<sp/>This<sp/>compiles<sp/>fine.</highlight></codeline>
+<codeline><highlight class="normal">MOCK_METHOD1(GetSize,<sp/>int(const<sp/>map&lt;int,<sp/>std::string&gt;&amp;<sp/>m));</highlight></codeline>
+</programlisting></para><para>You still need a <computeroutput>typedef</computeroutput> if the return type contains an unprotected comma, but that&apos;s much rarer.</para><para>Other advantages include:<orderedlist>
+<listitem><para><computeroutput>MOCK_METHOD1(Foo, int, bool)</computeroutput> can leave a reader wonder whether the method returns <computeroutput>int</computeroutput> or <computeroutput>bool</computeroutput>, while there won&apos;t be such confusion using Google <ref refid="class_mock" kindref="compound">Mock</ref>&apos;s syntax.</para></listitem></orderedlist>
+<orderedlist>
+<listitem><para>The way Google <ref refid="class_mock" kindref="compound">Mock</ref> describes a function type is nothing new, although many people may not be familiar with it. The same syntax was used in C, and the <computeroutput>function</computeroutput> library in <computeroutput>tr1</computeroutput> uses this syntax extensively. Since <computeroutput>tr1</computeroutput> will become a part of the new version of STL, we feel very comfortable to be consistent with it.</para></listitem></orderedlist>
+<orderedlist>
+<listitem><para>The function type syntax is also used in other parts of Google <ref refid="class_mock" kindref="compound">Mock</ref>&apos;s API (e.g. the action interface) in order to make the implementation tractable. A user needs to learn it anyway in order to utilize Google <ref refid="class_mock" kindref="compound">Mock</ref>&apos;s more advanced features. We&apos;d as well stick to the same syntax in <computeroutput>MOCK_METHOD*</computeroutput>!</para></listitem></orderedlist>
+</para><para><heading level="2">My code calls a static/global function. Can I mock it?</heading>
+</para><para>You can, but you need to make some changes.</para><para>In general, if you find yourself needing to mock a static function, it&apos;s a sign that your modules are too tightly coupled (and less flexible, less reusable, less testable, etc). You are probably better off defining a small interface and call the function through that interface, which then can be easily mocked. It&apos;s a bit of work initially, but usually pays for itself quickly.</para><para>This Google Testing Blog <ulink url="http://googletesting.blogspot.com/2008/06/defeat-static-cling.html">post</ulink> says it excellently. Check it out.</para><para><heading level="2">My mock object needs to do complex stuff. It&apos;s a lot of pain to specify the actions. Google <ref refid="class_mock" kindref="compound">Mock</ref> sucks!</heading>
+</para><para>I know it&apos;s not a question, but you get an answer for free any way. :-)</para><para>With Google <ref refid="class_mock" kindref="compound">Mock</ref>, you can create mocks in C++ easily. And people might be tempted to use them everywhere. Sometimes they work great, and sometimes you may find them, well, a pain to use. So, what&apos;s wrong in the latter case?</para><para>When you write a test without using mocks, you exercise the code and assert that it returns the correct value or that the system is in an expected state. This is sometimes called &quot;state-based testing&quot;.</para><para>Mocks are great for what some call &quot;interaction-based&quot; testing: instead of checking the system state at the very end, mock objects verify that they are invoked the right way and report an error as soon as it arises, giving you a handle on the precise context in which the error was triggered. This is often more effective and economical to do than state-based testing.</para><para>If you are doing state-based testing and using a test double just to simulate the real object, you are probably better off using a fake. Using a mock in this case causes pain, as it&apos;s not a strong point for mocks to perform complex actions. If you experience this and think that mocks suck, you are just not using the right tool for your problem. Or, you might be trying to solve the wrong problem. :-)</para><para><heading level="2">I got a warning &quot;Uninteresting function call encountered - default action taken..&quot; Should I panic?</heading>
+</para><para>By all means, NO! It&apos;s just an FYI.</para><para>What it means is that you have a mock function, you haven&apos;t set any expectations on it (by Google <ref refid="class_mock" kindref="compound">Mock</ref>&apos;s rule this means that you are not interested in calls to this function and therefore it can be called any number of times), and it is called. That&apos;s OK - you didn&apos;t say it&apos;s not OK to call the function!</para><para>What if you actually meant to disallow this function to be called, but forgot to write <computeroutput>EXPECT_CALL(foo, Bar()).Times(0)</computeroutput>? While one can argue that it&apos;s the user&apos;s fault, Google <ref refid="class_mock" kindref="compound">Mock</ref> tries to be nice and prints you a note.</para><para>So, when you see the message and believe that there shouldn&apos;t be any uninteresting calls, you should investigate what&apos;s going on. To make your life easier, Google <ref refid="class_mock" kindref="compound">Mock</ref> prints the function name and arguments when an uninteresting call is encountered.</para><para><heading level="2">I want to define a custom action. Should I use Invoke() or implement the action interface?</heading>
+</para><para>Either way is fine - you want to choose the one that&apos;s more convenient for your circumstance.</para><para>Usually, if your action is for a particular function type, defining it using <computeroutput>Invoke()</computeroutput> should be easier; if your action can be used in functions of different types (e.g. if you are defining <computeroutput>Return(value)</computeroutput>), <computeroutput>MakePolymorphicAction()</computeroutput> is easiest. Sometimes you want precise control on what types of functions the action can be used in, and implementing <computeroutput>ActionInterface</computeroutput> is the way to go here. See the implementation of <computeroutput>Return()</computeroutput> in <computeroutput><ref refid="gmock-actions_8h_source" kindref="compound">include/gmock/gmock-actions.h</ref></computeroutput> for an example.</para><para><heading level="2">I&apos;m using the set-argument-pointee action, and the compiler complains about &quot;conflicting return type specified&quot;. What does it mean?</heading>
+</para><para>You got this error as Google <ref refid="class_mock" kindref="compound">Mock</ref> has no idea what value it should return when the mock method is called. <computeroutput>SetArgumentPointee()</computeroutput> says what the side effect is, but doesn&apos;t say what the return value should be. You need <computeroutput>DoAll()</computeroutput> to chain a <computeroutput>SetArgumentPointee()</computeroutput> with a <computeroutput>Return()</computeroutput>.</para><para>See this recipe for more details and an example.</para><para><heading level="2">My question is not in your FAQ!</heading>
+</para><para>If you cannot find the answer to your question in this FAQ, there are some other resources you can use:</para><para><orderedlist>
+<listitem><para>read other <ulink url="http://code.google.com/p/googlemock/w/list">wiki pages</ulink>,</para></listitem></orderedlist>
+<orderedlist>
+<listitem><para>search the mailing list <ulink url="http://groups.google.com/group/googlemock/topics">archive</ulink>,</para></listitem></orderedlist>
+<orderedlist>
+<listitem><para>ask it on <ulink url="mailto:googlemock@googlegroups.com">googlemock@googlegroups.com</ulink> and someone will answer it (to prevent spam, we require you to join the <ulink url="http://groups.google.com/group/googlemock">discussion group</ulink> before you can post.).</para></listitem></orderedlist>
+</para><para>Please note that creating an issue in the <ulink url="http://code.google.com/p/googlemock/issues/list">issue tracker</ulink> is <emphasis>not</emphasis> a good way to get your answer, as it is monitored infrequently by a very small number of people.</para><para>When asking a question, it&apos;s helpful to provide as much of the following information as possible (people cannot help you if there&apos;s not enough information in your question):</para><para><itemizedlist>
+<listitem><para>the version (or the revision number if you check out from SVN directly) of Google <ref refid="class_mock" kindref="compound">Mock</ref> you use (Google <ref refid="class_mock" kindref="compound">Mock</ref> is under active development, so it&apos;s possible that your problem has been solved in a later version),</para></listitem><listitem><para>your operating system,</para></listitem><listitem><para>the name and version of your compiler,</para></listitem><listitem><para>the complete command line flags you give to your compiler,</para></listitem><listitem><para>the complete compiler error messages (if the question is about compilation),</para></listitem><listitem><para>the <emphasis>actual</emphasis> code (ideally, a minimal but complete program) that has the problem you encounter. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

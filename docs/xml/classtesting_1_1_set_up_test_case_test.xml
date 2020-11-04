@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_set_up_test_case_test" kind="class" language="C++" prot="public">
+    <compoundname>testing::SetUpTestCaseTest</compoundname>
+    <basecompoundref refid="classtesting_1_1_test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classtesting_1_1_set_up_test_case_test_1a5b6e811128d35389be49f6569bf93817" prot="protected" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int testing::SetUpTestCaseTest::counter_</definition>
+        <argsstring></argsstring>
+        <name>counter_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5434" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_set_up_test_case_test_1a904e77fd9a628b6a9aca0280665fd040" prot="protected" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char * testing::SetUpTestCaseTest::shared_resource_</definition>
+        <argsstring></argsstring>
+        <name>shared_resource_</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5437" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5437" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classtesting_1_1_set_up_test_case_test_1a50732abc0bcb3725e6dfd6a2d487e944" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::SetUpTestCaseTest::SetUpTestCase</definition>
+        <argsstring>()</argsstring>
+        <name>SetUpTestCase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5396" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5396" bodyend="5409"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_set_up_test_case_test_1abdc133cd161ff2fa317f489da9bdccf3" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::SetUpTestCaseTest::TearDownTestCase</definition>
+        <argsstring>()</argsstring>
+        <name>TearDownTestCase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5413" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5413" bodyend="5424"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtesting_1_1_set_up_test_case_test_1a4b44551ccf73e66de7ec95b2ab3b2085" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::SetUpTestCaseTest::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplements refid="classtesting_1_1_test_1a190315150c303ddf801313fd1a777733">SetUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5427" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5427" bodyend="5431"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1972">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1971">
+        <label>testing::SetUpTestCaseTest</label>
+        <link refid="classtesting_1_1_set_up_test_case_test"/>
+        <childnode refid="1972" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1974">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1973">
+        <label>testing::SetUpTestCaseTest</label>
+        <link refid="classtesting_1_1_set_up_test_case_test"/>
+        <childnode refid="1974" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5392" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5392" bodyend="5438"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_set_up_test_case_test_1a5b6e811128d35389be49f6569bf93817" prot="protected" virt="non-virtual"><scope>testing::SetUpTestCaseTest</scope><name>counter_</name></member>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual"><scope>testing::SetUpTestCaseTest</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual"><scope>testing::SetUpTestCaseTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual"><scope>testing::SetUpTestCaseTest</scope><name>HasNonfatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual"><scope>testing::SetUpTestCaseTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual"><scope>testing::SetUpTestCaseTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_set_up_test_case_test_1a4b44551ccf73e66de7ec95b2ab3b2085" prot="protected" virt="virtual"><scope>testing::SetUpTestCaseTest</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1_set_up_test_case_test_1a50732abc0bcb3725e6dfd6a2d487e944" prot="protected" virt="non-virtual"><scope>testing::SetUpTestCaseTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual"><scope>testing::SetUpTestCaseTest</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_set_up_test_case_test_1a904e77fd9a628b6a9aca0280665fd040" prot="protected" virt="non-virtual"><scope>testing::SetUpTestCaseTest</scope><name>shared_resource_</name></member>
+      <member refid="classtesting_1_1_test_1a5f0ab439802cbe0ef7552f1a9f791923" prot="protected" virt="virtual"><scope>testing::SetUpTestCaseTest</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_set_up_test_case_test_1abdc133cd161ff2fa317f489da9bdccf3" prot="protected" virt="non-virtual"><scope>testing::SetUpTestCaseTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual"><scope>testing::SetUpTestCaseTest</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual"><scope>testing::SetUpTestCaseTest</scope><name>Test</name></member>
+      <member refid="classtesting_1_1_test_1a2b0a62f1e667bbe8d8cb18d785bfa991" prot="public" virt="virtual"><scope>testing::SetUpTestCaseTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

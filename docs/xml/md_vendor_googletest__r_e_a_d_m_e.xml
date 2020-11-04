@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="md_vendor_googletest__r_e_a_d_m_e" kind="page">
+    <compoundname>md_vendor_googletest_README</compoundname>
+    <title>Google Test</title>
+    <detaileddescription>
+<para><ulink url="https://travis-ci.org/google/googletest"></ulink> <ulink url="https://ci.appveyor.com/project/BillyDonahue/googletest/branch/master"></ulink></para><para>Welcome to <bold>Google Test</bold>, Google&apos;s C++ test framework!</para><para>This repository is a merger of the formerly separate GoogleTest and GoogleMock projects. These were so closely related that it makes sense to maintain and release them together.</para><para>Please see the project page above for more information as well as the mailing list for questions, discussions, and development. There is also an IRC channel on OFTC (irc.oftc.net) #gtest available. Please join us!</para><para>Getting started information for <bold>Google Test</bold> is available in the Google Test Primer documentation.</para><para><bold>Google <ref refid="class_mock" kindref="compound">Mock</ref></bold> is an extension to Google Test for writing and using C++ mock classes. See the separate Google Mock documentation.</para><para>More detailed documentation for googletest (including build instructions) are in its interior googletest/README.md file.</para><para><heading level="2">Features</heading>
+</para><para><itemizedlist>
+<listitem><para>An <ulink url="https://en.wikipedia.org/wiki/XUnit">XUnit</ulink> test framework.</para></listitem><listitem><para>Test discovery.</para></listitem><listitem><para>A rich set of assertions.</para></listitem><listitem><para>User-defined assertions.</para></listitem><listitem><para>Death tests.</para></listitem><listitem><para>Fatal and non-fatal failures.</para></listitem><listitem><para>Value-parameterized tests.</para></listitem><listitem><para>Type-parameterized tests.</para></listitem><listitem><para>Various options for running the tests.</para></listitem><listitem><para>XML test report generation.</para></listitem></itemizedlist>
+</para><para><heading level="2">Platforms</heading>
+</para><para>Google test has been used on a variety of platforms:</para><para><itemizedlist>
+<listitem><para>Linux</para></listitem><listitem><para>Mac OS X</para></listitem><listitem><para>Windows</para></listitem><listitem><para>Cygwin</para></listitem><listitem><para>MinGW</para></listitem><listitem><para>Windows Mobile</para></listitem><listitem><para>Symbian</para></listitem></itemizedlist>
+</para><para><heading level="2">Who Is Using Google Test?</heading>
+</para><para>In addition to many internal projects at Google, Google Test is also used by the following notable projects:</para><para><itemizedlist>
+<listitem><para>The <ulink url="http://www.chromium.org/">Chromium projects</ulink> (behind the Chrome browser and Chrome OS).</para></listitem><listitem><para>The <ulink url="http://llvm.org/">LLVM</ulink> compiler.</para></listitem><listitem><para><ulink url="https://github.com/google/protobuf">Protocol Buffers</ulink>, Google&apos;s data interchange format.</para></listitem><listitem><para>The <ulink url="http://opencv.org/">OpenCV</ulink> computer vision library.</para></listitem></itemizedlist>
+</para><para><heading level="2">Related Open Source Projects</heading>
+</para><para><ulink url="https://github.com/ospector/gtest-gbar">Google Test UI</ulink> is test runner that runs your test binary, allows you to track its progress via a progress bar, and displays a list of test failures. Clicking on one shows failure text. Google Test UI is written in C#.</para><para><ulink url="https://github.com/kinow/gtest-tap-listener">GTest TAP Listener</ulink> is an event listener for Google Test that implements the <ulink url="https://en.wikipedia.org/wiki/Test_Anything_Protocol">TAP protocol</ulink> for test result output. If your test runner understands TAP, you may find it useful.</para><para><heading level="2">Requirements</heading>
+</para><para>Google Test is designed to have fairly minimal requirements to build and use with your projects, but there are some. Currently, we support Linux, Windows, Mac OS X, and Cygwin. We will also make our best effort to support other platforms (e.g. Solaris, AIX, and z/OS). However, since core members of the Google Test project have no access to these platforms, Google Test may have outstanding issues there. If you notice any problems on your platform, please notify <ulink url="mailto:googletestframework@googlegroups.com">googletestframework@googlegroups.com</ulink>. Patches for fixing them are even more welcome!</para><para><heading level="3">Linux Requirements</heading>
+</para><para>These are the base requirements to build and use Google Test from a source package (as described below):</para><para><itemizedlist>
+<listitem><para>GNU-compatible Make or gmake</para></listitem><listitem><para>POSIX-standard shell</para></listitem><listitem><para>POSIX(-2) Regular Expressions (regex.h)</para></listitem><listitem><para>A C++98-standard-compliant compiler</para></listitem></itemizedlist>
+</para><para><heading level="3">Windows Requirements</heading>
+</para><para><itemizedlist>
+<listitem><para>Microsoft Visual C++ v7.1 or newer</para></listitem></itemizedlist>
+</para><para><heading level="3">Cygwin Requirements</heading>
+</para><para><itemizedlist>
+<listitem><para>Cygwin v1.5.25-14 or newer</para></listitem></itemizedlist>
+</para><para><heading level="3">Mac OS X Requirements</heading>
+</para><para><itemizedlist>
+<listitem><para>Mac OS X v10.4 Tiger or newer</para></listitem><listitem><para>Xcode Developer Tools</para></listitem></itemizedlist>
+</para><para><heading level="3">Requirements for Contributors</heading>
+</para><para>We welcome patches. If you plan to contribute a patch, you need to build Google Test and its own tests from a git checkout (described below), which has further requirements:</para><para><itemizedlist>
+<listitem><para><ulink url="https://www.python.org/">Python</ulink> v2.3 or newer (for running some of the tests and re-generating certain source files from templates)</para></listitem><listitem><para><ulink url="https://cmake.org/">CMake</ulink> v2.6.4 or newer</para></listitem></itemizedlist>
+</para><para><heading level="2">Regenerating Source Files</heading>
+</para><para>Some of Google Test&apos;s source files are generated from templates (not in the C++ sense) using a script. For example, the file include/gtest/internal/gtest-type-util.h.pump is used to generate <ref refid="gtest-type-util_8h_source" kindref="compound">gtest-type-util.h</ref> in the same directory.</para><para>You don&apos;t need to worry about regenerating the source files unless you need to modify them. You would then modify the corresponding <computeroutput>.pump</computeroutput> files and run the &apos;<ulink url="googletest/scripts/pump.py">pump.py</ulink>&apos; generator script. See the Pump Manual.</para><para><heading level="3">Contributing Code</heading>
+</para><para>We welcome patches. Please read the Developer&apos;s Guide for how you can contribute. In particular, make sure you have signed the Contributor License Agreement, or we won&apos;t be able to accept the patch.</para><para>Happy testing! </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

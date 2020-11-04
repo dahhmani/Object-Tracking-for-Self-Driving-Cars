@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="md__r_e_a_d_m_e" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>README</title>
+    <detaileddescription>
+<para><ulink url="https://opensource.org/licenses/MIT"></ulink> <heading level="1">Pedestrian Tracker for Self-Driving Cars</heading>
+</para><para><heading level="2">Authors</heading>
+</para><para>Mahmoud Dahmani (Driver) Aditya Khopkar (Navigator)</para><para><heading level="2">Build</heading>
+</para><para>Run the following commands in a new terminal: <programlisting><codeline><highlight class="normal">git<sp/>clone<sp/>--recursive<sp/>https://github.com/dahhmani/Object-Tracking-for-Self-Driving-Cars</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>&lt;path<sp/>to<sp/>repository&gt;/scripts/</highlight></codeline>
+<codeline><highlight class="normal">sh<sp/>download_pretrained_model.sh</highlight></codeline>
+<codeline><highlight class="normal">sh<sp/>build.sh</highlight></codeline>
+</programlisting></para><para><heading level="2">Run</heading>
+</para><para><heading level="3">App</heading>
+</para><para>Run the following commands in a new terminal: <programlisting><codeline><highlight class="normal">cd<sp/>&lt;path<sp/>to<sp/>repository&gt;/scripts/</highlight></codeline>
+<codeline><highlight class="normal">sh<sp/>run_app.sh</highlight></codeline>
+</programlisting></para><para><heading level="3">Tests</heading>
+</para><para>Run the following commands in a new terminal: <programlisting><codeline><highlight class="normal">cd<sp/>&lt;path<sp/>to<sp/>repository&gt;/scripts/</highlight></codeline>
+<codeline><highlight class="normal">sh<sp/>run_tests.sh</highlight></codeline>
+</programlisting></para><para><heading level="2">Agile Iterative Process (AIP)</heading>
+</para><para>AIP was followed through this project. The spreadsheet for AIP can be found <ulink url="https://docs.google.com/spreadsheets/d/1BaOfv9Mm0KZr2UOX5iRpPzrG3YCumrxETiyOKJdlnB4/edit?usp=sharing">here</ulink></para><para><heading level="2">Sprint 1 Presentation</heading>
+</para><para>The authors&apos; video for a walkthrough through sprint 1 can be found <ulink url="https://drive.google.com/drive/folders/1pAYf5VVa0utqFDkQDwOQhmljQUaqd09Y?usp=sharing">here</ulink> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

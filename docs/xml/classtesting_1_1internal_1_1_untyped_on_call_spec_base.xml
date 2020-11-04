@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_untyped_on_call_spec_base" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::UntypedOnCallSpecBase</compoundname>
+    <derivedcompoundref refid="classtesting_1_1internal_1_1_on_call_spec" prot="public" virt="non-virtual">testing::internal::OnCallSpec&lt; F &gt;</derivedcompoundref>
+      <sectiondef kind="protected-type">
+      <memberdef kind="enum" id="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a78ebf16bfee40375e33a983f3100f354" prot="protected" static="no">
+        <name>Clause</name>
+        <enumvalue id="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a78ebf16bfee40375e33a983f3100f354a57f312c5eacf22518ff0b12405cde4f1" prot="protected">
+          <name>kNone</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a78ebf16bfee40375e33a983f3100f354a451699b0beaaabb325f8eaf1c65a071d" prot="protected">
+          <name>kWith</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a78ebf16bfee40375e33a983f3100f354aeb25a21e1aa3dc4ca3a108b5533d7eed" prot="protected">
+          <name>kWillByDefault</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="257" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="257" bodyend="263"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1adf4e6c5022dfeb482f5328e9bb58ba88" prot="protected" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* testing::internal::UntypedOnCallSpecBase::file_</definition>
+        <argsstring></argsstring>
+        <name>file_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="275" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a1dfa0dafaae6697f17adf5d837ca77c7" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::internal::UntypedOnCallSpecBase::line_</definition>
+        <argsstring></argsstring>
+        <name>line_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="276" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1adb6d19adfeb5fde535d854aedbc5fb0f" prot="protected" static="no" mutable="no">
+        <type>Clause</type>
+        <definition>Clause testing::internal::UntypedOnCallSpecBase::last_clause_</definition>
+        <argsstring></argsstring>
+        <name>last_clause_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="280" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1afc5da72d536ad61e2d66de87b2b9bc50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::UntypedOnCallSpecBase::UntypedOnCallSpecBase</definition>
+        <argsstring>(const char *a_file, int a_line)</argsstring>
+        <name>UntypedOnCallSpecBase</name>
+        <param>
+          <type>const char *</type>
+          <declname>a_file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a_line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="248" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="248" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a5ccb6ee1208ee597528b44c7c9945fa3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::internal::UntypedOnCallSpecBase::file</definition>
+        <argsstring>() const</argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="252" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="252" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a18e9eb7155380b3e124bccc0d8115b5e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::internal::UntypedOnCallSpecBase::line</definition>
+        <argsstring>() const</argsstring>
+        <name>line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="253" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="253" bodyend="253"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a83d223cf0e48fadc872a7b4062948df4" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::UntypedOnCallSpecBase::AssertSpecProperty</definition>
+        <argsstring>(bool property, const string &amp;failure_message) const</argsstring>
+        <name>AssertSpecProperty</name>
+        <param>
+          <type>bool</type>
+          <declname>property</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>failure_message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="266" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="266" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a7eeba49b7b2968ebb4859c04684828b2" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::UntypedOnCallSpecBase::ExpectSpecProperty</definition>
+        <argsstring>(bool property, const string &amp;failure_message) const</argsstring>
+        <name>ExpectSpecProperty</name>
+        <param>
+          <type>bool</type>
+          <declname>property</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>failure_message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="271" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="271" bodyend="273"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2454">
+        <label>testing::internal::OnCallSpec&lt; F &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_on_call_spec"/>
+        <childnode refid="2453" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2453">
+        <label>testing::internal::UntypedOnCallSpecBase</label>
+        <link refid="classtesting_1_1internal_1_1_untyped_on_call_spec_base"/>
+      </node>
+    </inheritancegraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="245" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="245" bodyend="281"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a83d223cf0e48fadc872a7b4062948df4" prot="protected" virt="non-virtual"><scope>testing::internal::UntypedOnCallSpecBase</scope><name>AssertSpecProperty</name></member>
+      <member refid="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a78ebf16bfee40375e33a983f3100f354" prot="protected" virt="non-virtual"><scope>testing::internal::UntypedOnCallSpecBase</scope><name>Clause</name></member>
+      <member refid="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a7eeba49b7b2968ebb4859c04684828b2" prot="protected" virt="non-virtual"><scope>testing::internal::UntypedOnCallSpecBase</scope><name>ExpectSpecProperty</name></member>
+      <member refid="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a5ccb6ee1208ee597528b44c7c9945fa3" prot="public" virt="non-virtual"><scope>testing::internal::UntypedOnCallSpecBase</scope><name>file</name></member>
+      <member refid="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1adf4e6c5022dfeb482f5328e9bb58ba88" prot="protected" virt="non-virtual"><scope>testing::internal::UntypedOnCallSpecBase</scope><name>file_</name></member>
+      <member refid="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a78ebf16bfee40375e33a983f3100f354a57f312c5eacf22518ff0b12405cde4f1" prot="protected" virt="non-virtual"><scope>testing::internal::UntypedOnCallSpecBase</scope><name>kNone</name></member>
+      <member refid="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a78ebf16bfee40375e33a983f3100f354aeb25a21e1aa3dc4ca3a108b5533d7eed" prot="protected" virt="non-virtual"><scope>testing::internal::UntypedOnCallSpecBase</scope><name>kWillByDefault</name></member>
+      <member refid="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a78ebf16bfee40375e33a983f3100f354a451699b0beaaabb325f8eaf1c65a071d" prot="protected" virt="non-virtual"><scope>testing::internal::UntypedOnCallSpecBase</scope><name>kWith</name></member>
+      <member refid="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1adb6d19adfeb5fde535d854aedbc5fb0f" prot="protected" virt="non-virtual"><scope>testing::internal::UntypedOnCallSpecBase</scope><name>last_clause_</name></member>
+      <member refid="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a18e9eb7155380b3e124bccc0d8115b5e" prot="public" virt="non-virtual"><scope>testing::internal::UntypedOnCallSpecBase</scope><name>line</name></member>
+      <member refid="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1a1dfa0dafaae6697f17adf5d837ca77c7" prot="protected" virt="non-virtual"><scope>testing::internal::UntypedOnCallSpecBase</scope><name>line_</name></member>
+      <member refid="classtesting_1_1internal_1_1_untyped_on_call_spec_base_1afc5da72d536ad61e2d66de87b2b9bc50" prot="public" virt="non-virtual"><scope>testing::internal::UntypedOnCallSpecBase</scope><name>UntypedOnCallSpecBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

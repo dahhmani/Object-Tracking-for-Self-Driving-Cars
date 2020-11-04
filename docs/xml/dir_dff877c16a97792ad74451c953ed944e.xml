@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_dff877c16a97792ad74451c953ed944e" kind="dir">
+    <compoundname>vendor/googletest/googletest</compoundname>
+    <innerdir refid="dir_8a19f338c8e0e83aa43b5bd1f779fca2">vendor/googletest/googletest/codegear</innerdir>
+    <innerdir refid="dir_60cc83f29a6b7e8695e41364b4f71529">vendor/googletest/googletest/include</innerdir>
+    <innerdir refid="dir_6decd3e95ec4b4e1519c4c33c2231b51">vendor/googletest/googletest/samples</innerdir>
+    <innerdir refid="dir_ca4f9a38bc8b7e61cd297c60da0e146c">vendor/googletest/googletest/scripts</innerdir>
+    <innerdir refid="dir_33bd736db5b9a3d5b214d7606fa7594e">vendor/googletest/googletest/src</innerdir>
+    <innerdir refid="dir_e1c34c2922af5976e7be5c8341ad89cc">vendor/googletest/googletest/test</innerdir>
+    <innerdir refid="dir_8593671c8185a5932df9dc2f5090a808">vendor/googletest/googletest/xcode</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,528 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_test_info" kind="class" language="C++" prot="public">
+    <compoundname>testing::TestInfo</compoundname>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtesting_1_1_test_info_1a5b78b1c2e1fa07ffed92da365593eaa4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Test</definition>
+        <argsstring></argsstring>
+        <name>Test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="711" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtesting_1_1_test_info_1aff779e55b06adfa7c0088bd10253f0f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TestCase</definition>
+        <argsstring></argsstring>
+        <name>TestCase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="712" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="712" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtesting_1_1_test_info_1acc0a5e7573fd6ae7ad1878613bb86853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class internal::UnitTestImpl</definition>
+        <argsstring></argsstring>
+        <name>internal::UnitTestImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="713" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtesting_1_1_test_info_1adc037d188dab349a94868991955c9cd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class internal::StreamingListenerTest</definition>
+        <argsstring></argsstring>
+        <name>internal::StreamingListenerTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="714" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="714" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtesting_1_1_test_info_1a70ddf8a12d8c05f17429f6381abc8ace" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="classtesting_1_1_test_info" kindref="compound">TestInfo</ref> *</type>
+        <definition>TestInfo* internal::MakeAndRegisterTestInfo</definition>
+        <argsstring>(const char *test_case_name, const char *name, const char *type_param, const char *value_param, internal::CodeLocation code_location, internal::TypeId fixture_class_id, Test::SetUpTestCaseFunc set_up_tc, Test::TearDownTestCaseFunc tear_down_tc, internal::TestFactoryBase *factory)</argsstring>
+        <name>internal::MakeAndRegisterTestInfo</name>
+        <param>
+          <type>const char *</type>
+          <declname>test_case_name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_param</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value_param</declname>
+        </param>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1_code_location" kindref="compound">internal::CodeLocation</ref></type>
+          <declname>code_location</declname>
+        </param>
+        <param>
+          <type>internal::TypeId</type>
+          <declname>fixture_class_id</declname>
+        </param>
+        <param>
+          <type>Test::SetUpTestCaseFunc</type>
+          <declname>set_up_tc</declname>
+        </param>
+        <param>
+          <type>Test::TearDownTestCaseFunc</type>
+          <declname>tear_down_tc</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_test_factory_base" kindref="compound">internal::TestFactoryBase</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="715" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1_test_info_1a3dcf626bbfc3756103be329c05377a5f" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string testing::TestInfo::test_case_name_</definition>
+        <argsstring></argsstring>
+        <name>test_case_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="751" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="751" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_info_1a6bed52b7c3d66c8c5eac5fa2aaadba55" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string testing::TestInfo::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="752" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="752" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_info_1ab4f53cfaf59e1b5cac858a9322697e88" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1internal_1_1scoped__ptr" kindref="compound">internal::scoped_ptr</ref>&lt; const ::std::string &gt;</type>
+        <definition>const internal::scoped_ptr&lt;const ::std::string&gt; testing::TestInfo::type_param_</definition>
+        <argsstring></argsstring>
+        <name>type_param_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="755" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="755" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_info_1ac3dd68ea96ebe82c6eab31e6e730a918" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1internal_1_1scoped__ptr" kindref="compound">internal::scoped_ptr</ref>&lt; const ::std::string &gt;</type>
+        <definition>const internal::scoped_ptr&lt;const ::std::string&gt; testing::TestInfo::value_param_</definition>
+        <argsstring></argsstring>
+        <name>value_param_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="758" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="758" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_info_1a749494420174e6cf1949c7b411e8df6f" prot="private" static="no" mutable="no">
+        <type><ref refid="structtesting_1_1internal_1_1_code_location" kindref="compound">internal::CodeLocation</ref></type>
+        <definition>internal::CodeLocation testing::TestInfo::location_</definition>
+        <argsstring></argsstring>
+        <name>location_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="759" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="759" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_info_1ad3284b7b9ebe61cc31440694091450ae" prot="private" static="no" mutable="no">
+        <type>const internal::TypeId</type>
+        <definition>const internal::TypeId testing::TestInfo::fixture_class_id_</definition>
+        <argsstring></argsstring>
+        <name>fixture_class_id_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="760" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="760" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_info_1a89c3d8fb8b565532c34d3123240fd5cf" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool testing::TestInfo::should_run_</definition>
+        <argsstring></argsstring>
+        <name>should_run_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="761" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="761" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_info_1af3765fc4f811296e0699b0a26430a7c7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool testing::TestInfo::is_disabled_</definition>
+        <argsstring></argsstring>
+        <name>is_disabled_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="762" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_info_1a397686f82b6dd68a209ab7b50eeb4932" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool testing::TestInfo::matches_filter_</definition>
+        <argsstring></argsstring>
+        <name>matches_filter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="763" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_info_1a6bf2422602b877c73f6eb169a63cfea8" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1internal_1_1_test_factory_base" kindref="compound">internal::TestFactoryBase</ref> *const</type>
+        <definition>internal::TestFactoryBase* const testing::TestInfo::factory_</definition>
+        <argsstring></argsstring>
+        <name>factory_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="765" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_info_1a108fd469897a8d4e5c4361947a5ed785" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1_test_result" kindref="compound">TestResult</ref></type>
+        <definition>TestResult testing::TestInfo::result_</definition>
+        <argsstring></argsstring>
+        <name>result_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="770" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="770" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_test_info_1a8d382c1b1b511f0d9112c14684809852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::TestInfo::~TestInfo</definition>
+        <argsstring>()</argsstring>
+        <name>~TestInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="648" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="2521" bodyend="2521"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_info_1a036a20710c8c2252889544daba9a8ff9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::TestInfo::test_case_name</definition>
+        <argsstring>() const</argsstring>
+        <name>test_case_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="651" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="651" bodyend="651"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_info_1ac2581b45eccc9a3b94cb41c4807d0e34" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::TestInfo::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="654" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="654" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_info_1a7759bc57f4350ad406cbbb0b3bcea320" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::TestInfo::type_param</definition>
+        <argsstring>() const</argsstring>
+        <name>type_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="658" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="658" bodyend="662"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_info_1abdf2c6cfcf4819e725816c64e1c1fc24" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::TestInfo::value_param</definition>
+        <argsstring>() const</argsstring>
+        <name>value_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="666" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="666" bodyend="670"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_info_1a9b74d79cf618ce5bb0d0b1da75ee8b35" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::TestInfo::file</definition>
+        <argsstring>() const</argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="673" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="673" bodyend="673"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_info_1af5931cfc594b5d660c56b3c61c41ea13" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::TestInfo::line</definition>
+        <argsstring>() const</argsstring>
+        <name>line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="676" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="676" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_info_1a866e33b5bc5ab2a6e5375fc7d3af0f96" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::TestInfo::should_run</definition>
+        <argsstring>() const</argsstring>
+        <name>should_run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="694" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="694" bodyend="694"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_info_1a63e7042028b0b846f4b5a1e5bcffc079" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::TestInfo::is_reportable</definition>
+        <argsstring>() const</argsstring>
+        <name>is_reportable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="697" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="697" bodyend="702"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_info_1aee8cb884c95cd446129aba936b4159e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtesting_1_1_test_result" kindref="compound">TestResult</ref> *</type>
+        <definition>const TestResult* testing::TestInfo::result</definition>
+        <argsstring>() const</argsstring>
+        <name>result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="705" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="705" bodyend="705"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1_test_info_1afc4a66e2d2491f09e8549c71514c3d78" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::TestInfo::TestInfo</definition>
+        <argsstring>(const std::string &amp;test_case_name, const std::string &amp;name, const char *a_type_param, const char *a_value_param, internal::CodeLocation a_code_location, internal::TypeId fixture_class_id, internal::TestFactoryBase *factory)</argsstring>
+        <name>TestInfo</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>test_case_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>a_type_param</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>a_value_param</declname>
+        </param>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1_code_location" kindref="compound">internal::CodeLocation</ref></type>
+          <declname>a_code_location</declname>
+        </param>
+        <param>
+          <type>internal::TypeId</type>
+          <declname>fixture_class_id</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_test_factory_base" kindref="compound">internal::TestFactoryBase</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="728" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="2501" bodyend="2518"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_info_1a70c9509202a6f95fbc26704ce13efb63" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::TestInfo::increment_death_test_count</definition>
+        <argsstring>()</argsstring>
+        <name>increment_death_test_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="738" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="738" bodyend="740"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_info_1ade784915e9be3a01e3a6ef509b77d6c9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::TestInfo::Run</definition>
+        <argsstring>()</argsstring>
+        <name>Run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="744" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="2630" bodyend="2672"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_info_1a49607d4547e374b5248e4200d9192817" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::TestInfo::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(TestInfo)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1_test_info" kindref="compound">TestInfo</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="772" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtesting_1_1_test_info_1ac6d80865a3e68478aaf167058e6ca5c2" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::TestInfo::ClearTestResult</definition>
+        <argsstring>(TestInfo *test_info)</argsstring>
+        <name>ClearTestResult</name>
+        <param>
+          <type><ref refid="classtesting_1_1_test_info" kindref="compound">TestInfo</ref> *</type>
+          <declname>test_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="746" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="746" bodyend="748"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="644" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="644" bodyend="773"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_test_info_1ac6d80865a3e68478aaf167058e6ca5c2" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>ClearTestResult</name></member>
+      <member refid="classtesting_1_1_test_info_1a6bf2422602b877c73f6eb169a63cfea8" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>factory_</name></member>
+      <member refid="classtesting_1_1_test_info_1a9b74d79cf618ce5bb0d0b1da75ee8b35" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>file</name></member>
+      <member refid="classtesting_1_1_test_info_1ad3284b7b9ebe61cc31440694091450ae" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>fixture_class_id_</name></member>
+      <member refid="classtesting_1_1_test_info_1a49607d4547e374b5248e4200d9192817" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1_test_info_1a70c9509202a6f95fbc26704ce13efb63" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>increment_death_test_count</name></member>
+      <member refid="classtesting_1_1_test_info_1a70ddf8a12d8c05f17429f6381abc8ace" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>internal::MakeAndRegisterTestInfo</name></member>
+      <member refid="classtesting_1_1_test_info_1adc037d188dab349a94868991955c9cd4" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>internal::StreamingListenerTest</name></member>
+      <member refid="classtesting_1_1_test_info_1acc0a5e7573fd6ae7ad1878613bb86853" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>internal::UnitTestImpl</name></member>
+      <member refid="classtesting_1_1_test_info_1af3765fc4f811296e0699b0a26430a7c7" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>is_disabled_</name></member>
+      <member refid="classtesting_1_1_test_info_1a63e7042028b0b846f4b5a1e5bcffc079" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>is_reportable</name></member>
+      <member refid="classtesting_1_1_test_info_1af5931cfc594b5d660c56b3c61c41ea13" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>line</name></member>
+      <member refid="classtesting_1_1_test_info_1a749494420174e6cf1949c7b411e8df6f" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>location_</name></member>
+      <member refid="classtesting_1_1_test_info_1a397686f82b6dd68a209ab7b50eeb4932" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>matches_filter_</name></member>
+      <member refid="classtesting_1_1_test_info_1ac2581b45eccc9a3b94cb41c4807d0e34" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>name</name></member>
+      <member refid="classtesting_1_1_test_info_1a6bed52b7c3d66c8c5eac5fa2aaadba55" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>name_</name></member>
+      <member refid="classtesting_1_1_test_info_1aee8cb884c95cd446129aba936b4159e0" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>result</name></member>
+      <member refid="classtesting_1_1_test_info_1a108fd469897a8d4e5c4361947a5ed785" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>result_</name></member>
+      <member refid="classtesting_1_1_test_info_1ade784915e9be3a01e3a6ef509b77d6c9" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>Run</name></member>
+      <member refid="classtesting_1_1_test_info_1a866e33b5bc5ab2a6e5375fc7d3af0f96" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>should_run</name></member>
+      <member refid="classtesting_1_1_test_info_1a89c3d8fb8b565532c34d3123240fd5cf" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>should_run_</name></member>
+      <member refid="classtesting_1_1_test_info_1a5b78b1c2e1fa07ffed92da365593eaa4" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>Test</name></member>
+      <member refid="classtesting_1_1_test_info_1a036a20710c8c2252889544daba9a8ff9" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>test_case_name</name></member>
+      <member refid="classtesting_1_1_test_info_1a3dcf626bbfc3756103be329c05377a5f" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>test_case_name_</name></member>
+      <member refid="classtesting_1_1_test_info_1aff779e55b06adfa7c0088bd10253f0f0" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>TestCase</name></member>
+      <member refid="classtesting_1_1_test_info_1afc4a66e2d2491f09e8549c71514c3d78" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>TestInfo</name></member>
+      <member refid="classtesting_1_1_test_info_1a7759bc57f4350ad406cbbb0b3bcea320" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>type_param</name></member>
+      <member refid="classtesting_1_1_test_info_1ab4f53cfaf59e1b5cac858a9322697e88" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>type_param_</name></member>
+      <member refid="classtesting_1_1_test_info_1abdf2c6cfcf4819e725816c64e1c1fc24" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>value_param</name></member>
+      <member refid="classtesting_1_1_test_info_1ac3dd68ea96ebe82c6eab31e6e730a918" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>value_param_</name></member>
+      <member refid="classtesting_1_1_test_info_1a8d382c1b1b511f0d9112c14684809852" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>~TestInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

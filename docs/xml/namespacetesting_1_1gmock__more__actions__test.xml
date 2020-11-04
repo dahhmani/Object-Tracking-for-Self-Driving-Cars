@@ -1,0 +1,1646 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacetesting_1_1gmock__more__actions__test" kind="namespace" language="C++">
+    <compoundname>testing::gmock_more_actions_test</compoundname>
+    <innerclass refid="classtesting_1_1gmock__more__actions__test_1_1_deletion_tester" prot="public">testing::gmock_more_actions_test::DeletionTester</innerclass>
+    <innerclass refid="classtesting_1_1gmock__more__actions__test_1_1_foo" prot="public">testing::gmock_more_actions_test::Foo</innerclass>
+    <innerclass refid="classtesting_1_1gmock__more__actions__test_1_1_nullary_functor" prot="public">testing::gmock_more_actions_test::NullaryFunctor</innerclass>
+    <innerclass refid="structtesting_1_1gmock__more__actions__test_1_1_sum_of5_functor" prot="public">testing::gmock_more_actions_test::SumOf5Functor</innerclass>
+    <innerclass refid="structtesting_1_1gmock__more__actions__test_1_1_sum_of6_functor" prot="public">testing::gmock_more_actions_test::SumOf6Functor</innerclass>
+    <innerclass refid="structtesting_1_1gmock__more__actions__test_1_1_unary_functor" prot="public">testing::gmock_more_actions_test::UnaryFunctor</innerclass>
+    <innerclass refid="classtesting_1_1gmock__more__actions__test_1_1_void_nullary_functor" prot="public">testing::gmock_more_actions_test::VoidNullaryFunctor</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gmock-more-actions__test_8cc_1ab2d168581c62c89bd00cdadcccd9e8e4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool testing::gmock_more_actions_test::g_done</definition>
+        <argsstring></argsstring>
+        <name>g_done</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="83" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock-more-actions__test_8cc_1a73552112032ff5d5900dd6f128a62718" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double testing::gmock_more_actions_test::g_double</definition>
+        <argsstring></argsstring>
+        <name>g_double</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="99" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a00503d3168f1123e314c0d42b7e10b88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>short</type>
+        <definition>short testing::gmock_more_actions_test::Short</definition>
+        <argsstring>(short n)</argsstring>
+        <name>Short</name>
+        <param>
+          <type>short</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="72" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1af69e6906d734a99d60480e4291891d66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char testing::gmock_more_actions_test::Char</definition>
+        <argsstring>(char ch)</argsstring>
+        <name>Char</name>
+        <param>
+          <type>char</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="73" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1acdd2dd80f777fdb770b513b63064ac19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_more_actions_test::Nullary</definition>
+        <argsstring>()</argsstring>
+        <name>Nullary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="76" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a061f6d66383a4e793b4d4ca93bd8ca2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_more_actions_test::VoidNullary</definition>
+        <argsstring>()</argsstring>
+        <name>VoidNullary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="84" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1aad456ea2ee1b0cb2741b676a34f540a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::gmock_more_actions_test::Unary</definition>
+        <argsstring>(int x)</argsstring>
+        <name>Unary</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="91" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a986ada18d3311d3fa3a7c33e54e18f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::gmock_more_actions_test::Plus1</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>Plus1</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="93" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a163632ef644604032f00334fce36de1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_more_actions_test::VoidUnary</definition>
+        <argsstring>(int)</argsstring>
+        <name>VoidUnary</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="95" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1ab175725bcdacf7a00948c7d5c1a36419" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::gmock_more_actions_test::ByConstRef</definition>
+        <argsstring>(const string &amp;s)</argsstring>
+        <name>ByConstRef</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="97" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1ae2d3dddc96f5657127593f129cd3fc51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::gmock_more_actions_test::ReferencesGlobalDouble</definition>
+        <argsstring>(const double &amp;x)</argsstring>
+        <name>ReferencesGlobalDouble</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="100" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1ac0099e2d9f40351252df31feda822b71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string testing::gmock_more_actions_test::ByNonConstRef</definition>
+        <argsstring>(string &amp;s)</argsstring>
+        <name>ByNonConstRef</name>
+        <param>
+          <type>string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="102" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a853c9f048674a60798b930750b74a1df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::gmock_more_actions_test::Binary</definition>
+        <argsstring>(const char *input, short n)</argsstring>
+        <name>Binary</name>
+        <param>
+          <type>const char *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="108" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1aec71bd163ae67ec97e073bd13a4ac039" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_more_actions_test::VoidBinary</definition>
+        <argsstring>(int, char)</argsstring>
+        <name>VoidBinary</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>char</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="110" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1ab98b352528a0b72625b4710a6fc648a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_more_actions_test::Ternary</definition>
+        <argsstring>(int x, char y, short z)</argsstring>
+        <name>Ternary</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="112" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1ac41b49dc8ab365ccad7b332796421cd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_more_actions_test::VoidTernary</definition>
+        <argsstring>(int, char, bool)</argsstring>
+        <name>VoidTernary</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>char</type>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="114" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a41c348fff8608825239a276b8426a475" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_more_actions_test::SumOf4</definition>
+        <argsstring>(int a, int b, int c, int d)</argsstring>
+        <name>SumOf4</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="116" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1aaa60ddffb96ddc3a73b0b22929ca5bec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_more_actions_test::SumOfFirst2</definition>
+        <argsstring>(int a, int b, Unused, Unused)</argsstring>
+        <name>SumOfFirst2</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_ignored_value" kindref="compound">Unused</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_ignored_value" kindref="compound">Unused</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="118" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a8c952be61635486e84c1eca3bf3acd9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_more_actions_test::VoidFunctionWithFourArguments</definition>
+        <argsstring>(char, int, float, double)</argsstring>
+        <name>VoidFunctionWithFourArguments</name>
+        <param>
+          <type>char</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="120" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1aa423cedcbd858249b616f0c537a1e4cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string testing::gmock_more_actions_test::Concat4</definition>
+        <argsstring>(const char *s1, const char *s2, const char *s3, const char *s4)</argsstring>
+        <name>Concat4</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s3</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="122" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a38e64569bf08e83c6db22c1fb0fe0af6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_more_actions_test::SumOf5</definition>
+        <argsstring>(int a, int b, int c, int d, int e)</argsstring>
+        <name>SumOf5</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="127" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="127" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a2ac9917d1aa19cd7ac32bba837f4eacc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string testing::gmock_more_actions_test::Concat5</definition>
+        <argsstring>(const char *s1, const char *s2, const char *s3, const char *s4, const char *s5)</argsstring>
+        <name>Concat5</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s3</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s4</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s5</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="135" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a139632d344348fdfa25111d4e43f70ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_more_actions_test::SumOf6</definition>
+        <argsstring>(int a, int b, int c, int d, int e, int f)</argsstring>
+        <name>SumOf6</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="140" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="140" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a4de188277a85d007de0aa6e8dc364b75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string testing::gmock_more_actions_test::Concat6</definition>
+        <argsstring>(const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6)</argsstring>
+        <name>Concat6</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s3</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s4</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s5</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s6</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="150" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a5628f71ebb5ae61a6e56396145a76da4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string testing::gmock_more_actions_test::Concat7</definition>
+        <argsstring>(const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7)</argsstring>
+        <name>Concat7</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s3</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s4</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s5</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s6</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s7</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="155" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="155" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a122e4affe78745eef3dd748e88bd248c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string testing::gmock_more_actions_test::Concat8</definition>
+        <argsstring>(const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7, const char *s8)</argsstring>
+        <name>Concat8</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s3</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s4</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s5</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s6</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s7</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s8</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="161" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="161" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a9f8c8c01bc080a04d798060dad757cf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string testing::gmock_more_actions_test::Concat9</definition>
+        <argsstring>(const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7, const char *s8, const char *s9)</argsstring>
+        <name>Concat9</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s3</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s4</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s5</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s6</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s7</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s8</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s9</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="167" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="167" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1aba6aadf0de090a08bf9e467cdc09ffd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string testing::gmock_more_actions_test::Concat10</definition>
+        <argsstring>(const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7, const char *s8, const char *s9, const char *s10)</argsstring>
+        <name>Concat10</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s3</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s4</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s5</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s6</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s7</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s8</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s9</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s10</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="173" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="173" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a9c5fbd26c6cc6ed31aed5bafb2fa8e5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeTest, Nullary)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeTest</type>
+        </param>
+        <param>
+          <type>Nullary</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="234" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="234" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a28b57a9f9d38574b7c033988ad528ddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeTest, Unary)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeTest</type>
+        </param>
+        <param>
+          <type>Unary</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="240" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="240" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a906bd5cc7aa38e2cc861a9732481fce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeTest, Binary)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeTest</type>
+        </param>
+        <param>
+          <type>Binary</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="247" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="247" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a424fb6113c6c1ab2157edf854a4ae9fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeTest, Ternary)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeTest</type>
+        </param>
+        <param>
+          <type>Ternary</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="254" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="254" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a17f41c1f7f180371d4d240089cdff0dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeTest, FunctionThatTakes4Arguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeTest</type>
+        </param>
+        <param>
+          <type>FunctionThatTakes4Arguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="260" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="260" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a3b6b1b682295a1d04d57374445359e94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeTest, FunctionThatTakes5Arguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeTest</type>
+        </param>
+        <param>
+          <type>FunctionThatTakes5Arguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="266" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="266" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a9a6c89b83ba253838d05d7ee5da7d954" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeTest, FunctionThatTakes6Arguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeTest</type>
+        </param>
+        <param>
+          <type>FunctionThatTakes6Arguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="272" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="272" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1aa19ac39aaa785adeb8d7837d58b824f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::gmock_more_actions_test::CharPtr</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>CharPtr</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="279" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="279" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1af4756ff87444dc6deb438a350ab5527f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeTest, FunctionThatTakes7Arguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeTest</type>
+        </param>
+        <param>
+          <type>FunctionThatTakes7Arguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="282" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="282" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a48d99224a323afa3c9772a868dd60214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeTest, FunctionThatTakes8Arguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeTest</type>
+        </param>
+        <param>
+          <type>FunctionThatTakes8Arguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="293" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="293" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a65d674aacb46d8bf79dbdfe0d49df442" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeTest, FunctionThatTakes9Arguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeTest</type>
+        </param>
+        <param>
+          <type>FunctionThatTakes9Arguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="304" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="304" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a8939ea1ccb0d8787c926c92441b27f6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeTest, FunctionThatTakes10Arguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeTest</type>
+        </param>
+        <param>
+          <type>FunctionThatTakes10Arguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="315" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="315" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a0dd6901e637db57c56f1cf8052b6e1bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeTest, FunctionWithUnusedParameters)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeTest</type>
+        </param>
+        <param>
+          <type>FunctionWithUnusedParameters</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="327" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="327" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a4f48af38351403b569fc6dfae7787ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeTest, MethodWithUnusedParameters)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeTest</type>
+        </param>
+        <param>
+          <type>MethodWithUnusedParameters</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="340" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="340" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1ac56a4cb164b338d3f388ed3f4306a5a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeTest, Functor)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeTest</type>
+        </param>
+        <param>
+          <type>Functor</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="352" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="352" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1af9dfd7f1d4186ee4de2d9871a19dba5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeTest, FunctionWithCompatibleType)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeTest</type>
+        </param>
+        <param>
+          <type>FunctionWithCompatibleType</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="358" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="358" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1abb046fd809977722720c9ce63afd7af5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeMethodTest, Nullary)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeMethodTest</type>
+        </param>
+        <param>
+          <type>Nullary</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="366" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="366" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a386ce48f1f0a49e2b94a16deeffc2084" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeMethodTest, Unary)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeMethodTest</type>
+        </param>
+        <param>
+          <type>Unary</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="373" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="373" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a86221fa7d09853358e38c01b0d6ceced" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeMethodTest, Binary)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeMethodTest</type>
+        </param>
+        <param>
+          <type>Binary</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="380" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="380" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a2b98a8a68d37a0bec600227372a1cff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeMethodTest, Ternary)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeMethodTest</type>
+        </param>
+        <param>
+          <type>Ternary</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="389" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="389" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1af0ab6ef9fdf48e8442a5579ab27eb517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeMethodTest, MethodThatTakes4Arguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeMethodTest</type>
+        </param>
+        <param>
+          <type>MethodThatTakes4Arguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="396" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="396" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a512db122c5beadeeef026bb54aec7e45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeMethodTest, MethodThatTakes5Arguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeMethodTest</type>
+        </param>
+        <param>
+          <type>MethodThatTakes5Arguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="403" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="403" bodyend="407"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a715c088109e141aa577e497e3729b98b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeMethodTest, MethodThatTakes6Arguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeMethodTest</type>
+        </param>
+        <param>
+          <type>MethodThatTakes6Arguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="410" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="410" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a1f11171c55d049143c980502213e0b11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeMethodTest, MethodThatTakes7Arguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeMethodTest</type>
+        </param>
+        <param>
+          <type>MethodThatTakes7Arguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="418" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="418" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a5bfedd2255bbfe7ffcbc76ec581b2ff6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeMethodTest, MethodThatTakes8Arguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeMethodTest</type>
+        </param>
+        <param>
+          <type>MethodThatTakes8Arguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="430" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="430" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1acdcc7f6a35e6373f3d0b3a71f98c418b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeMethodTest, MethodThatTakes9Arguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeMethodTest</type>
+        </param>
+        <param>
+          <type>MethodThatTakes9Arguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="442" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="442" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a14b55eb4c0d0b3149e269eea1443cb58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeMethodTest, MethodThatTakes10Arguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeMethodTest</type>
+        </param>
+        <param>
+          <type>MethodThatTakes10Arguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="454" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="454" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1adb0c29d688c079ad5bf07d5a0bd72aea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(InvokeMethodTest, MethodWithCompatibleType)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>InvokeMethodTest</type>
+        </param>
+        <param>
+          <type>MethodWithCompatibleType</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="467" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="467" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a68748f21021e787dfdc095691c94d495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(WithoutArgsTest, NoArg)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>WithoutArgsTest</type>
+        </param>
+        <param>
+          <type>NoArg</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="475" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="475" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a40664c1acdc3650e8edf9a9a49b008de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(WithArgTest, OneArg)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>WithArgTest</type>
+        </param>
+        <param>
+          <type>OneArg</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="481" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="481" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a717ea38d7b78b6d51b4d617ed317d26e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(ReturnArgActionTest, WorksForOneArgIntArg0)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>ReturnArgActionTest</type>
+        </param>
+        <param>
+          <type>WorksForOneArgIntArg0</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="487" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="487" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a0705d7e6083d129caae9d91cc5d6d570" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(ReturnArgActionTest, WorksForMultiArgBoolArg0)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>ReturnArgActionTest</type>
+        </param>
+        <param>
+          <type>WorksForMultiArgBoolArg0</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="492" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="492" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1ae280b3b95b0cdfcf7b81de95c8fe942d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(ReturnArgActionTest, WorksForMultiArgStringArg2)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>ReturnArgActionTest</type>
+        </param>
+        <param>
+          <type>WorksForMultiArgStringArg2</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="497" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="497" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a511b9c6721629465fd1e2fbd65633ef9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(SaveArgActionTest, WorksForSameType)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>SaveArgActionTest</type>
+        </param>
+        <param>
+          <type>WorksForSameType</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="502" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="502" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a2b92b573de73fdf97dad4da8a67d7fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(SaveArgActionTest, WorksForCompatibleType)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>SaveArgActionTest</type>
+        </param>
+        <param>
+          <type>WorksForCompatibleType</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="509" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="509" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a51d471708cb6fa3c403ea1d936a49dc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(SaveArgPointeeActionTest, WorksForSameType)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>SaveArgPointeeActionTest</type>
+        </param>
+        <param>
+          <type>WorksForSameType</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="516" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="516" bodyend="522"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a35b74b32b6a222e048706e6ce8d64118" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(SaveArgPointeeActionTest, WorksForCompatibleType)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>SaveArgPointeeActionTest</type>
+        </param>
+        <param>
+          <type>WorksForCompatibleType</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="524" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="524" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1afc168d80fe8ca16f0efc874587574e64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(SaveArgPointeeActionTest, WorksForLinkedPtr)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>SaveArgPointeeActionTest</type>
+        </param>
+        <param>
+          <type>WorksForLinkedPtr</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="532" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="532" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1aa9fa575b30dca09e9886722b78415a22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(SetArgRefereeActionTest, WorksForSameType)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>SetArgRefereeActionTest</type>
+        </param>
+        <param>
+          <type>WorksForSameType</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="540" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="540" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1af5a15dbcba14010a5463f3ac9451ab8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(SetArgRefereeActionTest, WorksForCompatibleType)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>SetArgRefereeActionTest</type>
+        </param>
+        <param>
+          <type>WorksForCompatibleType</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="547" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="547" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a0ea4f3d8f1a643726e37825c58d8741f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(SetArgRefereeActionTest, WorksWithExtraArguments)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>SetArgRefereeActionTest</type>
+        </param>
+        <param>
+          <type>WorksWithExtraArguments</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="554" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="554" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a575e9a6f5bfcc133188e973147697425" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(DeleteArgActionTest, OneArg)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DeleteArgActionTest</type>
+        </param>
+        <param>
+          <type>OneArg</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="579" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="579" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a972b47a7e96b95606190afa928ea2db4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(DeleteArgActionTest, TenArgs)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DeleteArgActionTest</type>
+        </param>
+        <param>
+          <type>TenArgs</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="588" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="588" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1aacf568e3d16b210aa2316ccc2cb6b22d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(SetArrayArgumentTest, SetsTheNthArray)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>SetArrayArgumentTest</type>
+        </param>
+        <param>
+          <type>SetsTheNthArray</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="621" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="621" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a63a338ef41086b80dba5729ecd1073e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(SetArrayArgumentTest, SetsTheNthArrayWithEmptyRange)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>SetArrayArgumentTest</type>
+        </param>
+        <param>
+          <type>SetsTheNthArrayWithEmptyRange</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="657" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="657" bodyend="669"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a42955fc99954c095f9d7ded3b92c091f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(SetArrayArgumentTest, SetsTheNthArrayWithConvertibleType)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>SetArrayArgumentTest</type>
+        </param>
+        <param>
+          <type>SetsTheNthArrayWithConvertibleType</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="673" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="673" bodyend="685"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a5db6a5413414f6d9bb8a24d1f07bf882" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(SetArrayArgumentTest, SetsTheNthArrayWithIteratorArgument)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>SetArrayArgumentTest</type>
+        </param>
+        <param>
+          <type>SetsTheNthArrayWithIteratorArgument</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="688" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="688" bodyend="696"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-more-actions__test_8cc_1a690ef20bd9c281781eddcf99b18cff6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::TEST</definition>
+        <argsstring>(ReturnPointeeTest, Works)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>ReturnPointeeTest</type>
+        </param>
+        <param>
+          <type>Works</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="698" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="698" bodyend="705"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="46" column="1"/>
+  </compounddef>
+</doxygen>

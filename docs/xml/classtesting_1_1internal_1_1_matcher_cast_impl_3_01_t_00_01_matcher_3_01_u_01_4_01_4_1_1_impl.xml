@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_u_01_4_01_4_1_1_impl" kind="class" language="C++" prot="private">
+    <compoundname>testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl</compoundname>
+    <basecompoundref refid="classtesting_1_1_matcher_interface" prot="public" virt="non-virtual">testing::MatcherInterface&lt; T &gt;</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_u_01_4_01_4_1_1_impl_1a812216395addd6e4bcfe54317ae42236" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; U &gt;</type>
+        <definition>const Matcher&lt;U&gt; testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl::source_matcher_</definition>
+        <argsstring></argsstring>
+        <name>source_matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="589" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="589" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_u_01_4_01_4_1_1_impl_1adcffa298fd17f1827311420b2075aaab" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl::Impl</definition>
+        <argsstring>(const Matcher&lt; U &gt; &amp;source_matcher)</argsstring>
+        <name>Impl</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; U &gt; &amp;</type>
+          <declname>source_matcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="572" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="572" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_u_01_4_01_4_1_1_impl_1acc8cbc68475bb2cb7af971ad788142fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl::MatchAndExplain</definition>
+        <argsstring>(T x, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="576" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="576" bodyend="578"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_u_01_4_01_4_1_1_impl_1a42677b4e3e3d7b9c8610e33c399f9154" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl::DescribeTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="580" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="580" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_u_01_4_01_4_1_1_impl_1a2d363b3748fd1f4fd98372d1f4bfce4e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl::DescribeNegationTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="584" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="584" bodyend="586"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_u_01_4_01_4_1_1_impl_1a30403b33c628cb4cda127354b18b4896" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(Impl)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type>Impl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="591" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1082">
+        <label>testing::MatcherInterface&lt; T &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="1083" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1083">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="1081">
+        <label>testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl</label>
+        <childnode refid="1082" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1085">
+        <label>testing::MatcherInterface&lt; T &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="1086" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1086">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="1084">
+        <label>testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl</label>
+        <childnode refid="1085" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="570" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="570" bodyend="592"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_u_01_4_01_4_1_1_impl_1a2d363b3748fd1f4fd98372d1f4bfce4e" prot="public" virt="virtual"><scope>testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_u_01_4_01_4_1_1_impl_1a42677b4e3e3d7b9c8610e33c399f9154" prot="public" virt="virtual"><scope>testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_u_01_4_01_4_1_1_impl_1a30403b33c628cb4cda127354b18b4896" prot="private" virt="non-virtual"><scope>testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_u_01_4_01_4_1_1_impl_1adcffa298fd17f1827311420b2075aaab" prot="public" virt="non-virtual"><scope>testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl</scope><name>Impl</name></member>
+      <member refid="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_u_01_4_01_4_1_1_impl_1acc8cbc68475bb2cb7af971ad788142fc" prot="public" virt="virtual"><scope>testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_u_01_4_01_4_1_1_impl_1a812216395addd6e4bcfe54317ae42236" prot="private" virt="non-virtual"><scope>testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl</scope><name>source_matcher_</name></member>
+      <member refid="classtesting_1_1_matcher_describer_interface_1ae2236a56ad2cc35cad10efc1208854f4" prot="public" virt="virtual"><scope>testing::internal::MatcherCastImpl&lt; T, Matcher&lt; U &gt; &gt;::Impl</scope><name>~MatcherDescriberInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

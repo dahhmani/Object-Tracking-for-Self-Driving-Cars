@@ -1,0 +1,59 @@
+\hypertarget{profiler_8h}{}\section{include/profiler.h File Reference}
+\label{profiler_8h}\index{include/profiler.\+h@{include/profiler.\+h}}
+
+
+Profiler class specification.  
+
+
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for profiler.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{profiler_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{profiler_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_e_n_p_m808_x_1_1_profile_result}{E\+N\+P\+M808\+X\+::\+Profile\+Result}
+\begin{DoxyCompactList}\small\item\em Data structure for holding a profiling result. \end{DoxyCompactList}\item 
+class \hyperlink{class_e_n_p_m808_x_1_1_timer}{E\+N\+P\+M808\+X\+::\+Timer}
+\begin{DoxyCompactList}\small\item\em Class for timing a scope (Stopwatch) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_e_n_p_m808_x}{E\+N\+P\+M808X}
+\begin{DoxyCompactList}\small\item\em Class for monocular multiple object tracking for a mobile robot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{profiler_8h_aac1c1303c628961f4a2eefc0a1083766}\label{profiler_8h_aac1c1303c628961f4a2eefc0a1083766}} 
+\#define {\bfseries P\+R\+O\+F\+I\+L\+E\+\_\+\+S\+C\+O\+PE}(name)~Timer timer\#\#\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+(name)
+\item 
+\mbox{\Hypertarget{profiler_8h_aea5bb1ebe0e3e32e5927e899daa2011d}\label{profiler_8h_aea5bb1ebe0e3e32e5927e899daa2011d}} 
+\#define {\bfseries P\+R\+O\+F\+I\+L\+E\+\_\+\+F\+U\+N\+C\+T\+I\+ON}()~P\+R\+O\+F\+I\+L\+E\+\_\+\+S\+C\+O\+PE(\+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Profiler class specification. 
+
+\begin{DoxyAuthor}{Author}
+Mahmoud Dahmani (Driver) 
+
+Aditya Khopkar (Navigator) 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License 
+\end{DoxyCopyright}

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_begin_end_distance_is_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::BeginEndDistanceIsMatcher</compoundname>
+    <innerclass refid="classtesting_1_1internal_1_1_begin_end_distance_is_matcher_1_1_impl" prot="public">testing::internal::BeginEndDistanceIsMatcher::Impl</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename DistanceMatcher</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_begin_end_distance_is_matcher_1af70136950ed3d02c77f809e2b659d9a9" prot="private" static="no" mutable="no">
+        <type>const DistanceMatcher</type>
+        <definition>const DistanceMatcher testing::internal::BeginEndDistanceIsMatcher&lt; DistanceMatcher &gt;::distance_matcher_</definition>
+        <argsstring></argsstring>
+        <name>distance_matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2506" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2506" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_begin_end_distance_is_matcher_1aaf0d34d922d89820346e80a21cbf8d24" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::BeginEndDistanceIsMatcher&lt; DistanceMatcher &gt;::BeginEndDistanceIsMatcher</definition>
+        <argsstring>(const DistanceMatcher &amp;distance_matcher)</argsstring>
+        <name>BeginEndDistanceIsMatcher</name>
+        <param>
+          <type>const DistanceMatcher &amp;</type>
+          <declname>distance_matcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2454" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2454" bodyend="2455"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_begin_end_distance_is_matcher_1af4d79ed63bce73e5cecd6f542aeb57ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::internal::BeginEndDistanceIsMatcher&lt; DistanceMatcher &gt;::operator Matcher&lt; Container &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Matcher&lt; Container &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2458" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2458" bodyend="2460"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_begin_end_distance_is_matcher_1ad2e35ceac0be922c59514a8f247ab622" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::BeginEndDistanceIsMatcher&lt; DistanceMatcher &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(BeginEndDistanceIsMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_begin_end_distance_is_matcher" kindref="compound">BeginEndDistanceIsMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2507" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2452" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2452" bodyend="2508"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_begin_end_distance_is_matcher_1aaf0d34d922d89820346e80a21cbf8d24" prot="public" virt="non-virtual"><scope>testing::internal::BeginEndDistanceIsMatcher</scope><name>BeginEndDistanceIsMatcher</name></member>
+      <member refid="classtesting_1_1internal_1_1_begin_end_distance_is_matcher_1af70136950ed3d02c77f809e2b659d9a9" prot="private" virt="non-virtual"><scope>testing::internal::BeginEndDistanceIsMatcher</scope><name>distance_matcher_</name></member>
+      <member refid="classtesting_1_1internal_1_1_begin_end_distance_is_matcher_1ad2e35ceac0be922c59514a8f247ab622" prot="private" virt="non-virtual"><scope>testing::internal::BeginEndDistanceIsMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_begin_end_distance_is_matcher_1af4d79ed63bce73e5cecd6f542aeb57ce" prot="public" virt="non-virtual"><scope>testing::internal::BeginEndDistanceIsMatcher</scope><name>operator Matcher&lt; Container &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacecpp_1_1ast" kind="namespace" language="Python">
+    <compoundname>cpp::ast</compoundname>
+    <innerclass refid="classcpp_1_1ast_1_1___generic_declaration" prot="public">cpp::ast::_GenericDeclaration</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1___nested_type" prot="public">cpp::ast::_NestedType</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1___null_dict" prot="public">cpp::ast::_NullDict</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_ast_builder" prot="public">cpp::ast::AstBuilder</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_class" prot="public">cpp::ast::Class</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_define" prot="public">cpp::ast::Define</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_delete" prot="public">cpp::ast::Delete</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_enum" prot="public">cpp::ast::Enum</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_expr" prot="public">cpp::ast::Expr</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_friend" prot="public">cpp::ast::Friend</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_function" prot="public">cpp::ast::Function</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_goto" prot="public">cpp::ast::Goto</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_include" prot="public">cpp::ast::Include</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_method" prot="public">cpp::ast::Method</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_node" prot="public">cpp::ast::Node</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_parameter" prot="public">cpp::ast::Parameter</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_return" prot="public">cpp::ast::Return</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_struct" prot="public">cpp::ast::Struct</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_type" prot="public">cpp::ast::Type</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_type_converter" prot="public">cpp::ast::TypeConverter</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_typedef" prot="public">cpp::ast::Typedef</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_union" prot="public">cpp::ast::Union</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_using" prot="public">cpp::ast::Using</innerclass>
+    <innerclass refid="classcpp_1_1ast_1_1_variable_declaration" prot="public">cpp::ast::VariableDeclaration</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="ast_8py_1aa0742cad7ac7285ad26b163812fc1b94" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string cpp::ast.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;nnorwitz@google.com (Neal Norwitz)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="20" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ast_8py_1a8f1229df8e1348664a7e6142c2d0ae0b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cpp::ast.FUNCTION_NONE</definition>
+        <argsstring></argsstring>
+        <name>FUNCTION_NONE</name>
+        <initializer>=  0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="64" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ast_8py_1a73fe57808e7f2e3f3e9d0e1088f183be" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cpp::ast.FUNCTION_CONST</definition>
+        <argsstring></argsstring>
+        <name>FUNCTION_CONST</name>
+        <initializer>=  0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="65" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ast_8py_1a7d444baf6763d374aa4ef9c3f0e6d5b3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cpp::ast.FUNCTION_VIRTUAL</definition>
+        <argsstring></argsstring>
+        <name>FUNCTION_VIRTUAL</name>
+        <initializer>=  0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="66" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ast_8py_1ae8f597c9a3e49e1a29e8da1848d40ff1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cpp::ast.FUNCTION_PURE_VIRTUAL</definition>
+        <argsstring></argsstring>
+        <name>FUNCTION_PURE_VIRTUAL</name>
+        <initializer>=  0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="67" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ast_8py_1ae380e31bf1bce9757f3289a704715c2d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cpp::ast.FUNCTION_CTOR</definition>
+        <argsstring></argsstring>
+        <name>FUNCTION_CTOR</name>
+        <initializer>=  0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="68" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ast_8py_1a4491e62237a2689be078bf3b455549e6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cpp::ast.FUNCTION_DTOR</definition>
+        <argsstring></argsstring>
+        <name>FUNCTION_DTOR</name>
+        <initializer>=  0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="69" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ast_8py_1a6462424cd2b9884f63bf7594811321cd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cpp::ast.FUNCTION_ATTRIBUTE</definition>
+        <argsstring></argsstring>
+        <name>FUNCTION_ATTRIBUTE</name>
+        <initializer>=  0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="70" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ast_8py_1a9d3ba548a6c733892e60c8accdc96639" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cpp::ast.FUNCTION_UNKNOWN_ANNOTATION</definition>
+        <argsstring></argsstring>
+        <name>FUNCTION_UNKNOWN_ANNOTATION</name>
+        <initializer>=  0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="71" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ast_8py_1a3384f360da38e3df526d189238118fb5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cpp::ast.FUNCTION_THROW</definition>
+        <argsstring></argsstring>
+        <name>FUNCTION_THROW</name>
+        <initializer>=  0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="72" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ast_8py_1aecf2f8a17fb10fe367d2da84849c06c9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cpp::ast.FUNCTION_OVERRIDE</definition>
+        <argsstring></argsstring>
+        <name>FUNCTION_OVERRIDE</name>
+        <initializer>=  0x100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="73" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ast_8py_1aea75be79d23641b8d6b405544181cbed" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string cpp::ast._INTERNAL_TOKEN</definition>
+        <argsstring></argsstring>
+        <name>_INTERNAL_TOKEN</name>
+        <initializer>=  &apos;internal&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="97" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ast_8py_1a35d68f08f8c54c2e22a1757e3899eb59" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string cpp::ast._NAMESPACE_POP</definition>
+        <argsstring></argsstring>
+        <name>_NAMESPACE_POP</name>
+        <initializer>=  &apos;ns-pop&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="98" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ast_8py_1a0b1c00fd4aaa476b10de6b3a2550f39f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.reversed</definition>
+        <argsstring>(seq)</argsstring>
+        <name>reversed</name>
+        <param>
+          <type>seq</type>
+          <defname>seq</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="52" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="ast_8py_1a39ad8261fef5e0a7c1c17c510541b66f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.next</definition>
+        <argsstring>(obj)</argsstring>
+        <name>next</name>
+        <param>
+          <type>obj</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="58" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="58" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="ast_8py_1a696471f0d7971a0789824803a008cf6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.BuilderFromSource</definition>
+        <argsstring>(source, filename)</argsstring>
+        <name>BuilderFromSource</name>
+        <param>
+          <type>source</type>
+          <defname>source</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Utility method that returns an AstBuilder from source code.
+
+Args:
+  source: &apos;C++ source code&apos;
+  filename: &apos;file1&apos;
+
+Returns:
+  AstBuilder
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1663" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1663" bodyend="1675"/>
+      </memberdef>
+      <memberdef kind="function" id="ast_8py_1a6a793b93aff7779af7017d001ce3b226" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.PrintIndentifiers</definition>
+        <argsstring>(filename, should_print)</argsstring>
+        <name>PrintIndentifiers</name>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <param>
+          <type>should_print</type>
+          <defname>should_print</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Prints all identifiers for a C++ source file.
+
+Args:
+  filename: &apos;file1&apos;
+  should_print: predicate with signature: bool Function(token)
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1676" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1676" bodyend="1699"/>
+      </memberdef>
+      <memberdef kind="function" id="ast_8py_1abc501124095357c1cf56eaf10e1df327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.PrintAllIndentifiers</definition>
+        <argsstring>(filenames, should_print)</argsstring>
+        <name>PrintAllIndentifiers</name>
+        <param>
+          <type>filenames</type>
+          <defname>filenames</defname>
+        </param>
+        <param>
+          <type>should_print</type>
+          <defname>should_print</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Prints all identifiers for each C++ source file in filenames.
+
+Args:
+  filenames: [&apos;file1&apos;, &apos;file2&apos;, ...]
+  should_print: predicate with signature: bool Function(token)
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1700" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1700" bodyend="1710"/>
+      </memberdef>
+      <memberdef kind="function" id="ast_8py_1acd29cc27c3bff13bf3e055575b8e958a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.main</definition>
+        <argsstring>(argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>argv</type>
+          <defname>argv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1711" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="1711" bodyend="1731"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

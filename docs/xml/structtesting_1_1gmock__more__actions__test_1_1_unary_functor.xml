@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1gmock__more__actions__test_1_1_unary_functor" kind="struct" language="C++" prot="public">
+    <compoundname>testing::gmock_more_actions_test::UnaryFunctor</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtesting_1_1gmock__more__actions__test_1_1_unary_functor_1a3c33592b266e8ed2c7980df9868db53a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_more_actions_test::UnaryFunctor::operator()</definition>
+        <argsstring>(bool x)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>bool</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="105" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="105" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="104" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="104" bodyend="106"/>
+    <listofallmembers>
+      <member refid="structtesting_1_1gmock__more__actions__test_1_1_unary_functor_1a3c33592b266e8ed2c7980df9868db53a" prot="public" virt="non-virtual"><scope>testing::gmock_more_actions_test::UnaryFunctor</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

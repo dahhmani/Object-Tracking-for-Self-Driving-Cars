@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_common_test" kind="class" language="C++" prot="public">
+    <compoundname>CommonTest</compoundname>
+    <basecompoundref refid="classtesting_1_1_test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="class_common_test_1a6dfdcede6964887b9f4254a0e0478e37" prot="protected" static="no">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>typedef std::vector&lt;T&gt; CommonTest&lt; T &gt;::Vector</definition>
+        <argsstring></argsstring>
+        <name>Vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-typed-test_test.cc" line="63" column="1" bodyfile="vendor/googletest/googletest/test/gtest-typed-test_test.cc" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_common_test_1a62827e9d3064cddf4a8698747f1bd434" prot="protected" static="no">
+        <type>std::set&lt; int &gt;</type>
+        <definition>typedef std::set&lt;int&gt; CommonTest&lt; T &gt;::IntSet</definition>
+        <argsstring></argsstring>
+        <name>IntSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-typed-test_test.cc" line="64" column="1" bodyfile="vendor/googletest/googletest/test/gtest-typed-test_test.cc" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_common_test_1ae59c4abcb833625a7baeb2048531ebec" prot="protected" static="no" mutable="no">
+        <type>T</type>
+        <definition>T CommonTest&lt; T &gt;::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-typed-test_test.cc" line="80" column="1" bodyfile="vendor/googletest/googletest/test/gtest-typed-test_test.cc" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="class_common_test_1a52368ce1e65a865db9bdccbcc2cedaac" prot="protected" static="yes" mutable="no">
+        <type>T *</type>
+        <definition>T * CommonTest&lt; T &gt;::shared_</definition>
+        <argsstring></argsstring>
+        <name>shared_</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-typed-test_test.cc" line="81" column="1" bodyfile="vendor/googletest/googletest/test/gtest-typed-test_test.cc" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_common_test_1a6edd90f32f45cc49e4a423b22bd770ce" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CommonTest&lt; T &gt;::SetUpTestCase</definition>
+        <argsstring>()</argsstring>
+        <name>SetUpTestCase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-typed-test_test.cc" line="49" column="1" bodyfile="vendor/googletest/googletest/test/gtest-typed-test_test.cc" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_test_1a68d2bf5108cf28478331588fbdff4838" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CommonTest&lt; T &gt;::TearDownTestCase</definition>
+        <argsstring>()</argsstring>
+        <name>TearDownTestCase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-typed-test_test.cc" line="53" column="1" bodyfile="vendor/googletest/googletest/test/gtest-typed-test_test.cc" bodystart="53" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_common_test_1abd5ec205d90f4b81efab2a6f972f3db0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CommonTest&lt; T &gt;::CommonTest</definition>
+        <argsstring>()</argsstring>
+        <name>CommonTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-typed-test_test.cc" line="66" column="1" bodyfile="vendor/googletest/googletest/test/gtest-typed-test_test.cc" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_test_1a675a632fcf7b1fd961fefc619d6a458d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual CommonTest&lt; T &gt;::~CommonTest</definition>
+        <argsstring>()</argsstring>
+        <name>~CommonTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-typed-test_test.cc" line="68" column="1" bodyfile="vendor/googletest/googletest/test/gtest-typed-test_test.cc" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_test_1a4c7bf7889ce48a9d06530bc4a437f3f5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CommonTest&lt; T &gt;::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplements refid="classtesting_1_1_test_1a190315150c303ddf801313fd1a777733">SetUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-typed-test_test.cc" line="70" column="1" bodyfile="vendor/googletest/googletest/test/gtest-typed-test_test.cc" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_test_1aeae195c2cefa956c6ae5be1226e6ecd8" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CommonTest&lt; T &gt;::TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <reimplements refid="classtesting_1_1_test_1a5f0ab439802cbe0ef7552f1a9f791923">TearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-typed-test_test.cc" line="75" column="1" bodyfile="vendor/googletest/googletest/test/gtest-typed-test_test.cc" bodystart="75" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="298">
+        <label>CommonTest&lt; T &gt;</label>
+        <link refid="class_common_test"/>
+        <childnode refid="299" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="300">
+        <label>CommonTest&lt; T &gt;</label>
+        <link refid="class_common_test"/>
+        <childnode refid="301" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest-typed-test_test.cc" line="45" column="1" bodyfile="vendor/googletest/googletest/test/gtest-typed-test_test.cc" bodystart="45" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_common_test_1abd5ec205d90f4b81efab2a6f972f3db0" prot="protected" virt="non-virtual"><scope>CommonTest</scope><name>CommonTest</name></member>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual"><scope>CommonTest</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual"><scope>CommonTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual"><scope>CommonTest</scope><name>HasNonfatalFailure</name></member>
+      <member refid="class_common_test_1a62827e9d3064cddf4a8698747f1bd434" prot="protected" virt="non-virtual"><scope>CommonTest</scope><name>IntSet</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual"><scope>CommonTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual"><scope>CommonTest</scope><name>RecordProperty</name></member>
+      <member refid="class_common_test_1a4c7bf7889ce48a9d06530bc4a437f3f5" prot="protected" virt="virtual"><scope>CommonTest</scope><name>SetUp</name></member>
+      <member refid="class_common_test_1a6edd90f32f45cc49e4a423b22bd770ce" prot="public" virt="non-virtual"><scope>CommonTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual"><scope>CommonTest</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="class_common_test_1a52368ce1e65a865db9bdccbcc2cedaac" prot="protected" virt="non-virtual"><scope>CommonTest</scope><name>shared_</name></member>
+      <member refid="class_common_test_1aeae195c2cefa956c6ae5be1226e6ecd8" prot="protected" virt="virtual"><scope>CommonTest</scope><name>TearDown</name></member>
+      <member refid="class_common_test_1a68d2bf5108cf28478331588fbdff4838" prot="public" virt="non-virtual"><scope>CommonTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual"><scope>CommonTest</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual"><scope>CommonTest</scope><name>Test</name></member>
+      <member refid="class_common_test_1ae59c4abcb833625a7baeb2048531ebec" prot="protected" virt="non-virtual"><scope>CommonTest</scope><name>value_</name></member>
+      <member refid="class_common_test_1a6dfdcede6964887b9f4254a0e0478e37" prot="protected" virt="non-virtual"><scope>CommonTest</scope><name>Vector</name></member>
+      <member refid="class_common_test_1a675a632fcf7b1fd961fefc619d6a458d" prot="protected" virt="virtual"><scope>CommonTest</scope><name>~CommonTest</name></member>
+      <member refid="classtesting_1_1_test_1a2b0a62f1e667bbe8d8cb18d785bfa991" prot="public" virt="virtual"><scope>CommonTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_v1__7___documentation_8md" kind="file" language="Markdown">
+    <compoundname>V1_7_Documentation.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">This<sp/>page<sp/>lists<sp/>all<sp/>documentation<sp/>wiki<sp/>pages<sp/>for<sp/>Google<sp/>Test<sp/>**(the<sp/>SVN<sp/>trunk<sp/>version)**</highlight></codeline>
+<codeline><highlight class="normal">--<sp/>**if<sp/>you<sp/>use<sp/>a<sp/>released<sp/>version<sp/>of<sp/>Google<sp/>Test,<sp/>please<sp/>read<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">documentation<sp/>for<sp/>that<sp/>specific<sp/>version<sp/>instead.**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[Primer](V1_7_Primer.md)<sp/>--<sp/>start<sp/>here<sp/>if<sp/>you<sp/>are<sp/>new<sp/>to<sp/>Google<sp/>Test.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[Samples](V1_7_Samples.md)<sp/>--<sp/>learn<sp/>from<sp/>examples.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[AdvancedGuide](V1_7_AdvancedGuide.md)<sp/>--<sp/>learn<sp/>more<sp/>about<sp/>Google<sp/>Test.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[XcodeGuide](V1_7_XcodeGuide.md)<sp/>--<sp/>how<sp/>to<sp/>use<sp/>Google<sp/>Test<sp/>in<sp/>Xcode<sp/>on<sp/>Mac.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[Frequently-Asked<sp/>Questions](V1_7_FAQ.md)<sp/>--<sp/>check<sp/>here<sp/>before<sp/>asking<sp/>a<sp/>question<sp/>on<sp/>the<sp/>mailing<sp/>list.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>contribute<sp/>code<sp/>to<sp/>Google<sp/>Test,<sp/>read:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[DevGuide](DevGuide.md)<sp/>--<sp/>read<sp/>this<sp/>_before_<sp/>writing<sp/>your<sp/>first<sp/>patch.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[PumpManual](V1_7_PumpManual.md)<sp/>--<sp/>how<sp/>we<sp/>generate<sp/>some<sp/>of<sp/>Google<sp/>Test&apos;s<sp/>source<sp/>files.</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googletest/docs/V1_7_Documentation.md"/>
+  </compounddef>
+</doxygen>

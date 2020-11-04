@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_pointee_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::PointeeMatcher</compoundname>
+    <innerclass refid="classtesting_1_1internal_1_1_pointee_matcher_1_1_impl" prot="private">testing::internal::PointeeMatcher::Impl</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename InnerMatcher</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_pointee_matcher_1aa429edbc73c0350807d9b0ffcc6ab922" prot="private" static="no" mutable="no">
+        <type>const InnerMatcher</type>
+        <definition>const InnerMatcher testing::internal::PointeeMatcher&lt; InnerMatcher &gt;::matcher_</definition>
+        <argsstring></argsstring>
+        <name>matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2096" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2096" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pointee_matcher_1ad9f7d9dbd115c50811ce82ba27f1ba56" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::PointeeMatcher&lt; InnerMatcher &gt;::PointeeMatcher</definition>
+        <argsstring>(const InnerMatcher &amp;matcher)</argsstring>
+        <name>PointeeMatcher</name>
+        <param>
+          <type>const InnerMatcher &amp;</type>
+          <declname>matcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2045" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2045" bodyend="2045"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pointee_matcher_1adec012cd8d3fa166ee89236545a57772" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pointer</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::internal::PointeeMatcher&lt; InnerMatcher &gt;::operator Matcher&lt; Pointer &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Matcher&lt; Pointer &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2056" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2056" bodyend="2058"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pointee_matcher_1a9e564aa0569377a404edefb7b2ccdb16" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::PointeeMatcher&lt; InnerMatcher &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(PointeeMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_pointee_matcher" kindref="compound">PointeeMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2098" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2043" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2043" bodyend="2099"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_pointee_matcher_1a9e564aa0569377a404edefb7b2ccdb16" prot="private" virt="non-virtual"><scope>testing::internal::PointeeMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_pointee_matcher_1aa429edbc73c0350807d9b0ffcc6ab922" prot="private" virt="non-virtual"><scope>testing::internal::PointeeMatcher</scope><name>matcher_</name></member>
+      <member refid="classtesting_1_1internal_1_1_pointee_matcher_1adec012cd8d3fa166ee89236545a57772" prot="public" virt="non-virtual"><scope>testing::internal::PointeeMatcher</scope><name>operator Matcher&lt; Pointer &gt;</name></member>
+      <member refid="classtesting_1_1internal_1_1_pointee_matcher_1ad9f7d9dbd115c50811ce82ba27f1ba56" prot="public" virt="non-virtual"><scope>testing::internal::PointeeMatcher</scope><name>PointeeMatcher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

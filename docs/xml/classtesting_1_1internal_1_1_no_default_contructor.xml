@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_no_default_contructor" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::NoDefaultContructor</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_no_default_contructor_1a34c9cdf833476a9718141dcff931ba42" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::NoDefaultContructor::NoDefaultContructor</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>NoDefaultContructor</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-port_test.cc" line="993" column="1" bodyfile="vendor/googletest/googletest/test/gtest-port_test.cc" bodystart="993" bodyend="993"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_no_default_contructor_1acba74b55a8c5341808ecb5b9318eaecf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::NoDefaultContructor::NoDefaultContructor</definition>
+        <argsstring>(const NoDefaultContructor &amp;)</argsstring>
+        <name>NoDefaultContructor</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1_no_default_contructor" kindref="compound">NoDefaultContructor</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-port_test.cc" line="994" column="1" bodyfile="vendor/googletest/googletest/test/gtest-port_test.cc" bodystart="994" bodyend="994"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest-port_test.cc" line="991" column="1" bodyfile="vendor/googletest/googletest/test/gtest-port_test.cc" bodystart="991" bodyend="995"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_no_default_contructor_1a34c9cdf833476a9718141dcff931ba42" prot="public" virt="non-virtual"><scope>testing::internal::NoDefaultContructor</scope><name>NoDefaultContructor</name></member>
+      <member refid="classtesting_1_1internal_1_1_no_default_contructor_1acba74b55a8c5341808ecb5b9318eaecf" prot="public" virt="non-virtual"><scope>testing::internal::NoDefaultContructor</scope><name>NoDefaultContructor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

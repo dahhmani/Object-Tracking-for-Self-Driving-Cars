@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classcpp_1_1ast_1_1___generic_declaration" kind="class" language="Python" prot="public">
+    <compoundname>cpp::ast::_GenericDeclaration</compoundname>
+    <basecompoundref refid="classcpp_1_1ast_1_1_node" prot="public" virt="non-virtual">cpp.ast.Node</basecompoundref>
+    <derivedcompoundref refid="classcpp_1_1ast_1_1___nested_type" prot="public" virt="non-virtual">cpp.ast._NestedType</derivedcompoundref>
+    <derivedcompoundref refid="classcpp_1_1ast_1_1_class" prot="public" virt="non-virtual">cpp.ast.Class</derivedcompoundref>
+    <derivedcompoundref refid="classcpp_1_1ast_1_1_function" prot="public" virt="non-virtual">cpp.ast.Function</derivedcompoundref>
+    <derivedcompoundref refid="classcpp_1_1ast_1_1_type" prot="public" virt="non-virtual">cpp.ast.Type</derivedcompoundref>
+    <derivedcompoundref refid="classcpp_1_1ast_1_1_typedef" prot="public" virt="non-virtual">cpp.ast.Typedef</derivedcompoundref>
+    <derivedcompoundref refid="classcpp_1_1ast_1_1_variable_declaration" prot="public" virt="non-virtual">cpp.ast.VariableDeclaration</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1___generic_declaration_1af774f4729dfd78d0538a6782fe8514c1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast._GenericDeclaration::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="235" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1___generic_declaration_1a8aee3f11b37449d54b42a78e0a689f46" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast._GenericDeclaration::namespace</definition>
+        <argsstring></argsstring>
+        <name>namespace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="236" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcpp_1_1ast_1_1___generic_declaration_1afde72751e20708a7802eb7707d23bc3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast._GenericDeclaration.__init__</definition>
+        <argsstring>(self, start, end, name, namespace)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>start</type>
+          <defname>start</defname>
+        </param>
+        <param>
+          <type>end</type>
+          <defname>end</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>namespace</type>
+          <defname>namespace</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="233" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="233" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1___generic_declaration_1a1437d31271ea8cda62da22e2ce427a85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast._GenericDeclaration.FullName</definition>
+        <argsstring>(self)</argsstring>
+        <name>FullName</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="238" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="238" bodyend="243"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcpp_1_1ast_1_1___generic_declaration_1a2ab2d07ccfa5d51ed153e82004c49e98" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast._GenericDeclaration._TypeStringHelper</definition>
+        <argsstring>(self, suffix)</argsstring>
+        <name>_TypeStringHelper</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>suffix</type>
+          <defname>suffix</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="244" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="244" bodyend="251"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>cpp.ast.Union</label>
+        <link refid="classcpp_1_1ast_1_1_union"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cpp.ast.Method</label>
+        <link refid="classcpp_1_1ast_1_1_method"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>cpp.ast.Node</label>
+        <link refid="classcpp_1_1ast_1_1_node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>cpp.ast.Type</label>
+        <link refid="classcpp_1_1ast_1_1_type"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cpp.ast.Enum</label>
+        <link refid="classcpp_1_1ast_1_1_enum"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cpp.ast.Class</label>
+        <link refid="classcpp_1_1ast_1_1_class"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cpp.ast._NestedType</label>
+        <link refid="classcpp_1_1ast_1_1___nested_type"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cpp.ast.Struct</label>
+        <link refid="classcpp_1_1ast_1_1_struct"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>cpp.ast._GenericDeclaration</label>
+        <link refid="classcpp_1_1ast_1_1___generic_declaration"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+      </node>
+      <node id="11">
+        <label>cpp.ast.Typedef</label>
+        <link refid="classcpp_1_1ast_1_1_typedef"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cpp.ast.Function</label>
+        <link refid="classcpp_1_1ast_1_1_function"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>cpp.ast.VariableDeclaration</label>
+        <link refid="classcpp_1_1ast_1_1_variable_declaration"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="14">
+        <label>cpp.ast.Node</label>
+        <link refid="classcpp_1_1ast_1_1_node"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>cpp.ast._GenericDeclaration</label>
+        <link refid="classcpp_1_1ast_1_1___generic_declaration"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="232" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="232" bodyend="252"/>
+    <listofallmembers>
+      <member refid="classcpp_1_1ast_1_1___generic_declaration_1afde72751e20708a7802eb7707d23bc3c" prot="public" virt="non-virtual"><scope>cpp::ast::_GenericDeclaration</scope><name>__init__</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a2cbd6969346645259afc3be51faae904" prot="public" virt="non-virtual" ambiguityscope="cpp::ast::Node."><scope>cpp::ast::_GenericDeclaration</scope><name>__init__</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1ab89915656a60c7b7c752e5baa607c532" prot="public" virt="non-virtual"><scope>cpp::ast::_GenericDeclaration</scope><name>__repr__</name></member>
+      <member refid="classcpp_1_1ast_1_1___generic_declaration_1a2ab2d07ccfa5d51ed153e82004c49e98" prot="private" virt="non-virtual"><scope>cpp::ast::_GenericDeclaration</scope><name>_TypeStringHelper</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a3c5e5246ccf619df28eca02e29d69647" prot="public" virt="non-virtual"><scope>cpp::ast::_GenericDeclaration</scope><name>end</name></member>
+      <member refid="classcpp_1_1ast_1_1___generic_declaration_1a1437d31271ea8cda62da22e2ce427a85" prot="public" virt="non-virtual"><scope>cpp::ast::_GenericDeclaration</scope><name>FullName</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1ab3eca703a79fb65bc25dfbcb7547c79e" prot="public" virt="non-virtual"><scope>cpp::ast::_GenericDeclaration</scope><name>IsDeclaration</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a684ee9a357168e7e07a24fc6812f66e6" prot="public" virt="non-virtual"><scope>cpp::ast::_GenericDeclaration</scope><name>IsDefinition</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a313273874ccf578485006d4000128234" prot="public" virt="non-virtual"><scope>cpp::ast::_GenericDeclaration</scope><name>IsExportable</name></member>
+      <member refid="classcpp_1_1ast_1_1___generic_declaration_1af774f4729dfd78d0538a6782fe8514c1" prot="public" virt="non-virtual"><scope>cpp::ast::_GenericDeclaration</scope><name>name</name></member>
+      <member refid="classcpp_1_1ast_1_1___generic_declaration_1a8aee3f11b37449d54b42a78e0a689f46" prot="public" virt="non-virtual"><scope>cpp::ast::_GenericDeclaration</scope><name>namespace</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a31ae211f954a8c578ef16226df5ac8c8" prot="public" virt="non-virtual"><scope>cpp::ast::_GenericDeclaration</scope><name>Requires</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a7b2aa97e6a049bb1a93aea48c48f1f44" prot="public" virt="non-virtual"><scope>cpp::ast::_GenericDeclaration</scope><name>start</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1ab5dfeabcbcd7c1f5feb8522edffb8b4a" prot="public" virt="non-virtual"><scope>cpp::ast::_GenericDeclaration</scope><name>XXX__str__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

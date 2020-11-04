@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_07c0df1d2ee076cfe0d799d41d21db78" kind="dir">
+    <compoundname>vendor/googletest/googlemock/include</compoundname>
+    <innerdir refid="dir_bdd302141ace6185dbc74fb132383427">vendor/googletest/googlemock/include/gmock</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/"/>
+  </compounddef>
+</doxygen>

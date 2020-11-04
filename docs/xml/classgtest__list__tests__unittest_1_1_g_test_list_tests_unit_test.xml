@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test" kind="class" language="Python" prot="public">
+    <compoundname>gtest_list_tests_unittest::GTestListTestsUnitTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test_1a965601cd1882fdeca94d2461bd033c40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_list_tests_unittest.GTestListTestsUnitTest.RunAndVerify</definition>
+        <argsstring>(self, flag_value, expected_output_re, other_flag)</argsstring>
+        <name>RunAndVerify</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>flag_value</type>
+          <defname>flag_value</defname>
+        </param>
+        <param>
+          <type>expected_output_re</type>
+          <defname>expected_output_re</defname>
+        </param>
+        <param>
+          <type>other_flag</type>
+          <defname>other_flag</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Runs gtest_list_tests_unittest_ and verifies that it prints
+the correct tests.
+
+Args:
+  flag_value:         value of the --gtest_list_tests flag;
+                  None if the flag should not be present.
+  expected_output_re: regular expression that matches the expected
+                  output after running command;
+  other_flag:         a different flag to be passed to command
+                  along with gtest_list_tests;
+                  None if the flag should not be present.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" line="129" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" bodystart="129" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test_1a4168d086b7ec31f86ab548b6fd79b27e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_list_tests_unittest.GTestListTestsUnitTest.testDefaultBehavior</definition>
+        <argsstring>(self)</argsstring>
+        <name>testDefaultBehavior</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests the behavior of the default mode.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" line="173" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" bodystart="173" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test_1a6d3e8738bd4b7494867cac464d342944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_list_tests_unittest.GTestListTestsUnitTest.testFlag</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFlag</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests using the --gtest_list_tests flag.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" line="180" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" bodystart="180" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test_1ae1ccba3f21c8e25968834607f7db2b10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_list_tests_unittest.GTestListTestsUnitTest.testOverrideNonFilterFlags</definition>
+        <argsstring>(self)</argsstring>
+        <name>testOverrideNonFilterFlags</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that --gtest_list_tests overrides the non-filter flags.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" line="190" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" bodystart="190" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test_1ac5bef6c9fb78b8eef84427de811fd70f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_list_tests_unittest.GTestListTestsUnitTest.testWithFilterFlags</definition>
+        <argsstring>(self)</argsstring>
+        <name>testWithFilterFlags</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that --gtest_list_tests takes into account the
+--gtest_filter flag.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" line="197" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" bodystart="197" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Tests using the --gtest_list_tests flag to list all tests.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1018">
+        <label>TestCase</label>
+      </node>
+      <node id="1017">
+        <label>gtest_list_tests_unittest.GTestListTestsUnitTest</label>
+        <link refid="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test"/>
+        <childnode refid="1018" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1020">
+        <label>TestCase</label>
+      </node>
+      <node id="1019">
+        <label>gtest_list_tests_unittest.GTestListTestsUnitTest</label>
+        <link refid="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test"/>
+        <childnode refid="1020" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" line="126" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" bodystart="126" bodyend="206"/>
+    <listofallmembers>
+      <member refid="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test_1a965601cd1882fdeca94d2461bd033c40" prot="public" virt="non-virtual"><scope>gtest_list_tests_unittest::GTestListTestsUnitTest</scope><name>RunAndVerify</name></member>
+      <member refid="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test_1a4168d086b7ec31f86ab548b6fd79b27e" prot="public" virt="non-virtual"><scope>gtest_list_tests_unittest::GTestListTestsUnitTest</scope><name>testDefaultBehavior</name></member>
+      <member refid="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test_1a6d3e8738bd4b7494867cac464d342944" prot="public" virt="non-virtual"><scope>gtest_list_tests_unittest::GTestListTestsUnitTest</scope><name>testFlag</name></member>
+      <member refid="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test_1ae1ccba3f21c8e25968834607f7db2b10" prot="public" virt="non-virtual"><scope>gtest_list_tests_unittest::GTestListTestsUnitTest</scope><name>testOverrideNonFilterFlags</name></member>
+      <member refid="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test_1ac5bef6c9fb78b8eef84427de811fd70f" prot="public" virt="non-virtual"><scope>gtest_list_tests_unittest::GTestListTestsUnitTest</scope><name>testWithFilterFlags</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

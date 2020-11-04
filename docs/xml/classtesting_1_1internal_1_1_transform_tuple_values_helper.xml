@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_transform_tuple_values_helper" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::TransformTupleValuesHelper</compoundname>
+    <innerclass refid="structtesting_1_1internal_1_1_transform_tuple_values_helper_1_1_iterate_over_tuple" prot="private">testing::internal::TransformTupleValuesHelper::IterateOverTuple</innerclass>
+    <innerclass refid="structtesting_1_1internal_1_1_transform_tuple_values_helper_1_1_iterate_over_tuple_3_01_tup_00_010_01_4" prot="private">testing::internal::TransformTupleValuesHelper::IterateOverTuple&lt; Tup, 0 &gt;</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename Tuple</type>
+      </param>
+      <param>
+        <type>typename Func</type>
+      </param>
+      <param>
+        <type>typename OutIter</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_transform_tuple_values_helper_1a4bbd4985cbe384041cb5b94c2a7d2d63" prot="private" static="no">
+        <type>::testing::tuple_size&lt; Tuple &gt;</type>
+        <definition>typedef ::testing::tuple_size&lt;Tuple&gt; testing::internal::TransformTupleValuesHelper&lt; Tuple, Func, OutIter &gt;::TupleSize</definition>
+        <argsstring></argsstring>
+        <name>TupleSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="824" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="824" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_transform_tuple_values_helper_1a27773f284f43c712ec72923a872d35fc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>OutIter</type>
+        <definition>static OutIter testing::internal::TransformTupleValuesHelper&lt; Tuple, Func, OutIter &gt;::Run</definition>
+        <argsstring>(Func f, const Tuple &amp;t, OutIter out)</argsstring>
+        <name>Run</name>
+        <param>
+          <type>Func</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const Tuple &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>OutIter</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="829" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="829" bodyend="831"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="822" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="822" bodyend="847"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_transform_tuple_values_helper_1a27773f284f43c712ec72923a872d35fc" prot="public" virt="non-virtual"><scope>testing::internal::TransformTupleValuesHelper</scope><name>Run</name></member>
+      <member refid="classtesting_1_1internal_1_1_transform_tuple_values_helper_1a4bbd4985cbe384041cb5b94c2a7d2d63" prot="private" virt="non-virtual"><scope>testing::internal::TransformTupleValuesHelper</scope><name>TupleSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

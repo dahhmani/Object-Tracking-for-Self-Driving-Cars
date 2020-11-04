@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classpump_1_1_output" kind="class" language="Python" prot="public">
+    <compoundname>pump::Output</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpump_1_1_output_1a8786848ab3d235189379c449a446f883" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.Output::string</definition>
+        <argsstring></argsstring>
+        <name>string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="643" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="643" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpump_1_1_output_1a01a703055e40078561bd4a5011de4a6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pump.Output.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="642" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="642" bodyend="644"/>
+      </memberdef>
+      <memberdef kind="function" id="classpump_1_1_output_1a6ece94d24be171bae2a2234c052b4c58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pump.Output.GetLastLine</definition>
+        <argsstring>(self)</argsstring>
+        <name>GetLastLine</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="645" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="645" bodyend="651"/>
+      </memberdef>
+      <memberdef kind="function" id="classpump_1_1_output_1a6f284bb3f80e03594bc28286c695f5a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pump.Output.Append</definition>
+        <argsstring>(self, s)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="652" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="652" bodyend="655"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/scripts/pump.py" line="641" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="641" bodyend="656"/>
+    <listofallmembers>
+      <member refid="classpump_1_1_output_1a01a703055e40078561bd4a5011de4a6d" prot="public" virt="non-virtual"><scope>pump::Output</scope><name>__init__</name></member>
+      <member refid="classpump_1_1_output_1a6f284bb3f80e03594bc28286c695f5a7" prot="public" virt="non-virtual"><scope>pump::Output</scope><name>Append</name></member>
+      <member refid="classpump_1_1_output_1a6ece94d24be171bae2a2234c052b4c58" prot="public" virt="non-virtual"><scope>pump::Output</scope><name>GetLastLine</name></member>
+      <member refid="classpump_1_1_output_1a8786848ab3d235189379c449a446f883" prot="public" virt="non-virtual"><scope>pump::Output</scope><name>string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

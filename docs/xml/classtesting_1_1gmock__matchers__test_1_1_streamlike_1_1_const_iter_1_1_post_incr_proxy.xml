@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_streamlike_1_1_const_iter_1_1_post_incr_proxy" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::Streamlike::ConstIter::PostIncrProxy</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1gmock__matchers__test_1_1_streamlike_1_1_const_iter_1_1_post_incr_proxy_1aa04014411e1321be24afff005e2ff09e" prot="private" static="no" mutable="no">
+        <type>value_type</type>
+        <definition>value_type testing::gmock_matchers_test::Streamlike&lt; T &gt;::ConstIter::PostIncrProxy::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4537" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4537" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_streamlike_1_1_const_iter_1_1_post_incr_proxy_1a1915f8db9943b0a995c4e01d6120fc80" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::Streamlike&lt; T &gt;::ConstIter::PostIncrProxy::PostIncrProxy</definition>
+        <argsstring>(const value_type &amp;value)</argsstring>
+        <name>PostIncrProxy</name>
+        <param>
+          <type>const value_type &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4534" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4534" bodyend="4534"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_streamlike_1_1_const_iter_1_1_post_incr_proxy_1a7d5416380b6b6cec0d0ed5b5c9be17b3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>value_type</type>
+        <definition>value_type testing::gmock_matchers_test::Streamlike&lt; T &gt;::ConstIter::PostIncrProxy::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4535" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4535" bodyend="4535"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="4532" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="4532" bodyend="4538"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_streamlike_1_1_const_iter_1_1_post_incr_proxy_1a7d5416380b6b6cec0d0ed5b5c9be17b3" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::Streamlike::ConstIter::PostIncrProxy</scope><name>operator*</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_streamlike_1_1_const_iter_1_1_post_incr_proxy_1a1915f8db9943b0a995c4e01d6120fc80" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::Streamlike::ConstIter::PostIncrProxy</scope><name>PostIncrProxy</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_streamlike_1_1_const_iter_1_1_post_incr_proxy_1aa04014411e1321be24afff005e2ff09e" prot="private" virt="non-virtual"><scope>testing::gmock_matchers_test::Streamlike::ConstIter::PostIncrProxy</scope><name>value_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

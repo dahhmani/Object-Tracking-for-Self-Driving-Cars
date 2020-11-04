@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_ce7ba732775036d8d1ee5b364aad1497" kind="dir">
+    <compoundname>vendor/googletest/googlemock/test</compoundname>
+    <innerfile refid="gmock-actions__test_8cc">gmock-actions_test.cc</innerfile>
+    <innerfile refid="gmock-cardinalities__test_8cc">gmock-cardinalities_test.cc</innerfile>
+    <innerfile refid="gmock-generated-actions__test_8cc">gmock-generated-actions_test.cc</innerfile>
+    <innerfile refid="gmock-generated-function-mockers__test_8cc">gmock-generated-function-mockers_test.cc</innerfile>
+    <innerfile refid="gmock-generated-internal-utils__test_8cc">gmock-generated-internal-utils_test.cc</innerfile>
+    <innerfile refid="gmock-generated-matchers__test_8cc">gmock-generated-matchers_test.cc</innerfile>
+    <innerfile refid="gmock-internal-utils__test_8cc">gmock-internal-utils_test.cc</innerfile>
+    <innerfile refid="gmock-matchers__test_8cc">gmock-matchers_test.cc</innerfile>
+    <innerfile refid="gmock-more-actions__test_8cc">gmock-more-actions_test.cc</innerfile>
+    <innerfile refid="gmock-nice-strict__test_8cc">gmock-nice-strict_test.cc</innerfile>
+    <innerfile refid="gmock-port__test_8cc">gmock-port_test.cc</innerfile>
+    <innerfile refid="gmock-spec-builders__test_8cc">gmock-spec-builders_test.cc</innerfile>
+    <innerfile refid="gmock__all__test_8cc">gmock_all_test.cc</innerfile>
+    <innerfile refid="gmock__ex__test_8cc">gmock_ex_test.cc</innerfile>
+    <innerfile refid="gmock__leak__test_8py">gmock_leak_test.py</innerfile>
+    <innerfile refid="gmock__leak__test___8cc">gmock_leak_test_.cc</innerfile>
+    <innerfile refid="gmock__link2__test_8cc">gmock_link2_test.cc</innerfile>
+    <innerfile refid="gmock__link__test_8cc">gmock_link_test.cc</innerfile>
+    <innerfile refid="gmock__link__test_8h">gmock_link_test.h</innerfile>
+    <innerfile refid="gmock__output__test_8py">gmock_output_test.py</innerfile>
+    <innerfile refid="gmock__output__test___8cc">gmock_output_test_.cc</innerfile>
+    <innerfile refid="gmock__stress__test_8cc">gmock_stress_test.cc</innerfile>
+    <innerfile refid="gmock__test_8cc">gmock_test.cc</innerfile>
+    <innerfile refid="gmock__test__utils_8py">gmock_test_utils.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/"/>
+  </compounddef>
+</doxygen>

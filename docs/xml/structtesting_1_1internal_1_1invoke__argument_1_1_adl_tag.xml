@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1internal_1_1invoke__argument_1_1_adl_tag" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::invoke_argument::AdlTag</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="2129" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="2129" bodyend="2129"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

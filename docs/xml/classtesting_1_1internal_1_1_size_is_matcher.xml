@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_size_is_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::SizeIsMatcher</compoundname>
+    <innerclass refid="classtesting_1_1internal_1_1_size_is_matcher_1_1_impl" prot="public">testing::internal::SizeIsMatcher::Impl</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename SizeMatcher</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_size_is_matcher_1aa5a60a11ee3fb9021024e0306cf2a2a0" prot="private" static="no" mutable="no">
+        <type>const SizeMatcher</type>
+        <definition>const SizeMatcher testing::internal::SizeIsMatcher&lt; SizeMatcher &gt;::size_matcher_</definition>
+        <argsstring></argsstring>
+        <name>size_matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2445" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2445" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_size_is_matcher_1ab6a4e770fe9c1f6d07ef8bf0bc996d5d" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::SizeIsMatcher&lt; SizeMatcher &gt;::SizeIsMatcher</definition>
+        <argsstring>(const SizeMatcher &amp;size_matcher)</argsstring>
+        <name>SizeIsMatcher</name>
+        <param>
+          <type>const SizeMatcher &amp;</type>
+          <declname>size_matcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2401" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2401" bodyend="2403"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_size_is_matcher_1abeb0ee5ead7c7a3066dab0d4efe793ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::internal::SizeIsMatcher&lt; SizeMatcher &gt;::operator Matcher&lt; Container &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Matcher&lt; Container &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2406" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2406" bodyend="2408"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_size_is_matcher_1a986a0ee808657d0d86684ad2b4edb89f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::SizeIsMatcher&lt; SizeMatcher &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(SizeIsMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_size_is_matcher" kindref="compound">SizeIsMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2446" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2399" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2399" bodyend="2447"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_size_is_matcher_1a986a0ee808657d0d86684ad2b4edb89f" prot="private" virt="non-virtual"><scope>testing::internal::SizeIsMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_size_is_matcher_1abeb0ee5ead7c7a3066dab0d4efe793ea" prot="public" virt="non-virtual"><scope>testing::internal::SizeIsMatcher</scope><name>operator Matcher&lt; Container &gt;</name></member>
+      <member refid="classtesting_1_1internal_1_1_size_is_matcher_1aa5a60a11ee3fb9021024e0306cf2a2a0" prot="private" virt="non-virtual"><scope>testing::internal::SizeIsMatcher</scope><name>size_matcher_</name></member>
+      <member refid="classtesting_1_1internal_1_1_size_is_matcher_1ab6a4e770fe9c1f6d07ef8bf0bc996d5d" prot="public" virt="non-virtual"><scope>testing::internal::SizeIsMatcher</scope><name>SizeIsMatcher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

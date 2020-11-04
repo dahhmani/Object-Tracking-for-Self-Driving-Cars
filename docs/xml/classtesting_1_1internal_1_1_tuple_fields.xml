@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_tuple_fields" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::TupleFields</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class Tuple</type>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k0</declname>
+        <defname>k0</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k1</declname>
+        <defname>k1</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k2</declname>
+        <defname>k2</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k3</declname>
+        <defname>k3</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k4</declname>
+        <defname>k4</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k5</declname>
+        <defname>k5</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k6</declname>
+        <defname>k6</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k7</declname>
+        <defname>k7</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k8</declname>
+        <defname>k8</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k9</declname>
+        <defname>k9</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_tuple_fields_1a5480877377ebc94bf3a6c6cab5c369bc" prot="public" static="no">
+        <type>::testing::tuple&lt; GMOCK_FIELD_TYPE_(Tuple, k0), GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2), GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4), GMOCK_FIELD_TYPE_(Tuple, k5), GMOCK_FIELD_TYPE_(Tuple, k6), GMOCK_FIELD_TYPE_(Tuple, k7), GMOCK_FIELD_TYPE_(Tuple, k8), GMOCK_FIELD_TYPE_(Tuple, k9)&gt;</type>
+        <definition>typedef ::testing::tuple&lt;GMOCK_FIELD_TYPE_(Tuple, k0), GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2), GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4), GMOCK_FIELD_TYPE_(Tuple, k5), GMOCK_FIELD_TYPE_(Tuple, k6), GMOCK_FIELD_TYPE_(Tuple, k7), GMOCK_FIELD_TYPE_(Tuple, k8), GMOCK_FIELD_TYPE_(Tuple, k9)&gt; testing::internal::TupleFields&lt; Tuple, k0, k1, k2, k3, k4, k5, k6, k7, k8, k9 &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" line="80" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_tuple_fields_1a020eefb4630e6dffe8bcadd0a70b1bab" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>type</type>
+        <definition>static type testing::internal::TupleFields&lt; Tuple, k0, k1, k2, k3, k4, k5, k6, k7, k8, k9 &gt;::GetSelectedFields</definition>
+        <argsstring>(const Tuple &amp;t)</argsstring>
+        <name>GetSelectedFields</name>
+        <param>
+          <type>const Tuple &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" line="81" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" bodystart="81" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" line="68" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" bodystart="68" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_tuple_fields_1a020eefb4630e6dffe8bcadd0a70b1bab" prot="public" virt="non-virtual"><scope>testing::internal::TupleFields</scope><name>GetSelectedFields</name></member>
+      <member refid="classtesting_1_1internal_1_1_tuple_fields_1a5480877377ebc94bf3a6c6cab5c369bc" prot="public" virt="non-virtual"><scope>testing::internal::TupleFields</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

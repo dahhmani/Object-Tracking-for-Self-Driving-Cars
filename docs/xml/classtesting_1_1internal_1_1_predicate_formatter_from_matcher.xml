@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_predicate_formatter_from_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::PredicateFormatterFromMatcher</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename M</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_predicate_formatter_from_matcher_1a487a5e8a5f082947d060b1e07112b38d" prot="private" static="no" mutable="no">
+        <type>const M</type>
+        <definition>const M testing::internal::PredicateFormatterFromMatcher&lt; M &gt;::matcher_</definition>
+        <argsstring></argsstring>
+        <name>matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1868" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1868" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_predicate_formatter_from_matcher_1aa0c40eca009c31e25738520dea0bc98c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::PredicateFormatterFromMatcher&lt; M &gt;::PredicateFormatterFromMatcher</definition>
+        <argsstring>(M m)</argsstring>
+        <name>PredicateFormatterFromMatcher</name>
+        <param>
+          <type>M</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1836" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1836" bodyend="1836"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_predicate_formatter_from_matcher_1a51d28bee5f86347ea34b7a0f2758b599" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+        <definition>AssertionResult testing::internal::PredicateFormatterFromMatcher&lt; M &gt;::operator()</definition>
+        <argsstring>(const char *value_text, const T &amp;x) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const char *</type>
+          <declname>value_text</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1842" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1842" bodyend="1865"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_predicate_formatter_from_matcher_1adf90dc6428d22a7fce463606d495ee9c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::PredicateFormatterFromMatcher&lt; M &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(PredicateFormatterFromMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_predicate_formatter_from_matcher" kindref="compound">PredicateFormatterFromMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1870" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1834" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1834" bodyend="1871"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_predicate_formatter_from_matcher_1adf90dc6428d22a7fce463606d495ee9c" prot="private" virt="non-virtual"><scope>testing::internal::PredicateFormatterFromMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_predicate_formatter_from_matcher_1a487a5e8a5f082947d060b1e07112b38d" prot="private" virt="non-virtual"><scope>testing::internal::PredicateFormatterFromMatcher</scope><name>matcher_</name></member>
+      <member refid="classtesting_1_1internal_1_1_predicate_formatter_from_matcher_1a51d28bee5f86347ea34b7a0f2758b599" prot="public" virt="non-virtual"><scope>testing::internal::PredicateFormatterFromMatcher</scope><name>operator()</name></member>
+      <member refid="classtesting_1_1internal_1_1_predicate_formatter_from_matcher_1aa0c40eca009c31e25738520dea0bc98c" prot="public" virt="non-virtual"><scope>testing::internal::PredicateFormatterFromMatcher</scope><name>PredicateFormatterFromMatcher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespaceupload__gmock" kind="namespace" language="Python">
+    <compoundname>upload_gmock</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="upload__gmock_8py_1a56f523bfe887b27722a3ea662b4d88d7" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string upload_gmock.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;wan@google.com (Zhanyong Wan)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload_gmock.py" line="40" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload_gmock.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="upload__gmock_8py_1a463de67b37725c16ba31c5d4702e15b8" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string upload_gmock.CC_FLAG</definition>
+        <argsstring></argsstring>
+        <name>CC_FLAG</name>
+        <initializer>=  &apos;--cc=&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload_gmock.py" line="45" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload_gmock.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="upload__gmock_8py_1acf8fe60647d8c3748b0e22dcf669efee" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string upload_gmock.GMOCK_GROUP</definition>
+        <argsstring></argsstring>
+        <name>GMOCK_GROUP</name>
+        <initializer>=  &apos;googlemock@googlegroups.com&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload_gmock.py" line="46" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload_gmock.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="upload__gmock_8py_1aea9cb062f9294622c32e54eb937f588e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload_gmock.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload_gmock.py" line="49" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload_gmock.py" bodystart="49" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/scripts/upload_gmock.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

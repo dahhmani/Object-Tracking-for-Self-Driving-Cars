@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_652760a4f1ae4288e918022dbc5a60bf" kind="dir">
+    <compoundname>vendor/googletest/googlemock/scripts/generator/cpp</compoundname>
+    <innerfile refid="____init_____8py">__init__.py</innerfile>
+    <innerfile refid="ast_8py">ast.py</innerfile>
+    <innerfile refid="gmock__class_8py">gmock_class.py</innerfile>
+    <innerfile refid="gmock__class__test_8py">gmock_class_test.py</innerfile>
+    <innerfile refid="keywords_8py">keywords.py</innerfile>
+    <innerfile refid="tokenize_8py">tokenize.py</innerfile>
+    <innerfile refid="utils_8py">utils.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/"/>
+  </compounddef>
+</doxygen>

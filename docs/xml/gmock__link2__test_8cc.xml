@@ -1,0 +1,658 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="gmock__link2__test_8cc" kind="file" language="C++">
+    <compoundname>gmock_link2_test.cc</compoundname>
+    <includes refid="gmock__link__test_8h" local="yes">test/gmock_link_test.h</includes>
+    <incdepgraph>
+      <node id="2571">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="2593">
+        <label>gtest/internal/gtest-type-util.h</label>
+        <link refid="gtest-type-util_8h_source"/>
+        <childnode refid="2566" relation="include">
+        </childnode>
+      </node>
+      <node id="2587">
+        <label>iomanip</label>
+      </node>
+      <node id="2584">
+        <label>limits</label>
+      </node>
+      <node id="2550">
+        <label>vendor/googletest/googlemock/test/gmock_link2_test.cc</label>
+        <link refid="gmock__link2__test_8cc"/>
+        <childnode refid="2551" relation="include">
+        </childnode>
+      </node>
+      <node id="2575">
+        <label>gtest/internal/gtest-port-arch.h</label>
+        <link refid="gtest-port-arch_8h_source"/>
+      </node>
+      <node id="2562">
+        <label>assert.h</label>
+      </node>
+      <node id="2598">
+        <label>iterator</label>
+      </node>
+      <node id="2586">
+        <label>float.h</label>
+      </node>
+      <node id="2557">
+        <label>gmock/internal/gmock-internal-utils.h</label>
+        <link refid="gmock-internal-utils_8h_source"/>
+        <childnode refid="2558" relation="include">
+        </childnode>
+        <childnode refid="2559" relation="include">
+        </childnode>
+        <childnode refid="2556" relation="include">
+        </childnode>
+        <childnode refid="2560" relation="include">
+        </childnode>
+        <childnode refid="2561" relation="include">
+        </childnode>
+        <childnode refid="2583" relation="include">
+        </childnode>
+      </node>
+      <node id="2618">
+        <label>gmock/gmock-more-actions.h</label>
+        <link refid="gmock-more-actions_8h_source"/>
+        <childnode refid="2555" relation="include">
+        </childnode>
+        <childnode refid="2609" relation="include">
+        </childnode>
+      </node>
+      <node id="2602">
+        <label>gtest/gtest_prod.h</label>
+        <link refid="gtest__prod_8h_source"/>
+      </node>
+      <node id="2563">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2591">
+        <label>gtest/internal/gtest-string.h</label>
+        <link refid="gtest-string_8h_source"/>
+        <childnode refid="2569" relation="include">
+        </childnode>
+        <childnode refid="2556" relation="include">
+        </childnode>
+        <childnode refid="2566" relation="include">
+        </childnode>
+      </node>
+      <node id="2603">
+        <label>gtest/gtest-test-part.h</label>
+        <link refid="gtest-test-part_8h_source"/>
+        <childnode refid="2604" relation="include">
+        </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+        <childnode refid="2585" relation="include">
+        </childnode>
+        <childnode refid="2591" relation="include">
+        </childnode>
+      </node>
+      <node id="2617">
+        <label>gmock/gmock-generated-matchers.h</label>
+        <link refid="gmock-generated-matchers_8h_source"/>
+        <childnode refid="2598" relation="include">
+        </childnode>
+        <childnode refid="2572" relation="include">
+        </childnode>
+        <childnode refid="2556" relation="include">
+        </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+        <childnode refid="2613" relation="include">
+        </childnode>
+      </node>
+      <node id="2554">
+        <label>errno.h</label>
+      </node>
+      <node id="2615">
+        <label>gmock/internal/custom/gmock-matchers.h</label>
+        <link refid="internal_2custom_2gmock-matchers_8h_source"/>
+      </node>
+      <node id="2611">
+        <label>gmock/gmock-generated-function-mockers.h</label>
+        <link refid="gmock-generated-function-mockers_8h_source"/>
+        <childnode refid="2612" relation="include">
+        </childnode>
+        <childnode refid="2557" relation="include">
+        </childnode>
+      </node>
+      <node id="2552">
+        <label>gmock/gmock.h</label>
+        <link refid="gmock_8h_source"/>
+        <childnode refid="2553" relation="include">
+        </childnode>
+        <childnode refid="2607" relation="include">
+        </childnode>
+        <childnode refid="2609" relation="include">
+        </childnode>
+        <childnode refid="2611" relation="include">
+        </childnode>
+        <childnode refid="2616" relation="include">
+        </childnode>
+        <childnode refid="2617" relation="include">
+        </childnode>
+        <childnode refid="2613" relation="include">
+        </childnode>
+        <childnode refid="2618" relation="include">
+        </childnode>
+        <childnode refid="2619" relation="include">
+        </childnode>
+        <childnode refid="2557" relation="include">
+        </childnode>
+      </node>
+      <node id="2556">
+        <label>string</label>
+      </node>
+      <node id="2588">
+        <label>map</label>
+      </node>
+      <node id="2582">
+        <label>gmock/internal/custom/gmock-port.h</label>
+        <link refid="custom_2gmock-port_8h_source"/>
+      </node>
+      <node id="2601">
+        <label>gtest/internal/gtest-param-util-generated.h</label>
+        <link refid="gtest-param-util-generated_8h_source"/>
+        <childnode refid="2597" relation="include">
+        </childnode>
+        <childnode refid="2566" relation="include">
+        </childnode>
+      </node>
+      <node id="2568">
+        <label>stddef.h</label>
+      </node>
+      <node id="2606">
+        <label>gtest/gtest_pred_impl.h</label>
+        <link refid="gtest__pred__impl_8h_source"/>
+      </node>
+      <node id="2559">
+        <label>ostream</label>
+      </node>
+      <node id="2576">
+        <label>gtest/internal/custom/gtest-port.h</label>
+        <link refid="custom_2gtest-port_8h_source"/>
+      </node>
+      <node id="2608">
+        <label>limits.h</label>
+      </node>
+      <node id="2609">
+        <label>gmock/gmock-generated-actions.h</label>
+        <link refid="gmock-generated-actions_8h_source"/>
+        <childnode refid="2553" relation="include">
+        </childnode>
+        <childnode refid="2561" relation="include">
+        </childnode>
+        <childnode refid="2610" relation="include">
+        </childnode>
+      </node>
+      <node id="2594">
+        <label>gtest/gtest-death-test.h</label>
+        <link refid="gtest-death-test_8h_source"/>
+        <childnode refid="2595" relation="include">
+        </childnode>
+      </node>
+      <node id="2570">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2569">
+        <label>string.h</label>
+      </node>
+      <node id="2553">
+        <label>gmock/gmock-actions.h</label>
+        <link refid="gmock-actions_8h_source"/>
+        <childnode refid="2554" relation="include">
+        </childnode>
+        <childnode refid="2555" relation="include">
+        </childnode>
+        <childnode refid="2556" relation="include">
+        </childnode>
+        <childnode refid="2557" relation="include">
+        </childnode>
+        <childnode refid="2561" relation="include">
+        </childnode>
+      </node>
+      <node id="2580">
+        <label>typeinfo</label>
+      </node>
+      <node id="2561">
+        <label>gmock/internal/gmock-port.h</label>
+        <link refid="gmock-port_8h_source"/>
+        <childnode refid="2562" relation="include">
+        </childnode>
+        <childnode refid="2563" relation="include">
+        </childnode>
+        <childnode refid="2564" relation="include">
+        </childnode>
+        <childnode refid="2565" relation="include">
+        </childnode>
+        <childnode refid="2566" relation="include">
+        </childnode>
+        <childnode refid="2582" relation="include">
+        </childnode>
+      </node>
+      <node id="2577">
+        <label>unistd.h</label>
+      </node>
+      <node id="2574">
+        <label>vector</label>
+      </node>
+      <node id="2600">
+        <label>gtest/internal/custom/gtest-printers.h</label>
+        <link refid="internal_2custom_2gtest-printers_8h_source"/>
+      </node>
+      <node id="2590">
+        <label>gtest/gtest-message.h</label>
+        <link refid="gtest-message_8h_source"/>
+        <childnode refid="2584" relation="include">
+        </childnode>
+        <childnode refid="2566" relation="include">
+        </childnode>
+      </node>
+      <node id="2573">
+        <label>utility</label>
+      </node>
+      <node id="2612">
+        <label>gmock/gmock-spec-builders.h</label>
+        <link refid="gmock-spec-builders_8h_source"/>
+        <childnode refid="2588" relation="include">
+        </childnode>
+        <childnode refid="2589" relation="include">
+        </childnode>
+        <childnode refid="2572" relation="include">
+        </childnode>
+        <childnode refid="2556" relation="include">
+        </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+        <childnode refid="2553" relation="include">
+        </childnode>
+        <childnode refid="2607" relation="include">
+        </childnode>
+        <childnode refid="2613" relation="include">
+        </childnode>
+        <childnode refid="2557" relation="include">
+        </childnode>
+        <childnode refid="2561" relation="include">
+        </childnode>
+        <childnode refid="2583" relation="include">
+        </childnode>
+      </node>
+      <node id="2572">
+        <label>sstream</label>
+      </node>
+      <node id="2565">
+        <label>gtest/internal/gtest-linked_ptr.h</label>
+        <link refid="gtest-linked__ptr_8h_source"/>
+        <childnode refid="2563" relation="include">
+        </childnode>
+        <childnode refid="2562" relation="include">
+        </childnode>
+        <childnode refid="2566" relation="include">
+        </childnode>
+      </node>
+      <node id="2613">
+        <label>gmock/gmock-matchers.h</label>
+        <link refid="gmock-matchers_8h_source"/>
+        <childnode refid="2614" relation="include">
+        </childnode>
+        <childnode refid="2555" relation="include">
+        </childnode>
+        <childnode refid="2598" relation="include">
+        </childnode>
+        <childnode refid="2584" relation="include">
+        </childnode>
+        <childnode refid="2559" relation="include">
+        </childnode>
+        <childnode refid="2572" relation="include">
+        </childnode>
+        <childnode refid="2556" relation="include">
+        </childnode>
+        <childnode refid="2573" relation="include">
+        </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+        <childnode refid="2557" relation="include">
+        </childnode>
+        <childnode refid="2561" relation="include">
+        </childnode>
+        <childnode refid="2583" relation="include">
+        </childnode>
+        <childnode refid="2615" relation="include">
+        </childnode>
+      </node>
+      <node id="2614">
+        <label>math.h</label>
+      </node>
+      <node id="2616">
+        <label>gmock/gmock-generated-nice-strict.h</label>
+        <link refid="gmock-generated-nice-strict_8h_source"/>
+        <childnode refid="2612" relation="include">
+        </childnode>
+        <childnode refid="2561" relation="include">
+        </childnode>
+      </node>
+      <node id="2604">
+        <label>iosfwd</label>
+      </node>
+      <node id="2607">
+        <label>gmock/gmock-cardinalities.h</label>
+        <link refid="gmock-cardinalities_8h_source"/>
+        <childnode refid="2608" relation="include">
+        </childnode>
+        <childnode refid="2559" relation="include">
+        </childnode>
+        <childnode refid="2561" relation="include">
+        </childnode>
+        <childnode refid="2583" relation="include">
+        </childnode>
+      </node>
+      <node id="2592">
+        <label>gtest/internal/gtest-filepath.h</label>
+        <link refid="gtest-filepath_8h_source"/>
+        <childnode refid="2591" relation="include">
+        </childnode>
+      </node>
+      <node id="2564">
+        <label>iostream</label>
+      </node>
+      <node id="2583">
+        <label>gtest/gtest.h</label>
+        <link refid="gtest_8h_source"/>
+        <childnode refid="2584" relation="include">
+        </childnode>
+        <childnode refid="2559" relation="include">
+        </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+        <childnode refid="2585" relation="include">
+        </childnode>
+        <childnode refid="2591" relation="include">
+        </childnode>
+        <childnode refid="2594" relation="include">
+        </childnode>
+        <childnode refid="2590" relation="include">
+        </childnode>
+        <childnode refid="2596" relation="include">
+        </childnode>
+        <childnode refid="2599" relation="include">
+        </childnode>
+        <childnode refid="2602" relation="include">
+        </childnode>
+        <childnode refid="2603" relation="include">
+        </childnode>
+        <childnode refid="2605" relation="include">
+        </childnode>
+        <childnode refid="2606" relation="include">
+        </childnode>
+      </node>
+      <node id="2581">
+        <label>gtest/internal/gtest-tuple.h</label>
+        <link refid="gtest-tuple_8h_source"/>
+        <childnode refid="2573" relation="include">
+        </childnode>
+      </node>
+      <node id="2578">
+        <label>strings.h</label>
+      </node>
+      <node id="2567">
+        <label>ctype.h</label>
+      </node>
+      <node id="2605">
+        <label>gtest/gtest-typed-test.h</label>
+        <link refid="gtest-typed-test_8h_source"/>
+        <childnode refid="2566" relation="include">
+        </childnode>
+        <childnode refid="2593" relation="include">
+        </childnode>
+      </node>
+      <node id="2566">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="gtest-port_8h_source"/>
+        <childnode refid="2567" relation="include">
+        </childnode>
+        <childnode refid="2568" relation="include">
+        </childnode>
+        <childnode refid="2563" relation="include">
+        </childnode>
+        <childnode refid="2558" relation="include">
+        </childnode>
+        <childnode refid="2569" relation="include">
+        </childnode>
+        <childnode refid="2570" relation="include">
+        </childnode>
+        <childnode refid="2571" relation="include">
+        </childnode>
+        <childnode refid="2555" relation="include">
+        </childnode>
+        <childnode refid="2564" relation="include">
+        </childnode>
+        <childnode refid="2572" relation="include">
+        </childnode>
+        <childnode refid="2556" relation="include">
+        </childnode>
+        <childnode refid="2573" relation="include">
+        </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+        <childnode refid="2575" relation="include">
+        </childnode>
+        <childnode refid="2576" relation="include">
+        </childnode>
+        <childnode refid="2577" relation="include">
+        </childnode>
+        <childnode refid="2578" relation="include">
+        </childnode>
+        <childnode refid="2579" relation="include">
+        </childnode>
+        <childnode refid="2580" relation="include">
+        </childnode>
+        <childnode refid="2581" relation="include">
+        </childnode>
+      </node>
+      <node id="2585">
+        <label>gtest/internal/gtest-internal.h</label>
+        <link refid="gtest-internal_8h_source"/>
+        <childnode refid="2566" relation="include">
+        </childnode>
+        <childnode refid="2567" relation="include">
+        </childnode>
+        <childnode refid="2586" relation="include">
+        </childnode>
+        <childnode refid="2569" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
+        <childnode refid="2584" relation="include">
+        </childnode>
+        <childnode refid="2588" relation="include">
+        </childnode>
+        <childnode refid="2589" relation="include">
+        </childnode>
+        <childnode refid="2556" relation="include">
+        </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+        <childnode refid="2590" relation="include">
+        </childnode>
+        <childnode refid="2591" relation="include">
+        </childnode>
+        <childnode refid="2592" relation="include">
+        </childnode>
+        <childnode refid="2593" relation="include">
+        </childnode>
+      </node>
+      <node id="2619">
+        <label>gmock/gmock-more-matchers.h</label>
+        <link refid="gmock-more-matchers_8h_source"/>
+        <childnode refid="2617" relation="include">
+        </childnode>
+      </node>
+      <node id="2610">
+        <label>gmock/internal/custom/gmock-generated-actions.h</label>
+        <link refid="internal_2custom_2gmock-generated-actions_8h_source"/>
+      </node>
+      <node id="2597">
+        <label>gtest/internal/gtest-param-util.h</label>
+        <link refid="gtest-param-util_8h_source"/>
+        <childnode refid="2567" relation="include">
+        </childnode>
+        <childnode refid="2598" relation="include">
+        </childnode>
+        <childnode refid="2589" relation="include">
+        </childnode>
+        <childnode refid="2573" relation="include">
+        </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+        <childnode refid="2585" relation="include">
+        </childnode>
+        <childnode refid="2565" relation="include">
+        </childnode>
+        <childnode refid="2566" relation="include">
+        </childnode>
+        <childnode refid="2599" relation="include">
+        </childnode>
+      </node>
+      <node id="2560">
+        <label>gmock/internal/gmock-generated-internal-utils.h</label>
+        <link refid="gmock-generated-internal-utils_8h_source"/>
+        <childnode refid="2561" relation="include">
+        </childnode>
+      </node>
+      <node id="2589">
+        <label>set</label>
+      </node>
+      <node id="2596">
+        <label>gtest/gtest-param-test.h</label>
+        <link refid="gtest-param-test_8h_source"/>
+        <childnode refid="2566" relation="include">
+        </childnode>
+        <childnode refid="2573" relation="include">
+        </childnode>
+        <childnode refid="2585" relation="include">
+        </childnode>
+        <childnode refid="2597" relation="include">
+        </childnode>
+        <childnode refid="2601" relation="include">
+        </childnode>
+      </node>
+      <node id="2555">
+        <label>algorithm</label>
+      </node>
+      <node id="2579">
+        <label>regex.h</label>
+      </node>
+      <node id="2558">
+        <label>stdio.h</label>
+      </node>
+      <node id="2595">
+        <label>gtest/internal/gtest-death-test-internal.h</label>
+        <link refid="gtest-death-test-internal_8h_source"/>
+        <childnode refid="2585" relation="include">
+        </childnode>
+        <childnode refid="2558" relation="include">
+        </childnode>
+      </node>
+      <node id="2551">
+        <label>test/gmock_link_test.h</label>
+        <link refid="gmock__link__test_8h_source"/>
+        <childnode refid="2552" relation="include">
+        </childnode>
+        <childnode refid="2554" relation="include">
+        </childnode>
+        <childnode refid="2561" relation="include">
+        </childnode>
+        <childnode refid="2583" relation="include">
+        </childnode>
+        <childnode refid="2564" relation="include">
+        </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+      </node>
+      <node id="2599">
+        <label>gtest/gtest-printers.h</label>
+        <link refid="gtest-printers_8h_source"/>
+        <childnode refid="2559" relation="include">
+        </childnode>
+        <childnode refid="2572" relation="include">
+        </childnode>
+        <childnode refid="2556" relation="include">
+        </childnode>
+        <childnode refid="2573" relation="include">
+        </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+        <childnode refid="2566" relation="include">
+        </childnode>
+        <childnode refid="2585" relation="include">
+        </childnode>
+        <childnode refid="2600" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="gmock__link2__test_8cc_1afb3d3e7fd53242710a55460595d750bb" prot="public" static="no">
+        <name>LinkTest</name>
+        <initializer>LinkTest2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock_link2_test.cc" line="38" column="9" bodyfile="vendor/googletest/googlemock/test/gmock_link2_test.cc" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2008,<sp/>Google<sp/>Inc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>met:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Google<sp/>Inc.<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author:<sp/>wan@google.com<sp/>(Zhanyong<sp/>Wan),<sp/>vladl@google.com<sp/>(Vlad<sp/>Losev)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Google<sp/>Mock<sp/>-<sp/>a<sp/>framework<sp/>for<sp/>writing<sp/>C++<sp/>mock<sp/>classes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>for<sp/>verifying<sp/>that<sp/>various<sp/>Google<sp/>Mock<sp/>constructs<sp/>do<sp/>not</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>produce<sp/>linker<sp/>errors<sp/>when<sp/>instantiated<sp/>in<sp/>different<sp/>translation<sp/>units.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Please<sp/>see<sp/>gmock_link_test.h<sp/>for<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LinkTest<sp/>LinkTest2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/>&quot;test/gmock_link_test.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googlemock/test/gmock_link2_test.cc"/>
+  </compounddef>
+</doxygen>

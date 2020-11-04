@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_test_result_accessor" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::TestResultAccessor</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_result_accessor_1abcc4b32d1b201eeef92f0ec0ae161cf9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::internal::TestResultAccessor::RecordProperty</definition>
+        <argsstring>(TestResult *test_result, const std::string &amp;xml_element, const TestProperty &amp;property)</argsstring>
+        <name>RecordProperty</name>
+        <param>
+          <type><ref refid="classtesting_1_1_test_result" kindref="compound">TestResult</ref> *</type>
+          <declname>test_result</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>xml_element</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_property" kindref="compound">TestProperty</ref> &amp;</type>
+          <declname>property</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest-internal-inl.h" line="1016" column="1" bodyfile="vendor/googletest/googletest/src/gtest-internal-inl.h" bodystart="1016" bodyend="1020"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_result_accessor_1a53c626632bac65d82d88e432072b866b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::internal::TestResultAccessor::ClearTestPartResults</definition>
+        <argsstring>(TestResult *test_result)</argsstring>
+        <name>ClearTestPartResults</name>
+        <param>
+          <type><ref refid="classtesting_1_1_test_result" kindref="compound">TestResult</ref> *</type>
+          <declname>test_result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest-internal-inl.h" line="1022" column="1" bodyfile="vendor/googletest/googletest/src/gtest-internal-inl.h" bodystart="1022" bodyend="1024"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_test_result_accessor_1a55d771904317c1b0cc380104d175f1db" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="classtesting_1_1_test_part_result" kindref="compound">testing::TestPartResult</ref> &gt; &amp;</type>
+        <definition>static const std::vector&lt;testing::TestPartResult&gt;&amp; testing::internal::TestResultAccessor::test_part_results</definition>
+        <argsstring>(const TestResult &amp;test_result)</argsstring>
+        <name>test_part_results</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_result" kindref="compound">TestResult</ref> &amp;</type>
+          <declname>test_result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/src/gtest-internal-inl.h" line="1026" column="1" bodyfile="vendor/googletest/googletest/src/gtest-internal-inl.h" bodystart="1026" bodyend="1029"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/src/gtest-internal-inl.h" line="1014" column="1" bodyfile="vendor/googletest/googletest/src/gtest-internal-inl.h" bodystart="1014" bodyend="1030"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_test_result_accessor_1a53c626632bac65d82d88e432072b866b" prot="public" virt="non-virtual"><scope>testing::internal::TestResultAccessor</scope><name>ClearTestPartResults</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_result_accessor_1abcc4b32d1b201eeef92f0ec0ae161cf9" prot="public" virt="non-virtual"><scope>testing::internal::TestResultAccessor</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1internal_1_1_test_result_accessor_1a55d771904317c1b0cc380104d175f1db" prot="public" virt="non-virtual"><scope>testing::internal::TestResultAccessor</scope><name>test_part_results</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

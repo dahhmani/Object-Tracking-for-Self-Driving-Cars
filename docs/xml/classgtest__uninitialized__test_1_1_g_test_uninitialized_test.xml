@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgtest__uninitialized__test_1_1_g_test_uninitialized_test" kind="class" language="Python" prot="public">
+    <compoundname>gtest_uninitialized_test::GTestUninitializedTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgtest__uninitialized__test_1_1_g_test_uninitialized_test_1ace4bbad0abec476b03a91bb453e6451c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_uninitialized_test.GTestUninitializedTest.testExitCodeAndOutput</definition>
+        <argsstring>(self)</argsstring>
+        <name>testExitCodeAndOutput</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_uninitialized_test.py" line="65" column="1" bodyfile="vendor/googletest/googletest/test/gtest_uninitialized_test.py" bodystart="65" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1034">
+        <label>TestCase</label>
+      </node>
+      <node id="1033">
+        <label>gtest_uninitialized_test.GTestUninitializedTest</label>
+        <link refid="classgtest__uninitialized__test_1_1_g_test_uninitialized_test"/>
+        <childnode refid="1034" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1036">
+        <label>TestCase</label>
+      </node>
+      <node id="1035">
+        <label>gtest_uninitialized_test.GTestUninitializedTest</label>
+        <link refid="classgtest__uninitialized__test_1_1_g_test_uninitialized_test"/>
+        <childnode refid="1036" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_uninitialized_test.py" line="64" column="1" bodyfile="vendor/googletest/googletest/test/gtest_uninitialized_test.py" bodystart="64" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classgtest__uninitialized__test_1_1_g_test_uninitialized_test_1ace4bbad0abec476b03a91bb453e6451c" prot="public" virt="non-virtual"><scope>gtest_uninitialized_test::GTestUninitializedTest</scope><name>testExitCodeAndOutput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

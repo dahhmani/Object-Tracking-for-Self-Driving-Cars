@@ -1,0 +1,707 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacetesting_1_1internal_1_1invoke__argument" kind="namespace" language="C++">
+    <compoundname>testing::internal::invoke_argument</compoundname>
+    <innerclass refid="structtesting_1_1internal_1_1invoke__argument_1_1_adl_tag" prot="public">testing::internal::invoke_argument::AdlTag</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gmock-generated-actions_8h_1a003f0228357c54422037bd3b448b355a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type>R</type>
+        <definition>R testing::internal::invoke_argument::InvokeArgumentAdl</definition>
+        <argsstring>(AdlTag, F f)</argsstring>
+        <name>InvokeArgumentAdl</name>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1invoke__argument_1_1_adl_tag" kindref="compound">AdlTag</ref></type>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="2137" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="2137" bodyend="2139"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-actions_8h_1af07db25fc1b7486fb991495863bf1ab8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename A1</type>
+          </param>
+        </templateparamlist>
+        <type>R</type>
+        <definition>R testing::internal::invoke_argument::InvokeArgumentAdl</definition>
+        <argsstring>(AdlTag, F f, A1 a1)</argsstring>
+        <name>InvokeArgumentAdl</name>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1invoke__argument_1_1_adl_tag" kindref="compound">AdlTag</ref></type>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>A1</type>
+          <declname>a1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="2141" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="2141" bodyend="2143"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-actions_8h_1afe4a6811c2bcd0c6c51194b95e224f73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename A1</type>
+          </param>
+          <param>
+            <type>typename A2</type>
+          </param>
+        </templateparamlist>
+        <type>R</type>
+        <definition>R testing::internal::invoke_argument::InvokeArgumentAdl</definition>
+        <argsstring>(AdlTag, F f, A1 a1, A2 a2)</argsstring>
+        <name>InvokeArgumentAdl</name>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1invoke__argument_1_1_adl_tag" kindref="compound">AdlTag</ref></type>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>A1</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>A2</type>
+          <declname>a2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="2145" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="2145" bodyend="2147"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-actions_8h_1ae5e7bcffcae6a29e9c66298ead5ee91b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename A1</type>
+          </param>
+          <param>
+            <type>typename A2</type>
+          </param>
+          <param>
+            <type>typename A3</type>
+          </param>
+        </templateparamlist>
+        <type>R</type>
+        <definition>R testing::internal::invoke_argument::InvokeArgumentAdl</definition>
+        <argsstring>(AdlTag, F f, A1 a1, A2 a2, A3 a3)</argsstring>
+        <name>InvokeArgumentAdl</name>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1invoke__argument_1_1_adl_tag" kindref="compound">AdlTag</ref></type>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>A1</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>A2</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>A3</type>
+          <declname>a3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="2149" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="2149" bodyend="2151"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-actions_8h_1aace931066a0efe189d7a0c69f06b74ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename A1</type>
+          </param>
+          <param>
+            <type>typename A2</type>
+          </param>
+          <param>
+            <type>typename A3</type>
+          </param>
+          <param>
+            <type>typename A4</type>
+          </param>
+        </templateparamlist>
+        <type>R</type>
+        <definition>R testing::internal::invoke_argument::InvokeArgumentAdl</definition>
+        <argsstring>(AdlTag, F f, A1 a1, A2 a2, A3 a3, A4 a4)</argsstring>
+        <name>InvokeArgumentAdl</name>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1invoke__argument_1_1_adl_tag" kindref="compound">AdlTag</ref></type>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>A1</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>A2</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>A3</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>A4</type>
+          <declname>a4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="2154" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="2154" bodyend="2156"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-actions_8h_1a371c08ae03d150520e8bda58fb4574c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename A1</type>
+          </param>
+          <param>
+            <type>typename A2</type>
+          </param>
+          <param>
+            <type>typename A3</type>
+          </param>
+          <param>
+            <type>typename A4</type>
+          </param>
+          <param>
+            <type>typename A5</type>
+          </param>
+        </templateparamlist>
+        <type>R</type>
+        <definition>R testing::internal::invoke_argument::InvokeArgumentAdl</definition>
+        <argsstring>(AdlTag, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)</argsstring>
+        <name>InvokeArgumentAdl</name>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1invoke__argument_1_1_adl_tag" kindref="compound">AdlTag</ref></type>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>A1</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>A2</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>A3</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>A4</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>A5</type>
+          <declname>a5</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="2159" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="2159" bodyend="2161"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-actions_8h_1a16bf1b90d183210a82fbbef4e2eef1c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename A1</type>
+          </param>
+          <param>
+            <type>typename A2</type>
+          </param>
+          <param>
+            <type>typename A3</type>
+          </param>
+          <param>
+            <type>typename A4</type>
+          </param>
+          <param>
+            <type>typename A5</type>
+          </param>
+          <param>
+            <type>typename A6</type>
+          </param>
+        </templateparamlist>
+        <type>R</type>
+        <definition>R testing::internal::invoke_argument::InvokeArgumentAdl</definition>
+        <argsstring>(AdlTag, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)</argsstring>
+        <name>InvokeArgumentAdl</name>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1invoke__argument_1_1_adl_tag" kindref="compound">AdlTag</ref></type>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>A1</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>A2</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>A3</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>A4</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>A5</type>
+          <declname>a5</declname>
+        </param>
+        <param>
+          <type>A6</type>
+          <declname>a6</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="2164" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="2164" bodyend="2166"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-actions_8h_1a77f581ed8b270ed4752d49d5bdd59e84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename A1</type>
+          </param>
+          <param>
+            <type>typename A2</type>
+          </param>
+          <param>
+            <type>typename A3</type>
+          </param>
+          <param>
+            <type>typename A4</type>
+          </param>
+          <param>
+            <type>typename A5</type>
+          </param>
+          <param>
+            <type>typename A6</type>
+          </param>
+          <param>
+            <type>typename A7</type>
+          </param>
+        </templateparamlist>
+        <type>R</type>
+        <definition>R testing::internal::invoke_argument::InvokeArgumentAdl</definition>
+        <argsstring>(AdlTag, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)</argsstring>
+        <name>InvokeArgumentAdl</name>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1invoke__argument_1_1_adl_tag" kindref="compound">AdlTag</ref></type>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>A1</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>A2</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>A3</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>A4</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>A5</type>
+          <declname>a5</declname>
+        </param>
+        <param>
+          <type>A6</type>
+          <declname>a6</declname>
+        </param>
+        <param>
+          <type>A7</type>
+          <declname>a7</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="2169" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="2169" bodyend="2172"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-actions_8h_1a43c35b90896110940a0cc41c337ca306" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename A1</type>
+          </param>
+          <param>
+            <type>typename A2</type>
+          </param>
+          <param>
+            <type>typename A3</type>
+          </param>
+          <param>
+            <type>typename A4</type>
+          </param>
+          <param>
+            <type>typename A5</type>
+          </param>
+          <param>
+            <type>typename A6</type>
+          </param>
+          <param>
+            <type>typename A7</type>
+          </param>
+          <param>
+            <type>typename A8</type>
+          </param>
+        </templateparamlist>
+        <type>R</type>
+        <definition>R testing::internal::invoke_argument::InvokeArgumentAdl</definition>
+        <argsstring>(AdlTag, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)</argsstring>
+        <name>InvokeArgumentAdl</name>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1invoke__argument_1_1_adl_tag" kindref="compound">AdlTag</ref></type>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>A1</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>A2</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>A3</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>A4</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>A5</type>
+          <declname>a5</declname>
+        </param>
+        <param>
+          <type>A6</type>
+          <declname>a6</declname>
+        </param>
+        <param>
+          <type>A7</type>
+          <declname>a7</declname>
+        </param>
+        <param>
+          <type>A8</type>
+          <declname>a8</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="2175" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="2175" bodyend="2178"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-actions_8h_1a6e204965286414aac5113286eb5c8996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename A1</type>
+          </param>
+          <param>
+            <type>typename A2</type>
+          </param>
+          <param>
+            <type>typename A3</type>
+          </param>
+          <param>
+            <type>typename A4</type>
+          </param>
+          <param>
+            <type>typename A5</type>
+          </param>
+          <param>
+            <type>typename A6</type>
+          </param>
+          <param>
+            <type>typename A7</type>
+          </param>
+          <param>
+            <type>typename A8</type>
+          </param>
+          <param>
+            <type>typename A9</type>
+          </param>
+        </templateparamlist>
+        <type>R</type>
+        <definition>R testing::internal::invoke_argument::InvokeArgumentAdl</definition>
+        <argsstring>(AdlTag, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)</argsstring>
+        <name>InvokeArgumentAdl</name>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1invoke__argument_1_1_adl_tag" kindref="compound">AdlTag</ref></type>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>A1</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>A2</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>A3</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>A4</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>A5</type>
+          <declname>a5</declname>
+        </param>
+        <param>
+          <type>A6</type>
+          <declname>a6</declname>
+        </param>
+        <param>
+          <type>A7</type>
+          <declname>a7</declname>
+        </param>
+        <param>
+          <type>A8</type>
+          <declname>a8</declname>
+        </param>
+        <param>
+          <type>A9</type>
+          <declname>a9</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="2182" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="2182" bodyend="2185"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-generated-actions_8h_1abd36164191a3e386c50243074854b272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename A1</type>
+          </param>
+          <param>
+            <type>typename A2</type>
+          </param>
+          <param>
+            <type>typename A3</type>
+          </param>
+          <param>
+            <type>typename A4</type>
+          </param>
+          <param>
+            <type>typename A5</type>
+          </param>
+          <param>
+            <type>typename A6</type>
+          </param>
+          <param>
+            <type>typename A7</type>
+          </param>
+          <param>
+            <type>typename A8</type>
+          </param>
+          <param>
+            <type>typename A9</type>
+          </param>
+          <param>
+            <type>typename A10</type>
+          </param>
+        </templateparamlist>
+        <type>R</type>
+        <definition>R testing::internal::invoke_argument::InvokeArgumentAdl</definition>
+        <argsstring>(AdlTag, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9, A10 a10)</argsstring>
+        <name>InvokeArgumentAdl</name>
+        <param>
+          <type><ref refid="structtesting_1_1internal_1_1invoke__argument_1_1_adl_tag" kindref="compound">AdlTag</ref></type>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>A1</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>A2</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>A3</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>A4</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>A5</type>
+          <declname>a5</declname>
+        </param>
+        <param>
+          <type>A6</type>
+          <declname>a6</declname>
+        </param>
+        <param>
+          <type>A7</type>
+          <declname>a7</declname>
+        </param>
+        <param>
+          <type>A8</type>
+          <declname>a8</declname>
+        </param>
+        <param>
+          <type>A9</type>
+          <declname>a9</declname>
+        </param>
+        <param>
+          <type>A10</type>
+          <declname>a10</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="2189" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" bodystart="2189" bodyend="2192"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h" line="2125" column="1"/>
+  </compounddef>
+</doxygen>

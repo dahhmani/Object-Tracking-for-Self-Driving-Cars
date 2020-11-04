@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_comparison_base_1_1_impl" kind="class" language="C++" prot="private">
+    <compoundname>testing::internal::ComparisonBase::Impl</compoundname>
+    <basecompoundref refid="classtesting_1_1_matcher_interface" prot="public" virt="non-virtual">testing::MatcherInterface&lt; Lhs &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename Lhs</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_comparison_base_1_1_impl_1aa665caf1136e3a09f8019296ccbdea44" prot="private" static="no" mutable="no">
+        <type>Rhs</type>
+        <definition>Rhs testing::internal::ComparisonBase&lt; D, Rhs, Op &gt;::Impl&lt; Lhs &gt;::rhs_</definition>
+        <argsstring></argsstring>
+        <name>rhs_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="919" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="919" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_comparison_base_1_1_impl_1ab311039db40ab8b77361666be47c5e1a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ComparisonBase&lt; D, Rhs, Op &gt;::Impl&lt; Lhs &gt;::Impl</definition>
+        <argsstring>(const Rhs &amp;rhs)</argsstring>
+        <name>Impl</name>
+        <param>
+          <type>const Rhs &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="905" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="905" bodyend="905"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_comparison_base_1_1_impl_1a3d4468431bc7104b8269dedfa3a596cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool testing::internal::ComparisonBase&lt; D, Rhs, Op &gt;::Impl&lt; Lhs &gt;::MatchAndExplain</definition>
+        <argsstring>(Lhs lhs, MatchResultListener *) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>Lhs</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="906" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="906" bodyend="909"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_comparison_base_1_1_impl_1a224bdd8f8196208d8138668dc74e1d27" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::ComparisonBase&lt; D, Rhs, Op &gt;::Impl&lt; Lhs &gt;::DescribeTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="910" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="910" bodyend="913"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_comparison_base_1_1_impl_1ab4a33d42d0941bc94e3b0051ce76bb72" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::ComparisonBase&lt; D, Rhs, Op &gt;::Impl&lt; Lhs &gt;::DescribeNegationTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="914" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="914" bodyend="917"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_comparison_base_1_1_impl_1a0608dbd0b2bfda7e450cbc5547aa6e4c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ComparisonBase&lt; D, Rhs, Op &gt;::Impl&lt; Lhs &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(Impl)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type>Impl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="920" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1093">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="1091">
+        <label>testing::internal::ComparisonBase&lt; D, Rhs, Op &gt;::Impl&lt; Lhs &gt;</label>
+        <childnode refid="1092" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1092">
+        <label>testing::MatcherInterface&lt; Lhs &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="1093" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1096">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="1094">
+        <label>testing::internal::ComparisonBase&lt; D, Rhs, Op &gt;::Impl&lt; Lhs &gt;</label>
+        <childnode refid="1095" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1095">
+        <label>testing::MatcherInterface&lt; Lhs &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="1096" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="903" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="903" bodyend="921"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_comparison_base_1_1_impl_1ab4a33d42d0941bc94e3b0051ce76bb72" prot="public" virt="virtual"><scope>testing::internal::ComparisonBase::Impl</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_comparison_base_1_1_impl_1a224bdd8f8196208d8138668dc74e1d27" prot="public" virt="virtual"><scope>testing::internal::ComparisonBase::Impl</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_comparison_base_1_1_impl_1a0608dbd0b2bfda7e450cbc5547aa6e4c" prot="private" virt="non-virtual"><scope>testing::internal::ComparisonBase::Impl</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_comparison_base_1_1_impl_1ab311039db40ab8b77361666be47c5e1a" prot="public" virt="non-virtual"><scope>testing::internal::ComparisonBase::Impl</scope><name>Impl</name></member>
+      <member refid="classtesting_1_1internal_1_1_comparison_base_1_1_impl_1a3d4468431bc7104b8269dedfa3a596cd" prot="public" virt="virtual"><scope>testing::internal::ComparisonBase::Impl</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1internal_1_1_comparison_base_1_1_impl_1aa665caf1136e3a09f8019296ccbdea44" prot="private" virt="non-virtual"><scope>testing::internal::ComparisonBase::Impl</scope><name>rhs_</name></member>
+      <member refid="classtesting_1_1_matcher_describer_interface_1ae2236a56ad2cc35cad10efc1208854f4" prot="public" virt="virtual"><scope>testing::internal::ComparisonBase::Impl</scope><name>~MatcherDescriberInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_polymorphic_is_even_impl" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::PolymorphicIsEvenImpl</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_polymorphic_is_even_impl_1ac07eb9f72db98b4b5489a139e844394c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_matchers_test::PolymorphicIsEvenImpl::DescribeTo</definition>
+        <argsstring>(ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="482" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="482" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_polymorphic_is_even_impl_1a2e873630451f3cf6cad5bf6f82e00a33" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_matchers_test::PolymorphicIsEvenImpl::DescribeNegationTo</definition>
+        <argsstring>(ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <param>
+          <type>ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="484" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="484" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_polymorphic_is_even_impl_1ab8d500c4d6c57645527fc367acf6189e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::gmock_matchers_test::PolymorphicIsEvenImpl::MatchAndExplain</definition>
+        <argsstring>(const T &amp;x, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="489" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="489" bodyend="498"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="480" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="480" bodyend="499"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_polymorphic_is_even_impl_1a2e873630451f3cf6cad5bf6f82e00a33" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::PolymorphicIsEvenImpl</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_polymorphic_is_even_impl_1ac07eb9f72db98b4b5489a139e844394c" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::PolymorphicIsEvenImpl</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_polymorphic_is_even_impl_1ab8d500c4d6c57645527fc367acf6189e" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::PolymorphicIsEvenImpl</scope><name>MatchAndExplain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

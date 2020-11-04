@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_default_value_1_1_value_producer" kind="class" language="C++" prot="private" abstract="yes">
+    <compoundname>testing::DefaultValue::ValueProducer</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_default_value_1_1_value_producer_1aa78c53c5676f4df0efc5c319f8715963" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual testing::DefaultValue&lt; T &gt;::ValueProducer::~ValueProducer</definition>
+        <argsstring>()</argsstring>
+        <name>~ValueProducer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="244" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="244" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_default_value_1_1_value_producer_1adb9e38abe068ac2e792b53fd32bd7e96" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>T</type>
+        <definition>virtual T testing::DefaultValue&lt; T &gt;::ValueProducer::Produce</definition>
+        <argsstring>()=0</argsstring>
+        <name>Produce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="245" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="242" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="242" bodyend="246"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_default_value_1_1_value_producer_1adb9e38abe068ac2e792b53fd32bd7e96" prot="public" virt="pure-virtual"><scope>testing::DefaultValue::ValueProducer</scope><name>Produce</name></member>
+      <member refid="classtesting_1_1_default_value_1_1_value_producer_1aa78c53c5676f4df0efc5c319f8715963" prot="public" virt="virtual"><scope>testing::DefaultValue::ValueProducer</scope><name>~ValueProducer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

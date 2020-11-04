@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_derived_class" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::DerivedClass</compoundname>
+    <basecompoundref refid="classtesting_1_1gmock__matchers__test_1_1_a_class" prot="public" virt="non-virtual">testing::gmock_matchers_test::AClass</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1gmock__matchers__test_1_1_derived_class_1a32832fb762915e658a9e1ab53dc8be02" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::gmock_matchers_test::DerivedClass::k_</definition>
+        <argsstring></argsstring>
+        <name>k_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3608" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3608" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_derived_class_1a6f8638915c84cb14365e337d99857847" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_matchers_test::DerivedClass::k</definition>
+        <argsstring>() const</argsstring>
+        <name>k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3606" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3606" bodyend="3606"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="403">
+        <label>testing::gmock_matchers_test::DerivedClass</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_derived_class"/>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="404">
+        <label>testing::gmock_matchers_test::AClass</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_a_class"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="405">
+        <label>testing::gmock_matchers_test::DerivedClass</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_derived_class"/>
+        <childnode refid="406" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="406">
+        <label>testing::gmock_matchers_test::AClass</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_a_class"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3604" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3604" bodyend="3609"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_a_class_1ac43d717a80bb6fad8c77dc36f963ca88" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::DerivedClass</scope><name>AClass</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_derived_class_1a6f8638915c84cb14365e337d99857847" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::DerivedClass</scope><name>k</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_derived_class_1a32832fb762915e658a9e1ab53dc8be02" prot="private" virt="non-virtual"><scope>testing::gmock_matchers_test::DerivedClass</scope><name>k_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_a_class_1add84ab9ef4a6bbe78719a9528bf6fb90" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::DerivedClass</scope><name>n</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_a_class_1a0ca922c6dbf894df355c1ce2082468ba" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::DerivedClass</scope><name>s</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_a_class_1a3181466cec6faa5ab3c6bc5c4dbf67b2" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::DerivedClass</scope><name>set_n</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_a_class_1a131c5d2da4b5984f5af3fd84898eaf09" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::DerivedClass</scope><name>set_s</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_a_class_1ade61d438cb535d71d0dcc17a1d5bd7cd" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::DerivedClass</scope><name>x</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_base" kind="class" language="C++" prot="public">
+    <compoundname>Base</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_base_1a52a6455160a570c261fe257b5d785707" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Base::x_</definition>
+        <argsstring></argsstring>
+        <name>x_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5160" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5160" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_base_1a1d5f3fb92f8cbc687705785bdc6abd18" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Base::Base</definition>
+        <argsstring>(int an_x)</argsstring>
+        <name>Base</name>
+        <param>
+          <type>int</type>
+          <declname>an_x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5157" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5157" bodyend="5157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1a779fd2b157ebd763b15383d96047e07c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Base::x</definition>
+        <argsstring>() const</argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5158" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5158" bodyend="5158"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5155" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5155" bodyend="5161"/>
+    <listofallmembers>
+      <member refid="class_base_1a1d5f3fb92f8cbc687705785bdc6abd18" prot="public" virt="non-virtual"><scope>Base</scope><name>Base</name></member>
+      <member refid="class_base_1a779fd2b157ebd763b15383d96047e07c" prot="public" virt="non-virtual"><scope>Base</scope><name>x</name></member>
+      <member refid="class_base_1a52a6455160a570c261fe257b5d785707" prot="private" virt="non-virtual"><scope>Base</scope><name>x_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

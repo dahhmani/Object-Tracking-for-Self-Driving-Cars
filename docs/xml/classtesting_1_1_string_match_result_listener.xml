@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_string_match_result_listener" kind="class" language="C++" prot="public">
+    <compoundname>testing::StringMatchResultListener</compoundname>
+    <basecompoundref refid="classtesting_1_1_match_result_listener" prot="public" virt="non-virtual">testing::MatchResultListener</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1_string_match_result_listener_1a91649df8349c441ce8963271d0633f3e" prot="private" static="no" mutable="no">
+        <type>::std::stringstream</type>
+        <definition>::std::stringstream testing::StringMatchResultListener::ss_</definition>
+        <argsstring></argsstring>
+        <name>ss_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="195" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_string_match_result_listener_1a3894c8adca960a2f20a3db6a02b09238" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::StringMatchResultListener::StringMatchResultListener</definition>
+        <argsstring>()</argsstring>
+        <name>StringMatchResultListener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="186" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="186" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_string_match_result_listener_1ad1ed3c6b1077cc76b67567b33f5a2bd1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>internal::string</type>
+        <definition>internal::string testing::StringMatchResultListener::str</definition>
+        <argsstring>() const</argsstring>
+        <name>str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="189" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="189" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_string_match_result_listener_1afd6e59e768516386a3908e7f5cc135d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::StringMatchResultListener::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="192" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="192" bodyend="192"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1_string_match_result_listener_1ab473316f1d511e822ec3051c83b8ed5d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::StringMatchResultListener::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(StringMatchResultListener)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1_string_match_result_listener" kindref="compound">StringMatchResultListener</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="197" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2015">
+        <label>testing::MatchResultListener</label>
+        <link refid="classtesting_1_1_match_result_listener"/>
+      </node>
+      <node id="2014">
+        <label>testing::StringMatchResultListener</label>
+        <link refid="classtesting_1_1_string_match_result_listener"/>
+        <childnode refid="2015" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2017">
+        <label>testing::MatchResultListener</label>
+        <link refid="classtesting_1_1_match_result_listener"/>
+      </node>
+      <node id="2016">
+        <label>testing::StringMatchResultListener</label>
+        <link refid="classtesting_1_1_string_match_result_listener"/>
+        <childnode refid="2017" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="184" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="184" bodyend="198"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_string_match_result_listener_1afd6e59e768516386a3908e7f5cc135d3" prot="public" virt="non-virtual"><scope>testing::StringMatchResultListener</scope><name>Clear</name></member>
+      <member refid="classtesting_1_1_string_match_result_listener_1ab473316f1d511e822ec3051c83b8ed5d" prot="private" virt="non-virtual"><scope>testing::StringMatchResultListener</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1ac34f9771f2ba6128cd6a1348b3aebda3" prot="public" virt="non-virtual"><scope>testing::StringMatchResultListener</scope><name>IsInterested</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1a245c360286cd0496d22a4d2fde80eb0b" prot="public" virt="non-virtual"><scope>testing::StringMatchResultListener</scope><name>MatchResultListener</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1a89f628a452635d1502a9062d9c864ebd" prot="public" virt="non-virtual"><scope>testing::StringMatchResultListener</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classtesting_1_1_string_match_result_listener_1a91649df8349c441ce8963271d0633f3e" prot="private" virt="non-virtual"><scope>testing::StringMatchResultListener</scope><name>ss_</name></member>
+      <member refid="classtesting_1_1_string_match_result_listener_1ad1ed3c6b1077cc76b67567b33f5a2bd1" prot="public" virt="non-virtual"><scope>testing::StringMatchResultListener</scope><name>str</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1a5abecb247e005f7f50a94898e3f44ee3" prot="public" virt="non-virtual"><scope>testing::StringMatchResultListener</scope><name>stream</name></member>
+      <member refid="classtesting_1_1_string_match_result_listener_1a3894c8adca960a2f20a3db6a02b09238" prot="public" virt="non-virtual"><scope>testing::StringMatchResultListener</scope><name>StringMatchResultListener</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1aa29f43f7b2ffd850c721a8a33ccbba92" prot="public" virt="pure-virtual"><scope>testing::StringMatchResultListener</scope><name>~MatchResultListener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

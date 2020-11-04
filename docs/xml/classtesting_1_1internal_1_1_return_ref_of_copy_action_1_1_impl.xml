@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_return_ref_of_copy_action_1_1_impl" kind="class" language="C++" prot="private">
+    <compoundname>testing::internal::ReturnRefOfCopyAction::Impl</compoundname>
+    <basecompoundref refid="classtesting_1_1_action_interface" prot="public" virt="non-virtual">testing::ActionInterface&lt; F &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename F</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_return_ref_of_copy_action_1_1_impl_1abb413010cf24f603295ac6426adbe9d0" prot="public" static="no">
+        <type><ref refid="structtesting_1_1internal_1_1_function" kindref="compound">Function</ref>&lt; F &gt;::Result</type>
+        <definition>typedef Function&lt;F&gt;::Result testing::internal::ReturnRefOfCopyAction&lt; T &gt;::Impl&lt; F &gt;::Result</definition>
+        <argsstring></argsstring>
+        <name>Result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="726" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="726" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_return_ref_of_copy_action_1_1_impl_1aae70fc272cfaa8efebffffdeaca36cea" prot="public" static="no">
+        <type><ref refid="structtesting_1_1internal_1_1_function" kindref="compound">Function</ref>&lt; F &gt;::ArgumentTuple</type>
+        <definition>typedef Function&lt;F&gt;::ArgumentTuple testing::internal::ReturnRefOfCopyAction&lt; T &gt;::Impl&lt; F &gt;::ArgumentTuple</definition>
+        <argsstring></argsstring>
+        <name>ArgumentTuple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="727" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="727" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_return_ref_of_copy_action_1_1_impl_1ad253b5cad2707636b8b19970708905c3" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T testing::internal::ReturnRefOfCopyAction&lt; T &gt;::Impl&lt; F &gt;::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="736" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="736" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_return_ref_of_copy_action_1_1_impl_1a5019dc0a3f19a844e939a52abe63f473" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ReturnRefOfCopyAction&lt; T &gt;::Impl&lt; F &gt;::Impl</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>Impl</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="729" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="729" bodyend="729"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_return_ref_of_copy_action_1_1_impl_1aa208a2fce99a1e2e1913c89ec7a3bc5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>Result</type>
+        <definition>virtual Result testing::internal::ReturnRefOfCopyAction&lt; T &gt;::Impl&lt; F &gt;::Perform</definition>
+        <argsstring>(const ArgumentTuple &amp;)</argsstring>
+        <name>Perform</name>
+        <param>
+          <type>const ArgumentTuple &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="731" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="731" bodyend="733"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_return_ref_of_copy_action_1_1_impl_1a380485fdbcb248ca267bf190202607c5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ReturnRefOfCopyAction&lt; T &gt;::Impl&lt; F &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(Impl)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type>Impl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="738" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1170">
+        <label>testing::ActionInterface&lt; F &gt;</label>
+        <link refid="classtesting_1_1_action_interface"/>
+      </node>
+      <node id="1169">
+        <label>testing::internal::ReturnRefOfCopyAction&lt; T &gt;::Impl&lt; F &gt;</label>
+        <childnode refid="1170" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1172">
+        <label>testing::ActionInterface&lt; F &gt;</label>
+        <link refid="classtesting_1_1_action_interface"/>
+      </node>
+      <node id="1171">
+        <label>testing::internal::ReturnRefOfCopyAction&lt; T &gt;::Impl&lt; F &gt;</label>
+        <childnode refid="1172" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="724" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="724" bodyend="739"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_action_interface_1a0f1d44e4c669a9cae5ee5b28419a6f52" prot="public" virt="non-virtual"><scope>testing::internal::ReturnRefOfCopyAction::Impl</scope><name>ActionInterface</name></member>
+      <member refid="classtesting_1_1internal_1_1_return_ref_of_copy_action_1_1_impl_1aae70fc272cfaa8efebffffdeaca36cea" prot="public" virt="non-virtual"><scope>testing::internal::ReturnRefOfCopyAction::Impl</scope><name>ArgumentTuple</name></member>
+      <member refid="classtesting_1_1internal_1_1_return_ref_of_copy_action_1_1_impl_1a380485fdbcb248ca267bf190202607c5" prot="private" virt="non-virtual"><scope>testing::internal::ReturnRefOfCopyAction::Impl</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_return_ref_of_copy_action_1_1_impl_1a5019dc0a3f19a844e939a52abe63f473" prot="public" virt="non-virtual"><scope>testing::internal::ReturnRefOfCopyAction::Impl</scope><name>Impl</name></member>
+      <member refid="classtesting_1_1internal_1_1_return_ref_of_copy_action_1_1_impl_1aa208a2fce99a1e2e1913c89ec7a3bc5d" prot="public" virt="virtual"><scope>testing::internal::ReturnRefOfCopyAction::Impl</scope><name>Perform</name></member>
+      <member refid="classtesting_1_1internal_1_1_return_ref_of_copy_action_1_1_impl_1abb413010cf24f603295ac6426adbe9d0" prot="public" virt="non-virtual"><scope>testing::internal::ReturnRefOfCopyAction::Impl</scope><name>Result</name></member>
+      <member refid="classtesting_1_1internal_1_1_return_ref_of_copy_action_1_1_impl_1ad253b5cad2707636b8b19970708905c3" prot="private" virt="non-virtual"><scope>testing::internal::ReturnRefOfCopyAction::Impl</scope><name>value_</name></member>
+      <member refid="classtesting_1_1_action_interface_1a7dd0a5fc93d86ae3c9d04963b9f3a93f" prot="public" virt="virtual"><scope>testing::internal::ReturnRefOfCopyAction::Impl</scope><name>~ActionInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

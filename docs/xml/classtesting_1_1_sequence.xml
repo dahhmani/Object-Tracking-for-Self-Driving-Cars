@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_sequence" kind="class" language="C++" prot="public">
+    <compoundname>testing::Sequence</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1_sequence_1a255551ecc8157f7f88cf6f58eb327419" prot="private" static="no" mutable="no">
+        <type><ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">internal::linked_ptr</ref>&lt; <ref refid="classtesting_1_1_expectation" kindref="compound">Expectation</ref> &gt;</type>
+        <definition>internal::linked_ptr&lt;Expectation&gt; testing::Sequence::last_expectation_</definition>
+        <argsstring></argsstring>
+        <name>last_expectation_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="633" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="633" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_sequence_1abde36441492d869e608175966f8f8c48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::Sequence::Sequence</definition>
+        <argsstring>()</argsstring>
+        <name>Sequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="622" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="622" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_sequence_1ac5b77b3b5b2e229ccbc13be1f3d17a9c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::Sequence::AddExpectation</definition>
+        <argsstring>(const Expectation &amp;expectation) const</argsstring>
+        <name>AddExpectation</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_expectation" kindref="compound">Expectation</ref> &amp;</type>
+          <declname>expectation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="626" column="1" bodyfile="vendor/googletest/googlemock/src/gmock-spec-builders.cc" bodystart="794" bodyend="802"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="619" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="619" bodyend="634"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_sequence_1ac5b77b3b5b2e229ccbc13be1f3d17a9c" prot="public" virt="non-virtual"><scope>testing::Sequence</scope><name>AddExpectation</name></member>
+      <member refid="classtesting_1_1_sequence_1a255551ecc8157f7f88cf6f58eb327419" prot="private" virt="non-virtual"><scope>testing::Sequence</scope><name>last_expectation_</name></member>
+      <member refid="classtesting_1_1_sequence_1abde36441492d869e608175966f8f8c48" prot="public" virt="non-virtual"><scope>testing::Sequence</scope><name>Sequence</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

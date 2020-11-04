@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_match_result_listener" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>testing::MatchResultListener</compoundname>
+    <derivedcompoundref refid="classtesting_1_1internal_1_1_dummy_match_result_listener" prot="public" virt="non-virtual">testing::internal::DummyMatchResultListener</derivedcompoundref>
+    <derivedcompoundref refid="classtesting_1_1internal_1_1_stream_match_result_listener" prot="public" virt="non-virtual">testing::internal::StreamMatchResultListener</derivedcompoundref>
+    <derivedcompoundref refid="classtesting_1_1_string_match_result_listener" prot="public" virt="non-virtual">testing::StringMatchResultListener</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1_match_result_listener_1a91ff831a7e848af58d44eb3b1801812c" prot="private" static="no" mutable="no">
+        <type>::std::ostream *const</type>
+        <definition>::std::ostream* const testing::MatchResultListener::stream_</definition>
+        <argsstring></argsstring>
+        <name>stream_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="107" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_match_result_listener_1a245c360286cd0496d22a4d2fde80eb0b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::MatchResultListener::MatchResultListener</definition>
+        <argsstring>(::std::ostream *os)</argsstring>
+        <name>MatchResultListener</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="85" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_match_result_listener_1aa29f43f7b2ffd850c721a8a33ccbba92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type></type>
+        <definition>testing::MatchResultListener::~MatchResultListener</definition>
+        <argsstring>()=0</argsstring>
+        <name>~MatchResultListener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="86" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="112" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_match_result_listener_1a89f628a452635d1502a9062d9c864ebd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> &amp;</type>
+        <definition>MatchResultListener&amp; testing::MatchResultListener::operator&lt;&lt;</definition>
+        <argsstring>(const T &amp;x)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="91" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="91" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_match_result_listener_1a5abecb247e005f7f50a94898e3f44ee3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>::std::ostream *</type>
+        <definition>::std::ostream* testing::MatchResultListener::stream</definition>
+        <argsstring>()</argsstring>
+        <name>stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="98" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_match_result_listener_1ac34f9771f2ba6128cd6a1348b3aebda3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::MatchResultListener::IsInterested</definition>
+        <argsstring>() const</argsstring>
+        <name>IsInterested</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="104" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1_match_result_listener_1ad41af985b372f2d8394e01fd52a1e53d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::MatchResultListener::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(MatchResultListener)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="109" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1472">
+        <label>testing::internal::StreamMatchResultListener</label>
+        <link refid="classtesting_1_1internal_1_1_stream_match_result_listener"/>
+        <childnode refid="1470" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1470">
+        <label>testing::MatchResultListener</label>
+        <link refid="classtesting_1_1_match_result_listener"/>
+      </node>
+      <node id="1471">
+        <label>testing::internal::DummyMatchResultListener</label>
+        <link refid="classtesting_1_1internal_1_1_dummy_match_result_listener"/>
+        <childnode refid="1470" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1473">
+        <label>testing::StringMatchResultListener</label>
+        <link refid="classtesting_1_1_string_match_result_listener"/>
+        <childnode refid="1470" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="80" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="80" bodyend="110"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_match_result_listener_1ad41af985b372f2d8394e01fd52a1e53d" prot="private" virt="non-virtual"><scope>testing::MatchResultListener</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1ac34f9771f2ba6128cd6a1348b3aebda3" prot="public" virt="non-virtual"><scope>testing::MatchResultListener</scope><name>IsInterested</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1a245c360286cd0496d22a4d2fde80eb0b" prot="public" virt="non-virtual"><scope>testing::MatchResultListener</scope><name>MatchResultListener</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1a89f628a452635d1502a9062d9c864ebd" prot="public" virt="non-virtual"><scope>testing::MatchResultListener</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1a5abecb247e005f7f50a94898e3f44ee3" prot="public" virt="non-virtual"><scope>testing::MatchResultListener</scope><name>stream</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1a91ff831a7e848af58d44eb3b1801812c" prot="private" virt="non-virtual"><scope>testing::MatchResultListener</scope><name>stream_</name></member>
+      <member refid="classtesting_1_1_match_result_listener_1aa29f43f7b2ffd850c721a8a33ccbba92" prot="public" virt="pure-virtual"><scope>testing::MatchResultListener</scope><name>~MatchResultListener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

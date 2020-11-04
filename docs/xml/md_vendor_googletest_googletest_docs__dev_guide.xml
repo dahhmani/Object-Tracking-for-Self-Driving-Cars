@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="md_vendor_googletest_googletest_docs__dev_guide" kind="page">
+    <compoundname>md_vendor_googletest_googletest_docs_DevGuide</compoundname>
+    <title>DevGuide</title>
+    <detaileddescription>
+<para>If you are interested in understanding the internals of Google Test, building from source, or contributing ideas or modifications to the project, then this document is for you.</para><para><heading level="1">Introduction</heading>
+</para><para>First, let&apos;s give you some background of the project.</para><para><heading level="2">Licensing</heading>
+</para><para>All Google Test source and pre-built packages are provided under the <ulink url="http://www.opensource.org/licenses/bsd-license.php">New BSD License</ulink>.</para><para><heading level="2">The Google Test Community</heading>
+</para><para>The Google Test community exists primarily through the <ulink url="http://groups.google.com/group/googletestframework">discussion group</ulink> and the GitHub repository. You are definitely encouraged to contribute to the discussion and you can also help us to keep the effectiveness of the group high by following and promoting the guidelines listed here.</para><para><heading level="3">Please Be Friendly</heading>
+</para><para>Showing courtesy and respect to others is a vital part of the Google culture, and we strongly encourage everyone participating in Google Test development to join us in accepting nothing less. Of course, being courteous is not the same as failing to constructively disagree with each other, but it does mean that we should be respectful of each other when enumerating the 42 technical reasons that a particular proposal may not be the best choice. There&apos;s never a reason to be antagonistic or dismissive toward anyone who is sincerely trying to contribute to a discussion.</para><para>Sure, C++ testing is serious business and all that, but it&apos;s also a lot of fun. Let&apos;s keep it that way. Let&apos;s strive to be one of the friendliest communities in all of open source.</para><para>As always, discuss Google Test in the official GoogleTest discussion group. You don&apos;t have to actually submit code in order to sign up. Your participation itself is a valuable contribution.</para><para><heading level="1">Working with the Code</heading>
+</para><para>If you want to get your hands dirty with the code inside Google Test, this is the section for you.</para><para><heading level="2">Compiling from Source</heading>
+</para><para>Once you check out the code, you can find instructions on how to compile it in the ../README.md &quot;README&quot; file.</para><para><heading level="2">Testing</heading>
+</para><para>A testing framework is of no good if itself is not thoroughly tested. Tests should be written for any new code, and changes should be verified to not break existing tests before they are submitted for review. To perform the tests, follow the instructions in ../README.md &quot;README&quot; and verify that there are no failures.</para><para><heading level="1">Contributing Code</heading>
+</para><para>We are excited that Google Test is now open source, and hope to get great patches from the community. Before you fire up your favorite IDE and begin hammering away at that new feature, though, please take the time to read this section and understand the process. While it seems rigorous, we want to keep a high standard of quality in the code base.</para><para><heading level="2">Contributor License Agreements</heading>
+</para><para>You must sign a Contributor License Agreement (CLA) before we can accept any code. The CLA protects you and us.</para><para><itemizedlist>
+<listitem><para>If you are an individual writing original source code and you&apos;re sure you own the intellectual property, then you&apos;ll need to sign an <ulink url="http://code.google.com/legal/individual-cla-v1.0.html">individual CLA</ulink>.</para></listitem><listitem><para>If you work for a company that wants to allow you to contribute your work to Google Test, then you&apos;ll need to sign a <ulink url="http://code.google.com/legal/corporate-cla-v1.0.html">corporate CLA</ulink>.</para></listitem></itemizedlist>
+</para><para>Follow either of the two links above to access the appropriate CLA and instructions for how to sign and return it.</para><para><heading level="2">Coding Style</heading>
+</para><para>To keep the source consistent, readable, diffable and easy to merge, we use a fairly rigid coding style, as defined by the <ulink url="http://code.google.com/p/google-styleguide/">google-styleguide</ulink> project. All patches will be expected to conform to the style outlined <ulink url="http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml">here</ulink>.</para><para><heading level="2">Updating Generated Code</heading>
+</para><para>Some of Google Test&apos;s source files are generated by the Pump tool (a Python script). If you need to update such files, please modify the source (<computeroutput>foo.h.pump</computeroutput>) and re-generate the C++ file using Pump. You can read the PumpManual for details.</para><para><heading level="2">Submitting Patches</heading>
+</para><para>Please do submit code. Here&apos;s what you need to do:</para><para><orderedlist>
+<listitem><para>A submission should be a set of changes that addresses one issue in the <ulink url="https://github.com/google/googletest/issues">issue tracker</ulink>. Please don&apos;t mix more than one logical change per submittal, because it makes the history hard to follow. If you want to make a change that doesn&apos;t have a corresponding issue in the issue tracker, please create one.</para></listitem></orderedlist>
+<orderedlist>
+<listitem><para>Also, coordinate with team members that are listed on the issue in question. This ensures that work isn&apos;t being duplicated and communicating your plan early also generally leads to better patches.</para></listitem></orderedlist>
+<orderedlist>
+<listitem><para>Ensure that your code adheres to the Google Test source code style.</para></listitem></orderedlist>
+<orderedlist>
+<listitem><para>Ensure that there are unit tests for your code.</para></listitem></orderedlist>
+<orderedlist>
+<listitem><para>Sign a Contributor License Agreement.</para></listitem></orderedlist>
+<orderedlist>
+<listitem><para>Create a Pull Request in the usual way.</para></listitem></orderedlist>
+</para><para><heading level="2">Google Test Committers</heading>
+</para><para>The current members of the Google Test engineering team are the only committers at present. In the great tradition of eating one&apos;s own dogfood, we will be requiring each new Google Test engineering team member to earn the right to become a committer by following the procedures in this document, writing consistently great code, and demonstrating repeatedly that he or she truly gets the zen of Google Test.</para><para><heading level="1">Release Process</heading>
+</para><para>We follow a typical release process:</para><para><orderedlist>
+<listitem><para>A release branch named <computeroutput>release-X.Y</computeroutput> is created.</para></listitem></orderedlist>
+<orderedlist>
+<listitem><para>Bugs are fixed and features are added in trunk; those individual patches are merged into the release branch until it&apos;s stable.</para></listitem></orderedlist>
+<orderedlist>
+<listitem><para>An individual point release (the <computeroutput>Z</computeroutput> in <computeroutput>X.Y.Z</computeroutput>) is made by creating a tag from the branch.</para></listitem></orderedlist>
+<orderedlist>
+<listitem><para>Repeat steps 2 and 3 throughout one release cycle (as determined by features or time).</para></listitem></orderedlist>
+<orderedlist>
+<listitem><para>Go back to step 1 to create another release branch and so on. <hruler/>
+</para></listitem></orderedlist>
+</para><para>This page is based on the <ulink url="http://code.google.com/webtoolkit/makinggwtbetter.html">Making GWT Better</ulink> guide from the <ulink url="http://code.google.com/webtoolkit/">Google Web Toolkit</ulink> project. Except as otherwise <ulink url="http://code.google.com/policies.html#restrictions">noted</ulink>, the content of this page is licensed under the <ulink url="http://creativecommons.org/licenses/by/2.5/">Creative Commons Attribution 2.5 License</ulink>. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacecommon" kind="namespace" language="Python">
+    <compoundname>common</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="common_8py_1ac0f2c8f2583f0817f09a3e0c6022d707" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string common.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;wan@google.com (Zhanyong Wan)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/common.py" line="31" column="1" bodyfile="vendor/googletest/googletest/scripts/common.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8py_1a8441f667816bce34e6100f88a9ea7dfa" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>common._SVN_INFO_URL_RE</definition>
+        <argsstring></argsstring>
+        <name>_SVN_INFO_URL_RE</name>
+        <initializer>=  re.compile(r&apos;^URL: https://(\w+)\.googlecode\.com/svn(.*)&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/common.py" line="43" column="1" bodyfile="vendor/googletest/googletest/scripts/common.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="common_8py_1ac1337758ae23f6a91b44de07408791da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def common.GetCommandOutput</definition>
+        <argsstring>(command)</argsstring>
+        <name>GetCommandOutput</name>
+        <param>
+          <type>command</type>
+          <defname>command</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Runs the shell command and returns its stdout as a list of lines.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/common.py" line="46" column="1" bodyfile="vendor/googletest/googletest/scripts/common.py" bodystart="46" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8py_1a312d07161b76d965fee6a61e464e283f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def common.GetSvnInfo</definition>
+        <argsstring>()</argsstring>
+        <name>GetSvnInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the project name and the current SVN workspace&apos;s root path.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/common.py" line="55" column="1" bodyfile="vendor/googletest/googletest/scripts/common.py" bodystart="55" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8py_1a9e6483972a8dc0a6a274cbcee69564b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def common.GetSvnTrunk</definition>
+        <argsstring>()</argsstring>
+        <name>GetSvnTrunk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the current SVN workspace&apos;s trunk root path.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/common.py" line="69" column="1" bodyfile="vendor/googletest/googletest/scripts/common.py" bodystart="69" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8py_1af29dcab2d7b4a9dd846446a0987ab387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def common.IsInGTestSvn</definition>
+        <argsstring>()</argsstring>
+        <name>IsInGTestSvn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/common.py" line="76" column="1" bodyfile="vendor/googletest/googletest/scripts/common.py" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8py_1a8219bb529336fc3f0ef8222a5ed48222" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def common.IsInGMockSvn</definition>
+        <argsstring>()</argsstring>
+        <name>IsInGMockSvn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/common.py" line="81" column="1" bodyfile="vendor/googletest/googletest/scripts/common.py" bodystart="81" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/scripts/common.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

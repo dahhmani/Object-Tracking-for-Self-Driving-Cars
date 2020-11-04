@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_biggest_int_convertible" kind="class" language="C++" prot="public">
+    <compoundname>BiggestIntConvertible</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_biggest_int_convertible_1aa3dc4bbff87d412758b9adbefa19c6d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BiggestIntConvertible::operator::testing::internal::BiggestInt</definition>
+        <argsstring>() const</argsstring>
+        <name>operator::testing::internal::BiggestInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-printers_test.cc" line="100" column="1" bodyfile="vendor/googletest/googletest/test/gtest-printers_test.cc" bodystart="100" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest-printers_test.cc" line="98" column="1" bodyfile="vendor/googletest/googletest/test/gtest-printers_test.cc" bodystart="98" bodyend="101"/>
+    <listofallmembers>
+      <member refid="class_biggest_int_convertible_1aa3dc4bbff87d412758b9adbefa19c6d0" prot="public" virt="non-virtual"><scope>BiggestIntConvertible</scope><name>operator::testing::internal::BiggestInt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

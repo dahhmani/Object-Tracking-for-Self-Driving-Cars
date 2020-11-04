@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_e_n_p_m808_x" kind="namespace" language="C++">
+    <compoundname>ENPM808X</compoundname>
+    <innerclass refid="class_e_n_p_m808_x_1_1_object_tracker" prot="public">ENPM808X::ObjectTracker</innerclass>
+    <innerclass refid="struct_e_n_p_m808_x_1_1_profile_result" prot="public">ENPM808X::ProfileResult</innerclass>
+    <innerclass refid="class_e_n_p_m808_x_1_1_timer" prot="public">ENPM808X::Timer</innerclass>
+    <briefdescription>
+<para>Class for monocular multiple object tracking for a mobile robot. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/profiler.h" line="38" column="1"/>
+  </compounddef>
+</doxygen>

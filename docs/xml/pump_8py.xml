@@ -1,0 +1,882 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="pump_8py" kind="file" language="Python">
+    <compoundname>pump.py</compoundname>
+    <innerclass refid="classpump_1_1_cursor" prot="public">pump::Cursor</innerclass>
+    <innerclass refid="classpump_1_1_token" prot="public">pump::Token</innerclass>
+    <innerclass refid="classpump_1_1_code_node" prot="public">pump::CodeNode</innerclass>
+    <innerclass refid="classpump_1_1_var_node" prot="public">pump::VarNode</innerclass>
+    <innerclass refid="classpump_1_1_range_node" prot="public">pump::RangeNode</innerclass>
+    <innerclass refid="classpump_1_1_for_node" prot="public">pump::ForNode</innerclass>
+    <innerclass refid="classpump_1_1_else_node" prot="public">pump::ElseNode</innerclass>
+    <innerclass refid="classpump_1_1_if_node" prot="public">pump::IfNode</innerclass>
+    <innerclass refid="classpump_1_1_raw_code_node" prot="public">pump::RawCodeNode</innerclass>
+    <innerclass refid="classpump_1_1_literal_dollar_node" prot="public">pump::LiteralDollarNode</innerclass>
+    <innerclass refid="classpump_1_1_exp_node" prot="public">pump::ExpNode</innerclass>
+    <innerclass refid="classpump_1_1_env" prot="public">pump::Env</innerclass>
+    <innerclass refid="classpump_1_1_output" prot="public">pump::Output</innerclass>
+    <innernamespace refid="namespacepump">pump</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">#!/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Copyright<sp/>2008,<sp/>Google<sp/>Inc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#<sp/>met:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#<sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">#<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">#<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Google<sp/>Inc.<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">#<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">#<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">#<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">#<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">#<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">#<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">#<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">#<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">#<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;pump<sp/>v0.2.0<sp/>-<sp/>Pretty<sp/>Useful<sp/>for<sp/>Meta<sp/>Programming.</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral">A<sp/>tool<sp/>for<sp/>preprocessor<sp/>meta<sp/>programming.<sp/><sp/>Useful<sp/>for<sp/>generating</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral">repetitive<sp/>boilerplate<sp/>code.<sp/><sp/>Especially<sp/>useful<sp/>for<sp/>writing<sp/>C++</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral">classes,<sp/>functions,<sp/>macros,<sp/>and<sp/>templates<sp/>that<sp/>need<sp/>to<sp/>work<sp/>with</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral">various<sp/>number<sp/>of<sp/>arguments.</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral">USAGE:</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pump.py<sp/>SOURCE_FILE</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral">EXAMPLES:</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pump.py<sp/>foo.cc.pump</highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Converts<sp/>foo.cc.pump<sp/>to<sp/>foo.cc.</highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral">GRAMMAR:</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CODE<sp/>::=<sp/>ATOMIC_CODE*</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATOMIC_CODE<sp/>::=<sp/>$var<sp/>ID<sp/>=<sp/>EXPRESSION</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>$var<sp/>ID<sp/>=<sp/>[[<sp/>CODE<sp/>]]</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>$range<sp/>ID<sp/>EXPRESSION..EXPRESSION</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>$for<sp/>ID<sp/>SEPARATOR<sp/>[[<sp/>CODE<sp/>]]</highlight></codeline>
+<codeline lineno="52"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>$($)</highlight></codeline>
+<codeline lineno="53"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>$ID</highlight></codeline>
+<codeline lineno="54"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>$(EXPRESSION)</highlight></codeline>
+<codeline lineno="55"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>$if<sp/>EXPRESSION<sp/>[[<sp/>CODE<sp/>]]<sp/>ELSE_BRANCH</highlight></codeline>
+<codeline lineno="56"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>[[<sp/>CODE<sp/>]]</highlight></codeline>
+<codeline lineno="57"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>RAW_CODE</highlight></codeline>
+<codeline lineno="58"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SEPARATOR<sp/>::=<sp/>RAW_CODE<sp/>|<sp/>EMPTY</highlight></codeline>
+<codeline lineno="59"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ELSE_BRANCH<sp/>::=<sp/>$else<sp/>[[<sp/>CODE<sp/>]]</highlight></codeline>
+<codeline lineno="60"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>$elif<sp/>EXPRESSION<sp/>[[<sp/>CODE<sp/>]]<sp/>ELSE_BRANCH</highlight></codeline>
+<codeline lineno="61"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>EMPTY</highlight></codeline>
+<codeline lineno="62"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EXPRESSION<sp/>has<sp/>Python<sp/>syntax.</highlight></codeline>
+<codeline lineno="63"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">__author__<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;wan@google.com<sp/>(Zhanyong<sp/>Wan)&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>re</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">TOKEN_TABLE<sp/>=<sp/>[</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>(re.compile(</highlight><highlight class="stringliteral">r&apos;\$var\s+&apos;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&apos;$var&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>(re.compile(</highlight><highlight class="stringliteral">r&apos;\$elif\s+&apos;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&apos;$elif&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>(re.compile(</highlight><highlight class="stringliteral">r&apos;\$else\s+&apos;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&apos;$else&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>(re.compile(</highlight><highlight class="stringliteral">r&apos;\$for\s+&apos;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&apos;$for&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>(re.compile(</highlight><highlight class="stringliteral">r&apos;\$if\s+&apos;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&apos;$if&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>(re.compile(</highlight><highlight class="stringliteral">r&apos;\$range\s+&apos;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&apos;$range&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>(re.compile(</highlight><highlight class="stringliteral">r&apos;\$[_A-Za-z]\w*&apos;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&apos;$id&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>(re.compile(</highlight><highlight class="stringliteral">r&apos;\$\(\$\)&apos;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&apos;$($)&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>(re.compile(</highlight><highlight class="stringliteral">r&apos;\$&apos;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&apos;$&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>(re.compile(</highlight><highlight class="stringliteral">r&apos;\[\[\n?&apos;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&apos;[[&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>(re.compile(</highlight><highlight class="stringliteral">r&apos;\]\]\n?&apos;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&apos;]]&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>]</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classpump_1_1_cursor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpump_1_1_cursor" kindref="compound">Cursor</ref>:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Represents<sp/>a<sp/>position<sp/>(line<sp/>and<sp/>column)<sp/>in<sp/>a<sp/>text<sp/>file.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>line=-1,<sp/>column=-1):</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_cursor_1aee8d8b67360da7fc4e635540cb41d48c" kindref="member">line</ref><sp/>=<sp/>line</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_cursor_1ae73db76c3a845a82afb334633864254e" kindref="member">column</ref><sp/>=<sp/>column</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__eq__(self,<sp/>rhs):</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classpump_1_1_cursor_1aee8d8b67360da7fc4e635540cb41d48c" kindref="member">line</ref><sp/>==<sp/>rhs.line<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>self.<ref refid="classpump_1_1_cursor_1ae73db76c3a845a82afb334633864254e" kindref="member">column</ref><sp/>==<sp/>rhs.column</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__ne__(self,<sp/>rhs):</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>self<sp/>==<sp/>rhs</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__lt__(self,<sp/>rhs):</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classpump_1_1_cursor_1aee8d8b67360da7fc4e635540cb41d48c" kindref="member">line</ref><sp/>&lt;<sp/>rhs.line<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_cursor_1aee8d8b67360da7fc4e635540cb41d48c" kindref="member">line</ref><sp/>==<sp/>rhs.line<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>self.<ref refid="classpump_1_1_cursor_1ae73db76c3a845a82afb334633864254e" kindref="member">column</ref><sp/>&lt;<sp/>rhs.column)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__le__(self,<sp/>rhs):</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self<sp/>&lt;<sp/>rhs<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>self<sp/>==<sp/>rhs</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__gt__(self,<sp/>rhs):</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rhs<sp/>&lt;<sp/>self</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__ge__(self,<sp/>rhs):</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rhs<sp/>&lt;=<sp/>self</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__str__(self):</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>self<sp/>==<sp/>Eof():</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;EOF&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;%s(%s)&apos;</highlight><highlight class="normal"><sp/>%<sp/>(self.<ref refid="classpump_1_1_cursor_1aee8d8b67360da7fc4e635540cb41d48c" kindref="member">line</ref><sp/>+<sp/>1,<sp/>self.<ref refid="classpump_1_1_cursor_1ae73db76c3a845a82afb334633864254e" kindref="member">column</ref>)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__add__(self,<sp/>offset):</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_cursor" kindref="compound">Cursor</ref>(self.<ref refid="classpump_1_1_cursor_1aee8d8b67360da7fc4e635540cb41d48c" kindref="member">line</ref>,<sp/>self.<ref refid="classpump_1_1_cursor_1ae73db76c3a845a82afb334633864254e" kindref="member">column</ref><sp/>+<sp/>offset)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__sub__(self,<sp/>offset):</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_cursor" kindref="compound">Cursor</ref>(self.<ref refid="classpump_1_1_cursor_1aee8d8b67360da7fc4e635540cb41d48c" kindref="member">line</ref>,<sp/>self.<ref refid="classpump_1_1_cursor_1ae73db76c3a845a82afb334633864254e" kindref="member">column</ref><sp/>-<sp/>offset)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpump_1_1_cursor_1af68c9be83b0af87db441b21bc6ce8114" kindref="member">Clone</ref>(self):</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Returns<sp/>a<sp/>copy<sp/>of<sp/>self.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_cursor" kindref="compound">Cursor</ref>(self.<ref refid="classpump_1_1_cursor_1aee8d8b67360da7fc4e635540cb41d48c" kindref="member">line</ref>,<sp/>self.<ref refid="classpump_1_1_cursor_1ae73db76c3a845a82afb334633864254e" kindref="member">column</ref>)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Special<sp/>cursor<sp/>to<sp/>indicate<sp/>the<sp/>end-of-file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">Eof():</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Returns<sp/>the<sp/>special<sp/>cursor<sp/>to<sp/>denote<sp/>the<sp/>end-of-file.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_cursor" kindref="compound">Cursor</ref>(-1,<sp/>-1)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="classpump_1_1_token" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpump_1_1_token" kindref="compound">Token</ref>:</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Represents<sp/>a<sp/>token<sp/>in<sp/>a<sp/>Pump<sp/>source<sp/>file.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>start=None,<sp/>end=None,<sp/>value=None,<sp/>token_type=None):</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>start<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_token_1a53e3333a770bc8773224a5af78bca5bb" kindref="member">start</ref><sp/>=<sp/>Eof()</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_token_1a53e3333a770bc8773224a5af78bca5bb" kindref="member">start</ref><sp/>=<sp/>start</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>end<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_token_1abb88c0ece4274cfd974fd01d0468953c" kindref="member">end</ref><sp/>=<sp/>Eof()</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_token_1abb88c0ece4274cfd974fd01d0468953c" kindref="member">end</ref><sp/>=<sp/>end</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_token_1a5b7ab395a380b775b2bf0a8b0abfda86" kindref="member">value</ref><sp/>=<sp/>value</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_token_1aeac105b76f6af13c8c64ba0a94e37d90" kindref="member">token_type</ref><sp/>=<sp/>token_type</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__str__(self):</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;Token<sp/>@%s:<sp/>\&apos;%s\&apos;<sp/>type=%s&apos;</highlight><highlight class="normal"><sp/>%<sp/>(</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_token_1a53e3333a770bc8773224a5af78bca5bb" kindref="member">start</ref>,<sp/>self.<ref refid="classpump_1_1_token_1a5b7ab395a380b775b2bf0a8b0abfda86" kindref="member">value</ref>,<sp/>self.<ref refid="classpump_1_1_token_1aeac105b76f6af13c8c64ba0a94e37d90" kindref="member">token_type</ref>)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpump_1_1_token_1abc0f2d2a0bcad953f5fc85a4e52076eb" kindref="member">Clone</ref>(self):</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Returns<sp/>a<sp/>copy<sp/>of<sp/>self.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_token" kindref="compound">Token</ref>(self.<ref refid="classpump_1_1_token_1a53e3333a770bc8773224a5af78bca5bb" kindref="member">start</ref>.<ref refid="classpump_1_1_token_1abc0f2d2a0bcad953f5fc85a4e52076eb" kindref="member">Clone</ref>(),<sp/>self.<ref refid="classpump_1_1_token_1abb88c0ece4274cfd974fd01d0468953c" kindref="member">end</ref>.<ref refid="classpump_1_1_token_1abc0f2d2a0bcad953f5fc85a4e52076eb" kindref="member">Clone</ref>(),<sp/>self.<ref refid="classpump_1_1_token_1a5b7ab395a380b775b2bf0a8b0abfda86" kindref="member">value</ref>,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_token_1aeac105b76f6af13c8c64ba0a94e37d90" kindref="member">token_type</ref>)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">StartsWith(lines,<sp/>pos,<sp/>string):</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Returns<sp/>True<sp/>iff<sp/>the<sp/>given<sp/>position<sp/>in<sp/>lines<sp/>starts<sp/>with<sp/>&apos;string&apos;.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lines[pos.line][pos.column:].startswith(string)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">FindFirstInLine(line,<sp/>token_table):</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>best_match_start<sp/>=<sp/>-1</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(regex,<sp/>token_type)<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>token_table:</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>m<sp/>=<sp/>regex.search(line)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>m:</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>We<sp/>found<sp/>regex<sp/>in<sp/>lines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>best_match_start<sp/>&lt;<sp/>0<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>m.start()<sp/>&lt;<sp/>best_match_start:</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>best_match_start<sp/>=<sp/>m.start()</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>best_match_length<sp/>=<sp/>m.end()<sp/>-<sp/>m.start()</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>best_match_token_type<sp/>=<sp/>token_type</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>best_match_start<sp/>&lt;<sp/>0:</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(best_match_start,<sp/>best_match_length,<sp/>best_match_token_type)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">FindFirst(lines,<sp/>token_table,<sp/>cursor):</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Finds<sp/>the<sp/>first<sp/>occurrence<sp/>of<sp/>any<sp/>string<sp/>in<sp/>strings<sp/>in<sp/>lines.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>start<sp/>=<sp/>cursor.Clone()</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>cur_line_number<sp/>=<sp/>cursor.line</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>line<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>lines[start.line:]:</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>cur_line_number<sp/>==<sp/>start.line:</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>line<sp/>=<sp/>line[start.column:]</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>m<sp/>=<sp/>FindFirstInLine(line,<sp/>token_table)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>m:</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>We<sp/>found<sp/>a<sp/>regex<sp/>in<sp/>line.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(start_column,<sp/>length,<sp/>token_type)<sp/>=<sp/>m</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>cur_line_number<sp/>==<sp/>start.line:</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start_column<sp/>+=<sp/>start.column</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>found_start<sp/>=<sp/><ref refid="classpump_1_1_cursor" kindref="compound">Cursor</ref>(cur_line_number,<sp/>start_column)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>found_end<sp/>=<sp/>found_start<sp/>+<sp/>length</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>MakeToken(lines,<sp/>found_start,<sp/>found_end,<sp/>token_type)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>cur_line_number<sp/>+=<sp/>1</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>We<sp/>failed<sp/>to<sp/>find<sp/>str<sp/>in<sp/>lines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">SubString(lines,<sp/>start,<sp/>end):</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Returns<sp/>a<sp/>substring<sp/>in<sp/>lines.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>end<sp/>==<sp/>Eof():</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>end<sp/>=<sp/><ref refid="classpump_1_1_cursor" kindref="compound">Cursor</ref>(len(lines)<sp/>-<sp/>1,<sp/>len(lines[-1]))</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>start<sp/>&gt;=<sp/>end:</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>start.line<sp/>==<sp/>end.line:</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lines[start.line][start.column:end.column]</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/>result_lines<sp/>=<sp/>([lines[start.line][start.column:]]<sp/>+</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lines[start.line<sp/>+<sp/>1:end.line]<sp/>+</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[lines[end.line][:end.column]])</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">.join(result_lines)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">StripMetaComments(str):</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Strip<sp/>meta<sp/>comments<sp/>from<sp/>each<sp/>line<sp/>in<sp/>the<sp/>given<sp/>string.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>First,<sp/>completely<sp/>remove<sp/>lines<sp/>containing<sp/>nothing<sp/>but<sp/>a<sp/>meta</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>comment,<sp/>including<sp/>the<sp/>trailing<sp/>\n.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/>str<sp/>=<sp/>re.sub(</highlight><highlight class="stringliteral">r&apos;^\s*\$\$.*\n&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>str)</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>Then,<sp/>remove<sp/>meta<sp/>comments<sp/>from<sp/>contentful<sp/>lines.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>re.sub(</highlight><highlight class="stringliteral">r&apos;\s*\$\$.*&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>str)</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">MakeToken(lines,<sp/>start,<sp/>end,<sp/>token_type):</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Creates<sp/>a<sp/>new<sp/>instance<sp/>of<sp/>Token.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_token" kindref="compound">Token</ref>(start,<sp/>end,<sp/>SubString(lines,<sp/>start,<sp/>end),<sp/>token_type)</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">ParseToken(lines,<sp/>pos,<sp/>regex,<sp/>token_type):</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/>line<sp/>=<sp/>lines[pos.line][pos.column:]</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/>m<sp/>=<sp/>regex.search(line)</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>m<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>m.start():</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>MakeToken(lines,<sp/>pos,<sp/>pos<sp/>+<sp/>m.end(),<sp/>token_type)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;ERROR:<sp/>%s<sp/>expected<sp/>at<sp/>%s.&apos;</highlight><highlight class="normal"><sp/>%<sp/>(token_type,<sp/>pos)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>sys.exit(1)</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal">ID_REGEX<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&apos;[_A-Za-z]\w*&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">EQ_REGEX<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&apos;=&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">REST_OF_LINE_REGEX<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&apos;.*?(?=$|\$\$)&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">OPTIONAL_WHITE_SPACES_REGEX<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&apos;\s*&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal">WHITE_SPACE_REGEX<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&apos;\s&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">DOT_DOT_REGEX<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&apos;\.\.&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">Skip(lines,<sp/>pos,<sp/>regex):</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/>line<sp/>=<sp/>lines[pos.line][pos.column:]</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/>m<sp/>=<sp/>re.search(regex,<sp/>line)</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>m<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>m.start():</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pos<sp/>+<sp/>m.end()</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pos</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">SkipUntil(lines,<sp/>pos,<sp/>regex,<sp/>token_type):</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/>line<sp/>=<sp/>lines[pos.line][pos.column:]</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>m<sp/>=<sp/>re.search(regex,<sp/>line)</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>m:</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pos<sp/>+<sp/>m.start()</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>(</highlight><highlight class="stringliteral">&apos;ERROR:<sp/>%s<sp/>expected<sp/>on<sp/>line<sp/>%s<sp/>after<sp/>column<sp/>%s.&apos;</highlight><highlight class="normal"><sp/>%</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(token_type,<sp/>pos.line<sp/>+<sp/>1,<sp/>pos.column))</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>sys.exit(1)</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">ParseExpTokenInParens(lines,<sp/>pos):</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">ParseInParens(pos):</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>Skip(lines,<sp/>pos,<sp/>OPTIONAL_WHITE_SPACES_REGEX)</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>Skip(lines,<sp/>pos,<sp/></highlight><highlight class="stringliteral">r&apos;\(&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>Parse(pos)</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>Skip(lines,<sp/>pos,<sp/></highlight><highlight class="stringliteral">r&apos;\)&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pos</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">Parse(pos):</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>SkipUntil(lines,<sp/>pos,<sp/></highlight><highlight class="stringliteral">r&apos;\(|\)&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;)&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>SubString(lines,<sp/>pos,<sp/>pos<sp/>+<sp/>1)<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;(&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>Parse(pos<sp/>+<sp/>1)</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>Skip(lines,<sp/>pos,<sp/></highlight><highlight class="stringliteral">r&apos;\)&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Parse(pos)</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pos</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/>start<sp/>=<sp/>pos.Clone()</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/>pos<sp/>=<sp/>ParseInParens(pos)</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>MakeToken(lines,<sp/>start,<sp/>pos,<sp/></highlight><highlight class="stringliteral">&apos;exp&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">RStripNewLineFromToken(token):</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>token.value.endswith(</highlight><highlight class="stringliteral">&apos;\n&apos;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_token" kindref="compound">Token</ref>(token.start,<sp/>token.end,<sp/>token.value[:-1],<sp/>token.token_type)</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>token</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">TokenizeLines(lines,<sp/>pos):</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>found<sp/>=<sp/>FindFirst(lines,<sp/>TOKEN_TABLE,<sp/>pos)</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>found:</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>MakeToken(lines,<sp/>pos,<sp/>Eof(),<sp/></highlight><highlight class="stringliteral">&apos;code&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>found.start<sp/>==<sp/>pos:</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>prev_token<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>prev_token_rstripped<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>prev_token<sp/>=<sp/>MakeToken(lines,<sp/>pos,<sp/>found.start,<sp/></highlight><highlight class="stringliteral">&apos;code&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>prev_token_rstripped<sp/>=<sp/>RStripNewLineFromToken(prev_token)</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>found.token_type<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$var&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>prev_token_rstripped:</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>prev_token_rstripped</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>found</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>id_token<sp/>=<sp/>ParseToken(lines,<sp/>found.end,<sp/>ID_REGEX,<sp/></highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>id_token</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>Skip(lines,<sp/>id_token.end,<sp/>OPTIONAL_WHITE_SPACES_REGEX)</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>eq_token<sp/>=<sp/>ParseToken(lines,<sp/>pos,<sp/>EQ_REGEX,<sp/></highlight><highlight class="stringliteral">&apos;=&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>eq_token</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>Skip(lines,<sp/>eq_token.end,<sp/></highlight><highlight class="stringliteral">r&apos;\s*&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>SubString(lines,<sp/>pos,<sp/>pos<sp/>+<sp/>2)<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;[[&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exp_token<sp/>=<sp/>ParseToken(lines,<sp/>pos,<sp/>REST_OF_LINE_REGEX,<sp/></highlight><highlight class="stringliteral">&apos;exp&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>exp_token</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/><ref refid="classpump_1_1_cursor" kindref="compound">Cursor</ref>(exp_token.end.line<sp/>+<sp/>1,<sp/>0)</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>found.token_type<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$for&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>prev_token_rstripped:</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>prev_token_rstripped</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>found</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>id_token<sp/>=<sp/>ParseToken(lines,<sp/>found.end,<sp/>ID_REGEX,<sp/></highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>id_token</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>Skip(lines,<sp/>id_token.end,<sp/>WHITE_SPACE_REGEX)</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>found.token_type<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$range&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>prev_token_rstripped:</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>prev_token_rstripped</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>found</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>id_token<sp/>=<sp/>ParseToken(lines,<sp/>found.end,<sp/>ID_REGEX,<sp/></highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>id_token</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>Skip(lines,<sp/>id_token.end,<sp/>OPTIONAL_WHITE_SPACES_REGEX)</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dots_pos<sp/>=<sp/>SkipUntil(lines,<sp/>pos,<sp/>DOT_DOT_REGEX,<sp/></highlight><highlight class="stringliteral">&apos;..&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>MakeToken(lines,<sp/>pos,<sp/>dots_pos,<sp/></highlight><highlight class="stringliteral">&apos;exp&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>MakeToken(lines,<sp/>dots_pos,<sp/>dots_pos<sp/>+<sp/>2,<sp/></highlight><highlight class="stringliteral">&apos;..&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>dots_pos<sp/>+<sp/>2</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>new_pos<sp/>=<sp/><ref refid="classpump_1_1_cursor" kindref="compound">Cursor</ref>(pos.line<sp/>+<sp/>1,<sp/>0)</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>MakeToken(lines,<sp/>pos,<sp/>new_pos,<sp/></highlight><highlight class="stringliteral">&apos;exp&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>new_pos</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>found.token_type<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>prev_token:</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>prev_token</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>found</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>exp_token<sp/>=<sp/>ParseExpTokenInParens(lines,<sp/>found.end)</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>exp_token</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>exp_token.end</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>(found.token_type<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;]]&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>found.token_type<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$if&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>found.token_type<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$elif&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>found.token_type<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$else&apos;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>prev_token_rstripped:</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>prev_token_rstripped</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>found</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>found.end</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>prev_token:</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>prev_token</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>found</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>found.end</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">Tokenize(s):</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;A<sp/>generator<sp/>that<sp/>yields<sp/>the<sp/>tokens<sp/>in<sp/>the<sp/>given<sp/>string.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>s<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/>lines<sp/>=<sp/>s.splitlines(</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>token<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>TokenizeLines(lines,<sp/><ref refid="classpump_1_1_cursor" kindref="compound">Cursor</ref>(0,<sp/>0)):</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/>token</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390" refid="classpump_1_1_code_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpump_1_1_code_node" kindref="compound">CodeNode</ref>:</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>atomic_code_list=None):</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_code_node_1ac7251110cc987c709e0e17d95521993e" kindref="member">atomic_code</ref><sp/>=<sp/>atomic_code_list</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="395" refid="classpump_1_1_var_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpump_1_1_var_node" kindref="compound">VarNode</ref>:</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>identifier=None,<sp/>atomic_code=None):</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_var_node_1aa2b634e2443646c3754f2d193efa4dc7" kindref="member">identifier</ref><sp/>=<sp/>identifier</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_var_node_1ad6bef6a8577b994fbe9ccddf3c82d2fc" kindref="member">atomic_code</ref><sp/>=<sp/>atomic_code</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401" refid="classpump_1_1_range_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpump_1_1_range_node" kindref="compound">RangeNode</ref>:</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>identifier=None,<sp/>exp1=None,<sp/>exp2=None):</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_range_node_1ae75b9f31ba8c3bd048cf09b22035efa0" kindref="member">identifier</ref><sp/>=<sp/>identifier</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_range_node_1acbb59f8c5e23d23563ca03f21574ce63" kindref="member">exp1</ref><sp/>=<sp/>exp1</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_range_node_1afe153ee472b121652a51c62c1522cc13" kindref="member">exp2</ref><sp/>=<sp/>exp2</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight></codeline>
+<codeline lineno="408" refid="classpump_1_1_for_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpump_1_1_for_node" kindref="compound">ForNode</ref>:</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>identifier=None,<sp/>sep=None,<sp/>code=None):</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_for_node_1a2444199e135e43696b3a006bd0d38982" kindref="member">identifier</ref><sp/>=<sp/>identifier</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_for_node_1a06b493278b3c1ad53363a2bcc3b8efb3" kindref="member">sep</ref><sp/>=<sp/>sep</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_for_node_1afdb5f4f2a3bc772bbc6ea777dfde898e" kindref="member">code</ref><sp/>=<sp/>code</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415" refid="classpump_1_1_else_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpump_1_1_else_node" kindref="compound">ElseNode</ref>:</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>else_branch=None):</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_else_node_1ac838a0fe9f5d713c7f56939eed5e128d" kindref="member">else_branch</ref><sp/>=<sp/>else_branch</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420" refid="classpump_1_1_if_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpump_1_1_if_node" kindref="compound">IfNode</ref>:</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>exp=None,<sp/>then_branch=None,<sp/>else_branch=None):</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_if_node_1a92042e4262196ffd7366350539f512d8" kindref="member">exp</ref><sp/>=<sp/>exp</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_if_node_1aa9e2e488564629f8dc0d64d165a19ffa" kindref="member">then_branch</ref><sp/>=<sp/>then_branch</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_if_node_1a12e422b16ed4291f15cd95cd6e7f81eb" kindref="member">else_branch</ref><sp/>=<sp/>else_branch</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427" refid="classpump_1_1_raw_code_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpump_1_1_raw_code_node" kindref="compound">RawCodeNode</ref>:</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>token=None):</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_raw_code_node_1ab36224d959e0d8f803e9fac8e6a0baab" kindref="member">raw_code</ref><sp/>=<sp/>token</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432" refid="classpump_1_1_literal_dollar_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpump_1_1_literal_dollar_node" kindref="compound">LiteralDollarNode</ref>:</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>token):</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_literal_dollar_node_1ab4c6e209635b8868bcdf0fe8053431c6" kindref="member">token</ref><sp/>=<sp/>token</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437" refid="classpump_1_1_exp_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpump_1_1_exp_node" kindref="compound">ExpNode</ref>:</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>token,<sp/>python_exp):</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_exp_node_1ade05a5a32535d717dc5c194569aaf356" kindref="member">token</ref><sp/>=<sp/>token</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_exp_node_1adccfe4778c2e34f6b2c88118c0f1587f" kindref="member">python_exp</ref><sp/>=<sp/>python_exp</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">PopFront(a_list):</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/>head<sp/>=<sp/>a_list[0]</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/>a_list[:1]<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>head</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">PushFront(a_list,<sp/>elem):</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/>a_list[:0]<sp/>=<sp/>[elem]</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">PopToken(a_list,<sp/>token_type=None):</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/>token<sp/>=<sp/>PopFront(a_list)</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>token_type<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>token.token_type<sp/>!=<sp/>token_type:</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;ERROR:<sp/>%s<sp/>expected<sp/>at<sp/>%s&apos;</highlight><highlight class="normal"><sp/>%<sp/>(token_type,<sp/>token.start)</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;ERROR:<sp/>%s<sp/>found<sp/>instead&apos;</highlight><highlight class="normal"><sp/>%<sp/>(token,)</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/>sys.exit(1)</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>token</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">PeekToken(a_list):</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>a_list:</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a_list[0]</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">ParseExpNode(token):</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/>python_exp<sp/>=<sp/>re.sub(</highlight><highlight class="stringliteral">r&apos;([_A-Za-z]\w*)&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">r&apos;self.GetValue(&quot;\1&quot;)&apos;</highlight><highlight class="normal">,<sp/>token.value)</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_exp_node" kindref="compound">ExpNode</ref>(token,<sp/>python_exp)</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">ParseElseNode(tokens):</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">Pop(token_type=None):</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PopToken(tokens,<sp/>token_type)</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/>next<sp/>=<sp/>PeekToken(tokens)</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>next:</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>next.token_type<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$else&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;$else&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;[[&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/>code_node<sp/>=<sp/>ParseCodeNode(tokens)</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;]]&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>code_node</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>next.token_type<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$elif&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;$elif&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/>exp<sp/>=<sp/>Pop(</highlight><highlight class="stringliteral">&apos;code&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;[[&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/>code_node<sp/>=<sp/>ParseCodeNode(tokens)</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;]]&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/>inner_else_node<sp/>=<sp/>ParseElseNode(tokens)</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_code_node" kindref="compound">CodeNode</ref>([<ref refid="classpump_1_1_if_node" kindref="compound">IfNode</ref>(ParseExpNode(exp),<sp/>code_node,<sp/>inner_else_node)])</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>next.value.strip():</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;code&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ParseElseNode(tokens)</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight></codeline>
+<codeline lineno="502"><highlight class="normal"></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">ParseAtomicCodeNode(tokens):</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">Pop(token_type=None):</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PopToken(tokens,<sp/>token_type)</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/>head<sp/>=<sp/>PopFront(tokens)</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/>t<sp/>=<sp/>head.token_type</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>t<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;code&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_raw_code_node" kindref="compound">RawCodeNode</ref>(head)</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>t<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$var&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/>id_token<sp/>=<sp/>Pop(</highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;=&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/>next<sp/>=<sp/>PeekToken(tokens)</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>next.token_type<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;exp&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>exp_token<sp/>=<sp/>Pop()</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_var_node" kindref="compound">VarNode</ref>(id_token,<sp/>ParseExpNode(exp_token))</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;[[&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/>code_node<sp/>=<sp/>ParseCodeNode(tokens)</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;]]&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_var_node" kindref="compound">VarNode</ref>(id_token,<sp/>code_node)</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>t<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$for&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/>id_token<sp/>=<sp/>Pop(</highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/>next_token<sp/>=<sp/>PeekToken(tokens)</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>next_token.token_type<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;code&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sep_token<sp/>=<sp/>next_token</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;code&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sep_token<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;[[&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/>code_node<sp/>=<sp/>ParseCodeNode(tokens)</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;]]&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_for_node" kindref="compound">ForNode</ref>(id_token,<sp/>sep_token,<sp/>code_node)</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>t<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$if&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/>exp_token<sp/>=<sp/>Pop(</highlight><highlight class="stringliteral">&apos;code&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;[[&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/>code_node<sp/>=<sp/>ParseCodeNode(tokens)</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;]]&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/>else_node<sp/>=<sp/>ParseElseNode(tokens)</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_if_node" kindref="compound">IfNode</ref>(ParseExpNode(exp_token),<sp/>code_node,<sp/>else_node)</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>t<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$range&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/>id_token<sp/>=<sp/>Pop(</highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/>exp1_token<sp/>=<sp/>Pop(</highlight><highlight class="stringliteral">&apos;exp&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;..&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/>exp2_token<sp/>=<sp/>Pop(</highlight><highlight class="stringliteral">&apos;exp&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_range_node" kindref="compound">RangeNode</ref>(id_token,<sp/>ParseExpNode(exp1_token),</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ParseExpNode(exp2_token))</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>t<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$id&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ParseExpNode(<ref refid="classpump_1_1_token" kindref="compound">Token</ref>(head.start<sp/>+<sp/>1,<sp/>head.end,<sp/>head.value[1:],<sp/></highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>t<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$($)&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_literal_dollar_node" kindref="compound">LiteralDollarNode</ref>(head)</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>t<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;$&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/>exp_token<sp/>=<sp/>Pop(</highlight><highlight class="stringliteral">&apos;exp&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ParseExpNode(exp_token)</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>t<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;[[&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/>code_node<sp/>=<sp/>ParseCodeNode(tokens)</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/>Pop(</highlight><highlight class="stringliteral">&apos;]]&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>code_node</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/>PushFront(tokens,<sp/>head)</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="562"><highlight class="normal"></highlight></codeline>
+<codeline lineno="563"><highlight class="normal"></highlight></codeline>
+<codeline lineno="564"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">ParseCodeNode(tokens):</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/>atomic_code_list<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>tokens:</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/>atomic_code_node<sp/>=<sp/>ParseAtomicCodeNode(tokens)</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>atomic_code_node:</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>atomic_code_list.append(atomic_code_node)</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classpump_1_1_code_node" kindref="compound">CodeNode</ref>(atomic_code_list)</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"></highlight></codeline>
+<codeline lineno="576"><highlight class="normal"></highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">ParseToAST(pump_src_text):</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Convert<sp/>the<sp/>given<sp/>Pump<sp/>source<sp/>text<sp/>into<sp/>an<sp/>AST.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/>tokens<sp/>=<sp/>list(Tokenize(pump_src_text))</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/>code_node<sp/>=<sp/>ParseCodeNode(tokens)</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>code_node</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"></highlight></codeline>
+<codeline lineno="584" refid="classpump_1_1_env" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpump_1_1_env" kindref="compound">Env</ref>:</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self):</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_env_1aba6456f3d0d23ac92bc9508c1b966bcd" kindref="member">variables</ref><sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_env_1a8d5fec087c1a9108de9b105922b34309" kindref="member">ranges</ref><sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"></highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">Clone(self):</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/>clone<sp/>=<sp/><ref refid="classpump_1_1_env" kindref="compound">Env</ref>()</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/>clone.variables<sp/>=<sp/>self.<ref refid="classpump_1_1_env_1aba6456f3d0d23ac92bc9508c1b966bcd" kindref="member">variables</ref>[:]</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/>clone.ranges<sp/>=<sp/>self.<ref refid="classpump_1_1_env_1a8d5fec087c1a9108de9b105922b34309" kindref="member">ranges</ref>[:]</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>clone</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"></highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">PushVariable(self,<sp/>var,<sp/>value):</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>If<sp/>value<sp/>looks<sp/>like<sp/>an<sp/>int,<sp/>store<sp/>it<sp/>as<sp/>an<sp/>int.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>int_value<sp/>=<sp/>int(value)</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="stringliteral">&apos;%s&apos;</highlight><highlight class="normal"><sp/>%<sp/>int_value)<sp/>==<sp/>value:</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/>int_value</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>Exception:</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_env_1aba6456f3d0d23ac92bc9508c1b966bcd" kindref="member">variables</ref>[:0]<sp/>=<sp/>[(var,<sp/>value)]</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"></highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">PopVariable(self):</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_env_1aba6456f3d0d23ac92bc9508c1b966bcd" kindref="member">variables</ref>[:1]<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"></highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">PushRange(self,<sp/>var,<sp/>lower,<sp/>upper):</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_env_1a8d5fec087c1a9108de9b105922b34309" kindref="member">ranges</ref>[:0]<sp/>=<sp/>[(var,<sp/>lower,<sp/>upper)]</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"></highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">PopRange(self):</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_env_1a8d5fec087c1a9108de9b105922b34309" kindref="member">ranges</ref>[:1]<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"></highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">GetValue(self,<sp/>identifier):</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(var,<sp/>value)<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classpump_1_1_env_1aba6456f3d0d23ac92bc9508c1b966bcd" kindref="member">variables</ref>:</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>identifier<sp/>==<sp/>var:</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;ERROR:<sp/>meta<sp/>variable<sp/>%s<sp/>is<sp/>undefined.&apos;</highlight><highlight class="normal"><sp/>%<sp/>(identifier,)</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/>sys.exit(1)</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"></highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">EvalExp(self,<sp/>exp):</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>eval(exp.python_exp)</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>Exception,<sp/>e:</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;ERROR:<sp/>caught<sp/>exception<sp/>%s:<sp/>%s&apos;</highlight><highlight class="normal"><sp/>%<sp/>(e.__class__.__name__,<sp/>e)</highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>(</highlight><highlight class="stringliteral">&apos;ERROR:<sp/>failed<sp/>to<sp/>evaluate<sp/>meta<sp/>expression<sp/>%s<sp/>at<sp/>%s&apos;</highlight><highlight class="normal"><sp/>%</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(exp.python_exp,<sp/>exp.token.start))</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sys.exit(1)</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"></highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">GetRange(self,<sp/>identifier):</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(var,<sp/>lower,<sp/>upper)<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classpump_1_1_env_1a8d5fec087c1a9108de9b105922b34309" kindref="member">ranges</ref>:</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>identifier<sp/>==<sp/>var:</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lower,<sp/>upper)</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"></highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;ERROR:<sp/>range<sp/>%s<sp/>is<sp/>undefined.&apos;</highlight><highlight class="normal"><sp/>%<sp/>(identifier,)</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/>sys.exit(1)</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"></highlight></codeline>
+<codeline lineno="640"><highlight class="normal"></highlight></codeline>
+<codeline lineno="641" refid="classpump_1_1_output" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpump_1_1_output" kindref="compound">Output</ref>:</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self):</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_output_1a8786848ab3d235189379c449a446f883" kindref="member">string</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="644"><highlight class="normal"></highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">GetLastLine(self):</highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/>index<sp/>=<sp/>self.<ref refid="classpump_1_1_output_1a8786848ab3d235189379c449a446f883" kindref="member">string</ref>.rfind(</highlight><highlight class="stringliteral">&apos;\n&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>index<sp/>&lt;<sp/>0:</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="649"><highlight class="normal"></highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classpump_1_1_output_1a8786848ab3d235189379c449a446f883" kindref="member">string</ref>[index<sp/>+<sp/>1:]</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"></highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">Append(self,<sp/>s):</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpump_1_1_output_1a8786848ab3d235189379c449a446f883" kindref="member">string</ref><sp/>+=<sp/>s</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"></highlight></codeline>
+<codeline lineno="655"><highlight class="normal"></highlight></codeline>
+<codeline lineno="656"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">RunAtomicCode(env,<sp/>node,<sp/>output):</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isinstance(node,<sp/>VarNode):</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/><sp/><sp/>identifier<sp/>=<sp/>node.identifier.value.strip()</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>=<sp/><ref refid="classpump_1_1_output" kindref="compound">Output</ref>()</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/>RunAtomicCode(env.Clone(),<sp/>node.atomic_code,<sp/>result)</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/>value<sp/>=<sp/>result.string</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/>env.PushVariable(identifier,<sp/>value)</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>isinstance(node,<sp/>RangeNode):</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/>identifier<sp/>=<sp/>node.identifier.value.strip()</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/>lower<sp/>=<sp/>int(env.EvalExp(node.exp1))</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/>upper<sp/>=<sp/>int(env.EvalExp(node.exp2))</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/>env.PushRange(identifier,<sp/>lower,<sp/>upper)</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>isinstance(node,<sp/>ForNode):</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/>identifier<sp/>=<sp/>node.identifier.value.strip()</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>node.sep<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sep<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sep<sp/>=<sp/>node.sep.value</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/>(lower,<sp/>upper)<sp/>=<sp/>env.GetRange(identifier)</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(lower,<sp/>upper<sp/>+<sp/>1):</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>new_env<sp/>=<sp/>env.Clone()</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>new_env.PushVariable(identifier,<sp/>i)</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>RunCode(new_env,<sp/>node.code,<sp/>output)</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>i<sp/>!=<sp/>upper:</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output.Append(sep)</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>isinstance(node,<sp/>RawCodeNode):</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/>output.Append(node.raw_code.value)</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>isinstance(node,<sp/>IfNode):</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/>cond<sp/>=<sp/>env.EvalExp(node.exp)</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>cond:</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>RunCode(env.Clone(),<sp/>node.then_branch,<sp/>output)</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>node.else_branch<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>RunCode(env.Clone(),<sp/>node.else_branch,<sp/>output)</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>isinstance(node,<sp/>ExpNode):</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/>value<sp/>=<sp/>env.EvalExp(node)</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/>output.Append(</highlight><highlight class="stringliteral">&apos;%s&apos;</highlight><highlight class="normal"><sp/>%<sp/>(value,))</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>isinstance(node,<sp/>LiteralDollarNode):</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/>output.Append(</highlight><highlight class="stringliteral">&apos;$&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>isinstance(node,<sp/>CodeNode):</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/><sp/><sp/>RunCode(env.Clone(),<sp/>node,<sp/>output)</highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;BAD&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>node</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"><sp/><sp/><sp/><sp/>sys.exit(1)</highlight></codeline>
+<codeline lineno="700"><highlight class="normal"></highlight></codeline>
+<codeline lineno="701"><highlight class="normal"></highlight></codeline>
+<codeline lineno="702"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">RunCode(env,<sp/>code_node,<sp/>output):</highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>atomic_code<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>code_node.atomic_code:</highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><sp/><sp/><sp/><sp/>RunAtomicCode(env,<sp/>atomic_code,<sp/>output)</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"></highlight></codeline>
+<codeline lineno="706"><highlight class="normal"></highlight></codeline>
+<codeline lineno="707"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">IsSingleLineComment(cur_line):</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;//&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>cur_line</highlight></codeline>
+<codeline lineno="709"><highlight class="normal"></highlight></codeline>
+<codeline lineno="710"><highlight class="normal"></highlight></codeline>
+<codeline lineno="711"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">IsInPreprocessorDirective(prev_lines,<sp/>cur_line):</highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>cur_line.lstrip().startswith(</highlight><highlight class="stringliteral">&apos;#&apos;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="713"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="714"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>prev_lines<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>prev_lines[-1].endswith(</highlight><highlight class="stringliteral">&apos;\\&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="715"><highlight class="normal"></highlight></codeline>
+<codeline lineno="716"><highlight class="normal"></highlight></codeline>
+<codeline lineno="717"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">WrapComment(line,<sp/>output):</highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/>loc<sp/>=<sp/>line.find(</highlight><highlight class="stringliteral">&apos;//&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="719"><highlight class="normal"><sp/><sp/>before_comment<sp/>=<sp/>line[:loc].rstrip()</highlight></codeline>
+<codeline lineno="720"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>before_comment<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="721"><highlight class="normal"><sp/><sp/><sp/><sp/>indent<sp/>=<sp/>loc</highlight></codeline>
+<codeline lineno="722"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="723"><highlight class="normal"><sp/><sp/><sp/><sp/>output.append(before_comment)</highlight></codeline>
+<codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/>indent<sp/>=<sp/>len(before_comment)<sp/>-<sp/>len(before_comment.lstrip())</highlight></codeline>
+<codeline lineno="725"><highlight class="normal"><sp/><sp/>prefix<sp/>=<sp/>indent*</highlight><highlight class="stringliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/>+<sp/></highlight><highlight class="stringliteral">&apos;//<sp/>&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><sp/><sp/>max_len<sp/>=<sp/>80<sp/>-<sp/>len(prefix)</highlight></codeline>
+<codeline lineno="727"><highlight class="normal"><sp/><sp/>comment<sp/>=<sp/>line[loc<sp/>+<sp/>2:].strip()</highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/>segs<sp/>=<sp/>[seg<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>seg<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>re.split(</highlight><highlight class="stringliteral">r&apos;(\w+\W*)&apos;</highlight><highlight class="normal">,<sp/>comment)<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>seg<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"><sp/><sp/>cur_line<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="730"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>seg<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>segs:</highlight></codeline>
+<codeline lineno="731"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len((cur_line<sp/>+<sp/>seg).rstrip())<sp/>&lt;<sp/>max_len:</highlight></codeline>
+<codeline lineno="732"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cur_line<sp/>+=<sp/>seg</highlight></codeline>
+<codeline lineno="733"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>cur_line.strip()<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output.append(prefix<sp/>+<sp/>cur_line.rstrip())</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cur_line<sp/>=<sp/>seg.lstrip()</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>cur_line.strip()<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/>output.append(prefix<sp/>+<sp/>cur_line.strip())</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"></highlight></codeline>
+<codeline lineno="740"><highlight class="normal"></highlight></codeline>
+<codeline lineno="741"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">WrapCode(line,<sp/>line_concat,<sp/>output):</highlight></codeline>
+<codeline lineno="742"><highlight class="normal"><sp/><sp/>indent<sp/>=<sp/>len(line)<sp/>-<sp/>len(line.lstrip())</highlight></codeline>
+<codeline lineno="743"><highlight class="normal"><sp/><sp/>prefix<sp/>=<sp/>indent*</highlight><highlight class="stringliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>Prefix<sp/>of<sp/>the<sp/>current<sp/>line</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="744"><highlight class="normal"><sp/><sp/>max_len<sp/>=<sp/>80<sp/>-<sp/>indent<sp/>-<sp/>len(line_concat)<sp/><sp/></highlight><highlight class="comment">#<sp/>Maximum<sp/>length<sp/>of<sp/>the<sp/>current<sp/>line</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="745"><highlight class="normal"><sp/><sp/>new_prefix<sp/>=<sp/>prefix<sp/>+<sp/>4*</highlight><highlight class="stringliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>Prefix<sp/>of<sp/>a<sp/>continuation<sp/>line</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="746"><highlight class="normal"><sp/><sp/>new_max_len<sp/>=<sp/>max_len<sp/>-<sp/>4<sp/><sp/></highlight><highlight class="comment">#<sp/>Maximum<sp/>length<sp/>of<sp/>a<sp/>continuation<sp/>line</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="747"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>Prefers<sp/>to<sp/>wrap<sp/>a<sp/>line<sp/>after<sp/>a<sp/>&apos;,&apos;<sp/>or<sp/>&apos;;&apos;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="748"><highlight class="normal"><sp/><sp/>segs<sp/>=<sp/>[seg<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>seg<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>re.split(</highlight><highlight class="stringliteral">r&apos;([^,;]+[,;]?)&apos;</highlight><highlight class="normal">,<sp/>line.strip())<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>seg<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="749"><highlight class="normal"><sp/><sp/>cur_line<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>The<sp/>current<sp/>line<sp/>without<sp/>leading<sp/>spaces.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="750"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>seg<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>segs:</highlight></codeline>
+<codeline lineno="751"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>If<sp/>the<sp/>line<sp/>is<sp/>still<sp/>too<sp/>long,<sp/>wrap<sp/>at<sp/>a<sp/>space.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>cur_line<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>len(seg.strip())<sp/>&gt;<sp/>max_len:</highlight></codeline>
+<codeline lineno="753"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>seg<sp/>=<sp/>seg.lstrip()</highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>split_at<sp/>=<sp/>seg.rfind(</highlight><highlight class="stringliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">,<sp/>0,<sp/>max_len)</highlight></codeline>
+<codeline lineno="755"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>output.append(prefix<sp/>+<sp/>seg[:split_at].strip()<sp/>+<sp/>line_concat)</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>seg<sp/>=<sp/>seg[split_at<sp/>+<sp/>1:]</highlight></codeline>
+<codeline lineno="757"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>prefix<sp/>=<sp/>new_prefix</highlight></codeline>
+<codeline lineno="758"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>max_len<sp/>=<sp/>new_max_len</highlight></codeline>
+<codeline lineno="759"><highlight class="normal"></highlight></codeline>
+<codeline lineno="760"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len((cur_line<sp/>+<sp/>seg).rstrip())<sp/>&lt;<sp/>max_len:</highlight></codeline>
+<codeline lineno="761"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cur_line<sp/>=<sp/>(cur_line<sp/>+<sp/>seg).lstrip()</highlight></codeline>
+<codeline lineno="762"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>output.append(prefix<sp/>+<sp/>cur_line.rstrip()<sp/>+<sp/>line_concat)</highlight></codeline>
+<codeline lineno="764"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>prefix<sp/>=<sp/>new_prefix</highlight></codeline>
+<codeline lineno="765"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>max_len<sp/>=<sp/>new_max_len</highlight></codeline>
+<codeline lineno="766"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cur_line<sp/>=<sp/>seg.lstrip()</highlight></codeline>
+<codeline lineno="767"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>cur_line.strip()<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/>output.append(prefix<sp/>+<sp/>cur_line.strip())</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"></highlight></codeline>
+<codeline lineno="770"><highlight class="normal"></highlight></codeline>
+<codeline lineno="771"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">WrapPreprocessorDirective(line,<sp/>output):</highlight></codeline>
+<codeline lineno="772"><highlight class="normal"><sp/><sp/>WrapCode(line,<sp/></highlight><highlight class="stringliteral">&apos;<sp/>\\&apos;</highlight><highlight class="normal">,<sp/>output)</highlight></codeline>
+<codeline lineno="773"><highlight class="normal"></highlight></codeline>
+<codeline lineno="774"><highlight class="normal"></highlight></codeline>
+<codeline lineno="775"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">WrapPlainCode(line,<sp/>output):</highlight></codeline>
+<codeline lineno="776"><highlight class="normal"><sp/><sp/>WrapCode(line,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>output)</highlight></codeline>
+<codeline lineno="777"><highlight class="normal"></highlight></codeline>
+<codeline lineno="778"><highlight class="normal"></highlight></codeline>
+<codeline lineno="779"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">IsMultiLineIWYUPragma(line):</highlight></codeline>
+<codeline lineno="780"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>re.search(</highlight><highlight class="stringliteral">r&apos;/\*<sp/>IWYU<sp/>pragma:<sp/>&apos;</highlight><highlight class="normal">,<sp/>line)</highlight></codeline>
+<codeline lineno="781"><highlight class="normal"></highlight></codeline>
+<codeline lineno="782"><highlight class="normal"></highlight></codeline>
+<codeline lineno="783"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">IsHeaderGuardIncludeOrOneLineIWYUPragma(line):</highlight></codeline>
+<codeline lineno="784"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(re.match(</highlight><highlight class="stringliteral">r&apos;^#(ifndef|define|endif\s*//)\s*[\w_]+\s*$&apos;</highlight><highlight class="normal">,<sp/>line)<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>re.match(</highlight><highlight class="stringliteral">r&apos;^#include\s&apos;</highlight><highlight class="normal">,<sp/>line)<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Don&apos;t<sp/>break<sp/>IWYU<sp/>pragmas,<sp/>either;<sp/>that<sp/>causes<sp/>iwyu.py<sp/>problems.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="787"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>re.search(</highlight><highlight class="stringliteral">r&apos;//<sp/>IWYU<sp/>pragma:<sp/>&apos;</highlight><highlight class="normal">,<sp/>line))</highlight></codeline>
+<codeline lineno="788"><highlight class="normal"></highlight></codeline>
+<codeline lineno="789"><highlight class="normal"></highlight></codeline>
+<codeline lineno="790"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">WrapLongLine(line,<sp/>output):</highlight></codeline>
+<codeline lineno="791"><highlight class="normal"><sp/><sp/>line<sp/>=<sp/>line.rstrip()</highlight></codeline>
+<codeline lineno="792"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(line)<sp/>&lt;=<sp/>80:</highlight></codeline>
+<codeline lineno="793"><highlight class="normal"><sp/><sp/><sp/><sp/>output.append(line)</highlight></codeline>
+<codeline lineno="794"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>IsSingleLineComment(line):</highlight></codeline>
+<codeline lineno="795"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>IsHeaderGuardIncludeOrOneLineIWYUPragma(line):</highlight></codeline>
+<codeline lineno="796"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>The<sp/>style<sp/>guide<sp/>made<sp/>an<sp/>exception<sp/>to<sp/>allow<sp/>long<sp/>header<sp/>guard<sp/>lines,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="797"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>includes<sp/>and<sp/>IWYU<sp/>pragmas.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="798"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>output.append(line)</highlight></codeline>
+<codeline lineno="799"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="800"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>WrapComment(line,<sp/>output)</highlight></codeline>
+<codeline lineno="801"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>IsInPreprocessorDirective(output,<sp/>line):</highlight></codeline>
+<codeline lineno="802"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>IsHeaderGuardIncludeOrOneLineIWYUPragma(line):</highlight></codeline>
+<codeline lineno="803"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>The<sp/>style<sp/>guide<sp/>made<sp/>an<sp/>exception<sp/>to<sp/>allow<sp/>long<sp/>header<sp/>guard<sp/>lines,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="804"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>includes<sp/>and<sp/>IWYU<sp/>pragmas.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="805"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>output.append(line)</highlight></codeline>
+<codeline lineno="806"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="807"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>WrapPreprocessorDirective(line,<sp/>output)</highlight></codeline>
+<codeline lineno="808"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>IsMultiLineIWYUPragma(line):</highlight></codeline>
+<codeline lineno="809"><highlight class="normal"><sp/><sp/><sp/><sp/>output.append(line)</highlight></codeline>
+<codeline lineno="810"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="811"><highlight class="normal"><sp/><sp/><sp/><sp/>WrapPlainCode(line,<sp/>output)</highlight></codeline>
+<codeline lineno="812"><highlight class="normal"></highlight></codeline>
+<codeline lineno="813"><highlight class="normal"></highlight></codeline>
+<codeline lineno="814"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">BeautifyCode(string):</highlight></codeline>
+<codeline lineno="815"><highlight class="normal"><sp/><sp/>lines<sp/>=<sp/>string.splitlines()</highlight></codeline>
+<codeline lineno="816"><highlight class="normal"><sp/><sp/>output<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="817"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>line<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>lines:</highlight></codeline>
+<codeline lineno="818"><highlight class="normal"><sp/><sp/><sp/><sp/>WrapLongLine(line,<sp/>output)</highlight></codeline>
+<codeline lineno="819"><highlight class="normal"><sp/><sp/>output2<sp/>=<sp/>[line.rstrip()<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>line<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>output]</highlight></codeline>
+<codeline lineno="820"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;\n&apos;</highlight><highlight class="normal">.join(output2)<sp/>+<sp/></highlight><highlight class="stringliteral">&apos;\n&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="821"><highlight class="normal"></highlight></codeline>
+<codeline lineno="822"><highlight class="normal"></highlight></codeline>
+<codeline lineno="823"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">ConvertFromPumpSource(src_text):</highlight></codeline>
+<codeline lineno="824"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Return<sp/>the<sp/>text<sp/>generated<sp/>from<sp/>the<sp/>given<sp/>Pump<sp/>source<sp/>text.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="825"><highlight class="normal"><sp/><sp/>ast<sp/>=<sp/>ParseToAST(StripMetaComments(src_text))</highlight></codeline>
+<codeline lineno="826"><highlight class="normal"><sp/><sp/>output<sp/>=<sp/><ref refid="classpump_1_1_output" kindref="compound">Output</ref>()</highlight></codeline>
+<codeline lineno="827"><highlight class="normal"><sp/><sp/>RunCode(<ref refid="classpump_1_1_env" kindref="compound">Env</ref>(),<sp/>ast,<sp/>output)</highlight></codeline>
+<codeline lineno="828"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>BeautifyCode(output.string)</highlight></codeline>
+<codeline lineno="829"><highlight class="normal"></highlight></codeline>
+<codeline lineno="830"><highlight class="normal"></highlight></codeline>
+<codeline lineno="831"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">main(argv):</highlight></codeline>
+<codeline lineno="832"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(argv)<sp/>==<sp/>1:</highlight></codeline>
+<codeline lineno="833"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>__doc__</highlight></codeline>
+<codeline lineno="834"><highlight class="normal"><sp/><sp/><sp/><sp/>sys.exit(1)</highlight></codeline>
+<codeline lineno="835"><highlight class="normal"></highlight></codeline>
+<codeline lineno="836"><highlight class="normal"><sp/><sp/>file_path<sp/>=<sp/>argv[-1]</highlight></codeline>
+<codeline lineno="837"><highlight class="normal"><sp/><sp/>output_str<sp/>=<sp/>ConvertFromPumpSource(file(file_path,<sp/></highlight><highlight class="stringliteral">&apos;r&apos;).read())</highlight></codeline>
+<codeline lineno="838"><highlight class="stringliteral"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>file_path.endswith(</highlight><highlight class="stringliteral">&apos;.pump&apos;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="839"><highlight class="normal"><sp/><sp/><sp/><sp/>output_file_path<sp/>=<sp/>file_path[:-5]</highlight></codeline>
+<codeline lineno="840"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="841"><highlight class="normal"><sp/><sp/><sp/><sp/>output_file_path<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;-&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="842"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>output_file_path<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;-&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="843"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">print</highlight><highlight class="normal"><sp/>output_str,</highlight></codeline>
+<codeline lineno="844"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="845"><highlight class="normal"><sp/><sp/><sp/><sp/>output_file<sp/>=<sp/>file(output_file_path,<sp/></highlight><highlight class="stringliteral">&apos;w&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="846"><highlight class="normal"><sp/><sp/><sp/><sp/>output_file.write(</highlight><highlight class="stringliteral">&apos;//<sp/>This<sp/>file<sp/>was<sp/>GENERATED<sp/>by<sp/>command:\n&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="847"><highlight class="normal"><sp/><sp/><sp/><sp/>output_file.write(</highlight><highlight class="stringliteral">&apos;//<sp/><sp/><sp/><sp/><sp/>%s<sp/>%s\n&apos;</highlight><highlight class="normal"><sp/>%</highlight></codeline>
+<codeline lineno="848"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(os.path.basename(__file__),<sp/>os.path.basename(file_path)))</highlight></codeline>
+<codeline lineno="849"><highlight class="normal"><sp/><sp/><sp/><sp/>output_file.write(</highlight><highlight class="stringliteral">&apos;//<sp/>DO<sp/>NOT<sp/>EDIT<sp/>BY<sp/>HAND!!!\n\n&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="850"><highlight class="normal"><sp/><sp/><sp/><sp/>output_file.write(output_str)</highlight></codeline>
+<codeline lineno="851"><highlight class="normal"><sp/><sp/><sp/><sp/>output_file.close()</highlight></codeline>
+<codeline lineno="852"><highlight class="normal"></highlight></codeline>
+<codeline lineno="853"><highlight class="normal"></highlight></codeline>
+<codeline lineno="854"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>__name__<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;__main__&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="855"><highlight class="normal"><sp/><sp/>main(sys.argv)</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googletest/scripts/pump.py"/>
+  </compounddef>
+</doxygen>

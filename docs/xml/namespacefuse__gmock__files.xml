@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacefuse__gmock__files" kind="namespace" language="Python">
+    <compoundname>fuse_gmock_files</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="fuse__gmock__files_8py_1abbec91475e2948cd4528a04cc3b19d18" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string fuse_gmock_files.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;wan@google.com (Zhanyong Wan)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="62" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gmock__files_8py_1a900b64b34e20c7430b72252192a3c7ed" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>fuse_gmock_files.DEFAULT_GMOCK_ROOT_DIR</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_GMOCK_ROOT_DIR</name>
+        <initializer>=  os.path.join(os.path.dirname(__file__), &apos;..&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="71" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gmock__files_8py_1a3fb36dbe8d361f9ecc54e1aa4b94b068" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>fuse_gmock_files.gtest</definition>
+        <argsstring></argsstring>
+        <name>gtest</name>
+        <initializer>=  fuse_gtest_files</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="76" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gmock__files_8py_1aeb4457451f878d6bc8a42f7ff3e5f6cf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>fuse_gmock_files.INCLUDE_GMOCK_FILE_REGEX</definition>
+        <argsstring></argsstring>
+        <name>INCLUDE_GMOCK_FILE_REGEX</name>
+        <initializer>=  re.compile(r&apos;^\s*#\s*include\s*&quot;(gmock/.+)&quot;&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="79" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gmock__files_8py_1aa31b816a9048fb3fa9d482eeac69c139" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string fuse_gmock_files.GMOCK_H_SEED</definition>
+        <argsstring></argsstring>
+        <name>GMOCK_H_SEED</name>
+        <initializer>=  &apos;include/gmock/gmock.h&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="82" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gmock__files_8py_1a518e1f3cc3f184747e6ed3f2d0233c99" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string fuse_gmock_files.GMOCK_ALL_CC_SEED</definition>
+        <argsstring></argsstring>
+        <name>GMOCK_ALL_CC_SEED</name>
+        <initializer>=  &apos;src/gmock-all.cc&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="83" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gmock__files_8py_1a385c31d8542b0a2e4b7f46cb2a32d7da" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string fuse_gmock_files.GTEST_H_OUTPUT</definition>
+        <argsstring></argsstring>
+        <name>GTEST_H_OUTPUT</name>
+        <initializer>=  &apos;gtest/gtest.h&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="86" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gmock__files_8py_1aba0664abeb60f34cfdf59e8475a465d0" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string fuse_gmock_files.GMOCK_H_OUTPUT</definition>
+        <argsstring></argsstring>
+        <name>GMOCK_H_OUTPUT</name>
+        <initializer>=  &apos;gmock/gmock.h&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="87" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gmock__files_8py_1a9759f3f6c404e3292c26c9317792e846" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string fuse_gmock_files.GMOCK_GTEST_ALL_CC_OUTPUT</definition>
+        <argsstring></argsstring>
+        <name>GMOCK_GTEST_ALL_CC_OUTPUT</name>
+        <initializer>=  &apos;gmock-gtest-all.cc&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="88" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="fuse__gmock__files_8py_1aae591d77d2d969394996f9fc2017824c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gmock_files.GetGTestRootDir</definition>
+        <argsstring>(gmock_root)</argsstring>
+        <name>GetGTestRootDir</name>
+        <param>
+          <type>gmock_root</type>
+          <defname>gmock_root</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the root directory of Google Test.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="91" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="91" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="fuse__gmock__files_8py_1aaec09f55a62b3d65b5d25fe0050e9e05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gmock_files.ValidateGMockRootDir</definition>
+        <argsstring>(gmock_root)</argsstring>
+        <name>ValidateGMockRootDir</name>
+        <param>
+          <type>gmock_root</type>
+          <defname>gmock_root</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Makes sure gmock_root points to a valid gmock root directory.
+
+The function aborts the program on failure.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="97" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="97" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="fuse__gmock__files_8py_1a68581e210793099d656537faa719df29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gmock_files.ValidateOutputDir</definition>
+        <argsstring>(output_dir)</argsstring>
+        <name>ValidateOutputDir</name>
+        <param>
+          <type>output_dir</type>
+          <defname>output_dir</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Makes sure output_dir points to a valid output directory.
+
+The function aborts the program on failure.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="108" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="108" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="fuse__gmock__files_8py_1abab451606f671f59404f23276aad2c34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gmock_files.FuseGMockH</definition>
+        <argsstring>(gmock_root, output_dir)</argsstring>
+        <name>FuseGMockH</name>
+        <param>
+          <type>gmock_root</type>
+          <defname>gmock_root</defname>
+        </param>
+        <param>
+          <type>output_dir</type>
+          <defname>output_dir</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Scans folder gmock_root to generate gmock/gmock.h in output_dir.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="119" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="119" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="fuse__gmock__files_8py_1af470a39a4df492b1ca0d9493eac8222b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gmock_files.FuseGMockAllCcToFile</definition>
+        <argsstring>(gmock_root, output_file)</argsstring>
+        <name>FuseGMockAllCcToFile</name>
+        <param>
+          <type>gmock_root</type>
+          <defname>gmock_root</defname>
+        </param>
+        <param>
+          <type>output_file</type>
+          <defname>output_file</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Scans folder gmock_root to fuse gmock-all.cc into output_file.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="159" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="159" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="fuse__gmock__files_8py_1a50eb499fcb075e19191e8403bd85c813" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gmock_files.FuseGMockGTestAllCc</definition>
+        <argsstring>(gmock_root, output_dir)</argsstring>
+        <name>FuseGMockGTestAllCc</name>
+        <param>
+          <type>gmock_root</type>
+          <defname>gmock_root</defname>
+        </param>
+        <param>
+          <type>output_dir</type>
+          <defname>output_dir</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Scans folder gmock_root to generate gmock-gtest-all.cc in output_dir.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="204" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="204" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="fuse__gmock__files_8py_1ae76b6bc18373325fc3f002abf5c4378f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gmock_files.FuseGMock</definition>
+        <argsstring>(gmock_root, output_dir)</argsstring>
+        <name>FuseGMock</name>
+        <param>
+          <type>gmock_root</type>
+          <defname>gmock_root</defname>
+        </param>
+        <param>
+          <type>output_dir</type>
+          <defname>output_dir</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Fuses gtest.h, gmock.h, and gmock-gtest-all.h.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="215" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="215" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="fuse__gmock__files_8py_1a64e8cd1ead5a1454265cbc2d3db4d425" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gmock_files.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="226" column="1" bodyfile="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" bodystart="226" bodyend="238"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/scripts/fuse_gmock_files.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

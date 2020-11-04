@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classupload_1_1_git_v_c_s" kind="class" language="Python" prot="public">
+    <compoundname>upload::GitVCS</compoundname>
+    <basecompoundref refid="classupload_1_1_version_control_system" prot="public" virt="non-virtual">upload.VersionControlSystem</basecompoundref>
+    <basecompoundref refid="classupload_1_1_version_control_system" prot="public" virt="non-virtual">upload.VersionControlSystem</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classupload_1_1_git_v_c_s_1a07e9469050a157f34fe804cdf6ecddac" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.GitVCS::base_hashes</definition>
+        <argsstring></argsstring>
+        <name>base_hashes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="991" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="991" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classupload_1_1_git_v_c_s_1aba4e1dca1c4b3e5db7ba07f6bce3c839" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.GitVCS.__init__</definition>
+        <argsstring>(self, options)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>options</type>
+          <defname>options</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="988" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="988" bodyend="992"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_git_v_c_s_1a3ebfc01cebc9b585706ad3f4389a8833" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.GitVCS.GenerateDiff</definition>
+        <argsstring>(self, extra_args)</argsstring>
+        <name>GenerateDiff</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>extra_args</type>
+          <defname>extra_args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="993" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="993" bodyend="1020"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_git_v_c_s_1ae4e8c0e9fa01619c6a5c76d1ab84b995" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.GitVCS.GetUnknownFiles</definition>
+        <argsstring>(self)</argsstring>
+        <name>GetUnknownFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="1021" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="1021" bodyend="1025"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_git_v_c_s_1a70ddb65a6b512b8cb8cc4affa37ff9b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.GitVCS.GetBaseFile</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>GetBaseFile</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="1026" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="1026" bodyend="1041"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_git_v_c_s_1aba4e1dca1c4b3e5db7ba07f6bce3c839" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.GitVCS.__init__</definition>
+        <argsstring>(self, options)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>options</type>
+          <defname>options</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="988" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="988" bodyend="992"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_git_v_c_s_1a3ebfc01cebc9b585706ad3f4389a8833" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.GitVCS.GenerateDiff</definition>
+        <argsstring>(self, extra_args)</argsstring>
+        <name>GenerateDiff</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>extra_args</type>
+          <defname>extra_args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="993" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="993" bodyend="1020"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_git_v_c_s_1ae4e8c0e9fa01619c6a5c76d1ab84b995" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.GitVCS.GetUnknownFiles</definition>
+        <argsstring>(self)</argsstring>
+        <name>GetUnknownFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="1021" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="1021" bodyend="1025"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_git_v_c_s_1a70ddb65a6b512b8cb8cc4affa37ff9b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.GitVCS.GetBaseFile</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>GetBaseFile</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="1026" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="1026" bodyend="1041"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Implementation of the VersionControlSystem interface for Git.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="955">
+        <label>upload.GitVCS</label>
+        <link refid="classupload_1_1_git_v_c_s"/>
+        <childnode refid="956" relation="public-inheritance">
+        </childnode>
+        <childnode refid="956" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="957">
+        <label>object</label>
+      </node>
+      <node id="956">
+        <label>upload.VersionControlSystem</label>
+        <link refid="classupload_1_1_version_control_system"/>
+        <childnode refid="957" relation="public-inheritance">
+        </childnode>
+        <childnode refid="957" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="958">
+        <label>upload.GitVCS</label>
+        <link refid="classupload_1_1_git_v_c_s"/>
+        <childnode refid="959" relation="public-inheritance">
+        </childnode>
+        <childnode refid="959" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="960">
+        <label>object</label>
+      </node>
+      <node id="959">
+        <label>upload.VersionControlSystem</label>
+        <link refid="classupload_1_1_version_control_system"/>
+        <childnode refid="960" relation="public-inheritance">
+        </childnode>
+        <childnode refid="960" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/upload.py" line="985" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="985" bodyend="1042"/>
+    <listofallmembers>
+      <member refid="classupload_1_1_git_v_c_s_1aba4e1dca1c4b3e5db7ba07f6bce3c839" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>__init__</name></member>
+      <member refid="classupload_1_1_git_v_c_s_1aba4e1dca1c4b3e5db7ba07f6bce3c839" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>__init__</name></member>
+      <member refid="classupload_1_1_git_v_c_s_1a07e9469050a157f34fe804cdf6ecddac" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>base_hashes</name></member>
+      <member refid="classupload_1_1_version_control_system_1ad2923d691a1b1047e9359c5b7c1c103f" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>CheckForUnknownFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1ad2923d691a1b1047e9359c5b7c1c103f" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>CheckForUnknownFiles</name></member>
+      <member refid="classupload_1_1_git_v_c_s_1a3ebfc01cebc9b585706ad3f4389a8833" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>GenerateDiff</name></member>
+      <member refid="classupload_1_1_git_v_c_s_1a3ebfc01cebc9b585706ad3f4389a8833" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>GenerateDiff</name></member>
+      <member refid="classupload_1_1_git_v_c_s_1a70ddb65a6b512b8cb8cc4affa37ff9b4" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>GetBaseFile</name></member>
+      <member refid="classupload_1_1_git_v_c_s_1a70ddb65a6b512b8cb8cc4affa37ff9b4" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>GetBaseFile</name></member>
+      <member refid="classupload_1_1_version_control_system_1a812c3b3daf90c88b015fa4b26252e291" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>GetBaseFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1a812c3b3daf90c88b015fa4b26252e291" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>GetBaseFiles</name></member>
+      <member refid="classupload_1_1_git_v_c_s_1ae4e8c0e9fa01619c6a5c76d1ab84b995" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>GetUnknownFiles</name></member>
+      <member refid="classupload_1_1_git_v_c_s_1ae4e8c0e9fa01619c6a5c76d1ab84b995" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>GetUnknownFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1a846889ecd2ef40870b456ddb5b349e02" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>IsImage</name></member>
+      <member refid="classupload_1_1_version_control_system_1a846889ecd2ef40870b456ddb5b349e02" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>IsImage</name></member>
+      <member refid="classupload_1_1_version_control_system_1a4d57d043bc408887b94269fe4cea9556" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>options</name></member>
+      <member refid="classupload_1_1_version_control_system_1a7e334f967301b9e85e5a9c39f5036823" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>UploadBaseFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1a7e334f967301b9e85e5a9c39f5036823" prot="public" virt="non-virtual"><scope>upload::GitVCS</scope><name>UploadBaseFiles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

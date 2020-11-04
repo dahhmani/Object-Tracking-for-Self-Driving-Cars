@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="internal_2custom_2gmock-generated-actions_8h" kind="file" language="C++">
+    <compoundname>gmock-generated-actions.h</compoundname>
+    <includedby refid="gmock-generated-actions_8h" local="yes">vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h</includedby>
+    <invincdepgraph>
+      <node id="414">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-more-actions.h</label>
+        <link refid="gmock-more-actions_8h_source"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+      </node>
+      <node id="415">
+        <label>vendor/googletest/googlemock/include/gmock/gmock.h</label>
+        <link refid="gmock_8h_source"/>
+        <childnode refid="416" relation="include">
+        </childnode>
+      </node>
+      <node id="413">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h</label>
+        <link refid="gmock-generated-actions_8h_source"/>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+      </node>
+      <node id="412">
+        <label>vendor/googletest/googlemock/include/gmock/internal/custom/gmock-generated-actions.h</label>
+        <link refid="internal_2custom_2gmock-generated-actions_8h"/>
+        <childnode refid="413" relation="include">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>vendor/googletest/googlemock/test/gmock_link_test.h</label>
+        <link refid="gmock__link__test_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>This<sp/>file<sp/>was<sp/>GENERATED<sp/>by<sp/>command:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>pump.py<sp/>gmock-generated-actions.h.pump</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DO<sp/>NOT<sp/>EDIT<sp/>BY<sp/>HAND!!!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GMOCK_INCLUDE_GMOCK_INTERNAL_CUSTOM_GMOCK_GENERATED_ACTIONS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GMOCK_INCLUDE_GMOCK_INTERNAL_CUSTOM_GMOCK_GENERATED_ACTIONS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>GMOCK_INCLUDE_GMOCK_INTERNAL_CUSTOM_GMOCK_GENERATED_ACTIONS_H_</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googlemock/include/gmock/internal/custom/gmock-generated-actions.h"/>
+  </compounddef>
+</doxygen>

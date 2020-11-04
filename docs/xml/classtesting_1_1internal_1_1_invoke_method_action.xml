@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_invoke_method_action" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::InvokeMethodAction</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class Class</type>
+      </param>
+      <param>
+        <type>typename MethodPtr</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_invoke_method_action_1ad87861bde8960e57a429b3cf5ba70133" prot="private" static="no" mutable="no">
+        <type>const MethodPtr</type>
+        <definition>const MethodPtr testing::internal::InvokeMethodAction&lt; Class, MethodPtr &gt;::method_ptr_</definition>
+        <argsstring></argsstring>
+        <name>method_ptr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-more-actions.h" line="87" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-more-actions.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_invoke_method_action_1ac857e8bad8f6417640145ab1f5740963" prot="private" static="no" mutable="no">
+        <type>Class *const</type>
+        <definition>Class* const testing::internal::InvokeMethodAction&lt; Class, MethodPtr &gt;::obj_ptr_</definition>
+        <argsstring></argsstring>
+        <name>obj_ptr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-more-actions.h" line="88" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-more-actions.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_invoke_method_action_1a16e545f6166e2d54eeafdc2ab3adf06b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::InvokeMethodAction&lt; Class, MethodPtr &gt;::InvokeMethodAction</definition>
+        <argsstring>(Class *obj_ptr, MethodPtr method_ptr)</argsstring>
+        <name>InvokeMethodAction</name>
+        <param>
+          <type>Class *</type>
+          <declname>obj_ptr</declname>
+        </param>
+        <param>
+          <type>MethodPtr</type>
+          <declname>method_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-more-actions.h" line="74" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-more-actions.h" bodystart="74" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_invoke_method_action_1aed6971c668bc2c7671d512306b25b1ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Result</type>
+          </param>
+          <param>
+            <type>typename ArgumentTuple</type>
+          </param>
+        </templateparamlist>
+        <type>Result</type>
+        <definition>Result testing::internal::InvokeMethodAction&lt; Class, MethodPtr &gt;::Perform</definition>
+        <argsstring>(const ArgumentTuple &amp;args) const</argsstring>
+        <name>Perform</name>
+        <param>
+          <type>const ArgumentTuple &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-more-actions.h" line="78" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-more-actions.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_invoke_method_action_1ade6d5b1ee276aedac65290465a447a87" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::InvokeMethodAction&lt; Class, MethodPtr &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(InvokeMethodAction)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_invoke_method_action" kindref="compound">InvokeMethodAction</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-more-actions.h" line="90" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-more-actions.h" line="72" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-more-actions.h" bodystart="72" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_invoke_method_action_1ade6d5b1ee276aedac65290465a447a87" prot="private" virt="non-virtual"><scope>testing::internal::InvokeMethodAction</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_invoke_method_action_1a16e545f6166e2d54eeafdc2ab3adf06b" prot="public" virt="non-virtual"><scope>testing::internal::InvokeMethodAction</scope><name>InvokeMethodAction</name></member>
+      <member refid="classtesting_1_1internal_1_1_invoke_method_action_1ad87861bde8960e57a429b3cf5ba70133" prot="private" virt="non-virtual"><scope>testing::internal::InvokeMethodAction</scope><name>method_ptr_</name></member>
+      <member refid="classtesting_1_1internal_1_1_invoke_method_action_1ac857e8bad8f6417640145ab1f5740963" prot="private" virt="non-virtual"><scope>testing::internal::InvokeMethodAction</scope><name>obj_ptr_</name></member>
+      <member refid="classtesting_1_1internal_1_1_invoke_method_action_1aed6971c668bc2c7671d512306b25b1ab" prot="public" virt="non-virtual"><scope>testing::internal::InvokeMethodAction</scope><name>Perform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_built_in_default_value_3_01const_01_t_01_4" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::BuiltInDefaultValue&lt; const T &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_built_in_default_value_3_01const_01_t_01_4_1a1814803ec5dcc660ee1f1092a96b79fa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool testing::internal::BuiltInDefaultValue&lt; const T &gt;::Exists</definition>
+        <argsstring>()</argsstring>
+        <name>Exists</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="128" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="128" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_built_in_default_value_3_01const_01_t_01_4_1a5996754952ecbcc5da77a2cebd4722de" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T testing::internal::BuiltInDefaultValue&lt; const T &gt;::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="129" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="126" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="126" bodyend="130"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_built_in_default_value_3_01const_01_t_01_4_1a1814803ec5dcc660ee1f1092a96b79fa" prot="public" virt="non-virtual"><scope>testing::internal::BuiltInDefaultValue&lt; const T &gt;</scope><name>Exists</name></member>
+      <member refid="classtesting_1_1internal_1_1_built_in_default_value_3_01const_01_t_01_4_1a5996754952ecbcc5da77a2cebd4722de" prot="public" virt="non-virtual"><scope>testing::internal::BuiltInDefaultValue&lt; const T &gt;</scope><name>Get</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

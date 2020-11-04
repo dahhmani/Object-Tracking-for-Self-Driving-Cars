@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_is_half_of_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::IsHalfOfMatcher</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_is_half_of_matcher_1a8c919d71f6f7e05ac76c67f37107808c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::gmock_matchers_test::IsHalfOfMatcher::MatchAndExplain</definition>
+        <argsstring>(const tuple&lt; T1, T2 &gt; &amp;a_pair, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>const tuple&lt; T1, T2 &gt; &amp;</type>
+          <declname>a_pair</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="5413" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="5413" bodyend="5422"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_is_half_of_matcher_1aaf62b9984288cc339599286352d82e91" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_matchers_test::IsHalfOfMatcher::DescribeTo</definition>
+        <argsstring>(ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="5424" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="5424" bodyend="5426"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_is_half_of_matcher_1a759ba45c89acfa77a4e1afe95e7b768d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_matchers_test::IsHalfOfMatcher::DescribeNegationTo</definition>
+        <argsstring>(ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <param>
+          <type>ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="5428" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="5428" bodyend="5430"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="5410" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="5410" bodyend="5431"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_is_half_of_matcher_1a759ba45c89acfa77a4e1afe95e7b768d" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::IsHalfOfMatcher</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_is_half_of_matcher_1aaf62b9984288cc339599286352d82e91" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::IsHalfOfMatcher</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_is_half_of_matcher_1a8c919d71f6f7e05ac76c67f37107808c" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::IsHalfOfMatcher</scope><name>MatchAndExplain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacetesting_1_1internal_1_1edit__distance" kind="namespace" language="C++">
+    <compoundname>testing::internal::edit_distance</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="gtest-internal_8h_1ad46aa6da12aec1a3f166310478b53a08" prot="public" static="no">
+        <name>EditType</name>
+        <enumvalue id="gtest-internal_8h_1ad46aa6da12aec1a3f166310478b53a08a7bdb9c74613a94f21b7489e0b5640a63" prot="public">
+          <name>kMatch</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gtest-internal_8h_1ad46aa6da12aec1a3f166310478b53a08a63400b073f5b311a87d568b5ae27ffe8" prot="public">
+          <name>kAdd</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gtest-internal_8h_1ad46aa6da12aec1a3f166310478b53a08a814768ef6cd0264a0a10b1e701a63e78" prot="public">
+          <name>kRemove</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gtest-internal_8h_1ad46aa6da12aec1a3f166310478b53a08afdbf30ecf9f32f60c646a34a358615f2" prot="public">
+          <name>kReplace</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="180" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="180" bodyend="180"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gtest-internal_8h_1a26323b4c2a29ea8e187aafbd4d2275db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GTEST_API_ std::vector&lt; EditType &gt;</type>
+        <definition>std::vector&lt; EditType &gt; testing::internal::edit_distance::CalculateOptimalEdits</definition>
+        <argsstring>(const std::vector&lt; size_t &gt; &amp;left, const std::vector&lt; size_t &gt; &amp;right)</argsstring>
+        <name>CalculateOptimalEdits</name>
+        <param>
+          <type>const std::vector&lt; size_t &gt; &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; size_t &gt; &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="181" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="1028" bodyend="1083"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-internal_8h_1a32267b2ae24de1de175ac8217406877d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GTEST_API_ std::vector&lt; EditType &gt;</type>
+        <definition>std::vector&lt; EditType &gt; testing::internal::edit_distance::CalculateOptimalEdits</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;left, const std::vector&lt; std::string &gt; &amp;right)</argsstring>
+        <name>CalculateOptimalEdits</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="185" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="1104" bodyend="1118"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-internal_8h_1ac4c24a581ff433d7aca7ed12c9133fb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GTEST_API_ std::string</type>
+        <definition>std::string testing::internal::edit_distance::CreateUnifiedDiff</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;left, const std::vector&lt; std::string &gt; &amp;right, size_t context=2)</argsstring>
+        <name>CreateUnifiedDiff</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>context</declname>
+          <defval>2</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="190" column="1" bodyfile="vendor/googletest/googletest/src/gtest.cc" bodystart="1203" bodyend="1263"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="174" column="1"/>
+  </compounddef>
+</doxygen>

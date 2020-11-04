@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classcpp_1_1ast_1_1_parameter" kind="class" language="Python" prot="public">
+    <compoundname>cpp::ast::Parameter</compoundname>
+    <basecompoundref refid="classcpp_1_1ast_1_1_node" prot="public" virt="non-virtual">cpp.ast.Node</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_parameter_1aae0375fb0ded8fa9090feea6bdff2784" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.Parameter::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="216" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_parameter_1a5eed090000c41551a10c21f175ad33e3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.Parameter::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="217" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_1_1ast_1_1_parameter_1a4ceae2ac87d82c5542c4e7385eb4c97e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp.ast.Parameter::default</definition>
+        <argsstring></argsstring>
+        <name>default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="218" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_parameter_1a4fe27f559d44adac9e9b5898ba76c5b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.Parameter.__init__</definition>
+        <argsstring>(self, start, end, name, parameter_type, default)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>start</type>
+          <defname>start</defname>
+        </param>
+        <param>
+          <type>end</type>
+          <defname>end</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>parameter_type</type>
+          <defname>parameter_type</defname>
+        </param>
+        <param>
+          <type>default</type>
+          <defname>default</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="214" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="214" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_parameter_1a4bc5c17a0d606d35be40cb4c2c1a67a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.Parameter.Requires</definition>
+        <argsstring>(self, node)</argsstring>
+        <name>Requires</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>node</type>
+          <defname>node</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="220" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="220" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_1_1ast_1_1_parameter_1aabfbabb3c744a0da4a012ceb4299947a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.ast.Parameter.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="224" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="224" bodyend="231"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1712">
+        <label>cpp.ast.Node</label>
+        <link refid="classcpp_1_1ast_1_1_node"/>
+        <childnode refid="1713" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1711">
+        <label>cpp.ast.Parameter</label>
+        <link refid="classcpp_1_1ast_1_1_parameter"/>
+        <childnode refid="1712" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1713">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1715">
+        <label>cpp.ast.Node</label>
+        <link refid="classcpp_1_1ast_1_1_node"/>
+        <childnode refid="1716" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1714">
+        <label>cpp.ast.Parameter</label>
+        <link refid="classcpp_1_1ast_1_1_parameter"/>
+        <childnode refid="1715" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1716">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" line="213" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/ast.py" bodystart="213" bodyend="232"/>
+    <listofallmembers>
+      <member refid="classcpp_1_1ast_1_1_parameter_1a4fe27f559d44adac9e9b5898ba76c5b3" prot="public" virt="non-virtual"><scope>cpp::ast::Parameter</scope><name>__init__</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a2cbd6969346645259afc3be51faae904" prot="public" virt="non-virtual" ambiguityscope="cpp::ast::Node."><scope>cpp::ast::Parameter</scope><name>__init__</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1ab89915656a60c7b7c752e5baa607c532" prot="public" virt="non-virtual"><scope>cpp::ast::Parameter</scope><name>__repr__</name></member>
+      <member refid="classcpp_1_1ast_1_1_parameter_1aabfbabb3c744a0da4a012ceb4299947a" prot="public" virt="non-virtual"><scope>cpp::ast::Parameter</scope><name>__str__</name></member>
+      <member refid="classcpp_1_1ast_1_1_parameter_1a4ceae2ac87d82c5542c4e7385eb4c97e" prot="public" virt="non-virtual"><scope>cpp::ast::Parameter</scope><name>default</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a3c5e5246ccf619df28eca02e29d69647" prot="public" virt="non-virtual"><scope>cpp::ast::Parameter</scope><name>end</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1ab3eca703a79fb65bc25dfbcb7547c79e" prot="public" virt="non-virtual"><scope>cpp::ast::Parameter</scope><name>IsDeclaration</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a684ee9a357168e7e07a24fc6812f66e6" prot="public" virt="non-virtual"><scope>cpp::ast::Parameter</scope><name>IsDefinition</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a313273874ccf578485006d4000128234" prot="public" virt="non-virtual"><scope>cpp::ast::Parameter</scope><name>IsExportable</name></member>
+      <member refid="classcpp_1_1ast_1_1_parameter_1aae0375fb0ded8fa9090feea6bdff2784" prot="public" virt="non-virtual"><scope>cpp::ast::Parameter</scope><name>name</name></member>
+      <member refid="classcpp_1_1ast_1_1_parameter_1a4bc5c17a0d606d35be40cb4c2c1a67a6" prot="public" virt="non-virtual"><scope>cpp::ast::Parameter</scope><name>Requires</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1a7b2aa97e6a049bb1a93aea48c48f1f44" prot="public" virt="non-virtual"><scope>cpp::ast::Parameter</scope><name>start</name></member>
+      <member refid="classcpp_1_1ast_1_1_parameter_1a5eed090000c41551a10c21f175ad33e3" prot="public" virt="non-virtual"><scope>cpp::ast::Parameter</scope><name>type</name></member>
+      <member refid="classcpp_1_1ast_1_1_node_1ab5dfeabcbcd7c1f5feb8522edffb8b4a" prot="public" virt="non-virtual"><scope>cpp::ast::Parameter</scope><name>XXX__str__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

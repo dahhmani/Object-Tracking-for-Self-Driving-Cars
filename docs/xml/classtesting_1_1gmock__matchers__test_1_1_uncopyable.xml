@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_uncopyable" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::Uncopyable</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1gmock__matchers__test_1_1_uncopyable_1a553a826c5f4aea0a52da8b2769d24faa" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::gmock_matchers_test::Uncopyable::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3366" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3366" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_uncopyable_1a29cd3836f686c1e9c47e5e0f98c56b13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::Uncopyable::Uncopyable</definition>
+        <argsstring>()</argsstring>
+        <name>Uncopyable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3359" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3359" bodyend="3359"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_uncopyable_1a827c1de4fe4c2e40791dd87a13972bc7" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::Uncopyable::Uncopyable</definition>
+        <argsstring>(int a_value)</argsstring>
+        <name>Uncopyable</name>
+        <param>
+          <type>int</type>
+          <declname>a_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3360" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3360" bodyend="3360"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_uncopyable_1a23512131b948e40ded06555848829866" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_matchers_test::Uncopyable::value</definition>
+        <argsstring>() const</argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3362" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3362" bodyend="3362"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_uncopyable_1a3f30b54f22caac3aa7e6fb79012dc52f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::gmock_matchers_test::Uncopyable::set_value</definition>
+        <argsstring>(int i)</argsstring>
+        <name>set_value</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3363" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3363" bodyend="3363"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_uncopyable_1a072af27a669fd6683532825cf7ef89d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::Uncopyable::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(Uncopyable)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__matchers__test_1_1_uncopyable" kindref="compound">Uncopyable</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3367" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="3357" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="3357" bodyend="3368"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_uncopyable_1a072af27a669fd6683532825cf7ef89d7" prot="private" virt="non-virtual"><scope>testing::gmock_matchers_test::Uncopyable</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_uncopyable_1a3f30b54f22caac3aa7e6fb79012dc52f" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::Uncopyable</scope><name>set_value</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_uncopyable_1a29cd3836f686c1e9c47e5e0f98c56b13" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::Uncopyable</scope><name>Uncopyable</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_uncopyable_1a827c1de4fe4c2e40791dd87a13972bc7" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::Uncopyable</scope><name>Uncopyable</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_uncopyable_1a23512131b948e40ded06555848829866" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::Uncopyable</scope><name>value</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_uncopyable_1a553a826c5f4aea0a52da8b2769d24faa" prot="private" virt="non-virtual"><scope>testing::gmock_matchers_test::Uncopyable</scope><name>value_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

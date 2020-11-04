@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__more__actions__test_1_1_foo" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_more_actions_test::Foo</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1gmock__more__actions__test_1_1_foo_1a967ab15b8eefa21c8b07539ec84ef1b8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::gmock_more_actions_test::Foo::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="230" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__more__actions__test_1_1_foo_1ad2603a65b94e019c75f4227787b9177e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_more_actions_test::Foo::Foo</definition>
+        <argsstring>()</argsstring>
+        <name>Foo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="182" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="182" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__more__actions__test_1_1_foo_1ad6ba38dbb9b1594ac178630f07c4baa5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_more_actions_test::Foo::Nullary</definition>
+        <argsstring>() const</argsstring>
+        <name>Nullary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="184" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="184" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__more__actions__test_1_1_foo_1a68d2b46d6cc7d51979b0254940af6090" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>short</type>
+        <definition>short testing::gmock_more_actions_test::Foo::Unary</definition>
+        <argsstring>(long x)</argsstring>
+        <name>Unary</name>
+        <param>
+          <type>long</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="186" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="186" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__more__actions__test_1_1_foo_1a15d8082ba501899c8ac1d93543ed9ad3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string testing::gmock_more_actions_test::Foo::Binary</definition>
+        <argsstring>(const string &amp;str, char c) const</argsstring>
+        <name>Binary</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="188" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="188" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__more__actions__test_1_1_foo_1afc5b86988210ad598fa3a2a9822297e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_more_actions_test::Foo::Ternary</definition>
+        <argsstring>(int x, bool y, char z)</argsstring>
+        <name>Ternary</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="190" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="190" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__more__actions__test_1_1_foo_1a69ca68e84528904032bad9533a23fb0a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_more_actions_test::Foo::SumOf4</definition>
+        <argsstring>(int a, int b, int c, int d) const</argsstring>
+        <name>SumOf4</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="192" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="192" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__more__actions__test_1_1_foo_1abc041eb7a8e8211656495f2540f315ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_more_actions_test::Foo::SumOfLast2</definition>
+        <argsstring>(Unused, Unused, int a, int b) const</argsstring>
+        <name>SumOfLast2</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_ignored_value" kindref="compound">Unused</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_ignored_value" kindref="compound">Unused</ref></type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="196" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="196" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__more__actions__test_1_1_foo_1a55fb0cdc224c450f401e0fea4f979512" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_more_actions_test::Foo::SumOf5</definition>
+        <argsstring>(int a, int b, int c, int d, int e)</argsstring>
+        <name>SumOf5</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="198" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="198" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__more__actions__test_1_1_foo_1a34b5ae7cd4620331af92c637e3534bc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_more_actions_test::Foo::SumOf6</definition>
+        <argsstring>(int a, int b, int c, int d, int e, int f)</argsstring>
+        <name>SumOf6</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="200" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="200" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__more__actions__test_1_1_foo_1a267eab73377069cdd153f351e577ec01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string testing::gmock_more_actions_test::Foo::Concat7</definition>
+        <argsstring>(const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7)</argsstring>
+        <name>Concat7</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s3</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s4</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s5</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s6</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s7</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="204" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="204" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__more__actions__test_1_1_foo_1a8457ede63aec737d6e7c42b3c11b993a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string testing::gmock_more_actions_test::Foo::Concat8</definition>
+        <argsstring>(const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7, const char *s8)</argsstring>
+        <name>Concat8</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s3</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s4</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s5</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s6</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s7</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s8</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="210" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="210" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__more__actions__test_1_1_foo_1a96946ff77b6fa4f1d333592bc18e37e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string testing::gmock_more_actions_test::Foo::Concat9</definition>
+        <argsstring>(const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7, const char *s8, const char *s9)</argsstring>
+        <name>Concat9</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s3</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s4</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s5</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s6</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s7</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s8</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s9</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="216" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="216" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__more__actions__test_1_1_foo_1ac9c9711d423f0125fb46f468a04862fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string testing::gmock_more_actions_test::Foo::Concat10</definition>
+        <argsstring>(const char *s1, const char *s2, const char *s3, const char *s4, const char *s5, const char *s6, const char *s7, const char *s8, const char *s9, const char *s10)</argsstring>
+        <name>Concat10</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s3</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s4</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s5</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s6</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s7</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s8</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s9</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s10</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="222" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="222" bodyend="227"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" line="180" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-more-actions_test.cc" bodystart="180" bodyend="231"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__more__actions__test_1_1_foo_1a15d8082ba501899c8ac1d93543ed9ad3" prot="public" virt="non-virtual"><scope>testing::gmock_more_actions_test::Foo</scope><name>Binary</name></member>
+      <member refid="classtesting_1_1gmock__more__actions__test_1_1_foo_1ac9c9711d423f0125fb46f468a04862fd" prot="public" virt="non-virtual"><scope>testing::gmock_more_actions_test::Foo</scope><name>Concat10</name></member>
+      <member refid="classtesting_1_1gmock__more__actions__test_1_1_foo_1a267eab73377069cdd153f351e577ec01" prot="public" virt="non-virtual"><scope>testing::gmock_more_actions_test::Foo</scope><name>Concat7</name></member>
+      <member refid="classtesting_1_1gmock__more__actions__test_1_1_foo_1a8457ede63aec737d6e7c42b3c11b993a" prot="public" virt="non-virtual"><scope>testing::gmock_more_actions_test::Foo</scope><name>Concat8</name></member>
+      <member refid="classtesting_1_1gmock__more__actions__test_1_1_foo_1a96946ff77b6fa4f1d333592bc18e37e4" prot="public" virt="non-virtual"><scope>testing::gmock_more_actions_test::Foo</scope><name>Concat9</name></member>
+      <member refid="classtesting_1_1gmock__more__actions__test_1_1_foo_1ad2603a65b94e019c75f4227787b9177e" prot="public" virt="non-virtual"><scope>testing::gmock_more_actions_test::Foo</scope><name>Foo</name></member>
+      <member refid="classtesting_1_1gmock__more__actions__test_1_1_foo_1ad6ba38dbb9b1594ac178630f07c4baa5" prot="public" virt="non-virtual"><scope>testing::gmock_more_actions_test::Foo</scope><name>Nullary</name></member>
+      <member refid="classtesting_1_1gmock__more__actions__test_1_1_foo_1a69ca68e84528904032bad9533a23fb0a" prot="public" virt="non-virtual"><scope>testing::gmock_more_actions_test::Foo</scope><name>SumOf4</name></member>
+      <member refid="classtesting_1_1gmock__more__actions__test_1_1_foo_1a55fb0cdc224c450f401e0fea4f979512" prot="public" virt="non-virtual"><scope>testing::gmock_more_actions_test::Foo</scope><name>SumOf5</name></member>
+      <member refid="classtesting_1_1gmock__more__actions__test_1_1_foo_1a34b5ae7cd4620331af92c637e3534bc4" prot="public" virt="non-virtual"><scope>testing::gmock_more_actions_test::Foo</scope><name>SumOf6</name></member>
+      <member refid="classtesting_1_1gmock__more__actions__test_1_1_foo_1abc041eb7a8e8211656495f2540f315ec" prot="public" virt="non-virtual"><scope>testing::gmock_more_actions_test::Foo</scope><name>SumOfLast2</name></member>
+      <member refid="classtesting_1_1gmock__more__actions__test_1_1_foo_1afc5b86988210ad598fa3a2a9822297e4" prot="public" virt="non-virtual"><scope>testing::gmock_more_actions_test::Foo</scope><name>Ternary</name></member>
+      <member refid="classtesting_1_1gmock__more__actions__test_1_1_foo_1a68d2b46d6cc7d51979b0254940af6090" prot="public" virt="non-virtual"><scope>testing::gmock_more_actions_test::Foo</scope><name>Unary</name></member>
+      <member refid="classtesting_1_1gmock__more__actions__test_1_1_foo_1a967ab15b8eefa21c8b07539ec84ef1b8" prot="private" virt="non-virtual"><scope>testing::gmock_more_actions_test::Foo</scope><name>value_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

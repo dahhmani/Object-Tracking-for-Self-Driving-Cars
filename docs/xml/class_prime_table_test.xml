@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_prime_table_test" kind="class" language="C++" prot="public">
+    <compoundname>PrimeTableTest</compoundname>
+    <basecompoundref refid="classtesting_1_1_test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_prime_table_test_1a86da90fc6d5cef6386d0cd8fb52b4046" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_prime_table" kindref="compound">PrimeTable</ref> *const</type>
+        <definition>PrimeTable* const PrimeTableTest&lt; T &gt;::table_</definition>
+        <argsstring></argsstring>
+        <name>table_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample6_unittest.cc" line="74" column="1" bodyfile="vendor/googletest/googletest/samples/sample6_unittest.cc" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_prime_table_test_1ab83d0b24b41bff1ace55f9a8d5ea6dcf" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PrimeTableTest&lt; T &gt;::PrimeTableTest</definition>
+        <argsstring>()</argsstring>
+        <name>PrimeTableTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample6_unittest.cc" line="63" column="1" bodyfile="vendor/googletest/googletest/samples/sample6_unittest.cc" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_prime_table_test_1a4fb27ce277675d58ea3f8db99e3bb2b4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual PrimeTableTest&lt; T &gt;::~PrimeTableTest</definition>
+        <argsstring>()</argsstring>
+        <name>~PrimeTableTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample6_unittest.cc" line="65" column="1" bodyfile="vendor/googletest/googletest/samples/sample6_unittest.cc" bodystart="65" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1792">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1791">
+        <label>PrimeTableTest&lt; T &gt;</label>
+        <link refid="class_prime_table_test"/>
+        <childnode refid="1792" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1794">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1793">
+        <label>PrimeTableTest&lt; T &gt;</label>
+        <link refid="class_prime_table_test"/>
+        <childnode refid="1794" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1795" relation="usage">
+          <edgelabel>table_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1795">
+        <label>PrimeTable</label>
+        <link refid="class_prime_table"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/samples/sample6_unittest.cc" line="59" column="1" bodyfile="vendor/googletest/googletest/samples/sample6_unittest.cc" bodystart="59" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual"><scope>PrimeTableTest</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual"><scope>PrimeTableTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual"><scope>PrimeTableTest</scope><name>HasNonfatalFailure</name></member>
+      <member refid="class_prime_table_test_1ab83d0b24b41bff1ace55f9a8d5ea6dcf" prot="protected" virt="non-virtual"><scope>PrimeTableTest</scope><name>PrimeTableTest</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual"><scope>PrimeTableTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual"><scope>PrimeTableTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a190315150c303ddf801313fd1a777733" prot="protected" virt="virtual"><scope>PrimeTableTest</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1_test_1a5ccbac42fee8c5b00b0bfe89b6c49d79" prot="public" virt="non-virtual"><scope>PrimeTableTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual"><scope>PrimeTableTest</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="class_prime_table_test_1a86da90fc6d5cef6386d0cd8fb52b4046" prot="protected" virt="non-virtual"><scope>PrimeTableTest</scope><name>table_</name></member>
+      <member refid="classtesting_1_1_test_1a5f0ab439802cbe0ef7552f1a9f791923" prot="protected" virt="virtual"><scope>PrimeTableTest</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_test_1af374706cbaf0ffc460f4fd04e7c150f1" prot="public" virt="non-virtual"><scope>PrimeTableTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual"><scope>PrimeTableTest</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual"><scope>PrimeTableTest</scope><name>Test</name></member>
+      <member refid="class_prime_table_test_1a4fb27ce277675d58ea3f8db99e3bb2b4" prot="protected" virt="virtual"><scope>PrimeTableTest</scope><name>~PrimeTableTest</name></member>
+      <member refid="classtesting_1_1_test_1a2b0a62f1e667bbe8d8cb18d785bfa991" prot="public" virt="virtual"><scope>PrimeTableTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

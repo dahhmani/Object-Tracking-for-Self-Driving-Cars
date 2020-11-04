@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_counter" kind="class" language="C++" prot="public">
+    <compoundname>Counter</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_counter_1abdef0bf73f0a68177863c42c6eba2fc0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Counter::counter_</definition>
+        <argsstring></argsstring>
+        <name>counter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample4.h" line="40" column="1" bodyfile="vendor/googletest/googletest/samples/sample4.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_counter_1a1e05f69b5240fbab3e7ab351672167f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Counter::Counter</definition>
+        <argsstring>()</argsstring>
+        <name>Counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample4.h" line="44" column="1" bodyfile="vendor/googletest/googletest/samples/sample4.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_counter_1a0a0ca9fdb580a2aec9a5a62ebed2b5ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Counter::Increment</definition>
+        <argsstring>()</argsstring>
+        <name>Increment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample4.h" line="47" column="1" bodyfile="vendor/googletest/googletest/samples/sample4.cc" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_counter_1a80092ec2a0deea0870b2e9f8ad0906bd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Counter::Print</definition>
+        <argsstring>() const</argsstring>
+        <name>Print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample4.h" line="50" column="1" bodyfile="vendor/googletest/googletest/samples/sample4.cc" bodystart="44" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/samples/sample4.h" line="38" column="1" bodyfile="vendor/googletest/googletest/samples/sample4.h" bodystart="38" bodyend="51"/>
+    <listofallmembers>
+      <member refid="class_counter_1a1e05f69b5240fbab3e7ab351672167f0" prot="public" virt="non-virtual"><scope>Counter</scope><name>Counter</name></member>
+      <member refid="class_counter_1abdef0bf73f0a68177863c42c6eba2fc0" prot="private" virt="non-virtual"><scope>Counter</scope><name>counter_</name></member>
+      <member refid="class_counter_1a0a0ca9fdb580a2aec9a5a62ebed2b5ab" prot="public" virt="non-virtual"><scope>Counter</scope><name>Increment</name></member>
+      <member refid="class_counter_1a80092ec2a0deea0870b2e9f8ad0906bd" prot="public" virt="non-virtual"><scope>Counter</scope><name>Print</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

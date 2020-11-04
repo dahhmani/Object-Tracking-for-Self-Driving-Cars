@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_has_substr_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::HasSubstrMatcher</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename StringType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_has_substr_matcher_1ac15185527d4f52eda4574c8b845a52f3" prot="private" static="no" mutable="no">
+        <type>const StringType</type>
+        <definition>const StringType testing::internal::HasSubstrMatcher&lt; StringType &gt;::substring_</definition>
+        <argsstring></argsstring>
+        <name>substring_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1225" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_has_substr_matcher_1a395efacb13a89e5010b9ec4a00a16f00" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::HasSubstrMatcher&lt; StringType &gt;::HasSubstrMatcher</definition>
+        <argsstring>(const StringType &amp;substring)</argsstring>
+        <name>HasSubstrMatcher</name>
+        <param>
+          <type>const StringType &amp;</type>
+          <declname>substring</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1189" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1189" bodyend="1190"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_has_substr_matcher_1a68e0f4e2814c3c80c61011e66ad73839" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename CharType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::internal::HasSubstrMatcher&lt; StringType &gt;::MatchAndExplain</definition>
+        <argsstring>(CharType *s, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>CharType *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1198" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1198" bodyend="1200"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_has_substr_matcher_1a11629040f168cefaaad4ecdbde17a0dc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename MatcheeStringType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::internal::HasSubstrMatcher&lt; StringType &gt;::MatchAndExplain</definition>
+        <argsstring>(const MatcheeStringType &amp;s, MatchResultListener *) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>const MatcheeStringType &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1207" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1207" bodyend="1211"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_has_substr_matcher_1a278f177d2cbdfed29f6755ee0739a521" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::HasSubstrMatcher&lt; StringType &gt;::DescribeTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1214" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1214" bodyend="1217"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_has_substr_matcher_1aa79638f9d3a0c2eb67bc76432f35be1f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::HasSubstrMatcher&lt; StringType &gt;::DescribeNegationTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1219" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1219" bodyend="1222"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_has_substr_matcher_1a05fa9d568e67101a865c9e92cf28b385" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::HasSubstrMatcher&lt; StringType &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(HasSubstrMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_has_substr_matcher" kindref="compound">HasSubstrMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1227" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1187" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1187" bodyend="1228"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_has_substr_matcher_1aa79638f9d3a0c2eb67bc76432f35be1f" prot="public" virt="non-virtual"><scope>testing::internal::HasSubstrMatcher</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_has_substr_matcher_1a278f177d2cbdfed29f6755ee0739a521" prot="public" virt="non-virtual"><scope>testing::internal::HasSubstrMatcher</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_has_substr_matcher_1a05fa9d568e67101a865c9e92cf28b385" prot="private" virt="non-virtual"><scope>testing::internal::HasSubstrMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_has_substr_matcher_1a395efacb13a89e5010b9ec4a00a16f00" prot="public" virt="non-virtual"><scope>testing::internal::HasSubstrMatcher</scope><name>HasSubstrMatcher</name></member>
+      <member refid="classtesting_1_1internal_1_1_has_substr_matcher_1a68e0f4e2814c3c80c61011e66ad73839" prot="public" virt="non-virtual"><scope>testing::internal::HasSubstrMatcher</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1internal_1_1_has_substr_matcher_1a11629040f168cefaaad4ecdbde17a0dc" prot="public" virt="non-virtual"><scope>testing::internal::HasSubstrMatcher</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1internal_1_1_has_substr_matcher_1ac15185527d4f52eda4574c8b845a52f3" prot="private" virt="non-virtual"><scope>testing::internal::HasSubstrMatcher</scope><name>substring_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

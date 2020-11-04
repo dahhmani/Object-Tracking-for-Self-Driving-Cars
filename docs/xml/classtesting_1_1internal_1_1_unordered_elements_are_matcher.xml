@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_unordered_elements_are_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::UnorderedElementsAreMatcher</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>MatcherTuple</declname>
+        <defname>MatcherTuple</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_unordered_elements_are_matcher_1acfcd56f88943d922d7e7ecd8d9c5eb9f" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structtesting_1_1internal_1_1_matcher_tuple" kindref="compound">MatcherTuple</ref></type>
+        <definition>const MatcherTuple testing::internal::UnorderedElementsAreMatcher&lt; MatcherTuple &gt;::matchers_</definition>
+        <argsstring></argsstring>
+        <name>matchers_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3471" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3471" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_unordered_elements_are_matcher_1ae0a46833600dc8ef768d154ab111f5fa" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::UnorderedElementsAreMatcher&lt; MatcherTuple &gt;::UnorderedElementsAreMatcher</definition>
+        <argsstring>(const MatcherTuple &amp;args)</argsstring>
+        <name>UnorderedElementsAreMatcher</name>
+        <param>
+          <type>const <ref refid="structtesting_1_1internal_1_1_matcher_tuple" kindref="compound">MatcherTuple</ref> &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3453" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3453" bodyend="3454"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_unordered_elements_are_matcher_1a5191cb321191985e257225b9a5df95f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::internal::UnorderedElementsAreMatcher&lt; MatcherTuple &gt;::operator Matcher&lt; Container &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Matcher&lt; Container &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3457" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3457" bodyend="3468"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_unordered_elements_are_matcher_1a7735afd5dd74513f0dd14da5d2e3bec3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::UnorderedElementsAreMatcher&lt; MatcherTuple &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(UnorderedElementsAreMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher" kindref="compound">UnorderedElementsAreMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3472" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="3451" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="3451" bodyend="3473"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_1a7735afd5dd74513f0dd14da5d2e3bec3" prot="private" virt="non-virtual"><scope>testing::internal::UnorderedElementsAreMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_1acfcd56f88943d922d7e7ecd8d9c5eb9f" prot="private" virt="non-virtual"><scope>testing::internal::UnorderedElementsAreMatcher</scope><name>matchers_</name></member>
+      <member refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_1a5191cb321191985e257225b9a5df95f5" prot="public" virt="non-virtual"><scope>testing::internal::UnorderedElementsAreMatcher</scope><name>operator Matcher&lt; Container &gt;</name></member>
+      <member refid="classtesting_1_1internal_1_1_unordered_elements_are_matcher_1ae0a46833600dc8ef768d154ab111f5fa" prot="public" virt="non-virtual"><scope>testing::internal::UnorderedElementsAreMatcher</scope><name>UnorderedElementsAreMatcher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

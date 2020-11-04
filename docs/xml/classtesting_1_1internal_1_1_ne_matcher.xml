@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_ne_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::NeMatcher</compoundname>
+    <basecompoundref refid="classtesting_1_1internal_1_1_comparison_base" prot="public" virt="non-virtual">testing::internal::ComparisonBase&lt; NeMatcher&lt; Rhs &gt;, Rhs, AnyNe &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename Rhs</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_ne_matcher_1a64842882811cc96624c87119c51edd3e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::NeMatcher&lt; Rhs &gt;::NeMatcher</definition>
+        <argsstring>(const Rhs &amp;rhs)</argsstring>
+        <name>NeMatcher</name>
+        <param>
+          <type>const Rhs &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="937" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="937" bodyend="938"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_ne_matcher_1a2ec33febe5471f9d435b4dc9f5cda564" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* testing::internal::NeMatcher&lt; Rhs &gt;::Desc</definition>
+        <argsstring>()</argsstring>
+        <name>Desc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="939" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="939" bodyend="939"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_ne_matcher_1a9ea152391b69d422ba2a88c3d2d2dae5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* testing::internal::NeMatcher&lt; Rhs &gt;::NegatedDesc</definition>
+        <argsstring>()</argsstring>
+        <name>NegatedDesc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="940" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="940" bodyend="940"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1606">
+        <label>testing::internal::ComparisonBase&lt; NeMatcher&lt; Rhs &gt;, Rhs, AnyNe &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_comparison_base"/>
+      </node>
+      <node id="1605">
+        <label>testing::internal::NeMatcher&lt; Rhs &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_ne_matcher"/>
+        <childnode refid="1606" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1608">
+        <label>testing::internal::ComparisonBase&lt; NeMatcher&lt; Rhs &gt;, Rhs, AnyNe &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_comparison_base"/>
+      </node>
+      <node id="1607">
+        <label>testing::internal::NeMatcher&lt; Rhs &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_ne_matcher"/>
+        <childnode refid="1608" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="935" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="935" bodyend="941"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_comparison_base_1a365f20e35a604195c869ec0c0bc4c3a3" prot="public" virt="non-virtual"><scope>testing::internal::NeMatcher</scope><name>ComparisonBase</name></member>
+      <member refid="classtesting_1_1internal_1_1_ne_matcher_1a2ec33febe5471f9d435b4dc9f5cda564" prot="public" virt="non-virtual"><scope>testing::internal::NeMatcher</scope><name>Desc</name></member>
+      <member refid="classtesting_1_1internal_1_1_ne_matcher_1a9ea152391b69d422ba2a88c3d2d2dae5" prot="public" virt="non-virtual"><scope>testing::internal::NeMatcher</scope><name>NegatedDesc</name></member>
+      <member refid="classtesting_1_1internal_1_1_ne_matcher_1a64842882811cc96624c87119c51edd3e" prot="public" virt="non-virtual"><scope>testing::internal::NeMatcher</scope><name>NeMatcher</name></member>
+      <member refid="classtesting_1_1internal_1_1_comparison_base_1a071cdd47406c2e8df9c89bb99302eab9" prot="public" virt="non-virtual"><scope>testing::internal::NeMatcher</scope><name>operator Matcher&lt; Lhs &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

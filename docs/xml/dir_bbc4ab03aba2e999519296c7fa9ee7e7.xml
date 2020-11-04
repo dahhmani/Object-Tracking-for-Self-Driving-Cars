@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_bbc4ab03aba2e999519296c7fa9ee7e7" kind="dir">
+    <compoundname>vendor/googletest/googlemock</compoundname>
+    <innerdir refid="dir_07c0df1d2ee076cfe0d799d41d21db78">vendor/googletest/googlemock/include</innerdir>
+    <innerdir refid="dir_2176ea83b3fca8e2fe32de9df44fbe69">vendor/googletest/googlemock/scripts</innerdir>
+    <innerdir refid="dir_9e03c228934f34b27b0fe441a4e91d19">vendor/googletest/googlemock/src</innerdir>
+    <innerdir refid="dir_ce7ba732775036d8d1ee5b364aad1497">vendor/googletest/googlemock/test</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/"/>
+  </compounddef>
+</doxygen>

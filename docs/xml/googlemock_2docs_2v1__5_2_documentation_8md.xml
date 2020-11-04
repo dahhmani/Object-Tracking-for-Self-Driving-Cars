@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="googlemock_2docs_2v1__5_2_documentation_8md" kind="file" language="Markdown">
+    <compoundname>Documentation.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">This<sp/>page<sp/>lists<sp/>all<sp/>documentation<sp/>wiki<sp/>pages<sp/>for<sp/>Google<sp/>Mock<sp/>**version<sp/>1.5.0**<sp/>--<sp/>**if<sp/>you<sp/>use<sp/>a<sp/>different<sp/>version<sp/>of<sp/>Google<sp/>Mock,<sp/>please<sp/>read<sp/>the<sp/>documentation<sp/>for<sp/>that<sp/>specific<sp/>version<sp/>instead.**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[ForDummies](V1_5_ForDummies.md)<sp/>--<sp/>start<sp/>here<sp/>if<sp/>you<sp/>are<sp/>new<sp/>to<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[CheatSheet](V1_5_CheatSheet.md)<sp/>--<sp/>a<sp/>quick<sp/>reference.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[CookBook](V1_5_CookBook.md)<sp/>--<sp/>recipes<sp/>for<sp/>doing<sp/>various<sp/>tasks<sp/>using<sp/>Google<sp/>Mock.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[FrequentlyAskedQuestions](V1_5_FrequentlyAskedQuestions.md)<sp/>--<sp/>check<sp/>here<sp/>before<sp/>asking<sp/>a<sp/>question<sp/>on<sp/>the<sp/>mailing<sp/>list.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>contribute<sp/>code<sp/>to<sp/>Google<sp/>Mock,<sp/>read:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>DevGuide<sp/>--<sp/>read<sp/>this<sp/>_before_<sp/>writing<sp/>your<sp/>first<sp/>patch.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[Pump<sp/>Manual](http://code.google.com/p/googletest/wiki/PumpManual)<sp/>--<sp/>how<sp/>we<sp/>generate<sp/>some<sp/>of<sp/>Google<sp/>Mock&apos;s<sp/>source<sp/>files.</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googlemock/docs/v1_5/Documentation.md"/>
+  </compounddef>
+</doxygen>

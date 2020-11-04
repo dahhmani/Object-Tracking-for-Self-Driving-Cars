@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_set_argument_pointee_action" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::SetArgumentPointeeAction</compoundname>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+      <param>
+        <type>typename A</type>
+      </param>
+      <param>
+        <type>bool</type>
+        <declname>kIsProto</declname>
+        <defname>kIsProto</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_set_argument_pointee_action_1a57dba59652a5ea603c5e12c72e195b13" prot="private" static="no" mutable="no">
+        <type>const A</type>
+        <definition>const A testing::internal::SetArgumentPointeeAction&lt; N, A, kIsProto &gt;::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="817" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="817" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_set_argument_pointee_action_1a5a4119ed113667bd4a003ab0bec2cdff" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::SetArgumentPointeeAction&lt; N, A, kIsProto &gt;::SetArgumentPointeeAction</definition>
+        <argsstring>(const A &amp;value)</argsstring>
+        <name>SetArgumentPointeeAction</name>
+        <param>
+          <type>const A &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="808" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="808" bodyend="808"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_set_argument_pointee_action_1a128320dcf991ff7f1a0087dab38b4014" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Result</type>
+          </param>
+          <param>
+            <type>typename ArgumentTuple</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void testing::internal::SetArgumentPointeeAction&lt; N, A, kIsProto &gt;::Perform</definition>
+        <argsstring>(const ArgumentTuple &amp;args) const</argsstring>
+        <name>Perform</name>
+        <param>
+          <type>const ArgumentTuple &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="811" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="811" bodyend="814"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_set_argument_pointee_action_1ae2680fa62fa184b56c88743141baac60" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::SetArgumentPointeeAction&lt; N, A, kIsProto &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(SetArgumentPointeeAction)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_set_argument_pointee_action" kindref="compound">SetArgumentPointeeAction</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="819" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="804" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="804" bodyend="820"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_set_argument_pointee_action_1ae2680fa62fa184b56c88743141baac60" prot="private" virt="non-virtual"><scope>testing::internal::SetArgumentPointeeAction</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_set_argument_pointee_action_1a128320dcf991ff7f1a0087dab38b4014" prot="public" virt="non-virtual"><scope>testing::internal::SetArgumentPointeeAction</scope><name>Perform</name></member>
+      <member refid="classtesting_1_1internal_1_1_set_argument_pointee_action_1a5a4119ed113667bd4a003ab0bec2cdff" prot="public" virt="non-virtual"><scope>testing::internal::SetArgumentPointeeAction</scope><name>SetArgumentPointeeAction</name></member>
+      <member refid="classtesting_1_1internal_1_1_set_argument_pointee_action_1a57dba59652a5ea603c5e12c72e195b13" prot="private" virt="non-virtual"><scope>testing::internal::SetArgumentPointeeAction</scope><name>value_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacetesting_1_1internal_1_1posix" kind="namespace" language="C++">
+    <compoundname>testing::internal::posix</compoundname>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="gtest-port_8h_1a8eb9f08d3af29941c2d2a964cfff3ecb" prot="public" static="no">
+        <type>struct stat</type>
+        <definition>typedef struct stat testing::internal::posix::StatStruct</definition>
+        <argsstring></argsstring>
+        <name>StatStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2236" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2344" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gtest-port_8h_1a3117b067e1f942a2031e666953120ccc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::internal::posix::FileNo</definition>
+        <argsstring>(FILE *file)</argsstring>
+        <name>FileNo</name>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2346" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2346" bodyend="2346"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1a16ebe936b3a8ea462a94191635aedc27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::internal::posix::IsATTY</definition>
+        <argsstring>(int fd)</argsstring>
+        <name>IsATTY</name>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2347" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2347" bodyend="2347"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1a2b87b7ff647a128614daf50667eb9304" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::internal::posix::Stat</definition>
+        <argsstring>(const char *path, StatStruct *buf)</argsstring>
+        <name>Stat</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>StatStruct *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2348" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2348" bodyend="2348"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1a1ef2385a7f8e4c706054da35967e76bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::internal::posix::StrCaseCmp</definition>
+        <argsstring>(const char *s1, const char *s2)</argsstring>
+        <name>StrCaseCmp</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2349" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2349" bodyend="2351"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1a8e352884793a65ae8be144676f1a9136" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* testing::internal::posix::StrDup</definition>
+        <argsstring>(const char *src)</argsstring>
+        <name>StrDup</name>
+        <param>
+          <type>const char *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2352" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2352" bodyend="2352"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1acbad5d4ea5b73fd1765f5f760642932a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::internal::posix::RmDir</definition>
+        <argsstring>(const char *dir)</argsstring>
+        <name>RmDir</name>
+        <param>
+          <type>const char *</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2353" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2353" bodyend="2353"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1af0d04ed5baeed28353fa38742748a421" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::internal::posix::IsDir</definition>
+        <argsstring>(const StatStruct &amp;st)</argsstring>
+        <name>IsDir</name>
+        <param>
+          <type>const StatStruct &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2354" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2354" bodyend="2354"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1a36fca815713332e5c6dc92c98b6b2574" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::internal::posix::StrNCpy</definition>
+        <argsstring>(char *dest, const char *src, size_t n)</argsstring>
+        <name>StrNCpy</name>
+        <param>
+          <type>char *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2362" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2362" bodyend="2364"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1a1ddc8a4fc6bb21da372307485591a212" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::internal::posix::ChDir</definition>
+        <argsstring>(const char *dir)</argsstring>
+        <name>ChDir</name>
+        <param>
+          <type>const char *</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2371" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2371" bodyend="2371"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1a4042201dcc4932641d484e7ddf94de7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FILE *</type>
+        <definition>FILE* testing::internal::posix::FOpen</definition>
+        <argsstring>(const char *path, const char *mode)</argsstring>
+        <name>FOpen</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2373" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2373" bodyend="2375"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1a9ef6d089cdae03f9d9e0e6d379c40703" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FILE *</type>
+        <definition>FILE* testing::internal::posix::FReopen</definition>
+        <argsstring>(const char *path, const char *mode, FILE *stream)</argsstring>
+        <name>FReopen</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2377" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2377" bodyend="2379"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1af7c268eba32d5a718b36b6b3801302e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FILE *</type>
+        <definition>FILE* testing::internal::posix::FDOpen</definition>
+        <argsstring>(int fd, const char *mode)</argsstring>
+        <name>FDOpen</name>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2380" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2380" bodyend="2380"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1af4beeaaa8d62916d5e3b644a1ddfbd6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::internal::posix::FClose</definition>
+        <argsstring>(FILE *fp)</argsstring>
+        <name>FClose</name>
+        <param>
+          <type>FILE *</type>
+          <declname>fp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2382" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2382" bodyend="2382"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1a3c6ab13e581a56f1b02f3eb7536c97fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::internal::posix::Read</definition>
+        <argsstring>(int fd, void *buf, unsigned int count)</argsstring>
+        <name>Read</name>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2384" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2384" bodyend="2386"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1af4acf9f78d55f815a18b43786511abef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::internal::posix::Write</definition>
+        <argsstring>(int fd, const void *buf, unsigned int count)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2387" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2387" bodyend="2389"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1a15e5b8f2a535ef1b2529b85b861e4846" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::internal::posix::Close</definition>
+        <argsstring>(int fd)</argsstring>
+        <name>Close</name>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2390" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2390" bodyend="2390"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1a4b77b14af6f4d18f83d303b98e9349c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::internal::posix::StrError</definition>
+        <argsstring>(int errnum)</argsstring>
+        <name>StrError</name>
+        <param>
+          <type>int</type>
+          <declname>errnum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2391" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2391" bodyend="2391"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1a1d5e3da5a27eed25986859fa83cafe95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::internal::posix::GetEnv</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>GetEnv</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2393" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2393" bodyend="2406"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest-port_8h_1a69b8278c59359dd6a6f941b4643db9fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::posix::Abort</definition>
+        <argsstring>()</argsstring>
+        <name>Abort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2416" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" bodystart="2416" bodyend="2416"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port.h" line="2303" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="tracker_8cpp" kind="file" language="C++">
+    <compoundname>tracker.cpp</compoundname>
+    <includes refid="tracker_8h" local="yes">tracker.h</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">opencv2/imgproc.hpp</includes>
+    <incdepgraph>
+      <node id="72">
+        <label>app/tracker.cpp</label>
+        <link refid="tracker_8cpp"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>opencv2/imgproc.hpp</label>
+      </node>
+      <node id="74">
+        <label>string</label>
+      </node>
+      <node id="73">
+        <label>tracker.h</label>
+        <link refid="tracker_8h"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>map</label>
+      </node>
+      <node id="76">
+        <label>unordered_set</label>
+      </node>
+      <node id="79">
+        <label>opencv2/dnn.hpp</label>
+      </node>
+      <node id="82">
+        <label>fstream</label>
+      </node>
+      <node id="80">
+        <label>cstdio</label>
+      </node>
+      <node id="78">
+        <label>tuple</label>
+      </node>
+      <node id="75">
+        <label>vector</label>
+      </node>
+      <node id="81">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>ObjectTracker class implementation. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Mahmoud Dahmani (Driver) </para></simplesect>
+<simplesect kind="author"><para>Aditya Khopkar (Navigator) </para></simplesect>
+<simplesect kind="copyright"><para>MIT License </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>Copyright<sp/>(c)<sp/>2020<sp/>Mahmoud<sp/>Dahmani,<sp/>Aditya<sp/>Khopkar</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in<sp/>all</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tracker_8h" kindref="compound">tracker.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/imgproc.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><ref refid="class_e_n_p_m808_x_1_1_object_tracker_1a457dcaca4e26ff55678ac2f2d727f322" kindref="member">ENPM808X::ObjectTracker::ObjectTracker</ref>(</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_set&lt;std::string&gt;&amp;<sp/>objectClasses,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Matx34f&amp;<sp/>extP,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Matx33f&amp;<sp/>intP,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>detectionModel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>minConfidence,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>minOverlap)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>objectClasses_{objectClasses},</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>minConfidence_{minConfidence},</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>minOverlap_{minOverlap}<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>datasetLabels_<sp/>=<sp/>{parseFile(</highlight><highlight class="stringliteral">&quot;../models/&quot;</highlight><highlight class="normal"><sp/>+</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>detectionModel<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/coco.names&quot;</highlight><highlight class="normal">)};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>cv::Size<sp/>inputResolution{320,<sp/>320};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>network_<sp/>=<sp/>cv::dnn::DetectionModel(detectionModel<sp/>+<sp/>&quot;/yolov4.weights&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>detectionModel<sp/>+<sp/>&quot;/yolov4.cfg&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>network_.setPreferableBackend(cv::dnn::DNN_BACKEND_CUDA);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>network_.setPreferableTarget(cv::dnn::DNN_TARGET_CUDA);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>network_.setInputSize(inputResolution);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>network_.setInputScale(1.0<sp/>/<sp/>255.0);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>network_.setInputSwapRB(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>P_<sp/>=<sp/>intP<sp/>*<sp/>extP;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>colors_<sp/>=<sp/>{{</highlight><highlight class="stringliteral">&quot;safe&quot;</highlight><highlight class="normal">,<sp/>{0,<sp/>255,<sp/>0}},<sp/>{</highlight><highlight class="stringliteral">&quot;unsafe&quot;</highlight><highlight class="normal">,<sp/>{0,<sp/>0,<sp/>255}}};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">std::vector&lt;cv::Point3f&gt;<sp/><ref refid="class_e_n_p_m808_x_1_1_object_tracker_1aaabe274d63cce01922a9c1a834a52039" kindref="member">ENPM808X::ObjectTracker::localizeObjects</ref>(</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Mat<sp/>frame)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>std::vector&lt;cv::Point3f&gt;<sp/>locations;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>cv::Point3f<sp/>objectLocation;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>cv::Point2i<sp/>objectKeypoint;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>cv::Point2f<sp/>robotXY{5,<sp/>50},<sp/>objectXY;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distance;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>[classIds,<sp/>confidences,<sp/>boxes]<sp/>=<sp/>detectObjects(frame);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>locations.reserve(boxes.size());</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>boxes.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>[x,<sp/>y,<sp/>w,<sp/>h]<sp/>=<sp/>boxes[i];</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>objectKeypoint<sp/>=<sp/>{x<sp/>+<sp/>w<sp/>/<sp/>2,<sp/>y<sp/>+<sp/>h};<sp/><sp/></highlight><highlight class="comment">//<sp/>ground<sp/>midpoint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>objectLocation<sp/>=<sp/>localize(objectKeypoint);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>objectXY<sp/>=<sp/>{objectLocation.x,<sp/>objectLocation.y};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>distance<sp/>=<sp/>cv::norm(objectXY<sp/>-<sp/>robotXY);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>locations.emplace_back(objectLocation);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>visualize(frame,<sp/>classIds[i],<sp/>confidences[i],<sp/>boxes[i],</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>objectKeypoint,<sp/>objectLocation,<sp/>distance);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>locations;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">cv::Point3f<sp/><ref refid="class_e_n_p_m808_x_1_1_object_tracker_1a488d16d7015a48a0fbdd0cf4b766bb54" kindref="member">ENPM808X::ObjectTracker::localize</ref>(</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Point2i&amp;<sp/>objectKeypoint)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>cv::Matx31f<sp/>worldPoint;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>camera<sp/>projection<sp/>matrix<sp/>P_<sp/>simplifies<sp/>to<sp/>a<sp/>planar<sp/>hoography<sp/>H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>as<sp/>a<sp/>result<sp/>of<sp/>restricting<sp/>the<sp/>3D<sp/>world<sp/>points<sp/>of<sp/>interest<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>plane<sp/>Z<sp/>=<sp/>0<sp/>(i.e.<sp/>road<sp/>plane<sp/>in<sp/>the<sp/>robot<sp/>frame)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>cv::Matx33f<sp/>H{P_(0,<sp/>0),<sp/>P_(0,<sp/>1),<sp/>P_(0,<sp/>3),</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P_(1,<sp/>0),<sp/>P_(1,<sp/>1),<sp/>P_(1,<sp/>3),</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P_(2,<sp/>0),<sp/>P_(2,<sp/>1),<sp/>P_(2,<sp/>3)};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>cv::Matx31f<sp/>pixel{</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(objectKeypoint.x),</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static_cast&lt;float&gt;(objectKeypoint.y),</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>worldPoint<sp/>=<sp/>H.inv()<sp/>*<sp/>pixel;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>worldPoint<sp/>/=<sp/>worldPoint(2);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{worldPoint(0),<sp/>worldPoint(1),<sp/>0};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">std::tuple&lt;std::vector&lt;int&gt;,<sp/>std::vector&lt;float&gt;,<sp/>std::vector&lt;cv::Rect&gt;&gt;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><ref refid="class_e_n_p_m808_x_1_1_object_tracker_1a109217a8fae2ca7ec36eb8e437e82b45" kindref="member">ENPM808X::ObjectTracker::detectObjects</ref>(cv::Mat<sp/>frame)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>classIds;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>std::vector&lt;float&gt;<sp/>confidences;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>std::vector&lt;cv::Rect&gt;<sp/>boxes;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>network_.detect(frame,<sp/>classIds,<sp/>confidences,<sp/>boxes,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minConfidence_,<sp/>minOverlap_);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{classIds,<sp/>confidences,<sp/>boxes};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">std::vector&lt;std::string&gt;<sp/><ref refid="class_e_n_p_m808_x_1_1_object_tracker_1abec22b27cb028cf5911b4198970f3c57" kindref="member">ENPM808X::ObjectTracker::datasetLabels</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>datasetLabels_;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ENPM808X::ObjectTracker::visualize(cv::Mat<sp/>frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>classId,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>confidence,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Rect&amp;<sp/>box,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Point2i&amp;<sp/>keypoint,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Point3f&amp;<sp/>location,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distance)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>safetyMargin<sp/>{5};</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>cv::Point<sp/>robotKeypoint{frame.cols<sp/>/<sp/>2,<sp/>frame.rows};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>cv::Scalar<sp/>color<sp/>{(distance<sp/>&gt;=<sp/>safetyMargin)<sp/>?<sp/>colors_[</highlight><highlight class="stringliteral">&quot;safe&quot;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>colors_[</highlight><highlight class="stringliteral">&quot;unsafe&quot;</highlight><highlight class="normal">]};</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>caption[50];<sp/><sp/></highlight><highlight class="comment">//<sp/>buffer<sp/>of<sp/>size<sp/>50</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(objectClasses_.find(datasetLabels_[classId])<sp/>!=</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>objectClasses_.end())<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::rectangle(frame,<sp/>box,<sp/>color,<sp/>2);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::circle(frame,<sp/>keypoint,<sp/>5,<sp/>color,<sp/>cv::FILLED);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::line(frame,<sp/>robotKeypoint,<sp/>keypoint,<sp/>color,<sp/>2);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>snprintf(caption,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(caption),<sp/></highlight><highlight class="stringliteral">&quot;%s(%.1fm,%.1fm,0m)&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>datasetLabels_[classId].c_str(),<sp/>location.x,<sp/>location.y);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::putText(frame,<sp/>caption,<sp/>cv::Point(box.x,<sp/>box.y<sp/>+<sp/>15),</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cv::FONT_HERSHEY_SIMPLEX,<sp/>0.5,<sp/>color,<sp/>1.5);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>auto<sp/>yo<sp/>=<sp/>cv::getTextSize(caption,<sp/>cv::LINE_AA,<sp/>0.5,<sp/>2);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>snprintf(caption,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(caption),<sp/></highlight><highlight class="stringliteral">&quot;%.1fm&quot;</highlight><highlight class="normal">,<sp/>distance);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::putText(frame,<sp/>caption,<sp/>cv::Point(box.x<sp/>+<sp/>box.width/2,<sp/>box.y<sp/>-<sp/>5),</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cv::FONT_HERSHEY_SIMPLEX,<sp/>0.5,<sp/>color,<sp/>1.5);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal">std::vector&lt;std::string&gt;<sp/>ENPM808X::ObjectTracker::parseFile(</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>fileName)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>classLabels;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>std::ifstream<sp/>cocoNames(fileName);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>std::string<sp/>line;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>classLabels.reserve(80);<sp/><sp/></highlight><highlight class="comment">//<sp/>there<sp/>are<sp/>80<sp/>classes<sp/>in<sp/>COCO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cocoNames)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(getline(cocoNames,<sp/>line))<sp/>classLabels.emplace_back(line);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>cocoNames.close();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;file<sp/>could<sp/>not<sp/>be<sp/>opened<sp/>!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cin.get();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(0);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>classLabels;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="app/tracker.cpp"/>
+  </compounddef>
+</doxygen>

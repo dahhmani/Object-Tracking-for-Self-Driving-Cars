@@ -1,0 +1,117 @@
+\hypertarget{class_e_n_p_m808_x_1_1_object_tracker}{}\section{E\+N\+P\+M808X\+:\+:Object\+Tracker Class Reference}
+\label{class_e_n_p_m808_x_1_1_object_tracker}\index{E\+N\+P\+M808\+X\+::\+Object\+Tracker@{E\+N\+P\+M808\+X\+::\+Object\+Tracker}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_n_p_m808_x_1_1_object_tracker_a457dcaca4e26ff55678ac2f2d727f322}{Object\+Tracker} (const std\+::unordered\+\_\+set$<$ std\+::string $>$ \&object\+Classes, const cv\+::\+Matx34f \&extP, const cv\+::\+Matx33f \&intP, const std\+::string \&detection\+Model=\char`\"{}yolo\char`\"{}, float min\+Confidence=0.\+5, float min\+Overlap=0.\+3)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+std\+::vector$<$ cv\+::\+Point3f $>$ \hyperlink{class_e_n_p_m808_x_1_1_object_tracker_aaabe274d63cce01922a9c1a834a52039}{localize\+Objects} (cv\+::\+Mat frame)
+\begin{DoxyCompactList}\small\item\em Function for tracking all specified objects through every frame. \end{DoxyCompactList}\item 
+cv\+::\+Point3f \hyperlink{class_e_n_p_m808_x_1_1_object_tracker_a488d16d7015a48a0fbdd0cf4b766bb54}{localize} (const cv\+::\+Point2i \&object\+Keypoint) const
+\begin{DoxyCompactList}\small\item\em Function for estimating the 3D location of a given pixel. \end{DoxyCompactList}\item 
+std\+::tuple$<$ std\+::vector$<$ int $>$, std\+::vector$<$ float $>$, std\+::vector$<$ cv\+::\+Rect $>$ $>$ \hyperlink{class_e_n_p_m808_x_1_1_object_tracker_a109217a8fae2ca7ec36eb8e437e82b45}{detect\+Objects} (cv\+::\+Mat frame)
+\begin{DoxyCompactList}\small\item\em Function for detecting objects in a given frame. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_e_n_p_m808_x_1_1_object_tracker_abec22b27cb028cf5911b4198970f3c57}{dataset\+Labels} () const
+\begin{DoxyCompactList}\small\item\em Getter method for the classes of the pre-\/trained detection model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_e_n_p_m808_x_1_1_object_tracker_a457dcaca4e26ff55678ac2f2d727f322}\label{class_e_n_p_m808_x_1_1_object_tracker_a457dcaca4e26ff55678ac2f2d727f322}} 
+\index{E\+N\+P\+M808\+X\+::\+Object\+Tracker@{E\+N\+P\+M808\+X\+::\+Object\+Tracker}!Object\+Tracker@{Object\+Tracker}}
+\index{Object\+Tracker@{Object\+Tracker}!E\+N\+P\+M808\+X\+::\+Object\+Tracker@{E\+N\+P\+M808\+X\+::\+Object\+Tracker}}
+\subsubsection{\texorpdfstring{Object\+Tracker()}{ObjectTracker()}}
+{\footnotesize\ttfamily E\+N\+P\+M808\+X\+::\+Object\+Tracker\+::\+Object\+Tracker (\begin{DoxyParamCaption}\item[{const std\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{object\+Classes,  }\item[{const cv\+::\+Matx34f \&}]{extP,  }\item[{const cv\+::\+Matx33f \&}]{intP,  }\item[{const std\+::string \&}]{detection\+Model = {\ttfamily \char`\"{}yolo\char`\"{}},  }\item[{float}]{min\+Confidence = {\ttfamily 0.5},  }\item[{float}]{min\+Overlap = {\ttfamily 0.3} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & categories, camera extrinsics, camera intrinsics, detection model, minimum confidence, minimum overlap \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_e_n_p_m808_x_1_1_object_tracker_abec22b27cb028cf5911b4198970f3c57}\label{class_e_n_p_m808_x_1_1_object_tracker_abec22b27cb028cf5911b4198970f3c57}} 
+\index{E\+N\+P\+M808\+X\+::\+Object\+Tracker@{E\+N\+P\+M808\+X\+::\+Object\+Tracker}!dataset\+Labels@{dataset\+Labels}}
+\index{dataset\+Labels@{dataset\+Labels}!E\+N\+P\+M808\+X\+::\+Object\+Tracker@{E\+N\+P\+M808\+X\+::\+Object\+Tracker}}
+\subsubsection{\texorpdfstring{dataset\+Labels()}{datasetLabels()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ E\+N\+P\+M808\+X\+::\+Object\+Tracker\+::dataset\+Labels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter method for the classes of the pre-\/trained detection model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of the the dataset classes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_e_n_p_m808_x_1_1_object_tracker_a109217a8fae2ca7ec36eb8e437e82b45}\label{class_e_n_p_m808_x_1_1_object_tracker_a109217a8fae2ca7ec36eb8e437e82b45}} 
+\index{E\+N\+P\+M808\+X\+::\+Object\+Tracker@{E\+N\+P\+M808\+X\+::\+Object\+Tracker}!detect\+Objects@{detect\+Objects}}
+\index{detect\+Objects@{detect\+Objects}!E\+N\+P\+M808\+X\+::\+Object\+Tracker@{E\+N\+P\+M808\+X\+::\+Object\+Tracker}}
+\subsubsection{\texorpdfstring{detect\+Objects()}{detectObjects()}}
+{\footnotesize\ttfamily std\+::tuple$<$ std\+::vector$<$ int $>$, std\+::vector$<$ float $>$, std\+::vector$<$ cv\+::\+Rect $>$ $>$ E\+N\+P\+M808\+X\+::\+Object\+Tracker\+::detect\+Objects (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{frame }\end{DoxyParamCaption})}
+
+
+
+Function for detecting objects in a given frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+class\+Ids, confidences, bounding boxes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_e_n_p_m808_x_1_1_object_tracker_a488d16d7015a48a0fbdd0cf4b766bb54}\label{class_e_n_p_m808_x_1_1_object_tracker_a488d16d7015a48a0fbdd0cf4b766bb54}} 
+\index{E\+N\+P\+M808\+X\+::\+Object\+Tracker@{E\+N\+P\+M808\+X\+::\+Object\+Tracker}!localize@{localize}}
+\index{localize@{localize}!E\+N\+P\+M808\+X\+::\+Object\+Tracker@{E\+N\+P\+M808\+X\+::\+Object\+Tracker}}
+\subsubsection{\texorpdfstring{localize()}{localize()}}
+{\footnotesize\ttfamily cv\+::\+Point3f E\+N\+P\+M808\+X\+::\+Object\+Tracker\+::localize (\begin{DoxyParamCaption}\item[{const cv\+::\+Point2i \&}]{object\+Keypoint }\end{DoxyParamCaption}) const}
+
+
+
+Function for estimating the 3D location of a given pixel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixel} & in the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+3D location in the robot coordinate system 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_e_n_p_m808_x_1_1_object_tracker_aaabe274d63cce01922a9c1a834a52039}\label{class_e_n_p_m808_x_1_1_object_tracker_aaabe274d63cce01922a9c1a834a52039}} 
+\index{E\+N\+P\+M808\+X\+::\+Object\+Tracker@{E\+N\+P\+M808\+X\+::\+Object\+Tracker}!localize\+Objects@{localize\+Objects}}
+\index{localize\+Objects@{localize\+Objects}!E\+N\+P\+M808\+X\+::\+Object\+Tracker@{E\+N\+P\+M808\+X\+::\+Object\+Tracker}}
+\subsubsection{\texorpdfstring{localize\+Objects()}{localizeObjects()}}
+{\footnotesize\ttfamily std\+::vector$<$ cv\+::\+Point3f $>$ E\+N\+P\+M808\+X\+::\+Object\+Tracker\+::localize\+Objects (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{frame }\end{DoxyParamCaption})}
+
+
+
+Function for tracking all specified objects through every frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of the objects\textquotesingle{} 3D locations in the robot coordinate system 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{tracker_8h}{tracker.\+h}\item 
+app/\hyperlink{tracker_8cpp}{tracker.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_ca4f9a38bc8b7e61cd297c60da0e146c" kind="dir">
+    <compoundname>vendor/googletest/googletest/scripts</compoundname>
+    <innerfile refid="common_8py">common.py</innerfile>
+    <innerfile refid="fuse__gtest__files_8py">fuse_gtest_files.py</innerfile>
+    <innerfile refid="gen__gtest__pred__impl_8py">gen_gtest_pred_impl.py</innerfile>
+    <innerfile refid="pump_8py">pump.py</innerfile>
+    <innerfile refid="release__docs_8py">release_docs.py</innerfile>
+    <innerfile refid="googletest_2scripts_2upload_8py">upload.py</innerfile>
+    <innerfile refid="upload__gtest_8py">upload_gtest.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/scripts/"/>
+  </compounddef>
+</doxygen>

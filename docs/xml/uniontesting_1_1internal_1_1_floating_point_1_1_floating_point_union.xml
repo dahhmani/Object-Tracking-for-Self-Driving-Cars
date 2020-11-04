@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="uniontesting_1_1internal_1_1_floating_point_1_1_floating_point_union" kind="union" language="C++" prot="private">
+    <compoundname>testing::internal::FloatingPoint::FloatingPointUnion</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="uniontesting_1_1internal_1_1_floating_point_1_1_floating_point_union_1a4ee324889f70577721393e8e1920e4c6" prot="public" static="no" mutable="no">
+        <type>RawType</type>
+        <definition>RawType testing::internal::FloatingPoint&lt; RawType &gt;::FloatingPointUnion::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="370" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="uniontesting_1_1internal_1_1_floating_point_1_1_floating_point_union_1aedb69e386f5d624a016f7a781302a2bf" prot="public" static="no" mutable="no">
+        <type>Bits</type>
+        <definition>Bits testing::internal::FloatingPoint&lt; RawType &gt;::FloatingPointUnion::bits_</definition>
+        <argsstring></argsstring>
+        <name>bits_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="371" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="597">
+        <label>testing::internal::FloatingPoint&lt; RawType &gt;::FloatingPointUnion</label>
+        <childnode refid="598" relation="usage">
+          <edgelabel>bits_</edgelabel>
+        </childnode>
+      </node>
+      <node id="598">
+        <label>testing::internal::TypeWithSize&lt; sizeof(RawType)&gt;</label>
+        <link refid="classtesting_1_1internal_1_1_type_with_size"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" line="369" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-internal.h" bodystart="369" bodyend="372"/>
+    <listofallmembers>
+      <member refid="uniontesting_1_1internal_1_1_floating_point_1_1_floating_point_union_1aedb69e386f5d624a016f7a781302a2bf" prot="public" virt="non-virtual"><scope>testing::internal::FloatingPoint::FloatingPointUnion</scope><name>bits_</name></member>
+      <member refid="uniontesting_1_1internal_1_1_floating_point_1_1_floating_point_union_1a4ee324889f70577721393e8e1920e4c6" prot="public" virt="non-virtual"><scope>testing::internal::FloatingPoint::FloatingPointUnion</scope><name>value_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

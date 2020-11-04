@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_nice_strict_test::MockBar</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1a45d55da94b17048ddc896b435202fa61" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string testing::gmock_nice_strict_test::MockBar::str_</definition>
+        <argsstring></argsstring>
+        <name>str_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="106" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1a3b271f736d0b519777af26e7ac76d442" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::MockBar::MockBar</definition>
+        <argsstring>(const string &amp;s)</argsstring>
+        <name>MockBar</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="90" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1a2f30bd760cd5b5a8de72d081b26df5b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::MockBar::MockBar</definition>
+        <argsstring>(char a1, char a2, string a3, string a4, int a5, int a6, const string &amp;a7, const string &amp;a8, bool a9, bool a10)</argsstring>
+        <name>MockBar</name>
+        <param>
+          <type>char</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a5</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a6</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>a7</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>a8</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>a9</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>a10</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="92" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="92" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1a0559a3ecd9ecb4eebd5f519bf96bf03b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual testing::gmock_nice_strict_test::MockBar::~MockBar</definition>
+        <argsstring>()</argsstring>
+        <name>~MockBar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="98" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1a417755a41cb5a75dec7f98bdd951185c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const string&amp; testing::gmock_nice_strict_test::MockBar::str</definition>
+        <argsstring>() const</argsstring>
+        <name>str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="100" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1a9aad688c2b1dc6b529b7c499e49e3a70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::MockBar::MOCK_METHOD0</definition>
+        <argsstring>(This, int())</argsstring>
+        <name>MOCK_METHOD0</name>
+        <param>
+          <type>This</type>
+        </param>
+        <param>
+          <type>int()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1ac2c649c788feae66d3b4a9249720ae5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::MockBar::MOCK_METHOD2</definition>
+        <argsstring>(That, string(int, bool))</argsstring>
+        <name>MOCK_METHOD2</name>
+        <param>
+          <type>That</type>
+        </param>
+        <param>
+          <type>string(int, bool)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="103" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1a1ef258ca8798de4e234bb7180123d9d9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::MockBar::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(MockBar)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar" kindref="compound">MockBar</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="108" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="88" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="88" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1a1ef258ca8798de4e234bb7180123d9d9" prot="private" virt="non-virtual"><scope>testing::gmock_nice_strict_test::MockBar</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1a9aad688c2b1dc6b529b7c499e49e3a70" prot="public" virt="non-virtual"><scope>testing::gmock_nice_strict_test::MockBar</scope><name>MOCK_METHOD0</name></member>
+      <member refid="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1ac2c649c788feae66d3b4a9249720ae5b" prot="public" virt="non-virtual"><scope>testing::gmock_nice_strict_test::MockBar</scope><name>MOCK_METHOD2</name></member>
+      <member refid="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1a3b271f736d0b519777af26e7ac76d442" prot="public" virt="non-virtual"><scope>testing::gmock_nice_strict_test::MockBar</scope><name>MockBar</name></member>
+      <member refid="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1a2f30bd760cd5b5a8de72d081b26df5b9" prot="public" virt="non-virtual"><scope>testing::gmock_nice_strict_test::MockBar</scope><name>MockBar</name></member>
+      <member refid="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1a417755a41cb5a75dec7f98bdd951185c" prot="public" virt="non-virtual"><scope>testing::gmock_nice_strict_test::MockBar</scope><name>str</name></member>
+      <member refid="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1a45d55da94b17048ddc896b435202fa61" prot="private" virt="non-virtual"><scope>testing::gmock_nice_strict_test::MockBar</scope><name>str_</name></member>
+      <member refid="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar_1a0559a3ecd9ecb4eebd5f519bf96bf03b" prot="public" virt="virtual"><scope>testing::gmock_nice_strict_test::MockBar</scope><name>~MockBar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="tracker_8h" kind="file" language="C++">
+    <compoundname>tracker.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">unordered_set</includes>
+    <includes local="no">map</includes>
+    <includes local="no">tuple</includes>
+    <includes local="no">opencv2/dnn.hpp</includes>
+    <includedby refid="app_2main_8cpp" local="yes">app/main.cpp</includedby>
+    <includedby refid="tracker_8cpp" local="yes">app/tracker.cpp</includedby>
+    <includedby refid="test__tracker_8cpp" local="yes">test/test_tracker.cpp</includedby>
+    <incdepgraph>
+      <node id="106">
+        <label>string</label>
+      </node>
+      <node id="105">
+        <label>include/tracker.h</label>
+        <link refid="tracker_8h"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>map</label>
+      </node>
+      <node id="108">
+        <label>unordered_set</label>
+      </node>
+      <node id="111">
+        <label>opencv2/dnn.hpp</label>
+      </node>
+      <node id="110">
+        <label>tuple</label>
+      </node>
+      <node id="107">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="113">
+        <label>app/tracker.cpp</label>
+        <link refid="tracker_8cpp"/>
+      </node>
+      <node id="112">
+        <label>include/tracker.h</label>
+        <link refid="tracker_8h"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>test/test_tracker.cpp</label>
+        <link refid="test__tracker_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_e_n_p_m808_x_1_1_object_tracker" prot="public">ENPM808X::ObjectTracker</innerclass>
+    <innernamespace refid="namespace_e_n_p_m808_x">ENPM808X</innernamespace>
+    <briefdescription>
+<para>ObjectTracker class specification. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Mahmoud Dahmani (Driver) </para></simplesect>
+<simplesect kind="author"><para>Aditya Khopkar (Navigator) </para></simplesect>
+<simplesect kind="copyright"><para>MIT License </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>Copyright<sp/>(c)<sp/>2020<sp/>Mahmoud<sp/>Dahmani,<sp/>Aditya<sp/>Khopkar</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in<sp/>all</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tuple&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/dnn.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_e_n_p_m808_x" kindref="compound">ENPM808X</ref><sp/>{</highlight></codeline>
+<codeline lineno="46" refid="class_e_n_p_m808_x_1_1_object_tracker" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_e_n_p_m808_x_1_1_object_tracker" kindref="compound">ObjectTracker</ref><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="class_e_n_p_m808_x_1_1_object_tracker_1a457dcaca4e26ff55678ac2f2d727f322" kindref="member">ObjectTracker</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_set&lt;std::string&gt;&amp;<sp/>objectClasses,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Matx34f&amp;<sp/>extP,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Matx33f&amp;<sp/>intP,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>detectionModel<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;yolo&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>minConfidence<sp/>=<sp/>0.5,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>minOverlap<sp/>=<sp/>0.3);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>std::vector&lt;cv::Point3f&gt;<sp/><ref refid="class_e_n_p_m808_x_1_1_object_tracker_1aaabe274d63cce01922a9c1a834a52039" kindref="member">localizeObjects</ref>(cv::Mat<sp/>frame);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>cv::Point3f<sp/><ref refid="class_e_n_p_m808_x_1_1_object_tracker_1a488d16d7015a48a0fbdd0cf4b766bb54" kindref="member">localize</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Point2i&amp;<sp/>objectKeypoint)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>std::tuple&lt;std::vector&lt;int&gt;,<sp/>std::vector&lt;float&gt;,<sp/>std::vector&lt;cv::Rect&gt;&gt;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><ref refid="class_e_n_p_m808_x_1_1_object_tracker_1a109217a8fae2ca7ec36eb8e437e82b45" kindref="member">detectObjects</ref>(cv::Mat<sp/>frame);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="class_e_n_p_m808_x_1_1_object_tracker_1abec22b27cb028cf5911b4198970f3c57" kindref="member">datasetLabels</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>visualize(cv::Mat<sp/>frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>classId,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>confidence,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Rect&amp;<sp/>box,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Point2i&amp;<sp/>objectKeypoint,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Point3f&amp;<sp/>objectLocation,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distance);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>parseFile(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>fileName)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>std::unordered_set&lt;std::string&gt;<sp/>objectClasses_;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>minConfidence_,<sp/>minOverlap_;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>datasetLabels_;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>cv::dnn::DetectionModel<sp/>network_{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;../models/yolo/yolov4.weights&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;../models/yolo/yolov4.cfg&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>cv::Matx34f<sp/>P_;<sp/><sp/></highlight><highlight class="comment">//<sp/>camera<sp/>calibration<sp/>matrix</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>std::map&lt;std::string,<sp/>cv::Scalar&gt;<sp/>colors_;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ENPM808X</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/tracker.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_starts_with_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::StartsWithMatcher</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename StringType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_starts_with_matcher_1a9122de4c38f40c95f822fb8d290942f9" prot="private" static="no" mutable="no">
+        <type>const StringType</type>
+        <definition>const StringType testing::internal::StartsWithMatcher&lt; StringType &gt;::prefix_</definition>
+        <argsstring></argsstring>
+        <name>prefix_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1272" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1272" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_starts_with_matcher_1ab06a2a2a4c506771f20754bdbf8742bc" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::StartsWithMatcher&lt; StringType &gt;::StartsWithMatcher</definition>
+        <argsstring>(const StringType &amp;prefix)</argsstring>
+        <name>StartsWithMatcher</name>
+        <param>
+          <type>const StringType &amp;</type>
+          <declname>prefix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1236" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1236" bodyend="1237"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_starts_with_matcher_1a90d9435fba4d15b0d47cf1d7e931305b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename CharType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::internal::StartsWithMatcher&lt; StringType &gt;::MatchAndExplain</definition>
+        <argsstring>(CharType *s, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>CharType *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1245" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1245" bodyend="1247"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_starts_with_matcher_1a44f89298278ab77b0b2c891b939b7fc1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename MatcheeStringType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::internal::StartsWithMatcher&lt; StringType &gt;::MatchAndExplain</definition>
+        <argsstring>(const MatcheeStringType &amp;s, MatchResultListener *) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>const MatcheeStringType &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1254" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1254" bodyend="1259"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_starts_with_matcher_1af52b4c04ade7f5226c7302c845d44eaf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::StartsWithMatcher&lt; StringType &gt;::DescribeTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1261" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1261" bodyend="1264"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_starts_with_matcher_1aae30b57dac10fec73d454b6d7543acea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::StartsWithMatcher&lt; StringType &gt;::DescribeNegationTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1266" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1266" bodyend="1269"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_starts_with_matcher_1a1e3864211b6430dbe7b5f37a0d525045" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::StartsWithMatcher&lt; StringType &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(StartsWithMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_starts_with_matcher" kindref="compound">StartsWithMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1274" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1234" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1234" bodyend="1275"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_starts_with_matcher_1aae30b57dac10fec73d454b6d7543acea" prot="public" virt="non-virtual"><scope>testing::internal::StartsWithMatcher</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_starts_with_matcher_1af52b4c04ade7f5226c7302c845d44eaf" prot="public" virt="non-virtual"><scope>testing::internal::StartsWithMatcher</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_starts_with_matcher_1a1e3864211b6430dbe7b5f37a0d525045" prot="private" virt="non-virtual"><scope>testing::internal::StartsWithMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_starts_with_matcher_1a90d9435fba4d15b0d47cf1d7e931305b" prot="public" virt="non-virtual"><scope>testing::internal::StartsWithMatcher</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1internal_1_1_starts_with_matcher_1a44f89298278ab77b0b2c891b939b7fc1" prot="public" virt="non-virtual"><scope>testing::internal::StartsWithMatcher</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1internal_1_1_starts_with_matcher_1a9122de4c38f40c95f822fb8d290942f9" prot="private" virt="non-virtual"><scope>testing::internal::StartsWithMatcher</scope><name>prefix_</name></member>
+      <member refid="classtesting_1_1internal_1_1_starts_with_matcher_1ab06a2a2a4c506771f20754bdbf8742bc" prot="public" virt="non-virtual"><scope>testing::internal::StartsWithMatcher</scope><name>StartsWithMatcher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

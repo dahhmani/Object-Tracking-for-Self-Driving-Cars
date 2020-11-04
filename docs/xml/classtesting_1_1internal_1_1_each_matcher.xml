@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_each_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::EachMatcher</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename M</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_each_matcher_1ab960b6a042a3fab3b1d17f58cd50be5c" prot="private" static="no" mutable="no">
+        <type>const M</type>
+        <definition>const M testing::internal::EachMatcher&lt; M &gt;::inner_matcher_</definition>
+        <argsstring></argsstring>
+        <name>inner_matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2929" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2929" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_each_matcher_1a597f567d454f85733c66f7527f9aadb7" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::EachMatcher&lt; M &gt;::EachMatcher</definition>
+        <argsstring>(M m)</argsstring>
+        <name>EachMatcher</name>
+        <param>
+          <type>M</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2921" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2921" bodyend="2921"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_each_matcher_1a81bd8bb67346dd2c07c7bf85a1b2d062" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::internal::EachMatcher&lt; M &gt;::operator Matcher&lt; Container &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Matcher&lt; Container &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2924" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2924" bodyend="2926"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_each_matcher_1a902cc8e0ba5a5df6a91a3245f96d08af" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::EachMatcher&lt; M &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(EachMatcher)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_each_matcher" kindref="compound">EachMatcher</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2931" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2919" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2919" bodyend="2932"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_each_matcher_1a597f567d454f85733c66f7527f9aadb7" prot="public" virt="non-virtual"><scope>testing::internal::EachMatcher</scope><name>EachMatcher</name></member>
+      <member refid="classtesting_1_1internal_1_1_each_matcher_1a902cc8e0ba5a5df6a91a3245f96d08af" prot="private" virt="non-virtual"><scope>testing::internal::EachMatcher</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_each_matcher_1ab960b6a042a3fab3b1d17f58cd50be5c" prot="private" virt="non-virtual"><scope>testing::internal::EachMatcher</scope><name>inner_matcher_</name></member>
+      <member refid="classtesting_1_1internal_1_1_each_matcher_1a81bd8bb67346dd2c07c7bf85a1b2d062" prot="public" virt="non-virtual"><scope>testing::internal::EachMatcher</scope><name>operator Matcher&lt; Container &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

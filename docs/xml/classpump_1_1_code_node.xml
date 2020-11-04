@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classpump_1_1_code_node" kind="class" language="Python" prot="public">
+    <compoundname>pump::CodeNode</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpump_1_1_code_node_1ac7251110cc987c709e0e17d95521993e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.CodeNode::atomic_code</definition>
+        <argsstring></argsstring>
+        <name>atomic_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="392" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpump_1_1_code_node_1a2ca8a75324a64e48004812d6c0bc1cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pump.CodeNode.__init__</definition>
+        <argsstring>(self, atomic_code_list=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>atomic_code_list</type>
+          <defname>atomic_code_list</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="391" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="391" bodyend="394"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/scripts/pump.py" line="390" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="390" bodyend="395"/>
+    <listofallmembers>
+      <member refid="classpump_1_1_code_node_1a2ca8a75324a64e48004812d6c0bc1cbd" prot="public" virt="non-virtual"><scope>pump::CodeNode</scope><name>__init__</name></member>
+      <member refid="classpump_1_1_code_node_1ac7251110cc987c709e0e17d95521993e" prot="public" virt="non-virtual"><scope>pump::CodeNode</scope><name>atomic_code</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

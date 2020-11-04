@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_8ycm__extra__conf_8py" kind="file" language="Python">
+    <compoundname>.ycm_extra_conf.py</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_8ycm__extra__conf_8py_1abd73d8e4551f1a637280b3876d1ae2e3" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <initializer>=  [
+    &apos;-x&apos;,
+    &apos;c++&apos;,
+    &apos;-DGTEST_HAS_PTHREAD=1&apos;,
+    &apos;-I/Users/david/code/scratch/cpp/include&apos;,
+    &apos;-I/Users/david/code/scratch/cpp/test/../vendor/googletest/googletest/include&apos;,
+    &apos;-I/Users/david/code/scratch/cpp/vendor/boost&apos;,
+    &apos;-I/Users/david/code/scratch/cpp/vendor/googletest/googletest&apos;,
+    &apos;-I/Users/david/code/scratch/cpp/vendor/googletest/googletest/include&apos;,
+    &apos;-Wall&apos;,
+    &apos;-Wextra&apos;,
+    &apos;-Wpedantic&apos;,
+    &apos;-std=c++14&apos;,
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file=".ycm_extra_conf.py" line="36" column="1" bodyfile=".ycm_extra_conf.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_8ycm__extra__conf_8py_1a6a4d7e96c7bc9093b406af626b7936a2" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string compilation_database_folder</definition>
+        <argsstring></argsstring>
+        <name>compilation_database_folder</name>
+        <initializer>=  &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file=".ycm_extra_conf.py" line="62" column="1" bodyfile=".ycm_extra_conf.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_8ycm__extra__conf_8py_1a64dbaa3229ec575b68ec333442e10cee" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>database</definition>
+        <argsstring></argsstring>
+        <name>database</name>
+        <initializer>=  ycm_core.CompilationDatabase( compilation_database_folder )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file=".ycm_extra_conf.py" line="65" column="1" bodyfile=".ycm_extra_conf.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_8ycm__extra__conf_8py_1a47014996e1e517071cd0412a22adb123" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list SOURCE_EXTENSIONS</definition>
+        <argsstring></argsstring>
+        <name>SOURCE_EXTENSIONS</name>
+        <initializer>=  [ &apos;.C&apos;, &apos;.cpp&apos;, &apos;.cxx&apos;, &apos;.cc&apos;, &apos;.c&apos;, &apos;.m&apos;, &apos;.mm&apos; ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file=".ycm_extra_conf.py" line="69" column="1" bodyfile=".ycm_extra_conf.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_8ycm__extra__conf_8py_1aab283cdb607efa6a1a7aaa3f089c63f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def DirectoryOfThisScript</definition>
+        <argsstring>()</argsstring>
+        <name>DirectoryOfThisScript</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file=".ycm_extra_conf.py" line="71" column="1" bodyfile=".ycm_extra_conf.py" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="_8ycm__extra__conf_8py_1aa20d30f8cc08fc0ab076b4cf458e0d3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def MakeRelativePathsInFlagsAbsolute</definition>
+        <argsstring>(flags, working_directory)</argsstring>
+        <name>MakeRelativePathsInFlagsAbsolute</name>
+        <param>
+          <type>flags</type>
+          <defname>flags</defname>
+        </param>
+        <param>
+          <type>working_directory</type>
+          <defname>working_directory</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file=".ycm_extra_conf.py" line="75" column="1" bodyfile=".ycm_extra_conf.py" bodystart="75" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="_8ycm__extra__conf_8py_1a6bb59f541be0dcbde53eba606d48ddf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def IsHeaderFile</definition>
+        <argsstring>(filename)</argsstring>
+        <name>IsHeaderFile</name>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file=".ycm_extra_conf.py" line="104" column="1" bodyfile=".ycm_extra_conf.py" bodystart="104" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="_8ycm__extra__conf_8py_1a42a14573593ce75cd6e385a85326111f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def GetCompilationInfoForFile</definition>
+        <argsstring>(filename)</argsstring>
+        <name>GetCompilationInfoForFile</name>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file=".ycm_extra_conf.py" line="109" column="1" bodyfile=".ycm_extra_conf.py" bodystart="109" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="_8ycm__extra__conf_8py_1a51f8bcdc9a3b791e6a88d798e6c786b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def FlagsForFile</definition>
+        <argsstring>(filename, kwargs)</argsstring>
+        <name>FlagsForFile</name>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file=".ycm_extra_conf.py" line="127" column="1" bodyfile=".ycm_extra_conf.py" bodystart="127" bodyend="148"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">#<sp/>Generated<sp/>by<sp/>YCM<sp/>Generator<sp/>at<sp/>2016-10-18<sp/>10:13:21.653665</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>file<sp/>is<sp/>NOT<sp/>licensed<sp/>under<sp/>the<sp/>GPLv3,<sp/>which<sp/>is<sp/>the<sp/>license<sp/>for<sp/>the<sp/>rest</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>of<sp/>YouCompleteMe.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Here&apos;s<sp/>the<sp/>license<sp/>text<sp/>for<sp/>this<sp/>file:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>is<sp/>free<sp/>and<sp/>unencumbered<sp/>software<sp/>released<sp/>into<sp/>the<sp/>public<sp/>domain.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Anyone<sp/>is<sp/>free<sp/>to<sp/>copy,<sp/>modify,<sp/>publish,<sp/>use,<sp/>compile,<sp/>sell,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>distribute<sp/>this<sp/>software,<sp/>either<sp/>in<sp/>source<sp/>code<sp/>form<sp/>or<sp/>as<sp/>a<sp/>compiled</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>binary,<sp/>for<sp/>any<sp/>purpose,<sp/>commercial<sp/>or<sp/>non-commercial,<sp/>and<sp/>by<sp/>any</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#<sp/>means.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">#<sp/>In<sp/>jurisdictions<sp/>that<sp/>recognize<sp/>copyright<sp/>laws,<sp/>the<sp/>author<sp/>or<sp/>authors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">#<sp/>of<sp/>this<sp/>software<sp/>dedicate<sp/>any<sp/>and<sp/>all<sp/>copyright<sp/>interest<sp/>in<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">#<sp/>software<sp/>to<sp/>the<sp/>public<sp/>domain.<sp/>We<sp/>make<sp/>this<sp/>dedication<sp/>for<sp/>the<sp/>benefit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">#<sp/>of<sp/>the<sp/>public<sp/>at<sp/>large<sp/>and<sp/>to<sp/>the<sp/>detriment<sp/>of<sp/>our<sp/>heirs<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">#<sp/>successors.<sp/>We<sp/>intend<sp/>this<sp/>dedication<sp/>to<sp/>be<sp/>an<sp/>overt<sp/>act<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">#<sp/>relinquishment<sp/>in<sp/>perpetuity<sp/>of<sp/>all<sp/>present<sp/>and<sp/>future<sp/>rights<sp/>to<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/>software<sp/>under<sp/>copyright<sp/>law.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">#<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">#<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">#<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">#<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">#<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">#<sp/>For<sp/>more<sp/>information,<sp/>please<sp/>refer<sp/>to<sp/>&lt;http://unlicense.org/&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ycm_core</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">flags<sp/>=<sp/>[</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;-x&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;c++&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;-DGTEST_HAS_PTHREAD=1&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;-I/Users/david/code/scratch/cpp/include&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;-I/Users/david/code/scratch/cpp/test/../vendor/googletest/googletest/include&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;-I/Users/david/code/scratch/cpp/vendor/boost&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;-I/Users/david/code/scratch/cpp/vendor/googletest/googletest&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;-I/Users/david/code/scratch/cpp/vendor/googletest/googletest/include&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;-Wall&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;-Wextra&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;-Wpedantic&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;-std=c++14&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">]</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Set<sp/>this<sp/>to<sp/>the<sp/>absolute<sp/>path<sp/>to<sp/>the<sp/>folder<sp/>(NOT<sp/>the<sp/>file!)<sp/>containing<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">#<sp/>compile_commands.json<sp/>file<sp/>to<sp/>use<sp/>that<sp/>instead<sp/>of<sp/>&apos;flags&apos;.<sp/>See<sp/>here<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">#<sp/>more<sp/>details:<sp/>http://clang.llvm.org/docs/JSONCompilationDatabase.html</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">#<sp/>You<sp/>can<sp/>get<sp/>CMake<sp/>to<sp/>generate<sp/>this<sp/>file<sp/>for<sp/>you<sp/>by<sp/>adding:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/>set(<sp/>CMAKE_EXPORT_COMPILE_COMMANDS<sp/>1<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">#<sp/>to<sp/>your<sp/>CMakeLists.txt<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Most<sp/>projects<sp/>will<sp/>NOT<sp/>need<sp/>to<sp/>set<sp/>this<sp/>to<sp/>anything;<sp/>you<sp/>can<sp/>just<sp/>change<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">#<sp/>&apos;flags&apos;<sp/>list<sp/>of<sp/>compilation<sp/>flags.<sp/>Notice<sp/>that<sp/>YCM<sp/>itself<sp/>uses<sp/>that<sp/>approach.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">compilation_database_folder<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>os.path.exists(<sp/>compilation_database_folder<sp/>):</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>database<sp/>=<sp/>ycm_core.CompilationDatabase(<sp/>compilation_database_folder<sp/>)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>database<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">SOURCE_EXTENSIONS<sp/>=<sp/>[<sp/></highlight><highlight class="stringliteral">&apos;.C&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;.cpp&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;.cxx&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;.cc&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;.c&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;.m&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;.mm&apos;</highlight><highlight class="normal"><sp/>]</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">DirectoryOfThisScript():</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os.path.dirname(<sp/>os.path.abspath(<sp/>__file__<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">MakeRelativePathsInFlagsAbsolute(<sp/>flags,<sp/>working_directory<sp/>):</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>working_directory:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>list(<sp/>flags<sp/>)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>new_flags<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>make_next_absolute<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>path_flags<sp/>=<sp/>[<sp/></highlight><highlight class="stringliteral">&apos;-isystem&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;-I&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;-iquote&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;--sysroot=&apos;</highlight><highlight class="normal"><sp/>]</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>flag<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>flags:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>new_flag<sp/>=<sp/>flag</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>make_next_absolute:</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>make_next_absolute<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>flag.startswith(<sp/></highlight><highlight class="stringliteral">&apos;/&apos;</highlight><highlight class="normal"><sp/>):</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>new_flag<sp/>=<sp/>os.path.join(<sp/>working_directory,<sp/>flag<sp/>)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>path_flag<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>path_flags:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>flag<sp/>==<sp/>path_flag:</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>make_next_absolute<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>flag.startswith(<sp/>path_flag<sp/>):</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>path<sp/>=<sp/>flag[<sp/>len(<sp/>path_flag<sp/>):<sp/>]</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>new_flag<sp/>=<sp/>path_flag<sp/>+<sp/>os.path.join(<sp/>working_directory,<sp/>path<sp/>)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>new_flag:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>new_flags.append(<sp/>new_flag<sp/>)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>new_flags</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">IsHeaderFile(<sp/>filename<sp/>):</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>extension<sp/>=<sp/>os.path.splitext(<sp/>filename<sp/>)[<sp/>1<sp/>]</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>extension<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>[<sp/></highlight><highlight class="stringliteral">&apos;.H&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;.h&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;.hxx&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;.hpp&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;.hh&apos;</highlight><highlight class="normal"><sp/>]</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">GetCompilationInfoForFile(<sp/>filename<sp/>):</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>The<sp/>compilation_commands.json<sp/>file<sp/>generated<sp/>by<sp/>CMake<sp/>does<sp/>not<sp/>have<sp/>entries</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>for<sp/>header<sp/>files.<sp/>So<sp/>we<sp/>do<sp/>our<sp/>best<sp/>by<sp/>asking<sp/>the<sp/>db<sp/>for<sp/>flags<sp/>for<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>corresponding<sp/>source<sp/>file,<sp/>if<sp/>any.<sp/>If<sp/>one<sp/>exists,<sp/>the<sp/>flags<sp/>for<sp/>that<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>should<sp/>be<sp/>good<sp/>enough.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>IsHeaderFile(<sp/>filename<sp/>):</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>basename<sp/>=<sp/>os.path.splitext(<sp/>filename<sp/>)[<sp/>0<sp/>]</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>extension<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>SOURCE_EXTENSIONS:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>replacement_file<sp/>=<sp/>basename<sp/>+<sp/>extension</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>os.path.exists(<sp/>replacement_file<sp/>):</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>compilation_info<sp/>=<sp/>database.GetCompilationInfoForFile(</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>replacement_file<sp/>)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>compilation_info.compiler_flags_:</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>compilation_info</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>database.GetCompilationInfoForFile(<sp/>filename<sp/>)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">FlagsForFile(<sp/>filename,<sp/>**kwargs<sp/>):</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>database:</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Bear<sp/>in<sp/>mind<sp/>that<sp/>compilation_info.compiler_flags_<sp/>does<sp/>NOT<sp/>return<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>python<sp/>list,<sp/>but<sp/>a<sp/>&quot;list-like&quot;<sp/>StringVec<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>compilation_info<sp/>=<sp/>GetCompilationInfoForFile(<sp/>filename<sp/>)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>compilation_info:</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>final_flags<sp/>=<sp/>MakeRelativePathsInFlagsAbsolute(</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>compilation_info.compiler_flags_,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>compilation_info.compiler_working_dir_<sp/>)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>relative_to<sp/>=<sp/>DirectoryOfThisScript()</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>final_flags<sp/>=<sp/>MakeRelativePathsInFlagsAbsolute(<sp/>flags,<sp/>relative_to<sp/>)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;flags&apos;</highlight><highlight class="normal">:<sp/>final_flags,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;do_cache&apos;</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file=".ycm_extra_conf.py"/>
+  </compounddef>
+</doxygen>

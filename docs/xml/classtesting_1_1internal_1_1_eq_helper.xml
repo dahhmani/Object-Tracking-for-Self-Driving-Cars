@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_eq_helper" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::EqHelper</compoundname>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>lhs_is_null_literal</declname>
+        <defname>lhs_is_null_literal</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_eq_helper_1ae3572c7374534a916b9117efaa89f33f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+        <definition>static AssertionResult testing::internal::EqHelper&lt; lhs_is_null_literal &gt;::Compare</definition>
+        <argsstring>(const char *lhs_expression, const char *rhs_expression, const T1 &amp;lhs, const T2 &amp;rhs)</argsstring>
+        <name>Compare</name>
+        <param>
+          <type>const char *</type>
+          <declname>lhs_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>rhs_expression</declname>
+        </param>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const T2 &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1417" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1417" bodyend="1422"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_eq_helper_1aaa42c0059bb3dcc43d556243febb5f1c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+        <definition>static AssertionResult testing::internal::EqHelper&lt; lhs_is_null_literal &gt;::Compare</definition>
+        <argsstring>(const char *lhs_expression, const char *rhs_expression, BiggestInt lhs, BiggestInt rhs)</argsstring>
+        <name>Compare</name>
+        <param>
+          <type>const char *</type>
+          <declname>lhs_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>rhs_expression</declname>
+        </param>
+        <param>
+          <type>BiggestInt</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>BiggestInt</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1430" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1430" bodyend="1435"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/gtest.h" line="1413" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest.h" bodystart="1413" bodyend="1436"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_eq_helper_1ae3572c7374534a916b9117efaa89f33f" prot="public" virt="non-virtual"><scope>testing::internal::EqHelper</scope><name>Compare</name></member>
+      <member refid="classtesting_1_1internal_1_1_eq_helper_1aaa42c0059bb3dcc43d556243febb5f1c" prot="public" virt="non-virtual"><scope>testing::internal::EqHelper</scope><name>Compare</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

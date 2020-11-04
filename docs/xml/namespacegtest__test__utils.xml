@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegtest__test__utils" kind="namespace" language="Python">
+    <compoundname>gtest_test_utils</compoundname>
+    <innerclass refid="classgtest__test__utils_1_1_subprocess" prot="public">gtest_test_utils::Subprocess</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gtest__test__utils_8py_1a221c8f3baa0a26c6158106b76d51e9ce" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_test_utils.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;wan@google.com (Zhanyong Wan)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="34" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__test__utils_8py_1aa19abf2658f4160d2fcb6ce94d16612c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>gtest_test_utils._test_module</definition>
+        <argsstring></argsstring>
+        <name>_test_module</name>
+        <initializer>=  unittest</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="42" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__test__utils_8py_1a530084b4f71f3cba76ea2d360fc9b245" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gtest_test_utils::_SUBPROCESS_MODULE_AVAILABLE</definition>
+        <argsstring></argsstring>
+        <name>_SUBPROCESS_MODULE_AVAILABLE</name>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="48" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__test__utils_8py_1aeb3755b4dd33aabe1baee781fecc1e66" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_test_utils.GTEST_OUTPUT_VAR_NAME</definition>
+        <argsstring></argsstring>
+        <name>GTEST_OUTPUT_VAR_NAME</name>
+        <initializer>=  &apos;GTEST_OUTPUT&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="54" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__test__utils_8py_1a7555b17006f1c078cda336750b8613e0" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_test_utils.IS_WINDOWS</definition>
+        <argsstring></argsstring>
+        <name>IS_WINDOWS</name>
+        <initializer>=  &apos;nt&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="56" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__test__utils_8py_1a6a936096debb3c2e807d000f76245740" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_test_utils.IS_CYGWIN</definition>
+        <argsstring></argsstring>
+        <name>IS_CYGWIN</name>
+        <initializer>=  &apos;posix&apos; and &apos;CYGWIN&apos; in os.uname()[0]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="57" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__test__utils_8py_1aa961c38a16224b2e7fd8c93fc1d2a90f" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_test_utils.PREMATURE_EXIT_FILE_ENV_VAR</definition>
+        <argsstring></argsstring>
+        <name>PREMATURE_EXIT_FILE_ENV_VAR</name>
+        <initializer>=  &apos;TEST_PREMATURE_EXIT_FILE&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="60" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__test__utils_8py_1ab0f2d4a3e90400abb93fd0808047a0a4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gtest_test_utils.environ</definition>
+        <argsstring></argsstring>
+        <name>environ</name>
+        <initializer>=  os.environ.copy()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="62" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__test__utils_8py_1acb97a85206c09d233db6c7f2362e5428" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gtest_test_utils.TestCase</definition>
+        <argsstring></argsstring>
+        <name>TestCase</name>
+        <initializer>=  _test_module.TestCase</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="77" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__test__utils_8py_1a2493ee5c4436cfb8b6746e3da0a5d9a1" prot="private" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary gtest_test_utils._flag_map</definition>
+        <argsstring></argsstring>
+        <name>_flag_map</name>
+        <initializer>=  {&apos;source_dir&apos;: os.path.dirname(sys.argv[0]),
+             &apos;build_dir&apos;: os.path.dirname(sys.argv[0])}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="81" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__test__utils_8py_1acdfe69fc5c1efd784fca3cc8a4f29429" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gtest_test_utils._gtest_flags_are_parsed</definition>
+        <argsstring></argsstring>
+        <name>_gtest_flags_are_parsed</name>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="83" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__test__utils_8py_1a63e521665d381cdeddd27066f11bdbbf" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>gtest_test_utils._temp_dir</definition>
+        <argsstring></argsstring>
+        <name>_temp_dir</name>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="138" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gtest__test__utils_8py_1a616ee0f04e98e54b128cbe492def9bb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_test_utils.SetEnvVar</definition>
+        <argsstring>(env_var, value)</argsstring>
+        <name>SetEnvVar</name>
+        <param>
+          <type>env_var</type>
+          <defname>env_var</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Sets/unsets an environment variable to a given value.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="65" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="65" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__test__utils_8py_1a05ad62af6574fd7e4fa2cc7c952c4f0b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_test_utils._ParseAndStripGTestFlags</definition>
+        <argsstring>(argv)</argsstring>
+        <name>_ParseAndStripGTestFlags</name>
+        <param>
+          <type>argv</type>
+          <defname>argv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Parses and strips Google Test flags from argv.  This is idempotent.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="86" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="86" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__test__utils_8py_1a052da74a5e39162480daf3a4d8eff9a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_test_utils.GetFlag</definition>
+        <argsstring>(flag)</argsstring>
+        <name>GetFlag</name>
+        <param>
+          <type>flag</type>
+          <defname>flag</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the value of the given flag.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="115" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="115" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__test__utils_8py_1aaff66cb0980804d8bd57dc719d4b5518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_test_utils.GetSourceDir</definition>
+        <argsstring>()</argsstring>
+        <name>GetSourceDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the absolute path of the directory where the .py files are.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="126" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="126" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__test__utils_8py_1a1eacd9a471dfa6133028923ea755d22c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_test_utils.GetBuildDir</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuildDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the absolute path of the directory where the test binaries are.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="132" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="132" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__test__utils_8py_1a2fcd62f625111800ee67e0afe46b2c75" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_test_utils._RemoveTempDir</definition>
+        <argsstring>()</argsstring>
+        <name>_RemoveTempDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="140" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="140" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__test__utils_8py_1a25987e1cd76e93068b2afe6bac909d12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_test_utils.GetTempDir</definition>
+        <argsstring>()</argsstring>
+        <name>GetTempDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns a directory for temporary files.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="147" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="147" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__test__utils_8py_1a89ed3717984a80ffbb7a9c92f71b86a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_test_utils.GetTestExecutablePath</definition>
+        <argsstring>(executable_name, build_dir=None)</argsstring>
+        <name>GetTestExecutablePath</name>
+        <param>
+          <type>executable_name</type>
+          <defname>executable_name</defname>
+        </param>
+        <param>
+          <type>build_dir</type>
+          <defname>build_dir</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the absolute path of the test binary given its name.
+
+The function will print a message and abort the program if the resulting file
+doesn&apos;t exist.
+
+Args:
+  executable_name: name of the test binary that the test script runs.
+  build_dir:       directory where to look for executables, by default
+                   the result of GetBuildDir().
+
+Returns:
+  The absolute path of the test binary.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="156" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="156" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__test__utils_8py_1acf8280de4dc027a28ffc9de43f245b50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_test_utils.GetExitStatus</definition>
+        <argsstring>(exit_code)</argsstring>
+        <name>GetExitStatus</name>
+        <param>
+          <type>exit_code</type>
+          <defname>exit_code</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the argument to exit(), or -1 if exit() wasn&apos;t called.
+
+Args:
+  exit_code: the result value of os.system(command).
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="187" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="187" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__test__utils_8py_1a5361b42d9c6843b5b117ead4d1c58cc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_test_utils.Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Runs the unit test.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="306" column="1" bodyfile="vendor/googletest/googletest/test/gtest_test_utils.py" bodystart="306" bodyend="321"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest_test_utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

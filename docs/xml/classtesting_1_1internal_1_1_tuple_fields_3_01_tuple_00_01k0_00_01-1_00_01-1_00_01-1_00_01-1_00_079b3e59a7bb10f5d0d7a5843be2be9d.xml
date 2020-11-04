@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_tuple_fields_3_01_tuple_00_01k0_00_01-1_00_01-1_00_01-1_00_01-1_00_079b3e59a7bb10f5d0d7a5843be2be9d" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::TupleFields&lt; Tuple, k0, -1, -1, -1, -1, -1, -1, -1, -1, -1 &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class Tuple</type>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>k0</declname>
+        <defname>k0</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_tuple_fields_3_01_tuple_00_01k0_00_01-1_00_01-1_00_01-1_00_01-1_00_079b3e59a7bb10f5d0d7a5843be2be9d_1aeb08130cf9faa6f43e0453d2c6d9fd04" prot="public" static="no">
+        <type>::testing::tuple&lt; GMOCK_FIELD_TYPE_(Tuple, k0)&gt;</type>
+        <definition>typedef ::testing::tuple&lt;GMOCK_FIELD_TYPE_(Tuple, k0)&gt; testing::internal::TupleFields&lt; Tuple, k0, -1, -1, -1, -1, -1, -1, -1, -1, -1 &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" line="101" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_tuple_fields_3_01_tuple_00_01k0_00_01-1_00_01-1_00_01-1_00_01-1_00_079b3e59a7bb10f5d0d7a5843be2be9d_1a98b0483efb3db67d08269b30b362a510" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>type</type>
+        <definition>static type testing::internal::TupleFields&lt; Tuple, k0, -1, -1, -1, -1, -1, -1, -1, -1, -1 &gt;::GetSelectedFields</definition>
+        <argsstring>(const Tuple &amp;t)</argsstring>
+        <name>GetSelectedFields</name>
+        <param>
+          <type>const Tuple &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" line="102" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" bodystart="102" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" line="99" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h" bodystart="99" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_tuple_fields_3_01_tuple_00_01k0_00_01-1_00_01-1_00_01-1_00_01-1_00_079b3e59a7bb10f5d0d7a5843be2be9d_1a98b0483efb3db67d08269b30b362a510" prot="public" virt="non-virtual"><scope>testing::internal::TupleFields&lt; Tuple, k0, -1, -1, -1, -1, -1, -1, -1, -1, -1 &gt;</scope><name>GetSelectedFields</name></member>
+      <member refid="classtesting_1_1internal_1_1_tuple_fields_3_01_tuple_00_01k0_00_01-1_00_01-1_00_01-1_00_01-1_00_079b3e59a7bb10f5d0d7a5843be2be9d_1aeb08130cf9faa6f43e0453d2c6d9fd04" prot="public" virt="non-virtual"><scope>testing::internal::TupleFields&lt; Tuple, k0, -1, -1, -1, -1, -1, -1, -1, -1, -1 &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

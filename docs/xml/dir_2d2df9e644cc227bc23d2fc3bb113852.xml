@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_2d2df9e644cc227bc23d2fc3bb113852" kind="dir">
+    <compoundname>vendor/googletest/googletest/include/gtest</compoundname>
+    <innerdir refid="dir_56a4e427466874210e2b38ca6ede470f">vendor/googletest/googletest/include/gtest/internal</innerdir>
+    <innerfile refid="gtest-death-test_8h">gtest-death-test.h</innerfile>
+    <innerfile refid="gtest-message_8h">gtest-message.h</innerfile>
+    <innerfile refid="gtest-param-test_8h">gtest-param-test.h</innerfile>
+    <innerfile refid="gtest-printers_8h">gtest-printers.h</innerfile>
+    <innerfile refid="gtest-spi_8h">gtest-spi.h</innerfile>
+    <innerfile refid="gtest-test-part_8h">gtest-test-part.h</innerfile>
+    <innerfile refid="gtest-typed-test_8h">gtest-typed-test.h</innerfile>
+    <innerfile refid="gtest_8h">gtest.h</innerfile>
+    <innerfile refid="gtest__pred__impl_8h">gtest_pred_impl.h</innerfile>
+    <innerfile refid="gtest__prod_8h">gtest_prod.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/"/>
+  </compounddef>
+</doxygen>

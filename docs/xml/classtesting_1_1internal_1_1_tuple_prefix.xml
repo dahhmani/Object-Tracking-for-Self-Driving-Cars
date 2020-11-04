@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_tuple_prefix" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::TuplePrefix</compoundname>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_tuple_prefix_1ada24ceee73c02e3bb7f8264143170f7a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="structtesting_1_1internal_1_1_matcher_tuple" kindref="compound">MatcherTuple</ref></type>
+          </param>
+          <param>
+            <type>typename ValueTuple</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool testing::internal::TuplePrefix&lt; N &gt;::Matches</definition>
+        <argsstring>(const MatcherTuple &amp;matcher_tuple, const ValueTuple &amp;value_tuple)</argsstring>
+        <name>Matches</name>
+        <param>
+          <type>const <ref refid="structtesting_1_1internal_1_1_matcher_tuple" kindref="compound">MatcherTuple</ref> &amp;</type>
+          <declname>matcher_tuple</declname>
+        </param>
+        <param>
+          <type>const ValueTuple &amp;</type>
+          <declname>value_tuple</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="732" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="732" bodyend="736"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_tuple_prefix_1a0ffd38ce90ae6da645a5655aefac5bb7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="structtesting_1_1internal_1_1_matcher_tuple" kindref="compound">MatcherTuple</ref></type>
+          </param>
+          <param>
+            <type>typename ValueTuple</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void testing::internal::TuplePrefix&lt; N &gt;::ExplainMatchFailuresTo</definition>
+        <argsstring>(const MatcherTuple &amp;matchers, const ValueTuple &amp;values, ::std::ostream *os)</argsstring>
+        <name>ExplainMatchFailuresTo</name>
+        <param>
+          <type>const <ref refid="structtesting_1_1internal_1_1_matcher_tuple" kindref="compound">MatcherTuple</ref> &amp;</type>
+          <declname>matchers</declname>
+        </param>
+        <param>
+          <type>const ValueTuple &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="743" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="743" bodyend="771"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="726" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="726" bodyend="772"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_tuple_prefix_1a0ffd38ce90ae6da645a5655aefac5bb7" prot="public" virt="non-virtual"><scope>testing::internal::TuplePrefix</scope><name>ExplainMatchFailuresTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_tuple_prefix_1ada24ceee73c02e3bb7f8264143170f7a" prot="public" virt="non-virtual"><scope>testing::internal::TuplePrefix</scope><name>Matches</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

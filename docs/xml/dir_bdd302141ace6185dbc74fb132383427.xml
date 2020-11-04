@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_bdd302141ace6185dbc74fb132383427" kind="dir">
+    <compoundname>vendor/googletest/googlemock/include/gmock</compoundname>
+    <innerdir refid="dir_562199b94d059ebd92e143f5b9afd64d">vendor/googletest/googlemock/include/gmock/internal</innerdir>
+    <innerfile refid="gmock-actions_8h">gmock-actions.h</innerfile>
+    <innerfile refid="gmock-cardinalities_8h">gmock-cardinalities.h</innerfile>
+    <innerfile refid="gmock-generated-actions_8h">gmock-generated-actions.h</innerfile>
+    <innerfile refid="gmock-generated-function-mockers_8h">gmock-generated-function-mockers.h</innerfile>
+    <innerfile refid="gmock-generated-matchers_8h">gmock-generated-matchers.h</innerfile>
+    <innerfile refid="gmock-generated-nice-strict_8h">gmock-generated-nice-strict.h</innerfile>
+    <innerfile refid="gmock-matchers_8h">gmock-matchers.h</innerfile>
+    <innerfile refid="gmock-more-actions_8h">gmock-more-actions.h</innerfile>
+    <innerfile refid="gmock-more-matchers_8h">gmock-more-matchers.h</innerfile>
+    <innerfile refid="gmock-spec-builders_8h">gmock-spec-builders.h</innerfile>
+    <innerfile refid="gmock_8h">gmock.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/"/>
+  </compounddef>
+</doxygen>

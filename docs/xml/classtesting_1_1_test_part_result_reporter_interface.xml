@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_test_part_result_reporter_interface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>testing::TestPartResultReporterInterface</compoundname>
+    <derivedcompoundref refid="classtesting_1_1internal_1_1_default_global_test_part_result_reporter" prot="public" virt="non-virtual">testing::internal::DefaultGlobalTestPartResultReporter</derivedcompoundref>
+    <derivedcompoundref refid="classtesting_1_1internal_1_1_default_per_thread_test_part_result_reporter" prot="public" virt="non-virtual">testing::internal::DefaultPerThreadTestPartResultReporter</derivedcompoundref>
+    <derivedcompoundref refid="classtesting_1_1internal_1_1_has_new_fatal_failure_helper" prot="public" virt="non-virtual">testing::internal::HasNewFatalFailureHelper</derivedcompoundref>
+    <derivedcompoundref refid="classtesting_1_1_scoped_fake_test_part_result_reporter" prot="public" virt="non-virtual">testing::ScopedFakeTestPartResultReporter</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_reporter_interface_1a338b51591ed654f84dc0feaaf2b66917" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual testing::TestPartResultReporterInterface::~TestPartResultReporterInterface</definition>
+        <argsstring>()</argsstring>
+        <name>~TestPartResultReporterInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="148" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="148" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_reporter_interface_1aa2f920e7a5a0a6d0faf19e3727928c22" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void testing::TestPartResultReporterInterface::ReportTestPartResult</definition>
+        <argsstring>(const TestPartResult &amp;result)=0</argsstring>
+        <name>ReportTestPartResult</name>
+        <reimplementedby refid="classtesting_1_1_scoped_fake_test_part_result_reporter_1a82531434f51632d98ed7cdcdb10b8b92">ReportTestPartResult</reimplementedby>
+        <reimplementedby refid="classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1a2d2e1faa1f3669b82810df97ac678a27">ReportTestPartResult</reimplementedby>
+        <reimplementedby refid="classtesting_1_1internal_1_1_default_global_test_part_result_reporter_1a6081576a23b964cfecab1e424d8044fc">ReportTestPartResult</reimplementedby>
+        <reimplementedby refid="classtesting_1_1internal_1_1_default_per_thread_test_part_result_reporter_1ac6dc08eadc4e5a2a64a91d0b6c6b3aad">ReportTestPartResult</reimplementedby>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="150" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2165">
+        <label>testing::internal::DefaultPerThreadTestPartResultReporter</label>
+        <link refid="classtesting_1_1internal_1_1_default_per_thread_test_part_result_reporter"/>
+        <childnode refid="2163" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2166">
+        <label>testing::internal::HasNewFatalFailureHelper</label>
+        <link refid="classtesting_1_1internal_1_1_has_new_fatal_failure_helper"/>
+        <childnode refid="2163" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2163">
+        <label>testing::TestPartResultReporterInterface</label>
+        <link refid="classtesting_1_1_test_part_result_reporter_interface"/>
+      </node>
+      <node id="2167">
+        <label>testing::ScopedFakeTestPartResultReporter</label>
+        <link refid="classtesting_1_1_scoped_fake_test_part_result_reporter"/>
+        <childnode refid="2163" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2164">
+        <label>testing::internal::DefaultGlobalTestPartResultReporter</label>
+        <link refid="classtesting_1_1internal_1_1_default_global_test_part_result_reporter"/>
+        <childnode refid="2163" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="146" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="146" bodyend="151"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_test_part_result_reporter_interface_1aa2f920e7a5a0a6d0faf19e3727928c22" prot="public" virt="pure-virtual"><scope>testing::TestPartResultReporterInterface</scope><name>ReportTestPartResult</name></member>
+      <member refid="classtesting_1_1_test_part_result_reporter_interface_1a338b51591ed654f84dc0feaaf2b66917" prot="public" virt="virtual"><scope>testing::TestPartResultReporterInterface</scope><name>~TestPartResultReporterInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

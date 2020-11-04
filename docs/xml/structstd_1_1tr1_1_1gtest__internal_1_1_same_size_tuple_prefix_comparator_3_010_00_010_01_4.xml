@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structstd_1_1tr1_1_1gtest__internal_1_1_same_size_tuple_prefix_comparator_3_010_00_010_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>std::tr1::gtest_internal::SameSizeTuplePrefixComparator&lt; 0, 0 &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structstd_1_1tr1_1_1gtest__internal_1_1_same_size_tuple_prefix_comparator_3_010_00_010_01_4_1a4f209822266c6bb1832c49750a11ef95" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Tuple1</type>
+          </param>
+          <param>
+            <type>class Tuple2</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool std::tr1::gtest_internal::SameSizeTuplePrefixComparator&lt; 0, 0 &gt;::Eq</definition>
+        <argsstring>(const Tuple1 &amp;, const Tuple2 &amp;)</argsstring>
+        <name>Eq</name>
+        <param>
+          <type>const Tuple1 &amp;</type>
+        </param>
+        <param>
+          <type>const Tuple2 &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" line="957" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" bodystart="957" bodyend="959"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" line="955" column="1" bodyfile="vendor/googletest/googletest/include/gtest/internal/gtest-tuple.h" bodystart="955" bodyend="960"/>
+    <listofallmembers>
+      <member refid="structstd_1_1tr1_1_1gtest__internal_1_1_same_size_tuple_prefix_comparator_3_010_00_010_01_4_1a4f209822266c6bb1832c49750a11ef95" prot="public" virt="non-virtual"><scope>std::tr1::gtest_internal::SameSizeTuplePrefixComparator&lt; 0, 0 &gt;</scope><name>Eq</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

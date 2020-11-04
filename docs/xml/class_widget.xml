@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_widget" kind="class" language="C++" prot="public">
+    <compoundname>Widget</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_widget_1a27a2b3fd66372d5731fa9a6bcaab755b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Widget::number_</definition>
+        <argsstring></argsstring>
+        <name>number_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.h" line="57" column="1" bodyfile="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_widget_1a1d2f74810f3f912270a681e0671a7a55" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Widget::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.h" line="58" column="1" bodyfile="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_widget_1ab573b75a8a69d29c298af2485fb9cda9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Widget::Widget</definition>
+        <argsstring>(int number, const std::string &amp;name)</argsstring>
+        <name>Widget</name>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.h" line="44" column="1" bodyfile="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.cc" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_widget_1aa24f66bcbaaec6d458b0980e8c8eae65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Widget::~Widget</definition>
+        <argsstring>()</argsstring>
+        <name>~Widget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.h" line="45" column="1" bodyfile="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.cc" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_widget_1abf639d975e02cabda8132873aca1a333" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Widget::GetFloatValue</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFloatValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.h" line="48" column="1" bodyfile="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.cc" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_widget_1a15e7d0423020a7a98063a749fb97bdd3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Widget::GetIntValue</definition>
+        <argsstring>() const</argsstring>
+        <name>GetIntValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.h" line="49" column="1" bodyfile="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.cc" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_widget_1a7a6e3a7fca3a9373f631c94dc1494d22" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Widget::GetStringValue</definition>
+        <argsstring>() const</argsstring>
+        <name>GetStringValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.h" line="52" column="1" bodyfile="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.cc" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_widget_1a50791a556979f22f5593383143c7f815" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Widget::GetCharPtrValue</definition>
+        <argsstring>(char *buffer, size_t max_size) const</argsstring>
+        <name>GetCharPtrValue</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>max_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.h" line="53" column="1" bodyfile="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.cc" bodystart="58" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.h" line="42" column="1" bodyfile="vendor/googletest/googletest/xcode/Samples/FrameworkSample/widget.h" bodystart="42" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_widget_1a50791a556979f22f5593383143c7f815" prot="public" virt="non-virtual"><scope>Widget</scope><name>GetCharPtrValue</name></member>
+      <member refid="class_widget_1abf639d975e02cabda8132873aca1a333" prot="public" virt="non-virtual"><scope>Widget</scope><name>GetFloatValue</name></member>
+      <member refid="class_widget_1a15e7d0423020a7a98063a749fb97bdd3" prot="public" virt="non-virtual"><scope>Widget</scope><name>GetIntValue</name></member>
+      <member refid="class_widget_1a7a6e3a7fca3a9373f631c94dc1494d22" prot="public" virt="non-virtual"><scope>Widget</scope><name>GetStringValue</name></member>
+      <member refid="class_widget_1a1d2f74810f3f912270a681e0671a7a55" prot="private" virt="non-virtual"><scope>Widget</scope><name>name_</name></member>
+      <member refid="class_widget_1a27a2b3fd66372d5731fa9a6bcaab755b" prot="private" virt="non-virtual"><scope>Widget</scope><name>number_</name></member>
+      <member refid="class_widget_1ab573b75a8a69d29c298af2485fb9cda9" prot="public" virt="non-virtual"><scope>Widget</scope><name>Widget</name></member>
+      <member refid="class_widget_1aa24f66bcbaaec6d458b0980e8c8eae65" prot="public" virt="non-virtual"><scope>Widget</scope><name>~Widget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

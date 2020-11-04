@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__generated__actions__test_1_1_substract_action" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_generated_actions_test::SubstractAction</compoundname>
+    <basecompoundref refid="classtesting_1_1_action_interface" prot="public" virt="non-virtual">testing::ActionInterface&lt; int(int, int)&gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__generated__actions__test_1_1_substract_action_1ac049ec6196668e17ef7384e08914f2c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int testing::gmock_generated_actions_test::SubstractAction::Perform</definition>
+        <argsstring>(const tuple&lt; int, int &gt; &amp;args)</argsstring>
+        <name>Perform</name>
+        <param>
+          <type>const tuple&lt; int, int &gt; &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" line="371" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" bodystart="371" bodyend="373"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2031">
+        <label>testing::ActionInterface&lt; int(int, int)&gt;</label>
+        <link refid="classtesting_1_1_action_interface"/>
+      </node>
+      <node id="2030">
+        <label>testing::gmock_generated_actions_test::SubstractAction</label>
+        <link refid="classtesting_1_1gmock__generated__actions__test_1_1_substract_action"/>
+        <childnode refid="2031" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2033">
+        <label>testing::ActionInterface&lt; int(int, int)&gt;</label>
+        <link refid="classtesting_1_1_action_interface"/>
+      </node>
+      <node id="2032">
+        <label>testing::gmock_generated_actions_test::SubstractAction</label>
+        <link refid="classtesting_1_1gmock__generated__actions__test_1_1_substract_action"/>
+        <childnode refid="2033" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" line="369" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" bodystart="369" bodyend="374"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_action_interface_1a0f1d44e4c669a9cae5ee5b28419a6f52" prot="public" virt="non-virtual"><scope>testing::gmock_generated_actions_test::SubstractAction</scope><name>ActionInterface</name></member>
+      <member refid="classtesting_1_1_action_interface_1af72720d864da4d606629e83edc003511" prot="public" virt="non-virtual"><scope>testing::gmock_generated_actions_test::SubstractAction</scope><name>ArgumentTuple</name></member>
+      <member refid="classtesting_1_1gmock__generated__actions__test_1_1_substract_action_1ac049ec6196668e17ef7384e08914f2c3" prot="public" virt="virtual"><scope>testing::gmock_generated_actions_test::SubstractAction</scope><name>Perform</name></member>
+      <member refid="classtesting_1_1_action_interface_1a20f8624fcea1786f2992b358760422a0" prot="public" virt="pure-virtual" ambiguityscope="testing::ActionInterface::"><scope>testing::gmock_generated_actions_test::SubstractAction</scope><name>Perform</name></member>
+      <member refid="classtesting_1_1_action_interface_1a7477de2fe3e4e01c59db698203acaee7" prot="public" virt="non-virtual"><scope>testing::gmock_generated_actions_test::SubstractAction</scope><name>Result</name></member>
+      <member refid="classtesting_1_1_action_interface_1a7dd0a5fc93d86ae3c9d04963b9f3a93f" prot="public" virt="virtual"><scope>testing::gmock_generated_actions_test::SubstractAction</scope><name>~ActionInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

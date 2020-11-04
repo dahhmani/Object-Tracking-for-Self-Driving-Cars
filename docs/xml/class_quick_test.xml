@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_quick_test" kind="class" language="C++" prot="public">
+    <compoundname>QuickTest</compoundname>
+    <basecompoundref refid="classtesting_1_1_test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+    <derivedcompoundref refid="class_integer_function_test" prot="public" virt="non-virtual">IntegerFunctionTest</derivedcompoundref>
+    <derivedcompoundref refid="class_queue_test" prot="public" virt="non-virtual">QueueTest</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_quick_test_1aba6a28bbd733e72e3b088a0b66386809" prot="protected" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t QuickTest::start_time_</definition>
+        <argsstring></argsstring>
+        <name>start_time_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample5_unittest.cc" line="84" column="1" bodyfile="vendor/googletest/googletest/samples/sample5_unittest.cc" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_quick_test_1ae52ad082887512b92240ce40a1a05650" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QuickTest::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplements refid="classtesting_1_1_test_1a190315150c303ddf801313fd1a777733">SetUp</reimplements>
+        <reimplementedby refid="class_queue_test_1a91e69958f086239a523864d6b94ab174">SetUp</reimplementedby>
+        <reimplementedby refid="class_queue_test_1a91e69958f086239a523864d6b94ab174">SetUp</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample5_unittest.cc" line="67" column="1" bodyfile="vendor/googletest/googletest/samples/sample5_unittest.cc" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_quick_test_1a6b2d16cc0c69d30a16fe612db5abfc39" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QuickTest::TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <reimplements refid="classtesting_1_1_test_1a5f0ab439802cbe0ef7552f1a9f791923">TearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/samples/sample5_unittest.cc" line="73" column="1" bodyfile="vendor/googletest/googletest/samples/sample5_unittest.cc" bodystart="73" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1844">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1843">
+        <label>QuickTest</label>
+        <link refid="class_quick_test"/>
+        <childnode refid="1844" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1846">
+        <label>QueueTest</label>
+        <link refid="class_queue_test"/>
+        <childnode refid="1843" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1845">
+        <label>IntegerFunctionTest</label>
+        <link refid="class_integer_function_test"/>
+        <childnode refid="1843" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1848">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1847">
+        <label>QuickTest</label>
+        <link refid="class_quick_test"/>
+        <childnode refid="1848" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/samples/sample5_unittest.cc" line="63" column="1" bodyfile="vendor/googletest/googletest/samples/sample5_unittest.cc" bodystart="63" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual"><scope>QuickTest</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual"><scope>QuickTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual"><scope>QuickTest</scope><name>HasNonfatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual"><scope>QuickTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual"><scope>QuickTest</scope><name>RecordProperty</name></member>
+      <member refid="class_quick_test_1ae52ad082887512b92240ce40a1a05650" prot="protected" virt="virtual"><scope>QuickTest</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1_test_1a5ccbac42fee8c5b00b0bfe89b6c49d79" prot="public" virt="non-virtual"><scope>QuickTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual"><scope>QuickTest</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="class_quick_test_1aba6a28bbd733e72e3b088a0b66386809" prot="protected" virt="non-virtual"><scope>QuickTest</scope><name>start_time_</name></member>
+      <member refid="class_quick_test_1a6b2d16cc0c69d30a16fe612db5abfc39" prot="protected" virt="virtual"><scope>QuickTest</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_test_1af374706cbaf0ffc460f4fd04e7c150f1" prot="public" virt="non-virtual"><scope>QuickTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual"><scope>QuickTest</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual"><scope>QuickTest</scope><name>Test</name></member>
+      <member refid="classtesting_1_1_test_1a2b0a62f1e667bbe8d8cb18d785bfa991" prot="public" virt="virtual"><scope>QuickTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

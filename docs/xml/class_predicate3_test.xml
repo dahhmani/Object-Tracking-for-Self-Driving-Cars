@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_predicate3_test" kind="class" language="C++" prot="public">
+    <compoundname>Predicate3Test</compoundname>
+    <basecompoundref refid="classtesting_1_1_test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="class_predicate3_test_1a42c11555410ee89bf6e59d39336a212c" prot="protected" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool Predicate3Test::expected_to_finish_</definition>
+        <argsstring></argsstring>
+        <name>expected_to_finish_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" line="980" column="1" bodyfile="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" bodystart="980" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_predicate3_test_1aa2ef0fa6aed09d872fb9ae36961b49eb" prot="protected" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool Predicate3Test::finished_</definition>
+        <argsstring></argsstring>
+        <name>finished_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" line="983" column="1" bodyfile="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" bodystart="983" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_predicate3_test_1ac232320a93f0c1e09886148a3e1929a5" prot="protected" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Predicate3Test::n1_</definition>
+        <argsstring></argsstring>
+        <name>n1_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" line="985" column="1" bodyfile="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" bodystart="985" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_predicate3_test_1a11049ef16bcaadc8262faf7349c7676e" prot="protected" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Predicate3Test::n2_</definition>
+        <argsstring></argsstring>
+        <name>n2_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" line="986" column="1" bodyfile="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" bodystart="986" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_predicate3_test_1afc1df6b079ffe22b87479b161d2ad2f7" prot="protected" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Predicate3Test::n3_</definition>
+        <argsstring></argsstring>
+        <name>n3_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" line="987" column="1" bodyfile="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" bodystart="987" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_predicate3_test_1a92aad9566e0737b6739d1db14e7912be" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Predicate3Test::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplements refid="classtesting_1_1_test_1a190315150c303ddf801313fd1a777733">SetUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" line="951" column="1" bodyfile="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" bodystart="951" bodyend="955"/>
+      </memberdef>
+      <memberdef kind="function" id="class_predicate3_test_1aa4dc395bded849b6e5175566d791aba7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Predicate3Test::TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <reimplements refid="classtesting_1_1_test_1a5f0ab439802cbe0ef7552f1a9f791923">TearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" line="957" column="1" bodyfile="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" bodystart="957" bodyend="977"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1769">
+        <label>Predicate3Test</label>
+        <link refid="class_predicate3_test"/>
+        <childnode refid="1770" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1770">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1771">
+        <label>Predicate3Test</label>
+        <link refid="class_predicate3_test"/>
+        <childnode refid="1772" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1772">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" line="949" column="1" bodyfile="vendor/googletest/googletest/test/gtest_pred_impl_unittest.cc" bodystart="949" bodyend="988"/>
+    <listofallmembers>
+      <member refid="class_predicate3_test_1a42c11555410ee89bf6e59d39336a212c" prot="protected" virt="non-virtual"><scope>Predicate3Test</scope><name>expected_to_finish_</name></member>
+      <member refid="class_predicate3_test_1aa2ef0fa6aed09d872fb9ae36961b49eb" prot="protected" virt="non-virtual"><scope>Predicate3Test</scope><name>finished_</name></member>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual"><scope>Predicate3Test</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual"><scope>Predicate3Test</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual"><scope>Predicate3Test</scope><name>HasNonfatalFailure</name></member>
+      <member refid="class_predicate3_test_1ac232320a93f0c1e09886148a3e1929a5" prot="protected" virt="non-virtual"><scope>Predicate3Test</scope><name>n1_</name></member>
+      <member refid="class_predicate3_test_1a11049ef16bcaadc8262faf7349c7676e" prot="protected" virt="non-virtual"><scope>Predicate3Test</scope><name>n2_</name></member>
+      <member refid="class_predicate3_test_1afc1df6b079ffe22b87479b161d2ad2f7" prot="protected" virt="non-virtual"><scope>Predicate3Test</scope><name>n3_</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual"><scope>Predicate3Test</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual"><scope>Predicate3Test</scope><name>RecordProperty</name></member>
+      <member refid="class_predicate3_test_1a92aad9566e0737b6739d1db14e7912be" prot="protected" virt="virtual"><scope>Predicate3Test</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1_test_1a5ccbac42fee8c5b00b0bfe89b6c49d79" prot="public" virt="non-virtual"><scope>Predicate3Test</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual"><scope>Predicate3Test</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="class_predicate3_test_1aa4dc395bded849b6e5175566d791aba7" prot="protected" virt="virtual"><scope>Predicate3Test</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_test_1af374706cbaf0ffc460f4fd04e7c150f1" prot="public" virt="non-virtual"><scope>Predicate3Test</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual"><scope>Predicate3Test</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual"><scope>Predicate3Test</scope><name>Test</name></member>
+      <member refid="classtesting_1_1_test_1a2b0a62f1e667bbe8d8cb18d785bfa991" prot="public" virt="virtual"><scope>Predicate3Test</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

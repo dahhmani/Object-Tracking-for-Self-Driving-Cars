@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_convertible_to_bool" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::ConvertibleToBool</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1gmock__matchers__test_1_1_convertible_to_bool_1ada38cee1b8eef8e499ec249711c4c6a6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::gmock_matchers_test::ConvertibleToBool::number_</definition>
+        <argsstring></argsstring>
+        <name>number_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="2482" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="2482" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_convertible_to_bool_1a4e01a99e144a393bc11a40fb43e8a6f1" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::ConvertibleToBool::ConvertibleToBool</definition>
+        <argsstring>(int number)</argsstring>
+        <name>ConvertibleToBool</name>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="2478" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="2478" bodyend="2478"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_convertible_to_bool_1a4ad9766b9d5179a1207af2449405f071" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::ConvertibleToBool::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="2479" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="2479" bodyend="2479"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="2476" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="2476" bodyend="2483"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_convertible_to_bool_1a4e01a99e144a393bc11a40fb43e8a6f1" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::ConvertibleToBool</scope><name>ConvertibleToBool</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_convertible_to_bool_1ada38cee1b8eef8e499ec249711c4c6a6" prot="private" virt="non-virtual"><scope>testing::gmock_matchers_test::ConvertibleToBool</scope><name>number_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_convertible_to_bool_1a4ad9766b9d5179a1207af2449405f071" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::ConvertibleToBool</scope><name>operator bool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

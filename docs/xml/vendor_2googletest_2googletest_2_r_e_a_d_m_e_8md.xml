@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="vendor_2googletest_2googletest_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Generic<sp/>Build<sp/>Instructions<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Setup<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>build<sp/>Google<sp/>Test<sp/>and<sp/>your<sp/>tests<sp/>that<sp/>use<sp/>it,<sp/>you<sp/>need<sp/>to<sp/>tell<sp/>your</highlight></codeline>
+<codeline><highlight class="normal">build<sp/>system<sp/>where<sp/>to<sp/>find<sp/>its<sp/>headers<sp/>and<sp/>source<sp/>files.<sp/><sp/>The<sp/>exact</highlight></codeline>
+<codeline><highlight class="normal">way<sp/>to<sp/>do<sp/>it<sp/>depends<sp/>on<sp/>which<sp/>build<sp/>system<sp/>you<sp/>use,<sp/>and<sp/>is<sp/>usually</highlight></codeline>
+<codeline><highlight class="normal">straightforward.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Build<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Suppose<sp/>you<sp/>put<sp/>Google<sp/>Test<sp/>in<sp/>directory<sp/>`${GTEST_DIR}`.<sp/><sp/>To<sp/>build<sp/>it,</highlight></codeline>
+<codeline><highlight class="normal">create<sp/>a<sp/>library<sp/>build<sp/>target<sp/>(or<sp/>a<sp/>project<sp/>as<sp/>called<sp/>by<sp/>Visual<sp/>Studio</highlight></codeline>
+<codeline><highlight class="normal">and<sp/>Xcode)<sp/>to<sp/>compile</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>${GTEST_DIR}/src/gtest-all.cc</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">with<sp/>`${GTEST_DIR}/include`<sp/>in<sp/>the<sp/>system<sp/>header<sp/>search<sp/>path<sp/>and<sp/>`${GTEST_DIR}`</highlight></codeline>
+<codeline><highlight class="normal">in<sp/>the<sp/>normal<sp/>header<sp/>search<sp/>path.<sp/><sp/>Assuming<sp/>a<sp/>Linux-like<sp/>system<sp/>and<sp/>gcc,</highlight></codeline>
+<codeline><highlight class="normal">something<sp/>like<sp/>the<sp/>following<sp/>will<sp/>do:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g++<sp/>-isystem<sp/>${GTEST_DIR}/include<sp/>-I${GTEST_DIR}<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-pthread<sp/>-c<sp/>${GTEST_DIR}/src/gtest-all.cc</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ar<sp/>-rv<sp/>libgtest.a<sp/>gtest-all.o</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">(We<sp/>need<sp/>`-pthread`<sp/>as<sp/>Google<sp/>Test<sp/>uses<sp/>threads.)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Next,<sp/>you<sp/>should<sp/>compile<sp/>your<sp/>test<sp/>source<sp/>file<sp/>with</highlight></codeline>
+<codeline><highlight class="normal">`${GTEST_DIR}/include`<sp/>in<sp/>the<sp/>system<sp/>header<sp/>search<sp/>path,<sp/>and<sp/>link<sp/>it</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>gtest<sp/>and<sp/>any<sp/>other<sp/>necessary<sp/>libraries:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g++<sp/>-isystem<sp/>${GTEST_DIR}/include<sp/>-pthread<sp/>path/to/your_test.cc<sp/>libgtest.a<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-o<sp/>your_test</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>an<sp/>example,<sp/>the<sp/>make/<sp/>directory<sp/>contains<sp/>a<sp/>Makefile<sp/>that<sp/>you<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">use<sp/>to<sp/>build<sp/>Google<sp/>Test<sp/>on<sp/>systems<sp/>where<sp/>GNU<sp/>make<sp/>is<sp/>available</highlight></codeline>
+<codeline><highlight class="normal">(e.g.<sp/>Linux,<sp/>Mac<sp/>OS<sp/>X,<sp/>and<sp/>Cygwin).<sp/><sp/>It<sp/>doesn&apos;t<sp/>try<sp/>to<sp/>build<sp/>Google</highlight></codeline>
+<codeline><highlight class="normal">Test&apos;s<sp/>own<sp/>tests.<sp/><sp/>Instead,<sp/>it<sp/>just<sp/>builds<sp/>the<sp/>Google<sp/>Test<sp/>library<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">a<sp/>sample<sp/>test.<sp/><sp/>You<sp/>can<sp/>use<sp/>it<sp/>as<sp/>a<sp/>starting<sp/>point<sp/>for<sp/>your<sp/>own<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">script.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>the<sp/>default<sp/>settings<sp/>are<sp/>correct<sp/>for<sp/>your<sp/>environment,<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">following<sp/>commands<sp/>should<sp/>succeed:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cd<sp/>${GTEST_DIR}/make</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>make</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>./sample1_unittest</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>see<sp/>errors,<sp/>try<sp/>to<sp/>tweak<sp/>the<sp/>contents<sp/>of<sp/>`make/Makefile`<sp/>to<sp/>make</highlight></codeline>
+<codeline><highlight class="normal">them<sp/>go<sp/>away.<sp/><sp/>There<sp/>are<sp/>instructions<sp/>in<sp/>`make/Makefile`<sp/>on<sp/>how<sp/>to<sp/>do</highlight></codeline>
+<codeline><highlight class="normal">it.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Using<sp/>CMake<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Test<sp/>comes<sp/>with<sp/>a<sp/>CMake<sp/>build<sp/>script<sp/>(</highlight></codeline>
+<codeline><highlight class="normal">[CMakeLists.txt](CMakeLists.txt))<sp/>that<sp/>can<sp/>be<sp/>used<sp/>on<sp/>a<sp/>wide<sp/>range<sp/>of<sp/>platforms<sp/>(&quot;C&quot;<sp/>stands<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">cross-platform.).<sp/>If<sp/>you<sp/>don&apos;t<sp/>have<sp/>CMake<sp/>installed<sp/>already,<sp/>you<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">download<sp/>it<sp/>for<sp/>free<sp/>from<sp/>&lt;http://www.cmake.org/&gt;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">CMake<sp/>works<sp/>by<sp/>generating<sp/>native<sp/>makefiles<sp/>or<sp/>build<sp/>projects<sp/>that<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">be<sp/>used<sp/>in<sp/>the<sp/>compiler<sp/>environment<sp/>of<sp/>your<sp/>choice.<sp/><sp/>The<sp/>typical</highlight></codeline>
+<codeline><highlight class="normal">workflow<sp/>starts<sp/>with:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mkdir<sp/>mybuild<sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>a<sp/>directory<sp/>to<sp/>hold<sp/>the<sp/>build<sp/>output.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cd<sp/>mybuild</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cmake<sp/>${GTEST_DIR}<sp/><sp/>#<sp/>Generate<sp/>native<sp/>build<sp/>scripts.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>want<sp/>to<sp/>build<sp/>Google<sp/>Test&apos;s<sp/>samples,<sp/>you<sp/>should<sp/>replace<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">last<sp/>command<sp/>with</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cmake<sp/>-Dgtest_build_samples=ON<sp/>${GTEST_DIR}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>are<sp/>on<sp/>a<sp/>\*nix<sp/>system,<sp/>you<sp/>should<sp/>now<sp/>see<sp/>a<sp/>Makefile<sp/>in<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">current<sp/>directory.<sp/><sp/>Just<sp/>type<sp/>&apos;make&apos;<sp/>to<sp/>build<sp/>gtest.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>use<sp/>Windows<sp/>and<sp/>have<sp/>Visual<sp/>Studio<sp/>installed,<sp/>a<sp/>`gtest.sln`<sp/>file</highlight></codeline>
+<codeline><highlight class="normal">and<sp/>several<sp/>`.vcproj`<sp/>files<sp/>will<sp/>be<sp/>created.<sp/><sp/>You<sp/>can<sp/>then<sp/>build<sp/>them</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>Visual<sp/>Studio.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">On<sp/>Mac<sp/>OS<sp/>X<sp/>with<sp/>Xcode<sp/>installed,<sp/>a<sp/>`.xcodeproj`<sp/>file<sp/>will<sp/>be<sp/>generated.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Legacy<sp/>Build<sp/>Scripts<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Before<sp/>settling<sp/>on<sp/>CMake,<sp/>we<sp/>have<sp/>been<sp/>providing<sp/>hand-maintained<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">projects/scripts<sp/>for<sp/>Visual<sp/>Studio,<sp/>Xcode,<sp/>and<sp/>Autotools.<sp/><sp/>While<sp/>we</highlight></codeline>
+<codeline><highlight class="normal">continue<sp/>to<sp/>provide<sp/>them<sp/>for<sp/>convenience,<sp/>they<sp/>are<sp/>not<sp/>actively</highlight></codeline>
+<codeline><highlight class="normal">maintained<sp/>any<sp/>more.<sp/><sp/>We<sp/>highly<sp/>recommend<sp/>that<sp/>you<sp/>follow<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">instructions<sp/>in<sp/>the<sp/>previous<sp/>two<sp/>sections<sp/>to<sp/>integrate<sp/>Google<sp/>Test</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>your<sp/>existing<sp/>build<sp/>system.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>still<sp/>need<sp/>to<sp/>use<sp/>the<sp/>legacy<sp/>build<sp/>scripts,<sp/>here&apos;s<sp/>how:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>msvc\<sp/>folder<sp/>contains<sp/>two<sp/>solutions<sp/>with<sp/>Visual<sp/>C++<sp/>projects.</highlight></codeline>
+<codeline><highlight class="normal">Open<sp/>the<sp/>`gtest.sln`<sp/>or<sp/>`gtest-md.sln`<sp/>file<sp/>using<sp/>Visual<sp/>Studio,<sp/>and<sp/>you</highlight></codeline>
+<codeline><highlight class="normal">are<sp/>ready<sp/>to<sp/>build<sp/>Google<sp/>Test<sp/>the<sp/>same<sp/>way<sp/>you<sp/>build<sp/>any<sp/>Visual</highlight></codeline>
+<codeline><highlight class="normal">Studio<sp/>project.<sp/><sp/>Files<sp/>that<sp/>have<sp/>names<sp/>ending<sp/>with<sp/>-md<sp/>use<sp/>DLL</highlight></codeline>
+<codeline><highlight class="normal">versions<sp/>of<sp/>Microsoft<sp/>runtime<sp/>libraries<sp/>(the<sp/>/MD<sp/>or<sp/>the<sp/>/MDd<sp/>compiler</highlight></codeline>
+<codeline><highlight class="normal">option).<sp/><sp/>Files<sp/>without<sp/>that<sp/>suffix<sp/>use<sp/>static<sp/>versions<sp/>of<sp/>the<sp/>runtime</highlight></codeline>
+<codeline><highlight class="normal">libraries<sp/>(the<sp/>/MT<sp/>or<sp/>the<sp/>/MTd<sp/>option).<sp/><sp/>Please<sp/>note<sp/>that<sp/>one<sp/>must<sp/>use</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>same<sp/>option<sp/>to<sp/>compile<sp/>both<sp/>gtest<sp/>and<sp/>the<sp/>test<sp/>code.<sp/><sp/>If<sp/>you<sp/>use</highlight></codeline>
+<codeline><highlight class="normal">Visual<sp/>Studio<sp/>2005<sp/>or<sp/>above,<sp/>we<sp/>recommend<sp/>the<sp/>-md<sp/>version<sp/>as<sp/>/MD<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>default<sp/>for<sp/>new<sp/>projects<sp/>in<sp/>these<sp/>versions<sp/>of<sp/>Visual<sp/>Studio.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">On<sp/>Mac<sp/>OS<sp/>X,<sp/>open<sp/>the<sp/>`gtest.xcodeproj`<sp/>in<sp/>the<sp/>`xcode/`<sp/>folder<sp/>using</highlight></codeline>
+<codeline><highlight class="normal">Xcode.<sp/><sp/>Build<sp/>the<sp/>&quot;gtest&quot;<sp/>target.<sp/><sp/>The<sp/>universal<sp/>binary<sp/>framework<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">end<sp/>up<sp/>in<sp/>your<sp/>selected<sp/>build<sp/>directory<sp/>(selected<sp/>in<sp/>the<sp/>Xcode</highlight></codeline>
+<codeline><highlight class="normal">&quot;Preferences...&quot;<sp/>-&gt;<sp/>&quot;Building&quot;<sp/>pane<sp/>and<sp/>defaults<sp/>to<sp/>xcode/build).</highlight></codeline>
+<codeline><highlight class="normal">Alternatively,<sp/>at<sp/>the<sp/>command<sp/>line,<sp/>enter:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>xcodebuild</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>will<sp/>build<sp/>the<sp/>&quot;Release&quot;<sp/>configuration<sp/>of<sp/>gtest.framework<sp/>in<sp/>your</highlight></codeline>
+<codeline><highlight class="normal">default<sp/>build<sp/>location.<sp/><sp/>See<sp/>the<sp/>&quot;xcodebuild&quot;<sp/>man<sp/>page<sp/>for<sp/>more</highlight></codeline>
+<codeline><highlight class="normal">information<sp/>about<sp/>building<sp/>different<sp/>configurations<sp/>and<sp/>building<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">different<sp/>locations.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>wish<sp/>to<sp/>use<sp/>the<sp/>Google<sp/>Test<sp/>Xcode<sp/>project<sp/>with<sp/>Xcode<sp/>4.x<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">above,<sp/>you<sp/>need<sp/>to<sp/>either:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>update<sp/>the<sp/>SDK<sp/>configuration<sp/>options<sp/>in<sp/>xcode/Config/General.xconfig.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Comment<sp/>options<sp/>`SDKROOT`,<sp/>`MACOS_DEPLOYMENT_TARGET`,<sp/>and<sp/>`GCC_VERSION`.<sp/>If</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>you<sp/>choose<sp/>this<sp/>route<sp/>you<sp/>lose<sp/>the<sp/>ability<sp/>to<sp/>target<sp/>earlier<sp/>versions</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>of<sp/>MacOS<sp/>X.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Install<sp/>an<sp/>SDK<sp/>for<sp/>an<sp/>earlier<sp/>version.<sp/>This<sp/>doesn&apos;t<sp/>appear<sp/>to<sp/>be</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>supported<sp/>by<sp/>Apple,<sp/>but<sp/>has<sp/>been<sp/>reported<sp/>to<sp/>work</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>(http://stackoverflow.com/questions/5378518).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Tweaking<sp/>Google<sp/>Test<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Test<sp/>can<sp/>be<sp/>used<sp/>in<sp/>diverse<sp/>environments.<sp/><sp/>The<sp/>default</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>may<sp/>not<sp/>work<sp/>(or<sp/>may<sp/>not<sp/>work<sp/>well)<sp/>out<sp/>of<sp/>the<sp/>box<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">some<sp/>environments.<sp/><sp/>However,<sp/>you<sp/>can<sp/>easily<sp/>tweak<sp/>Google<sp/>Test<sp/>by</highlight></codeline>
+<codeline><highlight class="normal">defining<sp/>control<sp/>macros<sp/>on<sp/>the<sp/>compiler<sp/>command<sp/>line.<sp/><sp/>Generally,</highlight></codeline>
+<codeline><highlight class="normal">these<sp/>macros<sp/>are<sp/>named<sp/>like<sp/>`GTEST_XYZ`<sp/>and<sp/>you<sp/>define<sp/>them<sp/>to<sp/>either<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">or<sp/>0<sp/>to<sp/>enable<sp/>or<sp/>disable<sp/>a<sp/>certain<sp/>feature.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>list<sp/>the<sp/>most<sp/>frequently<sp/>used<sp/>macros<sp/>below.<sp/><sp/>For<sp/>a<sp/>complete<sp/>list,</highlight></codeline>
+<codeline><highlight class="normal">see<sp/>file<sp/>[include/gtest/internal/gtest-port.h](include/gtest/internal/gtest-port.h).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Choosing<sp/>a<sp/>TR1<sp/>Tuple<sp/>Library<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Some<sp/>Google<sp/>Test<sp/>features<sp/>require<sp/>the<sp/>C++<sp/>Technical<sp/>Report<sp/>1<sp/>(TR1)</highlight></codeline>
+<codeline><highlight class="normal">tuple<sp/>library,<sp/>which<sp/>is<sp/>not<sp/>yet<sp/>available<sp/>with<sp/>all<sp/>compilers.<sp/><sp/>The</highlight></codeline>
+<codeline><highlight class="normal">good<sp/>news<sp/>is<sp/>that<sp/>Google<sp/>Test<sp/>implements<sp/>a<sp/>subset<sp/>of<sp/>TR1<sp/>tuple<sp/>that&apos;s</highlight></codeline>
+<codeline><highlight class="normal">enough<sp/>for<sp/>its<sp/>own<sp/>need,<sp/>and<sp/>will<sp/>automatically<sp/>use<sp/>this<sp/>when<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">compiler<sp/>doesn&apos;t<sp/>provide<sp/>TR1<sp/>tuple.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Usually<sp/>you<sp/>don&apos;t<sp/>need<sp/>to<sp/>care<sp/>about<sp/>which<sp/>tuple<sp/>library<sp/>Google<sp/>Test</highlight></codeline>
+<codeline><highlight class="normal">uses.<sp/><sp/>However,<sp/>if<sp/>your<sp/>project<sp/>already<sp/>uses<sp/>TR1<sp/>tuple,<sp/>you<sp/>need<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">tell<sp/>Google<sp/>Test<sp/>to<sp/>use<sp/>the<sp/>same<sp/>TR1<sp/>tuple<sp/>library<sp/>the<sp/>rest<sp/>of<sp/>your</highlight></codeline>
+<codeline><highlight class="normal">project<sp/>uses,<sp/>or<sp/>the<sp/>two<sp/>tuple<sp/>implementations<sp/>will<sp/>clash.<sp/><sp/>To<sp/>do</highlight></codeline>
+<codeline><highlight class="normal">that,<sp/>add</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-DGTEST_USE_OWN_TR1_TUPLE=0</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">to<sp/>the<sp/>compiler<sp/>flags<sp/>while<sp/>compiling<sp/>Google<sp/>Test<sp/>and<sp/>your<sp/>tests.<sp/><sp/>If</highlight></codeline>
+<codeline><highlight class="normal">you<sp/>want<sp/>to<sp/>force<sp/>Google<sp/>Test<sp/>to<sp/>use<sp/>its<sp/>own<sp/>tuple<sp/>library,<sp/>just<sp/>add</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-DGTEST_USE_OWN_TR1_TUPLE=1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">to<sp/>the<sp/>compiler<sp/>flags<sp/>instead.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>don&apos;t<sp/>want<sp/>Google<sp/>Test<sp/>to<sp/>use<sp/>tuple<sp/>at<sp/>all,<sp/>add</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-DGTEST_HAS_TR1_TUPLE=0</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">and<sp/>all<sp/>features<sp/>using<sp/>tuple<sp/>will<sp/>be<sp/>disabled.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Multi-threaded<sp/>Tests<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Test<sp/>is<sp/>thread-safe<sp/>where<sp/>the<sp/>pthread<sp/>library<sp/>is<sp/>available.</highlight></codeline>
+<codeline><highlight class="normal">After<sp/>`#include<sp/>&quot;gtest/gtest.h&quot;`,<sp/>you<sp/>can<sp/>check<sp/>the<sp/>`GTEST_IS_THREADSAFE`</highlight></codeline>
+<codeline><highlight class="normal">macro<sp/>to<sp/>see<sp/>whether<sp/>this<sp/>is<sp/>the<sp/>case<sp/>(yes<sp/>if<sp/>the<sp/>macro<sp/>is<sp/>`#defined`<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">1,<sp/>no<sp/>if<sp/>it&apos;s<sp/>undefined.).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>Google<sp/>Test<sp/>doesn&apos;t<sp/>correctly<sp/>detect<sp/>whether<sp/>pthread<sp/>is<sp/>available</highlight></codeline>
+<codeline><highlight class="normal">in<sp/>your<sp/>environment,<sp/>you<sp/>can<sp/>force<sp/>it<sp/>with</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-DGTEST_HAS_PTHREAD=1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">or</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-DGTEST_HAS_PTHREAD=0</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">When<sp/>Google<sp/>Test<sp/>uses<sp/>pthread,<sp/>you<sp/>may<sp/>need<sp/>to<sp/>add<sp/>flags<sp/>to<sp/>your</highlight></codeline>
+<codeline><highlight class="normal">compiler<sp/>and/or<sp/>linker<sp/>to<sp/>select<sp/>the<sp/>pthread<sp/>library,<sp/>or<sp/>you&apos;ll<sp/>get</highlight></codeline>
+<codeline><highlight class="normal">link<sp/>errors.<sp/><sp/>If<sp/>you<sp/>use<sp/>the<sp/>CMake<sp/>script<sp/>or<sp/>the<sp/>deprecated<sp/>Autotools</highlight></codeline>
+<codeline><highlight class="normal">script,<sp/>this<sp/>is<sp/>taken<sp/>care<sp/>of<sp/>for<sp/>you.<sp/><sp/>If<sp/>you<sp/>use<sp/>your<sp/>own<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">script,<sp/>you&apos;ll<sp/>need<sp/>to<sp/>read<sp/>your<sp/>compiler<sp/>and<sp/>linker&apos;s<sp/>manual<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">figure<sp/>out<sp/>what<sp/>flags<sp/>to<sp/>add.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>As<sp/>a<sp/>Shared<sp/>Library<sp/>(DLL)<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Google<sp/>Test<sp/>is<sp/>compact,<sp/>so<sp/>most<sp/>users<sp/>can<sp/>build<sp/>and<sp/>link<sp/>it<sp/>as<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">static<sp/>library<sp/>for<sp/>the<sp/>simplicity.<sp/><sp/>You<sp/>can<sp/>choose<sp/>to<sp/>use<sp/>Google<sp/>Test</highlight></codeline>
+<codeline><highlight class="normal">as<sp/>a<sp/>shared<sp/>library<sp/>(known<sp/>as<sp/>a<sp/>DLL<sp/>on<sp/>Windows)<sp/>if<sp/>you<sp/>prefer.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>compile<sp/>*gtest*<sp/>as<sp/>a<sp/>shared<sp/>library,<sp/>add</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-DGTEST_CREATE_SHARED_LIBRARY=1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">to<sp/>the<sp/>compiler<sp/>flags.<sp/><sp/>You&apos;ll<sp/>also<sp/>need<sp/>to<sp/>tell<sp/>the<sp/>linker<sp/>to<sp/>produce</highlight></codeline>
+<codeline><highlight class="normal">a<sp/>shared<sp/>library<sp/>instead<sp/>-<sp/>consult<sp/>your<sp/>linker&apos;s<sp/>manual<sp/>for<sp/>how<sp/>to<sp/>do</highlight></codeline>
+<codeline><highlight class="normal">it.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>compile<sp/>your<sp/>*tests*<sp/>that<sp/>use<sp/>the<sp/>gtest<sp/>shared<sp/>library,<sp/>add</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-DGTEST_LINKED_AS_SHARED_LIBRARY=1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">to<sp/>the<sp/>compiler<sp/>flags.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Note:<sp/>while<sp/>the<sp/>above<sp/>steps<sp/>aren&apos;t<sp/>technically<sp/>necessary<sp/>today<sp/>when</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>some<sp/>compilers<sp/>(e.g.<sp/>GCC),<sp/>they<sp/>may<sp/>become<sp/>necessary<sp/>in<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">future,<sp/>if<sp/>we<sp/>decide<sp/>to<sp/>improve<sp/>the<sp/>speed<sp/>of<sp/>loading<sp/>the<sp/>library<sp/>(see</highlight></codeline>
+<codeline><highlight class="normal">&lt;http://gcc.gnu.org/wiki/Visibility&gt;<sp/>for<sp/>details).<sp/><sp/>Therefore<sp/>you<sp/>are</highlight></codeline>
+<codeline><highlight class="normal">recommended<sp/>to<sp/>always<sp/>add<sp/>the<sp/>above<sp/>flags<sp/>when<sp/>using<sp/>Google<sp/>Test<sp/>as<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">shared<sp/>library.<sp/><sp/>Otherwise<sp/>a<sp/>future<sp/>release<sp/>of<sp/>Google<sp/>Test<sp/>may<sp/>break</highlight></codeline>
+<codeline><highlight class="normal">your<sp/>build<sp/>script.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Avoiding<sp/>Macro<sp/>Name<sp/>Clashes<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>C++,<sp/>macros<sp/>don&apos;t<sp/>obey<sp/>namespaces.<sp/><sp/>Therefore<sp/>two<sp/>libraries<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">both<sp/>define<sp/>a<sp/>macro<sp/>of<sp/>the<sp/>same<sp/>name<sp/>will<sp/>clash<sp/>if<sp/>you<sp/>`#include`<sp/>both</highlight></codeline>
+<codeline><highlight class="normal">definitions.<sp/><sp/>In<sp/>case<sp/>a<sp/>Google<sp/>Test<sp/>macro<sp/>clashes<sp/>with<sp/>another</highlight></codeline>
+<codeline><highlight class="normal">library,<sp/>you<sp/>can<sp/>force<sp/>Google<sp/>Test<sp/>to<sp/>rename<sp/>its<sp/>macro<sp/>to<sp/>avoid<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">conflict.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Specifically,<sp/>if<sp/>both<sp/>Google<sp/>Test<sp/>and<sp/>some<sp/>other<sp/>code<sp/>define<sp/>macro</highlight></codeline>
+<codeline><highlight class="normal">FOO,<sp/>you<sp/>can<sp/>add</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-DGTEST_DONT_DEFINE_FOO=1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">to<sp/>the<sp/>compiler<sp/>flags<sp/>to<sp/>tell<sp/>Google<sp/>Test<sp/>to<sp/>change<sp/>the<sp/>macro&apos;s<sp/>name</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>`FOO`<sp/>to<sp/>`GTEST_FOO`.<sp/><sp/>Currently<sp/>`FOO`<sp/>can<sp/>be<sp/>`FAIL`,<sp/>`SUCCEED`,</highlight></codeline>
+<codeline><highlight class="normal">or<sp/>`TEST`.<sp/><sp/>For<sp/>example,<sp/>with<sp/>`-DGTEST_DONT_DEFINE_TEST=1`,<sp/>you&apos;ll</highlight></codeline>
+<codeline><highlight class="normal">need<sp/>to<sp/>write</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>GTEST_TEST(SomeTest,<sp/>DoesThis)<sp/>{<sp/>...<sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">instead<sp/>of</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TEST(SomeTest,<sp/>DoesThis)<sp/>{<sp/>...<sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">in<sp/>order<sp/>to<sp/>define<sp/>a<sp/>test.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Developing<sp/>Google<sp/>Test<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>section<sp/>discusses<sp/>how<sp/>to<sp/>make<sp/>your<sp/>own<sp/>changes<sp/>to<sp/>Google<sp/>Test.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Testing<sp/>Google<sp/>Test<sp/>Itself<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>make<sp/>sure<sp/>your<sp/>changes<sp/>work<sp/>as<sp/>intended<sp/>and<sp/>don&apos;t<sp/>break<sp/>existing</highlight></codeline>
+<codeline><highlight class="normal">functionality,<sp/>you&apos;ll<sp/>want<sp/>to<sp/>compile<sp/>and<sp/>run<sp/>Google<sp/>Test&apos;s<sp/>own<sp/>tests.</highlight></codeline>
+<codeline><highlight class="normal">For<sp/>that<sp/>you<sp/>can<sp/>use<sp/>CMake:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mkdir<sp/>mybuild</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cd<sp/>mybuild</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cmake<sp/>-Dgtest_build_tests=ON<sp/>${GTEST_DIR}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Make<sp/>sure<sp/>you<sp/>have<sp/>Python<sp/>installed,<sp/>as<sp/>some<sp/>of<sp/>Google<sp/>Test&apos;s<sp/>tests</highlight></codeline>
+<codeline><highlight class="normal">are<sp/>written<sp/>in<sp/>Python.<sp/><sp/>If<sp/>the<sp/>cmake<sp/>command<sp/>complains<sp/>about<sp/>not<sp/>being</highlight></codeline>
+<codeline><highlight class="normal">able<sp/>to<sp/>find<sp/>Python<sp/>(`Could<sp/>NOT<sp/>find<sp/>PythonInterp<sp/>(missing:</highlight></codeline>
+<codeline><highlight class="normal">PYTHON_EXECUTABLE)`),<sp/>try<sp/>telling<sp/>it<sp/>explicitly<sp/>where<sp/>your<sp/>Python</highlight></codeline>
+<codeline><highlight class="normal">executable<sp/>can<sp/>be<sp/>found:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cmake<sp/>-DPYTHON_EXECUTABLE=path/to/python<sp/>-Dgtest_build_tests=ON<sp/>${GTEST_DIR}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Next,<sp/>you<sp/>can<sp/>build<sp/>Google<sp/>Test<sp/>and<sp/>all<sp/>of<sp/>its<sp/>own<sp/>tests.<sp/><sp/>On<sp/>\*nix,</highlight></codeline>
+<codeline><highlight class="normal">this<sp/>is<sp/>usually<sp/>done<sp/>by<sp/>&apos;make&apos;.<sp/><sp/>To<sp/>run<sp/>the<sp/>tests,<sp/>do</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>make<sp/>test</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">All<sp/>tests<sp/>should<sp/>pass.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Normally<sp/>you<sp/>don&apos;t<sp/>need<sp/>to<sp/>worry<sp/>about<sp/>regenerating<sp/>the<sp/>source<sp/>files,</highlight></codeline>
+<codeline><highlight class="normal">unless<sp/>you<sp/>need<sp/>to<sp/>modify<sp/>them.<sp/><sp/>In<sp/>that<sp/>case,<sp/>you<sp/>should<sp/>modify<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">corresponding<sp/>.pump<sp/>files<sp/>instead<sp/>and<sp/>run<sp/>the<sp/>pump.py<sp/>Python<sp/>script<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">regenerate<sp/>them.<sp/><sp/>You<sp/>can<sp/>find<sp/>pump.py<sp/>in<sp/>the<sp/>[scripts/](scripts/)<sp/>directory.</highlight></codeline>
+<codeline><highlight class="normal">Read<sp/>the<sp/>[Pump<sp/>manual](docs/PumpManual.md)<sp/>for<sp/>how<sp/>to<sp/>use<sp/>it.</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googletest/README.md"/>
+  </compounddef>
+</doxygen>

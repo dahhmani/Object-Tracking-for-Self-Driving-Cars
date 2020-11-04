@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_bipartite_random_test" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::BipartiteRandomTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">testing::TestWithParam&lt; std::pair&lt; int, int &gt; &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="188">
+        <label>testing::TestWithParam&lt; std::pair&lt; int, int &gt; &gt;</label>
+      </node>
+      <node id="187">
+        <label>testing::gmock_matchers_test::BipartiteRandomTest</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_bipartite_random_test"/>
+        <childnode refid="188" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="190">
+        <label>testing::TestWithParam&lt; std::pair&lt; int, int &gt; &gt;</label>
+      </node>
+      <node id="189">
+        <label>testing::gmock_matchers_test::BipartiteRandomTest</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_bipartite_random_test"/>
+        <childnode refid="190" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="5182" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="5181" bodyend="5183"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

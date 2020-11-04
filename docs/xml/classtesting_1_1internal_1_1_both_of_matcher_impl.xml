@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_both_of_matcher_impl" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::BothOfMatcherImpl</compoundname>
+    <basecompoundref refid="classtesting_1_1_matcher_interface" prot="public" virt="non-virtual">testing::MatcherInterface&lt; T &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_both_of_matcher_impl_1a31f8739f880776e209a3e5bd96ddfbf6" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; T &gt;</type>
+        <definition>const Matcher&lt;T&gt; testing::internal::BothOfMatcherImpl&lt; T &gt;::matcher1_</definition>
+        <argsstring></argsstring>
+        <name>matcher1_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1544" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1544" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_both_of_matcher_impl_1aeb19d68ac4732ad2ca45a9d37ad955cb" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; T &gt;</type>
+        <definition>const Matcher&lt;T&gt; testing::internal::BothOfMatcherImpl&lt; T &gt;::matcher2_</definition>
+        <argsstring></argsstring>
+        <name>matcher2_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1545" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1545" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_both_of_matcher_impl_1a41760fcb35ba18ac2a0eb580ac61ea9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::BothOfMatcherImpl&lt; T &gt;::BothOfMatcherImpl</definition>
+        <argsstring>(const Matcher&lt; T &gt; &amp;matcher1, const Matcher&lt; T &gt; &amp;matcher2)</argsstring>
+        <name>BothOfMatcherImpl</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; T &gt; &amp;</type>
+          <declname>matcher1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; T &gt; &amp;</type>
+          <declname>matcher2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1494" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1494" bodyend="1495"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_both_of_matcher_impl_1a3a1f92f7b093d36ab38c35fbcae4ce4d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::BothOfMatcherImpl&lt; T &gt;::DescribeTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <reimplements refid="classtesting_1_1_matcher_describer_interface_1ad9f861588bd969b6e3e717f13bb94e7b">DescribeTo</reimplements>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1497" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1497" bodyend="1503"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_both_of_matcher_impl_1a4f6017c7aca6e5c8166ff4c613d8dbec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::BothOfMatcherImpl&lt; T &gt;::DescribeNegationTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <reimplements refid="classtesting_1_1_matcher_describer_interface_1a2071afbc47097c4d1c0064275af34db0">DescribeNegationTo</reimplements>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1505" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1505" bodyend="1511"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_both_of_matcher_impl_1a4f3e5edf69d168fef8bec577313748f4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool testing::internal::BothOfMatcherImpl&lt; T &gt;::MatchAndExplain</definition>
+        <argsstring>(T x, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplain</name>
+        <reimplements refid="classtesting_1_1_matcher_interface_1a296b43607cd99d60365f0e6a762777cf">MatchAndExplain</reimplements>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1513" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1513" bodyend="1541"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_both_of_matcher_impl_1a4d50ba5d71e949b96f69812bb48a6760" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::BothOfMatcherImpl&lt; T &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(BothOfMatcherImpl)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_both_of_matcher_impl" kindref="compound">BothOfMatcherImpl</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1547" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="219">
+        <label>testing::internal::BothOfMatcherImpl&lt; T &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_both_of_matcher_impl"/>
+        <childnode refid="220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>testing::MatcherInterface&lt; T &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="221" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="221">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="222">
+        <label>testing::internal::BothOfMatcherImpl&lt; T &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_both_of_matcher_impl"/>
+        <childnode refid="223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>testing::MatcherInterface&lt; T &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="224" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1492" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1492" bodyend="1548"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_both_of_matcher_impl_1a41760fcb35ba18ac2a0eb580ac61ea9a" prot="public" virt="non-virtual"><scope>testing::internal::BothOfMatcherImpl</scope><name>BothOfMatcherImpl</name></member>
+      <member refid="classtesting_1_1internal_1_1_both_of_matcher_impl_1a4f6017c7aca6e5c8166ff4c613d8dbec" prot="public" virt="virtual"><scope>testing::internal::BothOfMatcherImpl</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_both_of_matcher_impl_1a3a1f92f7b093d36ab38c35fbcae4ce4d" prot="public" virt="virtual"><scope>testing::internal::BothOfMatcherImpl</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_both_of_matcher_impl_1a4d50ba5d71e949b96f69812bb48a6760" prot="private" virt="non-virtual"><scope>testing::internal::BothOfMatcherImpl</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_both_of_matcher_impl_1a4f3e5edf69d168fef8bec577313748f4" prot="public" virt="virtual"><scope>testing::internal::BothOfMatcherImpl</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1internal_1_1_both_of_matcher_impl_1a31f8739f880776e209a3e5bd96ddfbf6" prot="private" virt="non-virtual"><scope>testing::internal::BothOfMatcherImpl</scope><name>matcher1_</name></member>
+      <member refid="classtesting_1_1internal_1_1_both_of_matcher_impl_1aeb19d68ac4732ad2ca45a9d37ad955cb" prot="private" virt="non-virtual"><scope>testing::internal::BothOfMatcherImpl</scope><name>matcher2_</name></member>
+      <member refid="classtesting_1_1_matcher_describer_interface_1ae2236a56ad2cc35cad10efc1208854f4" prot="public" virt="virtual"><scope>testing::internal::BothOfMatcherImpl</scope><name>~MatcherDescriberInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

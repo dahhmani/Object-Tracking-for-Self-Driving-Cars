@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_failing_param_test" kind="class" language="C++" prot="public">
+    <compoundname>FailingParamTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">testing::TestWithParam&lt; int &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="552">
+        <label>FailingParamTest</label>
+        <link refid="class_failing_param_test"/>
+        <childnode refid="553" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="553">
+        <label>testing::TestWithParam&lt; int &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="554">
+        <label>FailingParamTest</label>
+        <link refid="class_failing_param_test"/>
+        <childnode refid="555" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="555">
+        <label>testing::TestWithParam&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="93" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="93" bodyend="93"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

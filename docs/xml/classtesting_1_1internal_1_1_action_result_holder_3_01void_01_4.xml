@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_action_result_holder_3_01void_01_4" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::ActionResultHolder&lt; void &gt;</compoundname>
+    <basecompoundref refid="classtesting_1_1internal_1_1_untyped_action_result_holder_base" prot="public" virt="non-virtual">testing::internal::UntypedActionResultHolderBase</basecompoundref>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_action_result_holder_3_01void_01_4_1aa57f371e1559b236e6424b2f50dcd6a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::ActionResultHolder&lt; void &gt;::Unwrap</definition>
+        <argsstring>()</argsstring>
+        <name>Unwrap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1422" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1422" bodyend="1422"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_action_result_holder_3_01void_01_4_1ab829399d5a7d6fc9f0ecde0c0a6a3aeb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::ActionResultHolder&lt; void &gt;::PrintAsActionResult</definition>
+        <argsstring>(::std::ostream *) const</argsstring>
+        <name>PrintAsActionResult</name>
+        <reimplements refid="classtesting_1_1internal_1_1_untyped_action_result_holder_base_1a4b4a558fcb1d3b02c0fec34f186d3b90">PrintAsActionResult</reimplements>
+        <param>
+          <type>::std::ostream *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1424" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1424" bodyend="1424"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_action_result_holder_3_01void_01_4_1a140b6ab6a756e60db62e76b01b09a26f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1internal_1_1_action_result_holder" kindref="compound">ActionResultHolder</ref> *</type>
+        <definition>static ActionResultHolder* testing::internal::ActionResultHolder&lt; void &gt;::PerformDefaultAction</definition>
+        <argsstring>(const FunctionMockerBase&lt; F &gt; *func_mocker, const typename Function&lt; F &gt;::ArgumentTuple &amp;args, const string &amp;call_description)</argsstring>
+        <name>PerformDefaultAction</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1_function_mocker_base" kindref="compound">FunctionMockerBase</ref>&lt; F &gt; *</type>
+          <declname>func_mocker</declname>
+        </param>
+        <param>
+          <type>const typename <ref refid="structtesting_1_1internal_1_1_function" kindref="compound">Function</ref>&lt; F &gt;::ArgumentTuple &amp;</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>call_description</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1429" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1429" bodyend="1435"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_action_result_holder_3_01void_01_4_1abb1d387e21341393e0c237ae7b02ee68" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1internal_1_1_action_result_holder" kindref="compound">ActionResultHolder</ref> *</type>
+        <definition>static ActionResultHolder* testing::internal::ActionResultHolder&lt; void &gt;::PerformAction</definition>
+        <argsstring>(const Action&lt; F &gt; &amp;action, const typename Function&lt; F &gt;::ArgumentTuple &amp;args)</argsstring>
+        <name>PerformAction</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_action" kindref="compound">Action</ref>&lt; F &gt; &amp;</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>const typename <ref refid="structtesting_1_1internal_1_1_function" kindref="compound">Function</ref>&lt; F &gt;::ArgumentTuple &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1440" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1440" bodyend="1445"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_action_result_holder_3_01void_01_4_1a4f721cbdde35fde62920fd2495dc55d3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ActionResultHolder&lt; void &gt;::ActionResultHolder</definition>
+        <argsstring>()</argsstring>
+        <name>ActionResultHolder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1448" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1448" bodyend="1448"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_action_result_holder_3_01void_01_4_1afa9b3e5d8c13a7bcecf6b94b891c7383" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ActionResultHolder&lt; void &gt;::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(ActionResultHolder)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_action_result_holder" kindref="compound">ActionResultHolder</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1449" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="54">
+        <label>testing::internal::UntypedActionResultHolderBase</label>
+        <link refid="classtesting_1_1internal_1_1_untyped_action_result_holder_base"/>
+      </node>
+      <node id="53">
+        <label>testing::internal::ActionResultHolder&lt; void &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_action_result_holder_3_01void_01_4"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="56">
+        <label>testing::internal::UntypedActionResultHolderBase</label>
+        <link refid="classtesting_1_1internal_1_1_untyped_action_result_holder_base"/>
+      </node>
+      <node id="55">
+        <label>testing::internal::ActionResultHolder&lt; void &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_action_result_holder_3_01void_01_4"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1420" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1420" bodyend="1450"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_action_result_holder_3_01void_01_4_1a4f721cbdde35fde62920fd2495dc55d3" prot="private" virt="non-virtual"><scope>testing::internal::ActionResultHolder&lt; void &gt;</scope><name>ActionResultHolder</name></member>
+      <member refid="classtesting_1_1internal_1_1_action_result_holder_3_01void_01_4_1afa9b3e5d8c13a7bcecf6b94b891c7383" prot="private" virt="non-virtual"><scope>testing::internal::ActionResultHolder&lt; void &gt;</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_action_result_holder_3_01void_01_4_1abb1d387e21341393e0c237ae7b02ee68" prot="public" virt="non-virtual"><scope>testing::internal::ActionResultHolder&lt; void &gt;</scope><name>PerformAction</name></member>
+      <member refid="classtesting_1_1internal_1_1_action_result_holder_3_01void_01_4_1a140b6ab6a756e60db62e76b01b09a26f" prot="public" virt="non-virtual"><scope>testing::internal::ActionResultHolder&lt; void &gt;</scope><name>PerformDefaultAction</name></member>
+      <member refid="classtesting_1_1internal_1_1_action_result_holder_3_01void_01_4_1ab829399d5a7d6fc9f0ecde0c0a6a3aeb" prot="public" virt="virtual"><scope>testing::internal::ActionResultHolder&lt; void &gt;</scope><name>PrintAsActionResult</name></member>
+      <member refid="classtesting_1_1internal_1_1_action_result_holder_3_01void_01_4_1aa57f371e1559b236e6424b2f50dcd6a2" prot="public" virt="non-virtual"><scope>testing::internal::ActionResultHolder&lt; void &gt;</scope><name>Unwrap</name></member>
+      <member refid="classtesting_1_1internal_1_1_untyped_action_result_holder_base_1a2e6c331d249aea75ccc1e4fba3897a29" prot="public" virt="virtual"><scope>testing::internal::ActionResultHolder&lt; void &gt;</scope><name>~UntypedActionResultHolderBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

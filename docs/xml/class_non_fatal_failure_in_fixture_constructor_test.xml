@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_non_fatal_failure_in_fixture_constructor_test" kind="class" language="C++" prot="public">
+    <compoundname>NonFatalFailureInFixtureConstructorTest</compoundname>
+    <basecompoundref refid="classtesting_1_1_test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_non_fatal_failure_in_fixture_constructor_test_1a87a70e2b18b981c627c43f2af85a9345" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NonFatalFailureInFixtureConstructorTest::NonFatalFailureInFixtureConstructorTest</definition>
+        <argsstring>()</argsstring>
+        <name>NonFatalFailureInFixtureConstructorTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="352" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="352" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="class_non_fatal_failure_in_fixture_constructor_test_1a732fa961c4bb68b3390e4a49a8375619" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NonFatalFailureInFixtureConstructorTest::~NonFatalFailureInFixtureConstructorTest</definition>
+        <argsstring>()</argsstring>
+        <name>~NonFatalFailureInFixtureConstructorTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="357" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="357" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="class_non_fatal_failure_in_fixture_constructor_test_1a7d951f8fbf7b2ac5046be8d8ee7b03d3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void NonFatalFailureInFixtureConstructorTest::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplements refid="classtesting_1_1_test_1a190315150c303ddf801313fd1a777733">SetUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="361" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="361" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="class_non_fatal_failure_in_fixture_constructor_test_1ab76d79c346d9a378d625fde5739e8ad6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void NonFatalFailureInFixtureConstructorTest::TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <reimplements refid="classtesting_1_1_test_1a5f0ab439802cbe0ef7552f1a9f791923">TearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="365" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="365" bodyend="367"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1648">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1647">
+        <label>NonFatalFailureInFixtureConstructorTest</label>
+        <link refid="class_non_fatal_failure_in_fixture_constructor_test"/>
+        <childnode refid="1648" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1650">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1649">
+        <label>NonFatalFailureInFixtureConstructorTest</label>
+        <link refid="class_non_fatal_failure_in_fixture_constructor_test"/>
+        <childnode refid="1650" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_output_test_.cc" line="350" column="1" bodyfile="vendor/googletest/googletest/test/gtest_output_test_.cc" bodystart="350" bodyend="368"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual"><scope>NonFatalFailureInFixtureConstructorTest</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual"><scope>NonFatalFailureInFixtureConstructorTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual"><scope>NonFatalFailureInFixtureConstructorTest</scope><name>HasNonfatalFailure</name></member>
+      <member refid="class_non_fatal_failure_in_fixture_constructor_test_1a87a70e2b18b981c627c43f2af85a9345" prot="protected" virt="non-virtual"><scope>NonFatalFailureInFixtureConstructorTest</scope><name>NonFatalFailureInFixtureConstructorTest</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual"><scope>NonFatalFailureInFixtureConstructorTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual"><scope>NonFatalFailureInFixtureConstructorTest</scope><name>RecordProperty</name></member>
+      <member refid="class_non_fatal_failure_in_fixture_constructor_test_1a7d951f8fbf7b2ac5046be8d8ee7b03d3" prot="protected" virt="virtual"><scope>NonFatalFailureInFixtureConstructorTest</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1_test_1a5ccbac42fee8c5b00b0bfe89b6c49d79" prot="public" virt="non-virtual"><scope>NonFatalFailureInFixtureConstructorTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual"><scope>NonFatalFailureInFixtureConstructorTest</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="class_non_fatal_failure_in_fixture_constructor_test_1ab76d79c346d9a378d625fde5739e8ad6" prot="protected" virt="virtual"><scope>NonFatalFailureInFixtureConstructorTest</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_test_1af374706cbaf0ffc460f4fd04e7c150f1" prot="public" virt="non-virtual"><scope>NonFatalFailureInFixtureConstructorTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual"><scope>NonFatalFailureInFixtureConstructorTest</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual"><scope>NonFatalFailureInFixtureConstructorTest</scope><name>Test</name></member>
+      <member refid="class_non_fatal_failure_in_fixture_constructor_test_1a732fa961c4bb68b3390e4a49a8375619" prot="protected" virt="non-virtual"><scope>NonFatalFailureInFixtureConstructorTest</scope><name>~NonFatalFailureInFixtureConstructorTest</name></member>
+      <member refid="classtesting_1_1_test_1a2b0a62f1e667bbe8d8cb18d785bfa991" prot="public" virt="virtual"><scope>NonFatalFailureInFixtureConstructorTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

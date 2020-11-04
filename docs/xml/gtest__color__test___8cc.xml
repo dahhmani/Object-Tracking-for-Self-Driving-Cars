@@ -1,0 +1,535 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="gtest__color__test___8cc" kind="file" language="C++">
+    <compoundname>gtest_color_test_.cc</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes refid="gtest_8h" local="yes">gtest/gtest.h</includes>
+    <includes refid="gtest-internal-inl_8h" local="yes">src/gtest-internal-inl.h</includes>
+    <incdepgraph>
+      <node id="6217">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="6237">
+        <label>gtest/internal/gtest-type-util.h</label>
+        <link refid="gtest-type-util_8h_source"/>
+        <childnode refid="6211" relation="include">
+        </childnode>
+      </node>
+      <node id="6231">
+        <label>iomanip</label>
+      </node>
+      <node id="6207">
+        <label>limits</label>
+      </node>
+      <node id="6253">
+        <label>src/gtest-internal-inl.h</label>
+        <link refid="gtest-internal-inl_8h_source"/>
+        <childnode refid="6254" relation="include">
+        </childnode>
+        <childnode refid="6213" relation="include">
+        </childnode>
+        <childnode refid="6214" relation="include">
+        </childnode>
+        <childnode refid="6215" relation="include">
+        </childnode>
+        <childnode refid="6218" relation="include">
+        </childnode>
+        <childnode refid="6221" relation="include">
+        </childnode>
+        <childnode refid="6209" relation="include">
+        </childnode>
+        <childnode refid="6211" relation="include">
+        </childnode>
+        <childnode refid="6206" relation="include">
+        </childnode>
+        <childnode refid="6255" relation="include">
+        </childnode>
+      </node>
+      <node id="6244">
+        <label>assert.h</label>
+      </node>
+      <node id="6223">
+        <label>gtest/internal/gtest-port-arch.h</label>
+        <link refid="gtest-port-arch_8h_source"/>
+      </node>
+      <node id="6242">
+        <label>iterator</label>
+      </node>
+      <node id="6230">
+        <label>float.h</label>
+      </node>
+      <node id="6248">
+        <label>gtest/gtest_prod.h</label>
+        <link refid="gtest__prod_8h_source"/>
+      </node>
+      <node id="6214">
+        <label>stdlib.h</label>
+      </node>
+      <node id="6235">
+        <label>gtest/internal/gtest-string.h</label>
+        <link refid="gtest-string_8h_source"/>
+        <childnode refid="6215" relation="include">
+        </childnode>
+        <childnode refid="6221" relation="include">
+        </childnode>
+        <childnode refid="6211" relation="include">
+        </childnode>
+      </node>
+      <node id="6249">
+        <label>gtest/gtest-test-part.h</label>
+        <link refid="gtest-test-part_8h_source"/>
+        <childnode refid="6250" relation="include">
+        </childnode>
+        <childnode refid="6209" relation="include">
+        </childnode>
+        <childnode refid="6210" relation="include">
+        </childnode>
+        <childnode refid="6235" relation="include">
+        </childnode>
+      </node>
+      <node id="6254">
+        <label>errno.h</label>
+      </node>
+      <node id="6221">
+        <label>string</label>
+      </node>
+      <node id="6232">
+        <label>map</label>
+      </node>
+      <node id="6204">
+        <label>vendor/googletest/googletest/test/gtest_color_test_.cc</label>
+        <link refid="gtest__color__test___8cc"/>
+        <childnode refid="6205" relation="include">
+        </childnode>
+        <childnode refid="6206" relation="include">
+        </childnode>
+        <childnode refid="6253" relation="include">
+        </childnode>
+      </node>
+      <node id="6247">
+        <label>gtest/internal/gtest-param-util-generated.h</label>
+        <link refid="gtest-param-util-generated_8h_source"/>
+        <childnode refid="6241" relation="include">
+        </childnode>
+        <childnode refid="6211" relation="include">
+        </childnode>
+      </node>
+      <node id="6213">
+        <label>stddef.h</label>
+      </node>
+      <node id="6252">
+        <label>gtest/gtest_pred_impl.h</label>
+        <link refid="gtest__pred__impl_8h_source"/>
+      </node>
+      <node id="6208">
+        <label>ostream</label>
+      </node>
+      <node id="6224">
+        <label>gtest/internal/custom/gtest-port.h</label>
+        <link refid="custom_2gtest-port_8h_source"/>
+      </node>
+      <node id="6238">
+        <label>gtest/gtest-death-test.h</label>
+        <link refid="gtest-death-test_8h_source"/>
+        <childnode refid="6239" relation="include">
+        </childnode>
+      </node>
+      <node id="6216">
+        <label>sys/types.h</label>
+      </node>
+      <node id="6215">
+        <label>string.h</label>
+      </node>
+      <node id="6228">
+        <label>typeinfo</label>
+      </node>
+      <node id="6225">
+        <label>unistd.h</label>
+      </node>
+      <node id="6209">
+        <label>vector</label>
+      </node>
+      <node id="6246">
+        <label>gtest/internal/custom/gtest-printers.h</label>
+        <link refid="internal_2custom_2gtest-printers_8h_source"/>
+      </node>
+      <node id="6234">
+        <label>gtest/gtest-message.h</label>
+        <link refid="gtest-message_8h_source"/>
+        <childnode refid="6207" relation="include">
+        </childnode>
+        <childnode refid="6211" relation="include">
+        </childnode>
+      </node>
+      <node id="6222">
+        <label>utility</label>
+      </node>
+      <node id="6220">
+        <label>sstream</label>
+      </node>
+      <node id="6243">
+        <label>gtest/internal/gtest-linked_ptr.h</label>
+        <link refid="gtest-linked__ptr_8h_source"/>
+        <childnode refid="6214" relation="include">
+        </childnode>
+        <childnode refid="6244" relation="include">
+        </childnode>
+        <childnode refid="6211" relation="include">
+        </childnode>
+      </node>
+      <node id="6250">
+        <label>iosfwd</label>
+      </node>
+      <node id="6236">
+        <label>gtest/internal/gtest-filepath.h</label>
+        <link refid="gtest-filepath_8h_source"/>
+        <childnode refid="6235" relation="include">
+        </childnode>
+      </node>
+      <node id="6219">
+        <label>iostream</label>
+      </node>
+      <node id="6229">
+        <label>gtest/internal/gtest-tuple.h</label>
+        <link refid="gtest-tuple_8h_source"/>
+        <childnode refid="6222" relation="include">
+        </childnode>
+      </node>
+      <node id="6206">
+        <label>gtest/gtest.h</label>
+        <link refid="gtest_8h_source"/>
+        <childnode refid="6207" relation="include">
+        </childnode>
+        <childnode refid="6208" relation="include">
+        </childnode>
+        <childnode refid="6209" relation="include">
+        </childnode>
+        <childnode refid="6210" relation="include">
+        </childnode>
+        <childnode refid="6235" relation="include">
+        </childnode>
+        <childnode refid="6238" relation="include">
+        </childnode>
+        <childnode refid="6234" relation="include">
+        </childnode>
+        <childnode refid="6240" relation="include">
+        </childnode>
+        <childnode refid="6245" relation="include">
+        </childnode>
+        <childnode refid="6248" relation="include">
+        </childnode>
+        <childnode refid="6249" relation="include">
+        </childnode>
+        <childnode refid="6251" relation="include">
+        </childnode>
+        <childnode refid="6252" relation="include">
+        </childnode>
+      </node>
+      <node id="6226">
+        <label>strings.h</label>
+      </node>
+      <node id="6212">
+        <label>ctype.h</label>
+      </node>
+      <node id="6251">
+        <label>gtest/gtest-typed-test.h</label>
+        <link refid="gtest-typed-test_8h_source"/>
+        <childnode refid="6211" relation="include">
+        </childnode>
+        <childnode refid="6237" relation="include">
+        </childnode>
+      </node>
+      <node id="6211">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="gtest-port_8h_source"/>
+        <childnode refid="6212" relation="include">
+        </childnode>
+        <childnode refid="6213" relation="include">
+        </childnode>
+        <childnode refid="6214" relation="include">
+        </childnode>
+        <childnode refid="6205" relation="include">
+        </childnode>
+        <childnode refid="6215" relation="include">
+        </childnode>
+        <childnode refid="6216" relation="include">
+        </childnode>
+        <childnode refid="6217" relation="include">
+        </childnode>
+        <childnode refid="6218" relation="include">
+        </childnode>
+        <childnode refid="6219" relation="include">
+        </childnode>
+        <childnode refid="6220" relation="include">
+        </childnode>
+        <childnode refid="6221" relation="include">
+        </childnode>
+        <childnode refid="6222" relation="include">
+        </childnode>
+        <childnode refid="6209" relation="include">
+        </childnode>
+        <childnode refid="6223" relation="include">
+        </childnode>
+        <childnode refid="6224" relation="include">
+        </childnode>
+        <childnode refid="6225" relation="include">
+        </childnode>
+        <childnode refid="6226" relation="include">
+        </childnode>
+        <childnode refid="6227" relation="include">
+        </childnode>
+        <childnode refid="6228" relation="include">
+        </childnode>
+        <childnode refid="6229" relation="include">
+        </childnode>
+      </node>
+      <node id="6210">
+        <label>gtest/internal/gtest-internal.h</label>
+        <link refid="gtest-internal_8h_source"/>
+        <childnode refid="6211" relation="include">
+        </childnode>
+        <childnode refid="6212" relation="include">
+        </childnode>
+        <childnode refid="6230" relation="include">
+        </childnode>
+        <childnode refid="6215" relation="include">
+        </childnode>
+        <childnode refid="6231" relation="include">
+        </childnode>
+        <childnode refid="6207" relation="include">
+        </childnode>
+        <childnode refid="6232" relation="include">
+        </childnode>
+        <childnode refid="6233" relation="include">
+        </childnode>
+        <childnode refid="6221" relation="include">
+        </childnode>
+        <childnode refid="6209" relation="include">
+        </childnode>
+        <childnode refid="6234" relation="include">
+        </childnode>
+        <childnode refid="6235" relation="include">
+        </childnode>
+        <childnode refid="6236" relation="include">
+        </childnode>
+        <childnode refid="6237" relation="include">
+        </childnode>
+      </node>
+      <node id="6241">
+        <label>gtest/internal/gtest-param-util.h</label>
+        <link refid="gtest-param-util_8h_source"/>
+        <childnode refid="6212" relation="include">
+        </childnode>
+        <childnode refid="6242" relation="include">
+        </childnode>
+        <childnode refid="6233" relation="include">
+        </childnode>
+        <childnode refid="6222" relation="include">
+        </childnode>
+        <childnode refid="6209" relation="include">
+        </childnode>
+        <childnode refid="6210" relation="include">
+        </childnode>
+        <childnode refid="6243" relation="include">
+        </childnode>
+        <childnode refid="6211" relation="include">
+        </childnode>
+        <childnode refid="6245" relation="include">
+        </childnode>
+      </node>
+      <node id="6233">
+        <label>set</label>
+      </node>
+      <node id="6240">
+        <label>gtest/gtest-param-test.h</label>
+        <link refid="gtest-param-test_8h_source"/>
+        <childnode refid="6211" relation="include">
+        </childnode>
+        <childnode refid="6222" relation="include">
+        </childnode>
+        <childnode refid="6210" relation="include">
+        </childnode>
+        <childnode refid="6241" relation="include">
+        </childnode>
+        <childnode refid="6247" relation="include">
+        </childnode>
+      </node>
+      <node id="6218">
+        <label>algorithm</label>
+      </node>
+      <node id="6227">
+        <label>regex.h</label>
+      </node>
+      <node id="6255">
+        <label>gtest/gtest-spi.h</label>
+        <link refid="gtest-spi_8h_source"/>
+        <childnode refid="6206" relation="include">
+        </childnode>
+      </node>
+      <node id="6205">
+        <label>stdio.h</label>
+      </node>
+      <node id="6239">
+        <label>gtest/internal/gtest-death-test-internal.h</label>
+        <link refid="gtest-death-test-internal_8h_source"/>
+        <childnode refid="6210" relation="include">
+        </childnode>
+        <childnode refid="6205" relation="include">
+        </childnode>
+      </node>
+      <node id="6245">
+        <label>gtest/gtest-printers.h</label>
+        <link refid="gtest-printers_8h_source"/>
+        <childnode refid="6208" relation="include">
+        </childnode>
+        <childnode refid="6220" relation="include">
+        </childnode>
+        <childnode refid="6221" relation="include">
+        </childnode>
+        <childnode refid="6222" relation="include">
+        </childnode>
+        <childnode refid="6209" relation="include">
+        </childnode>
+        <childnode refid="6211" relation="include">
+        </childnode>
+        <childnode refid="6210" relation="include">
+        </childnode>
+        <childnode refid="6246" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="gtest__color__test___8cc_1a83bd232fd1077579fada92c31bb7469f" prot="public" static="no">
+        <name>GTEST_IMPLEMENTATION_</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_color_test_.cc" line="45" column="9" bodyfile="vendor/googletest/googletest/test/gtest_color_test_.cc" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gtest__color__test___8cc_1a78903f80b07f944e7aa466ebdff1d644" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(GTestColorTest, Dummy)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>GTestColorTest</type>
+        </param>
+        <param>
+          <type>Dummy</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_color_test_.cc" line="55" column="1" bodyfile="vendor/googletest/googletest/test/gtest_color_test_.cc" bodystart="55" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__color__test___8cc_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_color_test_.cc" line="58" column="1" bodyfile="vendor/googletest/googletest/test/gtest_color_test_.cc" bodystart="58" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2008,<sp/>Google<sp/>Inc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>met:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Google<sp/>Inc.<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author:<sp/>wan@google.com<sp/>(Zhanyong<sp/>Wan)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>helper<sp/>program<sp/>for<sp/>testing<sp/>how<sp/>Google<sp/>Test<sp/>determines<sp/>whether<sp/>to<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>colors<sp/>in<sp/>the<sp/>output.<sp/><sp/>It<sp/>prints<sp/>&quot;YES&quot;<sp/>and<sp/>returns<sp/>1<sp/>if<sp/>Google<sp/>Test</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>decides<sp/>to<sp/>use<sp/>colors,<sp/>and<sp/>prints<sp/>&quot;NO&quot;<sp/>and<sp/>returns<sp/>0<sp/>otherwise.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gtest/gtest.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Indicates<sp/>that<sp/>this<sp/>translation<sp/>unit<sp/>is<sp/>part<sp/>of<sp/>Google<sp/>Test&apos;s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>implementation.<sp/><sp/>It<sp/>must<sp/>come<sp/>before<sp/>gtest-internal-inl.h<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>included,<sp/>or<sp/>there<sp/>will<sp/>be<sp/>a<sp/>compiler<sp/>error.<sp/><sp/>This<sp/>trick<sp/>is<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>prevent<sp/>a<sp/>user<sp/>from<sp/>accidentally<sp/>including<sp/>gtest-internal-inl.h<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>his<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_IMPLEMENTATION_<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;src/gtest-internal-inl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>GTEST_IMPLEMENTATION_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>testing::internal::ShouldUseColor;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>purpose<sp/>of<sp/>this<sp/>is<sp/>to<sp/>ensure<sp/>that<sp/>the<sp/>UnitTest<sp/>singleton<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/>created<sp/>before<sp/>main()<sp/>is<sp/>entered,<sp/>and<sp/>thus<sp/>that<sp/>ShouldUseColor()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/>works<sp/>the<sp/>same<sp/>way<sp/>as<sp/>in<sp/>a<sp/>real<sp/>Google-Test-based<sp/>test.<sp/><sp/>We<sp/>don&apos;t<sp/>actual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>run<sp/>the<sp/>TEST<sp/>itself.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">TEST(GTestColorTest,<sp/>Dummy)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>testing::InitGoogleTest(&amp;argc,<sp/>argv);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ShouldUseColor(</highlight><highlight class="keyword">true</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Google<sp/>Test<sp/>decides<sp/>to<sp/>use<sp/>colors<sp/>in<sp/>the<sp/>output<sp/>(assuming<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>goes<sp/>to<sp/>a<sp/>TTY).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;YES\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Google<sp/>Test<sp/>decides<sp/>not<sp/>to<sp/>use<sp/>colors<sp/>in<sp/>the<sp/>output.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;NO\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googletest/test/gtest_color_test_.cc"/>
+  </compounddef>
+</doxygen>

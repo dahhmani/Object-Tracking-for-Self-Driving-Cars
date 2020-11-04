@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacefuse__gtest__files" kind="namespace" language="Python">
+    <compoundname>fuse_gtest_files</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="fuse__gtest__files_8py_1a33bf00338164b922cf67f159e3cded19" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string fuse_gtest_files.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;wan@google.com (Zhanyong Wan)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="59" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gtest__files_8py_1a68085bdb2912baa7e71d2b3eb37b05c9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>fuse_gtest_files.DEFAULT_GTEST_ROOT_DIR</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_GTEST_ROOT_DIR</name>
+        <initializer>=  os.path.join(os.path.dirname(__file__), &apos;..&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="71" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gtest__files_8py_1ad7abe9bfa06bb1c5411e8b4a7a686e5b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>fuse_gtest_files.INCLUDE_GTEST_FILE_REGEX</definition>
+        <argsstring></argsstring>
+        <name>INCLUDE_GTEST_FILE_REGEX</name>
+        <initializer>=  re.compile(r&apos;^\s*#\s*include\s*&quot;(gtest/.+)&quot;&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="74" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gtest__files_8py_1aec4e054d0ab27276d6150468bb98a8a4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>fuse_gtest_files.INCLUDE_SRC_FILE_REGEX</definition>
+        <argsstring></argsstring>
+        <name>INCLUDE_SRC_FILE_REGEX</name>
+        <initializer>=  re.compile(r&apos;^\s*#\s*include\s*&quot;(src/.+)&quot;&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="77" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gtest__files_8py_1ad897bce28100f2b97216929013519181" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string fuse_gtest_files.GTEST_H_SEED</definition>
+        <argsstring></argsstring>
+        <name>GTEST_H_SEED</name>
+        <initializer>=  &apos;include/gtest/gtest.h&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="80" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gtest__files_8py_1a891d03ce9cfe3577cb4c193f9544f17f" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string fuse_gtest_files.GTEST_SPI_H_SEED</definition>
+        <argsstring></argsstring>
+        <name>GTEST_SPI_H_SEED</name>
+        <initializer>=  &apos;include/gtest/gtest-spi.h&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="81" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gtest__files_8py_1a162a6031d0d5743a37a4f79227d5e916" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string fuse_gtest_files.GTEST_ALL_CC_SEED</definition>
+        <argsstring></argsstring>
+        <name>GTEST_ALL_CC_SEED</name>
+        <initializer>=  &apos;src/gtest-all.cc&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="82" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gtest__files_8py_1a16437f87d0f7a9800885a9082a0b773e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string fuse_gtest_files.GTEST_H_OUTPUT</definition>
+        <argsstring></argsstring>
+        <name>GTEST_H_OUTPUT</name>
+        <initializer>=  &apos;gtest/gtest.h&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="85" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="fuse__gtest__files_8py_1aa66c14474599109c46ec24eaa0ad4217" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string fuse_gtest_files.GTEST_ALL_CC_OUTPUT</definition>
+        <argsstring></argsstring>
+        <name>GTEST_ALL_CC_OUTPUT</name>
+        <initializer>=  &apos;gtest/gtest-all.cc&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="86" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="fuse__gtest__files_8py_1a333eb5237899fe2f80b0c624ddba363d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gtest_files.VerifyFileExists</definition>
+        <argsstring>(directory, relative_path)</argsstring>
+        <name>VerifyFileExists</name>
+        <param>
+          <type>directory</type>
+          <defname>directory</defname>
+        </param>
+        <param>
+          <type>relative_path</type>
+          <defname>relative_path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Verifies that the given file exists; aborts on failure.
+
+relative_path is the file path relative to the given directory.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="89" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="89" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="fuse__gtest__files_8py_1aa53690cd3c4ff01cfeea470f363f1dec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gtest_files.ValidateGTestRootDir</definition>
+        <argsstring>(gtest_root)</argsstring>
+        <name>ValidateGTestRootDir</name>
+        <param>
+          <type>gtest_root</type>
+          <defname>gtest_root</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Makes sure gtest_root points to a valid gtest root directory.
+
+The function aborts the program on failure.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="103" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="103" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="fuse__gtest__files_8py_1ac3cc183b2fc035aff5b7bc07979b486d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gtest_files.VerifyOutputFile</definition>
+        <argsstring>(output_dir, relative_path)</argsstring>
+        <name>VerifyOutputFile</name>
+        <param>
+          <type>output_dir</type>
+          <defname>output_dir</defname>
+        </param>
+        <param>
+          <type>relative_path</type>
+          <defname>relative_path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Verifies that the given output file path is valid.
+
+relative_path is relative to the output_dir directory.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="113" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="113" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="fuse__gtest__files_8py_1a9f584226b1f996ffff820e0751dbd458" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gtest_files.ValidateOutputDir</definition>
+        <argsstring>(output_dir)</argsstring>
+        <name>ValidateOutputDir</name>
+        <param>
+          <type>output_dir</type>
+          <defname>output_dir</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Makes sure output_dir points to a valid output directory.
+
+The function aborts the program on failure.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="139" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="139" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="fuse__gtest__files_8py_1a95685ab66129ced9d7b3db78e6001c8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gtest_files.FuseGTestH</definition>
+        <argsstring>(gtest_root, output_dir)</argsstring>
+        <name>FuseGTestH</name>
+        <param>
+          <type>gtest_root</type>
+          <defname>gtest_root</defname>
+        </param>
+        <param>
+          <type>output_dir</type>
+          <defname>output_dir</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Scans folder gtest_root to generate gtest/gtest.h in output_dir.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="149" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="149" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="fuse__gtest__files_8py_1ae0209897b164dbb8702169630f4bbf61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gtest_files.FuseGTestAllCcToFile</definition>
+        <argsstring>(gtest_root, output_file)</argsstring>
+        <name>FuseGTestAllCcToFile</name>
+        <param>
+          <type>gtest_root</type>
+          <defname>gtest_root</defname>
+        </param>
+        <param>
+          <type>output_file</type>
+          <defname>output_file</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Scans folder gtest_root to generate gtest/gtest-all.cc in output_file.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="178" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="178" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="fuse__gtest__files_8py_1a9bcdfab09f297e2b2097d9cdde5ee092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gtest_files.FuseGTestAllCc</definition>
+        <argsstring>(gtest_root, output_dir)</argsstring>
+        <name>FuseGTestAllCc</name>
+        <param>
+          <type>gtest_root</type>
+          <defname>gtest_root</defname>
+        </param>
+        <param>
+          <type>output_dir</type>
+          <defname>output_dir</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Scans folder gtest_root to generate gtest/gtest-all.cc in output_dir.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="221" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="221" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="fuse__gtest__files_8py_1a4e7007ceec3a7a25617eac3342563ed6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gtest_files.FuseGTest</definition>
+        <argsstring>(gtest_root, output_dir)</argsstring>
+        <name>FuseGTest</name>
+        <param>
+          <type>gtest_root</type>
+          <defname>gtest_root</defname>
+        </param>
+        <param>
+          <type>output_dir</type>
+          <defname>output_dir</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Fuses gtest.h and gtest-all.cc.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="229" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="229" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="fuse__gtest__files_8py_1a5eaf924c10970f574e1b0459cbbda75a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def fuse_gtest_files.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="239" column="1" bodyfile="vendor/googletest/googletest/scripts/fuse_gtest_files.py" bodystart="239" bodyend="251"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/scripts/fuse_gtest_files.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

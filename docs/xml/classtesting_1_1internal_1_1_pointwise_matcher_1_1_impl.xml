@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::PointwiseMatcher::Impl</compoundname>
+    <basecompoundref refid="classtesting_1_1_matcher_interface" prot="public" virt="non-virtual">testing::MatcherInterface&lt; LhsContainer &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename LhsContainer</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a5240abc710bb0a5bedfd180bf6701fae" prot="public" static="no">
+        <type><ref refid="classtesting_1_1internal_1_1_stl_container_view" kindref="compound">internal::StlContainerView</ref>&lt; GTEST_REMOVE_REFERENCE_AND_CONST_(LhsContainer)&gt;</type>
+        <definition>typedef internal::StlContainerView&lt; GTEST_REMOVE_REFERENCE_AND_CONST_(LhsContainer)&gt; testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;::LhsView</definition>
+        <argsstring></argsstring>
+        <name>LhsView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2718" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2718" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a23420b57b4cd6d83cec8afda746c27f2" prot="public" static="no">
+        <type>LhsView::type</type>
+        <definition>typedef LhsView::type testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;::LhsStlContainer</definition>
+        <argsstring></argsstring>
+        <name>LhsStlContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2719" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2719" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a9df3eb0866f76d59dbdd35fafeb5590c" prot="public" static="no">
+        <type>LhsView::const_reference</type>
+        <definition>typedef LhsView::const_reference testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;::LhsStlContainerReference</definition>
+        <argsstring></argsstring>
+        <name>LhsStlContainerReference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2720" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2720" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a453769e721f4212e399f76c980b4b65c" prot="public" static="no">
+        <type>LhsStlContainer::value_type</type>
+        <definition>typedef LhsStlContainer::value_type testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;::LhsValue</definition>
+        <argsstring></argsstring>
+        <name>LhsValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2721" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2721" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1aba9d983881cbfbb37724b8b40e863898" prot="public" static="no">
+        <type>::testing::tuple&lt; const LhsValue &amp;, const RhsValue &amp; &gt;</type>
+        <definition>typedef ::testing::tuple&lt;const LhsValue&amp;, const RhsValue&amp;&gt; testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;::InnerMatcherArg</definition>
+        <argsstring></argsstring>
+        <name>InnerMatcherArg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2726" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2726" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1ac94a851d56fe3f4f900da94cdc08c973" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; InnerMatcherArg &gt;</type>
+        <definition>const Matcher&lt;InnerMatcherArg&gt; testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;::mono_tuple_matcher_</definition>
+        <argsstring></argsstring>
+        <name>mono_tuple_matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2785" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2785" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a7f00c6c50d20c8c274428106b6c8e9ab" prot="private" static="no" mutable="no">
+        <type>const RhsStlContainer</type>
+        <definition>const RhsStlContainer testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;::rhs_</definition>
+        <argsstring></argsstring>
+        <name>rhs_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2786" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2786" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1aaf6841b254ef78395919dfc5705dd152" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;::Impl</definition>
+        <argsstring>(const TupleMatcher &amp;tuple_matcher, const RhsStlContainer &amp;rhs)</argsstring>
+        <name>Impl</name>
+        <param>
+          <type>const TupleMatcher &amp;</type>
+          <declname>tuple_matcher</declname>
+        </param>
+        <param>
+          <type>const RhsStlContainer &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2728" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2728" bodyend="2731"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a0c699f62bbd02595471b793baa9cc75e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;::DescribeTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <reimplements refid="classtesting_1_1_matcher_describer_interface_1ad9f861588bd969b6e3e717f13bb94e7b">DescribeTo</reimplements>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2733" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2733" bodyend="2739"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a26d3a829149e4c497aaced42aad7b247" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;::DescribeNegationTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <reimplements refid="classtesting_1_1_matcher_describer_interface_1a2071afbc47097c4d1c0064275af34db0">DescribeNegationTo</reimplements>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2740" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2740" bodyend="2747"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a4253946989f3743c4dd983909f2d062b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;::MatchAndExplain</definition>
+        <argsstring>(LhsContainer lhs, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplain</name>
+        <reimplements refid="classtesting_1_1_matcher_interface_1a296b43607cd99d60365f0e6a762777cf">MatchAndExplain</reimplements>
+        <param>
+          <type>LhsContainer</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2749" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2749" bodyend="2782"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1adca4de21c6b463e552b347b28dce22c4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(Impl)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl" kindref="compound">Impl</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2788" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1153">
+        <label>testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl"/>
+        <childnode refid="1154" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1155">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="1154">
+        <label>testing::MatcherInterface&lt; LhsContainer &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="1155" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1156">
+        <label>testing::internal::PointwiseMatcher&lt; TupleMatcher, RhsContainer &gt;::Impl&lt; LhsContainer &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl"/>
+        <childnode refid="1157" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1158">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="1157">
+        <label>testing::MatcherInterface&lt; LhsContainer &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="1158" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2715" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2715" bodyend="2789"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a26d3a829149e4c497aaced42aad7b247" prot="public" virt="virtual"><scope>testing::internal::PointwiseMatcher::Impl</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a0c699f62bbd02595471b793baa9cc75e" prot="public" virt="virtual"><scope>testing::internal::PointwiseMatcher::Impl</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1adca4de21c6b463e552b347b28dce22c4" prot="private" virt="non-virtual"><scope>testing::internal::PointwiseMatcher::Impl</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1aaf6841b254ef78395919dfc5705dd152" prot="public" virt="non-virtual"><scope>testing::internal::PointwiseMatcher::Impl</scope><name>Impl</name></member>
+      <member refid="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1aba9d983881cbfbb37724b8b40e863898" prot="public" virt="non-virtual"><scope>testing::internal::PointwiseMatcher::Impl</scope><name>InnerMatcherArg</name></member>
+      <member refid="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a23420b57b4cd6d83cec8afda746c27f2" prot="public" virt="non-virtual"><scope>testing::internal::PointwiseMatcher::Impl</scope><name>LhsStlContainer</name></member>
+      <member refid="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a9df3eb0866f76d59dbdd35fafeb5590c" prot="public" virt="non-virtual"><scope>testing::internal::PointwiseMatcher::Impl</scope><name>LhsStlContainerReference</name></member>
+      <member refid="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a453769e721f4212e399f76c980b4b65c" prot="public" virt="non-virtual"><scope>testing::internal::PointwiseMatcher::Impl</scope><name>LhsValue</name></member>
+      <member refid="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a5240abc710bb0a5bedfd180bf6701fae" prot="public" virt="non-virtual"><scope>testing::internal::PointwiseMatcher::Impl</scope><name>LhsView</name></member>
+      <member refid="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a4253946989f3743c4dd983909f2d062b" prot="public" virt="virtual"><scope>testing::internal::PointwiseMatcher::Impl</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1ac94a851d56fe3f4f900da94cdc08c973" prot="private" virt="non-virtual"><scope>testing::internal::PointwiseMatcher::Impl</scope><name>mono_tuple_matcher_</name></member>
+      <member refid="classtesting_1_1internal_1_1_pointwise_matcher_1_1_impl_1a7f00c6c50d20c8c274428106b6c8e9ab" prot="private" virt="non-virtual"><scope>testing::internal::PointwiseMatcher::Impl</scope><name>rhs_</name></member>
+      <member refid="classtesting_1_1_matcher_describer_interface_1ae2236a56ad2cc35cad10efc1208854f4" prot="public" virt="virtual"><scope>testing::internal::PointwiseMatcher::Impl</scope><name>~MatcherDescriberInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

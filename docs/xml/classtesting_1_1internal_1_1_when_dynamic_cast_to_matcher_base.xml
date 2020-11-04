@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::WhenDynamicCastToMatcherBase</compoundname>
+    <derivedcompoundref refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher" prot="public" virt="non-virtual">testing::internal::WhenDynamicCastToMatcher&lt; To &gt;</derivedcompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>To</declname>
+        <defname>To</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a40d697407c960bee8fe3b125f5ac8730" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; <ref refid="classtesting_1_1internal_1_1_to" kindref="compound">To</ref> &gt;</type>
+        <definition>const Matcher&lt;To&gt; testing::internal::WhenDynamicCastToMatcherBase&lt; To &gt;::matcher_</definition>
+        <argsstring></argsstring>
+        <name>matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2124" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a7da2a4c7c43d5e18db0a3233a601c8ab" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::WhenDynamicCastToMatcherBase&lt; To &gt;::WhenDynamicCastToMatcherBase</definition>
+        <argsstring>(const Matcher&lt; To &gt; &amp;matcher)</argsstring>
+        <name>WhenDynamicCastToMatcherBase</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; <ref refid="classtesting_1_1internal_1_1_to" kindref="compound">To</ref> &gt; &amp;</type>
+          <declname>matcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2110" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2110" bodyend="2111"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a6541f9bbcdc21e41521654c603cd2626" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::WhenDynamicCastToMatcherBase&lt; To &gt;::DescribeTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2113" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2113" bodyend="2116"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a0221de18d3b1945f8bc27fb349116564" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::WhenDynamicCastToMatcherBase&lt; To &gt;::DescribeNegationTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2118" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2118" bodyend="2121"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a5950142a073ce7a1931848a958c88962" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string testing::internal::WhenDynamicCastToMatcherBase&lt; To &gt;::GetToName</definition>
+        <argsstring>()</argsstring>
+        <name>GetToName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2126" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2126" bodyend="2132"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1ab3e9a533b6904da05dd7b96703689782" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::internal::WhenDynamicCastToMatcherBase&lt; To &gt;::GetCastTypeDescription</definition>
+        <argsstring>(::std::ostream *os)</argsstring>
+        <name>GetCastTypeDescription</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2135" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2135" bodyend="2137"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a49ba9167d6bb9e70abda113217018627" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::WhenDynamicCastToMatcherBase&lt; To &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(WhenDynamicCastToMatcherBase)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base" kindref="compound">WhenDynamicCastToMatcherBase</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2139" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2504">
+        <label>testing::internal::WhenDynamicCastToMatcher&lt; To &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher"/>
+        <childnode refid="2503" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2503">
+        <label>testing::internal::WhenDynamicCastToMatcherBase&lt; To &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2506">
+        <label>testing::Matcher&lt; To &gt;</label>
+        <link refid="classtesting_1_1_matcher"/>
+        <childnode refid="2507" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2507">
+        <label>testing::internal::MatcherBase&lt; To &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_matcher_base"/>
+      </node>
+      <node id="2505">
+        <label>testing::internal::WhenDynamicCastToMatcherBase&lt; To &gt;</label>
+        <link refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base"/>
+        <childnode refid="2506" relation="usage">
+          <edgelabel>matcher_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2108" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2108" bodyend="2140"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a0221de18d3b1945f8bc27fb349116564" prot="public" virt="non-virtual"><scope>testing::internal::WhenDynamicCastToMatcherBase</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a6541f9bbcdc21e41521654c603cd2626" prot="public" virt="non-virtual"><scope>testing::internal::WhenDynamicCastToMatcherBase</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1ab3e9a533b6904da05dd7b96703689782" prot="private" virt="non-virtual"><scope>testing::internal::WhenDynamicCastToMatcherBase</scope><name>GetCastTypeDescription</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a5950142a073ce7a1931848a958c88962" prot="protected" virt="non-virtual"><scope>testing::internal::WhenDynamicCastToMatcherBase</scope><name>GetToName</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a49ba9167d6bb9e70abda113217018627" prot="private" virt="non-virtual"><scope>testing::internal::WhenDynamicCastToMatcherBase</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a40d697407c960bee8fe3b125f5ac8730" prot="protected" virt="non-virtual"><scope>testing::internal::WhenDynamicCastToMatcherBase</scope><name>matcher_</name></member>
+      <member refid="classtesting_1_1internal_1_1_when_dynamic_cast_to_matcher_base_1a7da2a4c7c43d5e18db0a3233a601c8ab" prot="public" virt="non-virtual"><scope>testing::internal::WhenDynamicCastToMatcherBase</scope><name>WhenDynamicCastToMatcherBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_test_part_result" kind="class" language="C++" prot="public">
+    <compoundname>testing::TestPartResult</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classtesting_1_1_test_part_result_1a65ae656b33fdfdfffaf34858778a52d5" prot="public" static="no">
+        <name>Type</name>
+        <enumvalue id="classtesting_1_1_test_part_result_1a65ae656b33fdfdfffaf34858778a52d5a8fa3d06b2baad8bf7c1f17dea314983e" prot="public">
+          <name>kSuccess</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtesting_1_1_test_part_result_1a65ae656b33fdfdfffaf34858778a52d5a00a755614f8ec3f78b2e951f8c91cd92" prot="public">
+          <name>kNonFatalFailure</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtesting_1_1_test_part_result_1a65ae656b33fdfdfffaf34858778a52d5ae1bf0b610b697a43fee97628cdab4ea1" prot="public">
+          <name>kFatalFailure</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="51" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="51" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1_test_part_result_1a4ee7ac490fe4f10e222fa08c3fa25437" prot="private" static="no" mutable="no">
+        <type>Type</type>
+        <definition>Type testing::TestPartResult::type_</definition>
+        <argsstring></argsstring>
+        <name>type_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="103" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_part_result_1abf5ab5fc171dc6248579a44353385df6" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string testing::TestPartResult::file_name_</definition>
+        <argsstring></argsstring>
+        <name>file_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="111" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_part_result_1a7a988009362bcdc28d3b801fc6059b5e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::TestPartResult::line_number_</definition>
+        <argsstring></argsstring>
+        <name>line_number_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="114" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_part_result_1a6b9bce29122b56a50295710b7f6e345c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string testing::TestPartResult::summary_</definition>
+        <argsstring></argsstring>
+        <name>summary_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="115" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1_test_part_result_1a9adea12d4a4fb4ebf1cd00d22eac9aff" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string testing::TestPartResult::message_</definition>
+        <argsstring></argsstring>
+        <name>message_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="116" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_1a6409eb519c1cd514aab2426c8f40737f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::TestPartResult::TestPartResult</definition>
+        <argsstring>(Type a_type, const char *a_file_name, int a_line_number, const char *a_message)</argsstring>
+        <name>TestPartResult</name>
+        <param>
+          <type>Type</type>
+          <declname>a_type</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>a_file_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a_line_number</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>a_message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="60" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="60" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_1aab92b225e8a472e78bd3889ca6df0d2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Type</type>
+        <definition>Type testing::TestPartResult::type</definition>
+        <argsstring>() const</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="72" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_1a0be40512f50a0086c4d3dc43938978aa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::TestPartResult::file_name</definition>
+        <argsstring>() const</argsstring>
+        <name>file_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="76" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_1ad4c5da5f13245ac18cf256d0d9f3eda9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::TestPartResult::line_number</definition>
+        <argsstring>() const</argsstring>
+        <name>line_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="82" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_1a655ab538e510434ba557ad66c35aa42c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::TestPartResult::summary</definition>
+        <argsstring>() const</argsstring>
+        <name>summary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="85" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_1a5019dc9d753aba5949777270de255d49" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* testing::TestPartResult::message</definition>
+        <argsstring>() const</argsstring>
+        <name>message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="88" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_1ac90edd5ea9cc4bb986a1eb2b5e1d53de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::TestPartResult::passed</definition>
+        <argsstring>() const</argsstring>
+        <name>passed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="91" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_1aa04b377c3e7ed57d39e882df5561ac90" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::TestPartResult::failed</definition>
+        <argsstring>() const</argsstring>
+        <name>failed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="94" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_1a6197c7f6672acc1cfdf580eb1f2183ac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::TestPartResult::nonfatally_failed</definition>
+        <argsstring>() const</argsstring>
+        <name>nonfatally_failed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="97" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_1a77db157eff9531c3c00c2420502f9a89" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testing::TestPartResult::fatally_failed</definition>
+        <argsstring>() const</argsstring>
+        <name>fatally_failed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="100" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="100" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtesting_1_1_test_part_result_1ac4f4c5383ff6178f441f8bf4ce5ebbff" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string testing::TestPartResult::ExtractSummary</definition>
+        <argsstring>(const char *message)</argsstring>
+        <name>ExtractSummary</name>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="107" column="1" bodyfile="vendor/googletest/googletest/src/gtest-test-part.cc" bodystart="51" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/include/gtest/gtest-test-part.h" line="47" column="1" bodyfile="vendor/googletest/googletest/include/gtest/gtest-test-part.h" bodystart="47" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_test_part_result_1ac4f4c5383ff6178f441f8bf4ce5ebbff" prot="private" virt="non-virtual"><scope>testing::TestPartResult</scope><name>ExtractSummary</name></member>
+      <member refid="classtesting_1_1_test_part_result_1aa04b377c3e7ed57d39e882df5561ac90" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>failed</name></member>
+      <member refid="classtesting_1_1_test_part_result_1a77db157eff9531c3c00c2420502f9a89" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>fatally_failed</name></member>
+      <member refid="classtesting_1_1_test_part_result_1a0be40512f50a0086c4d3dc43938978aa" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>file_name</name></member>
+      <member refid="classtesting_1_1_test_part_result_1abf5ab5fc171dc6248579a44353385df6" prot="private" virt="non-virtual"><scope>testing::TestPartResult</scope><name>file_name_</name></member>
+      <member refid="classtesting_1_1_test_part_result_1a65ae656b33fdfdfffaf34858778a52d5ae1bf0b610b697a43fee97628cdab4ea1" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>kFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_part_result_1a65ae656b33fdfdfffaf34858778a52d5a00a755614f8ec3f78b2e951f8c91cd92" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>kNonFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_part_result_1a65ae656b33fdfdfffaf34858778a52d5a8fa3d06b2baad8bf7c1f17dea314983e" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>kSuccess</name></member>
+      <member refid="classtesting_1_1_test_part_result_1ad4c5da5f13245ac18cf256d0d9f3eda9" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>line_number</name></member>
+      <member refid="classtesting_1_1_test_part_result_1a7a988009362bcdc28d3b801fc6059b5e" prot="private" virt="non-virtual"><scope>testing::TestPartResult</scope><name>line_number_</name></member>
+      <member refid="classtesting_1_1_test_part_result_1a5019dc9d753aba5949777270de255d49" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>message</name></member>
+      <member refid="classtesting_1_1_test_part_result_1a9adea12d4a4fb4ebf1cd00d22eac9aff" prot="private" virt="non-virtual"><scope>testing::TestPartResult</scope><name>message_</name></member>
+      <member refid="classtesting_1_1_test_part_result_1a6197c7f6672acc1cfdf580eb1f2183ac" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>nonfatally_failed</name></member>
+      <member refid="classtesting_1_1_test_part_result_1ac90edd5ea9cc4bb986a1eb2b5e1d53de" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>passed</name></member>
+      <member refid="classtesting_1_1_test_part_result_1a655ab538e510434ba557ad66c35aa42c" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>summary</name></member>
+      <member refid="classtesting_1_1_test_part_result_1a6b9bce29122b56a50295710b7f6e345c" prot="private" virt="non-virtual"><scope>testing::TestPartResult</scope><name>summary_</name></member>
+      <member refid="classtesting_1_1_test_part_result_1a6409eb519c1cd514aab2426c8f40737f" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>TestPartResult</name></member>
+      <member refid="classtesting_1_1_test_part_result_1aab92b225e8a472e78bd3889ca6df0d2a" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>type</name></member>
+      <member refid="classtesting_1_1_test_part_result_1a65ae656b33fdfdfffaf34858778a52d5" prot="public" virt="non-virtual"><scope>testing::TestPartResult</scope><name>Type</name></member>
+      <member refid="classtesting_1_1_test_part_result_1a4ee7ac490fe4f10e222fa08c3fa25437" prot="private" virt="non-virtual"><scope>testing::TestPartResult</scope><name>type_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

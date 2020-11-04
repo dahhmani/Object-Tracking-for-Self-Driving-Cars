@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classpump_1_1_token" kind="class" language="Python" prot="public">
+    <compoundname>pump::Token</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpump_1_1_token_1a53e3333a770bc8773224a5af78bca5bb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.Token::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="142" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpump_1_1_token_1abb88c0ece4274cfd974fd01d0468953c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.Token::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="146" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpump_1_1_token_1a5b7ab395a380b775b2bf0a8b0abfda86" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.Token::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="149" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpump_1_1_token_1aeac105b76f6af13c8c64ba0a94e37d90" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.Token::token_type</definition>
+        <argsstring></argsstring>
+        <name>token_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="150" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpump_1_1_token_1a55e6843fd724dc3771861372d5116f48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pump.Token.__init__</definition>
+        <argsstring>(self, start=None, end=None, value=None, token_type=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>start</type>
+          <defname>start</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>end</type>
+          <defname>end</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>token_type</type>
+          <defname>token_type</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="140" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="140" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classpump_1_1_token_1ad0079ae4449d89bc2d5756488099cb33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pump.Token.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="152" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classpump_1_1_token_1abc0f2d2a0bcad953f5fc85a4e52076eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pump.Token.Clone</definition>
+        <argsstring>(self)</argsstring>
+        <name>Clone</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns a copy of self.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="156" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="156" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Represents a token in a Pump source file.</verbatim> </para>    </detaileddescription>
+    <location file="vendor/googletest/googletest/scripts/pump.py" line="137" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="137" bodyend="163"/>
+    <listofallmembers>
+      <member refid="classpump_1_1_token_1a55e6843fd724dc3771861372d5116f48" prot="public" virt="non-virtual"><scope>pump::Token</scope><name>__init__</name></member>
+      <member refid="classpump_1_1_token_1ad0079ae4449d89bc2d5756488099cb33" prot="public" virt="non-virtual"><scope>pump::Token</scope><name>__str__</name></member>
+      <member refid="classpump_1_1_token_1abc0f2d2a0bcad953f5fc85a4e52076eb" prot="public" virt="non-virtual"><scope>pump::Token</scope><name>Clone</name></member>
+      <member refid="classpump_1_1_token_1abb88c0ece4274cfd974fd01d0468953c" prot="public" virt="non-virtual"><scope>pump::Token</scope><name>end</name></member>
+      <member refid="classpump_1_1_token_1a53e3333a770bc8773224a5af78bca5bb" prot="public" virt="non-virtual"><scope>pump::Token</scope><name>start</name></member>
+      <member refid="classpump_1_1_token_1aeac105b76f6af13c8c64ba0a94e37d90" prot="public" virt="non-virtual"><scope>pump::Token</scope><name>token_type</name></member>
+      <member refid="classpump_1_1_token_1a5b7ab395a380b775b2bf0a8b0abfda86" prot="public" virt="non-virtual"><scope>pump::Token</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

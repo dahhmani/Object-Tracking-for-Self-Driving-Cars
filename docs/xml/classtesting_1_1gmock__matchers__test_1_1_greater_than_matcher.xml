@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_greater_than_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::GreaterThanMatcher</compoundname>
+    <basecompoundref refid="classtesting_1_1_matcher_interface" prot="public" virt="non-virtual">testing::MatcherInterface&lt; int &gt;</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1gmock__matchers__test_1_1_greater_than_matcher_1aca7d0e0d9127f5c72310fda7be4d5d6c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::gmock_matchers_test::GreaterThanMatcher::rhs_</definition>
+        <argsstring></argsstring>
+        <name>rhs_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="185" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_greater_than_matcher_1a605c50137599a1dba0701bbd735bf1e8" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::GreaterThanMatcher::GreaterThanMatcher</definition>
+        <argsstring>(int rhs)</argsstring>
+        <name>GreaterThanMatcher</name>
+        <param>
+          <type>int</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="164" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="164" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_greater_than_matcher_1a49ea904382d0f5b80ccf622423ab0d94" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::gmock_matchers_test::GreaterThanMatcher::DescribeTo</definition>
+        <argsstring>(ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="166" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="166" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_greater_than_matcher_1a85a583852003638507d872238bcf7c0f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool testing::gmock_matchers_test::GreaterThanMatcher::MatchAndExplain</definition>
+        <argsstring>(int lhs, MatchResultListener *listener) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>int</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="170" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="170" bodyend="182"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="985">
+        <label>testing::gmock_matchers_test::GreaterThanMatcher</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_greater_than_matcher"/>
+        <childnode refid="986" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="987">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="986">
+        <label>testing::MatcherInterface&lt; int &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="987" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="988">
+        <label>testing::gmock_matchers_test::GreaterThanMatcher</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_greater_than_matcher"/>
+        <childnode refid="989" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="990">
+        <label>testing::MatcherDescriberInterface</label>
+        <link refid="classtesting_1_1_matcher_describer_interface"/>
+      </node>
+      <node id="989">
+        <label>testing::MatcherInterface&lt; int &gt;</label>
+        <link refid="classtesting_1_1_matcher_interface"/>
+        <childnode refid="990" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="162" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="162" bodyend="186"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_matcher_describer_interface_1a2071afbc47097c4d1c0064275af34db0" prot="public" virt="virtual"><scope>testing::gmock_matchers_test::GreaterThanMatcher</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_greater_than_matcher_1a49ea904382d0f5b80ccf622423ab0d94" prot="public" virt="virtual"><scope>testing::gmock_matchers_test::GreaterThanMatcher</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1_matcher_describer_interface_1ad9f861588bd969b6e3e717f13bb94e7b" prot="public" virt="pure-virtual" ambiguityscope="testing::MatcherInterface::"><scope>testing::gmock_matchers_test::GreaterThanMatcher</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_greater_than_matcher_1a605c50137599a1dba0701bbd735bf1e8" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::GreaterThanMatcher</scope><name>GreaterThanMatcher</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_greater_than_matcher_1a85a583852003638507d872238bcf7c0f" prot="public" virt="virtual"><scope>testing::gmock_matchers_test::GreaterThanMatcher</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1_matcher_interface_1a296b43607cd99d60365f0e6a762777cf" prot="public" virt="pure-virtual" ambiguityscope="testing::MatcherInterface::"><scope>testing::gmock_matchers_test::GreaterThanMatcher</scope><name>MatchAndExplain</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_greater_than_matcher_1aca7d0e0d9127f5c72310fda7be4d5d6c" prot="private" virt="non-virtual"><scope>testing::gmock_matchers_test::GreaterThanMatcher</scope><name>rhs_</name></member>
+      <member refid="classtesting_1_1_matcher_describer_interface_1ae2236a56ad2cc35cad10efc1208854f4" prot="public" virt="virtual"><scope>testing::gmock_matchers_test::GreaterThanMatcher</scope><name>~MatcherDescriberInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

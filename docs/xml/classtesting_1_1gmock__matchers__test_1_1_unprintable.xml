@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_unprintable" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::Unprintable</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1gmock__matchers__test_1_1_unprintable_1a4fb141b6b97e7bc6e046f94fce6dc1a8" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char testing::gmock_matchers_test::Unprintable::c_</definition>
+        <argsstring></argsstring>
+        <name>c_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="871" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="871" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1gmock__matchers__test_1_1_unprintable_1a70bca9e23271621ada7f52a4d190677a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::Unprintable::Unprintable</definition>
+        <argsstring>()</argsstring>
+        <name>Unprintable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="868" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="868" bodyend="868"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="866" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="866" bodyend="872"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_unprintable_1a4fb141b6b97e7bc6e046f94fce6dc1a8" prot="private" virt="non-virtual"><scope>testing::gmock_matchers_test::Unprintable</scope><name>c_</name></member>
+      <member refid="classtesting_1_1gmock__matchers__test_1_1_unprintable_1a70bca9e23271621ada7f52a4d190677a" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::Unprintable</scope><name>Unprintable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

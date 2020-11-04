@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1internal_1_1_lossless_arithmetic_convertible_impl" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::LosslessArithmeticConvertibleImpl</compoundname>
+    <basecompoundref refid="structtesting_1_1internal_1_1bool__constant" prot="public" virt="non-virtual">testing::internal::bool_constant&lt; false &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>TypeKind</type>
+        <declname>kFromKind</declname>
+        <defname>kFromKind</defname>
+      </param>
+      <param>
+        <type>typename From</type>
+      </param>
+      <param>
+        <type>TypeKind</type>
+        <declname>kToKind</declname>
+        <defname>kToKind</defname>
+      </param>
+      <param>
+        <type>typename <ref refid="classtesting_1_1internal_1_1_to" kindref="compound">To</ref></type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1312">
+        <label>testing::internal::LosslessArithmeticConvertibleImpl&lt; kFromKind, From, kToKind, To &gt;</label>
+        <link refid="structtesting_1_1internal_1_1_lossless_arithmetic_convertible_impl"/>
+        <childnode refid="1313" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1313">
+        <label>false_type</label>
+        <link refid="structtesting_1_1internal_1_1bool__constant"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1314">
+        <label>testing::internal::LosslessArithmeticConvertibleImpl&lt; kFromKind, From, kToKind, To &gt;</label>
+        <link refid="structtesting_1_1internal_1_1_lossless_arithmetic_convertible_impl"/>
+        <childnode refid="1315" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1315">
+        <label>false_type</label>
+        <link refid="structtesting_1_1internal_1_1bool__constant"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h" line="185" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h" bodystart="185" bodyend="185"/>
+    <listofallmembers>
+      <member refid="structtesting_1_1internal_1_1bool__constant_1aba6d09ecf7eecea6c93480f0d627a167" prot="public" virt="non-virtual"><scope>testing::internal::LosslessArithmeticConvertibleImpl</scope><name>type</name></member>
+      <member refid="structtesting_1_1internal_1_1bool__constant_1a499fba6576296b04d99690a486424b32" prot="public" virt="non-virtual"><scope>testing::internal::LosslessArithmeticConvertibleImpl</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

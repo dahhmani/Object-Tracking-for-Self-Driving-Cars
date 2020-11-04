@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_ignore_result_action" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::IgnoreResultAction</compoundname>
+    <innerclass refid="classtesting_1_1internal_1_1_ignore_result_action_1_1_impl" prot="private">testing::internal::IgnoreResultAction::Impl</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename A</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_ignore_result_action_1a3a1ad6d29d904acb4ca41eeee45de4a0" prot="private" static="no" mutable="no">
+        <type>const A</type>
+        <definition>const A testing::internal::IgnoreResultAction&lt; A &gt;::action_</definition>
+        <argsstring></argsstring>
+        <name>action_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="937" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="937" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_ignore_result_action_1a9199f7b1b7771b2e2a5fd28caf624623" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::IgnoreResultAction&lt; A &gt;::IgnoreResultAction</definition>
+        <argsstring>(const A &amp;action)</argsstring>
+        <name>IgnoreResultAction</name>
+        <param>
+          <type>const A &amp;</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="892" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="892" bodyend="892"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_ignore_result_action_1affb8b7439604c860e1416f45339c6e37" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::internal::IgnoreResultAction&lt; A &gt;::operator Action&lt; F &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Action&lt; F &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="895" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="895" bodyend="910"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_ignore_result_action_1a6d42dfd3fd05fbbd24f6856e7bd82ab9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::IgnoreResultAction&lt; A &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(IgnoreResultAction)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1_ignore_result_action" kindref="compound">IgnoreResultAction</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="939" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="890" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="890" bodyend="940"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_ignore_result_action_1a3a1ad6d29d904acb4ca41eeee45de4a0" prot="private" virt="non-virtual"><scope>testing::internal::IgnoreResultAction</scope><name>action_</name></member>
+      <member refid="classtesting_1_1internal_1_1_ignore_result_action_1a6d42dfd3fd05fbbd24f6856e7bd82ab9" prot="private" virt="non-virtual"><scope>testing::internal::IgnoreResultAction</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_ignore_result_action_1a9199f7b1b7771b2e2a5fd28caf624623" prot="public" virt="non-virtual"><scope>testing::internal::IgnoreResultAction</scope><name>IgnoreResultAction</name></member>
+      <member refid="classtesting_1_1internal_1_1_ignore_result_action_1affb8b7439604c860e1416f45339c6e37" prot="public" virt="non-virtual"><scope>testing::internal::IgnoreResultAction</scope><name>operator Action&lt; F &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

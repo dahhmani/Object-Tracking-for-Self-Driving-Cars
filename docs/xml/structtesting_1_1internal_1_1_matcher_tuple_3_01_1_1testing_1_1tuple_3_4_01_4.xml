@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1internal_1_1_matcher_tuple_3_01_1_1testing_1_1tuple_3_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::MatcherTuple&lt; ::testing::tuple&lt;&gt; &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structtesting_1_1internal_1_1_matcher_tuple_3_01_1_1testing_1_1tuple_3_4_01_4_1a8d4493b2b299322e6c885dee5473ebd7" prot="public" static="no">
+        <type>::testing::tuple&lt; &gt;</type>
+        <definition>typedef ::testing::tuple&lt; &gt; testing::internal::MatcherTuple&lt; ::testing::tuple&lt;&gt; &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-generated-internal-utils.h" line="73" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/internal/gmock-generated-internal-utils.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/internal/gmock-generated-internal-utils.h" line="72" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/internal/gmock-generated-internal-utils.h" bodystart="72" bodyend="74"/>
+    <listofallmembers>
+      <member refid="structtesting_1_1internal_1_1_matcher_tuple_3_01_1_1testing_1_1tuple_3_4_01_4_1a8d4493b2b299322e6c885dee5473ebd7" prot="public" virt="non-virtual"><scope>testing::internal::MatcherTuple&lt; ::testing::tuple&lt;&gt; &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

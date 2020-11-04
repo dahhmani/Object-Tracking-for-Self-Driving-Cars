@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_environment_invocation_catcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::EnvironmentInvocationCatcher</compoundname>
+    <basecompoundref refid="classtesting_1_1_environment" prot="public" virt="non-virtual">testing::Environment</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_environment_invocation_catcher_1a325365b0ecfa71a4a767d7a1817c9663" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::EnvironmentInvocationCatcher::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <reimplements refid="classtesting_1_1_environment_1a1bf8cafaa9d4eba9feb98655ee434eb3">SetUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="130" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="130" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_environment_invocation_catcher_1afc89ee0a8e32e6746a89fcc1682f62e9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::EnvironmentInvocationCatcher::TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <reimplements refid="classtesting_1_1_environment_1a039bdaa705c46b9b88234cf4d3bb6254">TearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="134" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="134" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="490">
+        <label>testing::Environment</label>
+        <link refid="classtesting_1_1_environment"/>
+      </node>
+      <node id="489">
+        <label>testing::internal::EnvironmentInvocationCatcher</label>
+        <link refid="classtesting_1_1internal_1_1_environment_invocation_catcher"/>
+        <childnode refid="490" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="492">
+        <label>testing::Environment</label>
+        <link refid="classtesting_1_1_environment"/>
+      </node>
+      <node id="491">
+        <label>testing::internal::EnvironmentInvocationCatcher</label>
+        <link refid="classtesting_1_1internal_1_1_environment_invocation_catcher"/>
+        <childnode refid="492" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="128" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="128" bodyend="137"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_environment_invocation_catcher_1a325365b0ecfa71a4a767d7a1817c9663" prot="protected" virt="virtual"><scope>testing::internal::EnvironmentInvocationCatcher</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1internal_1_1_environment_invocation_catcher_1afc89ee0a8e32e6746a89fcc1682f62e9" prot="protected" virt="virtual"><scope>testing::internal::EnvironmentInvocationCatcher</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_environment_1a0e41c320362576d752cd1f44cabd57d4" prot="public" virt="virtual"><scope>testing::internal::EnvironmentInvocationCatcher</scope><name>~Environment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

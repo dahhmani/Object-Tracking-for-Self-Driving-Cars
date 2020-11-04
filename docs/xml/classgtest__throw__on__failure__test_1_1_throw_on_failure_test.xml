@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgtest__throw__on__failure__test_1_1_throw_on_failure_test" kind="class" language="Python" prot="public">
+    <compoundname>gtest_throw_on_failure_test::ThrowOnFailureTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgtest__throw__on__failure__test_1_1_throw_on_failure_test_1a29114050e4e9163d8b046451a9850839" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_throw_on_failure_test.ThrowOnFailureTest.RunAndVerify</definition>
+        <argsstring>(self, env_var_value, flag_value, should_fail)</argsstring>
+        <name>RunAndVerify</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>env_var_value</type>
+          <defname>env_var_value</defname>
+        </param>
+        <param>
+          <type>flag_value</type>
+          <defname>flag_value</defname>
+        </param>
+        <param>
+          <type>should_fail</type>
+          <defname>should_fail</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Runs gtest_throw_on_failure_test_ and verifies that it does
+(or does not) exit with a non-zero code.
+
+Args:
+  env_var_value:    value of the GTEST_BREAK_ON_FAILURE environment
+                variable; None if the variable should be unset.
+  flag_value:       value of the --gtest_break_on_failure flag;
+                None if the flag should not be present.
+  should_fail:      True iff the program is expected to fail.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" line="83" column="1" bodyfile="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" bodystart="83" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__throw__on__failure__test_1_1_throw_on_failure_test_1a596d5e2dbeb51751a6fb6d3852fdd54a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_throw_on_failure_test.ThrowOnFailureTest.testDefaultBehavior</definition>
+        <argsstring>(self)</argsstring>
+        <name>testDefaultBehavior</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests the behavior of the default mode.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" line="128" column="1" bodyfile="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" bodystart="128" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__throw__on__failure__test_1_1_throw_on_failure_test_1af1cecdf19bf8ff7261e9f832c4d1b3ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_throw_on_failure_test.ThrowOnFailureTest.testThrowOnFailureEnvVar</definition>
+        <argsstring>(self)</argsstring>
+        <name>testThrowOnFailureEnvVar</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests using the GTEST_THROW_ON_FAILURE environment variable.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" line="133" column="1" bodyfile="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" bodystart="133" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__throw__on__failure__test_1_1_throw_on_failure_test_1ae1383974161c2d1dc8b5e74ebc12db38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_throw_on_failure_test.ThrowOnFailureTest.testThrowOnFailureFlag</definition>
+        <argsstring>(self)</argsstring>
+        <name>testThrowOnFailureFlag</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests using the --gtest_throw_on_failure flag.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" line="143" column="1" bodyfile="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" bodystart="143" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classgtest__throw__on__failure__test_1_1_throw_on_failure_test_1ab63f8f491aeaaa04ba3fc7ae3bca6de8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_throw_on_failure_test.ThrowOnFailureTest.testThrowOnFailureFlagOverridesEnvVar</definition>
+        <argsstring>(self)</argsstring>
+        <name>testThrowOnFailureFlagOverridesEnvVar</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that --gtest_throw_on_failure overrides GTEST_THROW_ON_FAILURE.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" line="153" column="1" bodyfile="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" bodystart="153" bodyend="169"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Tests the throw-on-failure mode.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2179">
+        <label>gtest_throw_on_failure_test.ThrowOnFailureTest</label>
+        <link refid="classgtest__throw__on__failure__test_1_1_throw_on_failure_test"/>
+        <childnode refid="2180" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2180">
+        <label>TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2181">
+        <label>gtest_throw_on_failure_test.ThrowOnFailureTest</label>
+        <link refid="classgtest__throw__on__failure__test_1_1_throw_on_failure_test"/>
+        <childnode refid="2182" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2182">
+        <label>TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" line="80" column="1" bodyfile="vendor/googletest/googletest/test/gtest_throw_on_failure_test.py" bodystart="80" bodyend="170"/>
+    <listofallmembers>
+      <member refid="classgtest__throw__on__failure__test_1_1_throw_on_failure_test_1a29114050e4e9163d8b046451a9850839" prot="public" virt="non-virtual"><scope>gtest_throw_on_failure_test::ThrowOnFailureTest</scope><name>RunAndVerify</name></member>
+      <member refid="classgtest__throw__on__failure__test_1_1_throw_on_failure_test_1a596d5e2dbeb51751a6fb6d3852fdd54a" prot="public" virt="non-virtual"><scope>gtest_throw_on_failure_test::ThrowOnFailureTest</scope><name>testDefaultBehavior</name></member>
+      <member refid="classgtest__throw__on__failure__test_1_1_throw_on_failure_test_1af1cecdf19bf8ff7261e9f832c4d1b3ad" prot="public" virt="non-virtual"><scope>gtest_throw_on_failure_test::ThrowOnFailureTest</scope><name>testThrowOnFailureEnvVar</name></member>
+      <member refid="classgtest__throw__on__failure__test_1_1_throw_on_failure_test_1ae1383974161c2d1dc8b5e74ebc12db38" prot="public" virt="non-virtual"><scope>gtest_throw_on_failure_test::ThrowOnFailureTest</scope><name>testThrowOnFailureFlag</name></member>
+      <member refid="classgtest__throw__on__failure__test_1_1_throw_on_failure_test_1ab63f8f491aeaaa04ba3fc7ae3bca6de8" prot="public" virt="non-virtual"><scope>gtest_throw_on_failure_test::ThrowOnFailureTest</scope><name>testThrowOnFailureFlagOverridesEnvVar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

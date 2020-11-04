@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classfoo_1_1_streamable_template_in_foo" kind="class" language="C++" prot="public">
+    <compoundname>foo::StreamableTemplateInFoo</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfoo_1_1_streamable_template_in_foo_1a6768ecbcc4e77edf9d5150b173d985c3" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T foo::StreamableTemplateInFoo&lt; T &gt;::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-printers_test.cc" line="181" column="1" bodyfile="vendor/googletest/googletest/test/gtest-printers_test.cc" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfoo_1_1_streamable_template_in_foo_1a0e5d7147d321adf8a2ec348243da70ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>foo::StreamableTemplateInFoo&lt; T &gt;::StreamableTemplateInFoo</definition>
+        <argsstring>()</argsstring>
+        <name>StreamableTemplateInFoo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-printers_test.cc" line="177" column="1" bodyfile="vendor/googletest/googletest/test/gtest-printers_test.cc" bodystart="177" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classfoo_1_1_streamable_template_in_foo_1aa6e29a9a298014ce74c65423b6985023" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; foo::StreamableTemplateInFoo&lt; T &gt;::value</definition>
+        <argsstring>() const</argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-printers_test.cc" line="179" column="1" bodyfile="vendor/googletest/googletest/test/gtest-printers_test.cc" bodystart="179" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest-printers_test.cc" line="175" column="1" bodyfile="vendor/googletest/googletest/test/gtest-printers_test.cc" bodystart="175" bodyend="182"/>
+    <listofallmembers>
+      <member refid="classfoo_1_1_streamable_template_in_foo_1a0e5d7147d321adf8a2ec348243da70ea" prot="public" virt="non-virtual"><scope>foo::StreamableTemplateInFoo</scope><name>StreamableTemplateInFoo</name></member>
+      <member refid="classfoo_1_1_streamable_template_in_foo_1aa6e29a9a298014ce74c65423b6985023" prot="public" virt="non-virtual"><scope>foo::StreamableTemplateInFoo</scope><name>value</name></member>
+      <member refid="classfoo_1_1_streamable_template_in_foo_1a6768ecbcc4e77edf9d5150b173d985c3" prot="private" virt="non-virtual"><scope>foo::StreamableTemplateInFoo</scope><name>value_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacecpp_1_1gmock__class" kind="namespace" language="Python">
+    <compoundname>cpp::gmock_class</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gmock__class_8py_1a4a765064f65186f17ff74a9ebb5d27b8" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string cpp::gmock_class.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;nnorwitz@google.com (Neal Norwitz)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" line="29" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__class_8py_1ab4128a969856897356b7956c5ba4fc01" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>cpp::gmock_class._dummy</definition>
+        <argsstring></argsstring>
+        <name>_dummy</name>
+        <initializer>=  set</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" line="41" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__class_8py_1a2157e96eee0b4bf9ca6d195ab76f59c2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cpp::gmock_class.set</definition>
+        <argsstring></argsstring>
+        <name>set</name>
+        <initializer>=  sets.Set</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" line="44" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__class_8py_1ae5d7185c5f485142460e91de1394283c" prot="private" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple cpp::gmock_class._VERSION</definition>
+        <argsstring></argsstring>
+        <name>_VERSION</name>
+        <initializer>=  (1, 0, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" line="46" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__class_8py_1aa09d38d618dd2e76366852c660a832e8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cpp::gmock_class._INDENT</definition>
+        <argsstring></argsstring>
+        <name>_INDENT</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" line="48" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gmock__class_8py_1ae1b91676e6a4c7ae21c3ef2394a096a1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class._GenerateMethods</definition>
+        <argsstring>(output_lines, source, class_node)</argsstring>
+        <name>_GenerateMethods</name>
+        <param>
+          <type>output_lines</type>
+          <defname>output_lines</defname>
+        </param>
+        <param>
+          <type>source</type>
+          <defname>source</defname>
+        </param>
+        <param>
+          <type>class_node</type>
+          <defname>class_node</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" line="51" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" bodystart="51" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__class_8py_1a3f8d5ceabb0bd6143422efeccc900ca9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class._GenerateMocks</definition>
+        <argsstring>(filename, source, ast_list, desired_class_names)</argsstring>
+        <name>_GenerateMocks</name>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <param>
+          <type>source</type>
+          <defname>source</defname>
+        </param>
+        <param>
+          <type>ast_list</type>
+          <defname>ast_list</defname>
+        </param>
+        <param>
+          <type>desired_class_names</type>
+          <defname>desired_class_names</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" line="126" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" bodystart="126" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock__class_8py_1a8f99cfdd2b4f0a547d6585b1de78bac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def cpp.gmock_class.main</definition>
+        <argsstring>(argv=sys.argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>argv</type>
+          <defname>argv</defname>
+          <defval>sys.argv</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" line="190" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" bodystart="190" bodyend="225"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

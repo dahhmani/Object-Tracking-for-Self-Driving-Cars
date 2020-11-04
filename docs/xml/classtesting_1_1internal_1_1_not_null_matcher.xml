@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_not_null_matcher" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::NotNullMatcher</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_not_null_matcher_1a8c4b04f9a91550176a6e23652f592b8e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pointer</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::internal::NotNullMatcher::MatchAndExplain</definition>
+        <argsstring>(const Pointer &amp;p, MatchResultListener *) const</argsstring>
+        <name>MatchAndExplain</name>
+        <param>
+          <type>const Pointer &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classtesting_1_1_match_result_listener" kindref="compound">MatchResultListener</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1000" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1000" bodyend="1007"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_not_null_matcher_1ac2ef2de5833c135e74e47e40484442d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::NotNullMatcher::DescribeTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1009" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1009" bodyend="1009"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_not_null_matcher_1a5b9c4335e8e4465e48fc73d185402ebd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::NotNullMatcher::DescribeNegationTo</definition>
+        <argsstring>(::std::ostream *os) const</argsstring>
+        <name>DescribeNegationTo</name>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1010" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1010" bodyend="1012"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="997" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="997" bodyend="1013"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_not_null_matcher_1a5b9c4335e8e4465e48fc73d185402ebd" prot="public" virt="non-virtual"><scope>testing::internal::NotNullMatcher</scope><name>DescribeNegationTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_not_null_matcher_1ac2ef2de5833c135e74e47e40484442d1" prot="public" virt="non-virtual"><scope>testing::internal::NotNullMatcher</scope><name>DescribeTo</name></member>
+      <member refid="classtesting_1_1internal_1_1_not_null_matcher_1a8c4b04f9a91550176a6e23652f592b8e" prot="public" virt="non-virtual"><scope>testing::internal::NotNullMatcher</scope><name>MatchAndExplain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

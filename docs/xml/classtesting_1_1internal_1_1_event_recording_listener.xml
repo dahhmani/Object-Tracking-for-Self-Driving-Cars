@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_event_recording_listener" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::EventRecordingListener</compoundname>
+    <basecompoundref refid="classtesting_1_1_test_event_listener" prot="public" virt="non-virtual">testing::TestEventListener</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_event_recording_listener_1ad65961b8f32b63cffd46c8820256a88f" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string testing::internal::EventRecordingListener::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="125" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_event_recording_listener_1a7b0254c15d6b8468e1441ee572fee707" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::EventRecordingListener::EventRecordingListener</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>EventRecordingListener</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="57" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="57" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_event_recording_listener_1aff89fdd3ae889a54a2ba2f3d4c98d3f6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::EventRecordingListener::OnTestProgramStart</definition>
+        <argsstring>(const UnitTest &amp;)</argsstring>
+        <name>OnTestProgramStart</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1a5f6c84f39851e8a603a2d2e10063816b">OnTestProgramStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="60" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_event_recording_listener_1a0bfa276def9594b2a119c2c370f59281" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::EventRecordingListener::OnTestIterationStart</definition>
+        <argsstring>(const UnitTest &amp;, int iteration)</argsstring>
+        <name>OnTestIterationStart</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1a60cc09b7907cb329d152eb5e7133bdeb">OnTestIterationStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iteration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="64" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="64" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_event_recording_listener_1add61e6e7ebffb8afc90ccabcdc9f9982" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::EventRecordingListener::OnEnvironmentsSetUpStart</definition>
+        <argsstring>(const UnitTest &amp;)</argsstring>
+        <name>OnEnvironmentsSetUpStart</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1aa6502e534919605be45f26a6daf9a40c">OnEnvironmentsSetUpStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="72" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_event_recording_listener_1a40b4c5e05abd1aa11a030f999f6adb8f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::EventRecordingListener::OnEnvironmentsSetUpEnd</definition>
+        <argsstring>(const UnitTest &amp;)</argsstring>
+        <name>OnEnvironmentsSetUpEnd</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1aaa1021d75f5dbf3f05c829c1cc520341">OnEnvironmentsSetUpEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="76" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_event_recording_listener_1a18c28e1d1c3a1e74e225966456786f8e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::EventRecordingListener::OnTestCaseStart</definition>
+        <argsstring>(const TestCase &amp;)</argsstring>
+        <name>OnTestCaseStart</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1ab4ed885d63f5bbff8076c1329b3dfe36">OnTestCaseStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_case" kindref="compound">TestCase</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="80" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_event_recording_listener_1aebd488b780fc172d6058ca07ca8f7145" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::EventRecordingListener::OnTestStart</definition>
+        <argsstring>(const TestInfo &amp;)</argsstring>
+        <name>OnTestStart</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1ab4f6a0ca16ae75daf385b3b5914e1048">OnTestStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_info" kindref="compound">TestInfo</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="84" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_event_recording_listener_1a4a6685d894923f1691ad9c6a4311470e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::EventRecordingListener::OnTestPartResult</definition>
+        <argsstring>(const TestPartResult &amp;)</argsstring>
+        <name>OnTestPartResult</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1a054f8705c883fa120b91473aff38f2ee">OnTestPartResult</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="88" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_event_recording_listener_1adb076f145cc20d9b27441b9c75da4b81" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::EventRecordingListener::OnTestEnd</definition>
+        <argsstring>(const TestInfo &amp;)</argsstring>
+        <name>OnTestEnd</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1abb1c44525ef038500608b5dc2f17099b">OnTestEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_info" kindref="compound">TestInfo</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="92" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_event_recording_listener_1a4d0cb8a389c7339bce0aa6128291529f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::EventRecordingListener::OnTestCaseEnd</definition>
+        <argsstring>(const TestCase &amp;)</argsstring>
+        <name>OnTestCaseEnd</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1ae61985e2ef76ac78379b077be57a9c36">OnTestCaseEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_test_case" kindref="compound">TestCase</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="96" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_event_recording_listener_1a17eebd7bb5cc6bab53b20794919ca5ae" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::EventRecordingListener::OnEnvironmentsTearDownStart</definition>
+        <argsstring>(const UnitTest &amp;)</argsstring>
+        <name>OnEnvironmentsTearDownStart</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1a468b5e6701bcb86cb2c956caadbba5e4">OnEnvironmentsTearDownStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="100" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_event_recording_listener_1acd5a3dc070265166a7da68222031fd61" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::EventRecordingListener::OnEnvironmentsTearDownEnd</definition>
+        <argsstring>(const UnitTest &amp;)</argsstring>
+        <name>OnEnvironmentsTearDownEnd</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1a9ea04fa7f447865ba76df35e12ba2092">OnEnvironmentsTearDownEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="104" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_event_recording_listener_1ab0cc007bcfaf06cd383d574c88f62aea" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::EventRecordingListener::OnTestIterationEnd</definition>
+        <argsstring>(const UnitTest &amp;, int iteration)</argsstring>
+        <name>OnTestIterationEnd</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1a550fdb3e55726e4cefa09f5697941425">OnTestIterationEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iteration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="108" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="108" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_event_recording_listener_1a21fe9c3c519c4599a48b16ddfb734aa3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::internal::EventRecordingListener::OnTestProgramEnd</definition>
+        <argsstring>(const UnitTest &amp;)</argsstring>
+        <name>OnTestProgramEnd</name>
+        <reimplements refid="classtesting_1_1_test_event_listener_1ad15b6246d94c268e233487a86463ef3d">OnTestProgramEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1_unit_test" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="116" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="116" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_event_recording_listener_1a3d6212ced3e7a32e0e5944f2eba47c0b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string testing::internal::EventRecordingListener::GetFullMethodName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>GetFullMethodName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="121" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="121" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="511">
+        <label>testing::internal::EventRecordingListener</label>
+        <link refid="classtesting_1_1internal_1_1_event_recording_listener"/>
+        <childnode refid="512" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="512">
+        <label>testing::TestEventListener</label>
+        <link refid="classtesting_1_1_test_event_listener"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="513">
+        <label>testing::internal::EventRecordingListener</label>
+        <link refid="classtesting_1_1internal_1_1_event_recording_listener"/>
+        <childnode refid="514" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="514">
+        <label>testing::TestEventListener</label>
+        <link refid="classtesting_1_1_test_event_listener"/>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest-listener_test.cc" line="55" column="1" bodyfile="vendor/googletest/googletest/test/gtest-listener_test.cc" bodystart="55" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1a7b0254c15d6b8468e1441ee572fee707" prot="public" virt="non-virtual"><scope>testing::internal::EventRecordingListener</scope><name>EventRecordingListener</name></member>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1a3d6212ced3e7a32e0e5944f2eba47c0b" prot="private" virt="non-virtual"><scope>testing::internal::EventRecordingListener</scope><name>GetFullMethodName</name></member>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1ad65961b8f32b63cffd46c8820256a88f" prot="private" virt="non-virtual"><scope>testing::internal::EventRecordingListener</scope><name>name_</name></member>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1a40b4c5e05abd1aa11a030f999f6adb8f" prot="protected" virt="virtual"><scope>testing::internal::EventRecordingListener</scope><name>OnEnvironmentsSetUpEnd</name></member>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1add61e6e7ebffb8afc90ccabcdc9f9982" prot="protected" virt="virtual"><scope>testing::internal::EventRecordingListener</scope><name>OnEnvironmentsSetUpStart</name></member>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1acd5a3dc070265166a7da68222031fd61" prot="protected" virt="virtual"><scope>testing::internal::EventRecordingListener</scope><name>OnEnvironmentsTearDownEnd</name></member>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1a17eebd7bb5cc6bab53b20794919ca5ae" prot="protected" virt="virtual"><scope>testing::internal::EventRecordingListener</scope><name>OnEnvironmentsTearDownStart</name></member>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1a4d0cb8a389c7339bce0aa6128291529f" prot="protected" virt="virtual"><scope>testing::internal::EventRecordingListener</scope><name>OnTestCaseEnd</name></member>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1a18c28e1d1c3a1e74e225966456786f8e" prot="protected" virt="virtual"><scope>testing::internal::EventRecordingListener</scope><name>OnTestCaseStart</name></member>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1adb076f145cc20d9b27441b9c75da4b81" prot="protected" virt="virtual"><scope>testing::internal::EventRecordingListener</scope><name>OnTestEnd</name></member>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1ab0cc007bcfaf06cd383d574c88f62aea" prot="protected" virt="virtual"><scope>testing::internal::EventRecordingListener</scope><name>OnTestIterationEnd</name></member>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1a0bfa276def9594b2a119c2c370f59281" prot="protected" virt="virtual"><scope>testing::internal::EventRecordingListener</scope><name>OnTestIterationStart</name></member>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1a4a6685d894923f1691ad9c6a4311470e" prot="protected" virt="virtual"><scope>testing::internal::EventRecordingListener</scope><name>OnTestPartResult</name></member>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1a21fe9c3c519c4599a48b16ddfb734aa3" prot="protected" virt="virtual"><scope>testing::internal::EventRecordingListener</scope><name>OnTestProgramEnd</name></member>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1aff89fdd3ae889a54a2ba2f3d4c98d3f6" prot="protected" virt="virtual"><scope>testing::internal::EventRecordingListener</scope><name>OnTestProgramStart</name></member>
+      <member refid="classtesting_1_1internal_1_1_event_recording_listener_1aebd488b780fc172d6058ca07ca8f7145" prot="protected" virt="virtual"><scope>testing::internal::EventRecordingListener</scope><name>OnTestStart</name></member>
+      <member refid="classtesting_1_1_test_event_listener_1a4512d19e7a108ec4926239ec1ea85d63" prot="public" virt="virtual"><scope>testing::internal::EventRecordingListener</scope><name>~TestEventListener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

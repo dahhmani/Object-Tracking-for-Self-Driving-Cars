@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_t_01_4_01_4" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::MatcherCastImpl&lt; T, Matcher&lt; T &gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_t_01_4_01_4_1ac945132186fcbe0e0d2d8c207d730026" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; T &gt;</type>
+        <definition>static Matcher&lt;T&gt; testing::internal::MatcherCastImpl&lt; T, Matcher&lt; T &gt; &gt;::Cast</definition>
+        <argsstring>(const Matcher&lt; T &gt; &amp;matcher)</argsstring>
+        <name>Cast</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; T &gt; &amp;</type>
+          <declname>matcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="600" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="600" bodyend="600"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="598" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="598" bodyend="601"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_matcher_cast_impl_3_01_t_00_01_matcher_3_01_t_01_4_01_4_1ac945132186fcbe0e0d2d8c207d730026" prot="public" virt="non-virtual"><scope>testing::internal::MatcherCastImpl&lt; T, Matcher&lt; T &gt; &gt;</scope><name>Cast</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_testing_vector" kind="class" language="C++" prot="public">
+    <compoundname>TestingVector</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::vector&lt; int &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2149">
+        <label>TestingVector</label>
+        <link refid="class_testing_vector"/>
+        <childnode refid="2150" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2150">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2151">
+        <label>TestingVector</label>
+        <link refid="class_testing_vector"/>
+        <childnode refid="2152" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2152">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="302" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="302" bodyend="303"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

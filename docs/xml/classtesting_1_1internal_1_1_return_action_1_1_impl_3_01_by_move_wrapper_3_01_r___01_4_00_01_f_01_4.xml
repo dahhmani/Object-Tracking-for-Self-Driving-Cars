@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_return_action_1_1_impl_3_01_by_move_wrapper_3_01_r___01_4_00_01_f_01_4" kind="class" language="C++" prot="private">
+    <compoundname>testing::internal::ReturnAction::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;</compoundname>
+    <basecompoundref refid="classtesting_1_1_action_interface" prot="public" virt="non-virtual">testing::ActionInterface&lt; F &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename R_</type>
+      </param>
+      <param>
+        <type>typename F</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_return_action_1_1_impl_3_01_by_move_wrapper_3_01_r___01_4_00_01_f_01_4_1a9b727fcbbd1fa17e03a78d115fc81707" prot="public" static="no">
+        <type><ref refid="structtesting_1_1internal_1_1_function" kindref="compound">Function</ref>&lt; F &gt;::Result</type>
+        <definition>typedef Function&lt;F&gt;::Result testing::internal::ReturnAction&lt; R &gt;::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;::Result</definition>
+        <argsstring></argsstring>
+        <name>Result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="597" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="597" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtesting_1_1internal_1_1_return_action_1_1_impl_3_01_by_move_wrapper_3_01_r___01_4_00_01_f_01_4_1a5b68d6715914e165ade5864060aa4213" prot="public" static="no">
+        <type><ref refid="structtesting_1_1internal_1_1_function" kindref="compound">Function</ref>&lt; F &gt;::ArgumentTuple</type>
+        <definition>typedef Function&lt;F&gt;::ArgumentTuple testing::internal::ReturnAction&lt; R &gt;::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;::ArgumentTuple</definition>
+        <argsstring></argsstring>
+        <name>ArgumentTuple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="598" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="598" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_return_action_1_1_impl_3_01_by_move_wrapper_3_01_r___01_4_00_01_f_01_4_1adb9db786f4a87a4a8a055ddc840f9d77" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool testing::internal::ReturnAction&lt; R &gt;::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;::performed_</definition>
+        <argsstring></argsstring>
+        <name>performed_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="611" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="611" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_return_action_1_1_impl_3_01_by_move_wrapper_3_01_r___01_4_00_01_f_01_4_1a8ff130e32f8b90238cdbf7d62fe99de1" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr</ref>&lt; R &gt;</type>
+        <definition>const linked_ptr&lt;R&gt; testing::internal::ReturnAction&lt; R &gt;::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;::wrapper_</definition>
+        <argsstring></argsstring>
+        <name>wrapper_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="612" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="612" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_return_action_1_1_impl_3_01_by_move_wrapper_3_01_r___01_4_00_01_f_01_4_1a4f6ed0465b3f7b116142025c7f7ec3d2" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ReturnAction&lt; R &gt;::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;::Impl</definition>
+        <argsstring>(const linked_ptr&lt; R &gt; &amp;wrapper)</argsstring>
+        <name>Impl</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr</ref>&lt; R &gt; &amp;</type>
+          <declname>wrapper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="600" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="600" bodyend="601"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_return_action_1_1_impl_3_01_by_move_wrapper_3_01_r___01_4_00_01_f_01_4_1a4f6e45f593abffb7a8b26cebfc4a0262" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>Result</type>
+        <definition>virtual Result testing::internal::ReturnAction&lt; R &gt;::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;::Perform</definition>
+        <argsstring>(const ArgumentTuple &amp;)</argsstring>
+        <name>Perform</name>
+        <param>
+          <type>const ArgumentTuple &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="603" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="603" bodyend="608"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_return_action_1_1_impl_3_01_by_move_wrapper_3_01_r___01_4_00_01_f_01_4_1a989ee18a52a8bacfac5c9b6bfe82cf53" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ReturnAction&lt; R &gt;::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;::GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(Impl)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type>Impl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="614" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1174">
+        <label>testing::ActionInterface&lt; F &gt;</label>
+        <link refid="classtesting_1_1_action_interface"/>
+      </node>
+      <node id="1173">
+        <label>testing::internal::ReturnAction&lt; R &gt;::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;</label>
+        <childnode refid="1174" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1176">
+        <label>testing::ActionInterface&lt; F &gt;</label>
+        <link refid="classtesting_1_1_action_interface"/>
+      </node>
+      <node id="1175">
+        <label>testing::internal::ReturnAction&lt; R &gt;::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;</label>
+        <childnode refid="1176" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="595" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="595" bodyend="615"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_action_interface_1a0f1d44e4c669a9cae5ee5b28419a6f52" prot="public" virt="non-virtual"><scope>testing::internal::ReturnAction::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;</scope><name>ActionInterface</name></member>
+      <member refid="classtesting_1_1internal_1_1_return_action_1_1_impl_3_01_by_move_wrapper_3_01_r___01_4_00_01_f_01_4_1a5b68d6715914e165ade5864060aa4213" prot="public" virt="non-virtual"><scope>testing::internal::ReturnAction::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;</scope><name>ArgumentTuple</name></member>
+      <member refid="classtesting_1_1internal_1_1_return_action_1_1_impl_3_01_by_move_wrapper_3_01_r___01_4_00_01_f_01_4_1a989ee18a52a8bacfac5c9b6bfe82cf53" prot="private" virt="non-virtual"><scope>testing::internal::ReturnAction::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1_return_action_1_1_impl_3_01_by_move_wrapper_3_01_r___01_4_00_01_f_01_4_1a4f6ed0465b3f7b116142025c7f7ec3d2" prot="public" virt="non-virtual"><scope>testing::internal::ReturnAction::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;</scope><name>Impl</name></member>
+      <member refid="classtesting_1_1internal_1_1_return_action_1_1_impl_3_01_by_move_wrapper_3_01_r___01_4_00_01_f_01_4_1a4f6e45f593abffb7a8b26cebfc4a0262" prot="public" virt="virtual"><scope>testing::internal::ReturnAction::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;</scope><name>Perform</name></member>
+      <member refid="classtesting_1_1internal_1_1_return_action_1_1_impl_3_01_by_move_wrapper_3_01_r___01_4_00_01_f_01_4_1adb9db786f4a87a4a8a055ddc840f9d77" prot="private" virt="non-virtual"><scope>testing::internal::ReturnAction::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;</scope><name>performed_</name></member>
+      <member refid="classtesting_1_1internal_1_1_return_action_1_1_impl_3_01_by_move_wrapper_3_01_r___01_4_00_01_f_01_4_1a9b727fcbbd1fa17e03a78d115fc81707" prot="public" virt="non-virtual"><scope>testing::internal::ReturnAction::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;</scope><name>Result</name></member>
+      <member refid="classtesting_1_1internal_1_1_return_action_1_1_impl_3_01_by_move_wrapper_3_01_r___01_4_00_01_f_01_4_1a8ff130e32f8b90238cdbf7d62fe99de1" prot="private" virt="non-virtual"><scope>testing::internal::ReturnAction::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;</scope><name>wrapper_</name></member>
+      <member refid="classtesting_1_1_action_interface_1a7dd0a5fc93d86ae3c9d04963b9f3a93f" prot="public" virt="virtual"><scope>testing::internal::ReturnAction::Impl&lt; ByMoveWrapper&lt; R_ &gt;, F &gt;</scope><name>~ActionInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacecpp" kind="namespace" language="Python">
+    <compoundname>cpp</compoundname>
+    <innernamespace refid="namespacecpp_1_1ast">cpp::ast</innernamespace>
+    <innernamespace refid="namespacecpp_1_1gmock__class">cpp::gmock_class</innernamespace>
+    <innernamespace refid="namespacecpp_1_1gmock__class__test">cpp::gmock_class_test</innernamespace>
+    <innernamespace refid="namespacecpp_1_1keywords">cpp::keywords</innernamespace>
+    <innernamespace refid="namespacecpp_1_1tokenize">cpp::tokenize</innernamespace>
+    <innernamespace refid="namespacecpp_1_1utils">cpp::utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

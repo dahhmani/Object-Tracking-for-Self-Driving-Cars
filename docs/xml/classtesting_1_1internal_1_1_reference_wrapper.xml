@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_reference_wrapper" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::ReferenceWrapper</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_reference_wrapper_1abc085b4a0cdea43258c297c6989fdc7d" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* testing::internal::ReferenceWrapper&lt; T &gt;::pointer_</definition>
+        <argsstring></argsstring>
+        <name>pointer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="959" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="959" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_reference_wrapper_1ad33597ffc478c3af9190d1a288a76d39" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ReferenceWrapper&lt; T &gt;::ReferenceWrapper</definition>
+        <argsstring>(T &amp;l_value)</argsstring>
+        <name>ReferenceWrapper</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>l_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="953" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="953" bodyend="953"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_reference_wrapper_1a187d6e6ffb4031444fff10dee7dc7de8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ReferenceWrapper&lt; T &gt;::operator T&amp;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator T &amp;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="957" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="957" bodyend="957"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-actions.h" line="950" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-actions.h" bodystart="950" bodyend="960"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_reference_wrapper_1a187d6e6ffb4031444fff10dee7dc7de8" prot="public" virt="non-virtual"><scope>testing::internal::ReferenceWrapper</scope><name>operator T &amp;</name></member>
+      <member refid="classtesting_1_1internal_1_1_reference_wrapper_1abc085b4a0cdea43258c297c6989fdc7d" prot="private" virt="non-virtual"><scope>testing::internal::ReferenceWrapper</scope><name>pointer_</name></member>
+      <member refid="classtesting_1_1internal_1_1_reference_wrapper_1ad33597ffc478c3af9190d1a288a76d39" prot="public" virt="non-virtual"><scope>testing::internal::ReferenceWrapper</scope><name>ReferenceWrapper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

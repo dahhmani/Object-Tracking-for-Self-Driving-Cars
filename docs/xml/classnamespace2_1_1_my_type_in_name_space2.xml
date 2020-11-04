@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classnamespace2_1_1_my_type_in_name_space2" kind="class" language="C++" prot="public">
+    <compoundname>namespace2::MyTypeInNameSpace2</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Base</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnamespace2_1_1_my_type_in_name_space2_1a033025628289dbf29022b2bfbe66f53e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>namespace2::MyTypeInNameSpace2::MyTypeInNameSpace2</definition>
+        <argsstring>(int an_x)</argsstring>
+        <name>MyTypeInNameSpace2</name>
+        <param>
+          <type>int</type>
+          <declname>an_x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5234" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5234" bodyend="5234"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1592">
+        <label>anonymous:</label>
+      </node>
+      <node id="1591">
+        <label>namespace2::MyTypeInNameSpace2</label>
+        <link refid="classnamespace2_1_1_my_type_in_name_space2"/>
+        <childnode refid="1592" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1594">
+        <label>anonymous:</label>
+      </node>
+      <node id="1593">
+        <label>namespace2::MyTypeInNameSpace2</label>
+        <link refid="classnamespace2_1_1_my_type_in_name_space2"/>
+        <childnode refid="1594" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_unittest.cc" line="5232" column="1" bodyfile="vendor/googletest/googletest/test/gtest_unittest.cc" bodystart="5232" bodyend="5235"/>
+    <listofallmembers>
+      <member refid="classnamespace2_1_1_my_type_in_name_space2_1a033025628289dbf29022b2bfbe66f53e" prot="public" virt="non-virtual"><scope>namespace2::MyTypeInNameSpace2</scope><name>MyTypeInNameSpace2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

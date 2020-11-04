@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegtest__list__tests__unittest" kind="namespace" language="Python">
+    <compoundname>gtest_list_tests_unittest</compoundname>
+    <innerclass refid="classgtest__list__tests__unittest_1_1_g_test_list_tests_unit_test" prot="public">gtest_list_tests_unittest::GTestListTestsUnitTest</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gtest__list__tests__unittest_8py_1a713be99fff40e5e280886232fa2f35ff" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_list_tests_unittest.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;phanna@google.com (Patrick Hanna)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" line="40" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__list__tests__unittest_8py_1a658d9ea18c57a13a25d0cce73d314e7a" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_list_tests_unittest.LIST_TESTS_FLAG</definition>
+        <argsstring></argsstring>
+        <name>LIST_TESTS_FLAG</name>
+        <initializer>=  &apos;gtest_list_tests&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" line="49" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__list__tests__unittest_8py_1ae58203009c92b993b4d1cabae4d5eb19" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gtest_list_tests_unittest.EXE_PATH</definition>
+        <argsstring></argsstring>
+        <name>EXE_PATH</name>
+        <initializer>=  gtest_test_utils.GetTestExecutablePath(&apos;gtest_list_tests_unittest_&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" line="52" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__list__tests__unittest_8py_1a29efbf77d2682ce359327e2e7dbd1c46" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gtest_list_tests_unittest.EXPECTED_OUTPUT_NO_FILTER_RE</definition>
+        <argsstring></argsstring>
+        <name>EXPECTED_OUTPUT_NO_FILTER_RE</name>
+        <initializer>=  re.compile()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" line="56" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__list__tests__unittest_8py_1a1a20fef56cfe698649d63bc0c2b40229" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gtest_list_tests_unittest.EXPECTED_OUTPUT_FILTER_FOO_RE</definition>
+        <argsstring></argsstring>
+        <name>EXPECTED_OUTPUT_FILTER_FOO_RE</name>
+        <initializer>=  re.compile()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" line="100" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gtest__list__tests__unittest_8py_1ae820a362ba09ad61331e3f0c2a9f9cb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_list_tests_unittest.Run</definition>
+        <argsstring>(args)</argsstring>
+        <name>Run</name>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Runs gtest_list_tests_unittest_ and returns the list of tests printed.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" line="117" column="1" bodyfile="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" bodystart="117" bodyend="125"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest_list_tests_unittest.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

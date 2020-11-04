@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_design_doc_8md" kind="file" language="Markdown">
+    <compoundname>DesignDoc.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">This<sp/>page<sp/>discusses<sp/>the<sp/>design<sp/>of<sp/>new<sp/>Google<sp/>Mock<sp/>features.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Macros<sp/>for<sp/>Defining<sp/>Actions<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Problem<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Due<sp/>to<sp/>the<sp/>lack<sp/>of<sp/>closures<sp/>in<sp/>C++,<sp/>it<sp/>currently<sp/>requires<sp/>some</highlight></codeline>
+<codeline><highlight class="normal">non-trivial<sp/>effort<sp/>to<sp/>define<sp/>a<sp/>custom<sp/>action<sp/>in<sp/>Google<sp/>Mock.<sp/><sp/>For</highlight></codeline>
+<codeline><highlight class="normal">example,<sp/>suppose<sp/>you<sp/>want<sp/>to<sp/>&quot;increment<sp/>the<sp/>value<sp/>pointed<sp/>to<sp/>by<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">second<sp/>argument<sp/>of<sp/>the<sp/>mock<sp/>function<sp/>and<sp/>return<sp/>it&quot;,<sp/>you<sp/>could<sp/>write:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>IncrementArg1(Unused,<sp/>int*<sp/>p,<sp/>Unused)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>++(*p);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">...<sp/>WillOnce(Invoke(IncrementArg1));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">There<sp/>are<sp/>several<sp/>things<sp/>unsatisfactory<sp/>about<sp/>this<sp/>approach:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Even<sp/>though<sp/>the<sp/>action<sp/>only<sp/>cares<sp/>about<sp/>the<sp/>second<sp/>argument<sp/>of<sp/>the<sp/>mock<sp/>function,<sp/>its<sp/>definition<sp/>needs<sp/>to<sp/>list<sp/>other<sp/>arguments<sp/>as<sp/>dummies.<sp/><sp/>This<sp/>is<sp/>tedious.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>The<sp/>defined<sp/>action<sp/>is<sp/>usable<sp/>only<sp/>in<sp/>mock<sp/>functions<sp/>that<sp/>takes<sp/>exactly<sp/>3<sp/>arguments<sp/>-<sp/>an<sp/>unnecessary<sp/>restriction.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>To<sp/>use<sp/>the<sp/>action,<sp/>one<sp/>has<sp/>to<sp/>say<sp/>`Invoke(IncrementArg1)`,<sp/>which<sp/>isn&apos;t<sp/>as<sp/>nice<sp/>as<sp/>`IncrementArg1()`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>latter<sp/>two<sp/>problems<sp/>can<sp/>be<sp/>overcome<sp/>using<sp/>`MakePolymorphicAction()`,</highlight></codeline>
+<codeline><highlight class="normal">but<sp/>it<sp/>requires<sp/>much<sp/>more<sp/>boilerplate<sp/>code:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>IncrementArg1Action<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>template<sp/>&lt;typename<sp/>Result,<sp/>typename<sp/>ArgumentTuple&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Result<sp/>Perform(const<sp/>ArgumentTuple&amp;<sp/>args)<sp/>const<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>++(*tr1::get&lt;1&gt;(args));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">PolymorphicAction&lt;IncrementArg1Action&gt;<sp/>IncrementArg1()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>MakePolymorphicAction(IncrementArg1Action());</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">...<sp/>WillOnce(IncrementArg1());</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Our<sp/>goal<sp/>is<sp/>to<sp/>allow<sp/>defining<sp/>custom<sp/>actions<sp/>with<sp/>the<sp/>least<sp/>amount<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">boiler-plate<sp/>C++<sp/>requires.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Solution<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>propose<sp/>to<sp/>introduce<sp/>a<sp/>new<sp/>macro:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">ACTION(name)<sp/>{<sp/>statements;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Using<sp/>this<sp/>in<sp/>a<sp/>namespace<sp/>scope<sp/>will<sp/>define<sp/>an<sp/>action<sp/>with<sp/>the<sp/>given</highlight></codeline>
+<codeline><highlight class="normal">name<sp/>that<sp/>executes<sp/>the<sp/>statements.<sp/><sp/>Inside<sp/>the<sp/>statements,<sp/>you<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">refer<sp/>to<sp/>the<sp/>K-th<sp/>(0-based)<sp/>argument<sp/>of<sp/>the<sp/>mock<sp/>function<sp/>as<sp/>`argK`.</highlight></codeline>
+<codeline><highlight class="normal">For<sp/>example:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">ACTION(IncrementArg1)<sp/>{<sp/>return<sp/>++(*arg1);<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">allows<sp/>you<sp/>to<sp/>write</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">...<sp/>WillOnce(IncrementArg1());</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Note<sp/>that<sp/>you<sp/>don&apos;t<sp/>need<sp/>to<sp/>specify<sp/>the<sp/>types<sp/>of<sp/>the<sp/>mock<sp/>function</highlight></codeline>
+<codeline><highlight class="normal">arguments,<sp/>as<sp/>brevity<sp/>is<sp/>a<sp/>top<sp/>design<sp/>goal<sp/>here.<sp/><sp/>Rest<sp/>assured<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">your<sp/>code<sp/>is<sp/>still<sp/>type-safe<sp/>though:<sp/>you&apos;ll<sp/>get<sp/>a<sp/>compiler<sp/>error<sp/>if</highlight></codeline>
+<codeline><highlight class="normal">`*arg1`<sp/>doesn&apos;t<sp/>support<sp/>the<sp/>`++`<sp/>operator,<sp/>or<sp/>if<sp/>the<sp/>type<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">`++(*arg1)`<sp/>isn&apos;t<sp/>compatible<sp/>with<sp/>the<sp/>mock<sp/>function&apos;s<sp/>return<sp/>type.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Another<sp/>example:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">ACTION(Foo)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>(*arg2)(5);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Blah();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*arg1<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>arg0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">defines<sp/>an<sp/>action<sp/>`Foo()`<sp/>that<sp/>invokes<sp/>argument<sp/>#2<sp/>(a<sp/>function<sp/>pointer)</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>5,<sp/>calls<sp/>function<sp/>`Blah()`,<sp/>sets<sp/>the<sp/>value<sp/>pointed<sp/>to<sp/>by<sp/>argument</highlight></codeline>
+<codeline><highlight class="normal">#1<sp/>to<sp/>0,<sp/>and<sp/>returns<sp/>argument<sp/>#0.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>more<sp/>convenience<sp/>and<sp/>flexibility,<sp/>you<sp/>can<sp/>also<sp/>use<sp/>the<sp/>following</highlight></codeline>
+<codeline><highlight class="normal">pre-defined<sp/>symbols<sp/>in<sp/>the<sp/>body<sp/>of<sp/>`ACTION`:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>`argK_type`<sp/>|<sp/>The<sp/>type<sp/>of<sp/>the<sp/>K-th<sp/>(0-based)<sp/>argument<sp/>of<sp/>the<sp/>mock<sp/>function<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|:------------|:-------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`args`<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>All<sp/>arguments<sp/>of<sp/>the<sp/>mock<sp/>function<sp/>as<sp/>a<sp/>tuple<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`args_type`<sp/>|<sp/>The<sp/>type<sp/>of<sp/>all<sp/>arguments<sp/>of<sp/>the<sp/>mock<sp/>function<sp/>as<sp/>a<sp/>tuple<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`return_type`<sp/>|<sp/>The<sp/>return<sp/>type<sp/>of<sp/>the<sp/>mock<sp/>function<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`function_type`<sp/>|<sp/>The<sp/>type<sp/>of<sp/>the<sp/>mock<sp/>function<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>example,<sp/>when<sp/>using<sp/>an<sp/>`ACTION`<sp/>as<sp/>a<sp/>stub<sp/>action<sp/>for<sp/>mock<sp/>function:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>DoSomething(bool<sp/>flag,<sp/>int*<sp/>ptr);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">we<sp/>have:</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>**Pre-defined<sp/>Symbol**<sp/>|<sp/>**Is<sp/>Bound<sp/>To**<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|:-----------------------|:----------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`arg0`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>the<sp/>value<sp/>of<sp/>`flag`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`arg0_type`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>the<sp/>type<sp/>`bool`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`arg1`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>the<sp/>value<sp/>of<sp/>`ptr`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`arg1_type`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>the<sp/>type<sp/>`int*`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`args`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>the<sp/>tuple<sp/>`(flag,<sp/>ptr)`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`args_type`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>the<sp/>type<sp/>`std::tr1::tuple&lt;bool,<sp/>int*&gt;`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`return_type`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>the<sp/>type<sp/>`int`<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`function_type`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>the<sp/>type<sp/>`int(bool,<sp/>int*)`<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Parameterized<sp/>actions<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Sometimes<sp/>you&apos;ll<sp/>want<sp/>to<sp/>parameterize<sp/>the<sp/>action.<sp/><sp/><sp/>For<sp/>that<sp/>we<sp/>propose</highlight></codeline>
+<codeline><highlight class="normal">another<sp/>macro</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">ACTION_P(name,<sp/>param)<sp/>{<sp/>statements;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>example,</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">ACTION_P(Add,<sp/>n)<sp/>{<sp/>return<sp/>arg0<sp/>+<sp/>n;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">will<sp/>allow<sp/>you<sp/>to<sp/>write</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Returns<sp/>argument<sp/>#0<sp/>+<sp/>5.</highlight></codeline>
+<codeline><highlight class="normal">...<sp/>WillOnce(Add(5));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>convenience,<sp/>we<sp/>use<sp/>the<sp/>term<sp/>_arguments_<sp/>for<sp/>the<sp/>values<sp/>used<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">invoke<sp/>the<sp/>mock<sp/>function,<sp/>and<sp/>the<sp/>term<sp/>_parameters_<sp/>for<sp/>the<sp/>values</highlight></codeline>
+<codeline><highlight class="normal">used<sp/>to<sp/>instantiate<sp/>an<sp/>action.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Note<sp/>that<sp/>you<sp/>don&apos;t<sp/>need<sp/>to<sp/>provide<sp/>the<sp/>type<sp/>of<sp/>the<sp/>parameter<sp/>either.</highlight></codeline>
+<codeline><highlight class="normal">Suppose<sp/>the<sp/>parameter<sp/>is<sp/>named<sp/>`param`,<sp/>you<sp/>can<sp/>also<sp/>use<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">Google-Mock-defined<sp/>symbol<sp/>`param_type`<sp/>to<sp/>refer<sp/>to<sp/>the<sp/>type<sp/>of<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">parameter<sp/>as<sp/>inferred<sp/>by<sp/>the<sp/>compiler.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>will<sp/>also<sp/>provide<sp/>`ACTION_P2`,<sp/>`ACTION_P3`,<sp/>and<sp/>etc<sp/>to<sp/>support</highlight></codeline>
+<codeline><highlight class="normal">multi-parameter<sp/>actions.<sp/><sp/>For<sp/>example,</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">ACTION_P2(ReturnDistanceTo,<sp/>x,<sp/>y)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>double<sp/>dx<sp/>=<sp/>arg0<sp/>-<sp/>x;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>double<sp/>dy<sp/>=<sp/>arg1<sp/>-<sp/>y;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>sqrt(dx*dx<sp/>+<sp/>dy*dy);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">lets<sp/>you<sp/>write</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">...<sp/>WillOnce(ReturnDistanceTo(5.0,<sp/>26.5));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>view<sp/>`ACTION`<sp/>as<sp/>a<sp/>degenerated<sp/>parameterized<sp/>action<sp/>where<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">number<sp/>of<sp/>parameters<sp/>is<sp/>0.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Advanced<sp/>Usages<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Overloading<sp/>Actions<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>easily<sp/>define<sp/>actions<sp/>overloaded<sp/>on<sp/>the<sp/>number<sp/>of<sp/>parameters:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">ACTION_P(Plus,<sp/>a)<sp/>{<sp/>...<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">ACTION_P2(Plus,<sp/>a,<sp/>b)<sp/>{<sp/>...<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Restricting<sp/>the<sp/>Type<sp/>of<sp/>an<sp/>Argument<sp/>or<sp/>Parameter<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>maximum<sp/>brevity<sp/>and<sp/>reusability,<sp/>the<sp/>`ACTION*`<sp/>macros<sp/>don&apos;t<sp/>let</highlight></codeline>
+<codeline><highlight class="normal">you<sp/>specify<sp/>the<sp/>types<sp/>of<sp/>the<sp/>mock<sp/>function<sp/>arguments<sp/>and<sp/>the<sp/>action</highlight></codeline>
+<codeline><highlight class="normal">parameters.<sp/><sp/>Instead,<sp/>we<sp/>let<sp/>the<sp/>compiler<sp/>infer<sp/>the<sp/>types<sp/>for<sp/>us.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Sometimes,<sp/>however,<sp/>we<sp/>may<sp/>want<sp/>to<sp/>be<sp/>more<sp/>explicit<sp/>about<sp/>the<sp/>types.</highlight></codeline>
+<codeline><highlight class="normal">There<sp/>are<sp/>several<sp/>tricks<sp/>to<sp/>do<sp/>that.<sp/><sp/>For<sp/>example:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">ACTION(Foo)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>Makes<sp/>sure<sp/>arg0<sp/>can<sp/>be<sp/>converted<sp/>to<sp/>int.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>int<sp/>n<sp/>=<sp/>arg0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...<sp/>use<sp/>n<sp/>instead<sp/>of<sp/>arg0<sp/>here<sp/>...</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">ACTION_P(Bar,<sp/>param)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>Makes<sp/>sure<sp/>the<sp/>type<sp/>of<sp/>arg1<sp/>is<sp/>const<sp/>char*.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>::testing::StaticAssertTypeEq&lt;const<sp/>char*,<sp/>arg1_type&gt;();</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>Makes<sp/>sure<sp/>param<sp/>can<sp/>be<sp/>converted<sp/>to<sp/>bool.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>bool<sp/>flag<sp/>=<sp/>param;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>`StaticAssertTypeEq`<sp/>is<sp/>a<sp/>compile-time<sp/>assertion<sp/>we<sp/>plan<sp/>to<sp/>add<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">Google<sp/>Test<sp/>(the<sp/>name<sp/>is<sp/>chosen<sp/>to<sp/>match<sp/>`static_assert`<sp/>in<sp/>C++0x).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Using<sp/>the<sp/>ACTION<sp/>Object&apos;s<sp/>Type<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>are<sp/>writing<sp/>a<sp/>function<sp/>that<sp/>returns<sp/>an<sp/>`ACTION`<sp/>object,<sp/>you&apos;ll</highlight></codeline>
+<codeline><highlight class="normal">need<sp/>to<sp/>know<sp/>its<sp/>type.<sp/><sp/>The<sp/>type<sp/>depends<sp/>on<sp/>the<sp/>macro<sp/>used<sp/>to<sp/>define</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>action<sp/>and<sp/>the<sp/>parameter<sp/>types.<sp/><sp/>The<sp/>rule<sp/>is<sp/>relatively<sp/>simple:</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>**Given<sp/>Definition**<sp/>|<sp/>**Expression**<sp/>|<sp/>**Has<sp/>Type**<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|:---------------------|:---------------|:-------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`ACTION(Foo)`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>`Foo()`<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>`FooAction`<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`ACTION_P(Bar,<sp/>param)`<sp/>|<sp/>`Bar(int_value)`<sp/>|<sp/>`BarActionP&lt;int&gt;`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`ACTION_P2(Baz,<sp/>p1,<sp/>p2)`<sp/>|<sp/>`Baz(bool_value,<sp/>int_value)`<sp/>|<sp/>`BazActionP2&lt;bool,<sp/>int&gt;`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>...<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>...<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>...<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Note<sp/>that<sp/>we<sp/>have<sp/>to<sp/>pick<sp/>different<sp/>suffixes<sp/>(`Action`,<sp/>`ActionP`,</highlight></codeline>
+<codeline><highlight class="normal">`ActionP2`,<sp/>and<sp/>etc)<sp/>for<sp/>actions<sp/>with<sp/>different<sp/>numbers<sp/>of<sp/>parameters,</highlight></codeline>
+<codeline><highlight class="normal">or<sp/>the<sp/>action<sp/>definitions<sp/>cannot<sp/>be<sp/>overloaded<sp/>on<sp/>the<sp/>number<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">parameters.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>When<sp/>to<sp/>Use<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">While<sp/>the<sp/>new<sp/>macros<sp/>are<sp/>very<sp/>convenient,<sp/>please<sp/>also<sp/>consider<sp/>other</highlight></codeline>
+<codeline><highlight class="normal">means<sp/>of<sp/>implementing<sp/>actions<sp/>(e.g.<sp/>via<sp/>`ActionInterface`<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">`MakePolymorphicAction()`),<sp/>especially<sp/>if<sp/>you<sp/>need<sp/>to<sp/>use<sp/>the<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal">action<sp/>a<sp/>lot.<sp/><sp/>While<sp/>the<sp/>other<sp/>approaches<sp/>require<sp/>more<sp/>work,<sp/>they<sp/>give</highlight></codeline>
+<codeline><highlight class="normal">you<sp/>more<sp/>control<sp/>on<sp/>the<sp/>types<sp/>of<sp/>the<sp/>mock<sp/>function<sp/>arguments<sp/>and<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">action<sp/>parameters,<sp/>which<sp/>in<sp/>general<sp/>leads<sp/>to<sp/>better<sp/>compiler<sp/>error</highlight></codeline>
+<codeline><highlight class="normal">messages<sp/>that<sp/>pay<sp/>off<sp/>in<sp/>the<sp/>long<sp/>run.<sp/><sp/>They<sp/>also<sp/>allow<sp/>overloading</highlight></codeline>
+<codeline><highlight class="normal">actions<sp/>based<sp/>on<sp/>parameter<sp/>types,<sp/>as<sp/>opposed<sp/>to<sp/>just<sp/>the<sp/>number<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">parameters.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Related<sp/>Work<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>you<sp/>may<sp/>have<sp/>realized,<sp/>the<sp/>`ACTION*`<sp/>macros<sp/>resemble<sp/>closures<sp/>(also</highlight></codeline>
+<codeline><highlight class="normal">known<sp/>as<sp/>lambda<sp/>expressions<sp/>or<sp/>anonymous<sp/>functions).<sp/><sp/>Indeed,<sp/>both<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">them<sp/>seek<sp/>to<sp/>lower<sp/>the<sp/>syntactic<sp/>overhead<sp/>for<sp/>defining<sp/>a<sp/>function.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">C++0x<sp/>will<sp/>support<sp/>lambdas,<sp/>but<sp/>they<sp/>are<sp/>not<sp/>part<sp/>of<sp/>C++<sp/>right<sp/>now.</highlight></codeline>
+<codeline><highlight class="normal">Some<sp/>non-standard<sp/>libraries<sp/>(most<sp/>notably<sp/>BLL<sp/>or<sp/>Boost<sp/>Lambda<sp/>Library)</highlight></codeline>
+<codeline><highlight class="normal">try<sp/>to<sp/>alleviate<sp/>this<sp/>problem.<sp/><sp/>However,<sp/>they<sp/>are<sp/>not<sp/>a<sp/>good<sp/>choice</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>defining<sp/>actions<sp/>as:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>They<sp/>are<sp/>non-standard<sp/>and<sp/>not<sp/>widely<sp/>installed.<sp/><sp/>Google<sp/>Mock<sp/>only<sp/>depends<sp/>on<sp/>standard<sp/>libraries<sp/>and<sp/>`tr1::tuple`,<sp/>which<sp/>is<sp/>part<sp/>of<sp/>the<sp/>new<sp/>C++<sp/>standard<sp/>and<sp/>comes<sp/>with<sp/>gcc<sp/>4+.<sp/><sp/>We<sp/>want<sp/>to<sp/>keep<sp/>it<sp/>that<sp/>way.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>They<sp/>are<sp/>not<sp/>trivial<sp/>to<sp/>learn.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>They<sp/>will<sp/>become<sp/>obsolete<sp/>when<sp/>C++0x&apos;s<sp/>lambda<sp/>feature<sp/>is<sp/>widely<sp/>supported.<sp/><sp/>We<sp/>don&apos;t<sp/>want<sp/>to<sp/>make<sp/>our<sp/>users<sp/>use<sp/>a<sp/>dying<sp/>library.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Since<sp/>they<sp/>are<sp/>based<sp/>on<sp/>operators,<sp/>they<sp/>are<sp/>rather<sp/>ad<sp/>hoc:<sp/>you<sp/>cannot<sp/>use<sp/>statements,<sp/>and<sp/>you<sp/>cannot<sp/>pass<sp/>the<sp/>lambda<sp/>arguments<sp/>to<sp/>a<sp/>function,<sp/>for<sp/>example.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>They<sp/>have<sp/>subtle<sp/>semantics<sp/>that<sp/>easily<sp/>confuses<sp/>new<sp/>users.<sp/><sp/>For<sp/>example,<sp/>in<sp/>expression<sp/>`_1++<sp/>+<sp/>foo++`,<sp/>`foo`<sp/>will<sp/>be<sp/>incremented<sp/>only<sp/>once<sp/>where<sp/>the<sp/>expression<sp/>is<sp/>evaluated,<sp/>while<sp/>`_1`<sp/>will<sp/>be<sp/>incremented<sp/>every<sp/>time<sp/>the<sp/>unnamed<sp/>function<sp/>is<sp/>invoked.<sp/><sp/>This<sp/>is<sp/>far<sp/>from<sp/>intuitive.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`ACTION*`<sp/>avoid<sp/>all<sp/>these<sp/>problems.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Future<sp/>Improvements<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">There<sp/>may<sp/>be<sp/>a<sp/>need<sp/>for<sp/>composing<sp/>`ACTION*`<sp/>definitions<sp/>(i.e.<sp/>invoking</highlight></codeline>
+<codeline><highlight class="normal">another<sp/>`ACTION`<sp/>inside<sp/>the<sp/>definition<sp/>of<sp/>one<sp/>`ACTION*`).<sp/><sp/>We<sp/>are<sp/>not</highlight></codeline>
+<codeline><highlight class="normal">sure<sp/>we<sp/>want<sp/>it<sp/>yet,<sp/>as<sp/>one<sp/>can<sp/>get<sp/>a<sp/>similar<sp/>effect<sp/>by<sp/>putting</highlight></codeline>
+<codeline><highlight class="normal">`ACTION`<sp/>definitions<sp/>in<sp/>function<sp/>templates<sp/>and<sp/>composing<sp/>the<sp/>function</highlight></codeline>
+<codeline><highlight class="normal">templates.<sp/><sp/>We&apos;ll<sp/>revisit<sp/>this<sp/>based<sp/>on<sp/>user<sp/>feedback.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>reason<sp/>we<sp/>don&apos;t<sp/>allow<sp/>`ACTION*()`<sp/>inside<sp/>a<sp/>function<sp/>body<sp/>is<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>current<sp/>C++<sp/>standard<sp/>doesn&apos;t<sp/>allow<sp/>function-local<sp/>types<sp/>to<sp/>be<sp/>used</highlight></codeline>
+<codeline><highlight class="normal">to<sp/>instantiate<sp/>templates.<sp/><sp/>The<sp/>upcoming<sp/>C++0x<sp/>standard<sp/>will<sp/>lift<sp/>this</highlight></codeline>
+<codeline><highlight class="normal">restriction.<sp/><sp/>Once<sp/>this<sp/>feature<sp/>is<sp/>widely<sp/>supported<sp/>by<sp/>compilers,<sp/>we</highlight></codeline>
+<codeline><highlight class="normal">can<sp/>revisit<sp/>the<sp/>implementation<sp/>and<sp/>add<sp/>support<sp/>for<sp/>using<sp/>`ACTION*()`</highlight></codeline>
+<codeline><highlight class="normal">inside<sp/>a<sp/>function.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">C++0x<sp/>will<sp/>also<sp/>support<sp/>lambda<sp/>expressions.<sp/><sp/>When<sp/>they<sp/>become</highlight></codeline>
+<codeline><highlight class="normal">available,<sp/>we<sp/>may<sp/>want<sp/>to<sp/>support<sp/>using<sp/>lambdas<sp/>as<sp/>actions.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Macros<sp/>for<sp/>Defining<sp/>Matchers<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Once<sp/>the<sp/>macros<sp/>for<sp/>defining<sp/>actions<sp/>are<sp/>implemented,<sp/>we<sp/>plan<sp/>to<sp/>do</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>same<sp/>for<sp/>matchers:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">MATCHER(name)<sp/>{<sp/>statements;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">where<sp/>you<sp/>can<sp/>refer<sp/>to<sp/>the<sp/>value<sp/>being<sp/>matched<sp/>as<sp/>`arg`.<sp/><sp/>For<sp/>example,</highlight></codeline>
+<codeline><highlight class="normal">given:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">MATCHER(IsPositive)<sp/>{<sp/>return<sp/>arg<sp/>&gt;<sp/>0;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">you<sp/>can<sp/>use<sp/>`IsPositive()`<sp/>as<sp/>a<sp/>matcher<sp/>that<sp/>matches<sp/>a<sp/>value<sp/>iff<sp/>it<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">greater<sp/>than<sp/>0.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>will<sp/>also<sp/>add<sp/>`MATCHER_P`,<sp/>`MATCHER_P2`,<sp/>and<sp/>etc<sp/>for<sp/>parameterized</highlight></codeline>
+<codeline><highlight class="normal">matchers.</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googlemock/docs/DesignDoc.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_base" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::Base</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_base_1ae5ef293660377de27d63ad79b35d2e81" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::internal::Base::member_</definition>
+        <argsstring></argsstring>
+        <name>member_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-port_test.cc" line="111" column="1" bodyfile="vendor/googletest/googletest/test/gtest-port_test.cc" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_base_1a6b29f1a7192b126e6fa0aae31200b5ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::Base::Base</definition>
+        <argsstring>()</argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-port_test.cc" line="105" column="1" bodyfile="vendor/googletest/googletest/test/gtest-port_test.cc" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_base_1a255d105410a1eeb5f4690c9c8cd8e104" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::Base::Base</definition>
+        <argsstring>(int n)</argsstring>
+        <name>Base</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-port_test.cc" line="106" column="1" bodyfile="vendor/googletest/googletest/test/gtest-port_test.cc" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_base_1afb29c9032fb50cc6520014aad9d68328" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual testing::internal::Base::~Base</definition>
+        <argsstring>()</argsstring>
+        <name>~Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-port_test.cc" line="107" column="1" bodyfile="vendor/googletest/googletest/test/gtest-port_test.cc" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_base_1a7ddba6221b56613be545544b7ef6214c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::internal::Base::member</definition>
+        <argsstring>()</argsstring>
+        <name>member</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest-port_test.cc" line="108" column="1" bodyfile="vendor/googletest/googletest/test/gtest-port_test.cc" bodystart="108" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest-port_test.cc" line="101" column="1" bodyfile="vendor/googletest/googletest/test/gtest-port_test.cc" bodystart="101" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_base_1a6b29f1a7192b126e6fa0aae31200b5ca" prot="public" virt="non-virtual"><scope>testing::internal::Base</scope><name>Base</name></member>
+      <member refid="classtesting_1_1internal_1_1_base_1a255d105410a1eeb5f4690c9c8cd8e104" prot="public" virt="non-virtual"><scope>testing::internal::Base</scope><name>Base</name></member>
+      <member refid="classtesting_1_1internal_1_1_base_1a7ddba6221b56613be545544b7ef6214c" prot="public" virt="non-virtual"><scope>testing::internal::Base</scope><name>member</name></member>
+      <member refid="classtesting_1_1internal_1_1_base_1ae5ef293660377de27d63ad79b35d2e81" prot="private" virt="non-virtual"><scope>testing::internal::Base</scope><name>member_</name></member>
+      <member refid="classtesting_1_1internal_1_1_base_1afb29c9032fb50cc6520014aad9d68328" prot="public" virt="virtual"><scope>testing::internal::Base</scope><name>~Base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

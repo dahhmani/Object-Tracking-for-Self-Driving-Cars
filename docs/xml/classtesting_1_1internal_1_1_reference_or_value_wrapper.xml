@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_reference_or_value_wrapper" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::ReferenceOrValueWrapper</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1_reference_or_value_wrapper_1a62278a25c713a8440aa56f4eba0fa815" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T testing::internal::ReferenceOrValueWrapper&lt; T &gt;::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1323" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1323" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_reference_or_value_wrapper_1ae5544acd43aa0feed92aa51b4186ede9" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::ReferenceOrValueWrapper&lt; T &gt;::ReferenceOrValueWrapper</definition>
+        <argsstring>(T value)</argsstring>
+        <name>ReferenceOrValueWrapper</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1305" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1305" bodyend="1307"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_reference_or_value_wrapper_1a5a6505b809ba770725e7b8091927a5ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T testing::internal::ReferenceOrValueWrapper&lt; T &gt;::Unwrap</definition>
+        <argsstring>()</argsstring>
+        <name>Unwrap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1312" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1312" bodyend="1312"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_reference_or_value_wrapper_1a235cdb913959a71ad2a98fdd0965fe59" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; testing::internal::ReferenceOrValueWrapper&lt; T &gt;::Peek</definition>
+        <argsstring>() const</argsstring>
+        <name>Peek</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1318" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1318" bodyend="1320"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" line="1302" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h" bodystart="1302" bodyend="1324"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_reference_or_value_wrapper_1a235cdb913959a71ad2a98fdd0965fe59" prot="public" virt="non-virtual"><scope>testing::internal::ReferenceOrValueWrapper</scope><name>Peek</name></member>
+      <member refid="classtesting_1_1internal_1_1_reference_or_value_wrapper_1ae5544acd43aa0feed92aa51b4186ede9" prot="public" virt="non-virtual"><scope>testing::internal::ReferenceOrValueWrapper</scope><name>ReferenceOrValueWrapper</name></member>
+      <member refid="classtesting_1_1internal_1_1_reference_or_value_wrapper_1a5a6505b809ba770725e7b8091927a5ba" prot="public" virt="non-virtual"><scope>testing::internal::ReferenceOrValueWrapper</scope><name>Unwrap</name></member>
+      <member refid="classtesting_1_1internal_1_1_reference_or_value_wrapper_1a62278a25c713a8440aa56f4eba0fa815" prot="private" virt="non-virtual"><scope>testing::internal::ReferenceOrValueWrapper</scope><name>value_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

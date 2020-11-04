@@ -1,0 +1,427 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="gtest-port-arch_8h" kind="file" language="C++">
+    <compoundname>gtest-port-arch.h</compoundname>
+    <includedby refid="gtest-port_8h" local="yes">vendor/googletest/googletest/include/gtest/internal/gtest-port.h</includedby>
+    <invincdepgraph>
+      <node id="3999">
+        <label>vendor/googletest/googletest/include/gtest/internal/gtest-type-util.h</label>
+        <link refid="gtest-type-util_8h_source"/>
+        <childnode refid="3995" relation="include">
+        </childnode>
+        <childnode refid="3987" relation="include">
+        </childnode>
+      </node>
+      <node id="3984">
+        <label>vendor/googletest/googletest/src/gtest-internal-inl.h</label>
+        <link refid="gtest-internal-inl_8h_source"/>
+      </node>
+      <node id="3963">
+        <label>vendor/googletest/googletest/include/gtest/internal/gtest-port-arch.h</label>
+        <link refid="gtest-port-arch_8h"/>
+        <childnode refid="3964" relation="include">
+        </childnode>
+      </node>
+      <node id="3985">
+        <label>vendor/googletest/googletest/test/gtest-param-test_test.h</label>
+        <link refid="gtest-param-test__test_8h_source"/>
+      </node>
+      <node id="3979">
+        <label>vendor/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h</label>
+        <link refid="gmock-internal-utils_8h_source"/>
+        <childnode refid="3966" relation="include">
+        </childnode>
+        <childnode refid="3972" relation="include">
+        </childnode>
+        <childnode refid="3975" relation="include">
+        </childnode>
+        <childnode refid="3971" relation="include">
+        </childnode>
+        <childnode refid="3969" relation="include">
+        </childnode>
+      </node>
+      <node id="3968">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-more-actions.h</label>
+        <link refid="gmock-more-actions_8h_source"/>
+        <childnode refid="3969" relation="include">
+        </childnode>
+      </node>
+      <node id="3997">
+        <label>vendor/googletest/googletest/include/gtest/internal/gtest-string.h</label>
+        <link refid="gtest-string_8h_source"/>
+        <childnode refid="3992" relation="include">
+        </childnode>
+        <childnode refid="3981" relation="include">
+        </childnode>
+        <childnode refid="3998" relation="include">
+        </childnode>
+        <childnode refid="3987" relation="include">
+        </childnode>
+      </node>
+      <node id="3992">
+        <label>vendor/googletest/googletest/include/gtest/gtest-test-part.h</label>
+        <link refid="gtest-test-part_8h_source"/>
+        <childnode refid="3981" relation="include">
+        </childnode>
+      </node>
+      <node id="3976">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-generated-matchers.h</label>
+        <link refid="gmock-generated-matchers_8h_source"/>
+        <childnode refid="3977" relation="include">
+        </childnode>
+        <childnode refid="3969" relation="include">
+        </childnode>
+      </node>
+      <node id="3972">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-generated-function-mockers.h</label>
+        <link refid="gmock-generated-function-mockers_8h_source"/>
+        <childnode refid="3969" relation="include">
+        </childnode>
+      </node>
+      <node id="3969">
+        <label>vendor/googletest/googlemock/include/gmock/gmock.h</label>
+        <link refid="gmock_8h_source"/>
+        <childnode refid="3970" relation="include">
+        </childnode>
+      </node>
+      <node id="3991">
+        <label>vendor/googletest/googletest/include/gtest/internal/gtest-param-util-generated.h</label>
+        <link refid="gtest-param-util-generated_8h_source"/>
+        <childnode refid="3988" relation="include">
+        </childnode>
+      </node>
+      <node id="3967">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-generated-actions.h</label>
+        <link refid="gmock-generated-actions_8h_source"/>
+        <childnode refid="3968" relation="include">
+        </childnode>
+        <childnode refid="3969" relation="include">
+        </childnode>
+      </node>
+      <node id="3994">
+        <label>vendor/googletest/googletest/include/gtest/gtest-death-test.h</label>
+        <link refid="gtest-death-test_8h_source"/>
+        <childnode refid="3981" relation="include">
+        </childnode>
+      </node>
+      <node id="3966">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-actions.h</label>
+        <link refid="gmock-actions_8h_source"/>
+        <childnode refid="3967" relation="include">
+        </childnode>
+        <childnode refid="3971" relation="include">
+        </childnode>
+        <childnode refid="3969" relation="include">
+        </childnode>
+      </node>
+      <node id="3965">
+        <label>vendor/googletest/googlemock/include/gmock/internal/gmock-port.h</label>
+        <link refid="gmock-port_8h_source"/>
+        <childnode refid="3966" relation="include">
+        </childnode>
+        <childnode refid="3974" relation="include">
+        </childnode>
+        <childnode refid="3967" relation="include">
+        </childnode>
+        <childnode refid="3973" relation="include">
+        </childnode>
+        <childnode refid="3975" relation="include">
+        </childnode>
+        <childnode refid="3971" relation="include">
+        </childnode>
+        <childnode refid="3978" relation="include">
+        </childnode>
+        <childnode refid="3979" relation="include">
+        </childnode>
+        <childnode refid="3970" relation="include">
+        </childnode>
+      </node>
+      <node id="3986">
+        <label>vendor/googletest/googletest/test/gtest-typed-test_test.h</label>
+        <link refid="gtest-typed-test__test_8h_source"/>
+      </node>
+      <node id="3980">
+        <label>vendor/googletest/googletest/include/gtest/gtest-message.h</label>
+        <link refid="gtest-message_8h_source"/>
+        <childnode refid="3981" relation="include">
+        </childnode>
+        <childnode refid="3987" relation="include">
+        </childnode>
+      </node>
+      <node id="3971">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-spec-builders.h</label>
+        <link refid="gmock-spec-builders_8h_source"/>
+        <childnode refid="3972" relation="include">
+        </childnode>
+        <childnode refid="3973" relation="include">
+        </childnode>
+      </node>
+      <node id="3996">
+        <label>vendor/googletest/googletest/include/gtest/internal/gtest-linked_ptr.h</label>
+        <link refid="gtest-linked__ptr_8h_source"/>
+        <childnode refid="3965" relation="include">
+        </childnode>
+        <childnode refid="3990" relation="include">
+        </childnode>
+      </node>
+      <node id="3975">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-matchers.h</label>
+        <link refid="gmock-matchers_8h_source"/>
+        <childnode refid="3976" relation="include">
+        </childnode>
+        <childnode refid="3971" relation="include">
+        </childnode>
+        <childnode refid="3969" relation="include">
+        </childnode>
+      </node>
+      <node id="3973">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-generated-nice-strict.h</label>
+        <link refid="gmock-generated-nice-strict_8h_source"/>
+        <childnode refid="3969" relation="include">
+        </childnode>
+      </node>
+      <node id="3974">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-cardinalities.h</label>
+        <link refid="gmock-cardinalities_8h_source"/>
+        <childnode refid="3971" relation="include">
+        </childnode>
+        <childnode refid="3969" relation="include">
+        </childnode>
+      </node>
+      <node id="3998">
+        <label>vendor/googletest/googletest/include/gtest/internal/gtest-filepath.h</label>
+        <link refid="gtest-filepath_8h_source"/>
+        <childnode refid="3987" relation="include">
+        </childnode>
+      </node>
+      <node id="3981">
+        <label>vendor/googletest/googletest/include/gtest/gtest.h</label>
+        <link refid="gtest_8h_source"/>
+        <childnode refid="3982" relation="include">
+        </childnode>
+        <childnode refid="3974" relation="include">
+        </childnode>
+        <childnode refid="3975" relation="include">
+        </childnode>
+        <childnode refid="3971" relation="include">
+        </childnode>
+        <childnode refid="3979" relation="include">
+        </childnode>
+        <childnode refid="3970" relation="include">
+        </childnode>
+        <childnode refid="3983" relation="include">
+        </childnode>
+        <childnode refid="3984" relation="include">
+        </childnode>
+        <childnode refid="3985" relation="include">
+        </childnode>
+        <childnode refid="3986" relation="include">
+        </childnode>
+      </node>
+      <node id="3982">
+        <label>test/test_tracker.cpp</label>
+        <link refid="test__tracker_8cpp"/>
+      </node>
+      <node id="3995">
+        <label>vendor/googletest/googletest/include/gtest/gtest-typed-test.h</label>
+        <link refid="gtest-typed-test_8h_source"/>
+        <childnode refid="3981" relation="include">
+        </childnode>
+      </node>
+      <node id="3964">
+        <label>vendor/googletest/googletest/include/gtest/internal/gtest-port.h</label>
+        <link refid="gtest-port_8h_source"/>
+        <childnode refid="3965" relation="include">
+        </childnode>
+        <childnode refid="3980" relation="include">
+        </childnode>
+        <childnode refid="3988" relation="include">
+        </childnode>
+        <childnode refid="3989" relation="include">
+        </childnode>
+        <childnode refid="3995" relation="include">
+        </childnode>
+        <childnode refid="3987" relation="include">
+        </childnode>
+        <childnode refid="3996" relation="include">
+        </childnode>
+        <childnode refid="3991" relation="include">
+        </childnode>
+        <childnode refid="3990" relation="include">
+        </childnode>
+        <childnode refid="3997" relation="include">
+        </childnode>
+        <childnode refid="3999" relation="include">
+        </childnode>
+        <childnode refid="3984" relation="include">
+        </childnode>
+      </node>
+      <node id="3987">
+        <label>vendor/googletest/googletest/include/gtest/internal/gtest-internal.h</label>
+        <link refid="gtest-internal_8h_source"/>
+        <childnode refid="3988" relation="include">
+        </childnode>
+        <childnode refid="3989" relation="include">
+        </childnode>
+        <childnode refid="3992" relation="include">
+        </childnode>
+        <childnode refid="3981" relation="include">
+        </childnode>
+        <childnode refid="3993" relation="include">
+        </childnode>
+        <childnode refid="3990" relation="include">
+        </childnode>
+      </node>
+      <node id="3977">
+        <label>vendor/googletest/googlemock/include/gmock/gmock-more-matchers.h</label>
+        <link refid="gmock-more-matchers_8h_source"/>
+        <childnode refid="3969" relation="include">
+        </childnode>
+      </node>
+      <node id="3990">
+        <label>vendor/googletest/googletest/include/gtest/internal/gtest-param-util.h</label>
+        <link refid="gtest-param-util_8h_source"/>
+        <childnode refid="3988" relation="include">
+        </childnode>
+        <childnode refid="3991" relation="include">
+        </childnode>
+      </node>
+      <node id="3978">
+        <label>vendor/googletest/googlemock/include/gmock/internal/gmock-generated-internal-utils.h</label>
+        <link refid="gmock-generated-internal-utils_8h_source"/>
+        <childnode refid="3979" relation="include">
+        </childnode>
+      </node>
+      <node id="3988">
+        <label>vendor/googletest/googletest/include/gtest/gtest-param-test.h</label>
+        <link refid="gtest-param-test_8h_source"/>
+        <childnode refid="3981" relation="include">
+        </childnode>
+      </node>
+      <node id="3983">
+        <label>vendor/googletest/googletest/include/gtest/gtest-spi.h</label>
+        <link refid="gtest-spi_8h_source"/>
+        <childnode refid="3984" relation="include">
+        </childnode>
+      </node>
+      <node id="3993">
+        <label>vendor/googletest/googletest/include/gtest/internal/gtest-death-test-internal.h</label>
+        <link refid="gtest-death-test-internal_8h_source"/>
+        <childnode refid="3994" relation="include">
+        </childnode>
+      </node>
+      <node id="3970">
+        <label>vendor/googletest/googlemock/test/gmock_link_test.h</label>
+        <link refid="gmock__link__test_8h_source"/>
+      </node>
+      <node id="3989">
+        <label>vendor/googletest/googletest/include/gtest/gtest-printers.h</label>
+        <link refid="gtest-printers_8h_source"/>
+        <childnode refid="3981" relation="include">
+        </childnode>
+        <childnode refid="3990" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2015,<sp/>Google<sp/>Inc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>met:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Google<sp/>Inc.<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>Google<sp/>C++<sp/>Testing<sp/>Framework<sp/>(Google<sp/>Test)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>header<sp/>file<sp/>defines<sp/>the<sp/>GTEST_OS_*<sp/>macro.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>It<sp/>is<sp/>separate<sp/>from<sp/>gtest-port.h<sp/>so<sp/>that<sp/>custom/gtest-port.h<sp/>can<sp/>include<sp/>it.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_ARCH_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_ARCH_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Determines<sp/>the<sp/>platform<sp/>on<sp/>which<sp/>Google<sp/>Test<sp/>is<sp/>compiled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__CYGWIN__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>GTEST_OS_CYGWIN<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>__SYMBIAN32__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>GTEST_OS_SYMBIAN<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>GTEST_OS_WINDOWS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifdef<sp/>_WIN32_WCE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GTEST_OS_WINDOWS_MOBILE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(__MINGW__)<sp/>||<sp/>defined(__MINGW32__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GTEST_OS_WINDOWS_MINGW<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>elif<sp/>defined(WINAPI_FAMILY)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>include<sp/>&lt;winapifamily.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>if<sp/>WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>GTEST_OS_WINDOWS_DESKTOP<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>elif<sp/>WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_PHONE_APP)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>GTEST_OS_WINDOWS_PHONE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>elif<sp/>WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_APP)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>GTEST_OS_WINDOWS_RT<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>WINAPI_FAMILY<sp/>defined<sp/>but<sp/>no<sp/>known<sp/>partition<sp/>matched.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Default<sp/>to<sp/>desktop.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>GTEST_OS_WINDOWS_DESKTOP<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GTEST_OS_WINDOWS_DESKTOP<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif<sp/><sp/>//<sp/>_WIN32_WCE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>__APPLE__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>GTEST_OS_MAC<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>TARGET_OS_IPHONE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GTEST_OS_IOS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>__FreeBSD__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>GTEST_OS_FREEBSD<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>__linux__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>GTEST_OS_LINUX<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>defined<sp/>__ANDROID__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GTEST_OS_LINUX_ANDROID<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>__MVS__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>GTEST_OS_ZOS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__sun)<sp/>&amp;&amp;<sp/>defined(__SVR4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>GTEST_OS_SOLARIS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(_AIX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>GTEST_OS_AIX<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__hpux)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>GTEST_OS_HPUX<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>__native_client__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>GTEST_OS_NACL<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>__OpenBSD__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>GTEST_OS_OPENBSD<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>__QNX__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>GTEST_OS_QNX<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>__CYGWIN__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_ARCH_H_</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googletest/include/gtest/internal/gtest-port-arch.h"/>
+  </compounddef>
+</doxygen>

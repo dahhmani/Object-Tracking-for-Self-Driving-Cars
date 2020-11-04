@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1internal_1_1_pair_match_base" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::PairMatchBase</compoundname>
+    <innerclass refid="classtesting_1_1internal_1_1_pair_match_base_1_1_impl" prot="private">testing::internal::PairMatchBase::Impl</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>D</declname>
+        <defname>D</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>Op</declname>
+        <defname>Op</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pair_match_base_1ae73a3764537d725ce10e9e806ebdb417" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::internal::PairMatchBase&lt; D, Op &gt;::operator Matcher&lt; ::testing::tuple&lt; T1, T2 &gt; &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Matcher&lt; ::testing::tuple&lt; T1, T2 &gt; &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1384" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1384" bodyend="1386"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pair_match_base_1a0482f7e530420faecf00b9fca059b694" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::internal::PairMatchBase&lt; D, Op &gt;::operator Matcher&lt; const ::testing::tuple&lt; T1, T2 &gt; &amp;&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Matcher&lt; const ::testing::tuple&lt; T1, T2 &gt; &amp; &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1388" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1388" bodyend="1390"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1_pair_match_base_1afbc320d92000f77ec1ba276c26ec1a72" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>::std::ostream &amp;</type>
+        <definition>::std::ostream&amp; testing::internal::PairMatchBase&lt; D, Op &gt;::GetDesc</definition>
+        <argsstring>(::std::ostream &amp;os)</argsstring>
+        <name>GetDesc</name>
+        <param>
+          <type>::std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1393" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1393" bodyend="1395"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="1381" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="1381" bodyend="1412"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1_pair_match_base_1afbc320d92000f77ec1ba276c26ec1a72" prot="private" virt="non-virtual"><scope>testing::internal::PairMatchBase</scope><name>GetDesc</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_match_base_1ae73a3764537d725ce10e9e806ebdb417" prot="public" virt="non-virtual"><scope>testing::internal::PairMatchBase</scope><name>operator Matcher&lt; ::testing::tuple&lt; T1, T2 &gt; &gt;</name></member>
+      <member refid="classtesting_1_1internal_1_1_pair_match_base_1a0482f7e530420faecf00b9fca059b694" prot="public" virt="non-virtual"><scope>testing::internal::PairMatchBase</scope><name>operator Matcher&lt; const ::testing::tuple&lt; T1, T2 &gt; &amp; &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

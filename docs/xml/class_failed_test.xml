@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_failed_test" kind="class" language="C++" prot="public">
+    <compoundname>FailedTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Test</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="548">
+        <label>FailedTest</label>
+        <link refid="class_failed_test"/>
+        <childnode refid="549" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="549">
+        <label>Test</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="550">
+        <label>FailedTest</label>
+        <link refid="class_failed_test"/>
+        <childnode refid="551" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="551">
+        <label>Test</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/test/gtest_xml_output_unittest_.cc" line="58" column="1" bodyfile="vendor/googletest/googletest/test/gtest_xml_output_unittest_.cc" bodystart="58" bodyend="59"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

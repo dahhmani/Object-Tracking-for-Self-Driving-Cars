@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacecpp_1_1gmock__class__test" kind="namespace" language="Python">
+    <compoundname>cpp::gmock_class_test</compoundname>
+    <innerclass refid="classcpp_1_1gmock__class__test_1_1_generate_methods_test" prot="public">cpp::gmock_class_test::GenerateMethodsTest</innerclass>
+    <innerclass refid="classcpp_1_1gmock__class__test_1_1_generate_mocks_test" prot="public">cpp::gmock_class_test::GenerateMocksTest</innerclass>
+    <innerclass refid="classcpp_1_1gmock__class__test_1_1_test_case" prot="public">cpp::gmock_class_test::TestCase</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gmock__class__test_8py_1a72474ac6fe2295f91f383e45b9b6e536" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string cpp::gmock_class_test.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;nnorwitz@google.com (Neal Norwitz)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="20" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/scripts/generator/cpp/gmock_class_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

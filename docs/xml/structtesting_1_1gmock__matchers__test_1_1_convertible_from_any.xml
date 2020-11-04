@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1gmock__matchers__test_1_1_convertible_from_any" kind="struct" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::ConvertibleFromAny</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtesting_1_1gmock__matchers__test_1_1_convertible_from_any_1a7d18bc7eb4d6eaae32d581e7c204f917" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int testing::gmock_matchers_test::ConvertibleFromAny::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="619" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtesting_1_1gmock__matchers__test_1_1_convertible_from_any_1abca53d1044492f06ca3022af48881642" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_matchers_test::ConvertibleFromAny::ConvertibleFromAny</definition>
+        <argsstring>(int a_value)</argsstring>
+        <name>ConvertibleFromAny</name>
+        <param>
+          <type>int</type>
+          <declname>a_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="614" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="614" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="structtesting_1_1gmock__matchers__test_1_1_convertible_from_any_1a0963e24be9e1787fd8b9a3a7b7240fc7" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>testing::gmock_matchers_test::ConvertibleFromAny::ConvertibleFromAny</definition>
+        <argsstring>(const T &amp;)</argsstring>
+        <name>ConvertibleFromAny</name>
+        <param>
+          <type>const T &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="616" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="616" bodyend="618"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="613" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="613" bodyend="620"/>
+    <listofallmembers>
+      <member refid="structtesting_1_1gmock__matchers__test_1_1_convertible_from_any_1abca53d1044492f06ca3022af48881642" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::ConvertibleFromAny</scope><name>ConvertibleFromAny</name></member>
+      <member refid="structtesting_1_1gmock__matchers__test_1_1_convertible_from_any_1a0963e24be9e1787fd8b9a3a7b7240fc7" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::ConvertibleFromAny</scope><name>ConvertibleFromAny</name></member>
+      <member refid="structtesting_1_1gmock__matchers__test_1_1_convertible_from_any_1a7d18bc7eb4d6eaae32d581e7c204f917" prot="public" virt="non-virtual"><scope>testing::gmock_matchers_test::ConvertibleFromAny</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

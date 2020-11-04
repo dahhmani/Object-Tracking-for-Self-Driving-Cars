@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegtest__uninitialized__test" kind="namespace" language="Python">
+    <compoundname>gtest_uninitialized_test</compoundname>
+    <innerclass refid="classgtest__uninitialized__test_1_1_g_test_uninitialized_test" prot="public">gtest_uninitialized_test::GTestUninitializedTest</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gtest__uninitialized__test_8py_1aaaf66027b4590f6f1da732c0b2716e10" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gtest_uninitialized_test.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;wan@google.com (Zhanyong Wan)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_uninitialized_test.py" line="34" column="1" bodyfile="vendor/googletest/googletest/test/gtest_uninitialized_test.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gtest__uninitialized__test_8py_1a77a36d59341a58a2e7f54f0b2e691bd7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gtest_uninitialized_test.COMMAND</definition>
+        <argsstring></argsstring>
+        <name>COMMAND</name>
+        <initializer>=  gtest_test_utils.GetTestExecutablePath(&apos;gtest_uninitialized_test_&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_uninitialized_test.py" line="39" column="1" bodyfile="vendor/googletest/googletest/test/gtest_uninitialized_test.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gtest__uninitialized__test_8py_1ae91f3adf38ca21141f47ac150e4d3e19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_uninitialized_test.Assert</definition>
+        <argsstring>(condition)</argsstring>
+        <name>Assert</name>
+        <param>
+          <type>condition</type>
+          <defname>condition</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_uninitialized_test.py" line="42" column="1" bodyfile="vendor/googletest/googletest/test/gtest_uninitialized_test.py" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__uninitialized__test_8py_1a11a319d03e3ed2f94b95f7166ac1423b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_uninitialized_test.AssertEq</definition>
+        <argsstring>(expected, actual)</argsstring>
+        <name>AssertEq</name>
+        <param>
+          <type>expected</type>
+          <defname>expected</defname>
+        </param>
+        <param>
+          <type>actual</type>
+          <defname>actual</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_uninitialized_test.py" line="47" column="1" bodyfile="vendor/googletest/googletest/test/gtest_uninitialized_test.py" bodystart="47" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="gtest__uninitialized__test_8py_1acb743a321be1696fc72ffbdcac897613" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def gtest_uninitialized_test.TestExitCodeAndOutput</definition>
+        <argsstring>(command)</argsstring>
+        <name>TestExitCodeAndOutput</name>
+        <param>
+          <type>command</type>
+          <defname>command</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Runs the given command and verifies its exit code and output.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/test/gtest_uninitialized_test.py" line="54" column="1" bodyfile="vendor/googletest/googletest/test/gtest_uninitialized_test.py" bodystart="54" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/test/gtest_uninitialized_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classupload_1_1_http_rpc_server" kind="class" language="Python" prot="public">
+    <compoundname>upload::HttpRpcServer</compoundname>
+    <basecompoundref refid="classupload_1_1_abstract_rpc_server" prot="public" virt="non-virtual">upload.AbstractRpcServer</basecompoundref>
+    <basecompoundref refid="classupload_1_1_abstract_rpc_server" prot="public" virt="non-virtual">upload.AbstractRpcServer</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classupload_1_1_http_rpc_server_1ad5c1a730c030f9d3b5f70c2e0d8b9a1d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.HttpRpcServer::cookie_file</definition>
+        <argsstring></argsstring>
+        <name>cookie_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="368" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classupload_1_1_http_rpc_server_1a1b9c9af7f0a46afd84a9d524782323bf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.HttpRpcServer::cookie_jar</definition>
+        <argsstring></argsstring>
+        <name>cookie_jar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="369" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classupload_1_1_http_rpc_server_1aaa356e2491537dd0d4bfc5b1bb0fec96" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.HttpRpcServer::authenticated</definition>
+        <argsstring></argsstring>
+        <name>authenticated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="373" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classupload_1_1_http_rpc_server_1ab46a30c5aaa9f4d8f5a4bcb32293010e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.HttpRpcServer._Authenticate</definition>
+        <argsstring>(self)</argsstring>
+        <name>_Authenticate</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Save the cookie jar after authentication.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="347" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="347" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_http_rpc_server_1a4685030df704ec17f020c8790108a05a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.HttpRpcServer._GetOpener</definition>
+        <argsstring>(self)</argsstring>
+        <name>_GetOpener</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns an OpenerDirector that supports cookies and ignores redirects.
+
+Returns:
+  A urllib2.OpenerDirector object.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="354" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="354" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_http_rpc_server_1ab46a30c5aaa9f4d8f5a4bcb32293010e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.HttpRpcServer._Authenticate</definition>
+        <argsstring>(self)</argsstring>
+        <name>_Authenticate</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Save the cookie jar after authentication.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="347" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="347" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_http_rpc_server_1a4685030df704ec17f020c8790108a05a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.HttpRpcServer._GetOpener</definition>
+        <argsstring>(self)</argsstring>
+        <name>_GetOpener</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns an OpenerDirector that supports cookies and ignores redirects.
+
+Returns:
+  A urllib2.OpenerDirector object.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="354" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="354" bodyend="391"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>elif e.code &gt;= 500 and e.code &lt; 600: <heading level="1">Server Error - try again.</heading>
+</para>    </briefdescription>
+    <detaileddescription>
+<para>continue <verbatim>Provides a simplified RPC-style interface for HTTP requests.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1066">
+        <label>upload.AbstractRpcServer</label>
+        <link refid="classupload_1_1_abstract_rpc_server"/>
+        <childnode refid="1067" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1067" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1067">
+        <label>object</label>
+      </node>
+      <node id="1065">
+        <label>upload.HttpRpcServer</label>
+        <link refid="classupload_1_1_http_rpc_server"/>
+        <childnode refid="1066" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1066" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1069">
+        <label>upload.AbstractRpcServer</label>
+        <link refid="classupload_1_1_abstract_rpc_server"/>
+        <childnode refid="1070" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1070" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1070">
+        <label>object</label>
+      </node>
+      <node id="1068">
+        <label>upload.HttpRpcServer</label>
+        <link refid="classupload_1_1_http_rpc_server"/>
+        <childnode refid="1069" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1069" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/upload.py" line="344" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="344" bodyend="392"/>
+    <listofallmembers>
+      <member refid="classupload_1_1_abstract_rpc_server_1a3f6bc1bd16b52bd5a5c33a1fedeef2d0" prot="public" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>__init__</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1a3f6bc1bd16b52bd5a5c33a1fedeef2d0" prot="public" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>__init__</name></member>
+      <member refid="classupload_1_1_http_rpc_server_1ab46a30c5aaa9f4d8f5a4bcb32293010e" prot="private" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>_Authenticate</name></member>
+      <member refid="classupload_1_1_http_rpc_server_1ab46a30c5aaa9f4d8f5a4bcb32293010e" prot="private" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>_Authenticate</name></member>
+      <member refid="classupload_1_1_http_rpc_server_1a4685030df704ec17f020c8790108a05a" prot="private" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>_GetOpener</name></member>
+      <member refid="classupload_1_1_http_rpc_server_1a4685030df704ec17f020c8790108a05a" prot="private" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>_GetOpener</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1aee0090a3bcf07b913a7dd596a5dabb8f" prot="public" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>auth_function</name></member>
+      <member refid="classupload_1_1_http_rpc_server_1aaa356e2491537dd0d4bfc5b1bb0fec96" prot="public" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>authenticated</name></member>
+      <member refid="classupload_1_1_http_rpc_server_1ad5c1a730c030f9d3b5f70c2e0d8b9a1d" prot="public" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>cookie_file</name></member>
+      <member refid="classupload_1_1_http_rpc_server_1a1b9c9af7f0a46afd84a9d524782323bf" prot="public" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>cookie_jar</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1adbbf0109afc13d58d7815fa143cb779f" prot="public" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>extra_headers</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1ab7188d827e2faddcf970f524f5856192" prot="public" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>host</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1a783a4a7e4ffb776a57a3f267300a213b" prot="public" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>host_override</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1aa931446476e0e86f3ade7fef0a0aea5a" prot="public" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>opener</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1affe342205c4647d41b127f5a5634858b" prot="public" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>save_cookies</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1ac1b913f8bd00da4741c47ab49ea94cb5" prot="public" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>Send</name></member>
+      <member refid="classupload_1_1_abstract_rpc_server_1ac1b913f8bd00da4741c47ab49ea94cb5" prot="public" virt="non-virtual"><scope>upload::HttpRpcServer</scope><name>Send</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

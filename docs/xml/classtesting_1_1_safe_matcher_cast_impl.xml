@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1_safe_matcher_cast_impl" kind="class" language="C++" prot="public">
+    <compoundname>testing::SafeMatcherCastImpl</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1_safe_matcher_cast_impl_1a6ceab2bd71bff1677ed184eb2afa8653" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename M</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; T &gt;</type>
+        <definition>static Matcher&lt;T&gt; testing::SafeMatcherCastImpl&lt; T &gt;::Cast</definition>
+        <argsstring>(const M &amp;polymorphic_matcher_or_value)</argsstring>
+        <name>Cast</name>
+        <param>
+          <type>const M &amp;</type>
+          <declname>polymorphic_matcher_or_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="627" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="627" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1_safe_matcher_cast_impl_1a034691f9eab929b8b25c33f13937ab95" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; T &gt;</type>
+        <definition>static Matcher&lt;T&gt; testing::SafeMatcherCastImpl&lt; T &gt;::Cast</definition>
+        <argsstring>(const Matcher&lt; U &gt; &amp;matcher)</argsstring>
+        <name>Cast</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1_matcher" kindref="compound">Matcher</ref>&lt; U &gt; &amp;</type>
+          <declname>matcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="641" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="641" bodyend="661"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="622" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="622" bodyend="662"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_safe_matcher_cast_impl_1a6ceab2bd71bff1677ed184eb2afa8653" prot="public" virt="non-virtual"><scope>testing::SafeMatcherCastImpl</scope><name>Cast</name></member>
+      <member refid="classtesting_1_1_safe_matcher_cast_impl_1a034691f9eab929b8b25c33f13937ab95" prot="public" virt="non-virtual"><scope>testing::SafeMatcherCastImpl</scope><name>Cast</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

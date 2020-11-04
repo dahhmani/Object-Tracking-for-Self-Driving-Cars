@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegmock__gen" kind="namespace" language="Python">
+    <compoundname>gmock_gen</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gmock__gen_8py_1adab615bb903ccd6be037728cbd62057b" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string gmock_gen.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>=  &apos;nnorwitz@google.com (Neal Norwitz)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/gmock_gen.py" line="19" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/gmock_gen.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gmock__gen_8py_1af72474983cae3039ab18452d6ff6a4ed" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>gmock_gen.__doc__</definition>
+        <argsstring></argsstring>
+        <name>__doc__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/generator/gmock_gen.py" line="30" column="1" bodyfile="vendor/googletest/googlemock/scripts/generator/gmock_gen.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/scripts/generator/gmock_gen.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

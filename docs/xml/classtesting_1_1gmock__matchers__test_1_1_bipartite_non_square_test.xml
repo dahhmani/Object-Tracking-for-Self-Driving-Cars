@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classtesting_1_1gmock__matchers__test_1_1_bipartite_non_square_test" kind="class" language="C++" prot="public">
+    <compoundname>testing::gmock_matchers_test::BipartiteNonSquareTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">testing::TestWithParam&lt; std::pair&lt; size_t, size_t &gt; &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="183">
+        <label>testing::gmock_matchers_test::BipartiteNonSquareTest</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_bipartite_non_square_test"/>
+        <childnode refid="184" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>testing::TestWithParam&lt; std::pair&lt; size_t, size_t &gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="185">
+        <label>testing::gmock_matchers_test::BipartiteNonSquareTest</label>
+        <link refid="classtesting_1_1gmock__matchers__test_1_1_bipartite_non_square_test"/>
+        <childnode refid="186" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>testing::TestWithParam&lt; std::pair&lt; size_t, size_t &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/test/gmock-matchers_test.cc" line="5132" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-matchers_test.cc" bodystart="5131" bodyend="5133"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

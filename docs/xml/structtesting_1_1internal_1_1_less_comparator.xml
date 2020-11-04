@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1internal_1_1_less_comparator" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::LessComparator</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtesting_1_1internal_1_1_less_comparator_1a03d072616e29586a62bd638e47d4a11c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool testing::internal::LessComparator::operator()</definition>
+        <argsstring>(const T &amp;lhs, const U &amp;rhs) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const U &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2608" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2608" bodyend="2608"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" line="2606" column="1" bodyfile="vendor/googletest/googlemock/include/gmock/gmock-matchers.h" bodystart="2606" bodyend="2609"/>
+    <listofallmembers>
+      <member refid="structtesting_1_1internal_1_1_less_comparator_1a03d072616e29586a62bd638e47d4a11c" prot="public" virt="non-virtual"><scope>testing::internal::LessComparator</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

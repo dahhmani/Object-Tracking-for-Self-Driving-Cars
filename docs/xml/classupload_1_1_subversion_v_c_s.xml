@@ -1,0 +1,534 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classupload_1_1_subversion_v_c_s" kind="class" language="Python" prot="public">
+    <compoundname>upload::SubversionVCS</compoundname>
+    <basecompoundref refid="classupload_1_1_version_control_system" prot="public" virt="non-virtual">upload.VersionControlSystem</basecompoundref>
+    <basecompoundref refid="classupload_1_1_version_control_system" prot="public" virt="non-virtual">upload.VersionControlSystem</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classupload_1_1_subversion_v_c_s_1ad1553a69f4a790309273dbdeb9077732" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.SubversionVCS::rev_start</definition>
+        <argsstring></argsstring>
+        <name>rev_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="730" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="730" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classupload_1_1_subversion_v_c_s_1ac0bb07a099c722b7f8622de4b225904f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.SubversionVCS::rev_end</definition>
+        <argsstring></argsstring>
+        <name>rev_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="731" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="731" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classupload_1_1_subversion_v_c_s_1aa801782f807674b06f491df5d7ca9942" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.SubversionVCS::svnls_cache</definition>
+        <argsstring></argsstring>
+        <name>svnls_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="736" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classupload_1_1_subversion_v_c_s_1a60645c40d2fea4cd52881576bd13341f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>upload.SubversionVCS::svn_base</definition>
+        <argsstring></argsstring>
+        <name>svn_base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="740" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="740" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1a8333f94e27335ce83eed0cc3f5a1eeb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS.__init__</definition>
+        <argsstring>(self, options)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>options</type>
+          <defname>options</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="724" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="724" bodyend="741"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1a7d22d459469a757270502ce0dccacbd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS.GuessBase</definition>
+        <argsstring>(self, required)</argsstring>
+        <name>GuessBase</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>required</type>
+          <defname>required</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Wrapper for _GuessBase.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="742" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="742" bodyend="745"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1a07c2d341f2c7df2772dd7f85e89b0212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS.GenerateDiff</definition>
+        <argsstring>(self, args)</argsstring>
+        <name>GenerateDiff</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="790" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="790" bodyend="804"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1a494ba1010992d83cac015bc396ab693a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS.GetUnknownFiles</definition>
+        <argsstring>(self)</argsstring>
+        <name>GetUnknownFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="836" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="836" bodyend="843"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1a340d269b74386ac863636f6b0683d9f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS.ReadFile</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>ReadFile</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the contents of a file.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="844" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="844" bodyend="853"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1ac3785eb1fa561088206d01570f9fe982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS.GetStatus</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>GetStatus</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the status of a file.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="854" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="854" bodyend="897"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1a29dec4941de0824734d6842a2f33ffc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS.GetBaseFile</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>GetBaseFile</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="898" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="898" bodyend="984"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1a8333f94e27335ce83eed0cc3f5a1eeb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS.__init__</definition>
+        <argsstring>(self, options)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>options</type>
+          <defname>options</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="724" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="724" bodyend="741"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1a7d22d459469a757270502ce0dccacbd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS.GuessBase</definition>
+        <argsstring>(self, required)</argsstring>
+        <name>GuessBase</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>required</type>
+          <defname>required</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Wrapper for _GuessBase.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="742" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="742" bodyend="745"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1a07c2d341f2c7df2772dd7f85e89b0212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS.GenerateDiff</definition>
+        <argsstring>(self, args)</argsstring>
+        <name>GenerateDiff</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="790" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="790" bodyend="804"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1a494ba1010992d83cac015bc396ab693a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS.GetUnknownFiles</definition>
+        <argsstring>(self)</argsstring>
+        <name>GetUnknownFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="836" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="836" bodyend="843"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1a340d269b74386ac863636f6b0683d9f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS.ReadFile</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>ReadFile</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the contents of a file.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="844" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="844" bodyend="853"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1ac3785eb1fa561088206d01570f9fe982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS.GetStatus</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>GetStatus</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the status of a file.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="854" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="854" bodyend="897"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1a29dec4941de0824734d6842a2f33ffc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS.GetBaseFile</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>GetBaseFile</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="898" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="898" bodyend="984"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1ad257205675d7d9d291145f4aa405964b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS._GuessBase</definition>
+        <argsstring>(self, required)</argsstring>
+        <name>_GuessBase</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>required</type>
+          <defname>required</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the SVN base URL.
+
+Args:
+  required: If true, exits if the url can&apos;t be guessed, otherwise None is
+returned.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="746" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="746" bodyend="789"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1ab484ddd61e217927fb61639bacdbb68d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS._CollapseKeywords</definition>
+        <argsstring>(self, content, keyword_str)</argsstring>
+        <name>_CollapseKeywords</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>content</type>
+          <defname>content</defname>
+        </param>
+        <param>
+          <type>keyword_str</type>
+          <defname>keyword_str</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Collapses SVN keywords.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/scripts/upload.py" line="805" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="805" bodyend="835"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1ad257205675d7d9d291145f4aa405964b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS._GuessBase</definition>
+        <argsstring>(self, required)</argsstring>
+        <name>_GuessBase</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>required</type>
+          <defname>required</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the SVN base URL.
+
+Args:
+  required: If true, exits if the url can&apos;t be guessed, otherwise None is
+returned.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="746" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="746" bodyend="789"/>
+      </memberdef>
+      <memberdef kind="function" id="classupload_1_1_subversion_v_c_s_1ab484ddd61e217927fb61639bacdbb68d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def upload.SubversionVCS._CollapseKeywords</definition>
+        <argsstring>(self, content, keyword_str)</argsstring>
+        <name>_CollapseKeywords</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>content</type>
+          <defname>content</defname>
+        </param>
+        <param>
+          <type>keyword_str</type>
+          <defname>keyword_str</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Collapses SVN keywords.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/upload.py" line="805" column="1" bodyfile="vendor/googletest/googletest/scripts/upload.py" bodystart="805" bodyend="835"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Implementation of the VersionControlSystem interface for Subversion.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2034">
+        <label>upload.SubversionVCS</label>
+        <link refid="classupload_1_1_subversion_v_c_s"/>
+        <childnode refid="2035" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2035" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2036">
+        <label>object</label>
+      </node>
+      <node id="2035">
+        <label>upload.VersionControlSystem</label>
+        <link refid="classupload_1_1_version_control_system"/>
+        <childnode refid="2036" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2036" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2037">
+        <label>upload.SubversionVCS</label>
+        <link refid="classupload_1_1_subversion_v_c_s"/>
+        <childnode refid="2038" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2038" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2039">
+        <label>object</label>
+      </node>
+      <node id="2038">
+        <label>upload.VersionControlSystem</label>
+        <link refid="classupload_1_1_version_control_system"/>
+        <childnode refid="2039" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2039" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googlemock/scripts/upload.py" line="721" column="1" bodyfile="vendor/googletest/googlemock/scripts/upload.py" bodystart="721" bodyend="985"/>
+    <listofallmembers>
+      <member refid="classupload_1_1_subversion_v_c_s_1a8333f94e27335ce83eed0cc3f5a1eeb0" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>__init__</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1a8333f94e27335ce83eed0cc3f5a1eeb0" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>__init__</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1ab484ddd61e217927fb61639bacdbb68d" prot="private" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>_CollapseKeywords</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1ab484ddd61e217927fb61639bacdbb68d" prot="private" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>_CollapseKeywords</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1ad257205675d7d9d291145f4aa405964b" prot="private" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>_GuessBase</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1ad257205675d7d9d291145f4aa405964b" prot="private" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>_GuessBase</name></member>
+      <member refid="classupload_1_1_version_control_system_1ad2923d691a1b1047e9359c5b7c1c103f" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>CheckForUnknownFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1ad2923d691a1b1047e9359c5b7c1c103f" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>CheckForUnknownFiles</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1a07c2d341f2c7df2772dd7f85e89b0212" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>GenerateDiff</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1a07c2d341f2c7df2772dd7f85e89b0212" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>GenerateDiff</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1a29dec4941de0824734d6842a2f33ffc3" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>GetBaseFile</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1a29dec4941de0824734d6842a2f33ffc3" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>GetBaseFile</name></member>
+      <member refid="classupload_1_1_version_control_system_1a812c3b3daf90c88b015fa4b26252e291" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>GetBaseFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1a812c3b3daf90c88b015fa4b26252e291" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>GetBaseFiles</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1ac3785eb1fa561088206d01570f9fe982" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>GetStatus</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1ac3785eb1fa561088206d01570f9fe982" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>GetStatus</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1a494ba1010992d83cac015bc396ab693a" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>GetUnknownFiles</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1a494ba1010992d83cac015bc396ab693a" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>GetUnknownFiles</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1a7d22d459469a757270502ce0dccacbd2" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>GuessBase</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1a7d22d459469a757270502ce0dccacbd2" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>GuessBase</name></member>
+      <member refid="classupload_1_1_version_control_system_1a846889ecd2ef40870b456ddb5b349e02" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>IsImage</name></member>
+      <member refid="classupload_1_1_version_control_system_1a846889ecd2ef40870b456ddb5b349e02" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>IsImage</name></member>
+      <member refid="classupload_1_1_version_control_system_1a4d57d043bc408887b94269fe4cea9556" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>options</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1a340d269b74386ac863636f6b0683d9f4" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>ReadFile</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1a340d269b74386ac863636f6b0683d9f4" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>ReadFile</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1ac0bb07a099c722b7f8622de4b225904f" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>rev_end</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1ad1553a69f4a790309273dbdeb9077732" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>rev_start</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1a60645c40d2fea4cd52881576bd13341f" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>svn_base</name></member>
+      <member refid="classupload_1_1_subversion_v_c_s_1aa801782f807674b06f491df5d7ca9942" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>svnls_cache</name></member>
+      <member refid="classupload_1_1_version_control_system_1a7e334f967301b9e85e5a9c39f5036823" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>UploadBaseFiles</name></member>
+      <member refid="classupload_1_1_version_control_system_1a7e334f967301b9e85e5a9c39f5036823" prot="public" virt="non-virtual"><scope>upload::SubversionVCS</scope><name>UploadBaseFiles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

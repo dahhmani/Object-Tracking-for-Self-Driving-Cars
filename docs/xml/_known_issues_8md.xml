@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_known_issues_8md" kind="file" language="Markdown">
+    <compoundname>KnownIssues.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">As<sp/>any<sp/>non-trivial<sp/>software<sp/>system,<sp/>Google<sp/>Mock<sp/>has<sp/>some<sp/>known<sp/>limitations<sp/>and<sp/>problems.<sp/><sp/>We<sp/>are<sp/>working<sp/>on<sp/>improving<sp/>it,<sp/>and<sp/>welcome<sp/>your<sp/>help!<sp/><sp/>The<sp/>follow<sp/>is<sp/>a<sp/>list<sp/>of<sp/>issues<sp/>we<sp/>know<sp/>about.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>README<sp/>contains<sp/>outdated<sp/>information<sp/>on<sp/>Google<sp/>Mock&apos;s<sp/>compatibility<sp/>with<sp/>other<sp/>testing<sp/>frameworks<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>`README`<sp/>file<sp/>in<sp/>release<sp/>1.1.0<sp/>still<sp/>says<sp/>that<sp/>Google<sp/>Mock<sp/>only<sp/>works<sp/>with<sp/>Google<sp/>Test.<sp/><sp/>Actually,<sp/>you<sp/>can<sp/>configure<sp/>Google<sp/>Mock<sp/>to<sp/>work<sp/>with<sp/>any<sp/>testing<sp/>framework<sp/>you<sp/>choose.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Tests<sp/>failing<sp/>on<sp/>machines<sp/>using<sp/>Power<sp/>PC<sp/>CPUs<sp/>(e.g.<sp/>some<sp/>Macs)<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`gmock_output_test`<sp/>and<sp/>`gmock-printers_test`<sp/>are<sp/>known<sp/>to<sp/>fail<sp/>with<sp/>Power<sp/>PC<sp/>CPUs.<sp/><sp/>This<sp/>is<sp/>due<sp/>to<sp/>portability<sp/>issues<sp/>with<sp/>these<sp/>tests,<sp/>and<sp/>is<sp/>not<sp/>an<sp/>indication<sp/>of<sp/>problems<sp/>in<sp/>Google<sp/>Mock<sp/>itself.<sp/><sp/>You<sp/>can<sp/>safely<sp/>ignore<sp/>them.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Failed<sp/>to<sp/>resolve<sp/>libgtest.so.0<sp/>in<sp/>tests<sp/>when<sp/>built<sp/>against<sp/>installed<sp/>Google<sp/>Test<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>only<sp/>applies<sp/>if<sp/>you<sp/>manually<sp/>built<sp/>and<sp/>installed<sp/>Google<sp/>Test,<sp/>and<sp/>then<sp/>built<sp/>a<sp/>Google<sp/>Mock<sp/>against<sp/>it<sp/>(either<sp/>explicitly,<sp/>or<sp/>because<sp/>gtest-config<sp/>was<sp/>in<sp/>your<sp/>path<sp/>post-install).<sp/>In<sp/>this<sp/>situation,<sp/>Libtool<sp/>has<sp/>a<sp/>known<sp/>issue<sp/>with<sp/>certain<sp/>systems&apos;<sp/>ldconfig<sp/>setup:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">http://article.gmane.org/gmane.comp.sysutils.automake.general/9025</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>requires<sp/>a<sp/>manual<sp/>run<sp/>of<sp/>&quot;sudo<sp/>ldconfig&quot;<sp/>after<sp/>the<sp/>&quot;sudo<sp/>make<sp/>install&quot;<sp/>for<sp/>Google<sp/>Test<sp/>before<sp/>any<sp/>binaries<sp/>which<sp/>link<sp/>against<sp/>it<sp/>can<sp/>be<sp/>executed.<sp/>This<sp/>isn&apos;t<sp/>a<sp/>bug<sp/>in<sp/>our<sp/>install,<sp/>but<sp/>we<sp/>should<sp/>at<sp/>least<sp/>have<sp/>documented<sp/>it<sp/>or<sp/>hacked<sp/>a<sp/>work-around<sp/>into<sp/>our<sp/>install.<sp/>We<sp/>should<sp/>have<sp/>one<sp/>of<sp/>these<sp/>solutions<sp/>in<sp/>our<sp/>next<sp/>release.</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googlemock/docs/KnownIssues.md"/>
+  </compounddef>
+</doxygen>

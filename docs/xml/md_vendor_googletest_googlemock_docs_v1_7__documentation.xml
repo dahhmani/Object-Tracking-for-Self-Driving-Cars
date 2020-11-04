@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="md_vendor_googletest_googlemock_docs_v1_7__documentation" kind="page">
+    <compoundname>md_vendor_googletest_googlemock_docs_v1_7_Documentation</compoundname>
+    <title>Documentation</title>
+    <detaileddescription>
+<para>This page lists all documentation wiki pages for Google <ref refid="class_mock" kindref="compound">Mock</ref> **(the SVN trunk version)**<itemizedlist>
+<listitem><para><bold>if you use a released version of Google <ref refid="class_mock" kindref="compound">Mock</ref>, please read the documentation for that specific version instead.</bold><itemizedlist>
+<listitem><para>ForDummies <ndash/> start here if you are new to Google <ref refid="class_mock" kindref="compound">Mock</ref>.</para></listitem><listitem><para>CheatSheet <ndash/> a quick reference.</para></listitem><listitem><para>CookBook <ndash/> recipes for doing various tasks using Google <ref refid="class_mock" kindref="compound">Mock</ref>.</para></listitem><listitem><para>FrequentlyAskedQuestions <ndash/> check here before asking a question on the mailing list.</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para>To contribute code to Google <ref refid="class_mock" kindref="compound">Mock</ref>, read:</para><para><itemizedlist>
+<listitem><para>DevGuide <ndash/> read this <emphasis>before</emphasis> writing your first patch.</para></listitem><listitem><para><ulink url="http://code.google.com/p/googletest/wiki/PumpManual">Pump Manual</ulink> <ndash/> how we generate some of Google <ref refid="class_mock" kindref="compound">Mock</ref>&apos;s source files. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

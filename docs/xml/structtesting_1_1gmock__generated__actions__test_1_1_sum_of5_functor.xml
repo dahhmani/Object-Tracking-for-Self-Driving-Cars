@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structtesting_1_1gmock__generated__actions__test_1_1_sum_of5_functor" kind="struct" language="C++" prot="public">
+    <compoundname>testing::gmock_generated_actions_test::SumOf5Functor</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtesting_1_1gmock__generated__actions__test_1_1_sum_of5_functor_1aa3d751efb237e12ecdf1528f2b73da04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int testing::gmock_generated_actions_test::SumOf5Functor::operator()</definition>
+        <argsstring>(int a, int b, int c, int d, int e)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" line="113" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" bodystart="113" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" line="112" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-generated-actions_test.cc" bodystart="112" bodyend="116"/>
+    <listofallmembers>
+      <member refid="structtesting_1_1gmock__generated__actions__test_1_1_sum_of5_functor_1aa3d751efb237e12ecdf1528f2b73da04" prot="public" virt="non-virtual"><scope>testing::gmock_generated_actions_test::SumOf5Functor</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

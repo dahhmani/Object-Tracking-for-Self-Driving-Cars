@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacetesting_1_1gmock__nice__strict__test" kind="namespace" language="C++">
+    <compoundname>testing::gmock_nice_strict_test</compoundname>
+    <innerclass refid="classtesting_1_1gmock__nice__strict__test_1_1_foo" prot="public">testing::gmock_nice_strict_test::Foo</innerclass>
+    <innerclass refid="classtesting_1_1gmock__nice__strict__test_1_1_mock_bar" prot="public">testing::gmock_nice_strict_test::MockBar</innerclass>
+    <innerclass refid="classtesting_1_1gmock__nice__strict__test_1_1_mock_foo" prot="public">testing::gmock_nice_strict_test::MockFoo</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1a12b9f686345faa5a646da65a67c38a44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(NiceMockTest, AllowsExpectedCall)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>NiceMockTest</type>
+        </param>
+        <param>
+          <type>AllowsExpectedCall</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="204" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="204" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1a2bad58b3a12ea95eb4a731026c576b40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(NiceMockTest, UnexpectedCallFails)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>NiceMockTest</type>
+        </param>
+        <param>
+          <type>UnexpectedCallFails</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="212" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="212" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1a4172e1193c21d61e34d9b2c379d2f6be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(NiceMockTest, NonDefaultConstructor)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>NiceMockTest</type>
+        </param>
+        <param>
+          <type>NonDefaultConstructor</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="221" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="221" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1a81bfeea94824935648545225f5dd3c00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(NiceMockTest, NonDefaultConstructor10)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>NiceMockTest</type>
+        </param>
+        <param>
+          <type>NonDefaultConstructor10</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="231" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="231" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1a0a43059a52437e547c8fb836008b8e60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(NiceMockTest, AcceptsClassNamedMock)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>NiceMockTest</type>
+        </param>
+        <param>
+          <type>AcceptsClassNamedMock</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="249" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="249" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1a8ae416186af77fc0d066467be92c6c86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(NaggyMockTest, AllowsExpectedCall)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>NaggyMockTest</type>
+        </param>
+        <param>
+          <type>AllowsExpectedCall</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="296" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="296" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1a475ee57b7b86f3f81d50819db3dd78b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(NaggyMockTest, UnexpectedCallFails)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>NaggyMockTest</type>
+        </param>
+        <param>
+          <type>UnexpectedCallFails</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="304" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="304" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1a9618de98b38e8e4270873d9b2616e3e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(NaggyMockTest, NonDefaultConstructor)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>NaggyMockTest</type>
+        </param>
+        <param>
+          <type>NonDefaultConstructor</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="314" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="314" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1a982de09f3040cc5b9f457a7aa4e00652" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(NaggyMockTest, NonDefaultConstructor10)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>NaggyMockTest</type>
+        </param>
+        <param>
+          <type>NonDefaultConstructor10</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="324" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="324" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1af147980581baec3cf492457c2d1e0276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(NaggyMockTest, AcceptsClassNamedMock)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>NaggyMockTest</type>
+        </param>
+        <param>
+          <type>AcceptsClassNamedMock</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="342" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="342" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1a269b7756fb785a84a609543700f77256" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(StrictMockTest, AllowsExpectedCall)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>StrictMockTest</type>
+        </param>
+        <param>
+          <type>AllowsExpectedCall</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="350" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="350" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1ae58ab074e0f9218a727d1fec0793667e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(StrictMockTest, UnexpectedCallFails)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>StrictMockTest</type>
+        </param>
+        <param>
+          <type>UnexpectedCallFails</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="358" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="358" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1afea105507ce78fc0e2c20d9f4cca16d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(StrictMockTest, UninterestingCallFails)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>StrictMockTest</type>
+        </param>
+        <param>
+          <type>UninterestingCallFails</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="367" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="367" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1a04e9402fd03549e1eda88659b6eac174" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(StrictMockTest, UninterestingCallFailsAfterDeath)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>StrictMockTest</type>
+        </param>
+        <param>
+          <type>UninterestingCallFailsAfterDeath</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="376" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="376" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1a21456158013d707a1238d0ade00ea3f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(StrictMockTest, NonDefaultConstructor)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>StrictMockTest</type>
+        </param>
+        <param>
+          <type>NonDefaultConstructor</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="388" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="388" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1ae52f11a6045e9c307237cf02b85e6b79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(StrictMockTest, NonDefaultConstructor10)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>StrictMockTest</type>
+        </param>
+        <param>
+          <type>NonDefaultConstructor10</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="398" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="398" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="gmock-nice-strict__test_8cc_1a4534bdd7c8ca19aad56933d34e0ea4db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::gmock_nice_strict_test::TEST</definition>
+        <argsstring>(StrictMockTest, AcceptsClassNamedMock)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>StrictMockTest</type>
+        </param>
+        <param>
+          <type>AcceptsClassNamedMock</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="416" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" bodystart="416" bodyend="420"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googlemock/test/gmock-nice-strict_test.cc" line="52" column="1"/>
+  </compounddef>
+</doxygen>

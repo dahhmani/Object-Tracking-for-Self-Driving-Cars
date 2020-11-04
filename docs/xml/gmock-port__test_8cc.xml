@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="gmock-port__test_8cc" kind="file" language="C++">
+    <compoundname>gmock-port_test.cc</compoundname>
+    <includes refid="gmock-port_8h" local="yes">gmock/internal/gmock-port.h</includes>
+    <includes refid="gtest_8h" local="yes">gtest/gtest.h</includes>
+    <includedby refid="gmock__all__test_8cc" local="yes">vendor/googletest/googlemock/test/gmock_all_test.cc</includedby>
+    <incdepgraph>
+      <node id="2295">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="2320">
+        <label>gtest/internal/gtest-type-util.h</label>
+        <link refid="gtest-type-util_8h_source"/>
+        <childnode refid="2289" relation="include">
+        </childnode>
+      </node>
+      <node id="2314">
+        <label>iomanip</label>
+      </node>
+      <node id="2310">
+        <label>limits</label>
+      </node>
+      <node id="2301">
+        <label>gtest/internal/gtest-port-arch.h</label>
+        <link refid="gtest-port-arch_8h_source"/>
+      </node>
+      <node id="2285">
+        <label>assert.h</label>
+      </node>
+      <node id="2325">
+        <label>iterator</label>
+      </node>
+      <node id="2313">
+        <label>float.h</label>
+      </node>
+      <node id="2329">
+        <label>gtest/gtest_prod.h</label>
+        <link refid="gtest__prod_8h_source"/>
+      </node>
+      <node id="2286">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2318">
+        <label>gtest/internal/gtest-string.h</label>
+        <link refid="gtest-string_8h_source"/>
+        <childnode refid="2293" relation="include">
+        </childnode>
+        <childnode refid="2298" relation="include">
+        </childnode>
+        <childnode refid="2289" relation="include">
+        </childnode>
+      </node>
+      <node id="2330">
+        <label>gtest/gtest-test-part.h</label>
+        <link refid="gtest-test-part_8h_source"/>
+        <childnode refid="2331" relation="include">
+        </childnode>
+        <childnode refid="2300" relation="include">
+        </childnode>
+        <childnode refid="2312" relation="include">
+        </childnode>
+        <childnode refid="2318" relation="include">
+        </childnode>
+      </node>
+      <node id="2298">
+        <label>string</label>
+      </node>
+      <node id="2315">
+        <label>map</label>
+      </node>
+      <node id="2308">
+        <label>gmock/internal/custom/gmock-port.h</label>
+        <link refid="custom_2gmock-port_8h_source"/>
+      </node>
+      <node id="2328">
+        <label>gtest/internal/gtest-param-util-generated.h</label>
+        <link refid="gtest-param-util-generated_8h_source"/>
+        <childnode refid="2324" relation="include">
+        </childnode>
+        <childnode refid="2289" relation="include">
+        </childnode>
+      </node>
+      <node id="2291">
+        <label>stddef.h</label>
+      </node>
+      <node id="2333">
+        <label>gtest/gtest_pred_impl.h</label>
+        <link refid="gtest__pred__impl_8h_source"/>
+      </node>
+      <node id="2311">
+        <label>ostream</label>
+      </node>
+      <node id="2302">
+        <label>gtest/internal/custom/gtest-port.h</label>
+        <link refid="custom_2gtest-port_8h_source"/>
+      </node>
+      <node id="2321">
+        <label>gtest/gtest-death-test.h</label>
+        <link refid="gtest-death-test_8h_source"/>
+        <childnode refid="2322" relation="include">
+        </childnode>
+      </node>
+      <node id="2283">
+        <label>vendor/googletest/googlemock/test/gmock-port_test.cc</label>
+        <link refid="gmock-port__test_8cc"/>
+        <childnode refid="2284" relation="include">
+        </childnode>
+        <childnode refid="2309" relation="include">
+        </childnode>
+      </node>
+      <node id="2294">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2293">
+        <label>string.h</label>
+      </node>
+      <node id="2306">
+        <label>typeinfo</label>
+      </node>
+      <node id="2284">
+        <label>gmock/internal/gmock-port.h</label>
+        <link refid="gmock-port_8h_source"/>
+        <childnode refid="2285" relation="include">
+        </childnode>
+        <childnode refid="2286" relation="include">
+        </childnode>
+        <childnode refid="2287" relation="include">
+        </childnode>
+        <childnode refid="2288" relation="include">
+        </childnode>
+        <childnode refid="2289" relation="include">
+        </childnode>
+        <childnode refid="2308" relation="include">
+        </childnode>
+      </node>
+      <node id="2303">
+        <label>unistd.h</label>
+      </node>
+      <node id="2300">
+        <label>vector</label>
+      </node>
+      <node id="2327">
+        <label>gtest/internal/custom/gtest-printers.h</label>
+        <link refid="internal_2custom_2gtest-printers_8h_source"/>
+      </node>
+      <node id="2317">
+        <label>gtest/gtest-message.h</label>
+        <link refid="gtest-message_8h_source"/>
+        <childnode refid="2310" relation="include">
+        </childnode>
+        <childnode refid="2289" relation="include">
+        </childnode>
+      </node>
+      <node id="2299">
+        <label>utility</label>
+      </node>
+      <node id="2297">
+        <label>sstream</label>
+      </node>
+      <node id="2288">
+        <label>gtest/internal/gtest-linked_ptr.h</label>
+        <link refid="gtest-linked__ptr_8h_source"/>
+        <childnode refid="2286" relation="include">
+        </childnode>
+        <childnode refid="2285" relation="include">
+        </childnode>
+        <childnode refid="2289" relation="include">
+        </childnode>
+      </node>
+      <node id="2331">
+        <label>iosfwd</label>
+      </node>
+      <node id="2319">
+        <label>gtest/internal/gtest-filepath.h</label>
+        <link refid="gtest-filepath_8h_source"/>
+        <childnode refid="2318" relation="include">
+        </childnode>
+      </node>
+      <node id="2287">
+        <label>iostream</label>
+      </node>
+      <node id="2309">
+        <label>gtest/gtest.h</label>
+        <link refid="gtest_8h_source"/>
+        <childnode refid="2310" relation="include">
+        </childnode>
+        <childnode refid="2311" relation="include">
+        </childnode>
+        <childnode refid="2300" relation="include">
+        </childnode>
+        <childnode refid="2312" relation="include">
+        </childnode>
+        <childnode refid="2318" relation="include">
+        </childnode>
+        <childnode refid="2321" relation="include">
+        </childnode>
+        <childnode refid="2317" relation="include">
+        </childnode>
+        <childnode refid="2323" relation="include">
+        </childnode>
+        <childnode refid="2326" relation="include">
+        </childnode>
+        <childnode refid="2329" relation="include">
+        </childnode>
+        <childnode refid="2330" relation="include">
+        </childnode>
+        <childnode refid="2332" relation="include">
+        </childnode>
+        <childnode refid="2333" relation="include">
+        </childnode>
+      </node>
+      <node id="2307">
+        <label>gtest/internal/gtest-tuple.h</label>
+        <link refid="gtest-tuple_8h_source"/>
+        <childnode refid="2299" relation="include">
+        </childnode>
+      </node>
+      <node id="2304">
+        <label>strings.h</label>
+      </node>
+      <node id="2290">
+        <label>ctype.h</label>
+      </node>
+      <node id="2332">
+        <label>gtest/gtest-typed-test.h</label>
+        <link refid="gtest-typed-test_8h_source"/>
+        <childnode refid="2289" relation="include">
+        </childnode>
+        <childnode refid="2320" relation="include">
+        </childnode>
+      </node>
+      <node id="2289">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="gtest-port_8h_source"/>
+        <childnode refid="2290" relation="include">
+        </childnode>
+        <childnode refid="2291" relation="include">
+        </childnode>
+        <childnode refid="2286" relation="include">
+        </childnode>
+        <childnode refid="2292" relation="include">
+        </childnode>
+        <childnode refid="2293" relation="include">
+        </childnode>
+        <childnode refid="2294" relation="include">
+        </childnode>
+        <childnode refid="2295" relation="include">
+        </childnode>
+        <childnode refid="2296" relation="include">
+        </childnode>
+        <childnode refid="2287" relation="include">
+        </childnode>
+        <childnode refid="2297" relation="include">
+        </childnode>
+        <childnode refid="2298" relation="include">
+        </childnode>
+        <childnode refid="2299" relation="include">
+        </childnode>
+        <childnode refid="2300" relation="include">
+        </childnode>
+        <childnode refid="2301" relation="include">
+        </childnode>
+        <childnode refid="2302" relation="include">
+        </childnode>
+        <childnode refid="2303" relation="include">
+        </childnode>
+        <childnode refid="2304" relation="include">
+        </childnode>
+        <childnode refid="2305" relation="include">
+        </childnode>
+        <childnode refid="2306" relation="include">
+        </childnode>
+        <childnode refid="2307" relation="include">
+        </childnode>
+      </node>
+      <node id="2312">
+        <label>gtest/internal/gtest-internal.h</label>
+        <link refid="gtest-internal_8h_source"/>
+        <childnode refid="2289" relation="include">
+        </childnode>
+        <childnode refid="2290" relation="include">
+        </childnode>
+        <childnode refid="2313" relation="include">
+        </childnode>
+        <childnode refid="2293" relation="include">
+        </childnode>
+        <childnode refid="2314" relation="include">
+        </childnode>
+        <childnode refid="2310" relation="include">
+        </childnode>
+        <childnode refid="2315" relation="include">
+        </childnode>
+        <childnode refid="2316" relation="include">
+        </childnode>
+        <childnode refid="2298" relation="include">
+        </childnode>
+        <childnode refid="2300" relation="include">
+        </childnode>
+        <childnode refid="2317" relation="include">
+        </childnode>
+        <childnode refid="2318" relation="include">
+        </childnode>
+        <childnode refid="2319" relation="include">
+        </childnode>
+        <childnode refid="2320" relation="include">
+        </childnode>
+      </node>
+      <node id="2324">
+        <label>gtest/internal/gtest-param-util.h</label>
+        <link refid="gtest-param-util_8h_source"/>
+        <childnode refid="2290" relation="include">
+        </childnode>
+        <childnode refid="2325" relation="include">
+        </childnode>
+        <childnode refid="2316" relation="include">
+        </childnode>
+        <childnode refid="2299" relation="include">
+        </childnode>
+        <childnode refid="2300" relation="include">
+        </childnode>
+        <childnode refid="2312" relation="include">
+        </childnode>
+        <childnode refid="2288" relation="include">
+        </childnode>
+        <childnode refid="2289" relation="include">
+        </childnode>
+        <childnode refid="2326" relation="include">
+        </childnode>
+      </node>
+      <node id="2316">
+        <label>set</label>
+      </node>
+      <node id="2323">
+        <label>gtest/gtest-param-test.h</label>
+        <link refid="gtest-param-test_8h_source"/>
+        <childnode refid="2289" relation="include">
+        </childnode>
+        <childnode refid="2299" relation="include">
+        </childnode>
+        <childnode refid="2312" relation="include">
+        </childnode>
+        <childnode refid="2324" relation="include">
+        </childnode>
+        <childnode refid="2328" relation="include">
+        </childnode>
+      </node>
+      <node id="2296">
+        <label>algorithm</label>
+      </node>
+      <node id="2305">
+        <label>regex.h</label>
+      </node>
+      <node id="2292">
+        <label>stdio.h</label>
+      </node>
+      <node id="2322">
+        <label>gtest/internal/gtest-death-test-internal.h</label>
+        <link refid="gtest-death-test-internal_8h_source"/>
+        <childnode refid="2312" relation="include">
+        </childnode>
+        <childnode refid="2292" relation="include">
+        </childnode>
+      </node>
+      <node id="2326">
+        <label>gtest/gtest-printers.h</label>
+        <link refid="gtest-printers_8h_source"/>
+        <childnode refid="2311" relation="include">
+        </childnode>
+        <childnode refid="2297" relation="include">
+        </childnode>
+        <childnode refid="2298" relation="include">
+        </childnode>
+        <childnode refid="2299" relation="include">
+        </childnode>
+        <childnode refid="2300" relation="include">
+        </childnode>
+        <childnode refid="2289" relation="include">
+        </childnode>
+        <childnode refid="2312" relation="include">
+        </childnode>
+        <childnode refid="2327" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gmock-port__test_8cc_1a63812c9ef0cbc6907a251ccf919da78e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(DummyTest, Dummy)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>DummyTest</type>
+        </param>
+        <param>
+          <type>Dummy</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googlemock/test/gmock-port_test.cc" line="43" column="1" bodyfile="vendor/googletest/googlemock/test/gmock-port_test.cc" bodystart="43" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2008,<sp/>Google<sp/>Inc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>met:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Google<sp/>Inc.<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author:<sp/>vladl@google.com<sp/>(Vlad<sp/>Losev)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Google<sp/>Mock<sp/>-<sp/>a<sp/>framework<sp/>for<sp/>writing<sp/>C++<sp/>mock<sp/>classes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>tests<sp/>the<sp/>internal<sp/>cross-platform<sp/>support<sp/>utilities.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gmock/internal/gmock-port.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gtest/gtest.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NOTE:<sp/>if<sp/>this<sp/>file<sp/>is<sp/>left<sp/>without<sp/>tests<sp/>for<sp/>some<sp/>reason,<sp/>put<sp/>a<sp/>dummy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>test<sp/>here<sp/>to<sp/>make<sp/>references<sp/>to<sp/>symbols<sp/>in<sp/>the<sp/>gtest<sp/>library<sp/>and<sp/>avoid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&apos;undefined<sp/>symbol&apos;<sp/>linker<sp/>errors<sp/>in<sp/>gmock_main:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">TEST(DummyTest,<sp/>Dummy)<sp/>{}</highlight></codeline>
+    </programlisting>
+    <location file="vendor/googletest/googlemock/test/gmock-port_test.cc"/>
+  </compounddef>
+</doxygen>

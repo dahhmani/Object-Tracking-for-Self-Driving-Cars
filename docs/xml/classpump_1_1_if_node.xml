@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classpump_1_1_if_node" kind="class" language="Python" prot="public">
+    <compoundname>pump::IfNode</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpump_1_1_if_node_1a92042e4262196ffd7366350539f512d8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.IfNode::exp</definition>
+        <argsstring></argsstring>
+        <name>exp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="422" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpump_1_1_if_node_1aa9e2e488564629f8dc0d64d165a19ffa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.IfNode::then_branch</definition>
+        <argsstring></argsstring>
+        <name>then_branch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="423" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpump_1_1_if_node_1a12e422b16ed4291f15cd95cd6e7f81eb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pump.IfNode::else_branch</definition>
+        <argsstring></argsstring>
+        <name>else_branch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="424" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpump_1_1_if_node_1ab8bff21c18d60b461f7b6fa9dfa59f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pump.IfNode.__init__</definition>
+        <argsstring>(self, exp=None, then_branch=None, else_branch=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exp</type>
+          <defname>exp</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>then_branch</type>
+          <defname>then_branch</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>else_branch</type>
+          <defname>else_branch</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/pump.py" line="421" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="421" bodyend="426"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vendor/googletest/googletest/scripts/pump.py" line="420" column="1" bodyfile="vendor/googletest/googletest/scripts/pump.py" bodystart="420" bodyend="427"/>
+    <listofallmembers>
+      <member refid="classpump_1_1_if_node_1ab8bff21c18d60b461f7b6fa9dfa59f7c" prot="public" virt="non-virtual"><scope>pump::IfNode</scope><name>__init__</name></member>
+      <member refid="classpump_1_1_if_node_1a12e422b16ed4291f15cd95cd6e7f81eb" prot="public" virt="non-virtual"><scope>pump::IfNode</scope><name>else_branch</name></member>
+      <member refid="classpump_1_1_if_node_1a92042e4262196ffd7366350539f512d8" prot="public" virt="non-virtual"><scope>pump::IfNode</scope><name>exp</name></member>
+      <member refid="classpump_1_1_if_node_1aa9e2e488564629f8dc0d64d165a19ffa" prot="public" virt="non-virtual"><scope>pump::IfNode</scope><name>then_branch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

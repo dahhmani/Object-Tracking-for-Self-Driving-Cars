@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_object_tracker_test" kind="class" language="C++" prot="public">
+    <compoundname>ObjectTrackerTest</compoundname>
+    <basecompoundref refid="classtesting_1_1_test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_object_tracker_test_1a90d12b495a8410f85bad256a62510716" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_e_n_p_m808_x_1_1_object_tracker" kindref="compound">ENPM808X::ObjectTracker</ref> *</type>
+        <definition>ENPM808X::ObjectTracker* ObjectTrackerTest::tracker</definition>
+        <argsstring></argsstring>
+        <name>tracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/test_tracker.cpp" line="51" column="1" bodyfile="test/test_tracker.cpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_object_tracker_test_1ad22082c97db202bdd6e4c029c297fde4" prot="protected" static="no" mutable="no">
+        <type>cv::Matx34f</type>
+        <definition>cv::Matx34f ObjectTrackerTest::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/test_tracker.cpp" line="52" column="1" bodyfile="test/test_tracker.cpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_object_tracker_test_1a76621de2cb5ac158a52242e84c2ff604" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ObjectTrackerTest::SetUp</definition>
+        <argsstring>() override</argsstring>
+        <name>SetUp</name>
+        <reimplements refid="classtesting_1_1_test_1a190315150c303ddf801313fd1a777733">SetUp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/test_tracker.cpp" line="44" column="1" bodyfile="test/test_tracker.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_tracker_test_1ac0d78dc8d4552910a2e4795497728977" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ObjectTrackerTest::TearDown</definition>
+        <argsstring>() override</argsstring>
+        <name>TearDown</name>
+        <reimplements refid="classtesting_1_1_test_1a5f0ab439802cbe0ef7552f1a9f791923">TearDown</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/test_tracker.cpp" line="49" column="1" bodyfile="test/test_tracker.cpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Test fixture for ObjectTracker class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1676">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1675">
+        <label>ObjectTrackerTest</label>
+        <link refid="class_object_tracker_test"/>
+        <childnode refid="1676" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1678">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="1677">
+        <label>ObjectTrackerTest</label>
+        <link refid="class_object_tracker_test"/>
+        <childnode refid="1678" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1679" relation="usage">
+          <edgelabel>tracker</edgelabel>
+        </childnode>
+      </node>
+      <node id="1679">
+        <label>ENPM808X::ObjectTracker</label>
+        <link refid="class_e_n_p_m808_x_1_1_object_tracker"/>
+      </node>
+    </collaborationgraph>
+    <location file="test/test_tracker.cpp" line="42" column="1" bodyfile="test/test_tracker.cpp" bodystart="42" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual"><scope>ObjectTrackerTest</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual"><scope>ObjectTrackerTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual"><scope>ObjectTrackerTest</scope><name>HasNonfatalFailure</name></member>
+      <member refid="class_object_tracker_test_1ad22082c97db202bdd6e4c029c297fde4" prot="protected" virt="non-virtual"><scope>ObjectTrackerTest</scope><name>P</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual"><scope>ObjectTrackerTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual"><scope>ObjectTrackerTest</scope><name>RecordProperty</name></member>
+      <member refid="class_object_tracker_test_1a76621de2cb5ac158a52242e84c2ff604" prot="protected" virt="virtual"><scope>ObjectTrackerTest</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1_test_1a5ccbac42fee8c5b00b0bfe89b6c49d79" prot="public" virt="non-virtual"><scope>ObjectTrackerTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual"><scope>ObjectTrackerTest</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="class_object_tracker_test_1ac0d78dc8d4552910a2e4795497728977" prot="protected" virt="virtual"><scope>ObjectTrackerTest</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_test_1af374706cbaf0ffc460f4fd04e7c150f1" prot="public" virt="non-virtual"><scope>ObjectTrackerTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual"><scope>ObjectTrackerTest</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual"><scope>ObjectTrackerTest</scope><name>Test</name></member>
+      <member refid="class_object_tracker_test_1a90d12b495a8410f85bad256a62510716" prot="protected" virt="non-virtual"><scope>ObjectTrackerTest</scope><name>tracker</name></member>
+      <member refid="classtesting_1_1_test_1a2b0a62f1e667bbe8d8cb18d785bfa991" prot="public" virt="virtual"><scope>ObjectTrackerTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

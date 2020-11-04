@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrelease__docs_1_1_wiki_brancher" kind="class" language="Python" prot="public">
+    <compoundname>release_docs::WikiBrancher</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classrelease__docs_1_1_wiki_brancher_1ad86478c9538ac0bf3916f67eb5da2910" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>release_docs.WikiBrancher::wiki_dir</definition>
+        <argsstring></argsstring>
+        <name>wiki_dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/release_docs.py" line="96" column="1" bodyfile="vendor/googletest/googletest/scripts/release_docs.py" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrelease__docs_1_1_wiki_brancher_1aae330aeef850b105795c5d75727448ba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>release_docs.WikiBrancher::version_prefix</definition>
+        <argsstring></argsstring>
+        <name>version_prefix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/release_docs.py" line="98" column="1" bodyfile="vendor/googletest/googletest/scripts/release_docs.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrelease__docs_1_1_wiki_brancher_1a938c78ba6e8adfb6af039dd500ac6466" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>release_docs.WikiBrancher::files_to_branch</definition>
+        <argsstring></argsstring>
+        <name>files_to_branch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/release_docs.py" line="99" column="1" bodyfile="vendor/googletest/googletest/scripts/release_docs.py" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrelease__docs_1_1_wiki_brancher_1a029ce9007fefd6ac5f13bacdedb29af5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>release_docs.WikiBrancher::search_for_re</definition>
+        <argsstring></argsstring>
+        <name>search_for_re</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/release_docs.py" line="107" column="1" bodyfile="vendor/googletest/googletest/scripts/release_docs.py" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrelease__docs_1_1_wiki_brancher_1aa33d991e629cc94fbfefe4f8569e283e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>release_docs.WikiBrancher::replace_with</definition>
+        <argsstring></argsstring>
+        <name>replace_with</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/release_docs.py" line="115" column="1" bodyfile="vendor/googletest/googletest/scripts/release_docs.py" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrelease__docs_1_1_wiki_brancher_1a4ac9c796f95690cca04049b557055443" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>release_docs.WikiBrancher::project</definition>
+        <argsstring></argsstring>
+        <name>project</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/release_docs.py" line="120" column="1" bodyfile="vendor/googletest/googletest/scripts/release_docs.py" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrelease__docs_1_1_wiki_brancher_1a344b32e2b65f0e8bab9fbf1e670d33fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def release_docs.WikiBrancher.__init__</definition>
+        <argsstring>(self, dot_version)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dot_version</type>
+          <defname>dot_version</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/release_docs.py" line="92" column="1" bodyfile="vendor/googletest/googletest/scripts/release_docs.py" bodystart="92" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classrelease__docs_1_1_wiki_brancher_1a05fc4282f501fb0210ecb33fd1d209a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def release_docs.WikiBrancher.GetFilesToBranch</definition>
+        <argsstring>(self)</argsstring>
+        <name>GetFilesToBranch</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns a list of .wiki file names that need to be branched.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/release_docs.py" line="117" column="1" bodyfile="vendor/googletest/googletest/scripts/release_docs.py" bodystart="117" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classrelease__docs_1_1_wiki_brancher_1a5ef284f7e1742f465ecd0c14d2667327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def release_docs.WikiBrancher.BranchFiles</definition>
+        <argsstring>(self)</argsstring>
+        <name>BranchFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Branches the .wiki files needed to be branched.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/release_docs.py" line="127" column="1" bodyfile="vendor/googletest/googletest/scripts/release_docs.py" bodystart="127" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classrelease__docs_1_1_wiki_brancher_1aa0bc4b1b78426fe7a8496d570b540f1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def release_docs.WikiBrancher.UpdateLinksInBranchedFiles</definition>
+        <argsstring>(self)</argsstring>
+        <name>UpdateLinksInBranchedFiles</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vendor/googletest/googletest/scripts/release_docs.py" line="137" column="1" bodyfile="vendor/googletest/googletest/scripts/release_docs.py" bodystart="137" bodyend="147"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Branches ...</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2512">
+        <label>release_docs.WikiBrancher</label>
+        <link refid="classrelease__docs_1_1_wiki_brancher"/>
+        <childnode refid="2513" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2513">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2514">
+        <label>release_docs.WikiBrancher</label>
+        <link refid="classrelease__docs_1_1_wiki_brancher"/>
+        <childnode refid="2515" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2515">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="vendor/googletest/googletest/scripts/release_docs.py" line="89" column="1" bodyfile="vendor/googletest/googletest/scripts/release_docs.py" bodystart="89" bodyend="148"/>
+    <listofallmembers>
+      <member refid="classrelease__docs_1_1_wiki_brancher_1a344b32e2b65f0e8bab9fbf1e670d33fd" prot="public" virt="non-virtual"><scope>release_docs::WikiBrancher</scope><name>__init__</name></member>
+      <member refid="classrelease__docs_1_1_wiki_brancher_1a5ef284f7e1742f465ecd0c14d2667327" prot="public" virt="non-virtual"><scope>release_docs::WikiBrancher</scope><name>BranchFiles</name></member>
+      <member refid="classrelease__docs_1_1_wiki_brancher_1a938c78ba6e8adfb6af039dd500ac6466" prot="public" virt="non-virtual"><scope>release_docs::WikiBrancher</scope><name>files_to_branch</name></member>
+      <member refid="classrelease__docs_1_1_wiki_brancher_1a05fc4282f501fb0210ecb33fd1d209a6" prot="public" virt="non-virtual"><scope>release_docs::WikiBrancher</scope><name>GetFilesToBranch</name></member>
+      <member refid="classrelease__docs_1_1_wiki_brancher_1a4ac9c796f95690cca04049b557055443" prot="public" virt="non-virtual"><scope>release_docs::WikiBrancher</scope><name>project</name></member>
+      <member refid="classrelease__docs_1_1_wiki_brancher_1aa33d991e629cc94fbfefe4f8569e283e" prot="public" virt="non-virtual"><scope>release_docs::WikiBrancher</scope><name>replace_with</name></member>
+      <member refid="classrelease__docs_1_1_wiki_brancher_1a029ce9007fefd6ac5f13bacdedb29af5" prot="public" virt="non-virtual"><scope>release_docs::WikiBrancher</scope><name>search_for_re</name></member>
+      <member refid="classrelease__docs_1_1_wiki_brancher_1aa0bc4b1b78426fe7a8496d570b540f1d" prot="public" virt="non-virtual"><scope>release_docs::WikiBrancher</scope><name>UpdateLinksInBranchedFiles</name></member>
+      <member refid="classrelease__docs_1_1_wiki_brancher_1aae330aeef850b105795c5d75727448ba" prot="public" virt="non-virtual"><scope>release_docs::WikiBrancher</scope><name>version_prefix</name></member>
+      <member refid="classrelease__docs_1_1_wiki_brancher_1ad86478c9538ac0bf3916f67eb5da2910" prot="public" virt="non-virtual"><scope>release_docs::WikiBrancher</scope><name>wiki_dir</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -23,7 +23,7 @@
 *******************************************************************************/
 
 /**
- * @file      test.cpp
+ * @file      test_tracker.cpp
  * @author    Mahmoud Dahmani (Driver)
  * @author    Aditya Khopkar (Navigator)
  * @copyright MIT License
@@ -31,8 +31,10 @@
  */
 
 #include <gtest/gtest.h>
-#include <opencv2/highgui.hpp>
-#include "tracker.h"
+
+#include "./tracker.h"
+#include "./config.h"
+#include "./profiler.h"
 
 /**
  * @brief Test fixture for ObjectTracker class
@@ -40,9 +42,6 @@
 class ObjectTrackerTest : public ::testing::Test {
  protected:
   void SetUp() override {
-    std::unordered_set<std::string> objectClasses{"person"};
-    cv::Matx34f extP{0, 0, 1, -1, 1, 0, 0, 0, 0, 1, 0, 1};
-    cv::Matx33f intP{0.5, 0, 160, 0, 0.5, 160, 0, 0, 1};
     tracker = new ENPM808X::ObjectTracker(objectClasses, extP, intP);
     P = intP * extP;  // camera calibration matrix
   }
@@ -60,27 +59,27 @@ class ObjectTrackerTest : public ::testing::Test {
  * condition [F-1(F(pixel_given) == pixel_reconstructed] is evaluated. 
  */
 TEST_F(ObjectTrackerTest, LocalizationWorks) {
-  cv::Point2i pixel{140, 120};
-  cv::Point3f worldPoint{tracker->localizeObjectKeypoint(
-      pixel)};  // ground thruth = [-2, -0.975, 0]
-  cv::Matx31f pixel_true{static_cast<float>(pixel.x),
-                         static_cast<float>(pixel.y), 1},
-      pixel_reconstructed;
+  cv::Point2i pixel_true{140, 120}, pixel_reconstructed;
+  cv::Point3f worldPoint{tracker->localize(pixel_true)};
   cv::Matx41f X{worldPoint.x, worldPoint.y, worldPoint.z, 1};
-  pixel_reconstructed = P * X;
-  pixel_reconstructed /= pixel_reconstructed(2);
+  cv::Matx31f homogeneousPixel{P * X};
+  homogeneousPixel /= homogeneousPixel(2);
+  pixel_reconstructed = {static_cast<int>(homogeneousPixel(0)),
+                         static_cast<int>(homogeneousPixel(1))};
   EXPECT_EQ(pixel_reconstructed, pixel_true);
 }
 
 /**
  * @brief Test Case for the multiple object detection function of ObjectTracker
  * Checks if the number of detections matches the number objects in the test
- * image.
+ * image. There are 2 humans in the used test image.
  */
 TEST_F(ObjectTrackerTest, MultipleHumanDetectionWorks) {
-  cv::Mat frame{cv::imread("data/testImage.png")};
-  std::vector<cv::Point2i> detections = tracker->detectObjectKeypoints(frame);
-  EXPECT_EQ(detections.size(), 2);  // there are 2 humans in this test image
+  cv::Mat frame{cv::imread("../data/testImage.png")};
+  auto [classIds, confidences, boxes] = tracker->detectObjects(frame);
+  static_cast<void>(classIds);
+  static_cast<void>(confidences);
+  EXPECT_EQ(boxes.size(), static_cast<std::size_t>(2));
 }
 
 /**
@@ -89,6 +88,27 @@ TEST_F(ObjectTrackerTest, MultipleHumanDetectionWorks) {
  * correctly loaded.
  */
 TEST_F(ObjectTrackerTest, CocoLabelsAreRead) {
-  ASSERT_EQ(tracker->datasetLabels_.size(), 80);
-  for (const auto& label : tracker->datasetLabels_) EXPECT_FALSE(label.empty());
+  std::vector<std::string> labels{tracker->datasetLabels()};
+  ASSERT_EQ(labels.size(), static_cast<std::size_t>(80));
+  for (const auto& label : labels)
+    EXPECT_FALSE(label.empty());
+}
+
+/**
+ * @brief Test Case for benchmarking the speed of the tracker
+ * Checks if the achieved frame rate fulfills the real-time requirement.
+ */
+TEST_F(ObjectTrackerTest, RealtimePerformanceIsAchieved) {
+  int FPS_desired{1}, FPS_actual, num_iterations{10};
+  cv::Mat frame;
+  {
+    ENPM808X::PROFILE_SCOPE("unit test");
+    for (int i = 0; i < num_iterations; ++i) {
+      stream.read(frame);
+      tracker->localizeObjects(frame);
+    }
+  }
+  FPS_actual = static_cast<int>(num_iterations * 1000.0f /
+                                ENPM808X::Timer::profileResult.elapsedTime);
+  EXPECT_GE(FPS_actual, FPS_desired);
 }

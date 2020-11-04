@@ -23,33 +23,22 @@
 *******************************************************************************/
 
 /**
- * @file      main.cpp
+ * @file      config.h
  * @author    Mahmoud Dahmani (Driver)
  * @author    Aditya Khopkar (Navigator)
  * @copyright MIT License
- * @brief     Entry point to the application program
+ * @brief     System configuration
  */
 
-#include <iostream>
+#pragma once
 
-#include "./tracker.h"
-#include "./config.h"
-#include "./profiler.h"
+#include <string>
+#include <unordered_set>
+#include <opencv2/highgui.hpp>
 
-int main() {
-  ENPM808X::ObjectTracker tracker(objectClasses, extP, intP);
-  cv::Mat frame;  // system input
-  std::vector<cv::Point3f> objectLocations;  // system output
-
-  while (stream.read(frame)) {
-    ENPM808X::PROFILE_FUNCTION();
-
-    objectLocations = tracker.localizeObjects(frame);
-
-    cv::namedWindow("Live", cv::WINDOW_NORMAL);
-    cv::imshow("Live", frame);
-    if (cv::waitKey(1) >= 0) break;
-  }
-
-  return 0;
-}
+static cv::VideoCapture stream(
+    "../data/testVideo.mp4");  // alternatively a camera device index
+                               // can be passed
+static std::unordered_set<std::string> objectClasses{"person", "car"};
+static cv::Matx34f extP{0, 0, 1, -1, 1, 0, 0, 0, 0, 1, 0, 1};
+static cv::Matx33f intP{0.5, 0, 160, 0, 0.5, 160, 0, 0, 1};
